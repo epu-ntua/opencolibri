@@ -1,7 +1,8 @@
 ![Open Colibri](http://i40.tinypic.com/sfhufa.png)
 ===========
-Open Colibri is a free and open source community-driven data portal software.
-It was developed by the Decision Support Systems Laboratory (http://www.epu.ntua.gr) for the research data infrastructure project ENGAGE FP7(http://www.engagedata.eu).
+OpenColibri is a free and open source community-driven data portal software.
+OpenColibri is developed and maintened by the [Decision Support Systems Laboratory](http://www.epu.ntua.gr), NTUA. 
+Part of the code has been used in the research data infrastructure project [ENGAGE FP7](http://www.engagedata.eu).
 
 Updated: 13/05/2013
 
