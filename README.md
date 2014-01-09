@@ -1,4 +1,4 @@
-![alt tag](http://i43.tinypic.com/xly2bo.png)
+![alt tag](http://i40.tinypic.com/sfhufa.png)
 ===========
 Open Colibri is a free and open source community-driven data portal software.
 It was developed by Decision Support Systems Laboratory for the research data infrastructure project ENGAGE FP7(http://www.engagedata.eu).
