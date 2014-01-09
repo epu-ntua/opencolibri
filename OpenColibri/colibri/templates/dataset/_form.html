@@ -1,0 +1,164 @@
+{% load i18n %}
+<div id="tab-side-container">
+    <ul>
+        <li class=""><a href="#side-resources" class=""><img style="padding:0px 10px;" src="/s/imgs/tab_data.png"/>Data</a>
+        </li>
+        <li class=""><a href="#side-basicinfo" class=""><img style="padding:0px 10px;" src="/s/imgs/tab_basic.png"/>Basic
+            Information</a></li>
+        <li class=""><a href="#side-people" class=""><img style="padding:0px 10px;" src="/s/imgs/tab_people.png"/>Organizations</a>
+        </li>
+        <li class=""><a href="#side-geotempcontext" class=""><img style="padding:0px 10px;" src="/s/imgs/tab_geo.png"/>Coverage</a>
+        </li>
+        <li class=""><a href="#side-scientific" class=""><img style="padding:0px 10px;" src="/s/imgs/tab_atom.png"/>Scientific
+            Context</a></li>
+    </ul>
+    <div class="panel-container">
+        <div id="side-resources" style="display: block;" class="tab-buttons-panel displayed">
+            <table style="text-align:center" border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                <span class="dataerrors">{{ resourceFormset.non_field_errors }}</span>
+                {{ resourceFormset.management_form }}
+                {% for form in resourceFormset.forms %}
+                <tr>
+                    <td>
+
+                        {{ form.non_field_errors }}
+                        {% if form.instance.pk %}
+                        {{ form.id }}
+                        {{ form.DELETE }}{% endif %}
+                        <div class="bold resources_separator">{% trans "Choose file" %}</div>
+                        {{ form.file }}{{ form.file.errors.as_text }}
+                        <div class="fileuri_separator">{% trans "OR" %}</div>
+                        <div class="bold">{% trans "paste URL" %}</div>
+
+                        <span class="dataerrors">{{ form.uri.errors.as_text }}</span>
+                        {{ form.uri }}
+                        <div style="margin-top:40px">
+                            <span class="dataerrors">{{ form.description.errors.as_text }}</span>
+
+                            <div class="bold" style="text-align:left">Short description</div>
+                            {{ form.description }}
+                            <span class="dataerrors">{{ form.language.errors.as_text }}</span>
+                            {{ form.language }}
+                        </div>
+
+                    </td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <div id="side-basicinfo" style="display: none;" class="tab-buttons-panel">
+            <!-- content -->
+            <span class="dataerrors">{{ datasetForm.title.errors.as_text }}</span>
+
+            <div class="datasetlabel">{% trans "Title" %}</div>
+            <div>{{ datasetForm.title }}</div>
+            <span class="dataerrors">{{ datasetForm.description.errors.as_text }}</span>
+
+            <div class="datasetlabel">{% trans "Description" %}</div>
+            <div>{{ datasetForm.description }}</div>
+
+            <span class="dataerrors">{{ datasetForm.categories.errors.as_text }}</span>
+
+            <div class="datasetlabel">{% trans "Categories" %}</div>
+            <div>{{ datasetForm.categories }}</div>
+            <div class="datasetlabel">{% trans "Original Url of Dataset" %}</div>
+            <div>{{ datasetForm.url }}</div>
+            <span class="dataerrors">{{ datasetForm.url.errors.as_text }}</span>
+
+            <div class="datasetlabel">{% trans "Country" %}</div>
+            <div>{{ datasetForm.country }}</div>
+            <span class="dataerrors">{{ datasetForm.country.errors.as_text }}</span>
+
+            <div class="datasetlabel">{% trans "License" %}</div>
+            <div>{{ datasetForm.license }}</div>
+            <span class="dataerrors">{{ datasetForm.license.errors.as_text }}</span>
+        </div>
+
+        <div id="side-people" style="display: none;" class="tab-buttons-panel">
+            <span class="dataerrors">{{ datasetForm.publisher.errors.as_text }}</span>
+
+            <div class="datasetlabel">{% trans "Author" %}</div>
+            <div>{{ datasetForm.author }}</div>
+            <div class="datasetlabel">{% trans "Publisher" %}</div>
+            <div>{{ datasetForm.publisher }}</div>
+            <span class="dataerrors">{{ datasetForm.author.errors.as_text }}</span>
+
+            <div class="datasetlabel">{% trans "Group maintaining the dataset" %}</div>
+            <div>{{ datasetForm.maintainingGroup }}</div>
+            <span class="dataerrors">{{ datasetForm.maintainingGroup.errors.as_text }}</span>
+        </div>
+        <div id="side-geotempcontext" style="display: none;" class="tab-buttons-panel">
+            <span class="dataerrors">{{ geoTempForm.non_field_errors }}</span>
+
+            <div class="temporal">
+                <div style="float:left">
+                    <div class="datasetlabel">{% trans "Temporal Granularity" %}</div>
+                    <div>{{ geoTempForm.temporal_granularity }}</div>
+                    <span class="dataerrors">{{ geoTempForm.temporal_granularity.errors.as_text }}</span>
+                </div>
+                <div style="float:left;margin-left:38px;">
+                    <div class="datasetlabel">{% trans "From" %}</div>
+                    <div class="tempdate">{{ geoTempForm.temporal_coverage_from }}</div>
+                    <span class="dataerrors">{{ geoTempForm.temporal_coverage_from.errors.as_text }}</span>
+                </div>
+                <div style="float:left;margin-left:22px;">
+                    <div class="datasetlabel">{% trans "To" %}</div>
+                    <div class="tempdate">{{ geoTempForm.temporal_coverage_to }}</div>
+                    <span class="dataerrors">{{ geoTempForm.temporal_coverage_to.errors.as_text }}</span>
+                </div>
+                <div style="clear:both"></div>
+
+            </div>
+            <div class="geographical">
+                <div style="float:left">
+                    <div class="datasetlabel">{% trans "Geographical Granularity" %}</div>
+                    {{ geoTempForm.geographical_granularity }}
+                    <span class="dataerrors">{{ geoTempForm.geographical_granularity.errors.as_text }}</span>
+                </div>
+                <div style="float:left;margin-left:22px;">
+                    <div class="datasetlabel">{% trans "Geographical Coverage" %}</div>
+                    <div>{{ geoTempForm.geographical_coverage }}</div>
+                    <span class="dataerrors">{{ geoTempForm.geographical_coverage.errors.as_text }}</span>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+        </div>
+        <div id="side-scientific" style="display: none;" class="tab-buttons-panel">
+            <span class="dataerrors">{{ scientificForm.non_field_errors }}</span>
+
+            <div class="datasetlabel">{% trans "Scientific domain of the dataset" %}</div>
+            <div>{{ scientificForm.scientific_domain }}</div>
+            <span class="dataerrors">{{ scientificForm.scientific_domain.errors.as_text }}</span>
+
+            <div class="datasetlabel">{% trans "Data Collection type" %}</div>
+            <div>{{ scientificForm.data_collection_type }}</div>
+            <span class="dataerrors">{{ scientificForm.data_collection_type.errors.as_text }}</span>
+
+            <div class="datasetlabel">{% trans "Data Collection Description" %}</div>
+            <div>{{ scientificForm.data_collection_description }}</div>
+            <span class="dataerrors">{{ scientificForm.data_collection_description.errors.as_text }}</span>
+
+            <div class="datasetlabel">{% trans "Statistical Software package used" %}</div>
+            <div>{{ scientificForm.software_package }}</div>
+            <span class="dataerrors">{{ scientificForm.software_package.errors.as_text }}</span>
+
+            <div class="datasetlabel">{% trans "Analysis Unit" %}</div>
+            <div>{{ scientificForm.analysis_unit }}</div>
+            <span class="dataerrors">{{ scientificForm.analysis_unit.errors.as_text }}</span>
+
+            <div class="datasetlabel">{% trans "Statistical Methodology" %}</div>
+            <div>{{ scientificForm.statistical_methodology }}</div>
+            <span class="dataerrors">{{ scientificForm.statistical_methodology.errors.as_text }}</span>
+        </div>
+    </div>
+</div>
+
+<span class="dataerrors">{{ datasetForm.non_field_errors.as_text }}</span>
+
+
+
+
+

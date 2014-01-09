@@ -1,0 +1,204 @@
+{% load inbox i18n %}
+{% inbox_count as inbox_count %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>{% block title %}colibri{% endblock %}</title>
+    <link href="/s/css/colibri.css" rel="stylesheet" type="text/css"/>
+    <link href="/s/css/theme.css" rel="stylesheet" type="text/css"/>
+    <link href="/s/css/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="/s/css/third_party/jquery-ui-1.10.0.custom.min.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="/s/js/third_party/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="/s/js/csrf_token.js"></script>
+    <script type="text/javascript" src="/s/js/third_party/jquery-ui-1.10.0.custom.min.js"></script>
+    <script type="text/javascript" src="/s/js/third_party/jquery.hashchange.min.js"></script>
+    <script type="text/javascript" src="/s/js/third_party/jquery.easytabs.min.js"></script>
+    <script type="text/javascript" src="/s/js/third_party/jquery.tablesorter.js"></script>
+    {% block css %}
+    {% endblock %}
+    {% block scripts %}
+    {% endblock %}
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery("#{{ current }}").addClass('current');
+
+            jQuery(".bigdate").html(function (i, text) {
+                return text.replace(/[a-zàâîïôèéêëèùûü]+/i, function (match) {
+                    return '<span class="datebold">' + match + '</span>';
+                });
+            });
+        });
+    </script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-40824907-1', 'colibridata.eu');
+        ga('send', 'pageview');
+
+    </script>
+
+</head>
+
+<body style="background-color: #f2f0e7">
+
+
+<div class="wrapper top  notranslate">
+    <div class="clmn-12 center">
+        <div class="float-left logo">
+            <a href="/" id='homelogo'><img src="/s/imgs/colibri_logo.jpg" width="103" height="100"/></a>
+        </div>
+        <div class="clmn-10">
+
+            <div class="topTools">
+                <div class="float-right">
+                    <div class="language-select">
+
+                        {% get_current_language as LANGUAGE_CODE %}
+                        <form action="/i18n/setlang/" method="post">
+                            {% csrf_token %}
+                            <input name="next" type="hidden" value="{{ redirect_to }}"/>
+
+                            <div class="selectParent">
+                                <select onchange="this.form.submit()" name="language">
+                                    {% get_language_info_list for LANGUAGES as languages %}
+                                    {% for language in languages %}
+                                    <option
+                                    {% if LANGUAGE_CODE == language.code %} selected="selected" {% endif %} value="{{
+                                    language.code }}">{{ language.name_local }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <ul id="TopNav">
+                        {% if user.is_authenticated %}
+                        {% if inbox_count %}
+                        <a href="/messages/inbox" class="unreadCount">
+                            {% inbox_count %}
+                        </a>
+                        {% endif %}
+                        <li><a href="/profile/{{ user.id }}">{{ user.username }}</a>
+                            <ul class="noJS">
+                                <li><a id='profile' href="/profile/{{ user.id }}">{% trans "Profile" %}</a></li>
+                                <li><a id='account-settings' href="/profile/{{ user.id }}/edit">{% trans "Account
+                                    Settings" %}</a></li>
+                                <li><a href="/messages/inbox">{% trans "Inbox" %}{% if inbox_count %}: {% inbox_count %}
+                                    {% trans "Unread" %}{% endif %}</a></li>
+                                <li><a id='groups' href="/profile/{{ user.id }}/#tabs2">{% trans "Groups" %}</a></li>
+                                <li>
+                                    <form action="/accounts/logout/">
+                                        <a href="javascript:;" onclick="parentNode.submit();">{% trans "Signout" %}</a>
+                                        <input type="hidden" name="mess" value="signout"/>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                        {% else %}
+                        <li><a href="/accounts/login">{% trans "Sign in" %}</a></li>
+                        <li><a href="/accounts/register">{% trans "Register" %}</a></li>
+                        {% endif %}
+                    </ul>
+                    <!-- end of TopNav -->
+
+                </div>
+                <!-- end of TopTools -->
+
+            </div>
+            <ul id="mainNav">
+                <li><a href="/" id='home'>{% trans "HOME" %}</a></li>
+                <li><a id='dataset' href="/dataset-search?q=">{% trans "DATASETS" %}</a>
+                    <ul class="noJS">
+                        <li><a href="/dataset-search?q=">{% trans "Search Datasets" %}</a></li>
+                        <li><a href="/dataset/add">{% trans "Add new dataset" %}</a></li>
+                        <li><a href="/sparql">{% trans "Linked Data SPARQL" %}</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/datasetrequests" id='datasetrequests_index'>{% trans "REQUEST DATA" %}</a>
+                </li>
+                <li><a id='community' href="/users">{% trans "COMMUNITY" %}</a>
+                    <ul class="noJS">
+                        <li><a href="/users">{% trans "Users" %}</a></li>
+                    </ul>
+                </li>
+                <li><a id='opendatasites' href="/opendatasites">{% trans "OPEN DATA SITES" %}</a></li>
+                <li><a id='wiki' href="/wiki">{% trans "WIKI" %}</a></li>
+                <li><a id='about' href="/about">{% trans "ABOUT US" %}</a>
+                    <ul class="noJS">
+                        <li><a href="/about">{% trans "About colibri" %}</a></li>
+                        <li><a href="/contact">{% trans "Contact us" %}</a></li>
+                        <li><a href="/terms">{% trans "Term Of Use" %}</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- End of main navigation-->
+
+        </div>
+        <!-- End of Right row-->
+    </div>
+</div>
+<!-- END of wrapper Top -->
+
+<div id="content">
+    {% block content %}{% endblock %}
+</div>
+
+<div class="wrapper footer green notranslate">
+    <div class="clmn-12 center-footer">
+        <div class="footer-logos">
+            <a href="http://cordis.europa.eu/fp7/home_en.html" target="_blank"><img
+                    src="/s/imgs/logo-seventhframework.jpg" width="88" height="88"
+                    alt="Seventh Framework Programme (FP7)" border="0"/></a>
+            <a href="http://ec.europa.eu/" target="_blank"><img src="/s/imgs/logo-eu.jpg" width="88" height="88"
+                                                                alt="European Commission" border="0"/></a>
+            <a href="http://www.colibri-project.eu/" target="_blank"><img src="/s/imgs/logo-smallcolibri.jpg" width="88"
+                                                                          height="88"
+                                                                          alt="colibri eInfrastructures Project"
+                                                                          border="0"/> </a>
+            <br>{% trans "colibri is a combination of CP & CSA project funded under the European Commission FP7
+            Programme" %}.
+        </div>
+
+    </div>
+    <div class="footer-line"></div>
+    <div class="clmn-12 center-footer notes">
+        <div class="float-left">Copyright © 2012-2013 <strong>colibri</strong> Project. {% trans "All rights reserved"
+            %}.
+        </div>
+        <div class="float-right">{% trans "Please read our" %} <a href="/terms">{% trans "Terms Of Use" %}</a></div>
+    </div>
+</div>
+<script id="_webcolibri_script_tag" type="text/javascript">
+    window.webcolibriWidgetInit = window.webcolibriWidgetInit || function () {
+        webcolibri.init({
+            licenseCode: "~2024bc04"
+        }).onReady(function () {
+                    webcolibri.render();
+                });
+    };
+
+    (function (d) {
+        var _we = d.createElement('script');
+        _we.type = 'text/javascript';
+        _we.async = true;
+        _we.src = (d.location.protocol == 'https:' ? "//ssl.widgets.webcolibri.com" : "//cdn.widgets.webcolibri.com") + "/js/widget/webcolibri-min-v-3.0.js";
+        var _sNode = d.getElementById('_webcolibri_script_tag');
+        _sNode.parentNode.insertBefore(_we, _sNode);
+    })(document);
+</script>
+<!-- END of wrapper-footer -->
+</body>
+</html>

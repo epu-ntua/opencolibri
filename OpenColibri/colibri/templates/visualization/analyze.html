@@ -1,0 +1,139 @@
+﻿{% load i18n %}
+{% load l10n %}
+<div id="container" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+<div style="border-bottom:1px solid black;margin-bottom:10px">
+    <div style="align:center"><i>{% trans "K-Means clustering Results" %}</i></div>
+    <table style="font-size:11px" class="table table-bordered">
+        {% for x in clusters %}
+        <tr>
+            <td>
+                <span style="color:#006C71"><b>{% trans "Cluster " %} {{forloop.counter}} </b></span>
+            </td>
+            {% for row in x %}
+            <td>
+                <b>{{row.0}}</b></br>
+                ({{row.1}},{{row.2}})
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+<script>
+    function createChart() {
+        $('#container').highcharts({
+            chart: {
+                type: 'scatter',
+                zoomType: 'xy'
+            },
+            credits: {
+                text: 'colibri eInfrastructure',
+                href: 'http://www.colibridata.eu'
+            },
+            title: {
+                text: ' K-Means Clustering Analysis'
+            },
+            subtitle: {
+                text: 'Clusters: ' + $("#numberOfClusters").val()
+            },
+            xAxis: {
+                title: {
+                    enabled: true,
+                    text: $("#attributeAColumn option:selected").text()
+                },
+                startOnTick: true,
+                endOnTick: true,
+                showLastLabel: true
+            },
+            yAxis: {
+                title: {
+                    text: $("#attributeBColumn option:selected").text()
+                }
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'left',
+                verticalAlign: 'top',
+                x: 100,
+                y: 70,
+                floating: true,
+                backgroundColor: '#FFFFFF',
+                borderWidth: 1
+            },
+            plotOptions: {
+                scatter: {
+                    marker: {
+                        radius: 5,
+                        states: {
+                            hover: {
+                                enabled: true,
+                                lineColor: 'rgb(100,100,100)'
+                            }
+                        }
+                    },
+                    states: {
+                        hover: {
+                            marker: {
+                                enabled: false
+                            }
+                        }
+                    },
+                    tooltip: {
+                        headerFormat: '<b>{series.name}</b><br>',
+                        pointFormat: '{point.name} {point.x} , {point.y} '
+                    }
+                }
+            },
+            series: [
+                    { % for x in clusters %}
+        {
+            name: 'Cluster ' + {
+            {
+                forloop.counter
+            }
+        }
+    ,
+        data: [
+                { % for point in x %
+    }
+    {
+        name: '{{point.0}}',
+                x
+    :
+        {
+            {
+                point
+                .1 | unlocalize
+            }
+        }
+    ,
+        y: {
+            {
+                point
+                .2 | unlocalize
+            }
+        }
+    }
+    ,
+    {%
+        endfor %
+    }
+
+    ]
+    }
+    {%
+        if not forloop.last %
+    }
+    ,
+    {%
+        endif %
+    }
+    {%
+        endfor %
+    }
+    ]
+    })
+    ;
+    }
+</script>

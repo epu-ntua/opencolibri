@@ -1,0 +1,5151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Valerie Brasse <vbrasse@is4ri.com>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-04-12 22:08+0300\n"
+"PO-Revision-Date: 2013-06-10 22:35+0200\n"
+"Last-Translator: Valerie Brasse <vbrasse@is4ri.com>\n"
+"Language-Team: French <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Translated-Using: django-rosetta 0.7.1\n"
+
+#: .\allauth\account\forms.py:35 .\allauth\account\forms.py:51
+#: .\allauth\account\forms.py:236 .\allauth\account\forms.py:352
+msgid "Password"
+msgstr "Mot de passe"
+
+#: .\allauth\account\forms.py:44
+msgid "Password must be a minimum of {0} characters."
+msgstr "Le mot de passe doit avoir au moins {0} charactères."
+
+#: .\allauth\account\forms.py:53
+msgid "Remember Me"
+msgstr "Mémoriser"
+
+#: .\allauth\account\forms.py:64
+msgid "E-mail address"
+msgstr "Adresse e-mail"
+
+#: .\allauth\account\forms.py:65 .\allauth\account\forms.py:184
+#: .\allauth\account\forms.py:302 .\allauth\account\forms.py:369
+msgid "E-mail"
+msgstr "E-mail"
+
+#: .\allauth\account\forms.py:70 .\allauth\account\forms.py:71
+#: .\allauth\account\forms.py:170
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: .\allauth\account\forms.py:78
+msgid "Username or e-mail"
+msgstr "Nom d'utilisateur ou e-mail"
+
+#: .\allauth\account\forms.py:79
+msgid "Login"
+msgstr "Connexion"
+
+#: .\allauth\account\forms.py:112
+msgid "This account is currently inactive."
+msgstr "Ce compte est actuellement inactif."
+
+#: .\allauth\account\forms.py:116
+msgid "The e-mail address and/or password you specified are not correct."
+msgstr "L'adresse e-mail et/ou le mot de passe entré(es) est/sont incorrect(es)."
+
+#: .\allauth\account\forms.py:120
+msgid "The username and/or password you specified are not correct."
+msgstr "Le nom d'utilisateur et/ou le mot de passe entré(s) est/sont incorrect(s)."
+
+#: .\allauth\account\forms.py:123
+msgid "The login and/or password you specified are not correct."
+msgstr "Le nom de connexion et/ou le mot de passe entré(s) est/sont incorrect(s)."
+
+#: .\allauth\account\forms.py:187
+msgid "E-mail (optional)"
+msgstr "E-mail (non requis)"
+
+#: .\allauth\account\forms.py:195
+msgid "Usernames can only contain letters, digits and @/./+/-/_."
+msgstr "Les noms d'utilisateurs ne peuvent contenir que des lettres, chiffres et @/./+/-/_."
+
+#: .\allauth\account\forms.py:201
+msgid "This username is already taken. Please choose another."
+msgstr "Ce nom d'utilisateur est déjà pris. Merci d'en choisir un autre."
+
+#: .\allauth\account\forms.py:209
+msgid "A user is already registered with this e-mail address."
+msgstr "Un utilisateur est déjà enregistré avec cette adresse e-mail."
+
+#: .\allauth\account\forms.py:237 .\allauth\account\forms.py:353
+msgid "Password (again)"
+msgstr "Mot de passe (de nouveau)"
+
+#: .\allauth\account\forms.py:265 .\allauth\account\forms.py:342
+#: .\allauth\account\forms.py:358 .\allauth\account\forms.py:426
+msgid "You must type the same password each time."
+msgstr "Vous devez entrer le même mot de passe à chaque fois."
+
+#: .\allauth\account\forms.py:310
+msgid "This e-mail address is already associated with this account."
+msgstr "Cette adresse e-mail est déjà associée avec ce compte."
+
+#: .\allauth\account\forms.py:311
+msgid "This e-mail address is already associated with another account."
+msgstr "Cette adresse e-mail est déjà associée avec un autre compte."
+
+#: .\allauth\account\forms.py:330
+msgid "Current Password"
+msgstr "Mot de passe actuel"
+
+#: .\allauth\account\forms.py:331 .\allauth\account\forms.py:414
+msgid "New Password"
+msgstr "Nouveau mot de passe"
+
+#: .\allauth\account\forms.py:332 .\allauth\account\forms.py:415
+msgid "New Password (again)"
+msgstr "Nouveau mot de passe (de nouveau)"
+
+#: .\allauth\account\forms.py:336
+msgid "Please type your current password."
+msgstr "Veuillez entrer votre mot de passe actuel."
+
+#: .\allauth\account\forms.py:379
+msgid "The e-mail address is not assigned to any user account"
+msgstr "L'adresse e-mail n'est associée à aucun compte utilisateur."
+
+#: .\allauth\account\models.py:28
+msgid "email address"
+msgstr "adresse email"
+
+#: .\allauth\account\models.py:29
+msgid "email addresses"
+msgstr "adresses email"
+
+#: .\allauth\account\models.py:78
+msgid "email confirmation"
+msgstr "confirmation de l'email"
+
+#: .\allauth\account\models.py:79
+msgid "email confirmations"
+msgstr "confirmation des email"
+
+#: .\allauth\account\utils.py:105
+#, python-format
+msgid "Successfully signed in as %(user)s."
+msgstr "Connecté avec succès en tant que %(user)s."
+
+#: .\allauth\account\utils.py:178 .\allauth\account\views.py:167
+#: .\allauth\account\views.py:186
+#, python-format
+msgid "Confirmation e-mail sent to %(email)s"
+msgstr "E-mail de confirmation envoyé à %(email)s"
+
+#: .\allauth\account\views.py:92
+#, python-format
+msgid "You have confirmed %(email)s."
+msgstr "Vous avez confirmé %(email)s."
+
+#: .\allauth\account\views.py:204
+#, python-format
+msgid "You cannot remove your primary e-mail address (%(email)s)"
+msgstr "Vous ne pouvez pas effacer votre adresse e-mail principale (%(email)s)"
+
+#: .\allauth\account\views.py:214
+#, python-format
+msgid "Removed e-mail address %(email)s"
+msgstr "Adresse e-mail effacée %(email)s"
+
+#: .\allauth\account\views.py:240
+msgid "Your primary e-mail address must be verified"
+msgstr "Votre adresse e-mail principale doit être vérifiée"
+
+#: .\allauth\account\views.py:252
+msgid "Primary e-mail address set"
+msgstr "Adresse e-mail principale définie"
+
+#: .\allauth\account\views.py:281 .\allauth\account\views.py:358
+msgid "Password successfully changed."
+msgstr "Mot de passe changé avec succès."
+
+#: .\allauth\account\views.py:306
+msgid "Password successfully set."
+msgstr "Mot de passe défini avec succès."
+
+#: .\allauth\account\views.py:374
+#: .\allauth\templates\account\logout.html.py:18
+msgid "You have signed out."
+msgstr "Vous êtes déconnecté."
+
+#: .\allauth\socialaccount\forms.py:47
+msgid "Your account has no password set up."
+msgstr "Votre compte n'a pas de mot de passe défini."
+
+#: .\allauth\socialaccount\forms.py:51
+msgid "Your account has no verified e-mail address."
+msgstr "Votre compte n'a aucune adresse e-mail vérifiée."
+
+#: .\allauth\socialaccount\helpers.py:123
+msgid "The social account has been connected"
+msgstr "Le compte social a été connecté"
+
+#: .\allauth\socialaccount\views.py:54
+msgid "The social account has been disconnected"
+msgstr "Le compte social a été déconnecté"
+
+#: .\allauth\socialaccount\providers\oauth\client.py:84
+#, python-format
+msgid "Invalid response while obtaining request token from \"%s\"."
+msgstr "Réponse invalide lors de l'obtention du jeton de demande de \"%s\"."
+
+#: .\allauth\socialaccount\providers\oauth\client.py:107
+#, python-format
+msgid "Invalid response while obtaining access token from \"%s\"."
+msgstr "Réponse invalide lors de l'obtention du jeton d'accès de \"%s\"."
+
+#: .\allauth\socialaccount\providers\oauth\client.py:120
+#, python-format
+msgid "No request token saved for \"%s\"."
+msgstr "Pas de jeton de demande sauvé pour \"%s\"."
+
+#: .\allauth\socialaccount\providers\oauth\client.py:168
+#, python-format
+msgid "No access token saved for \"%s\"."
+msgstr "Pas de jeton d'accès sauvé pour \"%s\"."
+
+#: .\allauth\socialaccount\providers\oauth\client.py:188
+#, python-format
+msgid "No access to private resources at \"%s\"."
+msgstr "Pas d'accès aux ressources privées de \"%s\"."
+
+#: .\allauth\templates\account\email.html.py:6
+msgid "Account"
+msgstr "Compte"
+
+#: .\allauth\templates\account\email.html.py:15
+msgid "Email Addresses"
+msgstr "Adresses email"
+
+#: .\allauth\templates\account\email.html.py:19
+msgid "The following e-mail addresses are associated with your account:"
+msgstr "Voici les adresses e-mail associées avec votre compte:"
+
+#: .\allauth\templates\account\email.html.py:33
+msgid "Verified"
+msgstr "Vérifié(e)"
+
+#: .\allauth\templates\account\email.html.py:35
+msgid "Unverified"
+msgstr "Non-vérifiée"
+
+#: .\allauth\templates\account\email.html.py:37
+msgid "Primary"
+msgstr "Principal(e)"
+
+#: .\allauth\templates\account\email.html.py:43
+msgid "Make Primary"
+msgstr "Rendre principal(e)"
+
+#: .\allauth\templates\account\email.html.py:44
+msgid "Re-send Verification"
+msgstr "Renvoyer la vérification"
+
+#: .\allauth\templates\account\email.html.py:45
+#: .\allauth\templates\socialaccount\connections.html.py:43
+#: .\colibri\templates\dataset\_edit.html.py:18
+#: .\old\django-basic-apps\basic\comments\templates\comments\delete.html.py:20
+msgid "Remove"
+msgstr "Retirer"
+
+#: .\allauth\templates\account\email.html.py:52
+msgid "Warning:"
+msgstr "Attention:"
+
+#: .\allauth\templates\account\email.html.py:52
+msgid ""
+"You currently do not have any e-mail address set up. You should really add "
+"an e-mail address so you can receive notifications, reset your password, etc."
+msgstr "Actuellement, aucune adresse e-mail n'est définie. Vous devriez ajouter une adresse e-mail afin de recevoir des notifications, réinitialiser votre mot de passe, etc."
+
+#: .\allauth\templates\account\email.html.py:57
+msgid "Add E-mail Address"
+msgstr "Ajouter une adresse e-mail"
+
+#: .\allauth\templates\account\email.html.py:62
+msgid "Add E-mail"
+msgstr "Ajouter un e-mail"
+
+#: .\allauth\templates\account\email.html.py:75
+msgid "Do you really want to remove the selected e-mail address?"
+msgstr "Voulez-vous vraiment retirer l'adresse e-mail sélectionnée?"
+
+#: .\allauth\templates\account\email_confirm.html.py:7
+#: .\allauth\templates\account\email_confirmed.html.py:6
+#: .\allauth\templates\account\email_confirmed.html.py:16
+#: .\allauth\templates\account\email\email_confirmation_subject.txt.py:3
+msgid "Confirm E-mail Address"
+msgstr "Confirmer l'adresse e-mail"
+
+#: .\allauth\templates\account\email_confirm.html.py:17
+msgid "Email confirmation"
+msgstr "Confirmation de l'email"
+
+#: .\allauth\templates\account\email_confirm.html.py:25
+#, python-format
+msgid ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
+"address for user %(user_display)s."
+msgstr "Veuillez confirmer que <a href=\"mailto:%(email)s\">%(email)s</a> est une adresse e-mail pour l'utilisateur %(user_display)s."
+
+#: .\allauth\templates\account\email_confirm.html.py:29
+msgid "Confirm"
+msgstr "Confirmer"
+
+#: .\allauth\templates\account\email_confirm.html.py:36
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please <a href="
+"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+msgstr "Ce lien de confirmation d'e-mail a expiré ou est invalide. Veuillez <a href=\"%(email_url)s\">générer une nouvelle demande de confirmation d'e-mail </a>."
+
+#: .\allauth\templates\account\email_confirmed.html.py:22
+#, python-format
+msgid ""
+"You have confirmed that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-"
+"mail address for user %(user_display)s."
+msgstr "Vous avez confirmé que <a href=\"mailto:%(email)s\">%(email)s</a> est une adresse e-mail pour l'utilisateur %(user_display)s."
+
+#: .\allauth\templates\account\login.html.py:7
+#: .\allauth\templates\account\login.html.py:16
+#: .\allauth\templates\account\login.html.py:46
+msgid "Sign In"
+msgstr "Connexion"
+
+#: .\allauth\templates\account\login.html.py:47
+msgid "or"
+msgstr "ou"
+
+#: .\allauth\templates\account\login.html.py:47
+msgid " Sign-up"
+msgstr " Inscription"
+
+#: .\allauth\templates\account\login.html.py:48
+msgid "(forgot password?)"
+msgstr "(oubli de mot de passe?)"
+
+#: .\allauth\templates\account\logout.html.py:5
+#: .\allauth\templates\account\logout.html.py:14
+msgid "Signed Out"
+msgstr "Deconnecté"
+
+#: .\allauth\templates\account\password_change.html.py:4
+#: .\allauth\templates\account\password_change.html.py:7
+#: .\allauth\templates\account\password_change.html.py:12
+#: .\allauth\templates\account\password_reset_from_key.html.py:5
+#: .\allauth\templates\account\password_reset_from_key.html.py:8
+msgid "Change Password"
+msgstr "Changer le mot de passe"
+
+#: .\allauth\templates\account\password_delete.html.py:5
+#: .\allauth\templates\account\password_delete.html.py:8
+msgid "Delete Password"
+msgstr "Effacer le mot de passe"
+
+#: .\allauth\templates\account\password_delete.html.py:9
+msgid ""
+"You may delete your password since you are currently logged in using OpenID."
+msgstr "Vous pouvez effacer votre mot de passe car vous êtes actuellement connecté via OpenID."
+
+#: .\allauth\templates\account\password_delete.html.py:12
+msgid "delete my password"
+msgstr "effacer mon mot de passe"
+
+#: .\allauth\templates\account\password_delete_done.html.py:5
+#: .\allauth\templates\account\password_delete_done.html.py:8
+msgid "Password Deleted"
+msgstr "Mot de passe effacé"
+
+#: .\allauth\templates\account\password_delete_done.html.py:9
+msgid "Your password has been deleted."
+msgstr "Votre mot de passe a été effacé"
+
+#: .\allauth\templates\account\password_reset.html.py:6
+#: .\allauth\templates\account\password_reset.html.py:15
+#: .\allauth\templates\account\password_reset_done.html.py:6
+#: .\allauth\templates\account\password_reset_done.html.py:15
+msgid "Password Reset"
+msgstr "Réinitialisation de mot de passe"
+
+#: .\allauth\templates\account\password_reset.html.py:23
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
+msgstr "Mot de passe oublié? Entrez votre adresse e-mail ci-dessous, et nous vous enverrons un e-mail vous permettant de le réinitialiser."
+
+#: .\allauth\templates\account\password_reset.html.py:28
+msgid "Reset My Password"
+msgstr "Réinitialiser mon mot de passe"
+
+#: .\allauth\templates\account\password_reset.html.py:31
+msgid "Please contact us if you have any trouble resetting your password."
+msgstr "Veuillez nous contacter en cas de problème pour réinitialiser votre mot de passe."
+
+#: .\allauth\templates\account\password_reset_done.html.py:23
+msgid ""
+"We have sent you an e-mail. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr "Un e-mail vous a été envoyé. Veuillez nous contacter si vous ne l'avez pas reçu d'ici quelques minutes."
+
+#: .\allauth\templates\account\password_reset_from_key.html.py:8
+msgid "Bad Token"
+msgstr "Mauvais jeton"
+
+#: .\allauth\templates\account\password_reset_from_key.html.py:12
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
+msgstr "Le lien de réinitialisation du mot de passe était invalide, probablement car il a déjà été utilisé. Veuillez demander une <a href=\"%(passwd_reset_url)s\">nouvelle réinitialisation de mot de passe</a>."
+
+#: .\allauth\templates\account\password_reset_from_key.html.py:18
+msgid "change password"
+msgstr "changer le mot de passe"
+
+#: .\allauth\templates\account\password_reset_from_key.html.py:21
+msgid "Your password is now changed."
+msgstr "Votre mot de passe est maintenant changé."
+
+#: .\allauth\templates\account\password_set.html.py:5
+#: .\allauth\templates\account\password_set.html.py:8
+#: .\allauth\templates\account\password_set.html.py:13
+msgid "Set Password"
+msgstr "Définir le mot de passe"
+
+#: .\allauth\templates\account\signup.html.py:6
+#: .\allauth\templates\account\signup.html.py:26
+#: .\colibri\templates\base.html.py:84 .\colibri\templates\wiki\base.html.py:99
+msgid "Register"
+msgstr "S'inscrire"
+
+#: .\allauth\templates\account\signup.html.py:42
+#, python-format
+msgid ""
+"Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
+msgstr "Vous avez déjà un compte? Alors veuillez <a href=\"%(login_url)s\">vous connecter</a>."
+
+#: .\allauth\templates\account\signup.html.py:50
+#: .\allauth\templates\socialaccount\signup.html.py:14
+#: .\allauth\templates\socialaccount\signup.html.py:27
+msgid "Sign Up"
+msgstr "S'inscrire"
+
+#: .\allauth\templates\account\verification_sent.html.py:5
+#: .\allauth\templates\account\verification_sent.html.py:8
+#: .\allauth\templates\account\verified_email_required.html.py:6
+#: .\allauth\templates\account\verified_email_required.html.py:9
+msgid "Verify Your E-mail Address"
+msgstr "Vérifier votre adresse e-mail"
+
+#: .\allauth\templates\account\verification_sent.html.py:10
+#, python-format
+msgid ""
+"We have sent an e-mail to <a href=\"mailto:%(email)s\">%(email)s</a> for "
+"verification. Follow the link provided to finalize the signup process. "
+"Please contact us if you do not receive it within a few minutes."
+msgstr "Un e-mail a été envoyé à <a href=\"mailto:%(email)s\">%(email)s</a> pour vérification. Suivez le lien fourni pour finaliser le processus d'inscription. Veuillez nous contacter si vous ne l'avez pas reçu d'ici quelques minutes."
+
+#: .\allauth\templates\account\verified_email_required.html.py:13
+msgid ""
+"This part of the site requires us to verify that\n"
+"you are who you claim to be. For this purpose, we require that you\n"
+"verify ownership of your e-mail address. "
+msgstr "Cette partie du site nécessite que nous vérifiions que\nvous êtes celui que vous prétendez être. Pour cela, il est nécessaire\nque vous vérifiiez la propriété de votre adresse e-mail. "
+
+#: .\allauth\templates\account\verified_email_required.html.py:17
+msgid ""
+"We have sent an e-mail to you for\n"
+"verification. Please click on the link inside this e-mail. Please\n"
+"contact us if you do not receive it within a few minutes."
+msgstr "Un e-mail vous a été envoyé pour\nvérification. Suivez le lien fourni dans cet e-mail. Veuillez\nnous contacter si vous ne l'avez pas reçu d'ici quelques minutes."
+
+#: .\allauth\templates\account\verified_email_required.html.py:21
+#, python-format
+msgid ""
+"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
+"mail address</a>."
+msgstr "<strong>Note:</strong> vous pouvez encore <a href=\"%(email_url)s\">changer votre adresse e-mail</a>."
+
+#: .\allauth\templates\account\email\email_confirmation_message.txt.py:1
+#, python-format
+msgid ""
+"User %(user_display)s at %(site_name)s has given this as an email address.\n"
+"\n"
+"To confirm this is correct, go to %(activate_url)s\n"
+msgstr "L'utilisateur %(user_display)s de %(site_name)s a fourni cette adresse e-mail.\n\nPour confirmer que c'est correct, suivez ce lien %(activate_url)s\n"
+
+#: .\allauth\templates\account\email\password_reset_key_message.txt.py:1
+#, python-format
+msgid ""
+"You're receiving this e-mail because you or someone else has requested a "
+"password for your user account at %(site_domain)s.\n"
+"It can be safely ignored if you did not request a password reset. Click the "
+"link below to reset your password.\n"
+"\n"
+"%(password_reset_url)s\n"
+"\n"
+"In case you forgot, your username is %(username)s.\n"
+"\n"
+"Thanks for using our site!\n"
+msgstr "Vous recevez cet e-mail car vous ou quelqu'un a demandé un mot de passe pour votre compte utilisateur à %(site_domain)s. \n Ignorez-le si vous n'avez pas fait de demande. Cliquez sur le lien ci-dessous pour réinitialiser votre mot de passe. \n\n%(password_reset_url)s\n\nEn cas d'oubli, votre nom d'utilisateur est %(username)s.\n\nMerci d'utiliser notre site! \n"
+
+#: .\allauth\templates\account\email\password_reset_key_subject.txt.py:3
+msgid "Password Reset E-mail"
+msgstr "E-mail de réinitialisation de mot de passe"
+
+#: .\allauth\templates\account\snippets\already_logged_in.html.py:5
+msgid "Note"
+msgstr "Note"
+
+#: .\allauth\templates\account\snippets\already_logged_in.html.py:5
+#, python-format
+msgid "you are already logged in as %(user_display)s."
+msgstr "vous êtes déjà connecté en tant que %(user_display)s."
+
+#: .\allauth\templates\openid\login.html.py:10
+msgid "OpenID Sign In"
+msgstr "Connexion via OpenID"
+
+#: .\allauth\templates\socialaccount\account_inactive.html.py:5
+msgid "Account Inactive"
+msgstr "Compte inactif"
+
+#: .\allauth\templates\socialaccount\account_inactive.html.py:14
+msgid "Inactive account"
+msgstr "Compte inactif"
+
+#: .\allauth\templates\socialaccount\account_inactive.html.py:18
+msgid "This account is inactive."
+msgstr "Ce compte est inactif."
+
+#: .\allauth\templates\socialaccount\authentication_error.html.py:5
+#: .\allauth\templates\socialaccount\authentication_error.html.py:18
+msgid "Social Network Login Failure"
+msgstr "Échec de la connexion via réseau social"
+
+#: .\allauth\templates\socialaccount\authentication_error.html.py:22
+msgid ""
+"An error occurred while attempting to login via your social network account."
+msgstr "Une erreur s'est produite lors de la tentative de connexion via votre compte de réseau social."
+
+#: .\allauth\templates\socialaccount\connections.html.py:5
+#: .\allauth\templates\socialaccount\connections.html.py:14
+msgid "Account Connections"
+msgstr "Connexions au compte"
+
+#: .\allauth\templates\socialaccount\connections.html.py:19
+msgid ""
+"You can sign in to your account using any of the following third party "
+"accounts:"
+msgstr "Vous pouvez vous connecter à votre compte en utilisant l'un des comptes tiers suivants:"
+
+#: .\allauth\templates\socialaccount\connections.html.py:51
+msgid ""
+"You currently have no social network accounts connected to this account."
+msgstr "Vous n'avez actuellement aucun compte de réseau social lié à ce compte."
+
+#: .\allauth\templates\socialaccount\connections.html.py:54
+msgid "Add a 3rd Party Account"
+msgstr "Ajouter un compte tiers"
+
+#: .\allauth\templates\socialaccount\login_cancelled.html.py:6
+#: .\allauth\templates\socialaccount\login_cancelled.html.py:15
+msgid "Login Cancelled"
+msgstr "Connexion annulée"
+
+#: .\allauth\templates\socialaccount\login_cancelled.html.py:22
+#, python-format
+msgid ""
+"You decided to cancel logging in to our site using one of your existing "
+"accounts. If this was a mistake, please proceed to <a href=\"%(login_url)s"
+"\">sign in</a>."
+msgstr "Vous avez décidé d'annuler la connexion à notre site via l'un de vos comptes existants. Si c'était une erreur, veuillez <a href=\"%(login_url)s\"> vous connecter </a>."
+
+#: .\allauth\templates\socialaccount\signup.html.py:5
+msgid "Signup"
+msgstr "Inscription"
+
+#: .\allauth\templates\socialaccount\signup.html.py:18
+#, python-format
+msgid ""
+"You are about to use your %(provider_name)s account to login to \n"
+"%(site_name)s. As a final step, please complete the following form:"
+msgstr "Vous êtes sur le point d'utiliser votre compte %(provider_name)s pour vous connecter à \n%(site_name)s. Comme dernière étape, veuillez remplir le formulaire ci-dessous:"
+
+#: .\colibri\lists.py:4
+msgid "Please choose a language.."
+msgstr "Veuillez choisir une langue .."
+
+#: .\colibri\lists.py:5
+msgid "Afrikaans"
+msgstr "Afrikaans"
+
+#: .\colibri\lists.py:6
+msgid "Arabic"
+msgstr "Arabe"
+
+#: .\colibri\lists.py:7
+msgid "Azerbaijani"
+msgstr "Azéri"
+
+#: .\colibri\lists.py:8
+msgid "Bulgarian"
+msgstr "Bulgare"
+
+#: .\colibri\lists.py:9
+msgid "Belarusian"
+msgstr "Biélorusse"
+
+#: .\colibri\lists.py:10
+msgid "Bengali"
+msgstr "Bengali"
+
+#: .\colibri\lists.py:11
+msgid "Breton"
+msgstr "Breton"
+
+#: .\colibri\lists.py:12
+msgid "Bosnian"
+msgstr "Bosniaque"
+
+#: .\colibri\lists.py:13
+msgid "Catalan"
+msgstr "Catalan"
+
+#: .\colibri\lists.py:14
+msgid "Czech"
+msgstr "Tchèque"
+
+#: .\colibri\lists.py:15
+msgid "Welsh"
+msgstr "Gallois"
+
+#: .\colibri\lists.py:16
+msgid "Danish"
+msgstr "Danois"
+
+#: .\colibri\lists.py:17
+msgid "German"
+msgstr "Allemand"
+
+#: .\colibri\lists.py:18
+msgid "Greek"
+msgstr "Grec"
+
+#: .\colibri\lists.py:19
+msgid "English"
+msgstr "Anglais"
+
+#: .\colibri\lists.py:20
+msgid "British English"
+msgstr "Anglais britannique"
+
+#: .\colibri\lists.py:21
+msgid "Esperanto"
+msgstr "Espéranto"
+
+#: .\colibri\lists.py:22
+msgid "Spanish"
+msgstr "Espagnol"
+
+#: .\colibri\lists.py:23
+msgid "Argentinian Spanish"
+msgstr "Espagnol argentin"
+
+#: .\colibri\lists.py:24
+msgid "Mexican Spanish"
+msgstr "Espagnol mexicain"
+
+#: .\colibri\lists.py:25
+msgid "Nicaraguan Spanish"
+msgstr "Espagnol nicaraguayen"
+
+#: .\colibri\lists.py:26
+msgid "Venezuelan Spanish"
+msgstr "Espagnol vénézuélien"
+
+#: .\colibri\lists.py:27
+msgid "Estonian"
+msgstr "Estonien"
+
+#: .\colibri\lists.py:28
+msgid "Basque"
+msgstr "Basque"
+
+#: .\colibri\lists.py:29
+msgid "Persian"
+msgstr "Persan"
+
+#: .\colibri\lists.py:30
+msgid "Finnish"
+msgstr "Finnois"
+
+#: .\colibri\lists.py:31
+msgid "French"
+msgstr "Français"
+
+#: .\colibri\lists.py:32
+msgid "Frisian"
+msgstr "Frison"
+
+#: .\colibri\lists.py:33
+msgid "Irish"
+msgstr "Irlandais"
+
+#: .\colibri\lists.py:34
+msgid "Galician"
+msgstr "Galicien"
+
+#: .\colibri\lists.py:35
+msgid "Hebrew"
+msgstr "Hébreu"
+
+#: .\colibri\lists.py:36
+msgid "Hindi"
+msgstr "Hindi"
+
+#: .\colibri\lists.py:37
+msgid "Croatian"
+msgstr "Croate"
+
+#: .\colibri\lists.py:38
+msgid "Hungarian"
+msgstr "Hongrois"
+
+#: .\colibri\lists.py:39
+msgid "Interlingua"
+msgstr "Interlingua"
+
+#: .\colibri\lists.py:40
+msgid "Indonesian"
+msgstr "Indonésien"
+
+#: .\colibri\lists.py:41
+msgid "Icelandic"
+msgstr "Islandais"
+
+#: .\colibri\lists.py:42
+msgid "Italian"
+msgstr "Italien"
+
+#: .\colibri\lists.py:43
+msgid "Japanese"
+msgstr "Japonais"
+
+#: .\colibri\lists.py:44
+msgid "Georgian"
+msgstr "Géorgien"
+
+#: .\colibri\lists.py:45
+msgid "Kazakh"
+msgstr "Kazakh"
+
+#: .\colibri\lists.py:46
+msgid "Khmer"
+msgstr "Khmer"
+
+#: .\colibri\lists.py:47
+msgid "Kannada"
+msgstr "Kannada"
+
+#: .\colibri\lists.py:48
+msgid "Korean"
+msgstr "Coréen"
+
+#: .\colibri\lists.py:49
+msgid "Luxembourgish"
+msgstr "Luxembourgeois"
+
+#: .\colibri\lists.py:50
+msgid "Lithuanian"
+msgstr "Lituanien"
+
+#: .\colibri\lists.py:51
+msgid "Latvian"
+msgstr "Letton"
+
+#: .\colibri\lists.py:52
+msgid "Macedonian"
+msgstr "Macédonien"
+
+#: .\colibri\lists.py:53
+msgid "Malayalam"
+msgstr "Malayalam"
+
+#: .\colibri\lists.py:54
+msgid "Mongolian"
+msgstr "Mongol"
+
+#: .\colibri\lists.py:55
+msgid "Norwegian Bokmal"
+msgstr "Norvégien bokmål"
+
+#: .\colibri\lists.py:56
+msgid "Nepali"
+msgstr "Népalais"
+
+#: .\colibri\lists.py:57
+msgid "Dutch"
+msgstr "Néerlandais"
+
+#: .\colibri\lists.py:58
+msgid "Norwegian Nynorsk"
+msgstr "Norvégien nynorsk"
+
+#: .\colibri\lists.py:59
+msgid "Punjabi"
+msgstr "Pendjabi"
+
+#: .\colibri\lists.py:60
+msgid "Polish"
+msgstr "Polonais"
+
+#: .\colibri\lists.py:61
+msgid "Portuguese"
+msgstr "Portugais"
+
+#: .\colibri\lists.py:62
+msgid "Brazilian Portuguese"
+msgstr "Portugais brésilien"
+
+#: .\colibri\lists.py:63
+msgid "Romanian"
+msgstr "Roumain"
+
+#: .\colibri\lists.py:64
+msgid "Russian"
+msgstr "Russe"
+
+#: .\colibri\lists.py:65
+msgid "Slovak"
+msgstr "Slovaque"
+
+#: .\colibri\lists.py:66
+msgid "Slovenian"
+msgstr "Slovène"
+
+#: .\colibri\lists.py:67
+msgid "Albanian"
+msgstr "Albanais"
+
+#: .\colibri\lists.py:68
+msgid "Serbian"
+msgstr "Serbe"
+
+#: .\colibri\lists.py:69
+msgid "Serbian Latin"
+msgstr "Latin serbe"
+
+#: .\colibri\lists.py:70
+msgid "Swedish"
+msgstr "Suédois"
+
+#: .\colibri\lists.py:71
+msgid "Swahili"
+msgstr "Swahili"
+
+#: .\colibri\lists.py:72
+msgid "Tamil"
+msgstr "Tamoul"
+
+#: .\colibri\lists.py:73
+msgid "Telugu"
+msgstr "Télougou"
+
+#: .\colibri\lists.py:74
+msgid "Thai"
+msgstr "Thaï"
+
+#: .\colibri\lists.py:75
+msgid "Turkish"
+msgstr "Turc"
+
+#: .\colibri\lists.py:76
+msgid "Tatar"
+msgstr "Tatar"
+
+#: .\colibri\lists.py:77
+msgid "Udmurt"
+msgstr "Oudmourte"
+
+#: .\colibri\lists.py:78
+msgid "Ukrainian"
+msgstr "Ukrainien"
+
+#: .\colibri\lists.py:79
+msgid "Urdu"
+msgstr "Ourdou"
+
+#: .\colibri\lists.py:80
+msgid "Vietnamese"
+msgstr "Vietnamien"
+
+#: .\colibri\lists.py:81
+msgid "Simplified Chinese"
+msgstr "Chinois simplifié"
+
+#: .\colibri\lists.py:82
+msgid "Traditional Chinese"
+msgstr "Chinois traditionnel"
+
+#: .\colibri\lists.py:86
+msgid "Please choose a country.."
+msgstr "Veuillez choisir un pays.."
+
+#: .\colibri\lists.py:87
+msgid "Andorra"
+msgstr "Andorre"
+
+#: .\colibri\lists.py:88
+msgid "United Arab Emirates"
+msgstr "Émirats arabes unis"
+
+#: .\colibri\lists.py:89
+msgid "Afghanistan"
+msgstr "Afghanistan"
+
+#: .\colibri\lists.py:90
+msgid "Antigua & Barbuda"
+msgstr "Antigua-et-Barbuda"
+
+#: .\colibri\lists.py:91
+msgid "Anguilla"
+msgstr "Anguilla"
+
+#: .\colibri\lists.py:92
+msgid "Albania"
+msgstr "Albanie"
+
+#: .\colibri\lists.py:93
+msgid "Armenia"
+msgstr "Arménie"
+
+#: .\colibri\lists.py:94
+msgid "Netherlands Antilles"
+msgstr "Antilles néerlandaises"
+
+#: .\colibri\lists.py:95
+msgid "Angola"
+msgstr "Angola"
+
+#: .\colibri\lists.py:96
+msgid "Antarctica"
+msgstr "Antarctique"
+
+#: .\colibri\lists.py:97
+msgid "Argentina"
+msgstr "Argentine"
+
+#: .\colibri\lists.py:98
+msgid "American Samoa"
+msgstr "Samoa américaine"
+
+#: .\colibri\lists.py:99
+msgid "Austria"
+msgstr "Autriche"
+
+#: .\colibri\lists.py:100
+msgid "Australia"
+msgstr "Australie"
+
+#: .\colibri\lists.py:101
+msgid "Aruba"
+msgstr "Aruba"
+
+#: .\colibri\lists.py:102
+msgid "Azerbaijan"
+msgstr "Azerbaïdjan"
+
+#: .\colibri\lists.py:103
+msgid "Bosnia and Herzegovina"
+msgstr "Bosnie-Herzégovine"
+
+#: .\colibri\lists.py:104
+msgid "Barbados"
+msgstr "Barbade"
+
+#: .\colibri\lists.py:105
+msgid "Bangladesh"
+msgstr "Bangladesh"
+
+#: .\colibri\lists.py:106
+msgid "Belgium"
+msgstr "Belgique"
+
+#: .\colibri\lists.py:107
+msgid "Burkina Faso"
+msgstr "Burkina Faso"
+
+#: .\colibri\lists.py:108
+msgid "Bulgaria"
+msgstr "Bulgarie"
+
+#: .\colibri\lists.py:109
+msgid "Bahrain"
+msgstr "Bahreïn"
+
+#: .\colibri\lists.py:110
+msgid "Burundi"
+msgstr "Burundi"
+
+#: .\colibri\lists.py:111
+msgid "Benin"
+msgstr "Bénin"
+
+#: .\colibri\lists.py:112
+msgid "Bermuda"
+msgstr "Bermudes"
+
+#: .\colibri\lists.py:113
+msgid "Brunei Darussalam"
+msgstr "Brunei Darussalam"
+
+#: .\colibri\lists.py:114
+msgid "Bolivia"
+msgstr "Bolivie"
+
+#: .\colibri\lists.py:115
+msgid "Brazil"
+msgstr "Brésil"
+
+#: .\colibri\lists.py:116
+msgid "Bahama"
+msgstr "Bahamas"
+
+#: .\colibri\lists.py:117
+msgid "Bhutan"
+msgstr "Bhoutan"
+
+#: .\colibri\lists.py:118
+msgid "Bouvet Island"
+msgstr "Île Bouvet"
+
+#: .\colibri\lists.py:119
+msgid "Botswana"
+msgstr "Botswana"
+
+#: .\colibri\lists.py:120
+msgid "Belarus"
+msgstr "Bélarus"
+
+#: .\colibri\lists.py:121
+msgid "Belize"
+msgstr "Belize"
+
+#: .\colibri\lists.py:122
+msgid "Canada"
+msgstr "Canada"
+
+#: .\colibri\lists.py:123
+msgid "Cocos (Keeling) Islands"
+msgstr "Îles Cocos (Keeling)"
+
+#: .\colibri\lists.py:124
+msgid "Central African Republic"
+msgstr "République centrafricaine"
+
+#: .\colibri\lists.py:125
+msgid "Congo"
+msgstr "Congo"
+
+#: .\colibri\lists.py:126
+msgid "Switzerland"
+msgstr "Suisse"
+
+#: .\colibri\lists.py:127
+msgid "Ivory Coast"
+msgstr "Côte d'Ivoire"
+
+#: .\colibri\lists.py:128
+msgid "Cook Iislands"
+msgstr "Îles Cook"
+
+#: .\colibri\lists.py:129
+msgid "Chile"
+msgstr "Chili"
+
+#: .\colibri\lists.py:130
+msgid "Cameroon"
+msgstr "Cameroun"
+
+#: .\colibri\lists.py:131
+msgid "China"
+msgstr "Chine"
+
+#: .\colibri\lists.py:132
+msgid "Colombia"
+msgstr "Colombie"
+
+#: .\colibri\lists.py:133
+msgid "Costa Rica"
+msgstr "Costa Rica"
+
+#: .\colibri\lists.py:134
+msgid "Cuba"
+msgstr "Cuba"
+
+#: .\colibri\lists.py:135
+msgid "Cape Verde"
+msgstr "Cap-Vert"
+
+#: .\colibri\lists.py:136
+msgid "Christmas Island"
+msgstr "Île Christmas"
+
+#: .\colibri\lists.py:137
+msgid "Cyprus"
+msgstr "Chypre"
+
+#: .\colibri\lists.py:138
+msgid "Czech Republic"
+msgstr "République tchèque"
+
+#: .\colibri\lists.py:139
+msgid "Germany"
+msgstr "Allemagne"
+
+#: .\colibri\lists.py:140
+msgid "Djibouti"
+msgstr "Djibouti"
+
+#: .\colibri\lists.py:141
+msgid "Denmark"
+msgstr "Danemark"
+
+#: .\colibri\lists.py:142
+msgid "Dominica"
+msgstr "Dominique"
+
+#: .\colibri\lists.py:143
+msgid "Dominican Republic"
+msgstr "République dominicaine"
+
+#: .\colibri\lists.py:144
+msgid "Algeria"
+msgstr "Algérie"
+
+#: .\colibri\lists.py:145
+msgid "Ecuador"
+msgstr "Équateur"
+
+#: .\colibri\lists.py:146
+msgid "Estonia"
+msgstr "Estonie"
+
+#: .\colibri\lists.py:147
+msgid "Egypt"
+msgstr "Égypte"
+
+#: .\colibri\lists.py:148
+msgid "Western Sahara"
+msgstr "Sahara Occidental"
+
+#: .\colibri\lists.py:149
+msgid "Eritrea"
+msgstr "Érythrée"
+
+#: .\colibri\lists.py:150
+msgid "Spain"
+msgstr "Espagne"
+
+#: .\colibri\lists.py:151
+msgid "Ethiopia"
+msgstr "Éthiopie"
+
+#: .\colibri\lists.py:152
+msgid "Finland"
+msgstr "Finlande"
+
+#: .\colibri\lists.py:153
+msgid "Fiji"
+msgstr "Fidji"
+
+#: .\colibri\lists.py:154
+msgid "Falkland Islands (Malvinas)"
+msgstr "Îles Malouines"
+
+#: .\colibri\lists.py:155
+msgid "Micronesia"
+msgstr "Micronésie"
+
+#: .\colibri\lists.py:156
+msgid "Faroe Islands"
+msgstr "Îles Féroé"
+
+#: .\colibri\lists.py:157
+msgid "France"
+msgstr "France"
+
+#: .\colibri\lists.py:158
+msgid "France, Metropolitan"
+msgstr "France métropolitaine"
+
+#: .\colibri\lists.py:159
+msgid "Gabon"
+msgstr "Gabon"
+
+#: .\colibri\lists.py:160
+msgid "United Kingdom (Great Britain)"
+msgstr "Royaume-Uni (Grande-Bretagne)"
+
+#: .\colibri\lists.py:161
+msgid "Grenada"
+msgstr "Grenade"
+
+#: .\colibri\lists.py:162
+msgid "Georgia"
+msgstr "Géorgie"
+
+#: .\colibri\lists.py:163
+msgid "French Guiana"
+msgstr "Guyane française"
+
+#: .\colibri\lists.py:164
+msgid "Ghana"
+msgstr "Ghana"
+
+#: .\colibri\lists.py:165
+msgid "Gibraltar"
+msgstr "Gibraltar"
+
+#: .\colibri\lists.py:166
+msgid "Greenland"
+msgstr "Groenland"
+
+#: .\colibri\lists.py:167
+msgid "Gambia"
+msgstr "Gambie"
+
+#: .\colibri\lists.py:168
+msgid "Guinea"
+msgstr "Guinée"
+
+#: .\colibri\lists.py:169
+msgid "Guadeloupe"
+msgstr "Guadeloupe"
+
+#: .\colibri\lists.py:170
+msgid "Equatorial Guinea"
+msgstr "Guinée équatoriale"
+
+#: .\colibri\lists.py:171
+msgid "Greece"
+msgstr "Grèce"
+
+#: .\colibri\lists.py:172
+msgid "South Georgia and the South Sandwich Islands"
+msgstr "Géorgie du Sud et les îles Sandwich du Sud"
+
+#: .\colibri\lists.py:173
+msgid "Guatemala"
+msgstr "Guatemala"
+
+#: .\colibri\lists.py:174
+msgid "Guam"
+msgstr "Guam"
+
+#: .\colibri\lists.py:175
+msgid "Guinea-Bissau"
+msgstr "Guinée-Bissau"
+
+#: .\colibri\lists.py:176
+msgid "Guyana"
+msgstr "Guyane"
+
+#: .\colibri\lists.py:177
+msgid "Hong Kong"
+msgstr "Hong-Kong"
+
+#: .\colibri\lists.py:178
+msgid "Heard & McDonald Islands"
+msgstr "Îles Heard et McDonald"
+
+#: .\colibri\lists.py:179
+msgid "Honduras"
+msgstr "Honduras"
+
+#: .\colibri\lists.py:180
+msgid "Croatia"
+msgstr "Croatie"
+
+#: .\colibri\lists.py:181
+msgid "Haiti"
+msgstr "Haïti"
+
+#: .\colibri\lists.py:182
+msgid "Hungary"
+msgstr "Hongrie"
+
+#: .\colibri\lists.py:183
+msgid "Indonesia"
+msgstr "Indonésie"
+
+#: .\colibri\lists.py:184
+msgid "Ireland"
+msgstr "Irlande"
+
+#: .\colibri\lists.py:185
+msgid "Israel"
+msgstr "Israël"
+
+#: .\colibri\lists.py:186
+msgid "India"
+msgstr "Inde"
+
+#: .\colibri\lists.py:187
+msgid "British Indian Ocean Territory"
+msgstr "Territoire britannique de l'océan Indien"
+
+#: .\colibri\lists.py:188
+msgid "Iraq"
+msgstr "Irak"
+
+#: .\colibri\lists.py:189
+msgid "Islamic Republic of Iran"
+msgstr "République islamique d'Iran"
+
+#: .\colibri\lists.py:190
+msgid "Iceland"
+msgstr "Islande"
+
+#: .\colibri\lists.py:191
+msgid "Italy"
+msgstr "Italie"
+
+#: .\colibri\lists.py:192
+msgid "Jamaica"
+msgstr "Jamaïque"
+
+#: .\colibri\lists.py:193
+msgid "Jordan"
+msgstr "Jordanie"
+
+#: .\colibri\lists.py:194
+msgid "Japan"
+msgstr "Japon"
+
+#: .\colibri\lists.py:195
+msgid "Kenya"
+msgstr "Kenya"
+
+#: .\colibri\lists.py:196
+msgid "Kyrgyzstan"
+msgstr "Kirghizistan"
+
+#: .\colibri\lists.py:197
+msgid "Cambodia"
+msgstr "Cambodge"
+
+#: .\colibri\lists.py:198
+msgid "Kiribati"
+msgstr "Kiribati"
+
+#: .\colibri\lists.py:199
+msgid "Comoros"
+msgstr "Comores"
+
+#: .\colibri\lists.py:200
+msgid "St. Kitts and Nevis"
+msgstr "Saint-Kitts-et-Nevis"
+
+#: .\colibri\lists.py:201
+msgid "Korea, Democratic People's Republic of"
+msgstr "Corée, République populaire démocratique de"
+
+#: .\colibri\lists.py:202
+msgid "Korea, Republic of"
+msgstr "Corée, République de"
+
+#: .\colibri\lists.py:203
+msgid "Kuwait"
+msgstr "Koweït"
+
+#: .\colibri\lists.py:204
+msgid "Cayman Islands"
+msgstr "Îles Caïmans"
+
+#: .\colibri\lists.py:205
+msgid "Kazakhstan"
+msgstr "Kazakhstan"
+
+#: .\colibri\lists.py:206
+msgid "Lao People's Democratic Republic"
+msgstr "Laos"
+
+#: .\colibri\lists.py:207
+msgid "Lebanon"
+msgstr "Liban"
+
+#: .\colibri\lists.py:208
+msgid "Saint Lucia"
+msgstr "Sainte-Lucie"
+
+#: .\colibri\lists.py:209
+msgid "Liechtenstein"
+msgstr "Liechtenstein"
+
+#: .\colibri\lists.py:210
+msgid "Sri Lanka"
+msgstr "Sri Lanka"
+
+#: .\colibri\lists.py:211
+msgid "Liberia"
+msgstr "Libéria"
+
+#: .\colibri\lists.py:212
+msgid "Lesotho"
+msgstr "Lesotho"
+
+#: .\colibri\lists.py:213
+msgid "Lithuania"
+msgstr "Lituanie"
+
+#: .\colibri\lists.py:214
+msgid "Luxembourg"
+msgstr "Luxembourg"
+
+#: .\colibri\lists.py:215
+msgid "Latvia"
+msgstr "Lettonie"
+
+#: .\colibri\lists.py:216
+msgid "Libyan Arab Jamahiriya"
+msgstr "Libye"
+
+#: .\colibri\lists.py:217
+msgid "Morocco"
+msgstr "Maroc"
+
+#: .\colibri\lists.py:218
+msgid "Monaco"
+msgstr "Monaco"
+
+#: .\colibri\lists.py:219
+msgid "Moldova, Republic of"
+msgstr "Moldavie"
+
+#: .\colibri\lists.py:220
+msgid "Madagascar"
+msgstr "Madagascar"
+
+#: .\colibri\lists.py:221
+msgid "Marshall Islands"
+msgstr "Îles Marshall"
+
+#: .\colibri\lists.py:222
+msgid "Mali"
+msgstr "Mali"
+
+#: .\colibri\lists.py:223
+msgid "Mongolia"
+msgstr "Mongolie"
+
+#: .\colibri\lists.py:224
+msgid "Myanmar"
+msgstr "Myanmar"
+
+#: .\colibri\lists.py:225
+msgid "Macau"
+msgstr "Macao"
+
+#: .\colibri\lists.py:226
+msgid "Northern Mariana Islands"
+msgstr "Mariannes du Nord"
+
+#: .\colibri\lists.py:227
+msgid "Martinique"
+msgstr "Martinique"
+
+#: .\colibri\lists.py:228
+msgid "Mauritania"
+msgstr "Mauritanie"
+
+#: .\colibri\lists.py:229
+msgid "Monserrat"
+msgstr "Montserrat"
+
+#: .\colibri\lists.py:230
+msgid "Malta"
+msgstr "Malte"
+
+#: .\colibri\lists.py:231
+msgid "Mauritius"
+msgstr "Île Maurice"
+
+#: .\colibri\lists.py:232
+msgid "Maldives"
+msgstr "Maldives"
+
+#: .\colibri\lists.py:233
+msgid "Malawi"
+msgstr "Malawi"
+
+#: .\colibri\lists.py:234
+msgid "Mexico"
+msgstr "Mexique"
+
+#: .\colibri\lists.py:235
+msgid "Malaysia"
+msgstr "Malaisie"
+
+#: .\colibri\lists.py:236
+msgid "Mozambique"
+msgstr "Mozambique"
+
+#: .\colibri\lists.py:237
+msgid "Namibia"
+msgstr "Namibie"
+
+#: .\colibri\lists.py:238
+msgid "New Caledonia"
+msgstr "Nouvelle-Calédonie"
+
+#: .\colibri\lists.py:239
+msgid "Niger"
+msgstr "Niger"
+
+#: .\colibri\lists.py:240
+msgid "Norfolk Island"
+msgstr "Île Norfolk"
+
+#: .\colibri\lists.py:241
+msgid "Nigeria"
+msgstr "Nigéria"
+
+#: .\colibri\lists.py:242
+msgid "Nicaragua"
+msgstr "Nicaragua"
+
+#: .\colibri\lists.py:243
+msgid "Netherlands"
+msgstr "Pays-Bas"
+
+#: .\colibri\lists.py:244
+msgid "Norway"
+msgstr "Norvège"
+
+#: .\colibri\lists.py:245
+msgid "Nepal"
+msgstr "Népal"
+
+#: .\colibri\lists.py:246
+msgid "Nauru"
+msgstr "Nauru"
+
+#: .\colibri\lists.py:247
+msgid "Niue"
+msgstr "Niue"
+
+#: .\colibri\lists.py:248
+msgid "New Zealand"
+msgstr "Nouvelle-Zélande"
+
+#: .\colibri\lists.py:249
+msgid "Oman"
+msgstr "Oman"
+
+#: .\colibri\lists.py:250
+msgid "Panama"
+msgstr "Panama"
+
+#: .\colibri\lists.py:251
+msgid "Peru"
+msgstr "Pérou"
+
+#: .\colibri\lists.py:252
+msgid "French Polynesia"
+msgstr "Polynésie française"
+
+#: .\colibri\lists.py:253
+msgid "Papua New Guinea"
+msgstr "Papouasie-Nouvelle-Guinée"
+
+#: .\colibri\lists.py:254
+msgid "Philippines"
+msgstr "Philippines"
+
+#: .\colibri\lists.py:255
+msgid "Pakistan"
+msgstr "Pakistan"
+
+#: .\colibri\lists.py:256
+msgid "Poland"
+msgstr "Pologne"
+
+#: .\colibri\lists.py:257
+msgid "St. Pierre & Miquelon"
+msgstr "Saint-Pierre-et-Miquelon"
+
+#: .\colibri\lists.py:258
+msgid "Pitcairn"
+msgstr "Pitcairn"
+
+#: .\colibri\lists.py:259
+msgid "Puerto Rico"
+msgstr "Porto Rico"
+
+#: .\colibri\lists.py:260
+msgid "Portugal"
+msgstr "Portugal"
+
+#: .\colibri\lists.py:261
+msgid "Palau"
+msgstr "Palau"
+
+#: .\colibri\lists.py:262
+msgid "Paraguay"
+msgstr "Paraguay"
+
+#: .\colibri\lists.py:263
+msgid "Qatar"
+msgstr "Qatar"
+
+#: .\colibri\lists.py:264
+msgid "Reunion"
+msgstr "Réunion"
+
+#: .\colibri\lists.py:265
+msgid "Romania"
+msgstr "Roumanie"
+
+#: .\colibri\lists.py:266
+msgid "Russian Federation"
+msgstr "Russie"
+
+#: .\colibri\lists.py:267
+msgid "Rwanda"
+msgstr "Rwanda"
+
+#: .\colibri\lists.py:268
+msgid "Saudi Arabia"
+msgstr "Arabie saoudite"
+
+#: .\colibri\lists.py:269
+msgid "Solomon Islands"
+msgstr "Îles Salomon"
+
+#: .\colibri\lists.py:270
+msgid "Seychelles"
+msgstr "Seychelles"
+
+#: .\colibri\lists.py:271
+msgid "Sudan"
+msgstr "Soudan"
+
+#: .\colibri\lists.py:272
+msgid "Sweden"
+msgstr "Suède"
+
+#: .\colibri\lists.py:273
+msgid "Singapore"
+msgstr "Singapour"
+
+#: .\colibri\lists.py:274
+msgid "St. Helena"
+msgstr "Sainte-Hélène"
+
+#: .\colibri\lists.py:275
+msgid "Slovenia"
+msgstr "Slovénie"
+
+#: .\colibri\lists.py:276
+msgid "Svalbard & Jan Mayen Islands"
+msgstr "Îles Svalbard et Jan Mayen"
+
+#: .\colibri\lists.py:277
+msgid "Slovakia"
+msgstr "Slovaquie"
+
+#: .\colibri\lists.py:278
+msgid "Sierra Leone"
+msgstr "Sierra Leone"
+
+#: .\colibri\lists.py:279
+msgid "San Marino"
+msgstr "Saint-Marin"
+
+#: .\colibri\lists.py:280
+msgid "Senegal"
+msgstr "Sénégal"
+
+#: .\colibri\lists.py:281
+msgid "Somalia"
+msgstr "Somalie"
+
+#: .\colibri\lists.py:282
+msgid "Suriname"
+msgstr "Suriname"
+
+#: .\colibri\lists.py:283
+msgid "Sao Tome & Principe"
+msgstr "Sao Tomé-et-Principe"
+
+#: .\colibri\lists.py:284
+msgid "El Salvador"
+msgstr "République du Salvador"
+
+#: .\colibri\lists.py:285
+msgid "Syrian Arab Republic"
+msgstr "Syrie"
+
+#: .\colibri\lists.py:286
+msgid "Swaziland"
+msgstr "Swaziland"
+
+#: .\colibri\lists.py:287
+msgid "Turks & Caicos Islands"
+msgstr "Îles Turks et Caicos"
+
+#: .\colibri\lists.py:288
+msgid "Chad"
+msgstr "Tchad"
+
+#: .\colibri\lists.py:289
+msgid "French Southern Territories"
+msgstr "Terres australes françaises"
+
+#: .\colibri\lists.py:290
+msgid "Togo"
+msgstr "Togo"
+
+#: .\colibri\lists.py:291
+msgid "Thailand"
+msgstr "Thaïlande"
+
+#: .\colibri\lists.py:292
+msgid "Tajikistan"
+msgstr "Tadjikistan"
+
+#: .\colibri\lists.py:293
+msgid "Tokelau"
+msgstr "Tokelau"
+
+#: .\colibri\lists.py:294
+msgid "Turkmenistan"
+msgstr "Turkménistan"
+
+#: .\colibri\lists.py:295
+msgid "Tunisia"
+msgstr "Tunisie"
+
+#: .\colibri\lists.py:296
+msgid "Tonga"
+msgstr "Tonga"
+
+#: .\colibri\lists.py:297
+msgid "East Timor"
+msgstr "Timor oriental"
+
+#: .\colibri\lists.py:298
+msgid "Turkey"
+msgstr "Turquie"
+
+#: .\colibri\lists.py:299
+msgid "Trinidad & Tobago"
+msgstr "Trinité-et-Tobago"
+
+#: .\colibri\lists.py:300
+msgid "Tuvalu"
+msgstr "Tuvalu"
+
+#: .\colibri\lists.py:301
+msgid "Taiwan, Province of China"
+msgstr "Taïwan, Province de Chine"
+
+#: .\colibri\lists.py:302
+msgid "Tanzania, United Republic of"
+msgstr "Tanzanie, République-Unie de"
+
+#: .\colibri\lists.py:303
+msgid "Ukraine"
+msgstr "Ukraine"
+
+#: .\colibri\lists.py:304
+msgid "Uganda"
+msgstr "Ouganda"
+
+#: .\colibri\lists.py:305
+msgid "United States Minor Outlying Islands"
+msgstr "Îles mineures éloignées des États-Unis"
+
+#: .\colibri\lists.py:306
+msgid "United States of America"
+msgstr "États-Unis"
+
+#: .\colibri\lists.py:307
+msgid "Uruguay"
+msgstr "Uruguay"
+
+#: .\colibri\lists.py:308
+msgid "Uzbekistan"
+msgstr "Ouzbékistan"
+
+#: .\colibri\lists.py:309
+msgid "Vatican City State (Holy See)"
+msgstr "Vatican"
+
+#: .\colibri\lists.py:310
+msgid "St. Vincent & the Grenadines"
+msgstr "Saint-Vincent-et-les-Grenadines"
+
+#: .\colibri\lists.py:311
+msgid "Venezuela"
+msgstr "Venezuela"
+
+#: .\colibri\lists.py:312
+msgid "British Virgin Islands"
+msgstr "Îles Vierges britanniques"
+
+#: .\colibri\lists.py:313
+msgid "United States Virgin Islands"
+msgstr "Îles Vierges américaines"
+
+#: .\colibri\lists.py:314
+msgid "Viet Nam"
+msgstr "Vietnam"
+
+#: .\colibri\lists.py:315
+msgid "Vanuatu"
+msgstr "Vanuatu"
+
+#: .\colibri\lists.py:316
+msgid "Wallis & Futuna Islands"
+msgstr "Îles Wallis-et-Futuna"
+
+#: .\colibri\lists.py:317
+msgid "Samoa"
+msgstr "Samoa"
+
+#: .\colibri\lists.py:318
+msgid "Yemen"
+msgstr "Yémen"
+
+#: .\colibri\lists.py:319
+msgid "Mayotte"
+msgstr "Mayotte"
+
+#: .\colibri\lists.py:320
+msgid "Yugoslavia"
+msgstr "Yougoslavie"
+
+#: .\colibri\lists.py:321
+msgid "South Africa"
+msgstr "Afrique du Sud"
+
+#: .\colibri\lists.py:322
+msgid "Zambia"
+msgstr "Zambie"
+
+#: .\colibri\lists.py:323
+msgid "Zaire"
+msgstr "Zaïre"
+
+#: .\colibri\lists.py:324
+msgid "Zimbabwe"
+msgstr "Zimbabwe"
+
+#: .\colibri\lists.py:328
+msgid "I am a..."
+msgstr "Je suis un(e) ..."
+
+#: .\colibri\lists.py:329
+msgid "Citizen"
+msgstr "citoyen(ne)"
+
+#: .\colibri\lists.py:330
+msgid "Researcher"
+msgstr "chercheur(se)"
+
+#: .\colibri\lists.py:331
+msgid "Journalist"
+msgstr "journaliste"
+
+#: .\colibri\lists.py:332
+msgid "Civil Servant"
+msgstr "fonctionnaire"
+
+#: .\colibri\lists.py:333
+msgid "Archivist / Librarian"
+msgstr "archiviste / bibliothécaire"
+
+#: .\colibri\lists.py:334
+msgid "Politician"
+msgstr "homme (femme) politique"
+
+#: .\colibri\lists.py:335
+msgid "Enterpreneur"
+msgstr "entrepreneur(se)"
+
+#: .\colibri\lists.py:336
+msgid "IT expert / Hacker"
+msgstr "programmeur(se) / hacker"
+
+#: .\colibri\lists.py:340
+msgid "Please choose an extension type.."
+msgstr "Veuillez choisir un type d'extension .."
+
+#: .\colibri\lists.py:341 .\colibri\lists.py:621
+msgid "Conversion to other format"
+msgstr "Conversion vers un autre format"
+
+#: .\colibri\lists.py:342 .\colibri\lists.py:622
+msgid "Data Cleansing"
+msgstr "Nettoyage des données"
+
+#: .\colibri\lists.py:343 .\colibri\lists.py:623
+msgid "Metadata Enrichment"
+msgstr "Enrichissement des métadonnées"
+
+#: .\colibri\lists.py:344 .\colibri\lists.py:624
+msgid "Data Enrichment"
+msgstr "Enrichissement des données"
+
+#: .\colibri\lists.py:345 .\colibri\lists.py:625
+msgid "Snapshots of real-time data"
+msgstr "Snapshots de données en temps réel"
+
+#: .\colibri\lists.py:346
+msgid "Combination of Datasets / Mash-ups"
+msgstr "Combinaison de jeux de données / Mash-ups"
+
+#: .\colibri\lists.py:350
+msgid "Awaiting Approval"
+msgstr "En attente d'approbation"
+
+#: .\colibri\lists.py:351
+msgid "Approved"
+msgstr "Approuvé"
+
+#: .\colibri\lists.py:352
+msgid "Rejected"
+msgstr "Rejeté"
+
+#: .\colibri\lists.py:356
+msgid "Agriculture"
+msgstr "Agriculture"
+
+#: .\colibri\lists.py:357
+msgid "Arts, Recreation and Travel"
+msgstr "Arts, loisirs et voyages"
+
+#: .\colibri\lists.py:358
+msgid "Banking, Finance and Insurance"
+msgstr "Banques, Finances et Assurances"
+
+#: .\colibri\lists.py:359
+msgid "Births, Deaths, Marriages and Divorces"
+msgstr "Naissances, décès, mariages et divorces"
+
+#: .\colibri\lists.py:360
+msgid "Business / Enterprises"
+msgstr "Business / Entreprises"
+
+#: .\colibri\lists.py:361
+msgid "Census"
+msgstr "Recensement"
+
+#: .\colibri\lists.py:362
+msgid "Construction and Housing"
+msgstr "Construction et Logement"
+
+#: .\colibri\lists.py:363
+msgid "Contributors"
+msgstr "Contributeurs"
+
+#: .\colibri\lists.py:364
+msgid "Diplomacy"
+msgstr "Diplomatie"
+
+#: .\colibri\lists.py:365
+msgid "Economic"
+msgstr "Économie"
+
+#: .\colibri\lists.py:366
+msgid "Education"
+msgstr "Éducation"
+
+#: .\colibri\lists.py:367
+msgid "Elections"
+msgstr "Élections"
+
+#: .\colibri\lists.py:368
+msgid "Employment"
+msgstr "Emploi"
+
+#: .\colibri\lists.py:369
+msgid "Energy and Utilities"
+msgstr "Énergie et services publics"
+
+#: .\colibri\lists.py:370
+msgid "Environment"
+msgstr "Environnement"
+
+#: .\colibri\lists.py:371
+msgid "Farming"
+msgstr "Élevage"
+
+#: .\colibri\lists.py:372
+msgid "Financials"
+msgstr "Finances"
+
+#: .\colibri\lists.py:373
+msgid "Foreign Commerce and Aid"
+msgstr "Commerce extérieur et humanitaire"
+
+#: .\colibri\lists.py:374
+msgid "Foreign Trade"
+msgstr "Commerce extérieur"
+
+#: .\colibri\lists.py:375
+msgid "Geography and Environment"
+msgstr "Géographie et Environnement"
+
+#: .\colibri\lists.py:376
+msgid "Health and Nutrition"
+msgstr "Santé et nutrition"
+
+#: .\colibri\lists.py:377
+msgid "Income, Expenditures, Poverty, and Wealth"
+msgstr "Revenus, dépenses, pauvreté et richesse"
+
+#: .\colibri\lists.py:378
+msgid "Information and Communications"
+msgstr "Information et communications"
+
+#: .\colibri\lists.py:379
+msgid "International Statistics"
+msgstr "Statistiques internationales"
+
+#: .\colibri\lists.py:380
+msgid "Labor Force, Employment, and Earnings"
+msgstr "Population active, emploi, et revenus"
+
+#: .\colibri\lists.py:381
+msgid "Law Enforcement, Courts, and Prisons"
+msgstr "Police, tribunaux, et prisons"
+
+#: .\colibri\lists.py:382
+msgid "Manufactures"
+msgstr "Usines"
+
+#: .\colibri\lists.py:383
+msgid "Military"
+msgstr "Armée"
+
+#: .\colibri\lists.py:384
+msgid "National Security and Veterans Affairs"
+msgstr "Sécurité nationale et Anciens combattants"
+
+#: .\colibri\lists.py:385
+msgid "Natural Resources"
+msgstr "Ressources naturelles"
+
+#: .\colibri\lists.py:386 .\colibri\lists.py:589
+msgid "Other"
+msgstr "Autre"
+
+#: .\colibri\lists.py:387
+msgid "Population"
+msgstr "Population"
+
+#: .\colibri\lists.py:388
+msgid "Prices"
+msgstr "Prix"
+
+#: .\colibri\lists.py:389
+msgid "Public Agencies Budget and Finances"
+msgstr "Budget et Finances des organismes publics"
+
+#: .\colibri\lists.py:390
+msgid "Public Agencies Employment"
+msgstr "Emploi des organismes publics"
+
+#: .\colibri\lists.py:391
+msgid "Science and Technology"
+msgstr "Sciences et technologies"
+
+#: .\colibri\lists.py:392
+msgid "Social Insurance and Human Services"
+msgstr "Prestations sociales et services sociaux"
+
+#: .\colibri\lists.py:393
+msgid "Space"
+msgstr "Espace"
+
+#: .\colibri\lists.py:394
+msgid "Taxation"
+msgstr "Impôts"
+
+#: .\colibri\lists.py:395
+msgid "Transportation"
+msgstr "Transports"
+
+#: .\colibri\lists.py:396
+msgid "Welfare"
+msgstr "Sécurité sociale"
+
+#: .\colibri\lists.py:397
+msgid "Wholesale and Retail Trade"
+msgstr "Commerce de gros et de détail"
+
+#: .\colibri\lists.py:453
+msgid "Year"
+msgstr "Année"
+
+#: .\colibri\lists.py:454
+msgid "Month"
+msgstr "Mois"
+
+#: .\colibri\lists.py:455
+msgid "Week"
+msgstr "Semaine"
+
+#: .\colibri\lists.py:456
+msgid "Day"
+msgstr "Jour"
+
+#: .\colibri\lists.py:457
+msgid "Hour"
+msgstr "Heure"
+
+#: .\colibri\lists.py:461
+msgid "Worldwide"
+msgstr "Monde entier"
+
+#: .\colibri\lists.py:462
+msgid "Continent"
+msgstr "Continent"
+
+#: .\colibri\lists.py:463
+msgid "Political Union"
+msgstr "Union politique"
+
+#: .\colibri\lists.py:464 .\colibri\templates\dataset\_details -
+#: Copy.html.py:169 Copy.html.py:325
+#: .\colibri\templates\dataset\_details.html.py:198
+#: .\colibri\templates\dataset\_details.html.py:426
+#: .\colibri\templates\dataset\_form.html.py:61
+#: .\colibri\templates\dataset\_index.html.py:13
+#: .\colibri\templates\dataset\_search.html.py:60
+#: .\colibri\templates\opendatasites\datasources_en.html.py:155
+msgid "Country"
+msgstr "Pays"
+
+#: .\colibri\lists.py:465
+msgid "Region"
+msgstr "Region"
+
+#: .\colibri\lists.py:466
+msgid "Locality (City, Town, Village)"
+msgstr "Localité (ville, agglomération, village)"
+
+#: .\colibri\lists.py:467
+msgid "Administrative Area (Province,Municipality, County)"
+msgstr "Zone administrative (province, municipalité, comté)"
+
+#: .\colibri\lists.py:468
+msgid "Neighborhood"
+msgstr "Quartier"
+
+#: .\colibri\lists.py:472
+msgid "My background is..."
+msgstr "Mon domaine est ..."
+
+#: .\colibri\lists.py:473
+msgid "Mathematics"
+msgstr "Mathématiques"
+
+#: .\colibri\lists.py:474
+msgid "Computer and information sciences"
+msgstr "Informatique et sciences de l'information"
+
+#: .\colibri\lists.py:475
+msgid "Physical sciences"
+msgstr "Sciences physiques"
+
+#: .\colibri\lists.py:476
+msgid "Chemical sciences"
+msgstr "Sciences chimiques"
+
+#: .\colibri\lists.py:477
+msgid "Earth and related environmental sciences"
+msgstr "Sciences de la Terre et de l'environnement"
+
+#: .\colibri\lists.py:478
+msgid "Biological sciences"
+msgstr "Sciences biologiques"
+
+#: .\colibri\lists.py:479
+msgid "Other natural sciences"
+msgstr "Autres sciences naturelles"
+
+#: .\colibri\lists.py:480
+msgid "Civil engineering"
+msgstr "Génie civil"
+
+#: .\colibri\lists.py:481
+msgid "Electrical engineering, electronic"
+msgstr "Génie électrique, électronique"
+
+#: .\colibri\lists.py:482
+msgid "engineering, information engineering"
+msgstr "Ingénierie de l'information"
+
+#: .\colibri\lists.py:483
+msgid "Mechanical engineering"
+msgstr "Ingénierie mécanique"
+
+#: .\colibri\lists.py:484
+msgid "Chemical engineering"
+msgstr "Génie chimique"
+
+#: .\colibri\lists.py:485
+msgid "Materials engineering"
+msgstr "Génie des matériaux"
+
+#: .\colibri\lists.py:486
+msgid "Medical engineering"
+msgstr "Ingénierie médicale"
+
+#: .\colibri\lists.py:487
+msgid "Environmental engineering"
+msgstr "Génie de l'environnement"
+
+#: .\colibri\lists.py:488
+msgid "Environmental biotechnology"
+msgstr "Biotechnologie environnementale"
+
+#: .\colibri\lists.py:489
+msgid "Industrial Biotechnology"
+msgstr "Biotechnologie industrielle"
+
+#: .\colibri\lists.py:490
+msgid "Nano-technology"
+msgstr "Nano-technologies"
+
+#: .\colibri\lists.py:491
+msgid "Other engineering and technologies"
+msgstr "Autres domaines techniques et technologiques"
+
+#: .\colibri\lists.py:492
+msgid "Basic medicine"
+msgstr "Médecine fondamentale"
+
+#: .\colibri\lists.py:493
+msgid "Clinical medicine"
+msgstr "Médecine clinique"
+
+#: .\colibri\lists.py:494
+msgid "Health sciences"
+msgstr "Sciences de la santé"
+
+#: .\colibri\lists.py:495
+msgid "Health biotechnology"
+msgstr "Biotechnologies de la santé"
+
+#: .\colibri\lists.py:496
+msgid "Other medical sciences"
+msgstr "Autres sciences médicales"
+
+#: .\colibri\lists.py:497
+msgid "Agriculture, forestry, and fisheries"
+msgstr "Agriculture, sylviculture et pêche"
+
+#: .\colibri\lists.py:498
+msgid "Animal and dairy science"
+msgstr "Zootechnie et science laitière"
+
+#: .\colibri\lists.py:499
+msgid "Veterinary science"
+msgstr "Science vétérinaire"
+
+#: .\colibri\lists.py:500
+msgid "Agricultural biotechnology"
+msgstr "Biotechnologie agricole"
+
+#: .\colibri\lists.py:501
+msgid "Other agricultural sciences"
+msgstr "Autres sciences agricoles"
+
+#: .\colibri\lists.py:502
+msgid "Psychology"
+msgstr "Psychologie"
+
+#: .\colibri\lists.py:503
+msgid "Economics and business"
+msgstr "Économie et commerce"
+
+#: .\colibri\lists.py:504
+msgid "Educational sciences"
+msgstr "Sciences éducatives"
+
+#: .\colibri\lists.py:505
+msgid "Sociology"
+msgstr "Sociologie"
+
+#: .\colibri\lists.py:506
+msgid "Law"
+msgstr "Droit"
+
+#: .\colibri\lists.py:507
+msgid "Political Science"
+msgstr "Sciences politiques"
+
+#: .\colibri\lists.py:508
+msgid "Social and economic geography"
+msgstr "Géographie sociale et économique"
+
+#: .\colibri\lists.py:509
+msgid "Media and communications"
+msgstr "Médias et communication"
+
+#: .\colibri\lists.py:510
+msgid "Other social sciences"
+msgstr "Autres sciences sociales"
+
+#: .\colibri\lists.py:511
+msgid "History and archaeology"
+msgstr "Histoire et archéologie"
+
+#: .\colibri\lists.py:512
+msgid "Languages and literature"
+msgstr "Langues et littérature"
+
+#: .\colibri\lists.py:513
+msgid "Philosophy, ethics and religion"
+msgstr "Philosophie, éthique et religion"
+
+#: .\colibri\lists.py:514
+msgid "Art (arts, history of arts, performing arts, music)"
+msgstr "Arts (arts, histoire des arts, arts de la scène, musique)"
+
+#: .\colibri\lists.py:515
+msgid "Other humanities"
+msgstr "Autres sciences humaines"
+
+#: .\colibri\lists.py:519
+msgid "Backoffice / Service operations"
+msgstr "Backoffice / Exploitation"
+
+#: .\colibri\lists.py:520
+msgid "Survey"
+msgstr "Enquête"
+
+#: .\colibri\lists.py:521
+msgid "Harvest"
+msgstr "Récolte"
+
+#: .\colibri\lists.py:522
+msgid "Internal Research / Experiments"
+msgstr "Recherche interne / Expérimentations"
+
+#: .\colibri\lists.py:577
+msgid "Individual"
+msgstr "Individuel"
+
+#: .\colibri\lists.py:578
+msgid "Organization"
+msgstr "Organisation"
+
+#: .\colibri\lists.py:579
+msgid "Family"
+msgstr "Famille"
+
+#: .\colibri\lists.py:580
+msgid "Family.HouseholdFamily"
+msgstr "Famille / Foyer"
+
+#: .\colibri\lists.py:581
+msgid "Household"
+msgstr "Foyer"
+
+#: .\colibri\lists.py:582
+msgid "HousingUnit"
+msgstr "Unité familiale"
+
+#: .\colibri\lists.py:583
+msgid "EventOrProcess"
+msgstr "Événement ou processus"
+
+#: .\colibri\lists.py:584
+msgid "GeographicUnit"
+msgstr "Unité géographique"
+
+#: .\colibri\lists.py:585
+msgid "TimeUnit"
+msgstr "Unité temporelle"
+
+#: .\colibri\lists.py:586
+msgid "TextUnit"
+msgstr "Unité textuelle"
+
+#: .\colibri\lists.py:587
+msgid "Group"
+msgstr "Groupe"
+
+#: .\colibri\lists.py:588
+msgid "Object"
+msgstr "Objet"
+
+#: .\colibri\lists.py:593
+msgid "Choose the type of item"
+msgstr "Choisissez le type d'élément"
+
+#: .\colibri\lists.py:594
+msgid "Publication"
+msgstr "Publication"
+
+#: .\colibri\lists.py:595
+msgid "Desktop Application"
+msgstr "Application pour PC"
+
+#: .\colibri\lists.py:596
+msgid "Mobile Application"
+msgstr "Application pour mobile"
+
+#: .\colibri\lists.py:597
+msgid "Web Application"
+msgstr "Application web"
+
+#: .\colibri\lists.py:598
+msgid "Web Service / API"
+msgstr "Web Service / API"
+
+#: .\colibri\lists.py:599
+msgid "Visualization image"
+msgstr "Visualisation"
+
+#: .\colibri\lists.py:603
+msgid "Please choose a publication type"
+msgstr "Veuillez choisir un type de publication"
+
+#: .\colibri\lists.py:604
+msgid "Annotation"
+msgstr "Annotation"
+
+#: .\colibri\lists.py:605
+msgid "Article / blog in Internet"
+msgstr "Article / blog sur Internet"
+
+#: .\colibri\lists.py:606
+msgid "Book"
+msgstr "Livres"
+
+#: .\colibri\lists.py:607
+msgid "Book Section / Chapter"
+msgstr "Section de livre / Chapitre"
+
+#: .\colibri\lists.py:608
+msgid "Conference Paper"
+msgstr "Article de conférence"
+
+#: .\colibri\lists.py:609
+msgid "Dissertation"
+msgstr "Thèse"
+
+#: .\colibri\lists.py:610
+msgid "Internal or external report"
+msgstr "Rapport interne ou externe"
+
+#: .\colibri\lists.py:611
+msgid "Journal article (academic)"
+msgstr "Article de revue (universitaire)"
+
+#: .\colibri\lists.py:612
+msgid "Journal article (non academic)"
+msgstr "Article de journal (non universitaire)"
+
+#: .\colibri\lists.py:613
+msgid "Loose-leaf publications"
+msgstr "Publications autonomes"
+
+#: .\colibri\lists.py:614
+msgid "Newspaper article"
+msgstr "Article de journal"
+
+#: .\colibri\lists.py:615
+msgid "Online news agency article"
+msgstr "Article en ligne d'agence de presse"
+
+#: .\colibri\lists.py:619
+msgid "Please choose a request type.."
+msgstr "Veuillez choisir un type de demande .."
+
+#: .\colibri\lists.py:620
+msgid "Looking for a dataset"
+msgstr "Recherche d'un jeu de données"
+
+#: .\colibri\lists.py:626
+msgid "Combination of datasets / Mash-ups"
+msgstr "Combinaison de jeux de données / Mash-ups"
+
+#: .\colibri\lists.py:627
+msgid "Data Verification"
+msgstr "Vérification de données"
+
+#: .\colibri\lists.py:628
+msgid "Freedom of Information Request"
+msgstr "Demande d'accès à l'information"
+
+#: .\colibri\templates\about.html.py:12
+msgid "About colibri project"
+msgstr "À propos du projet colibri"
+
+#: .\colibri\templates\about.html.py:15
+msgid ""
+" The main goal of colibri project is the development and use of a data "
+"infrastructure, incorporating    distributed and diverse public sector "
+"information (PSI) resources, \n"
+"capable of supporting scientific collaboration and    research, particularly "
+"for the Social Science and Humanities (SSH) scientific communities, while "
+"also empowering the\n"
+"deployment of open governmental data towards citizens.The colibri e-"
+"infrastructure is envisaged to promote a highly synergetic approach to "
+"governance research, by providing the ground for experimentation \n"
+"to actors from both ICT and non-ICT related disciplines and scientific "
+"communities, as well as by ensuring that the scientific outcomes are made "
+"accessible\n"
+" to the citizens, so that they can monitor public service delivery and "
+"influence the desion making process."
+msgstr " L'objectif principal du projet colibri est le développement et l'utilisation d'une infrastructure de données rassemblant des ressources distribuées et variées d'informations du secteur public,\n capable de soutenir la collaboration scientifique et la recherche, en particulier les communautés des sciences sociales et humaines (SSH), tout en permettant \n la mise à disposition des données gouvernementales auprès des citoyens. L'infrastructure colibri est conçue pour promouvoir une approche hautement synergique de la recherche sur la gouvernance, en donnant matière à expérimentation \n à des acteurs et communautés scientifiques de disciplines liées aux TIC ou non, et pour s'assurer que les résultats scientifiques soient rendus accessibles \n aux citoyens, afin qu'ils puissent analyser les prestations de service public et influencer le processus de prise de décision."
+
+#: .\colibri\templates\about.html.py:22
+msgid ""
+"Simply put, colibri is a door for researchers that leads them to the world of "
+"Open Government Data. By using  the colibri platform, researchers and "
+"citizens will be able to\n"
+" submit, acquire, search and visualize diverse,     distributed and derived "
+"Public sector datasets from all the countries of the European Union."
+msgstr "Autrement dit, colibri est pour les chercheurs une entrée dans le monde des données gouvernementales ouvertes. En utilisant la plate-forme colibri, les chercheurs et les citoyens seront en mesure de \n soumettre, d'acquérir, de rechercher et de visualiser des jeux de données variés, distribués et modifiés, du secteur public de tous les pays de l'Union Européenne."
+
+#: .\colibri\templates\about.html.py:25
+msgid ""
+"colibri is a Combination of CP- CSA project funded under the European "
+"Commission FP7 Programme."
+msgstr "colibri est une combinaison de projet CP et CSA financé par le 7e PCRD de la Commission Européenne."
+
+#: .\colibri\templates\about.html.py:28
+msgid "For more information visit us on the colibri project website"
+msgstr "Pour plus d'informations visitez le site web du projet colibri"
+
+#: .\colibri\templates\base.html.py:71
+#: .\colibri\templates\profile\_profile.html.py:9
+#: .\colibri\templates\wiki\base.html.py:86
+msgid "Profile"
+msgstr "Profil"
+
+#: .\colibri\templates\base.html.py:72 .\colibri\templates\wiki\base.html.py:87
+msgid "Account Settings"
+msgstr "Paramètres de compte"
+
+#: .\colibri\templates\base.html.py:73 .\colibri\templates\profile.html.py:46
+#: .\colibri\templates\wiki\base.html.py:88
+#: .\messages\templates\messages\base.html.py:8
+#: .\messages\templates\messages\inbox.html.py:10
+#: .\messages\templates\messages\new_message.html.py:10
+msgid "Inbox"
+msgstr "Boîte de réception"
+
+#: .\colibri\templates\base.html.py:76 .\colibri\templates\wiki\base.html.py:91
+msgid "Signout"
+msgstr "Déconnexion"
+
+#: .\colibri\templates\base.html.py:83 .\colibri\templates\wiki\base.html.py:98
+msgid "Sign in"
+msgstr "Connexion"
+
+#: .\colibri\templates\base.html.py:94 .\colibri\templates\wiki\base.html.py:109
+msgid "HOME"
+msgstr "ACCUEIL"
+
+#: .\colibri\templates\base.html.py:95 .\colibri\templates\wiki\base.html.py:110
+msgid "DATASETS"
+msgstr "DONNÉES"
+
+#: .\colibri\templates\base.html.py:97 .\colibri\templates\wiki\base.html.py:112
+msgid "Search Datasets"
+msgstr "Rechercher des jeux de données"
+
+#: .\colibri\templates\base.html.py:98
+#: .\colibri\templates\dataset\_add.html.py:61
+#: .\colibri\templates\wiki\base.html.py:113
+msgid "Add new dataset"
+msgstr "Ajouter un jeu de données"
+
+#: .\colibri\templates\base.html.py:102
+#: .\colibri\templates\wiki\base.html.py:117
+msgid "REQUEST DATA"
+msgstr "DEMANDES"
+
+#: .\colibri\templates\base.html.py:104
+#: .\colibri\templates\wiki\base.html.py:119
+msgid "COMMUNITY"
+msgstr "COMMUNAUTÉ"
+
+#: .\colibri\templates\base.html.py:106
+#: .\colibri\templates\wiki\base.html.py:121
+msgid "Users"
+msgstr "Utilisateurs"
+
+#: .\colibri\templates\base.html.py:109
+#: .\colibri\templates\wiki\base.html.py:124
+msgid "OPEN DATA SITES"
+msgstr "SITES"
+
+#: .\colibri\templates\base.html.py:110
+#: .\colibri\templates\wiki\base.html.py:125
+msgid "WIKI"
+msgstr "WIKI"
+
+#: .\colibri\templates\base.html.py:111
+#: .\colibri\templates\wiki\base.html.py:126
+msgid "ABOUT US"
+msgstr "A PROPOS"
+
+#: .\colibri\templates\base.html.py:113
+#: .\colibri\templates\wiki\base.html.py:128
+msgid "About colibri"
+msgstr "À propos d'colibri"
+
+#: .\colibri\templates\base.html.py:114
+#: .\colibri\templates\wiki\base.html.py:129
+msgid "Contact us"
+msgstr "Nous contacter"
+
+#: .\colibri\templates\base.html.py:115
+#: .\colibri\templates\wiki\base.html.py:130
+msgid "Term Of Use"
+msgstr "CGU"
+
+#: .\colibri\templates\base.html.py:137
+#: .\colibri\templates\wiki\base.html.py:231
+msgid ""
+"colibri is a Combination of CP & CSA project funded under the European "
+"Commission FP7 Programme"
+msgstr "colibri est une combinaison de projet CP et CSA financé par le 7e PCRD de la Commission Européenn"
+
+#: .\colibri\templates\base.html.py:143
+#: .\colibri\templates\wiki\base.html.py:237
+msgid "All rights reserved"
+msgstr "Tous droits réservés."
+
+#: .\colibri\templates\base.html.py:144
+#: .\colibri\templates\wiki\base.html.py:238
+msgid "Please read our"
+msgstr "Veuillez lire nos "
+
+#: .\colibri\templates\base.html.py:144
+#: .\colibri\templates\wiki\base.html.py:238
+msgid "Terms Of Use"
+msgstr "CGU"
+
+#: .\colibri\templates\contact.html.py:12
+#: .\colibri\templates\profile\_edit.html.py:132
+#: .\colibri\templates\profile\_profile.html.py:52
+msgid "Contact"
+msgstr "Contact"
+
+#: .\colibri\templates\index.html.py:60
+msgid "SEARCH FOR PUBLIC DATA"
+msgstr "RECHERCHER DES DONNÉES PUBLIQUES"
+
+#: .\colibri\templates\index.html.py:69
+msgid "GOT YOUR OWN OPEN DATASET?"
+msgstr "VOUS AVEZ DES DONNÉES?"
+
+#: .\colibri\templates\index.html.py:69
+msgid "Click here</a> to add a new Dataset"
+msgstr "Cliquez ici </a> pour ajouter des données"
+
+#: .\colibri\templates\index.html.py:78
+msgid "DIDN’T FIND WHAT YOU WERE LOOKING FOR?"
+msgstr "VOUS N'AVEZ PAS TROUVÉ CE QUE VOUS CHERCHIEZ?"
+
+#: .\colibri\templates\index.html.py:78
+msgid "Ask the Community to get it for you"
+msgstr "Demandez à la communauté de le trouver pour vous"
+
+#: .\colibri\templates\index.html.py:88
+#: .\colibri\templates\profile\_profile.html.py:92
+msgid "Latest Requests"
+msgstr "Les dernières demandes"
+
+#: .\colibri\templates\index.html.py:108
+msgid "has made a request."
+msgstr "a posté une demande."
+
+#: .\colibri\templates\index.html.py:120
+msgid "No recent requests"
+msgstr "Pas de demandes récentes"
+
+#: .\colibri\templates\profile.html.py:36
+#: .\colibri\templates\request-details.html.py:19
+#: .\colibri\templates\request.html.py:22 .\colibri\templates\dataset\_details -
+#: Copy.html.py:73 .\colibri\templates\dataset\_details.html.py:93
+#: .\colibri\templates\dataset\_search.html.py:20
+msgid "Home"
+msgstr "Accueil"
+
+#: .\colibri\templates\profile.html.py:44
+msgid "Profile summary"
+msgstr "Résumé du profil"
+
+#: .\colibri\templates\profile.html.py:45
+msgid "My Groups"
+msgstr "Mes Groupes"
+
+#: .\colibri\templates\request-details.html.py:19
+msgid "Data Requests"
+msgstr "Demandes de données"
+
+#: .\colibri\templates\request-details.html.py:47
+msgid "Like Request"
+msgstr "Demande similaire"
+
+#: .\colibri\templates\request-details.html.py:48
+msgid "Created "
+msgstr "Créé "
+
+#: .\colibri\templates\request-details.html.py:51
+#: .\colibri\templates\request.html.py:111
+msgid "pending request"
+msgstr "Demande en attente"
+
+#: .\colibri\templates\request-details.html.py:54
+#: .\colibri\templates\request.html.py:114
+msgid "Satisfied request"
+msgstr "Demande satisfaite"
+
+#: .\colibri\templates\request-details.html.py:77
+msgid "Replies to the request"
+msgstr "Réponses à la demande"
+
+#: .\colibri\templates\request-details.html.py:87
+#: .\colibri\templates\dataset\_details - Copy.html.py:258
+#, python-format
+msgid "%(comments_count)s reply %(entry_title)s"
+msgid_plural "%(comments_count)s Replies "
+msgstr[0] "%(comments_count)s réponse %(entry_title)s"
+msgstr[1] "%(comments_count)s réponse %(entry_title)s"
+
+#: .\colibri\templates\request-details.html.py:90
+#: .\colibri\templates\dataset\_details - Copy.html.py:261
+#: .\colibri\templates\dataset\_details.html.py:355
+msgid "Comments are closed."
+msgstr "Les commentaires sont clos."
+
+#: .\colibri\templates\request-details.html.py:95
+#: .\colibri\templates\dataset\_details - Copy.html.py:266
+#: .\colibri\templates\dataset\_details.html.py:360
+msgid "Leave a reply"
+msgstr "Laissez une réponse"
+
+#: .\colibri\templates\request-details.html.py:114
+#: .\colibri\templates\dataset\_details - Copy.html.py:284
+#: .\colibri\templates\dataset\_details.html.py:378
+msgid "Please "
+msgstr "Veuillez "
+
+#: .\colibri\templates\request-details.html.py:114
+#: .\colibri\templates\dataset\_details - Copy.html.py:284
+#: .\colibri\templates\dataset\_details.html.py:378
+msgid "login"
+msgstr "vous connecter"
+
+#: .\colibri\templates\request-details.html.py:114
+#: .\colibri\templates\dataset\_details - Copy.html.py:284
+#: .\colibri\templates\dataset\_details.html.py:378
+msgid "to reply."
+msgstr "pour répondre."
+
+#: .\colibri\templates\request.html.py:22
+msgid "Data Request"
+msgstr "Demande de données"
+
+#: .\colibri\templates\request.html.py:31
+msgid "Requests"
+msgstr "Demandes"
+
+#: .\colibri\templates\request.html.py:39
+msgid "Browse by:"
+msgstr "Trier par:"
+
+#: .\colibri\templates\request.html.py:41
+msgid "Date updated"
+msgstr "Date de mise à jour"
+
+#: .\colibri\templates\request.html.py:42
+msgid "Popularity"
+msgstr "Popularité"
+
+#: .\colibri\templates\request.html.py:46 .\colibri\templates\request.html.py:49
+#: .\colibri\templates\requests-add.html.py:85
+msgid "Place a new request"
+msgstr "Faire une nouvelle demande"
+
+#: .\colibri\templates\request.html.py:84
+#: .\colibri\templates\requests-add.html.py:100
+#: .\colibri\templates\dataset\_search.html.py:124
+msgid "Category:"
+msgstr "Catégorie :"
+
+#: .\colibri\templates\request.html.py:91
+msgid "read"
+msgstr "lire"
+
+#: .\colibri\templates\request.html.py:108
+msgid "answers"
+msgstr "réponses"
+
+#: .\colibri\templates\request.html.py:127
+#: .\colibri\templates\search\search.html.py:30
+msgid "Previous"
+msgstr "Précédent"
+
+#: .\colibri\templates\request.html.py:137
+#: .\colibri\templates\dataset\_add.html.py:33
+#: .\colibri\templates\dataset\_add.html.py:35
+#: .\colibri\templates\dataset\_edit.html.py:39
+#: .\colibri\templates\dataset\_edit.html.py:41
+#: .\colibri\templates\dataset\_extend.html.py:33
+#: .\colibri\templates\dataset\_extend.html.py:35
+#: .\colibri\templates\search\search.html.py:32
+msgid "Next"
+msgstr "Suivant"
+
+#: .\colibri\templates\requests-add.html.py:53
+msgid "Title must be filled out"
+msgstr "Le titre doit être renseigné"
+
+#: .\colibri\templates\requests-add.html.py:62
+msgid "Description must be filled out"
+msgstr "La description doit être renseignée"
+
+#: .\colibri\templates\requests-add.html.py:71
+msgid "Please select category"
+msgstr "Veuillez choisir une catégorie"
+
+#: .\colibri\templates\requests-add.html.py:94
+msgid "Title:"
+msgstr "Titre :"
+
+#: .\colibri\templates\requests-add.html.py:110
+msgid "Description:"
+msgstr "Description : "
+
+#: .\colibri\templates\terms.html.py:14
+msgid ""
+" Terms of use\n"
+"\t  </div>\n"
+"\t\t<p> Welcome to our website. If you continue to browse and use this "
+"website you are agreeing to comply with and be\n"
+"\t\t\tbound by the following terms and conditions of use, which together "
+"with our privacy policy govern colibri's\n"
+"\t\t\trelationship with you in relation to this website.The term ‘EPU-NTUA' "
+"or ‘us' or ‘we' refers to the owner of the\n"
+"\t\t\twebsite, <a style=\"color:white\" href=\"http://www.epu.ntua.gr\" "
+"target=\"_blank\"> <em>National Technical University of Athens, School of "
+"Electrical and Computer Engineering, Decision\n"
+"\t\t\t\tSupport Systems Lab</em></a>, whose registered office is 9, Iroon "
+"Polytechniou st., Zografou, Athens, GREECE\n"
+"\t\t\t15780. The term 'visitor' or ‘you' refers to the user or viewer of our "
+"website. The visitor/user of the pages\n"
+"\t\t\tand services of the colibri website should read this document carefully "
+"and if he does not agree with its terms\n"
+"\t\t\tand conditions he should NOT USE IT. Otherwise, he shall be considered "
+"as having accepted these terms and given\n"
+"\t\t\this consent. The legal information and the terms and conditions of "
+"this document cover all the pages of the\n"
+"\t\t\tcolibri Open Data website, unless otherwise expressly stated in any "
+"particular page. The use of this website is\n"
+"\t\t\tsubject to the following terms of use:</p>\n"
+"\t\t<div class=\"terms_title\">\n"
+"\t  Limitation of liability\n"
+"\t  </div>\n"
+"\t\t<p> When accessing this website, the visitor/user of the colibri Open "
+"Data website's pages and services agrees that\n"
+"\t\t\the shall do so on his own responsibility and that none of the parties "
+"involved in the creation, production or\n"
+"\t\t\tpublication of this website have any liability whatsoever. "
+"Indicatively, but without limitation, they shall not\n"
+"\t\t\tbe liable for any direct, incidental, consequential or indirect "
+"damages or any costs or expenses of any kind\n"
+"\t\t\t(including lawyer's fees, expert's fees or other expenses) which may "
+"arise, directly or indirectly, from the\n"
+"\t\t\taccess to, use or surfing of this website or from the downloading of "
+"any material, text, data, video or sound\n"
+"\t\t\tfiles from this website including indicatively and without limitation "
+"any damages caused by viruses, bugs, human\n"
+"\t\t\taction or omission, by any computer system, telephone line, hardware "
+"part, software or program dysfunction or\n"
+"\t\t\tany other mistake, omission or delay in transmission by the computer "
+"or network connection.</p>\n"
+"\n"
+"\t\t<p> EPU-NTUA, without providing any warranty and therefore without being "
+"liable, shall make every possible effort to\n"
+"\t\t\tensure maximum clarity, timeliness, completeness and availability of "
+"the information and content. In no\n"
+"\t\t\tcircumstances, including negligence, shall EPU-NTUA be liable for any "
+"damage to the visitor/user as a result of\n"
+"\t\t\tthe use of this website. The information, total content and services "
+"are provided on an \"AS IS\" basis, without\n"
+"\t\t\twarranties of any kind, either express or implied, which EPU-NTUA "
+"expressly rejects, including indicatively but\n"
+"\t\t\tnot limited to, warranties of merchantability or suitability.</p>\n"
+"\t\t<br>\n"
+"\t\t<p> The visitor/user of this website must comply with the provisions of "
+"the Greek, European and International Law\n"
+"\t\t\tand the relevant legislation governing telecommunications and refrain "
+"from any unlawful and abusive use of the\n"
+"\t\t\tcontent and services of this website. Any damage caused to this "
+"website or the Internet, which results from\n"
+"\t\t\timproper or unlawful use of the relevant services by the visitor/user "
+"shall fall within his exclusive sphere of\n"
+"\t\t\tresponsibility.</p>\n"
+"\t\t<div class=\"terms_title\">\n"
+"\t  Unlawful or unfair behavior\n"
+"\t  </div>\n"
+"\t\t<p> The visitor/user of this website should not post or transmit through "
+"this website any pornographic, obscene,\n"
+"\t\t\tprofane, defamatory, slanderous, threatening, illegal or other "
+"material that is a criminal offence or may\n"
+"\t\t\tencourage conduct that would constitute a criminal offence, give rise "
+"to civil liability or otherwise violate\n"
+"\t\t\tany law. Although EPU-NTUA or any other party who may be involved in "
+"the creation, production or publication of\n"
+"\t\t\tthis website may monitor, inspect or review transmissions and "
+"postings, EPU-NTUA and other parties involved in\n"
+"\t\t\tthe creation, production or publication of this website disavow any "
+"potential liability that may arise from\n"
+"\t\t\ttheir content, including indicatively and without limitation, any "
+"claims for defamation, slander, blasphemy,\n"
+"\t\t\tfalse impersonation or infringement of intellectual property rights.</"
+"p>\n"
+"\t\t<br>\n"
+"\t\t<div class=\"terms_title\">\n"
+"\t  Hyperlinks\n"
+"\t  </div>\n"
+"\t\t<p> Although this website may be linked to other websites, it is not "
+"responsible for the content and services of\n"
+"\t\t\tother websites hyperlinked through links or banners and makes no "
+"warranty for their availability. EPU-NTUA\n"
+"\t\t\tdisclaims any direct or indirect approval, approbation, relationship, "
+"sponsoring or collaboration with\n"
+"\t\t\thyperlinked websites, unless this is expressly indicated. By accessing "
+"this website, the visitor/user agrees\n"
+"\t\t\tthat EPU-NTUA has no liability for any problems that may arise during "
+"the visit/use of websites to which this\n"
+"\t\t\twebsite is hyperlinked, which fall exclusively within the sphere of "
+"responsibility of the respective\n"
+"\t\t\twebsites.</p>\n"
+"\t\t<br>\n"
+"\t<div class=\"terms_title\">\n"
+"\t  Revision of this document\n"
+"\t  </div>\n"
+"\t\t<h2> </h2>\n"
+"\t\t<p> EPU-NTUA reserves the right to revise this legal information at any "
+"time and for any reason, without prior\n"
+"\t\t\tnotice or obligation. Users/visitors should check every time for any "
+"changes and their continued use of the\n"
+"\t\t\twebsite constitutes acceptance of the modified terms and conditions. "
+"Otherwise, they should refrain from\n"
+"\t\t\tusing/visiting this website.</p>\n"
+"\t\t<br>\n"
+"\t<div class=\"terms_title\">\n"
+"\t  Applicable law\n"
+"\t  </div>\n"
+"\n"
+"\t\t<p> This use agreement is governed by the provisions of Greek Law, the "
+"directives and regulations of European Law\n"
+"\t\t\tand the relevant international provisions and is construed in "
+"accordance with the rules of good faith, business\n"
+"\t\t\tethics and the financial and social purpose of the right. If any term "
+"of this agreement is deemed invalid, void\n"
+"\t\t\tand for any reason unenforceable, that term shall automatically be "
+"deemed severable and shall not affect the\n"
+"\t\t\tvalidity of the remaining terms of this agreement. No amendment of the "
+"terms of the agreement shall be taken\n"
+"\t\t\tinto consideration or be part thereof, if it has not been stated in "
+"writing and not incorporated in it. The\n"
+"\t\t\tcompetent courts for any disputes arising from the agreement shall be "
+"the courts of Athens.</p>\n"
+"\t\t<br>\n"
+"\t\t<p> The management and protection of the personal data of the visitor/"
+"user of this website are subject to the terms\n"
+"\t\t\tof this section and the relevant provisions of Greek law (Law "
+"2472/1997 as supplemented by the decisions of the\n"
+"\t\t\tChairman of the Personal Data Protection Committee, Presidential "
+"Decrees 207/1998 and 79/2000 and article 8 of\n"
+"\t\t\tLaw 2819/2000) and European Law (Directives 95/46/EC and 97/66/EC). "
+"Any future relevant regulation shall form\n"
+"\t\t\tpart of this section. If a visitor/user does not agree with the terms "
+"for personal data protection set out in\n"
+"\t\t\tthis section, he should not use the services of this website. Visitors/"
+"users are required to provide personal\n"
+"\t\t\tdata for this website. The visitor/user expressly agrees to the use of "
+"his personal data by EPU-NTUA for\n"
+"\t\t\tpromotional or marketing activities. This website shall protect the "
+"personal nature of your information and may\n"
+"\t\t\tnot communicate them to third parties (except as provided by law and "
+"then only to the relevant authorities).\n"
+"\t\t\tThis website keeps files with the personal data provided by visitors/"
+"users solely for purposes of communication,\n"
+"\t\t\tstatistics and improvement of the services provided and may process "
+"all or part of such information for\n"
+"\t\t\tstatistics, market research or improvement of the services provided, "
+"as well as for promotional or marketing\n"
+"\t\t\tactivities. The visitor/user may contact the relevant department by "
+"phone at ++30 210 772 3583, in order to\n"
+"\t\t\tdetermine the existence of his personal file and demand its "
+"correction, modification or deletion.</p>\n"
+"\t<br>\n"
+"\t\t<p> This website uses \"cookies\", a technology that is used to identify "
+"the visitor/user of certain services and web\n"
+"\t\t\tpages of this site. Cookies are small text files (4 KB at most) that "
+"can be stored on the hard disk of each\n"
+"\t\t\tvisitor/user without obtaining any knowledge of any document or file "
+"in his computer. They are used to\n"
+"\t\t\tfacilitate visitor/user access to specific pages and services of this "
+"website or for statistical purposes. The\n"
+"\t\t\tvisitor/user may personalize his server so as to be notified about the "
+"use of cookies in specific pages/services\n"
+"\t\t\tof this website and may choose not to accept the use of cookies.</p>\n"
+"\t\t<br>\n"
+"\t\t<p style=\"margin-bottom:60px;\"> For users under the age of 18, prior "
+"consent of parents/guardians is considered as given for any communication\n"
+"\t\t\tof personal data to the colibri Open Data website.</p>"
+msgstr " Conditions générales d'utilisation\n\t </div>\n\t\t<p> Bienvenue sur notre site Web. Si vous continuez à naviguer et utiliser ce site web, vous acceptez de respecter\n\t\t\tles termes et conditions d'utilisation suivants qui, avec notre politique de confidentialité, régissent votre relation avec colibri\n\t\t\ten ce qui concerne ce site. Les termes 'EPU-NTUA' ou 'nous' désignent le propriétaire du site,\n\t\t\t<a style=\"color:white\" href= \"http://www.epu.ntua.gr\" target=\"_blank\"> <em>National Technical University of Athens, School of Electrical and Computer Engineering, Decision\n\t\t\t\tSupport Systems Lab</em></a>, dont le siège social est 9, rue Iroon Polytechniou, Zografou, Athènes, GRECE\n\t\t\t15780. Le terme 'visiteur' ou 'vous' désigne l'utilisateur de notre site Web. Le visiteur / l'utilisateur des pages\n\t\t\t et services du site colibri doit lire attentivement ce document et s'il n'est pas d'accord avec ces termes\n\t\t\tet conditions, il NE DOIT PAS L'UTILISER. Dans le cas contraire, il sera considéré qu'il a accepté ces conditions et donné\n\t\t\tson consentement. Les informations légales et les termes et conditions du présent document portent sur toutes les pages du\n\t\t\tsite colibri de données publiques, sauf indication contraire expresse dans une page particulière. L'utilisation de ce site est\n\t\t\tsujette aux conditions d'utilisation suivantes:</p>\n\t\t<div class=\"terms_title\">\n\t Limitation de responsabilité\n\t </div>\n\t\t<p> En accédant à ce site, le visiteur/l'utilisateur des pages et services du site colibri de données publiques accepte qu'il\n\t\t\tle fait sous sa propre responsabilité et qu'aucune des parties impliquées dans la création, la production ou\n\t\t\tpublication de ce site n'ont quelque responsabilité que ce soit. A titre indicatif, mais sans limitation, ils ne peuvent pas\n\t\t\têtre déclarés responsables des dommages directs, accessoires, consécutifs ou indirects, ou d'autres frais ou dépenses de quelque nature que ce soit\n\t\t\t(y compris les honoraires d'avocat ou d'expert, ou autres frais) qui peuvent survenir, directement ou indirectement, suite à\n\t\t\tl'accès, l'utilisation ou la navigation de ce site ou au téléchargement de matériel, textes, données, fichier vidéo ou audio\n\t\t\tde ce site Web, y compris à titre indicatif et sans limitation, les dommages causés par des virus, par des bogues, par action\n\t\t\tou omission humaine, par un dysfonctionnement d'un système informatique, d'une ligne téléphonique, d'une pièce du matériel, d'un logiciel ou programme ou\n\t\t\ttoute autre erreur, omission ou retard dans la transmission par l'ordinateur ou la connexion réseau.</p>\n\n\t\t<p> EPU-NTUA, sans fournir aucune garantie et donc sans être redevable, fera tout son possible pour\n\t\t\tassurer un maximum de clarté, actualité, exhaustivité et disponibilité de l'information et du contenu. En aucun\n\t\t\tcas, y compris la négligence, EPU-NTUA peut être tenu responsable d'un dommage pour le visiteur / l'utilisateur résultant de\n\t\t\tl'utilisation de ce site. Les informations, l'ensemble du contenu et les services sont fournis \"EN L'ETAT\", sans\n\t\t\tguarantie de quelque nature que ce soit, expresse ou implicite, que EPU-NTUA rejette expressément, y compris à titre indicatif mais\n\t\t\tsans limitation, les garanties de qualité marchande ou de convenance.</p>\n\t\t<br>\n\t\t<p> Le visiteur / l'utilisateur de ce site doit se conformer aux dispositions de la législation grecque, européenne et internationale\n\t\t\tet de la législation pertinente en matière de télécommunications et s'abstenir de toute utilisation illégale et abusive du\n\t\t\tcontenu et des services de ce site. Tout dommage causé à ce site Web ou à Internet, qui résulte\n\t\t\td'une utilisation impropre ou illicite par le visiteur / l'utilisateur des services concernés, doit s'inscrire dans sa sphère exclusive de\n\t\t\tresponsabilité.</p>\n\t\t<div class=\"terms_title\">\n\t Comportement illicite ou déloyal\n\t </div>\n\t\t<p> Le visiteur / l'utilisateur de ce site Web ne doit pas afficher ou transmettre via ce site du matériel à caractère pornographique, obscène,\n\t\t\tblasphématoire, diffamatoire, menaçant, illégal ou autre qui constituerait une infraction criminelle ou puisse\n\t\t\tencourager une conduite qui constituerait une infraction criminelle, donnerait lieu à une responsabilité civile ou violerait autrement\n\t\t\tune loi. Bien que EPU-NTUA ou toute autre partie qui peut être impliquée dans la création, la production ou la publication de\n\t\t\tce site Web peut contrôler, inspecter ou analyser les transmissions et les publications, EPU-NTUA et les autres parties impliquées dans\n\t\t\tla création, la production ou la publication de ce site déclinent toute responsabilité pouvant découler de\n\t\t\tleur contenu, y compris à titre indicatif et sans limitation, toute réclamation pour diffamation, le blasphème,\n\t\t\tl'usurpation d'identité ou la violation des droits de propriété intellectuelle.</p>\n\t\t<br>\n\t\t<div class=\"terms_title\">\n\t Hyperliens\n\t </div>\n\t\t<p> Bien que ce site puisse être lié à d'autres sites, il n'est pas responsable du contenu et des services\n\t\t\td'autres sites liés via des liens ou des bannières et ne donne aucune garantie de leur disponibilité. EPU-NTUA\n\t\t\tdénie tout accord direct ou indirect, approbation, relation, sponsoring ou collaboration avec\n\t\t\tles sites liés, sauf si cela est expressément indiqué. En accédant à ce site, le visiteur / l'utilisateur reconnait\n\t\t\tque EPU-NTUA n'assume aucune responsabilité pour tout problème pouvant survenir lors de la visite / l'utilisation de sites web auxquels\n\t\t\tce site est lié, ce qui relève exclusivement de la sphère de responsabilité respective des\n\t\t\tsites.</p>\n\t\t<br>\n\t<div class=\"terms_title\">\n\t Révision du document présent\n\t </div>\n\t\t<h2> </ h2>\n\t\t<p> EPU-NTUA se réserve le droit de modifier les présentes mentions légales à tout moment et pour n'importe quelle raison, sans préavis.\n\t\t\t Les utilisateurs / visiteurs doivent vérifier à chaque fois s'il y a eu modification, et leur utilisation continue du\n\t\t\tsite implique l'acceptation des termes et conditions modifiées. Dans le cas contraire, ils doivent s'abstenir\n\t\t\td'utiliser / visiter ce site. </p>\n\t\t<br>\n\t<div class=\"terms_title\">\n\t Droit applicable\n\t </div>\n\n\t\t<p> Cette convention d'utilisation est régie par les dispositions de la loi grecque, les directives et les règlements de la loi européenne\n\t\t\tet les dispositions internationales concernées, et est interprétée conformément aux règles de la bonne foi, de l'éthique des affaires\n\t\t\tet au but financier et social du droit. Si une clause de cet accord est jugée invalide, nulle\n\t\t\tet inapplicable pour une raison quelconque, cette clause sera automatiquement considérée divisible et n'affectera pas la\n\t\t\tvalidité des autres clauses de cet accord. Aucune modification des termes de l'accord ne doit être prise\n\t\t\ten compte si elle n'a pas été déclarée par écrit et incorporée dans celui-ci. Les\n\t\t\ttribunaux compétents pour tout litige découlant de l'accord sont les tribunaux d'Athènes.</p>\n\t\t<br>\n\t\t<p> La gestion et la protection des données personnelles du visiteur / de l'utilisateur de ce site sont soumises aux termes\n\t\t\tde cet article et des dispositions pertinentes du droit grec (loi 2472/1997 complétée par les décisions du\n\t\t\tPrésident du Comité de la protection des données personnelles, les décrets présidentiels 207/1998 et 79/2000 et l'article 8 de\n\t\t\tla loi 2819/2000) et du droit européen (directives 95/46/CE et 97/66/EC). Toute future réglementation pertinente fera\n\t\t\tpartie de cet article. Si un visiteur / utilisateur n'est pas d'accord avec les termes de protection des données à caractère personnel figurant dans\n\t\t\tcet article, il ne devrait pas utiliser les services de ce site. Les visiteurs / utilisateurs sont tenus de fournir des renseignements personnels\n\t\t\tpour ce site. Le visiteur / utilisateur consent expressément à l'utilisation de ses données personnelles par EPU-NTUA pour\n\t\t\tdes activités promotionnelles ou de marketing. Ce site protégera la nature personnelle de vos informations et ne\n\t\t\tles communiquera pas à des tiers (sauf tel que prévu par la loi et seulement pour les autorités compétentes).\n\t\t\tCe site conserve les fichiers contenant les données personnelles fournies par les visiteurs / utilisateurs uniquement à des fins de communication,\n\t\t\tde statistiques et d'amélioration des services fournis et peut traiter tout ou partie de ces informations pour\n\t\t\tdes statistiques, études de marché ou l'amélioration des services fournis, ainsi que pour des activités promotionnelles ou de marketing.\n\t\t\t Le visiteur / l'utilisateur peut contacter le service concerné par téléphone au ++30 210 772 3583, afin de\n\t\t\tdéterminer l'existence de son dossier personnel et en exiger la rectification, la modification ou la suppression.</p>\n\t<br>\n\t\t<p> Ce site utilise des \"cookies\", une technologie qui est utilisée pour identifier le visiteur / l'utilisateur de certains services et pages web\n\t\t\t de ce site. Les cookies sont de petits fichiers texte (4 Ko au maximum) qui peuvent être stockés sur le disque dur de chaque\n\t\t\tvisiteur / utilisateur sans avoir connaissance de document ou fichier de son ordinateur. Ils sont utilisés pour\n\t\t\tfaciliter au visiteur / utilisateur l'accès à des pages spécifiques et services de ce site Web ou à des fins statistiques. Le \n\t\t\tvisiteur / l'utilisateur peut personnaliser son serveur afin d'être informé sur l'utilisation de cookies sur des pages / services spécifiques\n\t\t\tde ce site et peut choisir de ne pas accepter l'utilisation des cookies . </p>\n\t\t<br>\n\t\t<p style=\"margin-bottom:60px;\"> ​​Pour les utilisateurs de moins de 18 ans, le consentement préalable des parents / tuteurs est considéré comme donné pour toute communication\n\t\t\tde données personnelles au site web de données publiques colibri.</p>"
+
+#: .\colibri\templates\comments\comment.html.py:22
+#: .\colibri\templates\comments\preview.html.py:12
+msgid "Preview of your comment"
+msgstr "Aperçu de votre commentaire"
+
+#: .\colibri\templates\comments\comment.html.py:37
+#: .\colibri\templates\comments\comment.html.py:43
+msgid "replied"
+msgstr "répondu"
+
+#: .\colibri\templates\comments\comment.html.py:39
+msgid "Accepted Answer, "
+msgstr "Réponse acceptée, "
+
+#: .\colibri\templates\comments\comment.html.py:58
+msgid "Accept Answer"
+msgstr "Accepter la réponse"
+
+#: .\colibri\templates\comments\deleted.html.py:4
+#: .\old\django-basic-apps\basic\comments\templates\comments\deleted.html.py:7
+#: .\old\django-basic-apps\basic\comments\templates\comments\deleted.html.py:11
+msgid "Thanks for removing"
+msgstr "Merci d'avoir supprimé"
+
+#: .\colibri\templates\comments\deleted.html.py:12
+msgid "Thanks for removing the comment"
+msgstr "Merci d'avoir supprimé le commentaire"
+
+#: .\colibri\templates\comments\deleted.html.py:14
+#: .\colibri\templates\comments\flagged.html.py:14
+msgid ""
+"\n"
+"      Thanks for taking the time to improve the quality of discussion on our "
+"site.<br/>\n"
+"      You will be sent back to the article...\n"
+"    "
+msgstr "\n Merci d'avoir pris le temps d'améliorer la qualité de la discussion sur notre site. <br/>\n Vous serez renvoyé à l'article ... \n    "
+
+#: .\colibri\templates\comments\deleted.html.py:20
+#: .\colibri\templates\comments\flagged.html.py:20
+#: .\colibri\templates\comments\posted.html.py:24
+msgid "Back to the article"
+msgstr "Retour à l'article"
+
+#: .\colibri\templates\comments\flagged.html.py:4
+#: .\old\django-basic-apps\basic\comments\templates\comments\flagged.html.py:7
+#: .\old\django-basic-apps\basic\comments\templates\comments\flagged.html.py:11
+msgid "Thanks for flagging"
+msgstr "Merci pour le signalement"
+
+#: .\colibri\templates\comments\flagged.html.py:12
+msgid "Thanks for flagging the comment"
+msgstr "Merci pour le signalement du commentaire"
+
+#: .\colibri\templates\comments\form.html.py:4
+msgid "Replies are closed."
+msgstr "Les réponses sont closes."
+
+#: .\colibri\templates\comments\form.html.py:23
+#: .\colibri\templates\comments\preview.html.py:26
+#: .\old\django-basic-apps\basic\comments\templates\comments\form.html.py:23
+#: .\old\django-basic-apps\basic\comments\templates\comments\preview.html.py:47
+msgid "Post"
+msgstr "Publier"
+
+#: .\colibri\templates\comments\form.html.py:24
+#: .\colibri\templates\comments\preview.html.py:27
+#: .\colibri\templates\wiki\edit.html.py:41
+#: .\old\django-basic-apps\basic\comments\templates\comments\preview.html.py:48
+msgid "Preview"
+msgstr "Voir un aperçu"
+
+#: .\colibri\templates\comments\posted.html.py:3
+msgid "Thanks for commenting"
+msgstr "Merci pour les commentaires"
+
+#: .\colibri\templates\comments\posted.html.py:11
+msgid "Thanks for posting your comment"
+msgstr "Merci d'avoir ajouter votre commentaire"
+
+#: .\colibri\templates\comments\posted.html.py:13
+msgid ""
+"\n"
+"      We have received your comment, and posted it on the web site.<br/>\n"
+"      You will be sent back to the article...\n"
+"      "
+msgstr "\n Nous avons reçu et publié votre commentaire sur le site Web.<br/>\n Vous serez renvoyé à l'article ... \n      "
+
+#: .\colibri\templates\comments\preview.html.py:3
+#: .\old\django-basic-apps\basic\comments\templates\comments\preview.html.py:7
+#: .\old\django-basic-apps\basic\comments\templates\comments\preview.html.py:11
+msgid "Preview your comment"
+msgstr "Voir un aperçu de votre commentaire"
+
+#: .\colibri\templates\comments\preview.html.py:10
+#: .\old\django-basic-apps\basic\comments\templates\comments\preview.html.py:22
+msgid "Please correct the error below"
+msgid_plural "Please correct the errors below"
+msgstr[0] "Merci de bien vouloir corriger l'erreur ci-dessous."
+msgstr[1] "Merci de bien vouloir corriger l'erreur ci-dessous."
+
+#: .\colibri\templates\comments\preview.html.py:17
+#: .\old\django-basic-apps\basic\comments\templates\comments\preview.html.py:26
+msgid "Post your comment"
+msgstr "Publier votre commentaire"
+
+#: .\colibri\templates\comments\preview.html.py:20
+msgid "Or make changes"
+msgstr "Ou apporter des modifications"
+
+#: .\colibri\templates\dataset\_add.html.py:27
+#: .\colibri\templates\dataset\_add.html.py:29
+#: .\colibri\templates\dataset\_edit.html.py:33
+#: .\colibri\templates\dataset\_edit.html.py:35
+#: .\colibri\templates\dataset\_extend.html.py:27
+#: .\colibri\templates\dataset\_extend.html.py:29
+msgid "Back"
+msgstr "Retour"
+
+#: .\colibri\templates\dataset\_confirm_delete.html.py:13
+msgid "Delete dataset"
+msgstr "Supprimer le jeu de données"
+
+#: .\colibri\templates\dataset\_confirm_delete.html.py:16
+msgid ""
+"Are you sure you want to remove this dataset and all the resources attached "
+"to it?"
+msgstr "Êtes-vous sûr de vouloir supprimer ce jeu de données et toutes les ressources qui s'y rattachent?"
+
+#: .\colibri\templates\dataset\_confirm_delete.html.py:18
+#: .\colibri\templates\dataset\_details.html.py:337
+#: .\colibri\templates\profile\_edit.html.py:163
+msgid "Cancel"
+msgstr "Annuler"
+
+#: .\colibri\templates\dataset\_confirm_delete.html.py:21
+#: .\colibri\templates\wiki\delete.html.py:8
+#: .\messages\templates\messages\view.html.py:37
+msgid "Delete"
+msgstr "Supprimer"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:35
+#: .\colibri\templates\dataset\_details.html.py:55
+msgid "Thank you for voting!"
+msgstr "Merci pour votre vote!"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:39
+#: .\colibri\templates\dataset\_details.html.py:59
+msgid "You must be logged in to vote."
+msgstr "Vous devez être connecté pour voter."
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:44
+#: .\colibri\templates\dataset\_details.html.py:64
+msgid "You have already voted!"
+msgstr "Vous avez déjà voté!"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:68
+#: .\colibri\templates\dataset\_details.html.py:88
+msgid "Delete Dataset"
+msgstr "Supprimer un jeu de données"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:69
+#: .\colibri\templates\dataset\_details.html.py:89
+msgid "Edit Dataset"
+msgstr "Modifier un jeu de données"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:73
+#: .\colibri\templates\dataset\_details.html.py:93
+#: .\colibri\templates\dataset\_search.html.py:20
+msgid "Datasets"
+msgstr "Jeux de données"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:80
+#: .\colibri\templates\dataset\_details.html.py:100
+msgid "Uploaded by"
+msgstr "Ajouté par"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:84 Copy.html.py:86
+#: .\colibri\templates\dataset\_details.html.py:104
+#: .\colibri\templates\dataset\_details.html.py:106
+#: .\colibri\templates\dataset\_extend.html.py:70
+msgid "Extend"
+msgstr "Etendre"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:96
+#: .\colibri\templates\dataset\_details.html.py:116
+msgid "No rating yet"
+msgstr "Aucune note"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:96
+#: .\colibri\templates\dataset\_details.html.py:116
+msgid "Score"
+msgstr "Score"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:96
+#: .\colibri\templates\dataset\_details.html.py:116
+msgid "votes"
+msgstr "votes"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:104
+#: .\colibri\templates\dataset\_details.html.py:124
+#: .\colibri\templates\dataset\_index.html.py:15
+msgid "Resources"
+msgstr "Ressources"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:105
+#: .\colibri\templates\dataset\_details.html.py:125
+msgid "Detailed Metadata"
+msgstr "Métadonnées détaillées"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:132
+#: .\colibri\templates\dataset\_details.html.py:160
+msgid "download"
+msgstr "télécharger"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:134
+msgid "view online"
+msgstr "voir en ligne"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:144 Copy.html.py:299
+#: .\colibri\templates\dataset\_details.html.py:173
+#: .\colibri\templates\dataset\_details.html.py:400
+msgid "Maintainer"
+msgstr "Responsable"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:149 Copy.html.py:303
+#: .\colibri\templates\dataset\_details.html.py:178
+#: .\colibri\templates\dataset\_details.html.py:404
+#: .\colibri\templates\dataset\_form.html.py:73
+#: .\colibri\templates\opendatasites\datasources_en.html.py:162
+msgid "Publisher"
+msgstr "Editeur"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:155 Copy.html.py:313
+#: .\colibri\templates\dataset\_details.html.py:184
+#: .\colibri\templates\dataset\_details.html.py:414
+#: .\colibri\templates\dataset\_form.html.py:71
+#: .\colibri\templates\dataset\_search.html.py:53
+#: .\colibri\templates\opendatasites\datasources_en.html.py:160
+msgid "Author"
+msgstr "Auteur"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:160 Copy.html.py:317
+#: .\colibri\templates\dataset\_details.html.py:189
+#: .\colibri\templates\dataset\_details.html.py:418
+msgid "Release Date"
+msgstr "Date de sortie "
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:164 Copy.html.py:321
+#: .\colibri\templates\dataset\_details.html.py:193
+#: .\colibri\templates\dataset\_details.html.py:422
+msgid "Last Update"
+msgstr "Dernière mise à jour"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:175
+#: .\colibri\templates\dataset\_details.html.py:204
+#: .\colibri\templates\dataset\_form.html.py:64
+#: .\colibri\templates\opendatasites\datasources_en.html.py:163
+msgid "License"
+msgstr "Licence"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:181
+#: .\colibri\templates\dataset\_details.html.py:210
+#: .\colibri\templates\dataset\_form.html.py:103
+msgid "Geographical Granularity"
+msgstr "Granularité géographique"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:187
+#: .\colibri\templates\dataset\_details.html.py:216
+#: .\colibri\templates\dataset\_form.html.py:108
+msgid "Geographical Coverage"
+msgstr "Couverture géographique"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:193
+#: .\colibri\templates\dataset\_details.html.py:222
+#: .\colibri\templates\dataset\_form.html.py:84
+msgid "Temporal Granularity"
+msgstr "Granularité temporelle"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:199
+#: .\colibri\templates\dataset\_details.html.py:228
+msgid "Temporal Coverage"
+msgstr "Couverture temporelle"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:200
+#: .\colibri\templates\dataset\_details.html.py:229
+#: .\colibri\templates\dataset\_form.html.py:94
+msgid "To"
+msgstr "A"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:205
+#: .\colibri\templates\dataset\_details.html.py:234
+msgid "Scientific Domain"
+msgstr "Domaine scientifique"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:211
+#: .\colibri\templates\dataset\_details.html.py:240
+msgid "Data collection type"
+msgstr "Type de l'ensemble de données"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:217
+#: .\colibri\templates\dataset\_details.html.py:246
+msgid "Data collection description"
+msgstr "Description de l'ensemble des données"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:223
+#: .\colibri\templates\dataset\_details.html.py:252
+msgid "Software Package Used"
+msgstr "Logiciel utilisé"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:229
+#: .\colibri\templates\dataset\_details.html.py:258
+#: .\colibri\templates\dataset\_form.html.py:129
+msgid "Analysis Unit"
+msgstr "Unité d'analyse"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:235
+#: .\colibri\templates\dataset\_details.html.py:264
+#: .\colibri\templates\dataset\_form.html.py:132
+msgid "Statistical Methodology"
+msgstr "Méthodologie statistique"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:249
+#: .\colibri\templates\dataset\_details.html.py:343
+msgid "Discussions"
+msgstr "Discussions"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:293
+#: .\colibri\templates\dataset\_details.html.py:387
+msgid "Basic Information"
+msgstr "Renseignements de base"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:304 Copy.html.py:314
+#: Copy.html.py:326 Copy.html.py:330
+#: .\colibri\templates\dataset\_details.html.py:405
+#: .\colibri\templates\dataset\_details.html.py:415
+#: .\colibri\templates\dataset\_details.html.py:427
+#: .\colibri\templates\dataset\_details.html.py:431
+msgid "None specified"
+msgstr "Aucun(e) de précisé(e)"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:308
+#: .\colibri\templates\dataset\_details.html.py:409
+msgid "Original url"
+msgstr "Url d'origine"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:309
+#: .\colibri\templates\dataset\_details.html.py:410
+msgid "Original Dataset page"
+msgstr "Page d'origine du jeu de données"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:329
+#: .\colibri\templates\dataset\_details.html.py:430
+msgid "Licence"
+msgstr "Licence"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:339
+#: .\colibri\templates\dataset\_details.html.py:440
+msgid "Extension Graph"
+msgstr "Graphe d'extension"
+
+#: .\colibri\templates\dataset\_details.html.py:153
+msgid " view"
+msgstr " voir"
+
+#: .\colibri\templates\dataset\_details.html.py:163
+msgid "visualize"
+msgstr "visualiser"
+
+#: .\colibri\templates\dataset\_details.html.py:277
+msgid "Items based on this dataset"
+msgstr "Eléments basés sur ce jeu de données"
+
+#: .\colibri\templates\dataset\_details.html.py:291
+msgid "uploaded by"
+msgstr "ajouté par"
+
+#: .\colibri\templates\dataset\_details.html.py:323
+msgid "URL of item"
+msgstr "URL de l'élément"
+
+#: .\colibri\templates\dataset\_details.html.py:329
+msgid "Submit item"
+msgstr "Soumettre l'élément"
+
+#: .\colibri\templates\dataset\_details.html.py:333
+#: .\colibri\templates\dataset\_details.html.py:335
+msgid "Submit your own item"
+msgstr "Soumettre votre propre élément"
+
+#: .\colibri\templates\dataset\_details.html.py:352
+#, python-format
+msgid "%(comments_count)s reply "
+msgid_plural "%(comments_count)s Replies "
+msgstr[0] "%(comments_count)s réponse(s) "
+msgstr[1] "%(comments_count)s réponse(s) "
+
+#: .\colibri\templates\dataset\_edit.html.py:18
+msgid "Add another"
+msgstr "Ajouter un autre élément"
+
+#: .\colibri\templates\dataset\_edit.html.py:66
+#: .\colibri\templates\dataset\_extend.html.py:60
+msgid "Edit dataset"
+msgstr "Modifier le jeu de données"
+
+#: .\colibri\templates\dataset\_edit.html.py:76
+msgid "Save Dataset"
+msgstr "Sauvegarder le jeu de données"
+
+#: .\colibri\templates\dataset\_form.html.py:24
+msgid "Choose file"
+msgstr "Sélectionner un fichier"
+
+#: .\colibri\templates\dataset\_form.html.py:26
+msgid "OR"
+msgstr "OU"
+
+#: .\colibri\templates\dataset\_form.html.py:27
+msgid "paste URL"
+msgstr "entrer l'URL"
+
+#: .\colibri\templates\dataset\_form.html.py:49
+#: .\colibri\templates\dataset\_index.html.py:12
+#: .\colibri\templates\opendatasites\datasources_en.html.py:157
+#: .\colibri\templates\wiki\dir.html.py:48
+#: .\colibri\templates\wiki\search.html.py:24
+msgid "Title"
+msgstr "Titre"
+
+#: .\colibri\templates\dataset\_form.html.py:52
+#: .\colibri\templates\dataset\_index.html.py:14
+#: .\colibri\templates\dataset\_search.html.py:46
+msgid "Description"
+msgstr "Description"
+
+#: .\colibri\templates\dataset\_form.html.py:56
+msgid "Categories"
+msgstr "Catégories"
+
+#: .\colibri\templates\dataset\_form.html.py:58
+msgid "Original Url of Dataset"
+msgstr "Url d'origine du jeu de données"
+
+#: .\colibri\templates\dataset\_form.html.py:76
+msgid "Group maintaining the dataset"
+msgstr "Groupe responsable du jeu de données"
+
+#: .\colibri\templates\dataset\_form.html.py:89
+msgid "From"
+msgstr "De"
+
+#: .\colibri\templates\dataset\_form.html.py:117
+msgid "Scientific domain of the dataset"
+msgstr "Domaine scientifique du jeu de données"
+
+#: .\colibri\templates\dataset\_form.html.py:120
+msgid "Data Collection type"
+msgstr "Mode de collecte des données"
+
+#: .\colibri\templates\dataset\_form.html.py:123
+msgid "Data Collection Description"
+msgstr "Description de la collecte des données"
+
+#: .\colibri\templates\dataset\_form.html.py:126
+msgid "Statistical Software package used"
+msgstr "Logiciel statistique utilisé"
+
+#: .\colibri\templates\dataset\_modal.html.py:37
+msgid "Extend Dataset"
+msgstr "Étendre le jeu de données"
+
+#: .\colibri\templates\dataset\_search.html.py:35
+#: .\colibri\templates\dataset\_search.html.py:40
+msgid "more options"
+msgstr "autres options"
+
+#: .\colibri\templates\dataset\_search.html.py:40
+msgid "hide options"
+msgstr "masquer les options"
+
+#: .\colibri\templates\dataset\_search.html.py:71
+msgid "Language"
+msgstr "Langue"
+
+#: .\colibri\templates\dataset\_search.html.py:82
+msgid "Uploader"
+msgstr "Contributeur"
+
+#: .\colibri\templates\dataset\_search.html.py:128
+msgid "Submitted by:"
+msgstr "Soumis par:"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:126
+msgid "Data Sources Types"
+msgstr "Types"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:127
+msgid "Licenses"
+msgstr "Licences"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:128
+msgid "Language UI"
+msgstr "Langue de l'interface"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:129
+#: .\colibri\templates\opendatasites\datasources_en.html.py:175
+msgid "Data Format"
+msgstr "Format des données"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:130
+msgid "Provision"
+msgstr "Fonctionnalités "
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:156
+msgid "DataSource Type"
+msgstr "Type de sources de données"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:158
+msgid "Subtitle"
+msgstr "Sous-titre"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:159
+msgid "URL"
+msgstr "URL"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:161
+msgid "Email"
+msgstr "Email"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:164
+msgid "Category"
+msgstr "Catégorie"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:165
+msgid "Info Type"
+msgstr "Type d'info"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:166
+msgid "Period"
+msgstr "Période "
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:167
+msgid "State of Data"
+msgstr "Etat des données"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:168
+msgid "Coverage"
+msgstr "Zone couverte"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:169
+msgid "Catalog / Discover"
+msgstr "Catalogue / Découverte"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:170
+msgid "Data acquisition"
+msgstr "Acquisition des données"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:171
+msgid "Data provision"
+msgstr "Accès aux données"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:172
+msgid "Feedback"
+msgstr "Commentaires "
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:173
+msgid "Languages Interface"
+msgstr "Langues de l'interface"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:174
+msgid "Dataset Languages"
+msgstr "Langues des jeux de données"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:176
+msgid "Metadata"
+msgstr "Méta-données"
+
+#: .\colibri\templates\profile\_add_group.html.py:96
+msgid "Create a New Group"
+msgstr "Créer un nouveau groupe"
+
+#: .\colibri\templates\profile\_add_group.html.py:102
+msgid "You successfully created a new group!"
+msgstr "Vous avez créé avec succès un nouveau groupe!"
+
+#: .\colibri\templates\profile\_add_group.html.py:104
+msgid "Create Group"
+msgstr "Créer un groupe"
+
+#: .\colibri\templates\profile\_edit.html.py:21
+msgid "Please tell us your main expertise background"
+msgstr "Veuillez renseigner votre domaine d'expertise principal"
+
+#: .\colibri\templates\profile\_edit.html.py:31
+msgid "Please tells us your specialization"
+msgstr "Veuillez renseigner votre spécialisation"
+
+#: .\colibri\templates\profile\_edit.html.py:41
+msgid "Please select your country"
+msgstr "Veuillez sélectionner votre pays"
+
+#: .\colibri\templates\profile\_edit.html.py:56
+msgid "Please save profile to update photo"
+msgstr "Veuillez enregistrer le profil pour mettre à jour la photo"
+
+#: .\colibri\templates\profile\_edit.html.py:72
+#: .\colibri\templates\profile\_profile.html.py:43
+msgid "Edit Profile"
+msgstr "Modifier le profil"
+
+#: .\colibri\templates\profile\_edit.html.py:89
+msgid "change photo"
+msgstr "changer la photo"
+
+#: .\colibri\templates\profile\_edit.html.py:135
+msgid "Email Address"
+msgstr "Adresse e-mail"
+
+#: .\colibri\templates\profile\_edit.html.py:156
+#: .\colibri\templates\profile\_profile.html.py:79
+msgid "Personal Website"
+msgstr "Site web personnel"
+
+#: .\colibri\templates\profile\_edit.html.py:165
+msgid "Save Profile"
+msgstr "Enregistrer le profil"
+
+#: .\colibri\templates\profile\_groups.html.py:8
+msgid "Show me:"
+msgstr "Montrez moi:"
+
+#: .\colibri\templates\profile\_groups.html.py:11
+msgid "All groups"
+msgstr "Tous les groupes"
+
+#: .\colibri\templates\profile\_groups.html.py:12
+msgid "Groups I administrate"
+msgstr "Les groupes que je gère"
+
+#: .\colibri\templates\profile\_groups.html.py:13
+msgid "Groups I am a member of"
+msgstr "Les groupes dont je suis membre"
+
+#: .\colibri\templates\profile\_groups.html.py:16
+msgid "Create a new group"
+msgstr "Créer un nouveau groupe"
+
+#: .\colibri\templates\profile\_groups.html.py:24
+msgid "Group Name"
+msgstr "Nom du groupe"
+
+#: .\colibri\templates\profile\_groups.html.py:25
+msgid "Members"
+msgstr "Membres"
+
+#: .\colibri\templates\profile\_groups.html.py:26
+msgid "Role"
+msgstr "Rôle"
+
+#: .\colibri\templates\profile\_profile.html.py:55
+msgid "Email Address:"
+msgstr "Adresse e-mail:"
+
+#: .\colibri\templates\profile\_profile.html.py:84
+msgid "Latest datasets"
+msgstr "Derniers jeux de données"
+
+#: .\colibri\templates\profile\_profile.html.py:90
+#: .\colibri\templates\profile\_profile.html.py:98
+msgid "No recent activity"
+msgstr "Aucune activité récente"
+
+#: .\colibri\templates\search\search.html.py:12
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_search.html.py:10
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_search.html.py:18
+#: .\src\django-haystack\haystack\forms.py:17
+msgid "Search"
+msgstr "Chercher"
+
+#: .\colibri\templates\user\_index.html.py:15
+msgid "Community Users"
+msgstr "Utilisateurs communautaires"
+
+#: .\colibri\templates\wiki\article.html.py:23
+#: .\colibri\templates\wiki\includes\revision_info.html.py:21
+msgid "locked"
+msgstr "verrouillé"
+
+#: .\colibri\templates\wiki\article.html.py:39
+msgid "This article was last modified:"
+msgstr "Cet article a été modifié le:"
+
+#: .\colibri\templates\wiki\base.html.py:156
+msgid "Search..."
+msgstr "Chercher..."
+
+#: .\colibri\templates\wiki\base.html.py:172
+msgid "No notifications"
+msgstr "Aucune notification"
+
+#: .\colibri\templates\wiki\base.html.py:174
+msgid "Clear notifications list"
+msgstr "Effacer la liste des notifications"
+
+#: .\colibri\templates\wiki\create.html.py:5
+#: .\colibri\templates\wiki\create.html.py:45
+msgid "Add new article"
+msgstr "Ajouter un nouvel article"
+
+#: .\colibri\templates\wiki\create.html.py:52
+#: .\colibri\templates\wiki\delete.html.py:12
+#: .\colibri\templates\wiki\delete.html.py:46
+msgid "Go back"
+msgstr "Retour"
+
+#: .\colibri\templates\wiki\create.html.py:56
+msgid "Create article"
+msgstr "Créer un article"
+
+#: .\colibri\templates\wiki\create_root.html.py:4
+msgid "Create root article"
+msgstr "Créer un article à la racine"
+
+#: .\colibri\templates\wiki\create_root.html.py:22
+msgid "Congratulations!"
+msgstr "Félicitations !"
+
+#: .\colibri\templates\wiki\create_root.html.py:24
+msgid ""
+"You have django-wiki installed... but there are no articles. So it's time to "
+"create the first one, the root article. In the beginning, it will only be "
+"editable by administrators, but you can define permissions after."
+msgstr "Vous avez django-wiki installé ... mais il n'y a aucun article. Alors il est temps de créer le premier, l'article racine. Au début, il ne sera modifiable que par les administrateurs, mais vous pourrez ensuite définir des autorisations."
+
+#: .\colibri\templates\wiki\create_root.html.py:27
+msgid "Root article"
+msgstr "Article racine"
+
+#: .\colibri\templates\wiki\create_root.html.py:32
+msgid "Create root"
+msgstr "Créer une racine"
+
+#: .\colibri\templates\wiki\delete.html.py:5
+#: .\colibri\templates\wiki\delete.html.py:50
+#: .\colibri\templates\wiki\edit.html.py:51
+msgid "Delete article"
+msgstr "Supprimer l'article"
+
+#: .\colibri\templates\wiki\delete.html.py:11
+msgid "You cannot delete a root article."
+msgstr "Vous ne pouvez pas supprimer un article de la racine."
+
+#: .\colibri\templates\wiki\delete.html.py:17
+msgid ""
+"You cannot delete this article because you do not have permission to delete "
+"articles with children. Try to remove the children manually one-by-one."
+msgstr "Vous ne pouvez pas supprimer cet article, car vous n'avez pas la permission de supprimer les articles qui ont des enfants. Essayez d'enlever les enfants manuellement un par un."
+
+#: .\colibri\templates\wiki\delete.html.py:23
+msgid ""
+"You are deleting an article. This means that its children will be deleted as "
+"well. If you choose to purge, children will also be purged!"
+msgstr "Vous supprimez un article. Cela signifie que ses enfants seront aussi supprimés. Si vous choisissez de purger, les enfants seront également éliminés!"
+
+#: .\colibri\templates\wiki\delete.html.py:25
+msgid "Articles that will be deleted"
+msgstr "Articles qui seront supprimés"
+
+#: .\colibri\templates\wiki\delete.html.py:31
+msgid "...and more!"
+msgstr "...et plus encore!"
+
+#: .\colibri\templates\wiki\delete.html.py:39
+msgid "You are deleting an article. Please confirm."
+msgstr "Vous supprimez un article. Veuillez confirmer."
+
+#: .\colibri\templates\wiki\deleted.html.py:5
+msgid "Article deleted"
+msgstr "Article supprimé"
+
+#: .\colibri\templates\wiki\deleted.html.py:14
+msgid "Article Deleted"
+msgstr "Article supprimé"
+
+#: .\colibri\templates\wiki\deleted.html.py:17
+msgid "The article you were looking for has been deleted."
+msgstr "L'article que vous recherchez a été supprimé."
+
+#: .\colibri\templates\wiki\deleted.html.py:25
+#: .\colibri\templates\wiki\deleted.html.py:30
+msgid "Restore"
+msgstr "Restaurer"
+
+#: .\colibri\templates\wiki\deleted.html.py:26
+msgid "You may restore this article and its children by clicking restore."
+msgstr "Vous pouvez restaurer cet article et ses enfants en cliquant sur restaurer."
+
+#: .\colibri\templates\wiki\deleted.html.py:40
+msgid "Purge deletion"
+msgstr "Suppression de purge"
+
+#: .\colibri\templates\wiki\deleted.html.py:41
+msgid ""
+"You may remove this article and any children permanently and free their "
+"slugs by clicking the below button. This action cannot be undone."
+msgstr "Vous pouvez supprimer définitivement cet article et tous ses enfants et libérer leurs urls en cliquant sur le bouton ci-dessous. Cette action ne peut pas être annulée."
+
+#: .\colibri\templates\wiki\deleted.html.py:47
+msgid "Purge"
+msgstr "Purger"
+
+#: .\colibri\templates\wiki\dir.html.py:5
+msgid "Listing articles in"
+msgstr "Liste des articles dans"
+
+#: .\colibri\templates\wiki\dir.html.py:17
+msgid "Up one level"
+msgstr "Monter d'un niveau"
+
+#: .\colibri\templates\wiki\dir.html.py:22
+msgid "Add article"
+msgstr "Ajouter un article"
+
+#: .\colibri\templates\wiki\dir.html.py:30
+msgid "clear"
+msgstr "effacer"
+
+#: .\colibri\templates\wiki\dir.html.py:40
+msgid "article,articles"
+msgstr "article(s)"
+
+#: .\colibri\templates\wiki\dir.html.py:40
+msgid "is,are"
+msgstr "est (sont)"
+
+#: .\colibri\templates\wiki\dir.html.py:40
+#, python-format
+msgid ""
+"\n"
+"      Browsing <strong><a href=\"%(self_url)s\">/%(path)s</a></strong>. "
+"There %(articles_plur_verb)s <strong>%(cnt)s %(articles_plur)s</strong> in "
+"this level.\n"
+"    "
+msgstr "\n Actuellement à <strong><a href=\"%(self_url)s\">/%(path)s</a> </strong>. Il y a <strong>%s(cnt)s %(articles_plur)s</ strong> à ce niveau.\n    "
+
+#: .\colibri\templates\wiki\dir.html.py:49
+msgid "Slug"
+msgstr "url"
+
+#: .\colibri\templates\wiki\dir.html.py:50
+#: .\colibri\templates\wiki\search.html.py:25
+msgid "Last modified"
+msgstr "Dernière modification"
+
+#: .\colibri\templates\wiki\dir.html.py:74
+#: .\colibri\templates\wiki\search.html.py:50
+msgid "There are no articles in this level"
+msgstr "Il n'y a pas d'articles à ce niveau"
+
+#: .\colibri\templates\wiki\edit.html.py:5
+#: .\colibri\templates\wiki\includes\article_menu.html.py:34
+msgid "Edit"
+msgstr "Modifier"
+
+#: .\colibri\templates\wiki\edit.html.py:11
+msgid ""
+"<strong>Warning:</strong> You are not logged in. Your IP address will be "
+"logged."
+msgstr "<strong>Attention:</ strong> Vous n'êtes pas identifié. Votre adresse IP sera enregistrée."
+
+#: .\colibri\templates\wiki\edit.html.py:12
+msgid "Click here to log in"
+msgstr "Cliquez ici pour vous connecter"
+
+#: .\colibri\templates\wiki\edit.html.py:45
+#: .\colibri\templates\wiki\edit.html.py:67
+#: .\colibri\templates\wiki\settings.html.py:16
+msgid "Save changes"
+msgstr "Enregistrer les modifications"
+
+#: .\colibri\templates\wiki\edit.html.py:63
+msgid "Back to editor"
+msgstr "Retour à l'éditeur"
+
+#: .\colibri\templates\wiki\error.html.py:5
+#: .\colibri\templates\wiki\error.html.py:26
+msgid "Error"
+msgstr "Erreur"
+
+#: .\colibri\templates\wiki\error.html.py:15
+msgid "Not found"
+msgstr "Introuvable"
+
+#: .\colibri\templates\wiki\error.html.py:18
+msgid "This article was not found, and neither was its parent article."
+msgstr "Cet article n'a pas été trouvé, ni son article parent."
+
+#: .\colibri\templates\wiki\error.html.py:20
+msgid "Start page"
+msgstr "Page d'accueil"
+
+#: .\colibri\templates\wiki\error.html.py:30
+msgid "There was some sort of error accessing this page. Sorry!"
+msgstr "Une erreur s'est produite lors de l’accès à cette page. Désolé!"
+
+#: .\colibri\templates\wiki\error.html.py:38
+msgid "Back to"
+msgstr "Retour à"
+
+#: .\colibri\templates\wiki\history.html.py:5
+msgid "History"
+msgstr "Historique"
+
+#: .\colibri\templates\wiki\history.html.py:49
+msgid ""
+"Click each revision to see a list of edited lines. Click the Preview button "
+"to see how the article looked at this stage. At the bottom of this page, you "
+"can change to a particular revision or merge an old revision with the "
+"current one."
+msgstr "Cliquez sur chaque révision pour voir une liste de lignes éditées. Cliquez sur le bouton Aperçu pour voir à quoi ressemblait l'article à ce stade. Au bas de cette page, vous pouvez revenir à une révision particulière ou fusionner une ancienne révision avec l'actuelle."
+
+#: .\colibri\templates\wiki\history.html.py:72
+msgid "no log message"
+msgstr "pas de message de journal"
+
+#: .\colibri\templates\wiki\history.html.py:84
+#: .\colibri\templates\wiki\history.html.py:89
+msgid "Preview this revision"
+msgstr "Aperçu de cette révision"
+
+#: .\colibri\templates\wiki\history.html.py:103
+msgid "Auto log:"
+msgstr "Journal automatique:"
+
+#: .\colibri\templates\wiki\history.html.py:111
+msgid "Change"
+msgstr "Changer"
+
+#: .\colibri\templates\wiki\history.html.py:129
+msgid "Merge selected with current..."
+msgstr "Fusionner l’élément sélectionné avec l'actuel ..."
+
+#: .\colibri\templates\wiki\history.html.py:133
+msgid "Switch to selected version"
+msgstr "Passer à la version choisie"
+
+#: .\colibri\templates\wiki\history.html.py:149
+#: .\colibri\templates\wiki\history.html.py:176
+msgid "Back to history view"
+msgstr "Retour à la vue historique"
+
+#: .\colibri\templates\wiki\history.html.py:154
+#: .\colibri\templates\wiki\history.html.py:159
+msgid "Switch to this version"
+msgstr "Passer à cette version"
+
+#: .\colibri\templates\wiki\history.html.py:167
+msgid "Merge with current"
+msgstr "Fusionner avec l'actuel"
+
+#: .\colibri\templates\wiki\history.html.py:168
+msgid ""
+"When you merge a revision with the current, all data will be retained from "
+"both versions and merged at its approximate location from each revision."
+msgstr "Lorsque vous fusionnez une révision avec l'actuelle, toutes les données des deux versions sont conservées et fusionnées à leur emplacement approximatif dans chaque révision."
+
+#: .\colibri\templates\wiki\history.html.py:168
+msgid "After this, it's important to do a manual review."
+msgstr "Ensuite, il est important de faire une revue manuelle."
+
+#: .\colibri\templates\wiki\history.html.py:181
+#: .\colibri\templates\wiki\history.html.py:186
+msgid "Create new merged version"
+msgstr "Créer une nouvelle version fusionnée"
+
+#: .\colibri\templates\wiki\permission_denied.html.py:8
+msgid "Permission Denied"
+msgstr "Permission refusée"
+
+#: .\colibri\templates\wiki\permission_denied.html.py:11
+msgid "Sorry, you don't have permission to access this page."
+msgstr "Désolé, vous n'avez pas la permission d'accéder à cette page."
+
+#: .\colibri\templates\wiki\permission_denied.html.py:16
+msgid "This article is locked for editing."
+msgstr "Cet article est verrouillé en modification."
+
+#: .\colibri\templates\wiki\permission_denied.html.py:22
+msgid "Back to article"
+msgstr "Retour à l'article"
+
+#: .\colibri\templates\wiki\preview_inline.html.py:8
+msgid "Previewing revision"
+msgstr "Prévisualisation de révision"
+
+#: .\colibri\templates\wiki\preview_inline.html.py:15
+msgid "Previewing merge between"
+msgstr "Prévisualisation de la fusion entre"
+
+#: .\colibri\templates\wiki\preview_inline.html.py:17
+#: .\old\django-basic-apps\basic\comments\templates\comments\preview.html.py:26
+msgid "and"
+msgstr "et"
+
+#: .\colibri\templates\wiki\preview_inline.html.py:22
+msgid "You cannot merge with a deleted revision"
+msgstr "Vous ne pouvez pas fusionner avec une révision supprimée"
+
+#: .\colibri\templates\wiki\preview_inline.html.py:31
+msgid "This revision has been deleted."
+msgstr "Cette révision a été supprimée."
+
+#: .\colibri\templates\wiki\preview_inline.html.py:32
+msgid "Restoring to this revision will mark the article as deleted."
+msgstr "La restauration de cette révision va marquer l'article comme supprimé."
+
+#: .\colibri\templates\wiki\search.html.py:5
+#: .\colibri\templates\wiki\search.html.py:9
+msgid "Search results for:"
+msgstr "Chercher les résultats de:"
+
+#: .\colibri\templates\wiki\search.html.py:17
+#, python-format
+msgid "Your search returned <strong>%(cnt)s</strong> results."
+msgstr "Votre recherche a donné <strong>%(cnt)s</strong> résultats."
+
+#: .\colibri\templates\wiki\settings.html.py:5
+#: .\colibri\templates\wiki\includes\article_menu.html.py:9
+msgid "Settings"
+msgstr "Paramètres"
+
+#: .\colibri\templates\wiki\source.html.py:5
+msgid "Source of"
+msgstr "Source de"
+
+#: .\colibri\templates\wiki\source.html.py:10
+msgid "This article is currently locked for editing."
+msgstr "Cet article est actuellement verrouillé en modification."
+
+#: .\colibri\templates\wiki\includes\anonymous_blocked.html.py:7
+#, python-format
+msgid ""
+"\n"
+"  You need to <a href=\"%(login_url)s\">log in</a> or <a href="
+"\"%(signup_url)s\">sign up</a> to use this function.\n"
+"  "
+msgstr "\n Vous devez <a href=\"%(login_url)s\">vous connecter</a> ou <a href=\"%(signup_url)s\">vous inscrire</a> pour utiliser cette fonction.\n  "
+
+#: .\colibri\templates\wiki\includes\anonymous_blocked.html.py:11
+msgid "You need to log in og sign up to use this function."
+msgstr "Vous devez vous connecter ou vous inscrire pour utiliser cette fonction."
+
+#: .\colibri\templates\wiki\includes\article_menu.html.py:26
+msgid "Changes"
+msgstr "Changements"
+
+#: .\colibri\templates\wiki\includes\article_menu.html.py:41
+msgid "View Source"
+msgstr "Voir le code source"
+
+#: .\colibri\templates\wiki\includes\article_menu.html.py:49
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:49
+msgid "View"
+msgstr "Voir"
+
+#: .\colibri\templates\wiki\includes\breadcrumbs.html.py:16
+#: .\colibri\templates\wiki\includes\breadcrumbs.html.py:42
+msgid "Sub-articles for"
+msgstr "Sous-articles pour"
+
+#: .\colibri\templates\wiki\includes\breadcrumbs.html.py:28
+msgid "No sub-articles"
+msgstr "Pas de sous-articles"
+
+#: .\colibri\templates\wiki\includes\breadcrumbs.html.py:31
+msgid "...and more"
+msgstr "...et plus"
+
+#: .\colibri\templates\wiki\includes\breadcrumbs.html.py:35
+msgid "Browse articles in this level"
+msgstr "Parcourir les articles de ce niveau"
+
+#: .\colibri\templates\wiki\includes\breadcrumbs.html.py:51
+msgid "New article next to"
+msgstr "Nouvel article à côté de"
+
+#: .\colibri\templates\wiki\includes\breadcrumbs.html.py:56
+msgid "New article below"
+msgstr "Nouvel article ci-dessous"
+
+#: .\colibri\templates\wiki\includes\revision_info.html.py:10
+msgid "by"
+msgstr "par"
+
+#: .\colibri\templates\wiki\includes\revision_info.html.py:10
+msgid "anonymous (IP logged)"
+msgstr "anonyme (IP enregistrée)"
+
+#: .\colibri\templates\wiki\includes\revision_info.html.py:15
+msgid "deleted"
+msgstr "effacé"
+
+#: .\colibri\templates\wiki\includes\revision_info.html.py:18
+msgid "restored"
+msgstr "restauré"
+
+#: .\colibri\templates\wiki\includes\revision_info.html.py:24
+msgid "unlocked"
+msgstr "déverrouillé"
+
+#: .\messages\admin.py:19 .\messages\forms.py:20 .\messages\models.py:52
+msgid "Recipient"
+msgstr "Destinataire"
+
+#: .\messages\admin.py:21
+msgid "group"
+msgstr "groupe"
+
+#: .\messages\admin.py:22
+msgid "Creates the message optionally for all users or a group of users."
+msgstr "Éventuellement crée le message pour tous les utilisateurs ou pour un groupe d'utilisateurs."
+
+#: .\messages\admin.py:29
+msgid "All users"
+msgstr "Tous les utilisateurs"
+
+#: .\messages\admin.py:44 .\messages\models.py:88
+msgid "Message"
+msgstr "Message"
+
+#: .\messages\admin.py:51
+msgid "Date/time"
+msgstr "Date / heure"
+
+#: .\messages\fields.py:53
+#, python-format
+msgid "The following usernames are incorrect: %(users)s"
+msgstr "Les noms d'utilisateurs suivants sont incorrects:%(utilisateurs)s"
+
+#: .\messages\forms.py:21 .\messages\models.py:49
+#: .\messages\templates\messages\trash.html.py:11
+msgid "Subject"
+msgstr "Sujet"
+
+#: .\messages\forms.py:23 .\messages\models.py:50
+msgid "Body"
+msgstr "Contenu principal"
+
+#: .\messages\management.py:9
+msgid "Message Received"
+msgstr "Message reçu"
+
+#: .\messages\management.py:9
+msgid "you have received a message"
+msgstr "vous avez reçu un message"
+
+#: .\messages\management.py:10
+msgid "Message Sent"
+msgstr "Message envoyé"
+
+#: .\messages\management.py:10
+msgid "you have sent a message"
+msgstr "vous avez envoyé un message"
+
+#: .\messages\management.py:11
+msgid "Message Replied"
+msgstr "Message répondu"
+
+#: .\messages\management.py:11
+msgid "you have replied to a message"
+msgstr "vous avez répondu à un message"
+
+#: .\messages\management.py:12
+msgid "Reply Received"
+msgstr "Réponse reçue"
+
+#: .\messages\management.py:12
+msgid "you have received a reply to a message"
+msgstr "vous avez reçu une réponse à un message"
+
+#: .\messages\management.py:13
+msgid "Message Deleted"
+msgstr "Message supprimé."
+
+#: .\messages\management.py:13
+msgid "you have deleted a message"
+msgstr "vous avez supprimé un message"
+
+#: .\messages\management.py:14
+msgid "Message Recovered"
+msgstr "Message récupéré"
+
+#: .\messages\management.py:14
+msgid "you have undeleted a message"
+msgstr "vous avez récupéré un message"
+
+#: .\messages\models.py:51 .\messages\templates\messages\trash.html.py:11
+msgid "Sender"
+msgstr "Expéditeur"
+
+#: .\messages\models.py:53
+msgid "Parent message"
+msgstr "Message parent"
+
+#: .\messages\models.py:54
+msgid "sent at"
+msgstr "envoyé à"
+
+#: .\messages\models.py:55
+msgid "read at"
+msgstr "lu à"
+
+#: .\messages\models.py:56
+msgid "replied at"
+msgstr "répondu à"
+
+#: .\messages\models.py:57
+msgid "Sender deleted at"
+msgstr "Expéditeur supprimé à"
+
+#: .\messages\models.py:58
+msgid "Recipient deleted at"
+msgstr "Bénéficiaire supprimé à"
+
+#: .\messages\models.py:89
+msgid "Messages"
+msgstr "Messages"
+
+#: .\messages\utils.py:27
+#, python-format
+msgid "New Message: %(subject)s"
+msgstr "Nouveau message: %(subject)s"
+
+#: .\messages\views.py:112 .\messages\views.py:151
+msgid "Message successfully sent."
+msgstr "Message envoyé avec succès."
+
+#: .\messages\views.py:157
+#, python-format
+msgid ""
+"%(sender)s wrote:\n"
+"%(body)s"
+msgstr "%(sender)s a écrit:\n%(body)s"
+
+#: .\messages\views.py:161
+#, python-format
+msgid "Re: %(subject)s"
+msgstr "Re: %(subject)s"
+
+#: .\messages\views.py:197
+msgid "Message successfully deleted."
+msgstr "Message supprimé avec succès."
+
+#: .\messages\views.py:224
+msgid "Message successfully recovered."
+msgstr "Message récupéré avec succès."
+
+#: .\messages\templates\messages\base.html.py:9
+#: .\messages\templates\messages\outbox.html.py:9
+msgid "Sent Messages"
+msgstr "Messages envoyés"
+
+#: .\messages\templates\messages\base.html.py:10
+#: .\messages\templates\messages\compose.html.py:15
+#: .\messages\templates\messages\compose_to.html.py:12
+msgid "New Message"
+msgstr "Nouveau message"
+
+#: .\messages\templates\messages\base.html.py:11
+msgid "Trash"
+msgstr "Corbeille"
+
+#: .\messages\templates\messages\compose.html.py:27
+#: .\messages\templates\messages\compose_to.html.py:22
+msgid "Send"
+msgstr "Envoyer"
+
+#: .\messages\templates\messages\inbox.html.py:39
+#: .\messages\templates\messages\outbox.html.py:35
+#: .\messages\templates\messages\trash.html.py:29
+msgid "No messages."
+msgstr "Pas de messages."
+
+#: .\messages\templates\messages\new_message.html.py:1
+#, python-format
+msgid ""
+"Hello %(recipient)s,\n"
+"\n"
+"you received a private message from %(sender)s with\n"
+"the following contents:"
+msgstr "Bonjour %(recipient)s,\n\nvous avez reçu un message privé de %(sender)s avec\nle contenu suivant:"
+
+#: .\messages\templates\messages\new_message.html.py:9
+#, python-format
+msgid "Sent from %(site_url)s"
+msgstr "Envoyé de %(site_url)s"
+
+#: .\messages\templates\messages\new_message.html.py:11
+#: .\messages\templates\messages\view.html.py:35
+msgid "Reply"
+msgstr "Répondre"
+
+#: .\messages\templates\messages\trash.html.py:8
+msgid "Deleted Messages"
+msgstr "Messages supprimés"
+
+#: .\messages\templates\messages\trash.html.py:11
+msgid "Date"
+msgstr "Date"
+
+#: .\messages\templates\messages\trash.html.py:11
+msgid "Action"
+msgstr "Action"
+
+#: .\messages\templates\messages\trash.html.py:21
+msgid "DATETIME_FORMAT"
+msgstr "DATETIME_FORMAT"
+
+#: .\messages\templates\messages\trash.html.py:22
+msgid "undelete"
+msgstr "récupérer"
+
+#: .\messages\templates\messages\trash.html.py:32
+msgid ""
+"Deleted Messages are removed from the trash at unregular intervals, don't "
+"rely on this feature for long-time storage."
+msgstr "Les messages effacés sont supprimés de la corbeille à intervalles irréguliers, ne comptez pas sur cette fonctionnalité pour du stockage à long terme."
+
+#: .\messages\templates\notification\messages_deleted\full.txt.py:1
+#, python-format
+msgid "You have deleted the message '%(message)s'."
+msgstr "Vous avez supprimé le message '%(message)s'."
+
+#: .\messages\templates\notification\messages_deleted\notice.html.py:1
+#, python-format
+msgid ""
+"You have deleted the message <a href=\"%(message_url)s\">%(message)s</a>."
+msgstr "Vous avez supprimé le message <a href=\"%(message_url)s\">%(message)s</a>."
+
+#: .\messages\templates\notification\messages_received\full.txt.py:1
+#, python-format
+msgid ""
+"%(message_sender)s has sent you a message:\n"
+"\n"
+"%(message)s\n"
+"\n"
+"%(message_body)s\n"
+"\n"
+"http://%(current_site)s%(message_url)s"
+msgstr "%(message_sender)s vous a envoyé un message:\n\n%(message)s\n\n%(message_body)s\n\nhttp://%(current_site)s%(message_url)s"
+
+#: .\messages\templates\notification\messages_received\notice.html.py:2
+#, python-format
+msgid ""
+"You have received the message <a href=\"%(message_url)s\">%(message)s</a> "
+"from %(message_sender)s."
+msgstr "Vous avez reçu le message <a href=\"%(message_url)s\">%(message)s</a> de %(message_sender)s."
+
+#: .\messages\templates\notification\messages_received\short.txt.py:1
+#: .\messages\templates\notification\messages_reply_received\short.txt.py:1
+#, python-format
+msgid "%(notice)s by %(message_sender)s"
+msgstr "%(notice)s par %(message_sender)s"
+
+#: .\messages\templates\notification\messages_recovered\full.txt.py:1
+#, python-format
+msgid "You have recovered the message '%(message)s'."
+msgstr "Vous avez récupéré le message '%(message)s'."
+
+#: .\messages\templates\notification\messages_recovered\notice.html.py:1
+#, python-format
+msgid ""
+"You have recovered the message <a href=\"%(message_url)s\">%(message)s</a>."
+msgstr "Vous avez récupéré le message <a href=\"%(message_url)s\">%(message)s</a>."
+
+#: .\messages\templates\notification\messages_replied\full.txt.py:1
+#, python-format
+msgid ""
+"You have replied to '%(message_parent_msg)s' from %(message_recipient)s."
+msgstr "Vous avez répondu à '%(message_parent_msg)s' de %(message_recipient)s."
+
+#: .\messages\templates\notification\messages_replied\notice.html.py:2
+#, python-format
+msgid ""
+"You have replied to <a href=\"%(message_url)s\">%(message_parent_msg)s</a> "
+"from %(message_recipient)s."
+msgstr "Vous avez répondu à <a href=\"%(message_url)s\">%(message_parent_msg)s</a> de %(message_recipient)s."
+
+#: .\messages\templates\notification\messages_reply_received\full.txt.py:1
+#, python-format
+msgid ""
+"%(message_sender)s replied to '%(message_parent_msg)s':\n"
+"\n"
+"%(message)s\n"
+"\n"
+"%(message_body)s\n"
+"\n"
+"http://%(current_site)s%(message_url)s"
+msgstr "%(message_sender)s a répondu à '%(message_parent_msg)s':\n\n%(message)s\n\n%(message_body)s\n\nhttp://%(current_site)s%(message_url)s"
+
+#: .\messages\templates\notification\messages_reply_received\notice.html.py:2
+#, python-format
+msgid "%(message_sender)s has sent you a reply to %(message_parent_msg)s."
+msgstr "%(message_sender)s vous a envoyé une réponse à %(message_parent_msg)s."
+
+#: .\messages\templates\notification\messages_sent\full.txt.py:1
+#, python-format
+msgid "You have sent the message '%(message)s' to %(message_recipient)s."
+msgstr "Vous avez envoyé le message '%(message)s' à %(message_recipient)s."
+
+#: .\messages\templates\notification\messages_sent\notice.html.py:2
+#, python-format
+msgid ""
+"You have sent the message <a href=\"%(message_url)s\">%(message)s</a> to "
+"%(message_recipient)s."
+msgstr "Vous avez envoyé le message <a href=\"%(message_url)s\">%(message)s</a> à %(message_recipient)s."
+
+#: .\old\django-basic-apps\basic\blog\models.py:16
+#: .\old\django-basic-apps\basic\blog\models.py:39
+#: .\old\django-basic-apps\basic\flagging\models.py:10
+#: .\old\django-basic-apps\basic\people\models.py:14
+#: .\old\django-basic-apps\basic\places\models.py:12
+#: .\old\django-basic-apps\basic\places\models.py:76
+#: .\old\django-basic-apps\basic\profiles\models.py:58
+#: .\old\django-basic-apps\basic\profiles\models.py:72
+#: .\old\django-basic-apps\basic\profiles\models.py:112
+msgid "title"
+msgstr "titre"
+
+#: .\old\django-basic-apps\basic\blog\models.py:17
+#: .\old\django-basic-apps\basic\blog\models.py:40
+#: .\old\django-basic-apps\basic\bookmarks\models.py:9
+#: .\old\django-basic-apps\basic\people\models.py:15
+#: .\old\django-basic-apps\basic\people\models.py:40
+#: .\old\django-basic-apps\basic\places\models.py:13
+#: .\old\django-basic-apps\basic\places\models.py:32
+#: .\old\django-basic-apps\basic\places\models.py:77
+msgid "slug"
+msgstr "url"
+
+#: .\old\django-basic-apps\basic\blog\models.py:20
+msgid "category"
+msgstr "catégorie"
+
+#: .\old\django-basic-apps\basic\blog\models.py:21
+msgid "categories"
+msgstr "catégories"
+
+#: .\old\django-basic-apps\basic\blog\models.py:36
+msgid "Draft"
+msgstr "Brouillon"
+
+#: .\old\django-basic-apps\basic\blog\models.py:37
+msgid "Public"
+msgstr "Public"
+
+#: .\old\django-basic-apps\basic\blog\models.py:42
+msgid "body"
+msgstr "corps"
+
+#: .\old\django-basic-apps\basic\blog\models.py:43
+msgid "tease"
+msgstr "taquiner"
+
+#: .\old\django-basic-apps\basic\blog\models.py:43
+msgid "Concise text suggested. Does not appear in RSS feed."
+msgstr "Texte concis suggéré. N'apparaît pas dans le flux RSS."
+
+#: .\old\django-basic-apps\basic\blog\models.py:44
+#: .\old\django-basic-apps\basic\places\models.py:84
+msgid "status"
+msgstr "état"
+
+#: .\old\django-basic-apps\basic\blog\models.py:45
+msgid "allow comments"
+msgstr "autoriser les commentaires"
+
+#: .\old\django-basic-apps\basic\blog\models.py:46
+msgid "publish"
+msgstr "publier"
+
+#: .\old\django-basic-apps\basic\blog\models.py:47
+#: .\old\django-basic-apps\basic\bookmarks\models.py:13
+#: .\old\django-basic-apps\basic\flagging\models.py:30
+#: .\old\django-basic-apps\basic\messages\models.py:54
+msgid "created"
+msgstr "créé"
+
+#: .\old\django-basic-apps\basic\blog\models.py:48
+#: .\old\django-basic-apps\basic\bookmarks\models.py:14
+#: .\old\django-basic-apps\basic\flagging\models.py:31
+#: .\old\django-basic-apps\basic\messages\models.py:55
+msgid "modified"
+msgstr "modifié"
+
+#: .\old\django-basic-apps\basic\blog\models.py:54
+msgid "post"
+msgstr "article"
+
+#: .\old\django-basic-apps\basic\blog\models.py:55
+msgid "posts"
+msgstr "articles"
+
+#: .\old\django-basic-apps\basic\blog\models.py:87
+#: .\old\django-basic-apps\basic\blog\models.py:88
+msgid "blog roll"
+msgstr "journal"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\category_detail.html.py:5
+#: .\old\django-basic-apps\basic\blog\templates\blog\category_detail.html.py:11
+#: .\old\django-basic-apps\basic\blog\templates\blog\tag_detail.html.py:5
+#: .\old\django-basic-apps\basic\blog\templates\blog\tag_detail.html.py:11
+msgid "Posts for"
+msgstr "Articles pour"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\category_detail.html.py:19
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_archive_day.html.py:18
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_archive_month.html.py:18
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_list.html.py:18
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_search.html.py:30
+#: .\old\django-basic-apps\basic\blog\templates\blog\tag_detail.html.py:19
+msgid "View this post"
+msgstr "Voir cet article"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\category_list.html.py:5
+#: .\old\django-basic-apps\basic\blog\templates\blog\category_list.html.py:10
+msgid "Post categories"
+msgstr "Catégories d'articles"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\category_list.html.py:17
+msgid "View posts in this category"
+msgstr "Voir les articles dans cette catégorie"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_archive_day.html.py:5
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_archive_day.html.py:10
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_archive_month.html.py:5
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_archive_month.html.py:10
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_archive_year.html.py:5
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_archive_year.html.py:10
+msgid "Post archive for"
+msgstr "Archive des articles pour"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_archive_year.html.py:17
+msgid "View items posted this month"
+msgstr "Voir les articles postés ce mois-ci"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:14
+msgid "View previous post"
+msgstr "Voir l'article précédent"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:17
+msgid "View next post"
+msgstr "Voir l'article suivant"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:34
+msgid "Related tags"
+msgstr "Labels associés"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:43
+msgid "Comments"
+msgstr "Commentaires"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:48
+msgid "Permalink to"
+msgstr "Lien permanent vers"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:48
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:49
+#, python-format
+msgid "%(user_name)s's"
+msgstr "de %(user_name)s"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:48
+msgid "comment"
+msgstr "commentaire"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:49
+#: .\old\django-basic-apps\basic\people\models.py:47
+msgid "website"
+msgstr "site Web"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:49
+msgid "says"
+msgstr "dit"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:52
+msgid "Posted at"
+msgstr "Publié à"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:52
+msgid "on"
+msgstr "sur"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:62
+msgid "Comments are closed"
+msgstr "Les commentaires sont clos."
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:63
+msgid "Comments have been closed for this post"
+msgstr "Les commentaires sont clos pour cet article"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_list.html.py:5
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_list.html.py:10
+msgid "Post archive"
+msgstr "Archive des articles"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_list.html.py:28
+msgid "View older posts"
+msgstr "Voir des articles plus anciens"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_list.html.py:28
+msgid "Older"
+msgstr "Plus ancien"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_list.html.py:32
+msgid "View newer posts"
+msgstr "Voir des articles plus récents"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_list.html.py:32
+msgid "Newer"
+msgstr "Plus récent"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_search.html.py:5
+msgid "Post searchApp"
+msgstr "App de recherchle d'article"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_search.html.py:33
+#, python-format
+msgid "comment%(pluralize)s"
+msgstr "commentaire %(pluralize)s"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\tag_list.html.py:5
+#: .\old\django-basic-apps\basic\blog\templates\blog\tag_list.html.py:10
+msgid "Post tags"
+msgstr "Publier des labels"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\tag_list.html.py:17
+msgid "View posts tagged"
+msgstr "Voir les articles avec labels"
+
+#: .\old\django-basic-apps\basic\bookmarks\models.py:10
+#: .\old\django-basic-apps\basic\places\models.py:81
+#: .\old\django-basic-apps\basic\profiles\models.py:73
+#: .\old\django-basic-apps\basic\profiles\models.py:113
+msgid "url"
+msgstr "url"
+
+#: .\old\django-basic-apps\basic\bookmarks\models.py:11
+#: .\old\django-basic-apps\basic\flagging\models.py:12
+#: .\old\django-basic-apps\basic\places\models.py:83
+msgid "description"
+msgstr "description"
+
+#: .\old\django-basic-apps\basic\bookmarks\models.py:12
+msgid "extended"
+msgstr "étendu(e)"
+
+#: .\old\django-basic-apps\basic\bookmarks\models.py:18
+msgid "bookmark"
+msgstr "signet"
+
+#: .\old\django-basic-apps\basic\bookmarks\models.py:19
+msgid "bookmarks"
+msgstr "signets"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\approve.html.py:7
+#: .\old\django-basic-apps\basic\comments\templates\comments\approve.html.py:11
+msgid "Approve a comment"
+msgstr "Approuver un commentaire"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\approve.html.py:20
+msgid "Approve"
+msgstr "Approuver"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\approved.html.py:7
+#: .\old\django-basic-apps\basic\comments\templates\comments\approved.html.py:11
+msgid "Thanks for approving"
+msgstr "Merci d'avoir approuvé"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\approved.html.py:16
+#: .\old\django-basic-apps\basic\comments\templates\comments\deleted.html.py:16
+#: .\old\django-basic-apps\basic\comments\templates\comments\flagged.html.py:16
+msgid ""
+"Thanks for taking the time to improve the quality of discussion on our site"
+msgstr "Merci d'avoir pris le temps d'améliorer la qualité de la discussion sur notre site"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\delete.html.py:7
+#: .\old\django-basic-apps\basic\comments\templates\comments\delete.html.py:11
+msgid "Remove comment"
+msgstr "Supprimer le commentaire"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\edit.html.py:7
+#: .\old\django-basic-apps\basic\comments\templates\comments\edit.html.py:11
+msgid "Edit comment"
+msgstr "Modifier le commentaire"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\edit.html.py:22
+msgid "Save"
+msgstr "Enregistrer"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\flag.html.py:7
+#: .\old\django-basic-apps\basic\comments\templates\comments\flag.html.py:11
+msgid "Flag this comment"
+msgstr "Signaler ce commentaire"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\flag.html.py:20
+msgid "Flag"
+msgstr "Signal"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\posted.html.py:7
+#: .\old\django-basic-apps\basic\comments\templates\comments\posted.html.py:11
+msgid "Thanks"
+msgstr "Merci"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\posted.html.py:16
+msgid "Thank you for your comment"
+msgstr "Merci pour votre commentaire"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\preview.html.py:26
+msgid "or make changes"
+msgstr "ou apporter des modifications"
+
+#: .\old\django-basic-apps\basic\events\models.py:24
+msgid "event"
+msgstr "événement"
+
+#: .\old\django-basic-apps\basic\events\models.py:25
+msgid "events"
+msgstr "événements"
+
+#: .\old\django-basic-apps\basic\events\models.py:40
+msgid "event time"
+msgstr "heure de l'évènement"
+
+#: .\old\django-basic-apps\basic\events\models.py:41
+msgid "event times"
+msgstr "heure des événements"
+
+#: .\old\django-basic-apps\basic\flagging\models.py:15
+msgid "flag type"
+msgstr "type de signal"
+
+#: .\old\django-basic-apps\basic\flagging\models.py:16
+msgid "flag types"
+msgstr "types de signal"
+
+#: .\old\django-basic-apps\basic\flagging\models.py:34
+msgid "flag"
+msgstr "signal"
+
+#: .\old\django-basic-apps\basic\flagging\models.py:35
+msgid "flags"
+msgstr "signaux"
+
+#: .\old\django-basic-apps\basic\media\templates\inlines\media_photo.html.py:9
+#: .\old\django-basic-apps\basic\media\templates\inlines\media_photo.html.py:20
+msgid "View the full image"
+msgstr "Voir l'image complète"
+
+#: .\old\django-basic-apps\basic\media\templates\inlines\media_photo.html.py:11
+#: .\old\django-basic-apps\basic\media\templates\inlines\media_photo.html.py:22
+msgid "By"
+msgstr "Par"
+
+#: .\old\django-basic-apps\basic\messages\models.py:63
+msgid "message"
+msgstr "message"
+
+#: .\old\django-basic-apps\basic\messages\models.py:64
+msgid "messages"
+msgstr "messages"
+
+#: .\old\django-basic-apps\basic\people\models.py:18
+msgid "person type"
+msgstr "type de personne"
+
+#: .\old\django-basic-apps\basic\people\models.py:19
+msgid "person types"
+msgstr "types de personnes"
+
+#: .\old\django-basic-apps\basic\people\models.py:37
+msgid "first name"
+msgstr "prénom"
+
+#: .\old\django-basic-apps\basic\people\models.py:38
+msgid "middle name"
+msgstr "deuxième prénom"
+
+#: .\old\django-basic-apps\basic\people\models.py:39
+msgid "last name"
+msgstr "nom"
+
+#: .\old\django-basic-apps\basic\people\models.py:42
+#: .\old\django-basic-apps\basic\profiles\models.py:18
+msgid "gender"
+msgstr "sexe"
+
+#: .\old\django-basic-apps\basic\people\models.py:43
+#: .\old\django-basic-apps\basic\profiles\models.py:19
+msgid "mugshot"
+msgstr "cliché"
+
+#: .\old\django-basic-apps\basic\people\models.py:44
+msgid "mugshot credit"
+msgstr "crédit pour le cliché"
+
+#: .\old\django-basic-apps\basic\people\models.py:45
+#: .\old\django-basic-apps\basic\profiles\models.py:20
+msgid "birth date"
+msgstr "date de naissance"
+
+#: .\old\django-basic-apps\basic\people\models.py:50
+msgid "person"
+msgstr "personne"
+
+#: .\old\django-basic-apps\basic\people\models.py:51
+msgid "people"
+msgstr "personnes"
+
+#: .\old\django-basic-apps\basic\people\models.py:75
+msgid "quote"
+msgstr "citation"
+
+#: .\old\django-basic-apps\basic\people\models.py:76
+msgid "source"
+msgstr "source"
+
+#: .\old\django-basic-apps\basic\places\models.py:16
+msgid "place type"
+msgstr "type de lieu"
+
+#: .\old\django-basic-apps\basic\places\models.py:17
+msgid "place types"
+msgstr "types de lieux"
+
+#: .\old\django-basic-apps\basic\places\models.py:30
+#: .\old\django-basic-apps\basic\places\models.py:35
+#: .\old\django-basic-apps\basic\profiles\models.py:23
+msgid "city"
+msgstr "ville"
+
+#: .\old\django-basic-apps\basic\places\models.py:31
+#: .\old\django-basic-apps\basic\profiles\models.py:24
+msgid "state"
+msgstr "état"
+
+#: .\old\django-basic-apps\basic\places\models.py:36
+msgid "cities"
+msgstr "villes"
+
+#: .\old\django-basic-apps\basic\places\models.py:51
+msgid "latitude"
+msgstr "latitude"
+
+#: .\old\django-basic-apps\basic\places\models.py:52
+msgid "longitude"
+msgstr "longitude"
+
+#: .\old\django-basic-apps\basic\places\models.py:53
+msgid "address"
+msgstr "adresse"
+
+#: .\old\django-basic-apps\basic\places\models.py:55
+#: .\old\django-basic-apps\basic\profiles\models.py:25
+msgid "zip"
+msgstr "code postal"
+
+#: .\old\django-basic-apps\basic\places\models.py:56
+#: .\old\django-basic-apps\basic\profiles\models.py:26
+msgid "country"
+msgstr "pays"
+
+#: .\old\django-basic-apps\basic\places\models.py:59
+msgid "point"
+msgstr "point"
+
+#: .\old\django-basic-apps\basic\places\models.py:60
+msgid "points"
+msgstr "points"
+
+#: .\old\django-basic-apps\basic\places\models.py:75
+msgid "Pre-name"
+msgstr "Pré-nom"
+
+#: .\old\django-basic-apps\basic\places\models.py:78
+msgid "nickname"
+msgstr "surnom"
+
+#: .\old\django-basic-apps\basic\places\models.py:79
+msgid "unit"
+msgstr "unité"
+
+#: .\old\django-basic-apps\basic\places\models.py:80
+msgid "phone"
+msgstr "téléphone"
+
+#: .\old\django-basic-apps\basic\places\models.py:82
+msgid "email"
+msgstr "e-mail"
+
+#: .\old\django-basic-apps\basic\places\models.py:91
+msgid "place"
+msgstr "lieu"
+
+#: .\old\django-basic-apps\basic\places\models.py:92
+msgid "places"
+msgstr "lieux"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:21
+msgid "address1"
+msgstr "adresse1"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:22
+msgid "address2"
+msgstr "Adresse2"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:27
+msgid "mobile"
+msgstr "portable"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:31
+msgid "user profile"
+msgstr "profil utilisateur"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:32
+msgid "user profiles"
+msgstr "profils utilisateurs"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:59
+msgid "domain"
+msgstr "domaine"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:62
+msgid "mobile provider"
+msgstr "opérateur de téléphonie mobile"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:63
+msgid "mobile providers"
+msgstr "opérateurs de téléphonie mobile"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:76
+msgid "service type"
+msgstr "type de service"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:77
+msgid "service types"
+msgstr "types de services"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:88
+msgid "Name or ID"
+msgstr "Nom ou ID"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:93
+msgid "service"
+msgstr "service"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:94
+msgid "services"
+msgstr "services"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:116
+msgid "link"
+msgstr "lien"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:117
+msgid "links"
+msgstr "liens"
+
+#: .\old\django-basic-apps\basic\relationships\models.py:76
+msgid "relationship"
+msgstr "relation"
+
+#: .\old\django-basic-apps\basic\relationships\models.py:77
+msgid "relationships"
+msgstr "relations"
+
+#: .\organizations\forms.py:35
+msgid "Only the organization owner can change ownerhip"
+msgstr "Seul le propriétaire peut modifier la propriété"
+
+#: .\organizations\forms.py:49
+msgid "The organization owner must be an admin"
+msgstr "Le propriétaire doit être un administrateur"
+
+#: .\organizations\forms.py:76
+msgid "This email address has been used multiple times."
+msgstr "Cette adresse email a été utilisée plusieurs fois."
+
+#: .\organizations\forms.py:89
+msgid "There is already an organization member with this email address!"
+msgstr "Il existe déjà une organisation membre avec cette adresse e-mail!"
+
+#: .\organizations\forms.py:99
+msgid "The email address for the account owner"
+msgstr "L'adresse e-mail pour le propriétaire du compte"
+
+#: .\organizations\forms.py:132 .\organizations\models.py:33
+msgid "The name of the organization"
+msgstr "Le nom de l'organisation"
+
+#: .\organizations\forms.py:134 .\organizations\models.py:35
+msgid "The name in all lowercase, suitable for URL identification"
+msgstr "Le nom en minuscules, adapté pour l'identification URL"
+
+#: .\organizations\mixins.py:69
+msgid "Wrong organization"
+msgstr "Mauvaise organisation"
+
+#: .\organizations\mixins.py:84
+msgid "Sorry, admins only"
+msgstr "Désolé, seulement les admins"
+
+#: .\organizations\mixins.py:99
+msgid "You are not the organization owner"
+msgstr "Vous n'êtes pas le propriétaire"
+
+#: .\organizations\models.py:46
+msgid "organization"
+msgstr "organisation"
+
+#: .\organizations\models.py:47
+msgid "organizations"
+msgstr "organisations"
+
+#: .\organizations\models.py:99
+msgid "organization user"
+msgstr "utilisateur de l'organisation"
+
+#: .\organizations\models.py:100
+msgid "organization users"
+msgstr "utilisateurs de l'organisation"
+
+#: .\organizations\models.py:115
+msgid ""
+"Cannot delete organization owner before organization or transferring "
+"ownership."
+msgstr "Impossible de supprimer le propriétaire avant l'organisation ou le transfert de propriété."
+
+#: .\organizations\models.py:142
+msgid "organization owner"
+msgstr "propriétaire de l'organisation"
+
+#: .\organizations\models.py:143
+msgid "organization owners"
+msgstr "propriétaires d'organisations"
+
+#: .\organizations\views.py:107
+msgid "Already active"
+msgstr "Déjà actif"
+
+#: .\organizations\backends\defaults.py:41
+msgid "You must define a form_class"
+msgstr "Vous devez définir un form_class"
+
+#: .\organizations\backends\defaults.py:60
+#: .\organizations\backends\defaults.py:62
+msgid "Your URL may have expired."
+msgstr "Votre URL peut avoir expiré."
+
+#: .\organizations\templates\organizations\organization_confirm_delete.html.py:12
+msgid "Delete group"
+msgstr "Supprimer un groupe"
+
+#: .\organizations\templates\organizations\organization_detail.html.py:13
+#: .\organizations\templates\organizations\organization_form.html.py:12
+msgid "Edit group"
+msgstr "Modifier un groupe"
+
+#: .\src\django-haystack\haystack\admin.py:123
+#, python-format
+msgid "0 of %(count)d selected"
+msgid_plural "of %(count)d selected"
+msgstr[0] "0 parmi %(count)d sélectionné"
+msgstr[1] "0 parmi %(count)d sélectionné"
+
+#: .\src\django-haystack\haystack\admin.py:125
+#, python-format
+msgid "%(total_count)s selected"
+msgid_plural "All %(total_count)s selected"
+msgstr[0] "%(total_count)s sélectionnés"
+msgstr[1] "%(total_count)s sélectionnés"
+
+#: .\src\django-haystack\haystack\forms.py:90
+msgid "Search In"
+msgstr "Rechercher dans"
+
+#: .\src\django-haystack\haystack\panels.py:24
+msgid "Haystack"
+msgstr "Meule de foin"
+
+#: .\src\django-haystack\haystack\panels.py:48
+msgid "Search Queries"
+msgstr "Requêtes de recherche"
+
+#: .\src\django-haystack\haystack\templates\panels\haystack.html.py:5
+msgid "Query"
+msgstr "Requête"
+
+#: .\src\django-haystack\haystack\templates\panels\haystack.html.py:6
+msgid "Backend Alias"
+msgstr "Alias ​​Backend"
+
+#: .\src\django-haystack\haystack\templates\panels\haystack.html.py:7
+msgid "Timeline"
+msgstr "Calendrier"
+
+#: .\src\django-haystack\haystack\templates\panels\haystack.html.py:8
+msgid "Time"
+msgstr "Temps"
+
+#: .\src\django-haystack\haystack\templates\panels\haystack.html.py:9
+msgid "Kwargs"
+msgstr "Kwargs"
+

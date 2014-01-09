@@ -1,0 +1,155 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid101\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww29900\viewh19200\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl-300\pardirnatural
+
+\f0\fs22 \cf0 \kerning1\expnd1\expndtw6
+Updated: 13/05/2013
+\f1\b \ul \
+\
+
+\fs28 colibri Portal - Mac OS.X Installation Instructions for localhost development environment
+\f0\b0\fs22 \ulnone \
+******************************************************************************\
+
+\f1\b The installation process has been tested under Mac OS X 10.8.3 (Mountain Lion)
+\f0\b0 \
++*****************************************************************************\
+\
+\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\sl-300\pardirnatural
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	1.	}\kerning1\expnd1\expndtw6
+First of all make sure you run a 
+\f1\b Python 2.7.x
+\f0\b0  version by running "
+\f1\b python --version
+\f0\b0 ". f you have a previous version or a version >2.7.x, then go and install Python 2.7 (Python is available at {\field{\*\fldinst{HYPERLINK "http://www.python.org/download/releases/2.7/"}}{\fldrslt http://www.python.org/download/releases/2.7/}}\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	2.	}\kerning1\expnd1\expndtw6
+Download 
+\f1\b GIT
+\f0\b0  from {\field{\*\fldinst{HYPERLINK "http://git-scm.com/download/mac"}}{\fldrslt \kerning1\expnd1\expndtw6
+http://git-scm.com/download/mac}}\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	3.	}\kerning1\expnd1\expndtw6
+If you don't have 
+\f1\b Xcode
+\f0\b0  installed, download and install it from Mac App Store\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	4.	}\kerning1\expnd1\expndtw6
+Open Xcode and then go to Preferences and install the "
+\f1\b Command Line Tools
+\f0\b0 " so that the gcc compiler is installed\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	5.	}\kerning1\expnd1\expndtw6
+Open a terminal window, run "
+\f1\b sudo easy_install pip
+\f0\b0 " to install the pip installer.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	6.	}\kerning1\expnd1\expndtw6
+Clone the colibri git repository to a directory of your likings and browse to this directory from the terminal window.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	7.	}\kerning1\expnd1\expndtw6
+Once you are in the colibri directory, run "
+\f1\b sudo pip install -r requirements.txt
+\f0\b0 " in order to get all dependencies downloaded.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	8.	}\kerning1\expnd1\expndtw6
+To sync the DB, run "
+\f1\b python manage.py syncdb
+\f0\b0 " followed by "
+\f1\b python manage.py migrate --fak
+\f0\b0 e"\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	9.	}\kerning1\expnd1\expndtw6
+At the end run "
+\f1\b python manage.py runserver
+\f0\b0 " to bring up the local server and with a browser go to {\field{\*\fldinst{HYPERLINK "http://127.0.0.1:8000"}}{\fldrslt \kerning1\expnd1\expndtw6
+http://127.0.0.1:8000}} to view the colibri portal\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl-300\pardirnatural
+\cf0 \kerning1\expnd1\expndtw6
+\
+\
+Periodically, as new modules are added to the git repo of colibri, you should run steps 7-8 in order to download these new additions.\
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl-300\pardirnatural
+
+\f1\b\fs28 \cf0 \kerning1\expnd1\expndtw6
+\ul \ulc0 colibri Portal - MS Windows Installation Instructions for localhost development environment
+\f0\b0\fs22 \kerning1\expnd1\expndtw6
+\ulnone \
+*************************************************************\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl-300\pardirnatural
+
+\f1\b \cf0 \kerning1\expnd1\expndtw6
+The installation process has been tested under Windows XP 32
+\f0\b0 \kerning1\expnd1\expndtw6
+\
+*************************************************************\
+\
+\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\sl-300\pardirnatural
+\ls2\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	1.	}\kerning1\expnd1\expndtw6
+Download and install 
+\f1\b GIT
+\f0\b0  from {\field{\*\fldinst{HYPERLINK "http://git-scm.com/download/win"}}{\fldrslt http://git-scm.com/download/win}} . Choose the second option so that GIT is added to your PATH.\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	2.	}\kerning1\expnd1\expndtw6
+Download and install 
+\f1\b Python 2.7.x 
+\f0\b0 from {\field{\*\fldinst{HYPERLINK "http://www.python.org/download/releases/2.7/"}}{\fldrslt \kerning1\expnd1\expndtw6
+http://www.python.org/download/releases/2.7/}}\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	3.	}\kerning1\expnd1\expndtw6
+Add 
+\f1\b C:\\Python27\\;C:\\Python27\\Scripts
+\f0\b0 ; to you PATH and REBOOT\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	4.	}\kerning1\expnd1\expndtw6
+Download and install the 
+\f1\b SetupTools for PY 2.7
+\f0\b0  from {\field{\*\fldinst{HYPERLINK "https://pypi.python.org/pypi/setuptools#downloads"}}{\fldrslt \kerning1\expnd1\expndtw6
+https://pypi.python.org/pypi/setuptools#downloads}}\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	5.	}\kerning1\expnd1\expndtw6
+Download the last 
+\f1\b PIP
+\f0\b0  version from {\field{\*\fldinst{HYPERLINK "http://pypi.python.org/pypi/pip#downloads"}}{\fldrslt \kerning1\expnd1\expndtw6
+http://pypi.python.org/pypi/pip#downloads}} . Uncompress it and then copy the uncompressed pip folder content into 
+\f1\b C:\\Python27\\folder
+\f0\b0  (don't copy the whole folder into it, just the content), because the python command doesn't work outside 
+\f1\b C:\\Python2x
+\f0\b0  folder and then run "
+\f1\b python setup.py install
+\f0\b0 "\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	6.	}\kerning1\expnd1\expndtw6
+Download and install 
+\f1\b PIL
+\f0\b0  from {\field{\*\fldinst{HYPERLINK "http://www.pythonware.com/products/pil/"}}{\fldrslt \kerning1\expnd1\expndtw6
+http://www.pythonware.com/products/pil/}}\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	7.	}\kerning1\expnd1\expndtw6
+Download and install 
+\f1\b Psycopg2-v2.4.6 
+\f0\b0 from {\field{\*\fldinst{HYPERLINK "http://www.stickpeople.com/projects/python/win-psycopg/"}}{\fldrslt \kerning1\expnd1\expndtw6
+http://www.stickpeople.com/projects/python/win-psycopg/}}\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	8.	}\kerning1\expnd1\expndtw6
+Download and install 
+\f1\b VC++2008 Express
+\f0\b0  from {\field{\*\fldinst{HYPERLINK "http://www.google.com/url?sa=t&rct=j&q=visual%20c++%202008%20express&source=web&cd=1&cad=rja&ved=0CDEQFjAA&url=http://go.microsoft.com/?linkid=7729279&ei=tCgzUbKBHeqS4AS6-IAg&usg=AFQjCNEulTGchEeozkLGRH8LZELiTKlC5A&bvm=bv.43148975,d.bGE"}}{\fldrslt \kerning1\expnd1\expndtw6
+http://www.google.com/url?sa=t&rct=j&q=visual%20c++%202008%20express&source=web&cd=1&cad=rja&ved=0CDEQFjAA&url=http://go.microsoft.com/?linkid=7729279&ei=tCgzUbKBHeqS4AS6-IAg&usg=AFQjCNEulTGchEeozkLGRH8LZELiTKlC5A&bvm=bv.43148975,d.bGE}} (note: this step is needed because you have to have the same compiler which was used for PIL etc).\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	9.	}\kerning1\expnd1\expndtw6
+Enter 
+\f1\b /colibri
+\f0\b0  from your command prompt and run 
+\f1\b "pip install -r requirements.txt"
+\f0\b0 . The installation should finish without problems.\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	10.	}\kerning1\expnd1\expndtw6
+Copy the "
+\f1\b application.id
+\f0\b0 " file that is accompanying this guidelines to your "
+\f1\b /colibri/configs
+\f0\b0 " folder\\\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	11.	}\kerning1\expnd1\expndtw6
+In the /colibri folder run "
+\f1\b python manage.py runserver
+\f0\b0 "\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	12.	}\kerning1\expnd1\expndtw6
+Open up your browser and visit {\field{\*\fldinst{HYPERLINK "http://127.0.0.1:8000/"}}{\fldrslt \kerning1\expnd1\expndtw6
+http://127.0.0.1:8000/}}\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl-300\pardirnatural
+\cf0 \kerning1\expnd1\expndtw6
+\
+\
+Periodically, as new modules are added to the git repo of colibri, you should run step 9 in order to download these new additions.}

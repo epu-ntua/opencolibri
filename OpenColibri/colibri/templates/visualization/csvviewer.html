@@ -1,0 +1,169 @@
+﻿{% extends "base.html" %}
+{% block title %}CSV Viewer{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-responsive.min.css">
+
+{% endblock %}
+{% block scripts %}
+<script src="/s/js/third_party/highcharts/js/highcharts.js"></script>
+<script src="/s/js/third_party/highcharts/js/modules/exporting.js"></script>
+<script type="text/javascript" src="http://r.office.microsoft.com/r/rlidExcelButton?v=1&kip=1"></script>
+<script type="text/javascript" language="javascript" src="/s/opendatasites/js/jquery.dataTables.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function () {
+        //Initialize the Data Table
+        var oTable = $('#csvtable').dataTable({
+            bPaginate: true, "iDisplayLength": 200,
+            "oLanguage": {
+                "oPaginate": {
+                    "sNext": "Next >>", "sPrevious": "<< Previous "
+                }
+            }
+        });
+        $("#btnexecute").click(function () {
+            var curData = oTable.fnGetData();
+            $.ajax({
+                type: "POST",
+                url: '/analyze/',
+                data: {
+                    "datasnap[]": curData,
+                    "numberOfClusters": $("#numberOfClusters").val(),
+                    "labelColumn": $("#labelColumn").val(),
+                    "attributeAColumn": $("#attributeAColumn").val(),
+                    "attributeBColumn": $("#attributeBColumn").val(),
+                },
+
+                success: function (http) {
+                    $("#results").html(http);
+                    createChart();
+                },
+
+                error: function (error, description, s) {
+                    alert(error.responseText)
+                }
+            })
+        });
+    });
+
+</script>
+
+{% endblock %}
+{% block content %}
+{% load i18n %}
+{% load url from future %}
+
+<div id="csvviewer_page" class="wrapper-content">
+    <div class="csv-form">
+        <div class="csv-form-header">
+        </div>
+        <div class="csv-form-body">
+            <div>
+                <div style="float:left;"><a class="green" style="font-weight:bold" href="/dataset/{{dataset_pk}}">{%
+                    trans "Return to dataset" %}</a></div>
+                <div style="text-align:right">
+                    <div class="btn" onclick="$('#analysis_panel').toggle('slow')"><i class="icon-random"></i>{% trans "
+                        Analytics panel" %}
+                    </div>
+                    <a href="#" name="MicrosoftExcelButton" data-xl-tableTitle="" data-xl-buttonStyle="Standard"
+                       data-xl-fileName="Book1" data-xl-attribution="Data provided by colibri"></a>
+                </div>
+                <div id="analysis_panel" style="display:none;" class="notranslate">
+                    <div id="analysis_panel_tools">
+                        <div><select style="width:150px">
+                            <option value="kmeans">{% trans "k-Means Clustering" %}</option>
+                        </select>
+                            {% trans "Number of clusters" %}
+                            <input id="numberOfClusters" style="width:15px" class="span2" id="clusters" value="3"
+                                   type="text"></input>
+                        </div>
+                        <div>
+
+                        </div>
+                        <div>
+                            {% trans "Label Column" %}
+                            <select id="labelColumn">
+                                {% for col in headercolumns %}
+                                <option value="{{forloop.counter}}">{{col|addslashes}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div>
+                            {% trans "Attribute A Column" %}
+                            <select id="attributeAColumn">
+                                {% for col in headercolumns %}
+                                <option
+                                {% if forloop.counter == 2 %}selected="selected"{% endif
+                                %}value="{{forloop.counter}}">{{col|addslashes}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div>
+                            {% trans "Attribute B Column" %}
+                            <select id="attributeBColumn">
+                                {% for col in headercolumns %}
+                                <option
+                                {% if forloop.counter == 3 %}selected="selected"{% endif %}
+                                value="{{forloop.counter}}">{{col|addslashes}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div id="btnexecute" class="btn orange">{% trans "Execute" %}</div>
+                    </div>
+                    <div id="results" style="background-color:white"></div>
+                </div>
+
+                <table id="csvtable" class="table table-condensed">
+                    {% for row in data %}
+                    {% if forloop.first %}
+                    <thead>
+                    <tr>
+                        {% for column in row %}
+                        <th>
+                            {{ column|addslashes }}
+                        </th>
+                        {% endfor %}
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% else %}
+                    <tr>
+                        {% for column in row %}
+                        <td>
+                            {{ column|addslashes }}
+                        </td>
+                        {% endfor %}
+                    </tr>
+                    {% endif %}
+                    {% endfor %}
+                    </tbody>
+                </table>
+                <div style="float:right;padding-bottom:10px"><a class="green" style="font-weight:bold"
+                                                                href="/dataset/{{dataset_pk}}">{% trans "Return to
+                    dataset" %}</a></div>
+                <div id="MicrosoftTranslatorWidget"
+                     style="float:left;width: 200px; min-height: 83px; border-color: #006C71; background-color: #A6C6BF;">
+                    <noscript><a href="http://www.microsofttranslator.com/bv.aspx?a=http%3a%2f%2fwww.colibridata.eu%2f">Translate
+                        this dataset</a><br/>Powered by <a href="http://www.bing.com/translator">Microsoft®
+                        Translator</a></noscript>
+                </div>
+                <script type="text/javascript"> /* <![CDATA[ */
+                setTimeout(function () {
+                    var s = document.createElement("script");
+                    s.type = "text/javascript";
+                    s.charset = "UTF-8";
+                    s.src = ((location && location.href && location.href.indexOf('https') == 0) ? "https://ssl.microsofttranslator.com" : "http://www.microsofttranslator.com" ) + "/ajax/v2/widget.aspx?mode=manual&from={% if dataset_language != '--' %}{{dataset_language}}{% endif %}&layout=ts";
+                    var p = document.getElementsByTagName('head')[0] || document.documentElement;
+                    p.insertBefore(s, p.firstChild);
+                }, 0);
+                /* ]]> */ </script>
+            </div>
+        </div>
+    </div>
+
+
+</div><!-- END of wrapper-content -->
+
+
+{% endblock %}

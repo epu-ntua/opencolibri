@@ -1,0 +1,334 @@
+﻿{% extends 'base.html' %}
+{% load i18n %}
+{% load list_tags %}
+{% block css %}
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-responsive.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-image-gallery.min.css">
+<link rel="stylesheet" href="/s/fonts/fonts.css">
+{% endblock %}
+{% block scripts %}
+<script>
+    settings = {
+        '.country-facet-more': true,
+        '.category-facet-more': true,
+        '.publisher-facet-more': true,
+        '.license-facet-more': true,
+        '.view-facet-more': true,
+    };
+    function toogle(selector, ctx) {
+        if (settings[selector]) {
+            $(selector).show(200);
+            settings[selector] = false;
+            $(ctx).html('[ {%trans "less" %} ]');
+        } else {
+            $(selector).hide(200);
+            settings[selector] = true;
+            $(ctx).html('[ {%trans "more" %} ]');
+        }
+
+    }
+</script>
+<script>
+    var increasePopularity = function (datasetID) {
+        $.ajax({
+            type: "POST",
+            url: '/dataset/' + datasetID + '/increase-popularity',
+            success: function (response) {
+                console.log(response);
+            }
+        });
+    }
+</script>
+{% endblock %}
+{% block content %}
+<form method="get" action="." style="margin-bottom:0px">
+<div id="elastic_search_page" class="wrapper-content">
+
+<div class="elastic-center">
+<div class="filters-form notranslate">
+    <div class="filters-header">
+
+    </div>
+    <div class="filters-body">
+        {% comment %}{% if facets.fields.format %}
+        <dt class="facet_title">{% trans "Format" %}</dt>
+        {% for format in facets.fields.format|slice:":5" %}
+        {% with "format:"|add:format.0 as urlFormat %}
+        <dd><a href=
+                       {% if urlFormat in request.get_full_path %}
+            "{{ request.get_full_path|removeFromUrl:urlFormat }}"
+            {% else %}
+            "{{ request.get_full_path }}&amp;selected_facets=format:{{ format.0|urlencode }}"
+            {% endif %}
+            >{{ format.0 }}</a> ({{ format.1 }})
+        </dd>
+        {% endwith %}
+        {% endfor %}
+        {% if facets.fields.format|length > 5 %}
+        {% for format in facets.fields.format|slice:"5:" %}
+        {% with "format:"|add:format.0 as urlFormat %}
+        <dd class="hide format-facet-more"><a href=
+                                                      {% if urlFormat in request.get_full_path %}
+            "{{ request.get_full_path|removeFromUrl:urlFormat }}"
+            {% else %}
+            "{{ request.get_full_path }}&amp;selected_facets=format:{{ format.0|urlencode }}"
+            {% endif %}
+            >{{ format.0 }}</a> ({{ format.1 }})
+        </dd>
+        {% endwith %}
+        {% endfor %}
+        <a class="btnfacet" onclick="toogle('.format-facet-more', this);">[ {% trans "more" %} ]</a>
+        {% endif %}
+        {% else %}
+        <p class="notfounditem">{% trans "No format facets." %}</p>
+        {% endif %}
+        {% endcomment %}
+        {% if facets.fields.country %}
+        <dt class="facet_title">{% trans "Country" %}</dt>
+        {% for country in facets.fields.country|slice:":5" %}
+        <dd><a href=
+                       {% if 'country_exact' in request.get_full_path %}
+            "{{ request.get_full_path|removeFromUrl:'country_exact' }}"
+            {% else %}
+            "{{ request.get_full_path }}&amp;selected_facets=country_exact:{{ country.0|urlencode }}"
+            {% endif %}<a>{{ country.0|country|humanize_country }}</a> ({{ country.1 }})
+        </dd>
+        {% endfor %}
+        {% if facets.fields.country|length > 5 %}
+        {% for country in facets.fields.country|slice:"5:" %}
+        <dd class="hide country-facet-more"><a href=
+                                                       {% if 'country_exact' in request.get_full_path %}
+            "{{ request.get_full_path|removeFromUrl:'country_exact' }}"
+            {% else %}
+            "{{ request.get_full_path }}&amp;selected_facets=country_exact:{{ country.0|urlencode }}"
+            {% endif %}<a>{{ country.0|country|humanize_country }}</a> ({{ country.1 }})
+        </dd>
+        {% endfor %}
+        <a class="btnfacet" onclick="toogle('.country-facet-more', this);">[ {% trans "more" %} ]</a>
+        {% endif %}
+        {% else %}
+        <p class="notfounditem">{% trans "No country facets." %}</p>
+        {% endif %}
+        {% if facets.fields.categories %}
+        <dt class="facet_title">{% trans "Categories" %}</dt>
+        {% for categories in facets.fields.categories|slice:":5" %}
+        <dd><a href=
+                       {% if 'categories_exact' in request.get_full_path %}
+            "{{ request.get_full_path|removeFromUrl:'categories_exact' }}"
+            {% else %}
+            "{{ request.get_full_path }}&amp;selected_facets=categories_exact:{{ categories.0 }}"
+            {% endif %}
+            <a>{{ categories.0|categories }}</a> ({{ categories.1 }})
+        </dd>
+        {% endfor %}
+        {% if facets.fields.categories|length > 5 %}
+        {% for categories in facets.fields.categories|slice:"5:" %}
+        <dd class="hide category-facet-more"><a href=
+                                                        {% if 'categories_exact' in request.get_full_path %}
+            "{{ request.get_full_path|removeFromUrl:'categories_exact' }}"
+            {% else %}
+            "{{ request.get_full_path }}&amp;selected_facets=categories_exact:{{ categories.0 }}"
+            {% endif %}
+            <a>{{ categories.0|categories }}</a> ({{ categories.1 }})
+        </dd>
+        {% endfor %}
+        <a class="btnfacet" onclick="toogle('.category-facet-more', this);">[ {% trans "more" %} ]</a>
+        {% endif %}
+        {% else %}
+        <p class="notfounditem">{% trans "No categories facets." %}</p>
+        {% endif %}
+        {% if facets.fields.publisher %}
+        <dt class="facet_title">{% trans "Publisher" %}</dt>
+        {% for publisher in facets.fields.publisher|slice:":5" %}
+        <dd><a href=
+                       {% if 'publisher_exact' in request.get_full_path %}
+            "{{ request.get_full_path|removeFromUrl:'publisher_exact' }}"
+            {% else %}
+            "{{ request.get_full_path }}&amp;selected_facets=publisher_exact:{{ publisher.0 }}"
+            {% endif %}
+            <a>{{ publisher.0 }}</a> ({{ publisher.1 }})
+        </dd>
+        {% endfor %}
+        {% if facets.fields.publisher|length > 5 %}
+        {% for publisher in facets.fields.publisher|slice:"5:" %}
+        <dd class='hide publisher-facet-more'><a href=
+                                                         {% if 'publisher_exact' in request.get_full_path %}
+            "{{ request.get_full_path|removeFromUrl:'publisher_exact' }}"
+            {% else %}
+            "{{ request.get_full_path }}&amp;selected_facets=publisher_exact:{{ publisher.0 }}"
+            {% endif %}
+            <a>{{ publisher.0 }}</a> ({{ publisher.1 }})
+        </dd>
+        {% endfor %}
+        <a class="btnfacet" onclick="toogle('.publisher-facet-more', this);">[ {% trans "more" %} ]</a>
+        {% endif %}
+        {% else %}
+        <p class="notfounditem">{% trans "No publisher facets." %}</p>
+        {% endif %}
+        {% if facets.fields.license %}
+        <dt class="facet_title">{% trans "License" %}</dt>
+        {% for license in facets.fields.license|slice:":5" %}
+        <dd><a href=
+                       {% if 'license_exact' in request.get_full_path %}
+            "{{ request.get_full_path|removeFromUrl:'license_exact' }}"
+            {% else %}
+            "{{ request.get_full_path }}&amp;selected_facets=license_exact:{{ license.0 }}"
+            {% endif %}
+            <a>{{ license.0 }}</a> ({{ license.1 }})
+        </dd>
+        {% endfor %}
+        {% if facets.fields.license|length > 5 %}
+        {% for license in facets.fields.license|slice:"5:" %}
+        <dd class="hide license-facet-more"><a href=
+                                                       {% if 'license_exact' in request.get_full_path %}
+            "{{ request.get_full_path|removeFromUrl:'license_exact' }}"
+            {% else %}
+            "{{ request.get_full_path }}&amp;selected_facets=license_exact:{{ license.0 }}"
+            {% endif %}
+            <a>{{ license.0 }}</a> ({{ license.1 }})
+        </dd>
+        {% endfor %}
+        <a class="btnfacet" onclick="toogle('.license-facet-more', this);">[ {% trans "more" %} ]</a>
+        {% endif %}
+        {% else %}
+        <p class="notfounditem">{% trans "No license facets." %}</p>
+        {% endif %}
+    </div>
+    <div id="MicrosoftTranslatorWidget"
+         style="margin-left:20px;margin-top:20px;margin-bottom:20px;width: 200px; min-height: 83px; border-color: #006C71; background-color: #A6C6BF;">
+        <noscript><a href="http://www.microsofttranslator.com/bv.aspx?a=http%3a%2f%2fwww.colibridata.eu%2f">Translate
+            this dataset</a><br/>Powered by <a href="http://www.bing.com/translator">Microsoft® Translator</a>
+        </noscript>
+    </div>
+    <script type="text/javascript"> /* <![CDATA[ */
+    setTimeout(function () {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.charset = "UTF-8";
+        s.src = ((location && location.href && location.href.indexOf('https') == 0) ? "https://ssl.microsofttranslator.com" : "http://www.microsofttranslator.com" ) + "/ajax/v2/widget.aspx?mode=manual&from={% if page.object_list.0.object.resources.0 %}{% if page.object_list.0.object.resources.0.language != '--' %}{{page.object_list.0.object.resources.0.language}}{% endif %}{% endif %}&layout=ts";
+        var p = document.getElementsByTagName('head')[0] || document.documentElement;
+        p.insertBefore(s, p.firstChild);
+    }, 0);
+    /* ]]> */ </script>
+</div>
+<div class="datasetsearch-container">
+    <div class="datasetsearch-header">
+    </div>
+    <div class="datasetsearch-body">
+        <div style="float:left;margin:30px 0px;margin-left:40px;" class="notranslate">
+            {{ form.as_p }}
+            <input id="searchbutton" type="submit" value="">
+        </div>
+        <div style="clear:both"></div>
+        {% if 'selected_facets' in request.get_full_path %}
+        <div style="margin-bottom:20px;"><a href="/dataset-search/?q="><i class="icon-remove"></i> <i
+                style="color:#666666">{% trans "Clear all filters" %}</i></a></div>
+        {% endif %}
+        <div>
+            <div style="float:left;padding-top:5px">
+                {{ page.paginator.count }} {% trans "datasets found" %}
+            </div>
+            <div style="float:right;margin-right:31px;">
+                <div style="display:inline">{% trans "Order by"%}:</div>
+                <div style="display:inline">
+                    <select style="width:157px" onchange="location = this.options[this.selectedIndex].value;">
+                        <option
+                        {% if 'order_by=-date' in request.get_full_path %} selected="selected" {% endif %} value="{{
+                        request.get_full_path|removeFromUrl:'order_by'|add:'&order_by=-date' }}">{% trans "Date (desc)"
+                        %}</option>
+                        <option
+                        {% if 'order_by=date' in request.get_full_path %} selected="selected" {% endif %} value="{{
+                        request.get_full_path|removeFromUrl:'order_by'|add:'&order_by=date' }}">{% trans "Date (asc)"
+                        %}</option>
+                        <option
+                        {% if 'order_by=title' in request.get_full_path %} selected="selected" {% endif %}value="{{
+                        request.get_full_path|removeFromUrl:'order_by'|add:'&order_by=title' }}">{% trans "Title (asc)"
+                        %}</option>
+                        <option
+                        {% if 'order_by=-title' in request.get_full_path %} selected="selected" {% endif %} value="{{
+                        request.get_full_path|removeFromUrl:'order_by'|add:'&order_by=-title' }}"> {% trans "Title
+                        (desc)" %}</option>
+                        <option
+                        {% if 'order_by=-views' in request.get_full_path %} selected="selected" {% endif %} value="{{
+                        request.get_full_path|removeFromUrl:'order_by'|add:'&order_by=-views' }}">{% trans "Popularity"
+                        %} {% trans "(desc)" %}</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div style="clear:both"></div>
+
+
+        <div id="elastic_search_results">
+            {% for result in page.object_list %}
+            <div class="elastic_search_result">
+
+                <div class="elastic_search_result_body_left">
+                    <div class="elastic_title"><b><a onclick="increasePopularity({{ result.object.id }})"
+                                                     href="/dataset/{{ result.object.id }}">{{ result.object.title
+                        }}</a></b></div>
+                    <div class="elastic_desc">{{ result.object.views}} downloads</div>
+                    <!--<div class="elastic_author">{% trans "Author" %}:{{ result.object.author }}</div>-->
+                    <div class="elastic_desc">{{ result.object.description|slice:":240"}}...</div>
+                </div>
+                <div class="elastic_search_result_body_right notranslate">
+                    <i style="color:#666666">{% trans "Updated" %}:{{ result.object.modified_date|date:"d-m-y"}}</i>
+                    {% if result.object.publisher %}
+                    {% with p_img=result.object.publisher|image_publishers %}
+                    {% with p_link=result.object.publisher|link_publishers %}
+                    {% if p_img != '' %}
+                    <a href="{{p_link}}"><img src="/s/imgs/{{p_img}}"></img></a>
+                    {% else %}
+                    <span style="color:#666666"><b>{% trans "Publisher" %}</b>: {{ result.object.publisher }}</span>{%
+                    endif %}
+                    {% endwith %}
+                    {% endwith %}
+                    {% endif %}
+                </div>
+
+                <div style="clear:both"></div>
+            </div>
+
+            {% empty %}
+            <p class="notfounditem">{% trans "No results found. Please try again." %}</p>
+            {% endfor %}
+
+
+            <div style="padding-top:10px;padding-bottom:30px;" class="pagination notranslate">
+                <div>{% trans "Page" %} {{page.number}} {% trans "of" %} {{page.paginator.num_pages}}</div>
+                <ul class="green">
+                    <li><a class="next" href="{{ request.get_full_path|removeFromUrl:'page'|add:'&page=1' }}">1</a></li>
+                    {% if page.has_previous %}
+                    <li><a class="next"
+                           href="{{ request.get_full_path|removeFromUrl:'page'|add:'&page='}}{{ page.previous_page_number }}">«
+                        {% trans "Previous" %}</a></li>
+                    {% else %}
+                    <li class="disabled"><a class="next" href="#">« {% trans "Previous" %}</a></li>
+                    {% endif %}
+                    {% if page.has_next %}
+                    <li><a class="next"
+                           href="{{ request.get_full_path|removeFromUrl:'page'|add:'&page='}}{{ page.next_page_number }}">{%
+                        trans "Next" %} »</a></li>
+                    {% else %}
+                    <li class="disabled"><a class="next" href="#">{% trans "Next" %} »</a></li>
+                    {% endif %}
+                    <li><a class="next"
+                           href="{{ request.get_full_path|removeFromUrl:'page'|add:'&page='}}{{page.paginator.num_pages}}">{{page.paginator.num_pages}}</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div style="clear:both"></div>
+</div>
+
+<div class="line-divider"></div>
+<div class="clear-all-15"></div>
+
+</form>
+{% endblock %}

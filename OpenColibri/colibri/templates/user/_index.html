@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% load thumbnail2 i18n %}
+{% block title %}Users{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/style.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-responsive.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-image-gallery.min.css">
+{% endblock %}
+{% block content %}
+<div id="view_community" class="wrapper-content">
+    <div class="community-form">
+        <div class="community-form-header">
+            {% trans "Community Users" %}
+        </div>
+        <div class="community-form-body">
+            <div id='show-hide'>
+                <div style="color:#999999;margin-bottom:10px;font-size:11px">{% trans "Page" %} {{page_obj.number}} {%
+                    trans "of" %} {{page_obj.paginator.count}} {% trans "users" %}
+                </div>
+                {% for userModel in users %}
+                <div class="user_item {% cycle 'user_item_odd' 'user_item_even' %}">
+                    <div class="left">
+                        <div class="photo">
+                            <a href="/profile/{{ userModel.id }}/">
+                                {% if userModel.profile.avatar.photo_original %}
+                                {% thumbnail userModel.profile.avatar.photo_original "100x100" as avatar %}
+                                <img height="95" src="{{avatar}}"></img><br/>
+
+                                {% else %}
+                                <img width="95px" height="95px" src="/s/imgs/defaultavatar.jpg"/><br/>
+                                {% endif %}
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2><a href="/profile/{{ userModel.id }}/">{% if userModel.first_name or userModel.last_name
+                                %}{{userModel.first_name}} {{userModel.last_name}} {% else %}{{userModel.username}}{%
+                                endif %}</a></h2>
+
+                            <p class="sub_info">{% if userModel.profile.rpg_class != "--"
+                                %}{{userModel.profile.get_rpg_class_display}}{% endif %}</p>
+                            <ul class="unstyled">
+                                <li>{% if userModel.profile.scientific_background != "--" %}
+                                    {{userModel.profile.get_scientific_background_display}}
+                                </li>
+                                {% endif %}
+                                <li class="loc_list">{% if userModel.profile.country != "--" %}<i>{{userModel.profile.get_country_display}}</i>{%
+                                    endif %}
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clearboth"></div>
+
+                    </div>
+                    <div class="right">
+                        <a class="btn btn-small" href="/profile/{{ userModel.id }}/">View Profile</a>
+                    </div>
+
+                </div>
+                {% endfor %}
+            </div>
+            <div class="pagination">
+                <ul class="green">
+                    {%if page_obj.has_previous %}
+                    <li><a class="next" href="{%url 'users'%}?page={{page_obj.number|add:"-1"}}"> « </a></li>
+                    {%else %}
+                    <li class="disabled"><a class="next" href="#"> « </a></li>
+                    {%endif%}
+                    {% for curpage in page_obj.paginator.page_range %}
+                    {% if page_obj.number != curpage %}
+                    <li><a href="{%url 'users'%}?page={{curpage}}">{{curpage}}</a></li>
+                    {%else%}
+                    <li class="active"><a href="{%url 'users'%}?page={{curpage}}">{{curpage}}</a></li>
+                    {%endif%}
+                    {%endfor%}
+                    {%if page_obj.has_next %}
+                    <li><a class="next" href="{%url 'users'%}?page={{page_obj.number|add:"1"}}"> »</a></li>
+                    {%else%}
+                    <li class="disabled"><a class="next" href="#"> »</a></li>
+                    {%endif%}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--<div style="float:left;margin-left:20px">
+    <a href="/accounts/signup/"><img src="/s/imgs/free_to_join.jpg"/></a>
+    </div>-->
+</div><!-- END of wrapper-content -->
+{% endblock %}

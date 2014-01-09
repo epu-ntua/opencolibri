@@ -1,0 +1,144 @@
+{% load thumbnail2 i18n humanize%}
+<div id="tabs1">
+    <div class="tab-content-box">
+        <div class="clear-all-0"></div>
+        <div id="view_profile" class="wrapper-content">
+            <div class="profile-form">
+                {% if userModel != user %}
+                <div class="profile-form-header">
+                    {% trans "Profile" %}
+                </div>
+                {% endif %}
+                <div class="profile-form-body">
+                    <div id="profile_col1">
+
+
+                        <div style="text-align:left">
+                            {% if userModel.profile.avatar.photo_original %}
+                            {% thumbnail userModel.profile.avatar.photo_original "150x150" as avatar %}
+                            <img id="avatar-photo" style="margin-bottom:10px" height="150px" src="{{ avatar }}"/><br/>
+
+                            {% else %}
+                            <img id="avatar-photo" style="margin-bottom:10px" width="150px" height="150px"
+                                 src="/s/imgs/defaultavatar.jpg"/><br/>
+                            {% endif %}
+
+                            {% if userModel.last_name %}
+                            <div class="profilename">{{ userModel.last_name}}</div>
+                            {% endif %}
+                            {% if userModel.first_name %}
+                            <div class="profilename">{{ userModel.first_name }}</div>
+                            {% endif %}
+                            {% if not userModel.last_name and not userModel.first_name %}
+                            <div class="profilename">{{ userModel.username }}</div>
+                            {% endif %}
+                            {% if userModel.profile.country and userModel.profile.country != '--' %}
+                            <div class="profilecountry">{{ userModel.profile.get_country_display}}</div>
+                            {% endif %}
+
+                        </div>
+                        {% if userModel.profile.scientific_background and userModel.profile.scientific_background !=
+                        '--' %}
+                        <div class="scientific_background">{{ userModel.profile.get_scientific_background_display }}
+                        </div>
+                        {% endif %}
+                        {% if userModel.profile.rpg_class and userModel.profile.rpg_class != '--' %}
+                        <div class="rpg">{{ userModel.profile.get_rpg_class_display }}</div>
+                        {% endif %}
+                        {% if userModel != user %}
+                        <div class="button-1 orange nyroModal" style="font-size:12px;margin-top:40px;cursor:pointer"
+                             href="/messages/compose/{{ userModel.username }}/">Send private message
+                        </div>
+                        {% endif %}
+                    </div>
+
+                    <div id="profile_col2">
+                        {% if user == userModel %}
+                        <a href="/profile/{{ userModel.id }}/edit">
+                            <div style="float:right" class='button orangish'>{%trans "Edit Profile" %}</div>
+                        </a>
+                        {% endif %}
+
+                        <br>
+                        <br>
+
+                        <div id="social_contact">
+
+                            <div style="font-weight:bold;font-size:17px;margin-bottom:15px;">{% trans "Contact" %}</div>
+
+                            <div class="social_entry">
+                                <img style="vertical-align:middle" src="/s/imgs/mail_small.png"/><span
+                                    class="sociallabel" style="color:grey"><b>{% trans "Email Address:" %}</b> </span><a
+                                    style="color:grey" href="mailto:{{userModel.email}}">{% if userModel.email %}{{
+                                userModel.email }}{% else %} None provided {% endif %}</a>
+                            </div>
+                            {% if userModel.profile.facebookUrl %}
+                            <div class="social_entry">
+                                <img style="vertical-align:middle" src="/s/imgs/facebook_small.png"/><span
+                                    class="sociallabel"><a style="color:grey"
+                                                           href="{{ userModel.profile.facebookUrl }}"><b>Facebook
+                                page</b></a></span>
+                            </div>
+                            {% endif %}
+                            {% if userModel.profile.twitterUrl %}
+                            <div class="social_entry">
+                                <img style="vertical-align:middle" src="/s/imgs/twitter_small.png"/><span
+                                    class="sociallabel"><a style="color:grey" href="{{ userModel.profile.twitterUrl }}"><b>Twitter
+                                page</b></a></span>
+                            </div>
+                            {% endif %}
+                            {% if userModel.profile.googleUrl %}
+                            <div class="social_entry">
+                                <img style="vertical-align:middle" src="/s/imgs/google_small.png"/><span
+                                    class="sociallabel"><a style="color:grey"
+                                                           href="{{ userModel.profile.googleUrl }}"><b>Google+ page</b></a></span>
+                            </div>
+                            {% endif %}
+                            {% if userModel.profile.linkedInUrl %}
+                            <div class="social_entry">
+                                <img style="vertical-align:middle" src="/s/imgs/linkedin_small.png"/><span
+                                    class="sociallabel"><a style="color:grey"
+                                                           href="{{ userModel.profile.linkedInUrl }}"><b>LinkedIn
+                                page</b></a></span>
+                            </div>
+                            {% endif %}
+                            {% if userModel.profile.websiteUrl %}
+                            <div class="social_entry">
+                                <img style="vertical-align:middle" src="/s/imgs/website_small.png"/><span
+                                    class="sociallabel"><a style="color:grey" href="{{ userModel.profile.websiteUrl }}"><b>{%
+                                trans "Personal Website" %} page</b></a></span>
+                            </div>
+                            {% endif %}
+
+                        </div>
+                        <div class="latestactivity">{% trans "Latest datasets" %}</div>
+                        {% if latestDatasets %}
+                        {% for k in latestDatasets %}
+                        <div class="latestdatasets"><a href="/dataset/{{k.id}}">{{k.title|truncatechars:80}}</a> <span
+                                class="datasettime"> {{k.modified_date|naturaltime}}</span></div>
+                        {% endfor %}
+                        {% else %}
+                        <div> {% trans "No recent activity" %}</div>
+                        {% endif %}
+                        <div class="latestactivity"> {% trans "Latest Requests" %}</div>
+                        {% if latestRequests %}
+                        {% for r in latestRequests %}
+                        <div class="latestdatasets"><a href="/datasetrequests/{{r.id}}">{{r.name|truncatechars:80}}</a>
+                            <span class="datasettime"> {{r.date_updated|naturaltime}}</span></div>
+                        {% endfor %}
+                        {% else %}
+                        <div> {% trans "No recent activity" %}</div>
+                        {% endif %}
+                        {% if user == userModel %}
+                        <div style="margin-top:30px" class="latestactivity"> {% trans "API key" %}</div>
+                        <div> {{key}}</div>
+                        {% endif %}
+                    </div>
+                    <div style="clear:both"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>

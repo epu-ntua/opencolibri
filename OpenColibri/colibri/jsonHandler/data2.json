@@ -1,0 +1,527 @@
+{
+    "items": [
+        {
+            "field_6": 1.99,
+            "field_7": 189.05,
+            "field_4": "Pencil",
+            "field_5": 95.0,
+            "field_2": "East",
+            "field_3": "Jones",
+            "field_1": 40184.0
+        },
+        {
+            "field_6": 19.99,
+            "field_7": 999.4999999999999,
+            "field_4": "Binder",
+            "field_5": 50.0,
+            "field_2": "Central",
+            "field_3": "Kivell",
+            "field_1": 40201.0
+        },
+        {
+            "field_6": 4.99,
+            "field_7": 179.64000000000001,
+            "field_4": "Pencil",
+            "field_5": 36.0,
+            "field_2": "Central",
+            "field_3": "Jardine",
+            "field_1": 40218.0
+        },
+        {
+            "field_6": 19.99,
+            "field_7": 539.7299999999999,
+            "field_4": "Pen",
+            "field_5": 27.0,
+            "field_2": "Central",
+            "field_3": "Gill",
+            "field_1": 40235.0
+        },
+        {
+            "field_6": 2.99,
+            "field_7": 167.44,
+            "field_4": "Pencil",
+            "field_5": 56.0,
+            "field_2": "West",
+            "field_3": "Sorvino",
+            "field_1": 40252.0
+        },
+        {
+            "field_6": 4.99,
+            "field_7": 299.40000000000003,
+            "field_4": "Binder",
+            "field_5": 60.0,
+            "field_2": "East",
+            "field_3": "Jones",
+            "field_1": 40269.0
+        },
+        {
+            "field_6": 1.99,
+            "field_7": 149.25,
+            "field_4": "Pencil",
+            "field_5": 75.0,
+            "field_2": "Central",
+            "field_3": "Andrews",
+            "field_1": 40286.0
+        },
+        {
+            "field_6": 4.99,
+            "field_7": 449.1,
+            "field_4": "Pencil",
+            "field_5": 90.0,
+            "field_2": "Central",
+            "field_3": "Jardine",
+            "field_1": 40303.0
+        },
+        {
+            "field_6": 1.99,
+            "field_7": 63.68,
+            "field_4": "Pencil",
+            "field_5": 32.0,
+            "field_2": "West",
+            "field_3": "Thompson",
+            "field_1": 40320.0
+        },
+        {
+            "field_6": 8.99,
+            "field_7": 539.4,
+            "field_4": "Binder",
+            "field_5": 60.0,
+            "field_2": "East",
+            "field_3": "Jones",
+            "field_1": 40337.0
+        },
+        {
+            "field_6": 4.99,
+            "field_7": 449.1,
+            "field_4": "Pencil",
+            "field_5": 90.0,
+            "field_2": "Central",
+            "field_3": "Morgan",
+            "field_1": 40354.0
+        },
+        {
+            "field_6": 1.99,
+            "field_7": 57.71,
+            "field_4": "Binder",
+            "field_5": 29.0,
+            "field_2": "East",
+            "field_3": "Howard",
+            "field_1": 40371.0
+        },
+        {
+            "field_6": 19.99,
+            "field_7": 1619.1899999999998,
+            "field_4": "Binder",
+            "field_5": 81.0,
+            "field_2": "East",
+            "field_3": "Parent",
+            "field_1": 40388.0
+        },
+        {
+            "field_6": 4.99,
+            "field_7": 174.65,
+            "field_4": "Pencil",
+            "field_5": 35.0,
+            "field_2": "East",
+            "field_3": "Jones",
+            "field_1": 40405.0
+        },
+        {
+            "field_6": 125.0,
+            "field_7": 250.0,
+            "field_4": "Desk",
+            "field_5": 2.0,
+            "field_2": "Central",
+            "field_3": "Smith",
+            "field_1": 40422.0
+        },
+        {
+            "field_6": 15.99,
+            "field_7": 255.84,
+            "field_4": "Pen Set",
+            "field_5": 16.0,
+            "field_2": "East",
+            "field_3": "Jones",
+            "field_1": 40439.0
+        },
+        {
+            "field_6": 8.99,
+            "field_7": 251.72,
+            "field_4": "Binder",
+            "field_5": 28.0,
+            "field_2": "Central",
+            "field_3": "Morgan",
+            "field_1": 40456.0
+        },
+        {
+            "field_6": 8.99,
+            "field_7": 575.36,
+            "field_4": "Pen",
+            "field_5": 64.0,
+            "field_2": "East",
+            "field_3": "Jones",
+            "field_1": 40473.0
+        },
+        {
+            "field_6": 19.99,
+            "field_7": 299.84999999999997,
+            "field_4": "Pen",
+            "field_5": 15.0,
+            "field_2": "East",
+            "field_3": "Parent",
+            "field_1": 40490.0
+        },
+        {
+            "field_6": 4.99,
+            "field_7": 479.04,
+            "field_4": "Pen Set",
+            "field_5": 96.0,
+            "field_2": "Central",
+            "field_3": "Kivell",
+            "field_1": 40507.0
+        },
+        {
+            "field_6": 1.29,
+            "field_7": 86.43,
+            "field_4": "Pencil",
+            "field_5": 67.0,
+            "field_2": "Central",
+            "field_3": "Smith",
+            "field_1": 40524.0
+        },
+        {
+            "field_6": 15.99,
+            "field_7": 1183.26,
+            "field_4": "Pen Set",
+            "field_5": 74.0,
+            "field_2": "East",
+            "field_3": "Parent",
+            "field_1": 40541.0
+        },
+        {
+            "field_6": 8.99,
+            "field_7": 413.54,
+            "field_4": "Binder",
+            "field_5": 46.0,
+            "field_2": "Central",
+            "field_3": "Gill",
+            "field_1": 40558.0
+        },
+        {
+            "field_6": 15.0,
+            "field_7": 1305.0,
+            "field_4": "Binder",
+            "field_5": 87.0,
+            "field_2": "Central",
+            "field_3": "Smith",
+            "field_1": 40575.0
+        },
+        {
+            "field_6": 4.99,
+            "field_7": 19.96,
+            "field_4": "Binder",
+            "field_5": 4.0,
+            "field_2": "East",
+            "field_3": "Jones",
+            "field_1": 40592.0
+        },
+        {
+            "field_6": 19.99,
+            "field_7": 139.92999999999998,
+            "field_4": "Binder",
+            "field_5": 7.0,
+            "field_2": "West",
+            "field_3": "Sorvino",
+            "field_1": 40609.0
+        },
+        {
+            "field_6": 4.99,
+            "field_7": 249.5,
+            "field_4": "Pen Set",
+            "field_5": 50.0,
+            "field_2": "Central",
+            "field_3": "Jardine",
+            "field_1": 40626.0
+        },
+        {
+            "field_6": 1.99,
+            "field_7": 131.34,
+            "field_4": "Pencil",
+            "field_5": 66.0,
+            "field_2": "Central",
+            "field_3": "Andrews",
+            "field_1": 40643.0
+        },
+        {
+            "field_6": 4.99,
+            "field_7": 479.04,
+            "field_4": "Pen",
+            "field_5": 96.0,
+            "field_2": "East",
+            "field_3": "Howard",
+            "field_1": 40660.0
+        },
+        {
+            "field_6": 1.29,
+            "field_7": 68.37,
+            "field_4": "Pencil",
+            "field_5": 53.0,
+            "field_2": "Central",
+            "field_3": "Gill",
+            "field_1": 40677.0
+        },
+        {
+            "field_6": 8.99,
+            "field_7": 719.2,
+            "field_4": "Binder",
+            "field_5": 80.0,
+            "field_2": "Central",
+            "field_3": "Gill",
+            "field_1": 40694.0
+        },
+        {
+            "field_6": 125.0,
+            "field_7": 625.0,
+            "field_4": "Desk",
+            "field_5": 5.0,
+            "field_2": "Central",
+            "field_3": "Kivell",
+            "field_1": 40711.0
+        },
+        {
+            "field_6": 4.99,
+            "field_7": 309.38,
+            "field_4": "Pen Set",
+            "field_5": 62.0,
+            "field_2": "East",
+            "field_3": "Jones",
+            "field_1": 40728.0
+        },
+        {
+            "field_6": 12.49,
+            "field_7": 686.95,
+            "field_4": "Pen Set",
+            "field_5": 55.0,
+            "field_2": "Central",
+            "field_3": "Morgan",
+            "field_1": 40745.0
+        },
+        {
+            "field_6": 23.95,
+            "field_7": 1005.9,
+            "field_4": "Pen Set",
+            "field_5": 42.0,
+            "field_2": "Central",
+            "field_3": "Kivell",
+            "field_1": 40762.0
+        },
+        {
+            "field_6": 275.0,
+            "field_7": 825.0,
+            "field_4": "Desk",
+            "field_5": 3.0,
+            "field_2": "West",
+            "field_3": "Sorvino",
+            "field_1": 40779.0
+        },
+        {
+            "field_6": 1.29,
+            "field_7": 9.030000000000001,
+            "field_4": "Pencil",
+            "field_5": 7.0,
+            "field_2": "Central",
+            "field_3": "Gill",
+            "field_1": 40796.0
+        },
+        {
+            "field_6": 1.99,
+            "field_7": 151.24,
+            "field_4": "Pen",
+            "field_5": 76.0,
+            "field_2": "West",
+            "field_3": "Sorvino",
+            "field_1": 40813.0
+        },
+        {
+            "field_6": 19.99,
+            "field_7": 1139.4299999999998,
+            "field_4": "Binder",
+            "field_5": 57.0,
+            "field_2": "West",
+            "field_3": "Thompson",
+            "field_1": 40830.0
+        },
+        {
+            "field_6": 1.29,
+            "field_7": 18.060000000000002,
+            "field_4": "Pencil",
+            "field_5": 14.0,
+            "field_2": "Central",
+            "field_3": "Andrews",
+            "field_1": 40847.0
+        },
+        {
+            "field_6": 4.99,
+            "field_7": 54.89,
+            "field_4": "Binder",
+            "field_5": 11.0,
+            "field_2": "Central",
+            "field_3": "Jardine",
+            "field_1": 40864.0
+        },
+        {
+            "field_6": 19.99,
+            "field_7": 1879.06,
+            "field_4": "Binder",
+            "field_5": 94.0,
+            "field_2": "Central",
+            "field_3": "Jardine",
+            "field_1": 40881.0
+        },
+        {
+            "field_6": 4.99,
+            "field_7": 139.72,
+            "field_4": "Binder",
+            "field_5": 28.0,
+            "field_2": "Central",
+            "field_3": "Andrews",
+            "field_1": 40898.0
+        }
+    ],
+    "meta": {
+        "columnCount": 6,
+        "name": "file.xls",
+        "updatedOn": 1341098532634,
+        "createdOn": 1341098532634,
+        "filter": {},
+        "vis": {},
+        "locationFields": [],
+        "createdBy": null,
+        "updatedBy": "12560",
+        "attributes": [
+            {
+                "name": "field_1",
+                "min": 40184.0,
+                "dataType": "number",
+                "max": 40898.0,
+                "format": {
+                    "width": null,
+                    "position": 0
+                },
+                "label": "40184.0",
+                "uniqueValues": null,
+                "timezone": 0,
+                "dataTypeQualifier": "sequential"
+            },
+            {
+                "name": "field_2",
+                "min": 0,
+                "dataType": "string",
+                "max": 0,
+                "format": {
+                    "width": null,
+                    "position": 1
+                },
+                "label": "East",
+                "uniqueValues": [
+                    "West",
+                    "East",
+                    "Central"
+                ],
+                "timezone": 0,
+                "dataTypeQualifier": "qualitative"
+            },
+            {
+                "name": "field_3",
+                "min": 0,
+                "dataType": "string",
+                "max": 0,
+                "format": {
+                    "width": null,
+                    "position": 2
+                },
+                "label": "Jones",
+                "uniqueValues": [
+                    "Jones",
+                    "Gill",
+                    "Parent",
+                    "Howard",
+                    "Kivell",
+                    "Jardine",
+                    "Smith",
+                    "Andrews",
+                    "Morgan",
+                    "Thompson",
+                    "Sorvino"
+                ],
+                "timezone": 0,
+                "dataTypeQualifier": "qualitative"
+            },
+            {
+                "name": "field_4",
+                "min": 0,
+                "dataType": "string",
+                "max": 0,
+                "format": {
+                    "width": null,
+                    "position": 3
+                },
+                "label": "Pencil",
+                "uniqueValues": [
+                    "Pencil",
+                    "Binder",
+                    "Pen Set",
+                    "Pen",
+                    "Desk"
+                ],
+                "timezone": 0,
+                "dataTypeQualifier": "qualitative"
+            },
+            {
+                "name": "field_5",
+                "min": 2.0,
+                "dataType": "number",
+                "max": 96.0,
+                "format": {
+                    "width": null,
+                    "position": 4
+                },
+                "label": "95.0",
+                "uniqueValues": null,
+                "timezone": 0,
+                "dataTypeQualifier": "sequential"
+            },
+            {
+                "name": "field_6",
+                "min": 1.29,
+                "dataType": "number",
+                "max": 275.0,
+                "format": {
+                    "width": null,
+                    "position": 5
+                },
+                "label": "1.99",
+                "uniqueValues": null,
+                "timezone": 0,
+                "dataTypeQualifier": "sequential"
+            },
+            {
+                "name": "field_7",
+                "min": 9.030000000000001,
+                "dataType": "number",
+                "max": 1879.06,
+                "format": {
+                    "width": null,
+                    "position": 6
+                },
+                "label": "189.05",
+                "uniqueValues": null,
+                "timezone": 0,
+                "dataTypeQualifier": "sequential"
+            }
+        ],
+        "id": 1,
+        "datasetId": "33ad5b83-cb8a-4d6f-916f-a4eb6cbd878a",
+        "description": "Buggy parser yet to be fixed"
+    }
+}

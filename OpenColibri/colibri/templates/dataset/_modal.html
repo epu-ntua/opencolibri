@@ -1,0 +1,50 @@
+{% load url from future %}
+{% load i18n %}
+<head>
+    <link href="/s/css/colibri.css" rel="stylesheet" type="text/css"/>
+    <link href="/s/css/theme.css" rel="stylesheet" type="text/css"/>
+    <link href="/s/css/reset.css" rel="stylesheet" type="text/css"/>
+
+    <script>
+        jQuery(function () {
+            var selectRevisionType = jQuery('#id_revision_type')
+            var extensionDescription = jQuery('#extension-description')
+            selectRevisionType.change(function () {
+                if (selectRevisionType.val()) {
+                    jQuery.ajax({
+                        type: "GET",
+                        url: '/api/colibri/list/extension/?format=json',
+                        data: {'extension': selectRevisionType.val()},
+                        dataType: 'json',
+
+                        success: function (json) {
+                            extensionDescription.hide(200, function () {
+                                extensionDescription.html(json.extension_description)
+                            })
+                            extensionDescription.show(200)
+                        }
+                    });
+                } else {
+                    extensionDescription.hide(200);
+                }
+            });
+        })
+
+    </script>
+</head>
+<body>
+<div id="extend-dataset-header" class="clmn-8">
+    <h2 class="title" style="font-size:18px">{%trans "Extend Dataset" %}</h2>
+</div>
+<div style="margin-left:20px;margin-top:20px;float:left;">
+    <form action={{ form_action
+    }} method='POST' id='dataset-extend-modal-form'>{% csrf_token %}
+
+    {{ dataset_extend_modal_form.as_p }}
+    <input id='create-group' type="submit" class="button orangish" value="Extend"/>
+    </form>
+</div>
+<div id='extension-description'
+     style="text-align:center;margin-top:3px;float: left; margin-left: 32px; display: block;width:350px">
+</div>
+</body>

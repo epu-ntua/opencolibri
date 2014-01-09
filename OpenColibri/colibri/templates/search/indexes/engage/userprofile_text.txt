@@ -1,0 +1,9 @@
+{{ object.name }}
+{{ object.username }}
+{{ object.firstName }}
+{{ object.lastName }}
+{{ object.city }}
+{{ object.email }}
+{{ object.scientific_background }}
+{{ object.rpg_class }}
+{{ object.nameAppearance }}

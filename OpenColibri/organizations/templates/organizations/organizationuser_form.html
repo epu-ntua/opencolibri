@@ -1,0 +1,26 @@
+{% extends "organizations_base.html" %}
+{% load i18n %}
+{% block css %}
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-responsive.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-image-gallery.min.css">
+{% endblock %}
+{% block content %}
+{% if profile %}
+<h1>Update your profile</h1>
+{% else %}
+<h1></h1>
+{% endif %}
+{% if user == organization_user.user %}This is you!{% endif %}
+<div id="edit_profile" class="wrapper-content">
+    <div class="profile-form" style="width:600px;margin-bottom:300px;">
+        <div class="profile-form-header">
+            {{ organization_user }} @ {{ organization }}
+        </div>
+        <div class="profile-form-body" style="min-height:240px">
+            <form action="." method="post">{% csrf_token %}
+                {{ form }}
+                <input class="button orangish" type="submit" value="submit">
+            </form>
+        </div>
+        {% endblock %}

@@ -1,0 +1,29 @@
+{% load i18n %}
+{% load thumbnail2%}
+
+{% if forloop.first %}
+<ol class="article-list" style="list-style-type:none">{% endif %}
+    <li style="padding:15px 0px;border-bottom: 1px solid #EEEEEE">
+        <div style="float:left">
+            {% if article.author.profile.avatar.photo_original %}
+            {% thumbnail article.author.profile.avatar.photo_original "68x68" as avatar %}
+            <a style="color:#333333" href="/profile/{{article.author.id}}"><img width="68" height="68"
+                                                                                src="{{avatar}}"></img></a>
+            {% else %}
+            <a style="color:#333333" href="/profile/{{article.author.id}}"><img width="68" height="68"
+                                                                                src="/s/imgs/defaultavatar.jpg"></img></a>
+            {% endif %}
+        </div>
+        <div style="float:left;margin-left:10px;width:300px;">
+            <div><a class="colibri-article-title" href="{{ article.get_absolute_url }}"
+                    title="{% trans 'Read this article' %}">{{ article.title }}</a></div>
+            <div><a class="colibri-article-author" href="{% url articles_by_author article.author.username %}"
+                    title="{% trans 'View articles posted by' %} {{ article.author.get_name }}">{{
+                article.author.get_name }}</a></div>
+            <div class="article-details"> {% trans 'Posted on' %} {{ article.publish_date|date:"F jS, Y" }}</div>
+        </div>
+        <div style="clear:both"></div>
+
+    </li>
+    {% if forloop.last %}
+</ol>{% endif %}

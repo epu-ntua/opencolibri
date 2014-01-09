@@ -1,0 +1,222 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load url from future %}
+{% block title %}Dataset search{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-responsive.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-image-gallery.min.css">
+<link rel="stylesheet" href="/s/fonts/fonts.css">
+{% endblock %}
+{% block scripts %}
+
+<script src="/s/js/third_party/underscore.min.js"></script>
+<script src="/s/js/third_party/backbone.min.js"></script>
+<script src="/s/js/dataset-search.js"></script>
+<script type="/s/js/"></script>
+{% endblock %}
+{% block content %}
+<div id="search_dataset" class="wrapper-content">
+    <div class="clmn-12 center">
+        <div style="background:none;border:none;margin:10px 5px;" class="green"><a href="{% url 'index' %}"> {% trans
+            "Home" %}</a> |<span class="current-page orange"> {% trans "Datasets" %}</span>
+        </div>
+        <div class="clear-all-0"></div>
+        <div class="clmn-12">
+            <div class="clmn-5 dataset-tabs">
+                <div id="tab-container" class='tab-container'>
+                    <div class='panel-container2'>
+
+                        <div class="tab-content-box">
+                            <div class="clear-all-10"></div>
+                            <div class="clmn-12">
+                                <div class="filter-by-title-container"></div>
+                                <script type="text/template" id="filter-by-title-template">
+                                    <input type="text" class="input-medium search-query"
+                                           placeholder="Search datasets..." id="filter-by-title"></input>
+                                    <span id="moreoptions">{% trans "more options" %}</span>
+                                    <script type="text/javascript">
+                                        (function($){
+
+                                        $('#moreoptions').click(function() {
+                                        $('#more_search_options').toggle('slow', function() {if
+                                        ($('#moreoptions').text() != '{% trans "hide options" %}')
+                                        {$('#moreoptions').text('{% trans "hide options" %}')} else
+                                        {$('#moreoptions').text('{% trans "more options" %}')}; });});
+                                        })(jQuery);
+                                    </script>
+                                </script>
+                                <div id="more_search_options" style="display:none">
+                                    <div class="adv_field">
+                                        <div class="adv_field_header"> {% trans "Description" %}</div>
+                                        <div class="filter-by-description-container"></div>
+                                        <script type="text/template" id="filter-by-description-template">
+                                            <input type="text" id="filter-by-description"></input>
+                                        </script>
+                                    </div>
+                                    <div class="adv_field">
+                                        <div class="adv_field_header"> {% trans "Author" %}</div>
+                                        <div class="filter-by-author-container"></div>
+                                        <script type="text/template" id="filter-by-author-template">
+                                            <input type="text" id="filter-by-author"></input>
+                                        </script>
+                                    </div>
+                                    <div class="adv_field">
+                                        <div class="adv_field_header"> {% trans "Country" %}</div>
+                                        <div class="filter-by-country-container"></div>
+                                        <script type="text/template" id="filter-by-country-template">
+                                            <select id='filter-by-country'>
+                                                <% for (var i = 0; i < countries.length; i++) { %>
+                                                <option
+                                                <%= countries[i].name == '' ? 'selected="selected"' : '' %> value=<%=
+                                                countries[i].code %>><%= countries[i].name == '' ? 'all' :
+                                                countries[i].name %></option>
+                                                <% } %>
+                                            </select>
+                                        </script>
+                                    </div>
+                                    <div class="adv_field">
+                                        <div class="adv_field_header"> {% trans "Language" %}</div>
+                                        <div class="filter-by-language-container"></div>
+                                        <script type="text/template" id="filter-by-language-template">
+                                            <select id='filter-by-language'>
+                                                <% for (var i = 0; i < languages.length; i++) { %>
+                                                <option
+                                                <%= languages[i].code == '' ? 'selected="selected"' : '' %> value=<%=
+                                                languages[i].code %>><%= languages[i].name == '' ? 'all' :
+                                                languages[i].name %></option>
+                                                <% } %>
+                                            </select>
+                                        </script>
+                                    </div>
+                                    <div class="adv_field">
+                                        <div class="adv_field_header"> {% trans "Uploader" %}</div>
+                                        <div class="filter-by-uploader-container"></div>
+                                        <script type="text/template" id="filter-by-uploader-template">
+
+                                            <select id='filter-by-uploader'>
+                                                <% for (var i = 0; i < uploaders.length; i++) { %>
+                                                <option
+                                                <%= uploaders[i].id == '' ? 'selected="selected"' : '' %> value=<%=
+                                                uploaders[i].id %>><%= uploaders[i].username == '' ? 'all' :
+                                                uploaders[i].username %></option>
+                                                <% } %>
+                                            </select>
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of Tabs -->
+
+            <div class="clear-all-30"></div>
+
+            <div class="clmn-12 ">
+                {% comment %}{% if query %}
+                <div class="category-title"><h1><span class="green">{% trans "Search pages for:" %} </span><span
+                        class="orange ">{{  query  }}</span>
+                </h1></div>
+                {% endif %}
+                {% endcomment %}
+
+                <div class="clear-all-15"></div>
+                <div id="loading">
+                    <div align="center">
+                        <h1><span hidden="true" class="loader icon-spinner-2"></span></h1>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <h5>Please wait...</h5>
+                    </div>
+                </div>
+                <div class="line-divider"></div>
+                <div class="clear-all-15"></div>
+                <div id='dataset-collection-container'>
+                </div>
+                <script type="text/template" id="dataset-template">
+                    <div class="feed-block">
+                        <div class="clmn-12">
+                            <div class="clmn-10 feed feed-horiz-line">
+                                <div class="feedTitle green">
+                                    <h2><a href="/dataset/<%= id %>"><%=title%></a></h2></div>
+                                <div class="text grey"><%= description %><%= author ? ', ' + author : '' %>
+                                </div>
+                                <div class="search-category"><strong>{% trans "Category:" %}</strong><a href="#"><%=
+                                    categories %></a></div>
+                            </div>
+                            <div class="clmn-2 float-right">
+                                <!--<div class="dataset-official green"><strong>Official dataset</strong></div>-->
+                                <div class="feed submitted-by green"><strong>{% trans "Submitted by:" %}</strong><br/><a
+                                        href="/profile/<%= uploader.id %>"><%= uploader.username %></a> <br/><span
+                                        class="grey"><%= country.name ? country.name + (date_published ? ', <p/>' + date_published : '') : '' %></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear-all-20"></div>
+                        <div class="line-divider"></div>
+                        <div class="clear-all-20"></div>
+                    </div>
+                </script>
+
+
+                <div class="paginator-container"></div>
+                <script type="text/template" id="paginator-template">
+                    <div class="clmn-12 pagination">
+                        <div class="green">
+                            <% if (previous) {%>
+                            <span data-offset=<%= offset-limit %> class="next paginator-button pointercursor"> «
+                            Previous</span>
+                            <% } %>
+                            <% for (curpage in _.range(Math.ceil(total_count/limit))) { %>
+                            <% currentOffset = parseInt(curpage) %>
+                            <% current = currentOffset + 1 %>
+                            <% if (Math.floor(offset/limit) == currentOffset) { %>
+                            <span data-offset=<%= currentOffset*limit %> class="paginator-button current
+                            pointercursor"><%= current %></span>
+                            <% } else { %>
+                            <span data-offset=<%= currentOffset*limit %> class="paginator-button pointercursor"><%=
+                            current %></span>
+                            <% } %>
+                            <% } %>
+                            <% if (next) { %>
+                            <span data-offset=<%= offset+limit %> class="next paginator-button pointercursor">Next
+                            »</span>
+                            <% } %>
+                        </div>
+                    </div>
+                </script>
+                <div class="clear-all-20"></div>
+                <!--end of feed blocks -->
+
+            </div>
+            <!-- end of reluts box -->
+
+        </div>
+        <!-- END of left row -->
+    </div>
+</div>
+</div>
+
+<!-- autocomplete styling -->
+<style>
+    .ui-autocomplete {
+        max-height: 100px;
+        overflow-y: auto;
+        /* prevent horizontal scrollbar */
+        overflow-x: hidden;
+        /* add padding to account for vertical scrollbar */
+        padding-right: 20px;
+    }
+
+        /* IE 6 doesn't support max-height
+         * we use height instead, but this forces the menu to always be this tall
+         */
+    * html .ui-autocomplete {
+        height: 100px;
+    }
+</style>
+<script src="/s/js/dataset-search-backbone.js"></script>
+{% endblock %}

@@ -1,0 +1,150 @@
+{% load url from future %}
+{% load i18n %}
+<head>
+    <link href="/s/css/colibri.css" rel="stylesheet" type="text/css"/>
+    <link href="/s/css/theme.css" rel="stylesheet" type="text/css"/>
+    <link href="/s/css/reset.css" rel="stylesheet" type="text/css"/>
+    <script>
+        $(".starRating1").rating({required: true, callback: function (value, link) {
+                    $("#id_Accurancy").val(value);
+                }, focus: function (value, link) {
+                    var tip = $('#star1tip');
+                    tip[0].data = tip[0].data || tip.html();
+                    tip.html(link.title || 'value: ' + value);
+                },
+                    blur: function (value, link) {
+                        var tip = $('#star1tip');
+                        $('#star1tip').html(tip[0].data || '');
+                    }}
+        );
+        $(".starRating2").rating({required: true, callback: function (value, link) {
+                    $("#id_Completeness").val(value);
+                }, focus: function (value, link) {
+                    var tip = $('#star2tip');
+                    tip[0].data = tip[0].data || tip.html();
+                    tip.html(link.title || 'value: ' + value);
+                },
+                    blur: function (value, link) {
+                        var tip = $('#star2tip');
+                        $('#star2tip').html(tip[0].data || '');
+                    }}
+        );
+        $(".starRating3").rating({required: true, callback: function (value, link) {
+                    $("#id_Consistency").val(value);
+                }, focus: function (value, link) {
+                    var tip = $('#star3tip');
+                    tip[0].data = tip[0].data || tip.html();
+                    tip.html(link.title || 'value: ' + value);
+                },
+                    blur: function (value, link) {
+                        var tip = $('#star3tip');
+                        $('#star3tip').html(tip[0].data || '');
+                    }}
+        );
+        $(".starRating4").rating({required: true, callback: function (value, link) {
+                    $("#id_Timelineness").val(value);
+                }, focus: function (value, link) {
+                    var tip = $('#star4tip');
+                    tip[0].data = tip[0].data || tip.html();
+                    tip.html(link.title || 'value: ' + value);
+                },
+                    blur: function (value, link) {
+                        var tip = $('#star4tip');
+                        $('#star4tip').html(tip[0].data || '');
+                    }}
+        );
+    </script>
+</head>
+<body>
+<div id="extend-dataset-header" class="clmn-8">
+    <h2 class="title" style="font-size:18px">{%trans "Tell us more about your rating please" %}</h2>
+</div>
+<div style="margin-left:20px;margin-top:7px;float:left;">
+    <form action="{% url 'dataset_rate_modal' dataset_id %}" method='POST' id='dataset-rate-form'>{% csrf_token %}
+        <div>{% trans "Your Review" %}</div>
+        <div>{{rating_form.RatingReason}}</div>
+        <div style="display:none">
+            {{rating_form.Accurancy}}
+            {{rating_form.Completeness}}
+            {{rating_form.Consistency}}
+            {{rating_form.Timelineness}}
+        </div>
+        <div>
+            {% trans "Accuracy" %}
+        </div>
+        <div>
+            <input name="star1" value="1" title="Totally not accurate" class="starRating1"/>
+            <input name="star1" value="2" title="Very poor accuracy" type="radio" class="starRating1"/>
+            <input name="star1" value="3" title="Poor accuracy" type="radio" class="starRating1"/>
+            <input name="star1" value="4" title="Slightly poor accuracy" type="radio" class="starRating1"/>
+            <input name="star1" value="5" title="Decent accuracy" type="radio" checked="checked" class="starRating1"/>
+            <input name="star1" value="6" title="Slightly good accuracy" type="radio" class="starRating1"/>
+            <input name="star1" value="7" title="Good accuracy" type="radio" class="starRating1"/>
+            <input name="star1" value="8" title="Very good accuracy" type="radio" class="starRating1"/>
+            <input name="star1" value="9" title="Almost totally accurate" type="radio" class="starRating1"/>
+            <input name="star1" value="10" title="Totally accurate" type="radio" class="starRating1"/>
+            <span id="star1tip" style="margin:0 0 0 20px;"></span>
+        </div>
+        <div style="clear:both"/>
+        <div style="margin-top:5px;">
+            {% trans "Completeness" %}
+        </div>
+        <div>
+            <input name="star2" value="1" title="Totally not complete" class="starRating2"/>
+            <input name="star2" value="2" title="Very poor completeness" type="radio" class="starRating2"/>
+            <input name="star2" value="3" title="Poor completeness" type="radio" class="starRating2"/>
+            <input name="star2" value="4" title="Slightly poor completeness" type="radio" class="starRating2"/>
+            <input name="star2" value="5" title="Decent completeness" type="radio" checked="checked"
+                   class="starRating2"/>
+            <input name="star2" value="6" title="Slightly good completeness" type="radio" class="starRating2"/>
+            <input name="star2" value="7" title="Good completeness" type="radio" class="starRating2"/>
+            <input name="star2" value="8" title="Very good completeness" type="radio" class="starRating2"/>
+            <input name="star2" value="9" title="Almost totally complete" type="radio" class="starRating2"/>
+            <input name="star2" value="10" title="Totally complete" type="radio" class="starRating2"/>
+            <span id="star2tip" style="margin:0 0 0 20px;"></span>
+        </div>
+        <div style="clear:both"/>
+        <div style="margin-top:5px;">
+            {% trans "Consistency" %}
+        </div>
+        <div>
+            <input name="star3" value="1" title="Totally not consistent" class="starRating3"/>
+            <input name="star3" value="2" title="Very poor consistency" type="radio" class="starRating3"/>
+            <input name="star3" value="3" title="Poor consistency" type="radio" class="starRating3"/>
+            <input name="star3" value="4" title="Slightly poor consistency" type="radio" class="starRating3"/>
+            <input name="star3" value="5" title="Decent consistency" type="radio" checked="checked"
+                   class="starRating3"/>
+            <input name="star3" value="6" title="Slightly good consistency" type="radio" class="starRating3"/>
+            <input name="star3" value="7" title="Good consistency" type="radio" class="starRating3"/>
+            <input name="star3" value="8" title="Very good consistency" type="radio" class="starRating3"/>
+            <input name="star3" value="9" title="Almost totally consistent" type="radio" class="starRating3"/>
+            <input name="star3" value="10" title="Totally consistent" type="radio" class="starRating3"/>
+            <span id="star3tip" style="margin:0 0 0 20px;"></span>
+        </div>
+        <div style="clear:both"/>
+        <div style="margin-top:5px;">
+            {% trans "Timelineness" %} <span id="star4tip" style="margin:0 0 0 20px;"></span>
+        </div>
+        <div>
+
+            <input name="star4" value="1" title="Totally not timely" class="starRating4"/>
+            <input name="star4" value="2" title="Very poor timeliness" type="radio" class="starRating4"/>
+            <input name="star4" value="3" title="Poor timeliness" type="radio" class="starRating4"/>
+            <input name="star4" value="4" title="Slightly poor timeliness" type="radio" class="starRating4"/>
+            <input name="star4" value="5" title="Decent timeliness" type="radio" checked="checked" class="starRating4"/>
+            <input name="star4" value="6" title="Slightly good timeliness" type="radio" class="starRating4"/>
+            <input name="star4" value="7" title="Good timeliness" type="radio" class="starRating4"/>
+            <input name="star4" value="8" title="Very good timeliness" type="radio" class="starRating4"/>
+            <input name="star4" value="9" title="Almost totally timely" type="radio" class="starRating4"/>
+            <input name="star4" value="10" title="Totally timely" type="radio" class="starRating4"/>
+        </div>
+
+        <div style="clear:both;margin-top:35px"/>
+        <input id='ok-rating' type="submit" class="button orangish" value="OK" style="margin-left:0px"/>
+        <a id='cancel-rating' class="button blue nyroModalClose ">{% trans "No thanks, skip review" %}</a>
+    </form>
+</div>
+<div id='extension-description'
+     style="text-align:center;margin-top:3px;float: left; margin-left: 32px; display: block;width:350px">
+</div>
+</body>

@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}Create Dataset{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="/s/chosen/chosen.css"/>
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/style.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-responsive.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-image-gallery.min.css">
+{% endblock %}
+{% block scripts %}
+<script src="/s/chosen/chosen.jquery.js"></script>
+<script src="/s/js/jquery.formset.min.js"></script>
+<script src="/s/js/dataset.js"></script>
+
+<script type="text/javascript">
+    (function ($) {
+        $(document).ready(function () {
+            $('#tab-side-container').easytabs({animate: false, tabActiveClass: "selected-tab", panelActiveClass: "displayed"});
+            var $tabContainer = $('#tab-side-container'),
+                    $tabs = $tabContainer.data('easytabs').tabs,
+                    $tabPanels = $(".tab-buttons-panel")
+            totalSize = $tabPanels.length;
+            $tabPanels.each(function (i) {
+                if (i != 0) {
+                    prev = i - 1;
+                    $(this).prepend("<a href='#' style='color:#666666;' class='prev-tab  btn-link ' rel='" + prev + "'>&laquo; {% trans "
+                    Back
+                    " %} </a>"
+                )
+                    ;
+                } else {
+                    $(this).prepend("<span style='display:none' class='prev-tab btn'>&laquo; {% trans "
+                    Back
+                    " %}</span>"
+                )
+                    ;
+                }
+                if (i + 1 != totalSize) {
+                    next = i + 1;
+                    $(this).prepend("<a href='#' class='next-tab btn btn-success' rel='" + next + "'>{% trans "
+                    Next
+                    " %} &raquo</a>"
+                )
+                    ;
+                } else {
+                    $(this).prepend("<span style='display:none' class='next-tab btn'>{% trans "
+                    Next
+                    " %}  &raquo</span>"
+                )
+                    ;
+                }
+            });
+            $('.next-tab, .prev-tab').click(function () {
+                var i = parseInt($(this).attr('rel'));
+                var tabSelector = $tabs.children('a:eq(' + i + ')').attr('href');
+                $tabContainer.easytabs('select', tabSelector);
+                return false;
+            });
+            if ($('.dataerrors').text() != '') {
+                if ($('.dataerrors:contains("e")').first().parents('.tab-buttons-panel').attr('id') != null) {
+                    var tabtoselect = $('.dataerrors:contains("e")').first().parents('.tab-buttons-panel').attr('id');
+                    $('#tab-side-container').easytabs('select', tabtoselect);
+                }
+                ;
+            }
+            ;
+
+
+        });
+    })(jQuery);
+</script>
+{% endblock %}
+{% block content %}
+<div id="view_datasets" class="wrapper-content">
+    <div class="datasets-form">
+        <div class="datasets-form-header">
+            {% trans "Add new dataset" %}
+        </div>
+        <div class="datasets-form-body">
+
+            <form id="dataset-add-form" method="post" action="/dataset/add" enctype="multipart/form-data">{% csrf_token
+                %}
+
+                <br>
+                {% include 'dataset/_form.html' with scientificForm=scientificForm datasetForm=datasetForm
+                resourceFormset=resourceFormset geoTempForm=geoTempForm %}
+                <br>
+
+                <div style="float:right;margin-bottom:20px;">
+                    <input type="submit" class='button orangish' value="Create Dataset"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% load account %}{% user_display user as user_display %}{% load i18n %}{% autoescape off %}{% blocktrans with current_site.name as site_name %}Dear user {{ user_display }},
+
+This is an confirmation email for your registration to the colibri data portal at {{ site_name }}.
+
+In order to complete your registration, please go to {{ activate_url }}.
+
+
+The colibri team
+http://www.colibridata.eu
+
+About colibri
+---------------------
+The main goal of the colibri project is the development and use of a data infrastructure, incorporating distributed and diverse public sector information (PSI) resources, capable of supporting scientific collaboration and research, particularly for the Social Science and Humanities (SSH) scientific communities, while also empowering the deployment of open governmental data towards citizens.
+The colibri e-infrastructure is envisaged to promote a highly synergetic approach to governance research, by providing the ground for experimentation to actors from both ICT and non-ICT related disciplines and scientific communities, as well as by ensuring that the scientific outcomes are made accessible to the citizens, so that they can monitor public service delivery and influence the decision making process.
+
+colibri is a combination of CP & CSA project funded under the European Commission FP7 Programme. To find out more about the project, visit http://www.colibri-project.eu
+
+{% endblocktrans %}{% endautoescape %}

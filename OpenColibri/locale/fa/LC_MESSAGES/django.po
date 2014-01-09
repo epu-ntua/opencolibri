@@ -1,0 +1,5450 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-04-13 19:29+0300\n"
+"PO-Revision-Date: 2013-04-25 09:41+0100\n"
+"Last-Translator: Armin Parnia <parniaa@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.5.5\n"
+
+#: .\allauth\account\forms.py:35 .\allauth\account\forms.py:51
+#: .\allauth\account\forms.py:236 .\allauth\account\forms.py:352
+msgid "Password"
+msgstr "گذرواژه"
+
+#: .\allauth\account\forms.py:44
+msgid "Password must be a minimum of {0} characters."
+msgstr "رمز عبور حداقل باید {0} کاراکتر باشد."
+
+#: .\allauth\account\forms.py:53
+msgid "Remember Me"
+msgstr "مرا به خاطر بسپار"
+
+#: .\allauth\account\forms.py:64
+msgid "E-mail address"
+msgstr "پست الکترونیکی"
+
+#: .\allauth\account\forms.py:65 .\allauth\account\forms.py:184
+#: .\allauth\account\forms.py:302 .\allauth\account\forms.py:369
+msgid "E-mail"
+msgstr "پست الکترونیکی"
+
+#: .\allauth\account\forms.py:70 .\allauth\account\forms.py:71
+#: .\allauth\account\forms.py:170
+msgid "Username"
+msgstr "شناسه کاربری"
+
+#: .\allauth\account\forms.py:78
+msgid "Username or e-mail"
+msgstr "شناسه کاربری یا پست الکترونیکی"
+
+#: .\allauth\account\forms.py:79
+msgid "Login"
+msgstr "ورود"
+
+#: .\allauth\account\forms.py:112
+msgid "This account is currently inactive."
+msgstr "این حساب کاربری در حال حاضر غیر فعال است."
+
+#: .\allauth\account\forms.py:116
+msgid "The e-mail address and/or password you specified are not correct."
+msgstr "آدرس پست الکترونیکی و / یا رمز عبور شما صحیح نیست."
+
+#: .\allauth\account\forms.py:120
+msgid "The username and/or password you specified are not correct."
+msgstr "شناسه کاربری و / یا رمز عبور شما صحیح نیست."
+
+#: .\allauth\account\forms.py:123
+msgid "The login and/or password you specified are not correct."
+msgstr "شناسه کاربری و / یا رمز عبور شما صحیح نیست."
+
+#: .\allauth\account\forms.py:187
+msgid "E-mail (optional)"
+msgstr "پست الکترونیک (اختیاری)"
+
+#: .\allauth\account\forms.py:195
+msgid "Usernames can only contain letters, digits and @/./+/-/_."
+msgstr "نام کاربری فقط می تواند شامل حروف، ارقام و @ / / + / - /_ باشد. "
+
+#: .\allauth\account\forms.py:201
+msgid "This username is already taken. Please choose another."
+msgstr ""
+"این نام کاربری قبلا استفاده شده است. لطفا نام کاربری دیگری را انتخاب کنید."
+
+#: .\allauth\account\forms.py:209
+msgid "A user is already registered with this e-mail address."
+msgstr " در حال حاضریک شناسه کاربری  با این آدرس ایمیل ثبت شده است."
+
+#: .\allauth\account\forms.py:237 .\allauth\account\forms.py:353
+msgid "Password (again)"
+msgstr "گذرواژه (دوباره)"
+
+#: .\allauth\account\forms.py:265 .\allauth\account\forms.py:342
+#: .\allauth\account\forms.py:358 .\allauth\account\forms.py:426
+msgid "You must type the same password each time."
+msgstr "شما باید گذرواژه خود را هر دفعه وارد کنید."
+
+#: .\allauth\account\forms.py:310
+msgid "This e-mail address is already associated with this account."
+msgstr "این پست الکترونیکی در حال حاضر در این حساب کاربری ثبت شده است."
+
+#: .\allauth\account\forms.py:311
+msgid "This e-mail address is already associated with another account."
+msgstr "این  پست الکترونیکی در حال حاضر در یک حساب کاربری دیگر ثبت شده است."
+
+#: .\allauth\account\forms.py:330
+msgid "Current Password"
+msgstr "گذرواژه فعلی"
+
+#: .\allauth\account\forms.py:331 .\allauth\account\forms.py:414
+msgid "New Password"
+msgstr "گذرواژه جدید"
+
+#: .\allauth\account\forms.py:332 .\allauth\account\forms.py:415
+msgid "New Password (again)"
+msgstr "گذرواژه جدید (تکرار)"
+
+#: .\allauth\account\forms.py:336
+msgid "Please type your current password."
+msgstr "لطفا گذرواژه فعلی خود را تایپ کنید."
+
+#: .\allauth\account\forms.py:379
+msgid "The e-mail address is not assigned to any user account"
+msgstr "این پست الکترونیکی به حساب کاربری دیگری اختصاص داده نشده است. "
+
+#: .\allauth\account\models.py:28
+msgid "email address"
+msgstr "پست الکترونیکی"
+
+#: .\allauth\account\models.py:29
+msgid "email addresses"
+msgstr "پست الکترونیکی ها"
+
+#: .\allauth\account\models.py:78
+msgid "email confirmation"
+msgstr "تایید پست الکتریکی"
+
+#: .\allauth\account\models.py:79
+msgid "email confirmations"
+msgstr "تأیید پست الکترونیکی"
+
+#: .\allauth\account\utils.py:105
+#, python-format
+msgid "Successfully signed in as %(user)s."
+msgstr "با موفقیت  به عنوان٪(user) وارد شدید."
+
+#: .\allauth\account\utils.py:178 .\allauth\account\views.py:167
+#: .\allauth\account\views.py:186
+#, python-format
+msgid "Confirmation e-mail sent to %(email)s"
+msgstr "تایید پست الکترونیکی فرستاده شده به٪ (email)"
+
+#: .\allauth\account\views.py:92
+#, python-format
+msgid "You have confirmed %(email)s."
+msgstr "شما پست الکترونیکی (email) را تایید کردید."
+
+#: .\allauth\account\views.py:204
+#, python-format
+msgid "You cannot remove your primary e-mail address (%(email)s)"
+msgstr "شما نمی توانید پست الکترونیکی اولیه خود را حذف کنید(%(email)s)."
+
+#: .\allauth\account\views.py:214
+#, python-format
+msgid "Removed e-mail address %(email)s"
+msgstr "پست الکترونیکی (%(email)s) حذف گردیده است."
+
+#: .\allauth\account\views.py:240
+msgid "Your primary e-mail address must be verified"
+msgstr "پست الکترونیکی اولیه خود را باید تایید کنید."
+
+#: .\allauth\account\views.py:252
+msgid "Primary e-mail address set"
+msgstr "آدرس ایمیل اولیه ثبت شد"
+
+#: .\allauth\account\views.py:281 .\allauth\account\views.py:358
+msgid "Password successfully changed."
+msgstr "گذرواژه با موفقیت تغییر کرد."
+
+#: .\allauth\account\views.py:306
+msgid "Password successfully set."
+msgstr "گذرواژه با موفقیت ثبت گردید."
+
+#: .\allauth\account\views.py:374
+#: .\allauth\templates\account\logout.html.py:18
+msgid "You have signed out."
+msgstr "شما از حساب کاربری خود خارج شدید."
+
+#: .\allauth\socialaccount\forms.py:47
+msgid "Your account has no password set up."
+msgstr "حساب کاربری شما بدون گذرواژه راه اندازی شده است."
+
+#: .\allauth\socialaccount\forms.py:51
+msgid "Your account has no verified e-mail address."
+msgstr "حساب شما فاقد پست الکترونیکی تایید شده می باشد."
+
+# what do you mean by " the social account has been connected" you mean social network account?
+#: .\allauth\socialaccount\helpers.py:123
+msgid "The social account has been connected"
+msgstr "حساب اجتماعی شما متصل گردید"
+
+#: .\allauth\socialaccount\views.py:54
+msgid "The social account has been disconnected"
+msgstr "حساب های اجتماعی قطع  گردید."
+
+#: .\allauth\socialaccount\providers\oauth\client.py:84
+#, python-format
+msgid "Invalid response while obtaining request token from \"%s\"."
+msgstr "Invalid response while obtaining request token from \"%s\"."
+
+#: .\allauth\socialaccount\providers\oauth\client.py:107
+#, python-format
+msgid "Invalid response while obtaining access token from \"%s\"."
+msgstr "Invalid response while obtaining access token from \"%s\"."
+
+#: .\allauth\socialaccount\providers\oauth\client.py:120
+#, python-format
+msgid "No request token saved for \"%s\"."
+msgstr "No request token saved for \"%s\"."
+
+#: .\allauth\socialaccount\providers\oauth\client.py:168
+#, python-format
+msgid "No access token saved for \"%s\"."
+msgstr "No access token saved for \"%s\"."
+
+#: .\allauth\socialaccount\providers\oauth\client.py:188
+#, python-format
+msgid "No access to private resources at \"%s\"."
+msgstr "No access to private resources at \"%s\"."
+
+#: .\allauth\templates\account\email.html.py:6
+msgid "Account"
+msgstr "حساب کاربری"
+
+#: .\allauth\templates\account\email.html.py:15
+msgid "Email Addresses"
+msgstr "\"پست الکترونیکی ها\""
+
+#: .\allauth\templates\account\email.html.py:19
+msgid "The following e-mail addresses are associated with your account:"
+msgstr "پست الکترونیکی زیر به حساب کاربری شما متصل گردید:"
+
+#: .\allauth\templates\account\email.html.py:33
+msgid "Verified"
+msgstr "تایید گردید"
+
+#: .\allauth\templates\account\email.html.py:35
+msgid "Unverified"
+msgstr "تایید نگردید"
+
+#: .\allauth\templates\account\email.html.py:37
+msgid "Primary"
+msgstr "اولیه"
+
+#: .\allauth\templates\account\email.html.py:43
+msgid "Make Primary"
+msgstr "ثبت به عنوان اولیه"
+
+#: .\allauth\templates\account\email.html.py:44
+msgid "Re-send Verification"
+msgstr "ارسال مجدد تائید"
+
+#: .\allauth\templates\account\email.html.py:45
+#: .\allauth\templates\socialaccount\connections.html.py:43
+#: .\colibri\templates\dataset\_edit.html.py:18
+#: .\old\django-basic-apps\basic\comments\templates\comments\delete.html.py:20
+msgid "Remove"
+msgstr "حذف"
+
+#: .\allauth\templates\account\email.html.py:52
+msgid "Warning:"
+msgstr "هشدار"
+
+#: .\allauth\templates\account\email.html.py:52
+msgid ""
+"You currently do not have any e-mail address set up. You should really add "
+"an e-mail address so you can receive notifications, reset your password, etc."
+msgstr ""
+"در حال حاضر شما پست الکترونیکی برای حساب کاربری شما ثبت نشده است. شما می "
+"بایست  یک پست الکترونیکی به منظور دریافت اطلاعیه ها و قابلیت  تنظیم مجدد "
+"گذرواژه ثبت کنید."
+
+#: .\allauth\templates\account\email.html.py:57
+msgid "Add E-mail Address"
+msgstr "اضافه کردن پست الکترونیکی"
+
+#: .\allauth\templates\account\email.html.py:62
+msgid "Add E-mail"
+msgstr "اضافه کردن پست الکترونیکی"
+
+#: .\allauth\templates\account\email.html.py:75
+msgid "Do you really want to remove the selected e-mail address?"
+msgstr "آیا مطمئن هستید که می خواهید پست الکترونیکی که انتخاب کردید، حذف کنید؟"
+
+#: .\allauth\templates\account\email_confirm.html.py:7
+#: .\allauth\templates\account\email_confirmed.html.py:6
+#: .\allauth\templates\account\email_confirmed.html.py:16
+#: .\allauth\templates\account\email\email_confirmation_subject.txt.py:3
+msgid "Confirm E-mail Address"
+msgstr " تکرار پست الکترونیکی"
+
+#: .\allauth\templates\account\email_confirm.html.py:17
+msgid "Email confirmation"
+msgstr "تایید پست الکترونیکی"
+
+#: .\allauth\templates\account\email_confirm.html.py:25
+#, python-format
+msgid ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
+"address for user %(user_display)s."
+msgstr ""
+"لطفا تأیید کنید که پست الکترونیکی<a href=\"mailto:%(email)s\">%(email)s</a> "
+"متعلق  به کاربر %(user_display)  می باشد."
+
+#: .\allauth\templates\account\email_confirm.html.py:29
+msgid "Confirm"
+msgstr "ارسال"
+
+#: .\allauth\templates\account\email_confirm.html.py:36
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please <a href="
+"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+msgstr ""
+"این ایمیل لینک تایید منقضی شده و یا نامعتبر است. لطفا <a شماره href="
+"\"٪(email_url)s\"> درخواست تایید ایمیل </ A>."
+
+#: .\allauth\templates\account\email_confirmed.html.py:22
+#, python-format
+msgid ""
+"You have confirmed that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-"
+"mail address for user %(user_display)s."
+msgstr ""
+"شما را تایید کرده اند <a٪ href=\"mailto:٪(email)s\"> (ایمیل) </ A> یک آدرس "
+"ایمیل کاربر٪ (user_display) است."
+
+#: .\allauth\templates\account\login.html.py:7
+#: .\allauth\templates\account\login.html.py:16
+#: .\allauth\templates\account\login.html.py:46
+msgid "Sign In"
+msgstr "ورود"
+
+#: .\allauth\templates\account\login.html.py:47
+msgid "or"
+msgstr "یا"
+
+#: .\allauth\templates\account\login.html.py:47
+msgid " Sign-up"
+msgstr "ثبت نام"
+
+#: .\allauth\templates\account\login.html.py:48
+msgid "(forgot password?)"
+msgstr "(رمز عبور را فراموش کرده ام؟)"
+
+#: .\allauth\templates\account\logout.html.py:5
+#: .\allauth\templates\account\logout.html.py:14
+msgid "Signed Out"
+msgstr "از سیستم خارج"
+
+#: .\allauth\templates\account\password_change.html.py:4
+#: .\allauth\templates\account\password_change.html.py:7
+#: .\allauth\templates\account\password_change.html.py:12
+#: .\allauth\templates\account\password_reset_from_key.html.py:5
+#: .\allauth\templates\account\password_reset_from_key.html.py:8
+msgid "Change Password"
+msgstr "تغییر رمز ورود"
+
+#: .\allauth\templates\account\password_delete.html.py:5
+#: .\allauth\templates\account\password_delete.html.py:8
+msgid "Delete Password"
+msgstr "حذف رمز عبور"
+
+#: .\allauth\templates\account\password_delete.html.py:9
+msgid ""
+"You may delete your password since you are currently logged in using OpenID."
+msgstr ""
+"شما ممکن است رمز عبور خود را از شما در حال حاضر با استفاده از OpenID وارد "
+"شده را حذف کنید."
+
+#: .\allauth\templates\account\password_delete.html.py:12
+msgid "delete my password"
+msgstr "حذف رمز عبور من"
+
+#: .\allauth\templates\account\password_delete_done.html.py:5
+#: .\allauth\templates\account\password_delete_done.html.py:8
+msgid "Password Deleted"
+msgstr "رمز عبور حذف شده"
+
+#: .\allauth\templates\account\password_delete_done.html.py:9
+msgid "Your password has been deleted."
+msgstr "رمز عبور شما حذف شده است."
+
+#: .\allauth\templates\account\password_reset.html.py:6
+#: .\allauth\templates\account\password_reset.html.py:15
+#: .\allauth\templates\account\password_reset_done.html.py:6
+#: .\allauth\templates\account\password_reset_done.html.py:15
+msgid "Password Reset"
+msgstr "تنظیم مجدد رمز عبور"
+
+#: .\allauth\templates\account\password_reset.html.py:23
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
+msgstr ""
+"رمز عبور خود را فراموش کرده اید؟ را وارد کنید آدرس ایمیل خود را در زیر است، "
+"و ما به شما ارسال یک ایمیل به شما اجازه می دهد تا آن را تنظیم مجدد."
+
+#: .\allauth\templates\account\password_reset.html.py:28
+msgid "Reset My Password"
+msgstr "تنظیم مجدد رمز عبور"
+
+#: .\allauth\templates\account\password_reset.html.py:31
+msgid "Please contact us if you have any trouble resetting your password."
+msgstr "لطفا با ما تماس بگیرید اگر شما هر گونه مشکل بازنشانی رمز عبور خود را."
+
+#: .\allauth\templates\account\password_reset_done.html.py:23
+msgid ""
+"We have sent you an e-mail. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+"در حال حاضر به شما ایمیل فرستاده شده است. لطفا با ما تماس بگیرید اگر شما آن "
+"را در چند دقیقه دریافت نمی کنید."
+
+#: .\allauth\templates\account\password_reset_from_key.html.py:8
+msgid "Bad Token"
+msgstr "رمز بد"
+
+#: .\allauth\templates\account\password_reset_from_key.html.py:12
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
+msgstr ""
+"لینک بازنشانی رمز عبور نامعتبر است، احتمالا به این دلیل که در حال حاضر مورد "
+"استفاده قرار گرفته است. لطفا درخواست <a href=\"٪(passwd_reset_url)s\"> کلمه "
+"عبور جدید </ A>."
+
+#: .\allauth\templates\account\password_reset_from_key.html.py:18
+msgid "change password"
+msgstr "تغییر رمز ورود"
+
+#: .\allauth\templates\account\password_reset_from_key.html.py:21
+msgid "Your password is now changed."
+msgstr "رمز عبور شما در حال حاضر تغییر کرده است."
+
+#: .\allauth\templates\account\password_set.html.py:5
+#: .\allauth\templates\account\password_set.html.py:8
+#: .\allauth\templates\account\password_set.html.py:13
+msgid "Set Password"
+msgstr "تنظیم کلمه عبور کاربر"
+
+#: .\allauth\templates\account\signup.html.py:6
+#: .\allauth\templates\account\signup.html.py:26
+#: .\colibri\templates\base.html.py:84 .\colibri\templates\wiki\base.html.py:99
+msgid "Register"
+msgstr "ثبت نام"
+
+#: .\allauth\templates\account\signup.html.py:42
+#, python-format
+msgid ""
+"Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
+msgstr " حساب کاربری دارید؟ سپس <a href=\"%(login_url)s\"> در </a> لطفا."
+
+#: .\allauth\templates\account\signup.html.py:50
+#: .\allauth\templates\socialaccount\signup.html.py:14
+#: .\allauth\templates\socialaccount\signup.html.py:27
+msgid "Sign Up"
+msgstr "ثبت نام"
+
+#: .\allauth\templates\account\verification_sent.html.py:5
+#: .\allauth\templates\account\verification_sent.html.py:8
+#: .\allauth\templates\account\verified_email_required.html.py:6
+#: .\allauth\templates\account\verified_email_required.html.py:9
+msgid "Verify Your E-mail Address"
+msgstr "تایید آدرس پست الکترونیکی خود"
+
+#: .\allauth\templates\account\verification_sent.html.py:10
+#, python-format
+msgid ""
+"We have sent an e-mail to <a href=\"mailto:%(email)s\">%(email)s</a> for "
+"verification. Follow the link provided to finalize the signup process. "
+"Please contact us if you do not receive it within a few minutes."
+msgstr ""
+"ما یک پست الکترونیکی به٪ <a href=\"mailto:٪(email)s\"> فرستاده می شود (پست "
+"الکترونیکی) </ A> برای تأیید. دنبال لینک ارائه شده برای نهایی کردن روند ثبت "
+"نام. لطفا با ما تماس بگیرید اگر شما آن را در چند دقیقه دریافت نمی کنید."
+
+#: .\allauth\templates\account\verified_email_required.html.py:13
+msgid ""
+"This part of the site requires us to verify that\n"
+"you are who you claim to be. For this purpose, we require that you\n"
+"verify ownership of your e-mail address. "
+msgstr ""
+"This part of the site requires us to verify that\n"
+"you are who you claim to be. For this purpose, we require that you\n"
+"verify ownership of your e-mail address. "
+
+#: .\allauth\templates\account\verified_email_required.html.py:17
+msgid ""
+"We have sent an e-mail to you for\n"
+"verification. Please click on the link inside this e-mail. Please\n"
+"contact us if you do not receive it within a few minutes."
+msgstr ""
+"We have sent an e-mail to you for\n"
+"verification. Please click on the link inside this e-mail. Please\n"
+"contact us if you do not receive it within a few minutes."
+
+#: .\allauth\templates\account\verified_email_required.html.py:21
+#, python-format
+msgid ""
+"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
+"mail address</a>."
+msgstr ""
+"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
+"mail address</a>."
+
+#: .\allauth\templates\account\email\email_confirmation_message.txt.py:1
+#, python-format
+msgid ""
+"User %(user_display)s at %(site_name)s has given this as an email address.\n"
+"\n"
+"To confirm this is correct, go to %(activate_url)s\n"
+msgstr ""
+"User %(user_display)s at %(site_name)s has given this as an email address.\n"
+"\n"
+"To confirm this is correct, go to %(activate_url)s\n"
+
+#: .\allauth\templates\account\email\password_reset_key_message.txt.py:1
+#, python-format
+msgid ""
+"You're receiving this e-mail because you or someone else has requested a "
+"password for your user account at %(site_domain)s.\n"
+"It can be safely ignored if you did not request a password reset. Click the "
+"link below to reset your password.\n"
+"\n"
+"%(password_reset_url)s\n"
+"\n"
+"In case you forgot, your username is %(username)s.\n"
+"\n"
+"Thanks for using our site!\n"
+msgstr ""
+"You're receiving this e-mail because you or someone else has requested a "
+"password for your user account at %(site_domain)s.\n"
+"It can be safely ignored if you did not request a password reset. Click the "
+"link below to reset your password.\n"
+"\n"
+"%(password_reset_url)s\n"
+"\n"
+"In case you forgot, your username is %(username)s.\n"
+"\n"
+"Thanks for using our site!\n"
+
+#: .\allauth\templates\account\email\password_reset_key_subject.txt.py:3
+msgid "Password Reset E-mail"
+msgstr "تنظیم مجدد رمز عبور ایمیل E-"
+
+#: .\allauth\templates\account\snippets\already_logged_in.html.py:5
+msgid "Note"
+msgstr "نکته"
+
+#: .\allauth\templates\account\snippets\already_logged_in.html.py:5
+#, python-format
+msgid "you are already logged in as %(user_display)s."
+msgstr "شما در حال حاضر به عنوان٪ (user_display) وارد شده است."
+
+#: .\allauth\templates\openid\login.html.py:10
+msgid "OpenID Sign In"
+msgstr "ورود ورود از طریق OpenID در"
+
+#: .\allauth\templates\socialaccount\account_inactive.html.py:5
+msgid "Account Inactive"
+msgstr "حساب کاربری غیر فعال"
+
+#: .\allauth\templates\socialaccount\account_inactive.html.py:14
+msgid "Inactive account"
+msgstr "حساب غیر فعال"
+
+#: .\allauth\templates\socialaccount\account_inactive.html.py:18
+msgid "This account is inactive."
+msgstr "این حساب غیرفعال است."
+
+#: .\allauth\templates\socialaccount\authentication_error.html.py:5
+#: .\allauth\templates\socialaccount\authentication_error.html.py:18
+msgid "Social Network Login Failure"
+msgstr "عدم ورود به شبکه های اجتماعی"
+
+#: .\allauth\templates\socialaccount\authentication_error.html.py:22
+msgid ""
+"An error occurred while attempting to login via your social network account."
+msgstr ""
+"یک خطا رخ داده است در حالی که در تلاش برای ورود اینجا و از طریق حساب کاربری "
+"شبکه های اجتماعی خود را."
+
+#: .\allauth\templates\socialaccount\connections.html.py:5
+#: .\allauth\templates\socialaccount\connections.html.py:14
+msgid "Account Connections"
+msgstr "اتصالات حساب کاربری"
+
+#: .\allauth\templates\socialaccount\connections.html.py:19
+msgid ""
+"You can sign in to your account using any of the following third party "
+"accounts:"
+msgstr ""
+"شما می توانید با ثبت نام به حساب کاربری خود با استفاده از هر یک از حساب های "
+"شخص ثالث به شرح زیر است:"
+
+#: .\allauth\templates\socialaccount\connections.html.py:51
+msgid ""
+"You currently have no social network accounts connected to this account."
+msgstr "شما در حال حاضر هیچ حساب های شبکه های اجتماعی متصل به این حساب."
+
+#: .\allauth\templates\socialaccount\connections.html.py:54
+msgid "Add a 3rd Party Account"
+msgstr "اضافه کردن یک حساب حزب 3rd"
+
+#: .\allauth\templates\socialaccount\login_cancelled.html.py:6
+#: .\allauth\templates\socialaccount\login_cancelled.html.py:15
+msgid "Login Cancelled"
+msgstr "ورود به سیستم لغو"
+
+#: .\allauth\templates\socialaccount\login_cancelled.html.py:22
+#, python-format
+msgid ""
+"You decided to cancel logging in to our site using one of your existing "
+"accounts. If this was a mistake, please proceed to <a href=\"%(login_url)s"
+"\">sign in</a>."
+msgstr ""
+"شما تصمیم به لغو ورود به سایت ما با استفاده از یکی از حساب های موجود خود را. "
+"اگر این یک اشتباه بود، لطفا اقدام به ورود به سیستم <a href=\"٪(login_url)s"
+"\"> در </ A>."
+
+#: .\allauth\templates\socialaccount\signup.html.py:5
+msgid "Signup"
+msgstr "ثبت نام"
+
+#: .\allauth\templates\socialaccount\signup.html.py:18
+#, python-format
+msgid ""
+"You are about to use your %(provider_name)s account to login to \n"
+"%(site_name)s. As a final step, please complete the following form:"
+msgstr ""
+"شما می خواهید  حساب کاربری ٪ (PROVIDER_NAME)خود را برای ورود به "
+"%(site_name)s استفاده کنید. به عنوان گام نهایی، لطفا فرم زیر را تکمیل کنید:"
+
+#: .\colibri\lists.py:4
+msgid "Please choose a language.."
+msgstr "لطفا زبان مورد نظر را انتخاب کنید .."
+
+#: .\colibri\lists.py:5
+msgid "Afrikaans"
+msgstr "آفرقایی"
+
+#: .\colibri\lists.py:6
+msgid "Arabic"
+msgstr "عربی"
+
+#: .\colibri\lists.py:7
+msgid "Azerbaijani"
+msgstr "آذری"
+
+#: .\colibri\lists.py:8
+msgid "Bulgarian"
+msgstr "بلغاری"
+
+#: .\colibri\lists.py:9
+msgid "Belarusian"
+msgstr "بلاروس"
+
+#: .\colibri\lists.py:10
+msgid "Bengali"
+msgstr "بنگالی"
+
+#: .\colibri\lists.py:11
+msgid "Breton"
+msgstr "برتون"
+
+#: .\colibri\lists.py:12
+msgid "Bosnian"
+msgstr "بونسیان"
+
+#: .\colibri\lists.py:13
+msgid "Catalan"
+msgstr "کاتالان"
+
+#: .\colibri\lists.py:14
+msgid "Czech"
+msgstr "چک"
+
+#: .\colibri\lists.py:15
+msgid "Welsh"
+msgstr "ولزی"
+
+#: .\colibri\lists.py:16
+msgid "Danish"
+msgstr "دانمارکی"
+
+#: .\colibri\lists.py:17
+msgid "German"
+msgstr "آلمانی"
+
+#: .\colibri\lists.py:18
+msgid "Greek"
+msgstr "یونانی"
+
+#: .\colibri\lists.py:19
+msgid "English"
+msgstr "انگلیسی"
+
+#: .\colibri\lists.py:20
+msgid "British English"
+msgstr "انگلیسی"
+
+#: .\colibri\lists.py:21
+msgid "Esperanto"
+msgstr "زبان بین الملل"
+
+#: .\colibri\lists.py:22
+msgid "Spanish"
+msgstr "اسپانیولی"
+
+#: .\colibri\lists.py:23
+msgid "Argentinian Spanish"
+msgstr " اسپانیایی آرژانتینی"
+
+#: .\colibri\lists.py:24
+msgid "Mexican Spanish"
+msgstr " اسپانیایی مکزیکی"
+
+#: .\colibri\lists.py:25
+msgid "Nicaraguan Spanish"
+msgstr "اسپانیایی نیکاراگوئه "
+
+#: .\colibri\lists.py:26
+msgid "Venezuelan Spanish"
+msgstr "اسپانیایی ونزوئلا "
+
+#: .\colibri\lists.py:27
+msgid "Estonian"
+msgstr "استونیایی"
+
+#: .\colibri\lists.py:28
+msgid "Basque"
+msgstr "باسکه"
+
+#: .\colibri\lists.py:29
+msgid "Persian"
+msgstr "فارسی"
+
+#: .\colibri\lists.py:30
+msgid "Finnish"
+msgstr "فنلاندی"
+
+#: .\colibri\lists.py:31
+msgid "French"
+msgstr "فرانسوی"
+
+#: .\colibri\lists.py:32
+msgid "Frisian"
+msgstr "فریزی"
+
+#: .\colibri\lists.py:33
+msgid "Irish"
+msgstr "ایرلندی"
+
+#: .\colibri\lists.py:34
+msgid "Galician"
+msgstr "گایچان"
+
+#: .\colibri\lists.py:35
+msgid "Hebrew"
+msgstr "عبرو"
+
+#: .\colibri\lists.py:36
+msgid "Hindi"
+msgstr "هندی"
+
+#: .\colibri\lists.py:37
+msgid "Croatian"
+msgstr "کرواسی"
+
+#: .\colibri\lists.py:38
+msgid "Hungarian"
+msgstr "مجاری"
+
+#: .\colibri\lists.py:39
+msgid "Interlingua"
+msgstr "اینترلینگوا"
+
+#: .\colibri\lists.py:40
+msgid "Indonesian"
+msgstr "اندونزیایی"
+
+#: .\colibri\lists.py:41
+msgid "Icelandic"
+msgstr "آیسلندی"
+
+#: .\colibri\lists.py:42
+msgid "Italian"
+msgstr "ایتالیایی"
+
+#: .\colibri\lists.py:43
+msgid "Japanese"
+msgstr "ژاپنی"
+
+#: .\colibri\lists.py:44
+msgid "Georgian"
+msgstr "گرجی"
+
+#: .\colibri\lists.py:45
+msgid "Kazakh"
+msgstr "قزاقی"
+
+#: .\colibri\lists.py:46
+msgid "Khmer"
+msgstr "خمر"
+
+#: .\colibri\lists.py:47
+msgid "Kannada"
+msgstr "کانادا"
+
+#: .\colibri\lists.py:48
+msgid "Korean"
+msgstr "کره ای"
+
+#: .\colibri\lists.py:49
+msgid "Luxembourgish"
+msgstr "لوکزامبورگی"
+
+#: .\colibri\lists.py:50
+msgid "Lithuanian"
+msgstr "لیتوانی"
+
+#: .\colibri\lists.py:51
+msgid "Latvian"
+msgstr "لاتوین"
+
+#: .\colibri\lists.py:52
+msgid "Macedonian"
+msgstr "مقدونیه ای"
+
+#: .\colibri\lists.py:53
+msgid "Malayalam"
+msgstr "مالایایی"
+
+#: .\colibri\lists.py:54
+msgid "Mongolian"
+msgstr "مغولی"
+
+#: .\colibri\lists.py:55
+msgid "Norwegian Bokmal"
+msgstr "نروژی بوکمال"
+
+#: .\colibri\lists.py:56
+msgid "Nepali"
+msgstr "نپالی"
+
+#: .\colibri\lists.py:57
+msgid "Dutch"
+msgstr "هلندی"
+
+#: .\colibri\lists.py:58
+msgid "Norwegian Nynorsk"
+msgstr "نروژی نینورسک"
+
+#: .\colibri\lists.py:59
+msgid "Punjabi"
+msgstr "پنجابی"
+
+#: .\colibri\lists.py:60
+msgid "Polish"
+msgstr "لهستانی"
+
+#: .\colibri\lists.py:61
+msgid "Portuguese"
+msgstr "پرتغالی"
+
+#: .\colibri\lists.py:62
+msgid "Brazilian Portuguese"
+msgstr "پرتغالی برزیل"
+
+#: .\colibri\lists.py:63
+msgid "Romanian"
+msgstr "رومانیایی"
+
+#: .\colibri\lists.py:64
+msgid "Russian"
+msgstr "روسی"
+
+#: .\colibri\lists.py:65
+msgid "Slovak"
+msgstr "اسلواک"
+
+#: .\colibri\lists.py:66
+msgid "Slovenian"
+msgstr "اسلوونی"
+
+#: .\colibri\lists.py:67
+msgid "Albanian"
+msgstr "آلبانیایی"
+
+#: .\colibri\lists.py:68
+msgid "Serbian"
+msgstr "صربیایی"
+
+#: .\colibri\lists.py:69
+msgid "Serbian Latin"
+msgstr "صربستان لاتین"
+
+#: .\colibri\lists.py:70
+msgid "Swedish"
+msgstr "سوئدی"
+
+#: .\colibri\lists.py:71
+msgid "Swahili"
+msgstr "سواحیل"
+
+#: .\colibri\lists.py:72
+msgid "Tamil"
+msgstr "زبان تمی"
+
+#: .\colibri\lists.py:73
+msgid "Telugu"
+msgstr "تلوگ"
+
+#: .\colibri\lists.py:74
+msgid "Thai"
+msgstr "تای"
+
+#: .\colibri\lists.py:75
+msgid "Turkish"
+msgstr "ترکی استانبولی"
+
+#: .\colibri\lists.py:76
+msgid "Tatar"
+msgstr "تاتار"
+
+#: .\colibri\lists.py:77
+msgid "Udmurt"
+msgstr "ادمورت"
+
+#: .\colibri\lists.py:78
+msgid "Ukrainian"
+msgstr "اوکراینی"
+
+#: .\colibri\lists.py:79
+msgid "Urdu"
+msgstr "اردو"
+
+#: .\colibri\lists.py:80
+msgid "Vietnamese"
+msgstr "ویتنامی"
+
+#: .\colibri\lists.py:81
+msgid "Simplified Chinese"
+msgstr "چینی ساده شده"
+
+#: .\colibri\lists.py:82
+msgid "Traditional Chinese"
+msgstr "چینی سنتی"
+
+#: .\colibri\lists.py:86
+msgid "Please choose a country.."
+msgstr "لطفا کشور مورد نظر را انتخاب کنید .."
+
+#: .\colibri\lists.py:87
+msgid "Andorra"
+msgstr "آندورا"
+
+#: .\colibri\lists.py:88
+msgid "United Arab Emirates"
+msgstr "امارات متحده عربی"
+
+#: .\colibri\lists.py:89
+msgid "Afghanistan"
+msgstr "افغانستان "
+
+#: .\colibri\lists.py:90
+msgid "Antigua & Barbuda"
+msgstr "آنتیگوا و باربودا"
+
+#: .\colibri\lists.py:91
+msgid "Anguilla"
+msgstr "آنگولا"
+
+#: .\colibri\lists.py:92
+msgid "Albania"
+msgstr "آلبانی"
+
+#: .\colibri\lists.py:93
+msgid "Armenia"
+msgstr "ارمنستان"
+
+#: .\colibri\lists.py:94
+msgid "Netherlands Antilles"
+msgstr "آنتیل هلند"
+
+#: .\colibri\lists.py:95
+msgid "Angola"
+msgstr "آنگولا"
+
+#: .\colibri\lists.py:96
+msgid "Antarctica"
+msgstr "قطب جنوب"
+
+#: .\colibri\lists.py:97
+msgid "Argentina"
+msgstr "آرژانتین"
+
+#: .\colibri\lists.py:98
+msgid "American Samoa"
+msgstr "ساموای آمریکا"
+
+#: .\colibri\lists.py:99
+msgid "Austria"
+msgstr "اتریش"
+
+#: .\colibri\lists.py:100
+msgid "Australia"
+msgstr "استراليا"
+
+#: .\colibri\lists.py:101
+msgid "Aruba"
+msgstr "آروبا"
+
+#: .\colibri\lists.py:102
+msgid "Azerbaijan"
+msgstr "آذربایجان"
+
+#: .\colibri\lists.py:103
+msgid "Bosnia and Herzegovina"
+msgstr "بوسنی و هرزگوین"
+
+#: .\colibri\lists.py:104
+msgid "Barbados"
+msgstr "باربادوس"
+
+#: .\colibri\lists.py:105
+msgid "Bangladesh"
+msgstr "بنگلادش"
+
+#: .\colibri\lists.py:106
+msgid "Belgium"
+msgstr "بلژیک"
+
+#: .\colibri\lists.py:107
+msgid "Burkina Faso"
+msgstr "بورکینا فاسو"
+
+#: .\colibri\lists.py:108
+msgid "Bulgaria"
+msgstr "بلغارستان"
+
+#: .\colibri\lists.py:109
+msgid "Bahrain"
+msgstr "بحرین"
+
+#: .\colibri\lists.py:110
+msgid "Burundi"
+msgstr "بروندی"
+
+#: .\colibri\lists.py:111
+msgid "Benin"
+msgstr "بنین"
+
+#: .\colibri\lists.py:112
+msgid "Bermuda"
+msgstr "برمودا"
+
+#: .\colibri\lists.py:113
+msgid "Brunei Darussalam"
+msgstr "برونئی دارالسلام"
+
+#: .\colibri\lists.py:114
+msgid "Bolivia"
+msgstr "بولیوی"
+
+#: .\colibri\lists.py:115
+msgid "Brazil"
+msgstr "برزیل"
+
+#: .\colibri\lists.py:116
+msgid "Bahama"
+msgstr "باهاما"
+
+#: .\colibri\lists.py:117
+msgid "Bhutan"
+msgstr "بوتان"
+
+#: .\colibri\lists.py:118
+msgid "Bouvet Island"
+msgstr "جزیره بووت"
+
+#: .\colibri\lists.py:119
+msgid "Botswana"
+msgstr "بوتسوانا"
+
+#: .\colibri\lists.py:120
+msgid "Belarus"
+msgstr "بلاروس"
+
+#: .\colibri\lists.py:121
+msgid "Belize"
+msgstr "بلیز"
+
+#: .\colibri\lists.py:122
+msgid "Canada"
+msgstr "کانادا  "
+
+#: .\colibri\lists.py:123
+msgid "Cocos (Keeling) Islands"
+msgstr " جزایر کوکز"
+
+#: .\colibri\lists.py:124
+msgid "Central African Republic"
+msgstr "جمهوری آفریقای مرکزی"
+
+#: .\colibri\lists.py:125
+msgid "Congo"
+msgstr "کنگو"
+
+#: .\colibri\lists.py:126
+msgid "Switzerland"
+msgstr "سویس"
+
+#: .\colibri\lists.py:127
+msgid "Ivory Coast"
+msgstr "ساحل عاج"
+
+#: .\colibri\lists.py:128
+msgid "Cook Iislands"
+msgstr " جزایر کوک"
+
+#: .\colibri\lists.py:129
+msgid "Chile"
+msgstr "شیلی"
+
+#: .\colibri\lists.py:130
+msgid "Cameroon"
+msgstr "کامرون"
+
+#: .\colibri\lists.py:131
+msgid "China"
+msgstr "چین"
+
+#: .\colibri\lists.py:132
+msgid "Colombia"
+msgstr "کلمبیا"
+
+#: .\colibri\lists.py:133
+msgid "Costa Rica"
+msgstr "کاستاریکا"
+
+#: .\colibri\lists.py:134
+msgid "Cuba"
+msgstr "کوبا"
+
+#: .\colibri\lists.py:135
+msgid "Cape Verde"
+msgstr "کیپ ورد"
+
+#: .\colibri\lists.py:136
+msgid "Christmas Island"
+msgstr "جزیره کریسمس"
+
+#: .\colibri\lists.py:137
+msgid "Cyprus"
+msgstr "قبرس"
+
+#: .\colibri\lists.py:138
+msgid "Czech Republic"
+msgstr "جمهوری چک"
+
+#: .\colibri\lists.py:139
+msgid "Germany"
+msgstr "آلمان"
+
+#: .\colibri\lists.py:140
+msgid "Djibouti"
+msgstr "جیبوتی"
+
+#: .\colibri\lists.py:141
+msgid "Denmark"
+msgstr "دانمارک"
+
+#: .\colibri\lists.py:142
+msgid "Dominica"
+msgstr "دومینیکا"
+
+#: .\colibri\lists.py:143
+msgid "Dominican Republic"
+msgstr "جمهوری دومینیکن"
+
+#: .\colibri\lists.py:144
+msgid "Algeria"
+msgstr "الجزایر"
+
+#: .\colibri\lists.py:145
+msgid "Ecuador"
+msgstr "اکوادور"
+
+#: .\colibri\lists.py:146
+msgid "Estonia"
+msgstr "استونی"
+
+#: .\colibri\lists.py:147
+msgid "Egypt"
+msgstr "مصر"
+
+#: .\colibri\lists.py:148
+msgid "Western Sahara"
+msgstr "صحرای غربی"
+
+#: .\colibri\lists.py:149
+msgid "Eritrea"
+msgstr "اریتره"
+
+#: .\colibri\lists.py:150
+msgid "Spain"
+msgstr "اسپانیا"
+
+#: .\colibri\lists.py:151
+msgid "Ethiopia"
+msgstr "اتیوپی"
+
+#: .\colibri\lists.py:152
+msgid "Finland"
+msgstr "فنلاند"
+
+#: .\colibri\lists.py:153
+msgid "Fiji"
+msgstr "فیجی"
+
+#: .\colibri\lists.py:154
+msgid "Falkland Islands (Malvinas)"
+msgstr "جزایر فالکلند (مالویناس)"
+
+#: .\colibri\lists.py:155
+msgid "Micronesia"
+msgstr "میکرونزی"
+
+#: .\colibri\lists.py:156
+msgid "Faroe Islands"
+msgstr "جزایر فارو"
+
+#: .\colibri\lists.py:157
+msgid "France"
+msgstr "فرانسه"
+
+#: .\colibri\lists.py:158
+msgid "France, Metropolitan"
+msgstr "فرانسه، متروپولیتن"
+
+#: .\colibri\lists.py:159
+msgid "Gabon"
+msgstr "گابن"
+
+#: .\colibri\lists.py:160
+msgid "United Kingdom (Great Britain)"
+msgstr "پادشاهی متحده بریتانیا"
+
+#: .\colibri\lists.py:161
+msgid "Grenada"
+msgstr "گرانادا"
+
+#: .\colibri\lists.py:162
+msgid "Georgia"
+msgstr "گرجستان"
+
+#: .\colibri\lists.py:163
+msgid "French Guiana"
+msgstr "گویان فرانسه"
+
+#: .\colibri\lists.py:164
+msgid "Ghana"
+msgstr "غنا"
+
+#: .\colibri\lists.py:165
+msgid "Gibraltar"
+msgstr "جبل الطارق"
+
+#: .\colibri\lists.py:166
+msgid "Greenland"
+msgstr "گرینلند"
+
+#: .\colibri\lists.py:167
+msgid "Gambia"
+msgstr "گامبیا"
+
+#: .\colibri\lists.py:168
+msgid "Guinea"
+msgstr "گینه"
+
+#: .\colibri\lists.py:169
+msgid "Guadeloupe"
+msgstr "جزیره گوادلوپ"
+
+#: .\colibri\lists.py:170
+msgid "Equatorial Guinea"
+msgstr "گینه استوایی"
+
+#: .\colibri\lists.py:171
+msgid "Greece"
+msgstr "یونان"
+
+#: .\colibri\lists.py:172
+msgid "South Georgia and the South Sandwich Islands"
+msgstr "گرجستان جنوبی و جزایر ساندویچ جنوبی"
+
+#: .\colibri\lists.py:173
+msgid "Guatemala"
+msgstr "گواتمالا"
+
+#: .\colibri\lists.py:174
+msgid "Guam"
+msgstr "گوام"
+
+#: .\colibri\lists.py:175
+msgid "Guinea-Bissau"
+msgstr "گینه بیسائو"
+
+#: .\colibri\lists.py:176
+msgid "Guyana"
+msgstr "گویان"
+
+#: .\colibri\lists.py:177
+msgid "Hong Kong"
+msgstr "هنگ کنگ"
+
+#: .\colibri\lists.py:178
+msgid "Heard & McDonald Islands"
+msgstr "هرد و جزایر مک دونالد"
+
+#: .\colibri\lists.py:179
+msgid "Honduras"
+msgstr "هندوراس"
+
+#: .\colibri\lists.py:180
+msgid "Croatia"
+msgstr "کرواسی"
+
+#: .\colibri\lists.py:181
+msgid "Haiti"
+msgstr "هائیتی"
+
+#: .\colibri\lists.py:182
+msgid "Hungary"
+msgstr "مجارستان"
+
+#: .\colibri\lists.py:183
+msgid "Indonesia"
+msgstr "اندونزی"
+
+#: .\colibri\lists.py:184
+msgid "Ireland"
+msgstr "ایرلند"
+
+#: .\colibri\lists.py:185
+msgid "Israel"
+msgstr "اسرائیل "
+
+#: .\colibri\lists.py:186
+msgid "India"
+msgstr "هندوستان"
+
+#: .\colibri\lists.py:187
+msgid "British Indian Ocean Territory"
+msgstr "جزایر انگلیسی اقیانوس هند"
+
+#: .\colibri\lists.py:188
+msgid "Iraq"
+msgstr "عراق"
+
+#: .\colibri\lists.py:189
+msgid "Islamic Republic of Iran"
+msgstr "جمهوری اسلامی ایران"
+
+#: .\colibri\lists.py:190
+msgid "Iceland"
+msgstr "ایسلند"
+
+#: .\colibri\lists.py:191
+msgid "Italy"
+msgstr "ایتالیا"
+
+#: .\colibri\lists.py:192
+msgid "Jamaica"
+msgstr "جامائیکا"
+
+#: .\colibri\lists.py:193
+msgid "Jordan"
+msgstr "اردن"
+
+#: .\colibri\lists.py:194
+msgid "Japan"
+msgstr "ژاپن "
+
+#: .\colibri\lists.py:195
+msgid "Kenya"
+msgstr "کنیا"
+
+#: .\colibri\lists.py:196
+msgid "Kyrgyzstan"
+msgstr "قرقیزستان"
+
+#: .\colibri\lists.py:197
+msgid "Cambodia"
+msgstr "کامبوج"
+
+#: .\colibri\lists.py:198
+msgid "Kiribati"
+msgstr "کیریباتی"
+
+#: .\colibri\lists.py:199
+msgid "Comoros"
+msgstr "کومور"
+
+#: .\colibri\lists.py:200
+msgid "St. Kitts and Nevis"
+msgstr "سنت کیتس و نویس"
+
+#: .\colibri\lists.py:201
+msgid "Korea, Democratic People's Republic of"
+msgstr "جمهوری خلق دموکراتیک کره "
+
+#: .\colibri\lists.py:202
+msgid "Korea, Republic of"
+msgstr " جمهوری کره"
+
+#: .\colibri\lists.py:203
+msgid "Kuwait"
+msgstr "کویت"
+
+#: .\colibri\lists.py:204
+msgid "Cayman Islands"
+msgstr "جزایر کایمان"
+
+#: .\colibri\lists.py:205
+msgid "Kazakhstan"
+msgstr "قزاقستان"
+
+#: .\colibri\lists.py:206
+msgid "Lao People's Democratic Republic"
+msgstr "جمهوری دموکراتیک خلق لائوس"
+
+#: .\colibri\lists.py:207
+msgid "Lebanon"
+msgstr "لبنان"
+
+#: .\colibri\lists.py:208
+msgid "Saint Lucia"
+msgstr "سنت لوسیا"
+
+#: .\colibri\lists.py:209
+msgid "Liechtenstein"
+msgstr "لیختن اشتاین"
+
+#: .\colibri\lists.py:210
+msgid "Sri Lanka"
+msgstr "سریلانکا"
+
+#: .\colibri\lists.py:211
+msgid "Liberia"
+msgstr "لیبریا"
+
+#: .\colibri\lists.py:212
+msgid "Lesotho"
+msgstr "لسوتو"
+
+#: .\colibri\lists.py:213
+msgid "Lithuania"
+msgstr "لیتوانی"
+
+#: .\colibri\lists.py:214
+msgid "Luxembourg"
+msgstr "لوکزامبورگ"
+
+#: .\colibri\lists.py:215
+msgid "Latvia"
+msgstr "لتونی"
+
+#: .\colibri\lists.py:216
+msgid "Libyan Arab Jamahiriya"
+msgstr "جمهوری عربی لیبی"
+
+#: .\colibri\lists.py:217
+msgid "Morocco"
+msgstr "مراکش"
+
+#: .\colibri\lists.py:218
+msgid "Monaco"
+msgstr "موناکو"
+
+#: .\colibri\lists.py:219
+msgid "Moldova, Republic of"
+msgstr "، جمهوری مولداوی"
+
+#: .\colibri\lists.py:220
+msgid "Madagascar"
+msgstr "جزیره مالاگازی"
+
+#: .\colibri\lists.py:221
+msgid "Marshall Islands"
+msgstr "جزایر مارشال"
+
+#: .\colibri\lists.py:222
+msgid "Mali"
+msgstr "مالی "
+
+#: .\colibri\lists.py:223
+msgid "Mongolia"
+msgstr "مغولستان"
+
+#: .\colibri\lists.py:224
+msgid "Myanmar"
+msgstr "میانمار"
+
+#: .\colibri\lists.py:225
+msgid "Macau"
+msgstr "ماکائو"
+
+#: .\colibri\lists.py:226
+msgid "Northern Mariana Islands"
+msgstr "جزایر ماریانای شمالی"
+
+#: .\colibri\lists.py:227
+msgid "Martinique"
+msgstr "مارتینیک"
+
+#: .\colibri\lists.py:228
+msgid "Mauritania"
+msgstr "موریتانی"
+
+#: .\colibri\lists.py:229
+msgid "Monserrat"
+msgstr "مونسرات"
+
+#: .\colibri\lists.py:230
+msgid "Malta"
+msgstr "جزیره مالت"
+
+#: .\colibri\lists.py:231
+msgid "Mauritius"
+msgstr "موریس"
+
+#: .\colibri\lists.py:232
+msgid "Maldives"
+msgstr "مالدیو"
+
+#: .\colibri\lists.py:233
+msgid "Malawi"
+msgstr "مالاوی"
+
+#: .\colibri\lists.py:234
+msgid "Mexico"
+msgstr "مکزیک"
+
+#: .\colibri\lists.py:235
+msgid "Malaysia"
+msgstr "مالزی"
+
+#: .\colibri\lists.py:236
+msgid "Mozambique"
+msgstr "موزامبیک"
+
+#: .\colibri\lists.py:237
+msgid "Namibia"
+msgstr "نامیبیا"
+
+#: .\colibri\lists.py:238
+msgid "New Caledonia"
+msgstr "کالدونیای جدید"
+
+#: .\colibri\lists.py:239
+msgid "Niger"
+msgstr "نیجر"
+
+#: .\colibri\lists.py:240
+msgid "Norfolk Island"
+msgstr "جزیره نورفولک"
+
+#: .\colibri\lists.py:241
+msgid "Nigeria"
+msgstr "نیجریه"
+
+#: .\colibri\lists.py:242
+msgid "Nicaragua"
+msgstr "نیکاراگوئه"
+
+#: .\colibri\lists.py:243
+msgid "Netherlands"
+msgstr "هلند"
+
+#: .\colibri\lists.py:244
+msgid "Norway"
+msgstr "نروژ "
+
+#: .\colibri\lists.py:245
+msgid "Nepal"
+msgstr "نپال"
+
+#: .\colibri\lists.py:246
+msgid "Nauru"
+msgstr "نائورو"
+
+#: .\colibri\lists.py:247
+msgid "Niue"
+msgstr "نیوئه"
+
+#: .\colibri\lists.py:248
+msgid "New Zealand"
+msgstr "نیوزیلند"
+
+#: .\colibri\lists.py:249
+msgid "Oman"
+msgstr "عمان"
+
+#: .\colibri\lists.py:250
+msgid "Panama"
+msgstr "پاناما "
+
+#: .\colibri\lists.py:251
+msgid "Peru"
+msgstr "پرو"
+
+#: .\colibri\lists.py:252
+msgid "French Polynesia"
+msgstr "پلینزی فرانسه"
+
+#: .\colibri\lists.py:253
+msgid "Papua New Guinea"
+msgstr "پاپویا گینه نو"
+
+#: .\colibri\lists.py:254
+msgid "Philippines"
+msgstr "فیلیپین"
+
+#: .\colibri\lists.py:255
+msgid "Pakistan"
+msgstr "پاکستان"
+
+#: .\colibri\lists.py:256
+msgid "Poland"
+msgstr "لهستان"
+
+#: .\colibri\lists.py:257
+msgid "St. Pierre & Miquelon"
+msgstr "سنت پیر و میکلون"
+
+#: .\colibri\lists.py:258
+msgid "Pitcairn"
+msgstr "پیتکارین"
+
+#: .\colibri\lists.py:259
+msgid "Puerto Rico"
+msgstr "پورتوریکو"
+
+#: .\colibri\lists.py:260
+msgid "Portugal"
+msgstr "پرتغال"
+
+#: .\colibri\lists.py:261
+msgid "Palau"
+msgstr "پالائو"
+
+#: .\colibri\lists.py:262
+msgid "Paraguay"
+msgstr "پاراگوئه"
+
+#: .\colibri\lists.py:263
+msgid "Qatar"
+msgstr "قطر"
+
+#: .\colibri\lists.py:264
+msgid "Reunion"
+msgstr "رییونیون"
+
+#: .\colibri\lists.py:265
+msgid "Romania"
+msgstr "رومانی"
+
+#: .\colibri\lists.py:266
+msgid "Russian Federation"
+msgstr "فدراسیون روسیه"
+
+#: .\colibri\lists.py:267
+msgid "Rwanda"
+msgstr "رواندا"
+
+#: .\colibri\lists.py:268
+msgid "Saudi Arabia"
+msgstr "عربستان سعودی"
+
+#: .\colibri\lists.py:269
+msgid "Solomon Islands"
+msgstr "جزایر سلیمان"
+
+#: .\colibri\lists.py:270
+msgid "Seychelles"
+msgstr "سیشل"
+
+#: .\colibri\lists.py:271
+msgid "Sudan"
+msgstr "سودان"
+
+#: .\colibri\lists.py:272
+msgid "Sweden"
+msgstr "سوئد"
+
+#: .\colibri\lists.py:273
+msgid "Singapore"
+msgstr "سنگاپور"
+
+#: .\colibri\lists.py:274
+msgid "St. Helena"
+msgstr "سنت هلنا"
+
+#: .\colibri\lists.py:275
+msgid "Slovenia"
+msgstr "اسلوونی"
+
+#: .\colibri\lists.py:276
+msgid "Svalbard & Jan Mayen Islands"
+msgstr "جزایر اسوالبارد و جان ماین"
+
+#: .\colibri\lists.py:277
+msgid "Slovakia"
+msgstr "اسلواکی"
+
+#: .\colibri\lists.py:278
+msgid "Sierra Leone"
+msgstr "سیرالئون"
+
+#: .\colibri\lists.py:279
+msgid "San Marino"
+msgstr "سان مارینو"
+
+#: .\colibri\lists.py:280
+msgid "Senegal"
+msgstr "سنگال"
+
+#: .\colibri\lists.py:281
+msgid "Somalia"
+msgstr "سومالی   "
+
+#: .\colibri\lists.py:282
+msgid "Suriname"
+msgstr "سورینام"
+
+#: .\colibri\lists.py:283
+msgid "Sao Tome & Principe"
+msgstr "سائو تومه و پرینسیپ"
+
+#: .\colibri\lists.py:284
+msgid "El Salvador"
+msgstr "السالوادور"
+
+#: .\colibri\lists.py:285
+msgid "Syrian Arab Republic"
+msgstr "جمهوری عربی سوریه"
+
+#: .\colibri\lists.py:286
+msgid "Swaziland"
+msgstr "سوازیلند"
+
+#: .\colibri\lists.py:287
+msgid "Turks & Caicos Islands"
+msgstr "ترکها و جزایر کایکو"
+
+#: .\colibri\lists.py:288
+msgid "Chad"
+msgstr "چاد"
+
+#: .\colibri\lists.py:289
+msgid "French Southern Territories"
+msgstr "سرزمین های جنوب فرانسه  "
+
+#: .\colibri\lists.py:290
+msgid "Togo"
+msgstr "توگو"
+
+#: .\colibri\lists.py:291
+msgid "Thailand"
+msgstr "تایلند"
+
+#: .\colibri\lists.py:292
+msgid "Tajikistan"
+msgstr "تاجیکستان"
+
+#: .\colibri\lists.py:293
+msgid "Tokelau"
+msgstr "توکلائو"
+
+#: .\colibri\lists.py:294
+msgid "Turkmenistan"
+msgstr "ترکمنستان"
+
+#: .\colibri\lists.py:295
+msgid "Tunisia"
+msgstr "تونس"
+
+#: .\colibri\lists.py:296
+msgid "Tonga"
+msgstr "تونگا"
+
+#: .\colibri\lists.py:297
+msgid "East Timor"
+msgstr "شرق تیمور"
+
+#: .\colibri\lists.py:298
+msgid "Turkey"
+msgstr "ترکیه"
+
+#: .\colibri\lists.py:299
+msgid "Trinidad & Tobago"
+msgstr "ترینیداد و توباگو"
+
+#: .\colibri\lists.py:300
+msgid "Tuvalu"
+msgstr "تووالو"
+
+#: .\colibri\lists.py:301
+msgid "Taiwan, Province of China"
+msgstr "تایوان استان چین"
+
+#: .\colibri\lists.py:302
+msgid "Tanzania, United Republic of"
+msgstr "جمهوری متحده تانزانیا "
+
+#: .\colibri\lists.py:303
+msgid "Ukraine"
+msgstr "اوکراین"
+
+#: .\colibri\lists.py:304
+msgid "Uganda"
+msgstr "اوگاندا"
+
+#: .\colibri\lists.py:305
+msgid "United States Minor Outlying Islands"
+msgstr "جزایر حاشیه ای ایالات متحده آمریکا "
+
+#: .\colibri\lists.py:306
+msgid "United States of America"
+msgstr "ایالات متحده امریکا"
+
+#: .\colibri\lists.py:307
+msgid "Uruguay"
+msgstr "اروگوئه"
+
+#: .\colibri\lists.py:308
+msgid "Uzbekistan"
+msgstr "ازبکستان"
+
+#: .\colibri\lists.py:309
+msgid "Vatican City State (Holy See)"
+msgstr "واتیکان"
+
+#: .\colibri\lists.py:310
+msgid "St. Vincent & the Grenadines"
+msgstr "سنت وینسنت و گرنادین"
+
+#: .\colibri\lists.py:311
+msgid "Venezuela"
+msgstr "ونزوئلا"
+
+#: .\colibri\lists.py:312
+msgid "British Virgin Islands"
+msgstr "جزایر ویرجین بریتانیا"
+
+#: .\colibri\lists.py:313
+msgid "United States Virgin Islands"
+msgstr " جزایر ویرجین ایالات متحده"
+
+#: .\colibri\lists.py:314
+msgid "Viet Nam"
+msgstr "ویتنام"
+
+#: .\colibri\lists.py:315
+msgid "Vanuatu"
+msgstr "وانواتو"
+
+#: .\colibri\lists.py:316
+msgid "Wallis & Futuna Islands"
+msgstr "جزایر والیس و فوتونا"
+
+#: .\colibri\lists.py:317
+msgid "Samoa"
+msgstr "ساموآ"
+
+#: .\colibri\lists.py:318
+msgid "Yemen"
+msgstr "یمن "
+
+#: .\colibri\lists.py:319
+msgid "Mayotte"
+msgstr "مایوت"
+
+#: .\colibri\lists.py:320
+msgid "Yugoslavia"
+msgstr "یوگسلاوی"
+
+#: .\colibri\lists.py:321
+msgid "South Africa"
+msgstr "آفریقای جنوبی"
+
+#: .\colibri\lists.py:322
+msgid "Zambia"
+msgstr "زامبیا"
+
+#: .\colibri\lists.py:323
+msgid "Zaire"
+msgstr "زئیر"
+
+#: .\colibri\lists.py:324
+msgid "Zimbabwe"
+msgstr "زیمبابوه"
+
+#: .\colibri\lists.py:328
+msgid "I am a..."
+msgstr "من یک ...  هستم."
+
+#: .\colibri\lists.py:329
+msgid "Citizen"
+msgstr "شهروند"
+
+#: .\colibri\lists.py:330
+msgid "Researcher"
+msgstr "پژوهشگر"
+
+#: .\colibri\lists.py:331
+msgid "Journalist"
+msgstr "روزنامه نگار"
+
+#: .\colibri\lists.py:332
+msgid "Civil Servant"
+msgstr "کارمند دولتی"
+
+#: .\colibri\lists.py:333
+msgid "Archivist / Librarian"
+msgstr "بایگان / کتابدار"
+
+#: .\colibri\lists.py:334
+msgid "Politician"
+msgstr "سیاستمدار"
+
+#: .\colibri\lists.py:335
+msgid "Enterpreneur"
+msgstr "کارآفرین"
+
+#: .\colibri\lists.py:336
+msgid "IT expert / Hacker"
+msgstr " کارشناس فناوری اطلاعات/ هکر"
+
+#: .\colibri\lists.py:340
+msgid "Please choose an extension type.."
+msgstr "لطفا یک نوع فرمت را انتخاب کنید .."
+
+#: .\colibri\lists.py:341 .\colibri\lists.py:621
+msgid "Conversion to other format"
+msgstr "تبدیل به فرمت های دیگر"
+
+#: .\colibri\lists.py:342 .\colibri\lists.py:622
+msgid "Data Cleansing"
+msgstr "داده ها پاک کننده"
+
+#: .\colibri\lists.py:343 .\colibri\lists.py:623
+msgid "Metadata Enrichment"
+msgstr "غنی سازی فراداده"
+
+#: .\colibri\lists.py:344 .\colibri\lists.py:624
+msgid "Data Enrichment"
+msgstr "غنی سازی داده ها"
+
+#: .\colibri\lists.py:345 .\colibri\lists.py:625
+msgid "Snapshots of real-time data"
+msgstr "عکس از اطلاعات در زمان واقعی"
+
+#: .\colibri\lists.py:346
+msgid "Combination of Datasets / Mash-ups"
+msgstr "ترکیب داده ها / مش یو پی اس"
+
+#: .\colibri\lists.py:350
+msgid "Awaiting Approval"
+msgstr "در انتظار تصویب"
+
+#: .\colibri\lists.py:351
+msgid "Approved"
+msgstr "تایید شد"
+
+#: .\colibri\lists.py:352
+msgid "Rejected"
+msgstr "همگي رد مي شوند."
+
+#: .\colibri\lists.py:356
+msgid "Agriculture"
+msgstr "کشاورزی"
+
+#: .\colibri\lists.py:357
+msgid "Arts, Recreation and Travel"
+msgstr "هنر، تفریح ​​و سفر"
+
+#: .\colibri\lists.py:358
+msgid "Banking, Finance and Insurance"
+msgstr "بانکداری، مالی و بیمه"
+
+#: .\colibri\lists.py:359
+msgid "Births, Deaths, Marriages and Divorces"
+msgstr "تولد، مرگ، ازدواج و طلاق"
+
+#: .\colibri\lists.py:360
+msgid "Business / Enterprises"
+msgstr "شرکتهای  کسب و کار."
+
+#: .\colibri\lists.py:361
+msgid "Census"
+msgstr "سرشماری"
+
+#: .\colibri\lists.py:362
+msgid "Construction and Housing"
+msgstr "ساخت و ساز و مسکن"
+
+#: .\colibri\lists.py:363
+msgid "Contributors"
+msgstr "مشارکت کنندگان"
+
+#: .\colibri\lists.py:364
+msgid "Diplomacy"
+msgstr "دیپلماسی"
+
+#: .\colibri\lists.py:365
+msgid "Economic"
+msgstr "اقتصادی"
+
+#: .\colibri\lists.py:366
+msgid "Education"
+msgstr "آموزش(تحصيل)"
+
+#: .\colibri\lists.py:367
+msgid "Elections"
+msgstr "انتخابات"
+
+#: .\colibri\lists.py:368
+msgid "Employment"
+msgstr " اشتغال"
+
+#: .\colibri\lists.py:369
+msgid "Energy and Utilities"
+msgstr "انرژی و تاسیسات"
+
+#: .\colibri\lists.py:370
+msgid "Environment"
+msgstr "محیط"
+
+#: .\colibri\lists.py:371
+msgid "Farming"
+msgstr "کشاورزی"
+
+#: .\colibri\lists.py:372
+msgid "Financials"
+msgstr "مالی"
+
+#: .\colibri\lists.py:373
+msgid "Foreign Commerce and Aid"
+msgstr "بازرگانی خارجی و کمک های"
+
+#: .\colibri\lists.py:374
+msgid "Foreign Trade"
+msgstr "تجارت خارجی"
+
+#: .\colibri\lists.py:375
+msgid "Geography and Environment"
+msgstr "جغرافیا و محیط زیست"
+
+#: .\colibri\lists.py:376
+msgid "Health and Nutrition"
+msgstr "بهداشت و تغذیه"
+
+#: .\colibri\lists.py:377
+msgid "Income, Expenditures, Poverty, and Wealth"
+msgstr "درآمد، مخارج، فقر و ثروت"
+
+#: .\colibri\lists.py:378
+msgid "Information and Communications"
+msgstr "اطلاعات و ارتباطات"
+
+#: .\colibri\lists.py:379
+msgid "International Statistics"
+msgstr "آمار بین المللی"
+
+#: .\colibri\lists.py:380
+msgid "Labor Force, Employment, and Earnings"
+msgstr "نیروی کار، اشتغال، و درآمد"
+
+#: .\colibri\lists.py:381
+msgid "Law Enforcement, Courts, and Prisons"
+msgstr "اجرای قانون، دادگاه ها، و زندان"
+
+#: .\colibri\lists.py:382
+msgid "Manufactures"
+msgstr "تولید کننده"
+
+#: .\colibri\lists.py:383
+msgid "Military"
+msgstr "نظامی"
+
+#: .\colibri\lists.py:384
+msgid "National Security and Veterans Affairs"
+msgstr "امنیت ملی و امور جانبازان"
+
+#: .\colibri\lists.py:385
+msgid "Natural Resources"
+msgstr "منابع طبیعی"
+
+#: .\colibri\lists.py:386 .\colibri\lists.py:589
+msgid "Other"
+msgstr "غیره"
+
+#: .\colibri\lists.py:387
+msgid "Population"
+msgstr "جمعیت"
+
+#: .\colibri\lists.py:388
+msgid "Prices"
+msgstr "قیمت"
+
+#: .\colibri\lists.py:389
+msgid "Public Agencies Budget and Finances"
+msgstr "نمایندگی ها عمومی بودجه و امور مالی"
+
+#: .\colibri\lists.py:390
+msgid "Public Agencies Employment"
+msgstr "استخدام آژانس های عمومی"
+
+#: .\colibri\lists.py:391
+msgid "Science and Technology"
+msgstr "علم و فن آوری"
+
+#: .\colibri\lists.py:392
+msgid "Social Insurance and Human Services"
+msgstr "بیمه های اجتماعی و خدمات انسانی"
+
+#: .\colibri\lists.py:393
+msgid "Space"
+msgstr "Space"
+
+#: .\colibri\lists.py:394
+msgid "Taxation"
+msgstr "مالیات"
+
+#: .\colibri\lists.py:395
+msgid "Transportation"
+msgstr "حمل و نقل"
+
+#: .\colibri\lists.py:396
+msgid "Welfare"
+msgstr "رفاه"
+
+#: .\colibri\lists.py:397
+msgid "Wholesale and Retail Trade"
+msgstr "تجارت عمده فروشی و خرده فروشی"
+
+#: .\colibri\lists.py:453
+msgid "Year"
+msgstr "سال"
+
+#: .\colibri\lists.py:454
+msgid "Month"
+msgstr "ماه"
+
+#: .\colibri\lists.py:455
+msgid "Week"
+msgstr "هفته"
+
+#: .\colibri\lists.py:456
+msgid "Day"
+msgstr "روز"
+
+#: .\colibri\lists.py:457
+msgid "Hour"
+msgstr "ساعت"
+
+#: .\colibri\lists.py:461
+msgid "Worldwide"
+msgstr "جهانی"
+
+#: .\colibri\lists.py:462
+msgid "Continent"
+msgstr "قاره"
+
+#: .\colibri\lists.py:463
+msgid "Political Union"
+msgstr "اتحاد سیاسی"
+
+#: .\colibri\lists.py:464 .\colibri\templates\dataset\_details -
+#: Copy.html.py:169 Copy.html.py:325
+#: .\colibri\templates\dataset\_details.html.py:198
+#: .\colibri\templates\dataset\_details.html.py:426
+#: .\colibri\templates\dataset\_form.html.py:61
+#: .\colibri\templates\dataset\_index.html.py:13
+#: .\colibri\templates\dataset\_search.html.py:60
+#: .\colibri\templates\opendatasites\datasources_en.html.py:155
+msgid "Country"
+msgstr "کشور"
+
+#: .\colibri\lists.py:465
+msgid "Region"
+msgstr "منطقه"
+
+#: .\colibri\lists.py:466
+msgid "Locality (City, Town, Village)"
+msgstr "محل (شهر، شهر، روستا)"
+
+#: .\colibri\lists.py:467
+msgid "Administrative Area (Province,Municipality, County)"
+msgstr "منطقه اداری (استان، شهرداری، شهرستان)"
+
+#: .\colibri\lists.py:468
+msgid "Neighborhood"
+msgstr "همسایگی"
+
+#: .\colibri\lists.py:472
+msgid "My background is..."
+msgstr "سابقه تحصیلی من .....است ."
+
+#: .\colibri\lists.py:473
+msgid "Mathematics"
+msgstr "ریاضیات"
+
+#: .\colibri\lists.py:474
+msgid "Computer and information sciences"
+msgstr "علوم کامپیوتر و اطلاعات"
+
+#: .\colibri\lists.py:475
+msgid "Physical sciences"
+msgstr "علوم طبیعی"
+
+#: .\colibri\lists.py:476
+msgid "Chemical sciences"
+msgstr "علوم شیمی"
+
+#: .\colibri\lists.py:477
+msgid "Earth and related environmental sciences"
+msgstr "علوم زمین و زیست محیطی"
+
+#: .\colibri\lists.py:478
+msgid "Biological sciences"
+msgstr "علوم زیستی"
+
+#: .\colibri\lists.py:479
+msgid "Other natural sciences"
+msgstr "سایر علوم طبیعی"
+
+#: .\colibri\lists.py:480
+msgid "Civil engineering"
+msgstr "مهندسی عمران می پردازد."
+
+#: .\colibri\lists.py:481
+msgid "Electrical engineering, electronic"
+msgstr "مهندسی برق، الکترونیک"
+
+#: .\colibri\lists.py:482
+msgid "engineering, information engineering"
+msgstr "فنی و مهندسی اطلاعات"
+
+#: .\colibri\lists.py:483
+msgid "Mechanical engineering"
+msgstr "مهندسی مکانیک"
+
+#: .\colibri\lists.py:484
+msgid "Chemical engineering"
+msgstr "مهندسی شیمی"
+
+#: .\colibri\lists.py:485
+msgid "Materials engineering"
+msgstr "مهندسی مواد"
+
+#: .\colibri\lists.py:486
+msgid "Medical engineering"
+msgstr "مهندسی پزشکی"
+
+#: .\colibri\lists.py:487
+msgid "Environmental engineering"
+msgstr "مهندسی محیط زیست"
+
+#: .\colibri\lists.py:488
+msgid "Environmental biotechnology"
+msgstr "بیوتکنولوژی محیط زیست"
+
+#: .\colibri\lists.py:489
+msgid "Industrial Biotechnology"
+msgstr "بیوتکنولوژی صنعتی"
+
+#: .\colibri\lists.py:490
+msgid "Nano-technology"
+msgstr "نانو تکنولوژی"
+
+#: .\colibri\lists.py:491
+msgid "Other engineering and technologies"
+msgstr "مهندسی و فن آوری"
+
+#: .\colibri\lists.py:492
+msgid "Basic medicine"
+msgstr "پایه پزشکی"
+
+#: .\colibri\lists.py:493
+msgid "Clinical medicine"
+msgstr "پزشکی بالینی"
+
+#: .\colibri\lists.py:494
+msgid "Health sciences"
+msgstr "علوم بهداشت و درمان"
+
+#: .\colibri\lists.py:495
+msgid "Health biotechnology"
+msgstr "بیوتکنولوژی بهداشت"
+
+#: .\colibri\lists.py:496
+msgid "Other medical sciences"
+msgstr "سایر علوم پزشکی"
+
+#: .\colibri\lists.py:497
+msgid "Agriculture, forestry, and fisheries"
+msgstr "کشاورزی، جنگلداری و شیلات"
+
+#: .\colibri\lists.py:498
+msgid "Animal and dairy science"
+msgstr "حیوانات و علم لبنی"
+
+#: .\colibri\lists.py:499
+msgid "Veterinary science"
+msgstr "علم دامپزشکی"
+
+#: .\colibri\lists.py:500
+msgid "Agricultural biotechnology"
+msgstr "بیوتکنولوژی کشاورزی"
+
+#: .\colibri\lists.py:501
+msgid "Other agricultural sciences"
+msgstr "کشاورزی علوم دیگر"
+
+#: .\colibri\lists.py:502
+msgid "Psychology"
+msgstr "روان شناسی"
+
+#: .\colibri\lists.py:503
+msgid "Economics and business"
+msgstr "اقتصاد و کسب و کار"
+
+#: .\colibri\lists.py:504
+msgid "Educational sciences"
+msgstr "علوم تربیتی"
+
+#: .\colibri\lists.py:505
+msgid "Sociology"
+msgstr "جامعه شناسی"
+
+#: .\colibri\lists.py:506
+msgid "Law"
+msgstr "حقوق قضايي"
+
+#: .\colibri\lists.py:507
+msgid "Political Science"
+msgstr "علوم سیاسی"
+
+#: .\colibri\lists.py:508
+msgid "Social and economic geography"
+msgstr "اجتماعی و اقتصادی جغرافیا"
+
+#: .\colibri\lists.py:509
+msgid "Media and communications"
+msgstr "رسانه و ارتباطات"
+
+#: .\colibri\lists.py:510
+msgid "Other social sciences"
+msgstr "سایر علوم اجتماعی"
+
+#: .\colibri\lists.py:511
+msgid "History and archaeology"
+msgstr "تاریخ و باستان شناسی"
+
+#: .\colibri\lists.py:512
+msgid "Languages and literature"
+msgstr "زبان و ادبیات"
+
+#: .\colibri\lists.py:513
+msgid "Philosophy, ethics and religion"
+msgstr "فلسفه، اخلاق و مذهب"
+
+#: .\colibri\lists.py:514
+msgid "Art (arts, history of arts, performing arts, music)"
+msgstr "هنر (هنر، تاریخ هنر، هنرهای نمایشی، موسیقی)"
+
+#: .\colibri\lists.py:515
+msgid "Other humanities"
+msgstr "انسانی دیگر"
+
+#: .\colibri\lists.py:519
+msgid "Backoffice / Service operations"
+msgstr "عملیات پشتیبانی / خدمات"
+
+#: .\colibri\lists.py:520
+msgid "Survey"
+msgstr "بررسی"
+
+#: .\colibri\lists.py:521
+msgid "Harvest"
+msgstr "محصول"
+
+#: .\colibri\lists.py:522
+msgid "Internal Research / Experiments"
+msgstr "تحقیقات داخلی / آزمایش"
+
+#: .\colibri\lists.py:577
+msgid "Individual"
+msgstr "فرد"
+
+#: .\colibri\lists.py:578
+msgid "Organization"
+msgstr "سازمان"
+
+#: .\colibri\lists.py:579
+msgid "Family"
+msgstr "خانواده "
+
+#: .\colibri\lists.py:580
+msgid "Family.HouseholdFamily"
+msgstr "امور مربوط به خانواده"
+
+#: .\colibri\lists.py:581
+msgid "Household"
+msgstr "خانواده"
+
+#: .\colibri\lists.py:582
+msgid "HousingUnit"
+msgstr "HousingUnit"
+
+#: .\colibri\lists.py:583
+msgid "EventOrProcess"
+msgstr "EventOrProcess"
+
+#: .\colibri\lists.py:584
+msgid "GeographicUnit"
+msgstr "GeographicUnit"
+
+#: .\colibri\lists.py:585
+msgid "TimeUnit"
+msgstr "TimeUnit"
+
+#: .\colibri\lists.py:586
+msgid "TextUnit"
+msgstr "TextUnit"
+
+#: .\colibri\lists.py:587
+msgid "Group"
+msgstr "گروه"
+
+#: .\colibri\lists.py:588
+msgid "Object"
+msgstr "شی"
+
+#: .\colibri\lists.py:593
+msgid "Choose the type of item"
+msgstr "نوع آیتم را انتخاب کنید"
+
+#: .\colibri\lists.py:594
+msgid "Publication"
+msgstr "انتشار"
+
+#: .\colibri\lists.py:595
+msgid "Desktop Application"
+msgstr "نرم افزار دسکتاپ"
+
+#: .\colibri\lists.py:596
+msgid "Mobile Application"
+msgstr "برنامه موبایل"
+
+#: .\colibri\lists.py:597
+msgid "Web Application"
+msgstr "برنامه وب"
+
+#: .\colibri\lists.py:598
+msgid "Web Service / API"
+msgstr "وب سرویس / API"
+
+#: .\colibri\lists.py:599
+msgid "Visualization image"
+msgstr "تصویر تجسم"
+
+#: .\colibri\lists.py:603
+msgid "Please choose a publication type"
+msgstr "لطفا نوع انتشار را انتخاب کنید"
+
+#: .\colibri\lists.py:604
+msgid "Annotation"
+msgstr "حاشیه نویسی"
+
+#: .\colibri\lists.py:605
+msgid "Article / blog in Internet"
+msgstr "مقاله / وبلاگ در اینترنت"
+
+#: .\colibri\lists.py:606
+msgid "Book"
+msgstr "کتاب"
+
+#: .\colibri\lists.py:607
+msgid "Book Section / Chapter"
+msgstr "بخش کتاب / فصل"
+
+#: .\colibri\lists.py:608
+msgid "Conference Paper"
+msgstr "مقاله کنفرانس"
+
+#: .\colibri\lists.py:609
+msgid "Dissertation"
+msgstr "پایان نامه"
+
+#: .\colibri\lists.py:610
+msgid "Internal or external report"
+msgstr "داخلی یا خارجی گزارش"
+
+#: .\colibri\lists.py:611
+msgid "Journal article (academic)"
+msgstr "مقاله از مجله (علمی)"
+
+#: .\colibri\lists.py:612
+msgid "Journal article (non academic)"
+msgstr "مقاله از مجله (غیر دانشگاهی)"
+
+#: .\colibri\lists.py:613
+msgid "Loose-leaf publications"
+msgstr "انتشارات برگ، سست"
+
+#: .\colibri\lists.py:614
+msgid "Newspaper article"
+msgstr "مقاله از روزنامه"
+
+#: .\colibri\lists.py:615
+msgid "Online news agency article"
+msgstr "اخبار آنلاین مقاله آژانس"
+
+#: .\colibri\lists.py:619
+msgid "Please choose a request type.."
+msgstr "لطفا نوع درخواست را انتخاب کنید .."
+
+#: .\colibri\lists.py:620
+msgid "Looking for a dataset"
+msgstr "در حال جستجو برای یک مجموعه داده"
+
+#: .\colibri\lists.py:626
+msgid "Combination of datasets / Mash-ups"
+msgstr "ترکیب مجموعه داده"
+
+#: .\colibri\lists.py:627
+msgid "Data Verification"
+msgstr "تصدیق داده"
+
+#: .\colibri\lists.py:628
+msgid "Freedom of Information Request"
+msgstr "آزادی در درخواست اطلاعات"
+
+#: .\colibri\templates\about.html.py:12
+msgid "About colibri project"
+msgstr "درباره پروژه انگیج"
+
+#: .\colibri\templates\about.html.py:15
+msgid ""
+" The main goal of colibri project is the development and use of a data "
+"infrastructure, incorporating    distributed and diverse public sector "
+"information (PSI) resources, \n"
+"capable of supporting scientific collaboration and    research, particularly "
+"for the Social Science and Humanities (SSH) scientific communities, while "
+"also empowering the\n"
+"deployment of open governmental data towards citizens.The colibri e-"
+"infrastructure is envisaged to promote a highly synergetic approach to "
+"governance research, by providing the ground for experimentation \n"
+"to actors from both ICT and non-ICT related disciplines and scientific "
+"communities, as well as by ensuring that the scientific outcomes are made "
+"accessible\n"
+" to the citizens, so that they can monitor public service delivery and "
+"influence the desion making process."
+msgstr ""
+"هدف اصلی  پروژه انگیج توسعه و استفاده از زیرساخت های داده  با ترکیب اطلاعات "
+"مربوط به بخش های دولتی است.انگیج قادر به حمایت از همکاری های علمی و پژوهشی، "
+"به ویژه برای علوم اجتماعی و علوم انسانی همچنین هدایت شهروندان به استفاده از "
+"داده آزاد است.برای انگیج زیرساخت های الکترونیکی برای ترویج رویکرد توأم با "
+"تحقیقات پیش بینی شده است این امکان برای تمامی افراد وجود دارد تا برای ایجاد "
+"خدمات بهتر به شهروندان ،آن ها را یاری کند."
+
+#: .\colibri\templates\about.html.py:22
+msgid ""
+"Simply put, colibri is a door for researchers that leads them to the world of "
+"Open Government Data. By using  the colibri platform, researchers and "
+"citizens will be able to\n"
+" submit, acquire, search and visualize diverse,     distributed and derived "
+"Public sector datasets from all the countries of the European Union."
+msgstr ""
+"به عبارت ساده، انگیج راهی برای محققان است که آنها را  به استفاده از داده های "
+"دولت باز هدایت می کند. ، محققان و شهروندان قادر خواهد بود تا  با داشتن "
+"قابلیت ارائه، کسب، جستجو و تجسم متنوع، توزیع از مجموعه داده ها از همه "
+"کشورهای اتحادیه اروپا با ا تعامل با پلت فرم  استفاده کنند."
+
+#: .\colibri\templates\about.html.py:25
+msgid ""
+"colibri is a Combination of CP- CSA project funded under the European "
+"Commission FP7 Programme."
+msgstr ""
+
+#: .\colibri\templates\about.html.py:28
+msgid "For more information visit us on the colibri project website"
+msgstr "برای کسب اطلاعات بیشتر به وب سایت پروژه انگیج مراجعه فرمایید."
+
+#: .\colibri\templates\base.html.py:71
+#: .\colibri\templates\profile\_profile.html.py:9
+#: .\colibri\templates\wiki\base.html.py:86
+msgid "Profile"
+msgstr "زمینه"
+
+#: .\colibri\templates\base.html.py:72 .\colibri\templates\wiki\base.html.py:87
+msgid "Account Settings"
+msgstr "تنظیمات حساب"
+
+#: .\colibri\templates\base.html.py:73 .\colibri\templates\profile.html.py:46
+#: .\colibri\templates\wiki\base.html.py:88
+#: .\messages\templates\messages\base.html.py:8
+#: .\messages\templates\messages\inbox.html.py:10
+#: .\messages\templates\messages\new_message.html.py:10
+msgid "Inbox"
+msgstr "صندوق"
+
+#: .\colibri\templates\base.html.py:76 .\colibri\templates\wiki\base.html.py:91
+msgid "Signout"
+msgstr "از سیستم خارج"
+
+#: .\colibri\templates\base.html.py:83 .\colibri\templates\wiki\base.html.py:98
+msgid "Sign in"
+msgstr "ورود"
+
+#: .\colibri\templates\base.html.py:94 .\colibri\templates\wiki\base.html.py:109
+msgid "HOME"
+msgstr "خانه"
+
+#: .\colibri\templates\base.html.py:95 .\colibri\templates\wiki\base.html.py:110
+msgid "DATASETS"
+msgstr "مجموعه داده"
+
+#: .\colibri\templates\base.html.py:97 .\colibri\templates\wiki\base.html.py:112
+msgid "Search Datasets"
+msgstr " جستجو مجموعه داده"
+
+#: .\colibri\templates\base.html.py:98
+#: .\colibri\templates\dataset\_add.html.py:61
+#: .\colibri\templates\wiki\base.html.py:113
+msgid "Add new dataset"
+msgstr "اضافه کردن مجموعه داده های جدید"
+
+#: .\colibri\templates\base.html.py:102
+#: .\colibri\templates\wiki\base.html.py:117
+msgid "REQUEST DATA"
+msgstr " درخواست داده"
+
+#: .\colibri\templates\base.html.py:104
+#: .\colibri\templates\wiki\base.html.py:119
+msgid "COMMUNITY"
+msgstr "جامعه "
+
+#: .\colibri\templates\base.html.py:106
+#: .\colibri\templates\wiki\base.html.py:121
+msgid "Users"
+msgstr "کاربران"
+
+#: .\colibri\templates\base.html.py:109
+#: .\colibri\templates\wiki\base.html.py:124
+msgid "OPEN DATA SITES"
+msgstr "سایت های داده آزاد"
+
+#: .\colibri\templates\base.html.py:110
+#: .\colibri\templates\wiki\base.html.py:125
+msgid "WIKI"
+msgstr "ویکی"
+
+#: .\colibri\templates\base.html.py:111
+#: .\colibri\templates\wiki\base.html.py:126
+msgid "ABOUT US"
+msgstr "درباره ما"
+
+#: .\colibri\templates\base.html.py:113
+#: .\colibri\templates\wiki\base.html.py:128
+msgid "About colibri"
+msgstr "درباره انگیج"
+
+#: .\colibri\templates\base.html.py:114
+#: .\colibri\templates\wiki\base.html.py:129
+msgid "Contact us"
+msgstr "تماس با ما"
+
+#: .\colibri\templates\base.html.py:115
+#: .\colibri\templates\wiki\base.html.py:130
+msgid "Term Of Use"
+msgstr "شرایط استفاده"
+
+#: .\colibri\templates\base.html.py:137
+#: .\colibri\templates\wiki\base.html.py:231
+msgid ""
+"colibri is a Combination of CP & CSA project funded under the European "
+"Commission FP7 Programme"
+msgstr "درگیر ترکیب از CP و CSA پروژه بودجه تحت برنامه FP7 کمیسیون اروپا است"
+
+#: .\colibri\templates\base.html.py:143
+#: .\colibri\templates\wiki\base.html.py:237
+msgid "All rights reserved"
+msgstr "همه حقوق محفوظ است"
+
+#: .\colibri\templates\base.html.py:144
+#: .\colibri\templates\wiki\base.html.py:238
+msgid "Please read our"
+msgstr "لطفا"
+
+#: .\colibri\templates\base.html.py:144
+#: .\colibri\templates\wiki\base.html.py:238
+msgid "Terms Of Use"
+msgstr "شروط استفاده را مطالعه بفرمایید. "
+
+#: .\colibri\templates\contact.html.py:12
+#: .\colibri\templates\profile\_edit.html.py:132
+#: .\colibri\templates\profile\_profile.html.py:52
+msgid "Contact"
+msgstr "پنل مشتریان"
+
+#: .\colibri\templates\index.html.py:60
+msgid "SEARCH FOR PUBLIC DATA"
+msgstr "جستجو برای اطلاعات عمومی"
+
+#: .\colibri\templates\index.html.py:69
+msgid "GOT YOUR OWN OPEN DATASET?"
+msgstr "مجموعه داده آزاد خود را دریافت کرده اید؟"
+
+#: .\colibri\templates\index.html.py:69
+msgid "Click here</a> to add a new Dataset"
+msgstr "اینجا را کلیک کنید </ A> برای اضافه کردن یک مجموعه داده جدید"
+
+#: .\colibri\templates\index.html.py:78
+msgid "DIDN’T FIND WHAT YOU WERE LOOKING FOR?"
+msgstr "آنچه که به دنبالش بودید را نیافتید؟"
+
+#: .\colibri\templates\index.html.py:78
+msgid "Ask the Community to get it for you"
+msgstr "از گروه درخواست کنید "
+
+#: .\colibri\templates\index.html.py:88
+#: .\colibri\templates\profile\_profile.html.py:92
+msgid "Latest Requests"
+msgstr "آخرین درخواست ها"
+
+#: .\colibri\templates\index.html.py:108
+msgid "has made a request."
+msgstr "درخواست تثبیت "
+
+#: .\colibri\templates\index.html.py:120
+msgid "No recent requests"
+msgstr "درخواست جدیدی وجود ندارد"
+
+#: .\colibri\templates\profile.html.py:36
+#: .\colibri\templates\request-details.html.py:19
+#: .\colibri\templates\request.html.py:22 .\colibri\templates\dataset\_details -
+#: Copy.html.py:73 .\colibri\templates\dataset\_details.html.py:93
+#: .\colibri\templates\dataset\_search.html.py:20
+msgid "Home"
+msgstr "خانه"
+
+#: .\colibri\templates\profile.html.py:44
+msgid "Profile summary"
+msgstr "خلاصه مشخصات"
+
+#: .\colibri\templates\profile.html.py:45
+msgid "My Groups"
+msgstr "گروه های من"
+
+#: .\colibri\templates\request-details.html.py:19
+msgid "Data Requests"
+msgstr "درخواست داده "
+
+#: .\colibri\templates\request-details.html.py:47
+msgid "Like Request"
+msgstr "مانند درخواست"
+
+#: .\colibri\templates\request-details.html.py:48
+msgid "Created "
+msgstr "ساخته "
+
+#: .\colibri\templates\request-details.html.py:51
+#: .\colibri\templates\request.html.py:111
+msgid "pending request"
+msgstr "درخواست در صف انتظار "
+
+#: .\colibri\templates\request-details.html.py:54
+#: .\colibri\templates\request.html.py:114
+msgid "Satisfied request"
+msgstr "درخواست راضی"
+
+#: .\colibri\templates\request-details.html.py:77
+msgid "Replies to the request"
+msgstr "پاسخ به درخواست"
+
+#: .\colibri\templates\request-details.html.py:87
+#: .\colibri\templates\dataset\_details - Copy.html.py:258
+#, python-format
+msgid "%(comments_count)s reply %(entry_title)s"
+msgid_plural "%(comments_count)s Replies "
+msgstr[0] "٪(comments_count) درصد پاسخ (entry_title)"
+msgstr[1] "٪(comments_count) درصد پاسخ (entry_title)"
+
+#: .\colibri\templates\request-details.html.py:90
+#: .\colibri\templates\dataset\_details - Copy.html.py:261
+#: .\colibri\templates\dataset\_details.html.py:355
+msgid "Comments are closed."
+msgstr "دیدگاه‌ بسته است."
+
+#: .\colibri\templates\request-details.html.py:95
+#: .\colibri\templates\dataset\_details - Copy.html.py:266
+#: .\colibri\templates\dataset\_details.html.py:360
+msgid "Leave a reply"
+msgstr "دیدگاه خود را بیان کند"
+
+#: .\colibri\templates\request-details.html.py:114
+#: .\colibri\templates\dataset\_details - Copy.html.py:284
+#: .\colibri\templates\dataset\_details.html.py:378
+msgid "Please "
+msgstr "لطفا"
+
+#: .\colibri\templates\request-details.html.py:114
+#: .\colibri\templates\dataset\_details - Copy.html.py:284
+#: .\colibri\templates\dataset\_details.html.py:378
+msgid "login"
+msgstr "وارد شوید"
+
+#: .\colibri\templates\request-details.html.py:114
+#: .\colibri\templates\dataset\_details - Copy.html.py:284
+#: .\colibri\templates\dataset\_details.html.py:378
+msgid "to reply."
+msgstr "پاسخ دهید."
+
+#: .\colibri\templates\request.html.py:22
+msgid "Data Request"
+msgstr "درخواست اطلاعات"
+
+#: .\colibri\templates\request.html.py:31
+msgid "Requests"
+msgstr "درخواست"
+
+#: .\colibri\templates\request.html.py:39
+msgid "Browse by:"
+msgstr "مرور توسط:"
+
+#: .\colibri\templates\request.html.py:41
+msgid "Date updated"
+msgstr "تاریخ به روز رسانی"
+
+#: .\colibri\templates\request.html.py:42
+msgid "Popularity"
+msgstr "محبوبیت"
+
+#: .\colibri\templates\request.html.py:46 .\colibri\templates\request.html.py:49
+#: .\colibri\templates\requests-add.html.py:85
+msgid "Place a new request"
+msgstr "ثبت درخواست جدید"
+
+#: .\colibri\templates\request.html.py:84
+#: .\colibri\templates\requests-add.html.py:100
+#: .\colibri\templates\dataset\_search.html.py:124
+msgid "Category:"
+msgstr "دسته"
+
+#: .\colibri\templates\request.html.py:91
+msgid "read"
+msgstr "خواندن:"
+
+#: .\colibri\templates\request.html.py:108
+msgid "answers"
+msgstr "پاسخ"
+
+#: .\colibri\templates\request.html.py:127
+#: .\colibri\templates\search\search.html.py:30
+msgid "Previous"
+msgstr "قبلی"
+
+#: .\colibri\templates\request.html.py:137
+#: .\colibri\templates\dataset\_add.html.py:33
+#: .\colibri\templates\dataset\_add.html.py:35
+#: .\colibri\templates\dataset\_edit.html.py:39
+#: .\colibri\templates\dataset\_edit.html.py:41
+#: .\colibri\templates\dataset\_extend.html.py:33
+#: .\colibri\templates\dataset\_extend.html.py:35
+#: .\colibri\templates\search\search.html.py:32
+msgid "Next"
+msgstr "بعدی"
+
+#: .\colibri\templates\requests-add.html.py:53
+msgid "Title must be filled out"
+msgstr "عنوان باید پر شود"
+
+#: .\colibri\templates\requests-add.html.py:62
+msgid "Description must be filled out"
+msgstr "توضیحات باید پر شود"
+
+#: .\colibri\templates\requests-add.html.py:71
+msgid "Please select category"
+msgstr " نوع دسته بندی را انتخاب کنید"
+
+#: .\colibri\templates\requests-add.html.py:94
+msgid "Title:"
+msgstr "عنوان:"
+
+#: .\colibri\templates\requests-add.html.py:110
+msgid "Description:"
+msgstr "شرح"
+
+# تکمیل
+#: .\colibri\templates\terms.html.py:14
+msgid ""
+" Terms of use\n"
+"\t  </div>\n"
+"\t\t<p> Welcome to our website. If you continue to browse and use this "
+"website you are agreeing to comply with and be\n"
+"\t\t\tbound by the following terms and conditions of use, which together "
+"with our privacy policy govern colibri's\n"
+"\t\t\trelationship with you in relation to this website.The term ‘EPU-NTUA' "
+"or ‘us' or ‘we' refers to the owner of the\n"
+"\t\t\twebsite, <a style=\"color:white\" href=\"http://www.epu.ntua.gr\" "
+"target=\"_blank\"> <em>National Technical University of Athens, School of "
+"Electrical and Computer Engineering, Decision\n"
+"\t\t\t\tSupport Systems Lab</em></a>, whose registered office is 9, Iroon "
+"Polytechniou st., Zografou, Athens, GREECE\n"
+"\t\t\t15780. The term 'visitor' or ‘you' refers to the user or viewer of our "
+"website. The visitor/user of the pages\n"
+"\t\t\tand services of the colibri website should read this document carefully "
+"and if he does not agree with its terms\n"
+"\t\t\tand conditions he should NOT USE IT. Otherwise, he shall be considered "
+"as having accepted these terms and given\n"
+"\t\t\this consent. The legal information and the terms and conditions of "
+"this document cover all the pages of the\n"
+"\t\t\tcolibri Open Data website, unless otherwise expressly stated in any "
+"particular page. The use of this website is\n"
+"\t\t\tsubject to the following terms of use:</p>\n"
+"\t\t<div class=\"terms_title\">\n"
+"\t  Limitation of liability\n"
+"\t  </div>\n"
+"\t\t<p> When accessing this website, the visitor/user of the colibri Open "
+"Data website's pages and services agrees that\n"
+"\t\t\the shall do so on his own responsibility and that none of the parties "
+"involved in the creation, production or\n"
+"\t\t\tpublication of this website have any liability whatsoever. "
+"Indicatively, but without limitation, they shall not\n"
+"\t\t\tbe liable for any direct, incidental, consequential or indirect "
+"damages or any costs or expenses of any kind\n"
+"\t\t\t(including lawyer's fees, expert's fees or other expenses) which may "
+"arise, directly or indirectly, from the\n"
+"\t\t\taccess to, use or surfing of this website or from the downloading of "
+"any material, text, data, video or sound\n"
+"\t\t\tfiles from this website including indicatively and without limitation "
+"any damages caused by viruses, bugs, human\n"
+"\t\t\taction or omission, by any computer system, telephone line, hardware "
+"part, software or program dysfunction or\n"
+"\t\t\tany other mistake, omission or delay in transmission by the computer "
+"or network connection.</p>\n"
+"\n"
+"\t\t<p> EPU-NTUA, without providing any warranty and therefore without being "
+"liable, shall make every possible effort to\n"
+"\t\t\tensure maximum clarity, timeliness, completeness and availability of "
+"the information and content. In no\n"
+"\t\t\tcircumstances, including negligence, shall EPU-NTUA be liable for any "
+"damage to the visitor/user as a result of\n"
+"\t\t\tthe use of this website. The information, total content and services "
+"are provided on an \"AS IS\" basis, without\n"
+"\t\t\twarranties of any kind, either express or implied, which EPU-NTUA "
+"expressly rejects, including indicatively but\n"
+"\t\t\tnot limited to, warranties of merchantability or suitability.</p>\n"
+"\t\t<br>\n"
+"\t\t<p> The visitor/user of this website must comply with the provisions of "
+"the Greek, European and International Law\n"
+"\t\t\tand the relevant legislation governing telecommunications and refrain "
+"from any unlawful and abusive use of the\n"
+"\t\t\tcontent and services of this website. Any damage caused to this "
+"website or the Internet, which results from\n"
+"\t\t\timproper or unlawful use of the relevant services by the visitor/user "
+"shall fall within his exclusive sphere of\n"
+"\t\t\tresponsibility.</p>\n"
+"\t\t<div class=\"terms_title\">\n"
+"\t  Unlawful or unfair behavior\n"
+"\t  </div>\n"
+"\t\t<p> The visitor/user of this website should not post or transmit through "
+"this website any pornographic, obscene,\n"
+"\t\t\tprofane, defamatory, slanderous, threatening, illegal or other "
+"material that is a criminal offence or may\n"
+"\t\t\tencourage conduct that would constitute a criminal offence, give rise "
+"to civil liability or otherwise violate\n"
+"\t\t\tany law. Although EPU-NTUA or any other party who may be involved in "
+"the creation, production or publication of\n"
+"\t\t\tthis website may monitor, inspect or review transmissions and "
+"postings, EPU-NTUA and other parties involved in\n"
+"\t\t\tthe creation, production or publication of this website disavow any "
+"potential liability that may arise from\n"
+"\t\t\ttheir content, including indicatively and without limitation, any "
+"claims for defamation, slander, blasphemy,\n"
+"\t\t\tfalse impersonation or infringement of intellectual property rights.</"
+"p>\n"
+"\t\t<br>\n"
+"\t\t<div class=\"terms_title\">\n"
+"\t  Hyperlinks\n"
+"\t  </div>\n"
+"\t\t<p> Although this website may be linked to other websites, it is not "
+"responsible for the content and services of\n"
+"\t\t\tother websites hyperlinked through links or banners and makes no "
+"warranty for their availability. EPU-NTUA\n"
+"\t\t\tdisclaims any direct or indirect approval, approbation, relationship, "
+"sponsoring or collaboration with\n"
+"\t\t\thyperlinked websites, unless this is expressly indicated. By accessing "
+"this website, the visitor/user agrees\n"
+"\t\t\tthat EPU-NTUA has no liability for any problems that may arise during "
+"the visit/use of websites to which this\n"
+"\t\t\twebsite is hyperlinked, which fall exclusively within the sphere of "
+"responsibility of the respective\n"
+"\t\t\twebsites.</p>\n"
+"\t\t<br>\n"
+"\t<div class=\"terms_title\">\n"
+"\t  Revision of this document\n"
+"\t  </div>\n"
+"\t\t<h2> </h2>\n"
+"\t\t<p> EPU-NTUA reserves the right to revise this legal information at any "
+"time and for any reason, without prior\n"
+"\t\t\tnotice or obligation. Users/visitors should check every time for any "
+"changes and their continued use of the\n"
+"\t\t\twebsite constitutes acceptance of the modified terms and conditions. "
+"Otherwise, they should refrain from\n"
+"\t\t\tusing/visiting this website.</p>\n"
+"\t\t<br>\n"
+"\t<div class=\"terms_title\">\n"
+"\t  Applicable law\n"
+"\t  </div>\n"
+"\n"
+"\t\t<p> This use agreement is governed by the provisions of Greek Law, the "
+"directives and regulations of European Law\n"
+"\t\t\tand the relevant international provisions and is construed in "
+"accordance with the rules of good faith, business\n"
+"\t\t\tethics and the financial and social purpose of the right. If any term "
+"of this agreement is deemed invalid, void\n"
+"\t\t\tand for any reason unenforceable, that term shall automatically be "
+"deemed severable and shall not affect the\n"
+"\t\t\tvalidity of the remaining terms of this agreement. No amendment of the "
+"terms of the agreement shall be taken\n"
+"\t\t\tinto consideration or be part thereof, if it has not been stated in "
+"writing and not incorporated in it. The\n"
+"\t\t\tcompetent courts for any disputes arising from the agreement shall be "
+"the courts of Athens.</p>\n"
+"\t\t<br>\n"
+"\t\t<p> The management and protection of the personal data of the visitor/"
+"user of this website are subject to the terms\n"
+"\t\t\tof this section and the relevant provisions of Greek law (Law "
+"2472/1997 as supplemented by the decisions of the\n"
+"\t\t\tChairman of the Personal Data Protection Committee, Presidential "
+"Decrees 207/1998 and 79/2000 and article 8 of\n"
+"\t\t\tLaw 2819/2000) and European Law (Directives 95/46/EC and 97/66/EC). "
+"Any future relevant regulation shall form\n"
+"\t\t\tpart of this section. If a visitor/user does not agree with the terms "
+"for personal data protection set out in\n"
+"\t\t\tthis section, he should not use the services of this website. Visitors/"
+"users are required to provide personal\n"
+"\t\t\tdata for this website. The visitor/user expressly agrees to the use of "
+"his personal data by EPU-NTUA for\n"
+"\t\t\tpromotional or marketing activities. This website shall protect the "
+"personal nature of your information and may\n"
+"\t\t\tnot communicate them to third parties (except as provided by law and "
+"then only to the relevant authorities).\n"
+"\t\t\tThis website keeps files with the personal data provided by visitors/"
+"users solely for purposes of communication,\n"
+"\t\t\tstatistics and improvement of the services provided and may process "
+"all or part of such information for\n"
+"\t\t\tstatistics, market research or improvement of the services provided, "
+"as well as for promotional or marketing\n"
+"\t\t\tactivities. The visitor/user may contact the relevant department by "
+"phone at ++30 210 772 3583, in order to\n"
+"\t\t\tdetermine the existence of his personal file and demand its "
+"correction, modification or deletion.</p>\n"
+"\t<br>\n"
+"\t\t<p> This website uses \"cookies\", a technology that is used to identify "
+"the visitor/user of certain services and web\n"
+"\t\t\tpages of this site. Cookies are small text files (4 KB at most) that "
+"can be stored on the hard disk of each\n"
+"\t\t\tvisitor/user without obtaining any knowledge of any document or file "
+"in his computer. They are used to\n"
+"\t\t\tfacilitate visitor/user access to specific pages and services of this "
+"website or for statistical purposes. The\n"
+"\t\t\tvisitor/user may personalize his server so as to be notified about the "
+"use of cookies in specific pages/services\n"
+"\t\t\tof this website and may choose not to accept the use of cookies.</p>\n"
+"\t\t<br>\n"
+"\t\t<p style=\"margin-bottom:60px;\"> For users under the age of 18, prior "
+"consent of parents/guardians is considered as given for any communication\n"
+"\t\t\tof personal data to the colibri Open Data website.</p>"
+msgstr ""
+" Terms of use\n"
+"\t  </div>\n"
+"\t\t<p> Welcome to our website. If you continue to browse and use this "
+"website you are agreeing to comply with and be\n"
+"\t\t\tbound by the following terms and conditions of use, which together "
+"with our privacy policy govern colibri's\n"
+"\t\t\trelationship with you in relation to this website.The term ‘EPU-NTUA' "
+"or ‘us' or ‘we' refers to the owner of the\n"
+"\t\t\twebsite, <a style=\"color:white\" href=\"http://www.epu.ntua.gr\" "
+"target=\"_blank\"> <em>National Technical University of Athens, School of "
+"Electrical and Computer Engineering, Decision\n"
+"\t\t\t\tSupport Systems Lab</em></a>, whose registered office is 9, Iroon "
+"Polytechniou st., Zografou, Athens, GREECE\n"
+"\t\t\t15780. The term 'visitor' or ‘you' refers to the user or viewer of our "
+"website. The visitor/user of the pages\n"
+"\t\t\tand services of the colibri website should read this document carefully "
+"and if he does not agree with its terms\n"
+"\t\t\tand conditions he should NOT USE IT. Otherwise, he shall be considered "
+"as having accepted these terms and given\n"
+"\t\t\this consent. The legal information and the terms and conditions of "
+"this document cover all the pages of the\n"
+"\t\t\tcolibri Open Data website, unless otherwise expressly stated in any "
+"particular page. The use of this website is\n"
+"\t\t\tsubject to the following terms of use:</p>\n"
+"\t\t<div class=\"terms_title\">\n"
+"\t  Limitation of liability\n"
+"\t  </div>\n"
+"\t\t<p> When accessing this website, the visitor/user of the colibri Open "
+"Data website's pages and services agrees that\n"
+"\t\t\the shall do so on his own responsibility and that none of the parties "
+"involved in the creation, production or\n"
+"\t\t\tpublication of this website have any liability whatsoever. "
+"Indicatively, but without limitation, they shall not\n"
+"\t\t\tbe liable for any direct, incidental, consequential or indirect "
+"damages or any costs or expenses of any kind\n"
+"\t\t\t(including lawyer's fees, expert's fees or other expenses) which may "
+"arise, directly or indirectly, from the\n"
+"\t\t\taccess to, use or surfing of this website or from the downloading of "
+"any material, text, data, video or sound\n"
+"\t\t\tfiles from this website including indicatively and without limitation "
+"any damages caused by viruses, bugs, human\n"
+"\t\t\taction or omission, by any computer system, telephone line, hardware "
+"part, software or program dysfunction or\n"
+"\t\t\tany other mistake, omission or delay in transmission by the computer "
+"or network connection.</p>\n"
+"\n"
+"\t\t<p> EPU-NTUA, without providing any warranty and therefore without being "
+"liable, shall make every possible effort to\n"
+"\t\t\tensure maximum clarity, timeliness, completeness and availability of "
+"the information and content. In no\n"
+"\t\t\tcircumstances, including negligence, shall EPU-NTUA be liable for any "
+"damage to the visitor/user as a result of\n"
+"\t\t\tthe use of this website. The information, total content and services "
+"are provided on an \"AS IS\" basis, without\n"
+"\t\t\twarranties of any kind, either express or implied, which EPU-NTUA "
+"expressly rejects, including indicatively but\n"
+"\t\t\tnot limited to, warranties of merchantability or suitability.</p>\n"
+"\t\t<br>\n"
+"\t\t<p> The visitor/user of this website must comply with the provisions of "
+"the Greek, European and International Law\n"
+"\t\t\tand the relevant legislation governing telecommunications and refrain "
+"from any unlawful and abusive use of the\n"
+"\t\t\tcontent and services of this website. Any damage caused to this "
+"website or the Internet, which results from\n"
+"\t\t\timproper or unlawful use of the relevant services by the visitor/user "
+"shall fall within his exclusive sphere of\n"
+"\t\t\tresponsibility.</p>\n"
+"\t\t<div class=\"terms_title\">\n"
+"\t  Unlawful or unfair behavior\n"
+"\t  </div>\n"
+"\t\t<p> The visitor/user of this website should not post or transmit through "
+"this website any pornographic, obscene,\n"
+"\t\t\tprofane, defamatory, slanderous, threatening, illegal or other "
+"material that is a criminal offence or may\n"
+"\t\t\tencourage conduct that would constitute a criminal offence, give rise "
+"to civil liability or otherwise violate\n"
+"\t\t\tany law. Although EPU-NTUA or any other party who may be involved in "
+"the creation, production or publication of\n"
+"\t\t\tthis website may monitor, inspect or review transmissions and "
+"postings, EPU-NTUA and other parties involved in\n"
+"\t\t\tthe creation, production or publication of this website disavow any "
+"potential liability that may arise from\n"
+"\t\t\ttheir content, including indicatively and without limitation, any "
+"claims for defamation, slander, blasphemy,\n"
+"\t\t\tfalse impersonation or infringement of intellectual property rights.</"
+"p>\n"
+"\t\t<br>\n"
+"\t\t<div class=\"terms_title\">\n"
+"\t  Hyperlinks\n"
+"\t  </div>\n"
+"\t\t<p> Although this website may be linked to other websites, it is not "
+"responsible for the content and services of\n"
+"\t\t\tother websites hyperlinked through links or banners and makes no "
+"warranty for their availability. EPU-NTUA\n"
+"\t\t\tdisclaims any direct or indirect approval, approbation, relationship, "
+"sponsoring or collaboration with\n"
+"\t\t\thyperlinked websites, unless this is expressly indicated. By accessing "
+"this website, the visitor/user agrees\n"
+"\t\t\tthat EPU-NTUA has no liability for any problems that may arise during "
+"the visit/use of websites to which this\n"
+"\t\t\twebsite is hyperlinked, which fall exclusively within the sphere of "
+"responsibility of the respective\n"
+"\t\t\twebsites.</p>\n"
+"\t\t<br>\n"
+"\t<div class=\"terms_title\">\n"
+"\t  Revision of this document\n"
+"\t  </div>\n"
+"\t\t<h2> </h2>\n"
+"\t\t<p> EPU-NTUA reserves the right to revise this legal information at any "
+"time and for any reason, without prior\n"
+"\t\t\tnotice or obligation. Users/visitors should check every time for any "
+"changes and their continued use of the\n"
+"\t\t\twebsite constitutes acceptance of the modified terms and conditions. "
+"Otherwise, they should refrain from\n"
+"\t\t\tusing/visiting this website.</p>\n"
+"\t\t<br>\n"
+"\t<div class=\"terms_title\">\n"
+"\t  Applicable law\n"
+"\t  </div>\n"
+"\n"
+"\t\t<p> This use agreement is governed by the provisions of Greek Law, the "
+"directives and regulations of European Law\n"
+"\t\t\tand the relevant international provisions and is construed in "
+"accordance with the rules of good faith, business\n"
+"\t\t\tethics and the financial and social purpose of the right. If any term "
+"of this agreement is deemed invalid, void\n"
+"\t\t\tand for any reason unenforceable, that term shall automatically be "
+"deemed severable and shall not affect the\n"
+"\t\t\tvalidity of the remaining terms of this agreement. No amendment of the "
+"terms of the agreement shall be taken\n"
+"\t\t\tinto consideration or be part thereof, if it has not been stated in "
+"writing and not incorporated in it. The\n"
+"\t\t\tcompetent courts for any disputes arising from the agreement shall be "
+"the courts of Athens.</p>\n"
+"\t\t<br>\n"
+"\t\t<p> The management and protection of the personal data of the visitor/"
+"user of this website are subject to the terms\n"
+"\t\t\tof this section and the relevant provisions of Greek law (Law "
+"2472/1997 as supplemented by the decisions of the\n"
+"\t\t\tChairman of the Personal Data Protection Committee, Presidential "
+"Decrees 207/1998 and 79/2000 and article 8 of\n"
+"\t\t\tLaw 2819/2000) and European Law (Directives 95/46/EC and 97/66/EC). "
+"Any future relevant regulation shall form\n"
+"\t\t\tpart of this section. If a visitor/user does not agree with the terms "
+"for personal data protection set out in\n"
+"\t\t\tthis section, he should not use the services of this website. Visitors/"
+"users are required to provide personal\n"
+"\t\t\tdata for this website. The visitor/user expressly agrees to the use of "
+"his personal data by EPU-NTUA for\n"
+"\t\t\tpromotional or marketing activities. This website shall protect the "
+"personal nature of your information and may\n"
+"\t\t\tnot communicate them to third parties (except as provided by law and "
+"then only to the relevant authorities).\n"
+"\t\t\tThis website keeps files with the personal data provided by visitors/"
+"users solely for purposes of communication,\n"
+"\t\t\tstatistics and improvement of the services provided and may process "
+"all or part of such information for\n"
+"\t\t\tstatistics, market research or improvement of the services provided, "
+"as well as for promotional or marketing\n"
+"\t\t\tactivities. The visitor/user may contact the relevant department by "
+"phone at ++30 210 772 3583, in order to\n"
+"\t\t\tdetermine the existence of his personal file and demand its "
+"correction, modification or deletion.</p>\n"
+"\t<br>\n"
+"\t\t<p> This website uses \"cookies\", a technology that is used to identify "
+"the visitor/user of certain services and web\n"
+"\t\t\tpages of this site. Cookies are small text files (4 KB at most) that "
+"can be stored on the hard disk of each\n"
+"\t\t\tvisitor/user without obtaining any knowledge of any document or file "
+"in his computer. They are used to\n"
+"\t\t\tfacilitate visitor/user access to specific pages and services of this "
+"website or for statistical purposes. The\n"
+"\t\t\tvisitor/user may personalize his server so as to be notified about the "
+"use of cookies in specific pages/services\n"
+"\t\t\tof this website and may choose not to accept the use of cookies.</p>\n"
+"\t\t<br>\n"
+"\t\t<p style=\"margin-bottom:60px;\"> For users under the age of 18, prior "
+"consent of parents/guardians is considered as given for any communication\n"
+"\t\t\tof personal data to the colibri Open Data website.</p>"
+
+#: .\colibri\templates\comments\comment.html.py:22
+#: .\colibri\templates\comments\preview.html.py:12
+msgid "Preview of your comment"
+msgstr "مشاهده نظر شما"
+
+#: .\colibri\templates\comments\comment.html.py:37
+#: .\colibri\templates\comments\comment.html.py:43
+msgid "replied"
+msgstr "پاسخ داده شد"
+
+#: .\colibri\templates\comments\comment.html.py:39
+msgid "Accepted Answer, "
+msgstr "جواب پذیرفته شده "
+
+#: .\colibri\templates\comments\comment.html.py:58
+msgid "Accept Answer"
+msgstr "قبول کردن جواب"
+
+#: .\colibri\templates\comments\deleted.html.py:4
+#: .\old\django-basic-apps\basic\comments\templates\comments\deleted.html.py:7
+#: .\old\django-basic-apps\basic\comments\templates\comments\deleted.html.py:11
+msgid "Thanks for removing"
+msgstr " با تشکر از حذف  "
+
+#: .\colibri\templates\comments\deleted.html.py:12
+msgid "Thanks for removing the comment"
+msgstr "از اینکه کامنت خود را حذف کردید متشکریم"
+
+#: .\colibri\templates\comments\deleted.html.py:14
+#: .\colibri\templates\comments\flagged.html.py:14
+msgid ""
+"\n"
+"      Thanks for taking the time to improve the quality of discussion on our "
+"site.<br/>\n"
+"      You will be sent back to the article...\n"
+"    "
+msgstr ""
+"\n"
+"      از اینکه وقت خود را برای بهبود کیفیت مباحث وب سایت ما گذاشتید "
+"متشکریم<br/>\n"
+"     شما به مقاله مورد نظر هدایت خواهید شد\n"
+"    "
+
+#: .\colibri\templates\comments\deleted.html.py:20
+#: .\colibri\templates\comments\flagged.html.py:20
+#: .\colibri\templates\comments\posted.html.py:24
+msgid "Back to the article"
+msgstr "برگشت به مقاله"
+
+#: .\colibri\templates\comments\flagged.html.py:4
+#: .\old\django-basic-apps\basic\comments\templates\comments\flagged.html.py:7
+#: .\old\django-basic-apps\basic\comments\templates\comments\flagged.html.py:11
+msgid "Thanks for flagging"
+msgstr "با تشکر برای علامت گذاری"
+
+#: .\colibri\templates\comments\flagged.html.py:12
+msgid "Thanks for flagging the comment"
+msgstr "با تشکر برای علامتگذاری نظر"
+
+#: .\colibri\templates\comments\form.html.py:4
+msgid "Replies are closed."
+msgstr "پاسخ ها بسته شده اند."
+
+#: .\colibri\templates\comments\form.html.py:23
+#: .\colibri\templates\comments\preview.html.py:26
+#: .\old\django-basic-apps\basic\comments\templates\comments\form.html.py:23
+#: .\old\django-basic-apps\basic\comments\templates\comments\preview.html.py:47
+msgid "Post"
+msgstr "ارسال شده"
+
+#: .\colibri\templates\comments\form.html.py:24
+#: .\colibri\templates\comments\preview.html.py:27
+#: .\colibri\templates\wiki\edit.html.py:41
+#: .\old\django-basic-apps\basic\comments\templates\comments\preview.html.py:48
+msgid "Preview"
+msgstr "پیش نمايش"
+
+#: .\colibri\templates\comments\posted.html.py:3
+msgid "Thanks for commenting"
+msgstr "با تشکر از نظر شما"
+
+#: .\colibri\templates\comments\posted.html.py:11
+msgid "Thanks for posting your comment"
+msgstr "با تشکر از ثبت نظر شما"
+
+#: .\colibri\templates\comments\posted.html.py:13
+msgid ""
+"\n"
+"      We have received your comment, and posted it on the web site.<br/>\n"
+"      You will be sent back to the article...\n"
+"      "
+msgstr ""
+
+#: .\colibri\templates\comments\preview.html.py:3
+#: .\old\django-basic-apps\basic\comments\templates\comments\preview.html.py:7
+#: .\old\django-basic-apps\basic\comments\templates\comments\preview.html.py:11
+msgid "Preview your comment"
+msgstr "پیش نمایش نظر شما"
+
+#: .\colibri\templates\comments\preview.html.py:10
+#: .\old\django-basic-apps\basic\comments\templates\comments\preview.html.py:22
+msgid "Please correct the error below"
+msgid_plural "Please correct the errors below"
+msgstr[0] "لطفا خطا های زیر را تصحیح فرمایید"
+
+#: .\colibri\templates\comments\preview.html.py:17
+#: .\old\django-basic-apps\basic\comments\templates\comments\preview.html.py:26
+msgid "Post your comment"
+msgstr "ارسال نظر شما"
+
+#: .\colibri\templates\comments\preview.html.py:20
+msgid "Or make changes"
+msgstr "و یا اعمال تغییرات"
+
+#: .\colibri\templates\dataset\_add.html.py:27
+#: .\colibri\templates\dataset\_add.html.py:29
+#: .\colibri\templates\dataset\_edit.html.py:33
+#: .\colibri\templates\dataset\_edit.html.py:35
+#: .\colibri\templates\dataset\_extend.html.py:27
+#: .\colibri\templates\dataset\_extend.html.py:29
+msgid "Back"
+msgstr "بازگشت"
+
+#: .\colibri\templates\dataset\_confirm_delete.html.py:13
+msgid "Delete dataset"
+msgstr "حذف داده ها"
+
+#: .\colibri\templates\dataset\_confirm_delete.html.py:16
+msgid ""
+"Are you sure you want to remove this dataset and all the resources attached "
+"to it?"
+msgstr ""
+"آیا شما مطمئن هستید که می خواهید این داده ها و همه منابع متصل به آن را حذف "
+"کنید؟"
+
+#: .\colibri\templates\dataset\_confirm_delete.html.py:18
+#: .\colibri\templates\dataset\_details.html.py:337
+#: .\colibri\templates\profile\_edit.html.py:163
+msgid "Cancel"
+msgstr "لغو کردن"
+
+#: .\colibri\templates\dataset\_confirm_delete.html.py:21
+#: .\colibri\templates\wiki\delete.html.py:8
+#: .\messages\templates\messages\view.html.py:37
+msgid "Delete"
+msgstr "حذف"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:35
+#: .\colibri\templates\dataset\_details.html.py:55
+msgid "Thank you for voting!"
+msgstr "با تشکر از رای شما!"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:39
+#: .\colibri\templates\dataset\_details.html.py:59
+msgid "You must be logged in to vote."
+msgstr " برای ثبت رای خود باید وارد سیستم شوید."
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:44
+#: .\colibri\templates\dataset\_details.html.py:64
+msgid "You have already voted!"
+msgstr "شما قبلا رای داده اید "
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:68
+#: .\colibri\templates\dataset\_details.html.py:88
+msgid "Delete Dataset"
+msgstr "حذف مجموعه داده"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:69
+#: .\colibri\templates\dataset\_details.html.py:89
+msgid "Edit Dataset"
+msgstr "ویرایش مجموعه داده"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:73
+#: .\colibri\templates\dataset\_details.html.py:93
+#: .\colibri\templates\dataset\_search.html.py:20
+msgid "Datasets"
+msgstr "مجموعه داده"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:80
+#: .\colibri\templates\dataset\_details.html.py:100
+msgid "Uploaded by"
+msgstr "آپلود شده توسط"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:84 Copy.html.py:86
+#: .\colibri\templates\dataset\_details.html.py:104
+#: .\colibri\templates\dataset\_details.html.py:106
+#: .\colibri\templates\dataset\_extend.html.py:70
+msgid "Extend"
+msgstr "گسترش"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:96
+#: .\colibri\templates\dataset\_details.html.py:116
+msgid "No rating yet"
+msgstr "فاقد رتبه بندی"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:96
+#: .\colibri\templates\dataset\_details.html.py:116
+msgid "Score"
+msgstr "امتیاز"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:96
+#: .\colibri\templates\dataset\_details.html.py:116
+msgid "votes"
+msgstr "آرا"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:104
+#: .\colibri\templates\dataset\_details.html.py:124
+#: .\colibri\templates\dataset\_index.html.py:15
+msgid "Resources"
+msgstr "منابع"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:105
+#: .\colibri\templates\dataset\_details.html.py:125
+msgid "Detailed Metadata"
+msgstr "فراداده تفصیلی"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:132
+#: .\colibri\templates\dataset\_details.html.py:160
+msgid "download"
+msgstr "دانلود"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:134
+msgid "view online"
+msgstr "مشاهده آنلاین"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:144 Copy.html.py:299
+#: .\colibri\templates\dataset\_details.html.py:173
+#: .\colibri\templates\dataset\_details.html.py:400
+msgid "Maintainer"
+msgstr "نگاه دارنده"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:149 Copy.html.py:303
+#: .\colibri\templates\dataset\_details.html.py:178
+#: .\colibri\templates\dataset\_details.html.py:404
+#: .\colibri\templates\dataset\_form.html.py:73
+#: .\colibri\templates\opendatasites\datasources_en.html.py:162
+msgid "Publisher"
+msgstr "ناشر"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:155 Copy.html.py:313
+#: .\colibri\templates\dataset\_details.html.py:184
+#: .\colibri\templates\dataset\_details.html.py:414
+#: .\colibri\templates\dataset\_form.html.py:71
+#: .\colibri\templates\dataset\_search.html.py:53
+#: .\colibri\templates\opendatasites\datasources_en.html.py:160
+msgid "Author"
+msgstr "نویسنده"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:160 Copy.html.py:317
+#: .\colibri\templates\dataset\_details.html.py:189
+#: .\colibri\templates\dataset\_details.html.py:418
+msgid "Release Date"
+msgstr "تاریخ انتشار"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:164 Copy.html.py:321
+#: .\colibri\templates\dataset\_details.html.py:193
+#: .\colibri\templates\dataset\_details.html.py:422
+msgid "Last Update"
+msgstr "آخرین به روز رسانی"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:175
+#: .\colibri\templates\dataset\_details.html.py:204
+#: .\colibri\templates\dataset\_form.html.py:64
+#: .\colibri\templates\opendatasites\datasources_en.html.py:163
+msgid "License"
+msgstr "گواهینامه"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:181
+#: .\colibri\templates\dataset\_details.html.py:210
+#: .\colibri\templates\dataset\_form.html.py:103
+msgid "Geographical Granularity"
+msgstr "تجزیه جغرافیایی"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:187
+#: .\colibri\templates\dataset\_details.html.py:216
+#: .\colibri\templates\dataset\_form.html.py:108
+msgid "Geographical Coverage"
+msgstr "پوشش جغرافیایی"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:193
+#: .\colibri\templates\dataset\_details.html.py:222
+#: .\colibri\templates\dataset\_form.html.py:84
+msgid "Temporal Granularity"
+msgstr "تجزیه زمانی"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:199
+#: .\colibri\templates\dataset\_details.html.py:228
+msgid "Temporal Coverage"
+msgstr "پوشش زمانی"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:200
+#: .\colibri\templates\dataset\_details.html.py:229
+#: .\colibri\templates\dataset\_form.html.py:94
+msgid "To"
+msgstr "برای"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:205
+#: .\colibri\templates\dataset\_details.html.py:234
+msgid "Scientific Domain"
+msgstr "محدوده علمی"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:211
+#: .\colibri\templates\dataset\_details.html.py:240
+msgid "Data collection type"
+msgstr "نوع مجموعه داده ها"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:217
+#: .\colibri\templates\dataset\_details.html.py:246
+msgid "Data collection description"
+msgstr "شرح  شیوه جمع آوری داده "
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:223
+#: .\colibri\templates\dataset\_details.html.py:252
+msgid "Software Package Used"
+msgstr "بسته نرم افزاری مورد استفاده "
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:229
+#: .\colibri\templates\dataset\_details.html.py:258
+#: .\colibri\templates\dataset\_form.html.py:129
+msgid "Analysis Unit"
+msgstr "واحد تحلیل"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:235
+#: .\colibri\templates\dataset\_details.html.py:264
+#: .\colibri\templates\dataset\_form.html.py:132
+msgid "Statistical Methodology"
+msgstr "روش های آماری"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:249
+#: .\colibri\templates\dataset\_details.html.py:343
+msgid "Discussions"
+msgstr "بحث و گفتگو"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:293
+#: .\colibri\templates\dataset\_details.html.py:387
+msgid "Basic Information"
+msgstr "اطلاعات پایه"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:304 Copy.html.py:314
+#: Copy.html.py:326 Copy.html.py:330
+#: .\colibri\templates\dataset\_details.html.py:405
+#: .\colibri\templates\dataset\_details.html.py:415
+#: .\colibri\templates\dataset\_details.html.py:427
+#: .\colibri\templates\dataset\_details.html.py:431
+msgid "None specified"
+msgstr "نا مشخص "
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:308
+#: .\colibri\templates\dataset\_details.html.py:409
+msgid "Original url"
+msgstr "آدرس اصلی"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:309
+#: .\colibri\templates\dataset\_details.html.py:410
+msgid "Original Dataset page"
+msgstr "صفحه مجموعه داده اصلی"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:329
+#: .\colibri\templates\dataset\_details.html.py:430
+msgid "Licence"
+msgstr "گواهینامه"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:339
+#: .\colibri\templates\dataset\_details.html.py:440
+msgid "Extension Graph"
+msgstr "نمودار تعمیم"
+
+#: .\colibri\templates\dataset\_details.html.py:153
+msgid " view"
+msgstr " نمایش"
+
+#: .\colibri\templates\dataset\_details.html.py:163
+msgid "visualize"
+msgstr "مصور کردن"
+
+#: .\colibri\templates\dataset\_details.html.py:277
+msgid "Items based on this dataset"
+msgstr "اقلام بر اساس این مجموعه داده"
+
+#: .\colibri\templates\dataset\_details.html.py:291
+msgid "uploaded by"
+msgstr "آپلود شده توسط"
+
+#: .\colibri\templates\dataset\_details.html.py:323
+msgid "URL of item"
+msgstr "URL از اقلام"
+
+#: .\colibri\templates\dataset\_details.html.py:329
+msgid "Submit item"
+msgstr "ارسال اقلام"
+
+#: .\colibri\templates\dataset\_details.html.py:333
+#: .\colibri\templates\dataset\_details.html.py:335
+msgid "Submit your own item"
+msgstr "تثبیت بخش مورد نظر خود"
+
+#: .\colibri\templates\dataset\_details.html.py:352
+#, python-format
+msgid "%(comments_count)s reply "
+msgid_plural "%(comments_count)s Replies "
+msgstr[0] "%(comments_count)s پاسخ ها "
+msgstr[1] "%(comments_count)s پاسخ ها "
+
+#: .\colibri\templates\dataset\_edit.html.py:18
+msgid "Add another"
+msgstr "اضافه کردن یکی دیگر."
+
+#: .\colibri\templates\dataset\_edit.html.py:66
+#: .\colibri\templates\dataset\_extend.html.py:60
+msgid "Edit dataset"
+msgstr "ویرایش داده ها"
+
+#: .\colibri\templates\dataset\_edit.html.py:76
+msgid "Save Dataset"
+msgstr "ذخیره مجموعه داده"
+
+#: .\colibri\templates\dataset\_form.html.py:24
+msgid "Choose file"
+msgstr "انتخاب فایل"
+
+#: .\colibri\templates\dataset\_form.html.py:26
+msgid "OR"
+msgstr "یا"
+
+#: .\colibri\templates\dataset\_form.html.py:27
+msgid "paste URL"
+msgstr "چسباندن URL"
+
+#: .\colibri\templates\dataset\_form.html.py:49
+#: .\colibri\templates\dataset\_index.html.py:12
+#: .\colibri\templates\opendatasites\datasources_en.html.py:157
+#: .\colibri\templates\wiki\dir.html.py:48
+#: .\colibri\templates\wiki\search.html.py:24
+msgid "Title"
+msgstr "عنوان"
+
+#: .\colibri\templates\dataset\_form.html.py:52
+#: .\colibri\templates\dataset\_index.html.py:14
+#: .\colibri\templates\dataset\_search.html.py:46
+msgid "Description"
+msgstr "توضیحات"
+
+#: .\colibri\templates\dataset\_form.html.py:56
+msgid "Categories"
+msgstr "دسته‌بندی‌ها"
+
+#: .\colibri\templates\dataset\_form.html.py:58
+msgid "Original Url of Dataset"
+msgstr "آدرس اصلی داده ها"
+
+#: .\colibri\templates\dataset\_form.html.py:76
+msgid "Group maintaining the dataset"
+msgstr "گروه حفظ داده ها"
+
+#: .\colibri\templates\dataset\_form.html.py:89
+msgid "From"
+msgstr "از"
+
+#: .\colibri\templates\dataset\_form.html.py:117
+msgid "Scientific domain of the dataset"
+msgstr "دامنه علمی از مجموعه داده"
+
+#: .\colibri\templates\dataset\_form.html.py:120
+msgid "Data Collection type"
+msgstr "نوع مجموعه داده ها"
+
+#: .\colibri\templates\dataset\_form.html.py:123
+msgid "Data Collection Description"
+msgstr "شرح داده شده مجموعه"
+
+#: .\colibri\templates\dataset\_form.html.py:126
+msgid "Statistical Software package used"
+msgstr "بسته نرم افزار آماری مورد استفاده"
+
+#: .\colibri\templates\dataset\_modal.html.py:37
+msgid "Extend Dataset"
+msgstr "گسترش مجموعه داده"
+
+#: .\colibri\templates\dataset\_search.html.py:35
+#: .\colibri\templates\dataset\_search.html.py:40
+msgid "more options"
+msgstr "گزینه های بیشتر"
+
+#: .\colibri\templates\dataset\_search.html.py:40
+msgid "hide options"
+msgstr "پنهان کردن گزینه"
+
+#: .\colibri\templates\dataset\_search.html.py:71
+msgid "Language"
+msgstr "زبان"
+
+#: .\colibri\templates\dataset\_search.html.py:82
+msgid "Uploader"
+msgstr "ارسالکننده"
+
+#: .\colibri\templates\dataset\_search.html.py:128
+msgid "Submitted by:"
+msgstr "ارائه شده توسط:"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:126
+msgid "Data Sources Types"
+msgstr "منابع داده انواع"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:127
+msgid "Licenses"
+msgstr "گواهینامه ها"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:128
+msgid "Language UI"
+msgstr "زبان واسط کاربر"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:129
+#: .\colibri\templates\opendatasites\datasources_en.html.py:175
+msgid "Data Format"
+msgstr "قالب دادهها"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:130
+msgid "Provision"
+msgstr "تهیه"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:156
+msgid "DataSource Type"
+msgstr "نوع منبع داده"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:158
+msgid "Subtitle"
+msgstr "زیرنویس"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:159
+msgid "URL"
+msgstr "URL"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:161
+msgid "Email"
+msgstr "پست الکترونیکی"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:164
+msgid "Category"
+msgstr "دسته"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:165
+msgid "Info Type"
+msgstr "نوع اطلاعات"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:166
+msgid "Period"
+msgstr "دوره"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:167
+msgid "State of Data"
+msgstr "شرح  داده"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:168
+msgid "Coverage"
+msgstr "پوشش"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:169
+msgid "Catalog / Discover"
+msgstr "فهرست / اکتشاف"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:170
+msgid "Data acquisition"
+msgstr "جمع آوری داده ها"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:171
+msgid "Data provision"
+msgstr "ارائه داده"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:172
+msgid "Feedback"
+msgstr "باز خورد"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:173
+msgid "Languages Interface"
+msgstr "رابط زبان"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:174
+msgid "Dataset Languages"
+msgstr "زبان مجموعه داده"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:176
+msgid "Metadata"
+msgstr "فراداده"
+
+#: .\colibri\templates\profile\_add_group.html.py:96
+msgid "Create a New Group"
+msgstr "ایجاد یک گروه جدید"
+
+#: .\colibri\templates\profile\_add_group.html.py:102
+msgid "You successfully created a new group!"
+msgstr "شما با موفقیت یک گروه جدید ایجاد کردید!"
+
+#: .\colibri\templates\profile\_add_group.html.py:104
+msgid "Create Group"
+msgstr "ایجاد گروه"
+
+#: .\colibri\templates\profile\_edit.html.py:21
+msgid "Please tell us your main expertise background"
+msgstr "لطفا زمینه تخصص اصلی خود را بیان کنید"
+
+#: .\colibri\templates\profile\_edit.html.py:31
+msgid "Please tells us your specialization"
+msgstr "لطفا گرایش تخصصی خود را بیان کنید"
+
+#: .\colibri\templates\profile\_edit.html.py:41
+msgid "Please select your country"
+msgstr "لطفا کشور خود را انتخاب کنید"
+
+#: .\colibri\templates\profile\_edit.html.py:56
+msgid "Please save profile to update photo"
+msgstr "برای به روز رسانی عکس لطفا حساب کاربری خود را ذخیره نمایید. "
+
+#: .\colibri\templates\profile\_edit.html.py:72
+#: .\colibri\templates\profile\_profile.html.py:43
+msgid "Edit Profile"
+msgstr "ویرایش مشخصات"
+
+#: .\colibri\templates\profile\_edit.html.py:89
+msgid "change photo"
+msgstr "تغییر عکس"
+
+#: .\colibri\templates\profile\_edit.html.py:135
+msgid "Email Address"
+msgstr "آدرس پست الکترونیکی"
+
+#: .\colibri\templates\profile\_edit.html.py:156
+#: .\colibri\templates\profile\_profile.html.py:79
+msgid "Personal Website"
+msgstr "وب سایت شخصی"
+
+#: .\colibri\templates\profile\_edit.html.py:165
+msgid "Save Profile"
+msgstr "ذخیره نمایه"
+
+#: .\colibri\templates\profile\_groups.html.py:8
+msgid "Show me:"
+msgstr "نمایش بده "
+
+#: .\colibri\templates\profile\_groups.html.py:11
+msgid "All groups"
+msgstr "همه گروه ها"
+
+#: .\colibri\templates\profile\_groups.html.py:12
+msgid "Groups I administrate"
+msgstr "گروه هایی که من مدیریت می کنم"
+
+#: .\colibri\templates\profile\_groups.html.py:13
+msgid "Groups I am a member of"
+msgstr "گروه هایی که من عضو آن هستم"
+
+#: .\colibri\templates\profile\_groups.html.py:16
+msgid "Create a new group"
+msgstr "ایجاد یک گروه جدید"
+
+#: .\colibri\templates\profile\_groups.html.py:24
+msgid "Group Name"
+msgstr "نام گروه"
+
+#: .\colibri\templates\profile\_groups.html.py:25
+msgid "Members"
+msgstr "کاربران"
+
+#: .\colibri\templates\profile\_groups.html.py:26
+msgid "Role"
+msgstr "نقش"
+
+#: .\colibri\templates\profile\_profile.html.py:55
+msgid "Email Address:"
+msgstr "پست الکترونیکی"
+
+#: .\colibri\templates\profile\_profile.html.py:84
+msgid "Latest datasets"
+msgstr "آخرین مجموعه داده"
+
+#: .\colibri\templates\profile\_profile.html.py:90
+#: .\colibri\templates\profile\_profile.html.py:98
+msgid "No recent activity"
+msgstr "فعالیت جدید وجود ندارد"
+
+#: .\colibri\templates\search\search.html.py:12
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_search.html.py:10
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_search.html.py:18
+#: .\src\django-haystack\haystack\forms.py:17
+msgid "Search"
+msgstr "جستجو‌"
+
+#: .\colibri\templates\user\_index.html.py:15
+msgid "Community Users"
+msgstr "کاربران انجمن"
+
+#: .\colibri\templates\wiki\article.html.py:23
+#: .\colibri\templates\wiki\includes\revision_info.html.py:21
+msgid "locked"
+msgstr "قفل شده"
+
+#: .\colibri\templates\wiki\article.html.py:39
+msgid "This article was last modified:"
+msgstr "این آخرین مقاله اصلاح شده است"
+
+#: .\colibri\templates\wiki\base.html.py:156
+msgid "Search..."
+msgstr "جستجو‌"
+
+#: .\colibri\templates\wiki\base.html.py:172
+msgid "No notifications"
+msgstr "اطلاعیه وجود ندارد"
+
+#: .\colibri\templates\wiki\base.html.py:174
+msgid "Clear notifications list"
+msgstr "پاک کردن لیست اطلاعیه ها"
+
+#: .\colibri\templates\wiki\create.html.py:5
+#: .\colibri\templates\wiki\create.html.py:45
+msgid "Add new article"
+msgstr "اضافه کردن جزء جدید"
+
+#: .\colibri\templates\wiki\create.html.py:52
+#: .\colibri\templates\wiki\delete.html.py:12
+#: .\colibri\templates\wiki\delete.html.py:46
+msgid "Go back"
+msgstr "بازگشت"
+
+#: .\colibri\templates\wiki\create.html.py:56
+msgid "Create article"
+msgstr "ایجاد جزء"
+
+#: .\colibri\templates\wiki\create_root.html.py:4
+msgid "Create root article"
+msgstr "ایجاد جزء پایه"
+
+#: .\colibri\templates\wiki\create_root.html.py:22
+msgid "Congratulations!"
+msgstr "تبریک می گییم"
+
+#: .\colibri\templates\wiki\create_root.html.py:24
+msgid ""
+"You have django-wiki installed... but there are no articles. So it's time to "
+"create the first one, the root article. In the beginning, it will only be "
+"editable by administrators, but you can define permissions after."
+msgstr ""
+"شما django-wiki را نصب کردید... اما هیچ جزئی ای وارد نشده است. پس زمان آن "
+"است که  جزء پایه را ایجاد کنید. در ابتدا فقط توسط مدیر سایت قابل ویرایش "
+"باشد، اما شما می توانید پس از کسب پروانه دسترسی آن را تغییر دهید."
+
+#: .\colibri\templates\wiki\create_root.html.py:27
+msgid "Root article"
+msgstr "جزء پایه"
+
+#: .\colibri\templates\wiki\create_root.html.py:32
+msgid "Create root"
+msgstr "ایجاد پایه"
+
+#: .\colibri\templates\wiki\delete.html.py:5
+#: .\colibri\templates\wiki\delete.html.py:50
+#: .\colibri\templates\wiki\edit.html.py:51
+msgid "Delete article"
+msgstr "حذف جزء"
+
+#: .\colibri\templates\wiki\delete.html.py:11
+msgid "You cannot delete a root article."
+msgstr "شما نمی توانید یک جزء پایه را حذف کنید."
+
+#: .\colibri\templates\wiki\delete.html.py:17
+msgid ""
+"You cannot delete this article because you do not have permission to delete "
+"articles with children. Try to remove the children manually one-by-one."
+msgstr ""
+"شما نمی توانید این جزء را حذف کنید. چرا که اجازه حذف جزء پایه که دارای زیر "
+"جزء است را ندارید. بدین منظور  زیراجزاء را یک به یک حذف کنید."
+
+#: .\colibri\templates\wiki\delete.html.py:23
+msgid ""
+"You are deleting an article. This means that its children will be deleted as "
+"well. If you choose to purge, children will also be purged!"
+msgstr ""
+"شما در حال حذف کردن یک جزء می باشید با این حرکت تمامی زیر اجزاء جزء پایه حذف "
+"می شوند و همچنین است. اگر گزینه پالایش را انتخاب نمایید زیر اجزاء نیز حذف "
+"خواهند شد"
+
+#: .\colibri\templates\wiki\delete.html.py:25
+msgid "Articles that will be deleted"
+msgstr "اجزائی که حذف خواهند شد"
+
+#: .\colibri\templates\wiki\delete.html.py:31
+msgid "...and more!"
+msgstr "\"و بیشتر...\""
+
+#: .\colibri\templates\wiki\delete.html.py:39
+msgid "You are deleting an article. Please confirm."
+msgstr "شما در حال حذف کردن یک جزء هستید. لطفا تأیید کنید."
+
+#: .\colibri\templates\wiki\deleted.html.py:5
+msgid "Article deleted"
+msgstr "جزء حذف شده"
+
+#: .\colibri\templates\wiki\deleted.html.py:14
+msgid "Article Deleted"
+msgstr "جزء حذف شد"
+
+#: .\colibri\templates\wiki\deleted.html.py:17
+msgid "The article you were looking for has been deleted."
+msgstr "جزئی که به دنبال آن می گردید حذف شده است."
+
+#: .\colibri\templates\wiki\deleted.html.py:25
+#: .\colibri\templates\wiki\deleted.html.py:30
+msgid "Restore"
+msgstr "بازیابی"
+
+#: .\colibri\templates\wiki\deleted.html.py:26
+msgid "You may restore this article and its children by clicking restore."
+msgstr ""
+"شما ممکن است بتوانید با انتخاب گزینه بازیابی این جزء وتمامی زیر اجزای آن را "
+"بازیابی کنید."
+
+#: .\colibri\templates\wiki\deleted.html.py:40
+msgid "Purge deletion"
+msgstr "پالایش حذف"
+
+#: .\colibri\templates\wiki\deleted.html.py:41
+msgid ""
+"You may remove this article and any children permanently and free their "
+"slugs by clicking the below button. This action cannot be undone."
+msgstr ""
+"با کلیک بر روی دکمه زیر این جزء و هر یک از زیر اجزاء را به طور دائم  حذف "
+"میکنید. این عمل قابل بازگشت نمی باشد."
+
+#: .\colibri\templates\wiki\deleted.html.py:47
+msgid "Purge"
+msgstr "پالایش"
+
+#: .\colibri\templates\wiki\dir.html.py:5
+msgid "Listing articles in"
+msgstr "فهرست کردن مقالات در"
+
+#: .\colibri\templates\wiki\dir.html.py:17
+msgid "Up one level"
+msgstr "بازگشت به یک مرحله قبل"
+
+#: .\colibri\templates\wiki\dir.html.py:22
+msgid "Add article"
+msgstr "اضافه کردن جزء"
+
+#: .\colibri\templates\wiki\dir.html.py:30
+msgid "clear"
+msgstr "حذف"
+
+#: .\colibri\templates\wiki\dir.html.py:40
+msgid "article,articles"
+msgstr "جزء، اجزاء"
+
+#: .\colibri\templates\wiki\dir.html.py:40
+msgid "is,are"
+msgstr "هستند"
+
+#: .\colibri\templates\wiki\dir.html.py:40
+#, python-format
+msgid ""
+"\n"
+"      Browsing <strong><a href=\"%(self_url)s\">/%(path)s</a></strong>. "
+"There %(articles_plur_verb)s <strong>%(cnt)s %(articles_plur)s</strong> in "
+"this level.\n"
+"    "
+msgstr ""
+
+#: .\colibri\templates\wiki\dir.html.py:49
+msgid "Slug"
+msgstr "Slug"
+
+#: .\colibri\templates\wiki\dir.html.py:50
+#: .\colibri\templates\wiki\search.html.py:25
+msgid "Last modified"
+msgstr "تاریخ و زمان آخرین  اصلاح"
+
+#: .\colibri\templates\wiki\dir.html.py:74
+#: .\colibri\templates\wiki\search.html.py:50
+msgid "There are no articles in this level"
+msgstr "هیچ جزء ای در این سطح وجود دارد"
+
+#: .\colibri\templates\wiki\edit.html.py:5
+#: .\colibri\templates\wiki\includes\article_menu.html.py:34
+msgid "Edit"
+msgstr "ویرایش"
+
+#: .\colibri\templates\wiki\edit.html.py:11
+msgid ""
+"<strong>Warning:</strong> You are not logged in. Your IP address will be "
+"logged."
+msgstr "<strong>اخطار:</strong> شما وارد سیستم نشده اید."
+
+#: .\colibri\templates\wiki\edit.html.py:12
+msgid "Click here to log in"
+msgstr "برای ورود اینجا را کلیک کنید"
+
+#: .\colibri\templates\wiki\edit.html.py:45
+#: .\colibri\templates\wiki\edit.html.py:67
+#: .\colibri\templates\wiki\settings.html.py:16
+msgid "Save changes"
+msgstr "ذخیره تغییرات"
+
+#: .\colibri\templates\wiki\edit.html.py:63
+msgid "Back to editor"
+msgstr "بازگشت به ویرایشگر"
+
+#: .\colibri\templates\wiki\error.html.py:5
+#: .\colibri\templates\wiki\error.html.py:26
+msgid "Error"
+msgstr "خطا"
+
+#: .\colibri\templates\wiki\error.html.py:15
+msgid "Not found"
+msgstr "صفحه مورد نظر یافت نشد."
+
+#: .\colibri\templates\wiki\error.html.py:18
+msgid "This article was not found, and neither was its parent article."
+msgstr "این زیر جزء و جزء پایه آن پیدا نشد."
+
+#: .\colibri\templates\wiki\error.html.py:20
+msgid "Start page"
+msgstr "شروع صفحه"
+
+#: .\colibri\templates\wiki\error.html.py:30
+msgid "There was some sort of error accessing this page. Sorry!"
+msgstr " با عرض پوزش! برای دسترسی به این صفحه خطا وجود دارد."
+
+#: .\colibri\templates\wiki\error.html.py:38
+msgid "Back to"
+msgstr "برگشت به"
+
+#: .\colibri\templates\wiki\history.html.py:5
+msgid "History"
+msgstr "تاریخچه"
+
+#: .\colibri\templates\wiki\history.html.py:49
+msgid ""
+"Click each revision to see a list of edited lines. Click the Preview button "
+"to see how the article looked at this stage. At the bottom of this page, you "
+"can change to a particular revision or merge an old revision with the "
+"current one."
+msgstr ""
+" برای دیدن فهرستی از خطوط ویرایش شده بر روی هر تجدید نظر کلیک کنید.  برای "
+"مشاهده نسخه نهایی این جز در این مرحله بر روی دکمه پیش نمایش کلیک کنید. در "
+"انتهای این صفحه، شما می توانید یک تجدید نظر تغییرخاص تغییر دهید و یا تجدید "
+"نظر قدیمی با نسخه فعلی ادغام کنید."
+
+#: .\colibri\templates\wiki\history.html.py:72
+msgid "no log message"
+msgstr "بدون پیغام ورود"
+
+#: .\colibri\templates\wiki\history.html.py:84
+#: .\colibri\templates\wiki\history.html.py:89
+msgid "Preview this revision"
+msgstr "پیش نمایش این نسخه"
+
+#: .\colibri\templates\wiki\history.html.py:103
+msgid "Auto log:"
+msgstr "ورود خودکار:"
+
+#: .\colibri\templates\wiki\history.html.py:111
+msgid "Change"
+msgstr "تغییر"
+
+#: .\colibri\templates\wiki\history.html.py:129
+msgid "Merge selected with current..."
+msgstr "ادغام انتخاب با ..."
+
+#: .\colibri\templates\wiki\history.html.py:133
+msgid "Switch to selected version"
+msgstr "تغییر به نسخه انتخاب شده"
+
+#: .\colibri\templates\wiki\history.html.py:149
+#: .\colibri\templates\wiki\history.html.py:176
+msgid "Back to history view"
+msgstr "بازگشت به مشاهده سابقه"
+
+#: .\colibri\templates\wiki\history.html.py:154
+#: .\colibri\templates\wiki\history.html.py:159
+msgid "Switch to this version"
+msgstr "تغییر به نسخه فعلی"
+
+#: .\colibri\templates\wiki\history.html.py:167
+msgid "Merge with current"
+msgstr "ادغام با فعلی"
+
+#: .\colibri\templates\wiki\history.html.py:168
+msgid ""
+"When you merge a revision with the current, all data will be retained from "
+"both versions and merged at its approximate location from each revision."
+msgstr ""
+"هنگامی که شما تجدید نظر با جریان ادغام، تمام داده خواهد شد از هر دو نسخه "
+"باقی می ماند و ادغام در موقعیت تقریبی خود را از هر تجدید نظر شده است."
+
+#: .\colibri\templates\wiki\history.html.py:168
+msgid "After this, it's important to do a manual review."
+msgstr "بعد از این، این مهم را به انجام یک بررسی کتابچه راهنمای کاربر."
+
+#: .\colibri\templates\wiki\history.html.py:181
+#: .\colibri\templates\wiki\history.html.py:186
+msgid "Create new merged version"
+msgstr "نسخه جدید ادغام شده"
+
+#: .\colibri\templates\wiki\permission_denied.html.py:8
+msgid "Permission Denied"
+msgstr "مجوز رد شد"
+
+#: .\colibri\templates\wiki\permission_denied.html.py:11
+msgid "Sorry, you don't have permission to access this page."
+msgstr "با عرض پوزش، شما اجازه دسترسی به این صفحه را ندارید."
+
+#: .\colibri\templates\wiki\permission_denied.html.py:16
+msgid "This article is locked for editing."
+msgstr "این مقاله برای ویرایش قفل شده است."
+
+#: .\colibri\templates\wiki\permission_denied.html.py:22
+msgid "Back to article"
+msgstr "بازگشت به مطلب"
+
+#: .\colibri\templates\wiki\preview_inline.html.py:8
+msgid "Previewing revision"
+msgstr "بررسی تجدید نظر"
+
+#: .\colibri\templates\wiki\preview_inline.html.py:15
+msgid "Previewing merge between"
+msgstr "بررسی ادغام بین"
+
+#: .\colibri\templates\wiki\preview_inline.html.py:17
+#: .\old\django-basic-apps\basic\comments\templates\comments\preview.html.py:26
+msgid "and"
+msgstr "و"
+
+#: .\colibri\templates\wiki\preview_inline.html.py:22
+msgid "You cannot merge with a deleted revision"
+msgstr "شما نمی توانید به ادغام با یک تجدید نظر حذف شده"
+
+#: .\colibri\templates\wiki\preview_inline.html.py:31
+msgid "This revision has been deleted."
+msgstr "این نسخه حذف شده است."
+
+#: .\colibri\templates\wiki\preview_inline.html.py:32
+msgid "Restoring to this revision will mark the article as deleted."
+msgstr "بازیابی به این نسخه خواهد شد این مقاله را به عنوان حذف علامت."
+
+#: .\colibri\templates\wiki\search.html.py:5
+#: .\colibri\templates\wiki\search.html.py:9
+msgid "Search results for:"
+msgstr "نتایج جستجو برای‌"
+
+#: .\colibri\templates\wiki\search.html.py:17
+#, python-format
+msgid "Your search returned <strong>%(cnt)s</strong> results."
+msgstr "جستجو این نتایج را در برداشت <strong>%(cnt)s</strong> results."
+
+#: .\colibri\templates\wiki\settings.html.py:5
+#: .\colibri\templates\wiki\includes\article_menu.html.py:9
+msgid "Settings"
+msgstr "تنظیمات"
+
+#: .\colibri\templates\wiki\source.html.py:5
+msgid "Source of"
+msgstr "منبع"
+
+#: .\colibri\templates\wiki\source.html.py:10
+msgid "This article is currently locked for editing."
+msgstr "این مقاله در حال حاضر در حال ویرایش قفل شده است."
+
+#: .\colibri\templates\wiki\includes\anonymous_blocked.html.py:7
+#, python-format
+msgid ""
+"\n"
+"  You need to <a href=\"%(login_url)s\">log in</a> or <a href="
+"\"%(signup_url)s\">sign up</a> to use this function.\n"
+"  "
+msgstr ""
+"\n"
+"  You need to <a href=\"%(login_url)s\">log in</a> or <a href="
+"\"%(signup_url)s\">sign up</a> to use this function.\n"
+"  "
+
+#: .\colibri\templates\wiki\includes\anonymous_blocked.html.py:11
+msgid "You need to log in og sign up to use this function."
+msgstr "برای استفاده از این تابع می بایست با حساب کاربری خود وارد سایت شوید."
+
+#: .\colibri\templates\wiki\includes\article_menu.html.py:26
+msgid "Changes"
+msgstr "تغییرات"
+
+#: .\colibri\templates\wiki\includes\article_menu.html.py:41
+msgid "View Source"
+msgstr "نمایش مبدأ"
+
+#: .\colibri\templates\wiki\includes\article_menu.html.py:49
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:49
+msgid "View"
+msgstr "نمایش"
+
+#: .\colibri\templates\wiki\includes\breadcrumbs.html.py:16
+#: .\colibri\templates\wiki\includes\breadcrumbs.html.py:42
+msgid "Sub-articles for"
+msgstr "مقالات برای"
+
+#: .\colibri\templates\wiki\includes\breadcrumbs.html.py:28
+msgid "No sub-articles"
+msgstr "هیچ مقاله زیر"
+
+#: .\colibri\templates\wiki\includes\breadcrumbs.html.py:31
+msgid "...and more"
+msgstr "و بیشتر؟"
+
+#: .\colibri\templates\wiki\includes\breadcrumbs.html.py:35
+msgid "Browse articles in this level"
+msgstr "مرور مقالات در این سطح"
+
+#: .\colibri\templates\wiki\includes\breadcrumbs.html.py:51
+msgid "New article next to"
+msgstr "جزء جدید نزدیک به"
+
+#: .\colibri\templates\wiki\includes\breadcrumbs.html.py:56
+msgid "New article below"
+msgstr "جزء جدید زیر"
+
+#: .\colibri\templates\wiki\includes\revision_info.html.py:10
+msgid "by"
+msgstr "بوسیله"
+
+#: .\colibri\templates\wiki\includes\revision_info.html.py:10
+msgid "anonymous (IP logged)"
+msgstr "IP نا شناس"
+
+#: .\colibri\templates\wiki\includes\revision_info.html.py:15
+msgid "deleted"
+msgstr "حذف گردید"
+
+#: .\colibri\templates\wiki\includes\revision_info.html.py:18
+msgid "restored"
+msgstr "ترمیم"
+
+#: .\colibri\templates\wiki\includes\revision_info.html.py:24
+msgid "unlocked"
+msgstr "قفل نشده"
+
+#: .\messages\admin.py:19 .\messages\forms.py:20 .\messages\models.py:52
+msgid "Recipient"
+msgstr "گیرنده"
+
+#: .\messages\admin.py:21
+msgid "group"
+msgstr "گروه"
+
+#: .\messages\admin.py:22
+msgid "Creates the message optionally for all users or a group of users."
+msgstr "پیغامی برای یک کاربری یا گروهی از کاربران ارسال کنید."
+
+#: .\messages\admin.py:29
+msgid "All users"
+msgstr "همه کاربران"
+
+#: .\messages\admin.py:44 .\messages\models.py:88
+msgid "Message"
+msgstr "پیغام"
+
+#: .\messages\admin.py:51
+msgid "Date/time"
+msgstr "زمان تاریخ "
+
+#: .\messages\fields.py:53
+#, python-format
+msgid "The following usernames are incorrect: %(users)s"
+msgstr "نام های کاربری زیر نادرست می باشند:٪ (مخصوص کاربران)"
+
+#: .\messages\forms.py:21 .\messages\models.py:49
+#: .\messages\templates\messages\trash.html.py:11
+msgid "Subject"
+msgstr "موضوع"
+
+#: .\messages\forms.py:23 .\messages\models.py:50
+msgid "Body"
+msgstr "بدنه"
+
+#: .\messages\management.py:9
+msgid "Message Received"
+msgstr "پیام  دریافت شد"
+
+#: .\messages\management.py:9
+msgid "you have received a message"
+msgstr "یک پیام  دریافت کرده اید"
+
+#: .\messages\management.py:10
+msgid "Message Sent"
+msgstr "پیام های ارسال شده"
+
+#: .\messages\management.py:10
+msgid "you have sent a message"
+msgstr "پیام شما فرستاده شد"
+
+#: .\messages\management.py:11
+msgid "Message Replied"
+msgstr "پیام پاسخ داده شد "
+
+#: .\messages\management.py:11
+msgid "you have replied to a message"
+msgstr "پاسخ پیام را ارسال کردید"
+
+#: .\messages\management.py:12
+msgid "Reply Received"
+msgstr "پاسخ دریافت شد"
+
+#: .\messages\management.py:12
+msgid "you have received a reply to a message"
+msgstr "پاسخ پیام دریافت شد"
+
+#: .\messages\management.py:13
+msgid "Message Deleted"
+msgstr "پیام حذف شده"
+
+#: .\messages\management.py:13
+msgid "you have deleted a message"
+msgstr "شما یک پیام را حذف"
+
+#: .\messages\management.py:14
+msgid "Message Recovered"
+msgstr "پیام بازیافت"
+
+#: .\messages\management.py:14
+msgid "you have undeleted a message"
+msgstr "شما لغو یک پیام"
+
+#: .\messages\models.py:51 .\messages\templates\messages\trash.html.py:11
+msgid "Sender"
+msgstr "فرستنده"
+
+#: .\messages\models.py:53
+msgid "Parent message"
+msgstr "پیام اصلی"
+
+#: .\messages\models.py:54
+msgid "sent at"
+msgstr "ارسال شده در"
+
+#: .\messages\models.py:55
+msgid "read at"
+msgstr "خوانده شد در"
+
+#: .\messages\models.py:56
+msgid "replied at"
+msgstr "پاسخ داده شد در"
+
+#: .\messages\models.py:57
+msgid "Sender deleted at"
+msgstr "فرستنده  حذف کرد در"
+
+#: .\messages\models.py:58
+msgid "Recipient deleted at"
+msgstr "گیرنده حذف کرد در"
+
+#: .\messages\models.py:89
+msgid "Messages"
+msgstr "پیام ها"
+
+#: .\messages\utils.py:27
+#, python-format
+msgid "New Message: %(subject)s"
+msgstr "پیام جدید: %(subject)s"
+
+#: .\messages\views.py:112 .\messages\views.py:151
+msgid "Message successfully sent."
+msgstr "پیام با موفقیت فرستاده شده است."
+
+#: .\messages\views.py:157
+#, python-format
+msgid ""
+"%(sender)s wrote:\n"
+"%(body)s"
+msgstr ""
+"%(sender)s نوشت:\n"
+"%(body)s"
+
+#: .\messages\views.py:161
+#, python-format
+msgid "Re: %(subject)s"
+msgstr "Re: %(subject)s"
+
+#: .\messages\views.py:197
+msgid "Message successfully deleted."
+msgstr "پیام با موفقیت حذف شد."
+
+#: .\messages\views.py:224
+msgid "Message successfully recovered."
+msgstr "پیام با موفقیت بازیافت شد."
+
+#: .\messages\templates\messages\base.html.py:9
+#: .\messages\templates\messages\outbox.html.py:9
+msgid "Sent Messages"
+msgstr "ارسال پیام"
+
+#: .\messages\templates\messages\base.html.py:10
+#: .\messages\templates\messages\compose.html.py:15
+#: .\messages\templates\messages\compose_to.html.py:12
+msgid "New Message"
+msgstr "پیام جدید"
+
+#: .\messages\templates\messages\base.html.py:11
+msgid "Trash"
+msgstr "سطل زباله"
+
+#: .\messages\templates\messages\compose.html.py:27
+#: .\messages\templates\messages\compose_to.html.py:22
+msgid "Send"
+msgstr "ارسال"
+
+#: .\messages\templates\messages\inbox.html.py:39
+#: .\messages\templates\messages\outbox.html.py:35
+#: .\messages\templates\messages\trash.html.py:29
+msgid "No messages."
+msgstr "بدون پیام."
+
+#: .\messages\templates\messages\new_message.html.py:1
+#, python-format
+msgid ""
+"Hello %(recipient)s,\n"
+"\n"
+"you received a private message from %(sender)s with\n"
+"the following contents:"
+msgstr ""
+"با سلام %(recipient)s,\n"
+"\n"
+"شما یک پیام خصوصی دریافت کردید از %(sender)s with\n"
+"the following contents:"
+
+#: .\messages\templates\messages\new_message.html.py:9
+#, python-format
+msgid "Sent from %(site_url)s"
+msgstr "فرستاده شده از٪ (SITE_URL)"
+
+#: .\messages\templates\messages\new_message.html.py:11
+#: .\messages\templates\messages\view.html.py:35
+msgid "Reply"
+msgstr "پاسخ"
+
+#: .\messages\templates\messages\trash.html.py:8
+msgid "Deleted Messages"
+msgstr "حذف پیام"
+
+#: .\messages\templates\messages\trash.html.py:11
+msgid "Date"
+msgstr "تاریخ"
+
+#: .\messages\templates\messages\trash.html.py:11
+msgid "Action"
+msgstr "فعالیت:"
+
+#: .\messages\templates\messages\trash.html.py:21
+msgid "DATETIME_FORMAT"
+msgstr "DATETIME_FORMAT"
+
+#: .\messages\templates\messages\trash.html.py:22
+msgid "undelete"
+msgstr "بازگردانی"
+
+#: .\messages\templates\messages\trash.html.py:32
+msgid ""
+"Deleted Messages are removed from the trash at unregular intervals, don't "
+"rely on this feature for long-time storage."
+msgstr ""
+"پیام های حذف شده در فواصل نا معین از سطل زباله حذف میشوند، بر این ویژگی برای "
+"ذخیره سازی طولانی مدت اعتماد نکنید."
+
+#: .\messages\templates\notification\messages_deleted\full.txt.py:1
+#, python-format
+msgid "You have deleted the message '%(message)s'."
+msgstr "پیام حذف شد '%(message)s'."
+
+#: .\messages\templates\notification\messages_deleted\notice.html.py:1
+#, python-format
+msgid ""
+"You have deleted the message <a href=\"%(message_url)s\">%(message)s</a>."
+msgstr "شما پیام را حذف کردید <a href=\"%(message_url)s\">%(message)s</a>."
+
+#: .\messages\templates\notification\messages_received\full.txt.py:1
+#, python-format
+msgid ""
+"%(message_sender)s has sent you a message:\n"
+"\n"
+"%(message)s\n"
+"\n"
+"%(message_body)s\n"
+"\n"
+"http://%(current_site)s%(message_url)s"
+msgstr ""
+"%(message_sender)s has sent you a message:\n"
+"\n"
+"%(message)s\n"
+"\n"
+"%(message_body)s\n"
+"\n"
+"http://%(current_site)s%(message_url)s"
+
+#: .\messages\templates\notification\messages_received\notice.html.py:2
+#, python-format
+msgid ""
+"You have received the message <a href=\"%(message_url)s\">%(message)s</a> "
+"from %(message_sender)s."
+msgstr ""
+"پیام دریافت کردید <a href=\"%(message_url)s\">%(message)s</a> from "
+"%(message_sender)s."
+
+#: .\messages\templates\notification\messages_received\short.txt.py:1
+#: .\messages\templates\notification\messages_reply_received\short.txt.py:1
+#, python-format
+msgid "%(notice)s by %(message_sender)s"
+msgstr "%(notice)s by %(message_sender)s"
+
+#: .\messages\templates\notification\messages_recovered\full.txt.py:1
+#, python-format
+msgid "You have recovered the message '%(message)s'."
+msgstr "You have recovered the message '%(message)s'."
+
+#: .\messages\templates\notification\messages_recovered\notice.html.py:1
+#, python-format
+msgid ""
+"You have recovered the message <a href=\"%(message_url)s\">%(message)s</a>."
+msgstr "پیام شما بازیابی شد <a href=\"%(message_url)s\">%(message)s</a>."
+
+#: .\messages\templates\notification\messages_replied\full.txt.py:1
+#, python-format
+msgid ""
+"You have replied to '%(message_parent_msg)s' from %(message_recipient)s."
+msgstr "شما پاسخ دادید به '%(message_parent_msg)s' from %(message_recipient)s."
+
+#: .\messages\templates\notification\messages_replied\notice.html.py:2
+#, python-format
+msgid ""
+"You have replied to <a href=\"%(message_url)s\">%(message_parent_msg)s</a> "
+"from %(message_recipient)s."
+msgstr ""
+"شما پاسخ دادید به <a href=\"%(message_url)s\">%(message_parent_msg)s</a> "
+"from %(message_recipient)s."
+
+#: .\messages\templates\notification\messages_reply_received\full.txt.py:1
+#, python-format
+msgid ""
+"%(message_sender)s replied to '%(message_parent_msg)s':\n"
+"\n"
+"%(message)s\n"
+"\n"
+"%(message_body)s\n"
+"\n"
+"http://%(current_site)s%(message_url)s"
+msgstr ""
+"%(message_sender)s replied to '%(message_parent_msg)s':\n"
+"\n"
+"%(message)s\n"
+"\n"
+"%(message_body)s\n"
+"\n"
+"http://%(current_site)s%(message_url)s"
+
+#: .\messages\templates\notification\messages_reply_received\notice.html.py:2
+#, python-format
+msgid "%(message_sender)s has sent you a reply to %(message_parent_msg)s."
+msgstr "%(message_sender)پیام شما را پاسخ داد %(message_parent_msg)ها."
+
+#: .\messages\templates\notification\messages_sent\full.txt.py:1
+#, python-format
+msgid "You have sent the message '%(message)s' to %(message_recipient)s."
+msgstr "پبام شما فرستاده شد '%(message)s' به %(message_recipient)s."
+
+#: .\messages\templates\notification\messages_sent\notice.html.py:2
+#, python-format
+msgid ""
+"You have sent the message <a href=\"%(message_url)s\">%(message)s</a> to "
+"%(message_recipient)s."
+msgstr ""
+"پیام شما فرستاده شد <a href=\"%(message_url)s\">%(message)s</a> به "
+"%(message_recipient)s."
+
+#: .\old\django-basic-apps\basic\blog\models.py:16
+#: .\old\django-basic-apps\basic\blog\models.py:39
+#: .\old\django-basic-apps\basic\flagging\models.py:10
+#: .\old\django-basic-apps\basic\people\models.py:14
+#: .\old\django-basic-apps\basic\places\models.py:12
+#: .\old\django-basic-apps\basic\places\models.py:76
+#: .\old\django-basic-apps\basic\profiles\models.py:58
+#: .\old\django-basic-apps\basic\profiles\models.py:72
+#: .\old\django-basic-apps\basic\profiles\models.py:112
+msgid "title"
+msgstr "عنوان"
+
+#: .\old\django-basic-apps\basic\blog\models.py:17
+#: .\old\django-basic-apps\basic\blog\models.py:40
+#: .\old\django-basic-apps\basic\bookmarks\models.py:9
+#: .\old\django-basic-apps\basic\people\models.py:15
+#: .\old\django-basic-apps\basic\people\models.py:40
+#: .\old\django-basic-apps\basic\places\models.py:13
+#: .\old\django-basic-apps\basic\places\models.py:32
+#: .\old\django-basic-apps\basic\places\models.py:77
+msgid "slug"
+msgstr "مثل حلزون حرکت کردن"
+
+#: .\old\django-basic-apps\basic\blog\models.py:20
+msgid "category"
+msgstr "دسته‌بندی"
+
+#: .\old\django-basic-apps\basic\blog\models.py:21
+msgid "categories"
+msgstr "دسته‌بندی‌ها:"
+
+#: .\old\django-basic-apps\basic\blog\models.py:36
+msgid "Draft"
+msgstr "پیش نویس"
+
+#: .\old\django-basic-apps\basic\blog\models.py:37
+msgid "Public"
+msgstr "به صورت عمومی"
+
+#: .\old\django-basic-apps\basic\blog\models.py:42
+msgid "body"
+msgstr "بدنه"
+
+#: .\old\django-basic-apps\basic\blog\models.py:43
+msgid "tease"
+msgstr "کسی را دست انداختن"
+
+#: .\old\django-basic-apps\basic\blog\models.py:43
+msgid "Concise text suggested. Does not appear in RSS feed."
+msgstr "متن مختصر پیشنهاد شده است. در خوراک RSS ظاهر نمی شود."
+
+#: .\old\django-basic-apps\basic\blog\models.py:44
+#: .\old\django-basic-apps\basic\places\models.py:84
+msgid "status"
+msgstr "وضعیت"
+
+#: .\old\django-basic-apps\basic\blog\models.py:45
+msgid "allow comments"
+msgstr "اجازه اظهار نظر"
+
+#: .\old\django-basic-apps\basic\blog\models.py:46
+msgid "publish"
+msgstr "منتشر کردن"
+
+#: .\old\django-basic-apps\basic\blog\models.py:47
+#: .\old\django-basic-apps\basic\bookmarks\models.py:13
+#: .\old\django-basic-apps\basic\flagging\models.py:30
+#: .\old\django-basic-apps\basic\messages\models.py:54
+msgid "created"
+msgstr "ساخته شده"
+
+#: .\old\django-basic-apps\basic\blog\models.py:48
+#: .\old\django-basic-apps\basic\bookmarks\models.py:14
+#: .\old\django-basic-apps\basic\flagging\models.py:31
+#: .\old\django-basic-apps\basic\messages\models.py:55
+msgid "modified"
+msgstr "اصلاح شده"
+
+#: .\old\django-basic-apps\basic\blog\models.py:54
+msgid "post"
+msgstr "ارسال شده"
+
+#: .\old\django-basic-apps\basic\blog\models.py:55
+msgid "posts"
+msgstr "نوشته‌ها"
+
+#: .\old\django-basic-apps\basic\blog\models.py:87
+#: .\old\django-basic-apps\basic\blog\models.py:88
+msgid "blog roll"
+msgstr "رول های وبلاگ"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\category_detail.html.py:5
+#: .\old\django-basic-apps\basic\blog\templates\blog\category_detail.html.py:11
+#: .\old\django-basic-apps\basic\blog\templates\blog\tag_detail.html.py:5
+#: .\old\django-basic-apps\basic\blog\templates\blog\tag_detail.html.py:11
+msgid "Posts for"
+msgstr "ارسال های"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\category_detail.html.py:19
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_archive_day.html.py:18
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_archive_month.html.py:18
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_list.html.py:18
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_search.html.py:30
+#: .\old\django-basic-apps\basic\blog\templates\blog\tag_detail.html.py:19
+msgid "View this post"
+msgstr "مشاهده این پست"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\category_list.html.py:5
+#: .\old\django-basic-apps\basic\blog\templates\blog\category_list.html.py:10
+msgid "Post categories"
+msgstr "ارسال دسته"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\category_list.html.py:17
+msgid "View posts in this category"
+msgstr "نمایش پست ها در این دسته"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_archive_day.html.py:5
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_archive_day.html.py:10
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_archive_month.html.py:5
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_archive_month.html.py:10
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_archive_year.html.py:5
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_archive_year.html.py:10
+msgid "Post archive for"
+msgstr "بایگانی برای"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_archive_year.html.py:17
+msgid "View items posted this month"
+msgstr "نمایش آیتم های ارسالی این ماه"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:14
+msgid "View previous post"
+msgstr "نمایش پست قبلی"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:17
+msgid "View next post"
+msgstr "نمایش پست بعدی"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:34
+msgid "Related tags"
+msgstr "برچسب های مرتبط"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:43
+msgid "Comments"
+msgstr "نظرات"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:48
+msgid "Permalink to"
+msgstr "پیوند همیشگی به"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:48
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:49
+#, python-format
+msgid "%(user_name)s's"
+msgstr "%(user_name)s ها"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:48
+msgid "comment"
+msgstr "توضیح"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:49
+#: .\old\django-basic-apps\basic\people\models.py:47
+msgid "website"
+msgstr "وب سایت:"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:49
+msgid "says"
+msgstr "می گوید:"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:52
+msgid "Posted at"
+msgstr "ارسال شده در"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:52
+msgid "on"
+msgstr "بر"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:62
+msgid "Comments are closed"
+msgstr "قابلیت ارسال نظر وجود ندارد"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:63
+msgid "Comments have been closed for this post"
+msgstr "نظر دهی  برای این پست به خاتمه رسیده است"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_list.html.py:5
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_list.html.py:10
+msgid "Post archive"
+msgstr "پست ها آرشیو"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_list.html.py:28
+msgid "View older posts"
+msgstr "مشاهده پست های قدیمی تر"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_list.html.py:28
+msgid "Older"
+msgstr "قدیمی تر"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_list.html.py:32
+msgid "View newer posts"
+msgstr "مشاهده پست های جدیدتر"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_list.html.py:32
+msgid "Newer"
+msgstr "پیام جدیدتر"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_search.html.py:5
+msgid "Post searchApp"
+msgstr "ارسال نرم افزار جستجو"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_search.html.py:33
+#, python-format
+msgid "comment%(pluralize)s"
+msgstr "نظر%(pluralize)s"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\tag_list.html.py:5
+#: .\old\django-basic-apps\basic\blog\templates\blog\tag_list.html.py:10
+msgid "Post tags"
+msgstr "ارسال برچسب ها"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\tag_list.html.py:17
+msgid "View posts tagged"
+msgstr "نمایش نوشته های برچسب زده"
+
+#: .\old\django-basic-apps\basic\bookmarks\models.py:10
+#: .\old\django-basic-apps\basic\places\models.py:81
+#: .\old\django-basic-apps\basic\profiles\models.py:73
+#: .\old\django-basic-apps\basic\profiles\models.py:113
+msgid "url"
+msgstr "URL"
+
+#: .\old\django-basic-apps\basic\bookmarks\models.py:11
+#: .\old\django-basic-apps\basic\flagging\models.py:12
+#: .\old\django-basic-apps\basic\places\models.py:83
+msgid "description"
+msgstr "شرح"
+
+#: .\old\django-basic-apps\basic\bookmarks\models.py:12
+msgid "extended"
+msgstr "تمدید شده"
+
+#: .\old\django-basic-apps\basic\bookmarks\models.py:18
+msgid "bookmark"
+msgstr "نشان"
+
+#: .\old\django-basic-apps\basic\bookmarks\models.py:19
+msgid "bookmarks"
+msgstr "نشان ها"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\approve.html.py:7
+#: .\old\django-basic-apps\basic\comments\templates\comments\approve.html.py:11
+msgid "Approve a comment"
+msgstr "تصویب نظر"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\approve.html.py:20
+msgid "Approve"
+msgstr "تأييد"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\approved.html.py:7
+#: .\old\django-basic-apps\basic\comments\templates\comments\approved.html.py:11
+msgid "Thanks for approving"
+msgstr "با تشکر برای تصویب"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\approved.html.py:16
+#: .\old\django-basic-apps\basic\comments\templates\comments\deleted.html.py:16
+#: .\old\django-basic-apps\basic\comments\templates\comments\flagged.html.py:16
+msgid ""
+"Thanks for taking the time to improve the quality of discussion on our site"
+msgstr "با تشکر برای گرفتن وقت به منظور بهبود کیفیت از بحث و گفتگو در سایت ما"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\delete.html.py:7
+#: .\old\django-basic-apps\basic\comments\templates\comments\delete.html.py:11
+msgid "Remove comment"
+msgstr "حذف نظر"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\edit.html.py:7
+#: .\old\django-basic-apps\basic\comments\templates\comments\edit.html.py:11
+msgid "Edit comment"
+msgstr "ویرایش نظر"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\edit.html.py:22
+msgid "Save"
+msgstr "ذخیره"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\flag.html.py:7
+#: .\old\django-basic-apps\basic\comments\templates\comments\flag.html.py:11
+msgid "Flag this comment"
+msgstr "پرچم این نظر"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\flag.html.py:20
+msgid "Flag"
+msgstr ""
+"علامت گذاری شد! هنگامی که افراد کافی اين نظر را علامت گذاری کنند، توسط سيستم "
+"حذف خواهد شد."
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\posted.html.py:7
+#: .\old\django-basic-apps\basic\comments\templates\comments\posted.html.py:11
+msgid "Thanks"
+msgstr "متشکریم!"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\posted.html.py:16
+msgid "Thank you for your comment"
+msgstr "با تشکر از شما برای نظر شما"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\preview.html.py:26
+msgid "or make changes"
+msgstr "و یا ایجاد تغییرات"
+
+#: .\old\django-basic-apps\basic\events\models.py:24
+msgid "event"
+msgstr "رویداد"
+
+#: .\old\django-basic-apps\basic\events\models.py:25
+msgid "events"
+msgstr "رویدادها"
+
+#: .\old\django-basic-apps\basic\events\models.py:40
+msgid "event time"
+msgstr "زمان وقوع"
+
+#: .\old\django-basic-apps\basic\events\models.py:41
+msgid "event times"
+msgstr "بار رویداد"
+
+#: .\old\django-basic-apps\basic\flagging\models.py:15
+msgid "flag type"
+msgstr "نوع پرچم"
+
+#: .\old\django-basic-apps\basic\flagging\models.py:16
+msgid "flag types"
+msgstr "انواع پرچم"
+
+#: .\old\django-basic-apps\basic\flagging\models.py:34
+msgid "flag"
+msgstr "پرچم"
+
+#: .\old\django-basic-apps\basic\flagging\models.py:35
+msgid "flags"
+msgstr "پرچم"
+
+#: .\old\django-basic-apps\basic\media\templates\inlines\media_photo.html.py:9
+#: .\old\django-basic-apps\basic\media\templates\inlines\media_photo.html.py:20
+msgid "View the full image"
+msgstr "نمایش تصویر کامل"
+
+#: .\old\django-basic-apps\basic\media\templates\inlines\media_photo.html.py:11
+#: .\old\django-basic-apps\basic\media\templates\inlines\media_photo.html.py:22
+msgid "By"
+msgstr "بوسیله"
+
+#: .\old\django-basic-apps\basic\messages\models.py:63
+msgid "message"
+msgstr "دیدگاه:"
+
+#: .\old\django-basic-apps\basic\messages\models.py:64
+msgid "messages"
+msgstr "پیام"
+
+#: .\old\django-basic-apps\basic\people\models.py:18
+msgid "person type"
+msgstr "نوع شخص"
+
+#: .\old\django-basic-apps\basic\people\models.py:19
+msgid "person types"
+msgstr "انواع فرد"
+
+#: .\old\django-basic-apps\basic\people\models.py:37
+msgid "first name"
+msgstr "نام"
+
+#: .\old\django-basic-apps\basic\people\models.py:38
+msgid "middle name"
+msgstr "نام پدر"
+
+#: .\old\django-basic-apps\basic\people\models.py:39
+msgid "last name"
+msgstr "نام خانوادگی"
+
+#: .\old\django-basic-apps\basic\people\models.py:42
+#: .\old\django-basic-apps\basic\profiles\models.py:18
+msgid "gender"
+msgstr "جنسیت "
+
+#: .\old\django-basic-apps\basic\people\models.py:43
+#: .\old\django-basic-apps\basic\profiles\models.py:19
+msgid "mugshot"
+msgstr "عکس قضائی"
+
+#: .\old\django-basic-apps\basic\people\models.py:44
+msgid "mugshot credit"
+msgstr "اعتبار mugshot"
+
+#: .\old\django-basic-apps\basic\people\models.py:45
+#: .\old\django-basic-apps\basic\profiles\models.py:20
+msgid "birth date"
+msgstr "تاریخ تولد"
+
+#: .\old\django-basic-apps\basic\people\models.py:50
+msgid "person"
+msgstr "شخص"
+
+#: .\old\django-basic-apps\basic\people\models.py:51
+msgid "people"
+msgstr "مردم "
+
+#: .\old\django-basic-apps\basic\people\models.py:75
+msgid "quote"
+msgstr "نقل قول"
+
+#: .\old\django-basic-apps\basic\people\models.py:76
+msgid "source"
+msgstr "منبع"
+
+#: .\old\django-basic-apps\basic\places\models.py:16
+msgid "place type"
+msgstr "نوع مکان"
+
+#: .\old\django-basic-apps\basic\places\models.py:17
+msgid "place types"
+msgstr "انواع محل"
+
+#: .\old\django-basic-apps\basic\places\models.py:30
+#: .\old\django-basic-apps\basic\places\models.py:35
+#: .\old\django-basic-apps\basic\profiles\models.py:23
+msgid "city"
+msgstr "شهر:"
+
+#: .\old\django-basic-apps\basic\places\models.py:31
+#: .\old\django-basic-apps\basic\profiles\models.py:24
+msgid "state"
+msgstr "دولت است"
+
+#: .\old\django-basic-apps\basic\places\models.py:36
+msgid "cities"
+msgstr "شهرستانها"
+
+#: .\old\django-basic-apps\basic\places\models.py:51
+msgid "latitude"
+msgstr "عرض جغرافیایی"
+
+#: .\old\django-basic-apps\basic\places\models.py:52
+msgid "longitude"
+msgstr "طول جغرافیایی"
+
+#: .\old\django-basic-apps\basic\places\models.py:53
+msgid "address"
+msgstr "نشانی:"
+
+#: .\old\django-basic-apps\basic\places\models.py:55
+#: .\old\django-basic-apps\basic\profiles\models.py:25
+msgid "zip"
+msgstr "کد پستی"
+
+#: .\old\django-basic-apps\basic\places\models.py:56
+#: .\old\django-basic-apps\basic\profiles\models.py:26
+msgid "country"
+msgstr "کشور:"
+
+#: .\old\django-basic-apps\basic\places\models.py:59
+msgid "point"
+msgstr "نقطه"
+
+#: .\old\django-basic-apps\basic\places\models.py:60
+msgid "points"
+msgstr "نقاط"
+
+#: .\old\django-basic-apps\basic\places\models.py:75
+msgid "Pre-name"
+msgstr "پیش نام"
+
+#: .\old\django-basic-apps\basic\places\models.py:78
+msgid "nickname"
+msgstr "نام مستعار"
+
+#: .\old\django-basic-apps\basic\places\models.py:79
+msgid "unit"
+msgstr "واحد"
+
+#: .\old\django-basic-apps\basic\places\models.py:80
+msgid "phone"
+msgstr "گوشي "
+
+#: .\old\django-basic-apps\basic\places\models.py:82
+msgid "email"
+msgstr "ایمیل:"
+
+#: .\old\django-basic-apps\basic\places\models.py:91
+msgid "place"
+msgstr "محل "
+
+#: .\old\django-basic-apps\basic\places\models.py:92
+msgid "places"
+msgstr "موقعيت ها و اماکن"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:21
+msgid "address1"
+msgstr "آدرس اولیه"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:22
+msgid "address2"
+msgstr "آدرس ثانویه"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:27
+msgid "mobile"
+msgstr "تلفن همرا"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:31
+msgid "user profile"
+msgstr "پروفایل کاربر"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:32
+msgid "user profiles"
+msgstr "پروفایل کاربر"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:59
+msgid "domain"
+msgstr "دامنه"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:62
+msgid "mobile provider"
+msgstr "ارائه دهنده خدمات تلفن همراه"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:63
+msgid "mobile providers"
+msgstr "ارائه دهندگان خدمات تلفن همراه"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:76
+msgid "service type"
+msgstr "نوع خدمات"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:77
+msgid "service types"
+msgstr "انواع خدمات"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:88
+msgid "Name or ID"
+msgstr "نام یا شناسه کاربری"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:93
+msgid "service"
+msgstr "سرویس"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:94
+msgid "services"
+msgstr "خدمات "
+
+#: .\old\django-basic-apps\basic\profiles\models.py:116
+msgid "link"
+msgstr "پیوند"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:117
+msgid "links"
+msgstr "لینک"
+
+#: .\old\django-basic-apps\basic\relationships\models.py:76
+msgid "relationship"
+msgstr "ارتباطات"
+
+#: .\old\django-basic-apps\basic\relationships\models.py:77
+msgid "relationships"
+msgstr "ارتباطات"
+
+#: .\organizations\forms.py:35
+msgid "Only the organization owner can change ownerhip"
+msgstr "فقط صاحب سازمان می تواند مالکیت را تغییر دهد."
+
+#: .\organizations\forms.py:49
+msgid "The organization owner must be an admin"
+msgstr "صاحب سازمان باید مدیر شبکه باشد"
+
+#: .\organizations\forms.py:76
+msgid "This email address has been used multiple times."
+msgstr "این پست الکترونیکی چندین بار استفاده شده است."
+
+#: .\organizations\forms.py:89
+msgid "There is already an organization member with this email address!"
+msgstr "در حال حاض یک حساب کاربری با این پست الکترونیکی ر ثبت شده است!"
+
+#: .\organizations\forms.py:99
+msgid "The email address for the account owner"
+msgstr "پست الکترونیکی صاحب حساب"
+
+#: .\organizations\forms.py:132 .\organizations\models.py:33
+msgid "The name of the organization"
+msgstr "نام سازمان"
+
+#: .\organizations\forms.py:134 .\organizations\models.py:35
+msgid "The name in all lowercase, suitable for URL identification"
+msgstr "برای شناسایی URL تمامی حروف انگلیسی با کلمات کوچک نوشته شوند"
+
+#: .\organizations\mixins.py:69
+msgid "Wrong organization"
+msgstr " نام سازمان اشتباه است"
+
+#: .\organizations\mixins.py:84
+msgid "Sorry, admins only"
+msgstr " با عرض پوزش، فقط مدیر"
+
+#: .\organizations\mixins.py:99
+msgid "You are not the organization owner"
+msgstr "شما صاحب سازمان نیستید"
+
+#: .\organizations\models.py:46
+msgid "organization"
+msgstr "سازمان"
+
+#: .\organizations\models.py:47
+msgid "organizations"
+msgstr "سازمان"
+
+#: .\organizations\models.py:99
+msgid "organization user"
+msgstr "کاربر سازمان"
+
+#: .\organizations\models.py:100
+msgid "organization users"
+msgstr "کاربران سازمان"
+
+#: .\organizations\models.py:115
+msgid ""
+"Cannot delete organization owner before organization or transferring "
+"ownership."
+msgstr ""
+"برای حذف حساب کاربری صاحب سازمان، میبایست ابتدا مالکیت آن را انتقال دهید."
+
+#: .\organizations\models.py:142
+msgid "organization owner"
+msgstr "صاحب سازمان"
+
+#: .\organizations\models.py:143
+msgid "organization owners"
+msgstr "صاحبان سازمان"
+
+#: .\organizations\views.py:107
+msgid "Already active"
+msgstr "در حال حاضر فعال است"
+
+#: .\organizations\backends\defaults.py:41
+msgid "You must define a form_class"
+msgstr "شما باید یک form_class تعریف کنید"
+
+#: .\organizations\backends\defaults.py:60
+#: .\organizations\backends\defaults.py:62
+msgid "Your URL may have expired."
+msgstr "URL شما ممکن است منقضی شده باشد"
+
+#: .\organizations\templates\organizations\organization_confirm_delete.html.py:12
+msgid "Delete group"
+msgstr "حذف گروه"
+
+#: .\organizations\templates\organizations\organization_detail.html.py:13
+#: .\organizations\templates\organizations\organization_form.html.py:12
+msgid "Edit group"
+msgstr "ویرایش گروه"
+
+#: .\src\django-haystack\haystack\admin.py:123
+#, python-format
+msgid "0 of %(count)d selected"
+msgid_plural "of %(count)d selected"
+msgstr[0] "0 از %(count)d انتخاب شده است"
+
+#: .\src\django-haystack\haystack\admin.py:125
+#, python-format
+msgid "%(total_count)s selected"
+msgid_plural "All %(total_count)s selected"
+msgstr[0] "٪ (TOTAL_COUNT) انتخاب"
+msgstr[1] "٪ (TOTAL_COUNT) انتخاب"
+
+#: .\src\django-haystack\haystack\forms.py:90
+msgid "Search In"
+msgstr "جستجو"
+
+#: .\src\django-haystack\haystack\panels.py:24
+msgid "Haystack"
+msgstr "کومه علف خشک"
+
+#: .\src\django-haystack\haystack\panels.py:48
+msgid "Search Queries"
+msgstr "پرس و جو جستجو"
+
+#: .\src\django-haystack\haystack\templates\panels\haystack.html.py:5
+msgid "Query"
+msgstr "پرس و جو"
+
+#: .\src\django-haystack\haystack\templates\panels\haystack.html.py:6
+msgid "Backend Alias"
+msgstr "نام مستعار باطن"
+
+#: .\src\django-haystack\haystack\templates\panels\haystack.html.py:7
+msgid "Timeline"
+msgstr "مهلت"
+
+#: .\src\django-haystack\haystack\templates\panels\haystack.html.py:8
+msgid "Time"
+msgstr "زمان"
+
+#: .\src\django-haystack\haystack\templates\panels\haystack.html.py:9
+msgid "Kwargs"
+msgstr "Kwargs"

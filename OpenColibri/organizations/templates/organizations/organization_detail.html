@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% load org_tags i18n %}
+{% block css %}
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-responsive.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-image-gallery.min.css">
+{% endblock %}
+{% block content %}
+<div id="edit_profile" class="wrapper-content">
+    <div class="profile-form" style="width:400px;margin-bottom:300px;">
+        <div class="profile-form-header">
+            {% trans "Edit group" %} {{ organization }}
+        </div>
+        <div class="profile-form-body" style="min-height:240px">
+            <ul class="organizationedit">
+                <li><a style='color:black' href="{% url " organization_edit" organization.pk %}">Edit</a></li>
+                <li><a style='color:black' href="{% url " organization_delete" organization.pk %}">Delete</a></li>
+                <li><a style='color:black' href="{% url " organization_user_add" organization.pk %}">Add a member</a>
+                </li>
+            </ul>
+
+            <a href="/profile/{{ user.id }}/#tabs2">
+                <div style="float:left" class='button orangish'>Return</div>
+            </a>
+            {% comment %}{% organization_users organization %} {% endcomment %}
+        </div>
+    </div>
+    {% endblock %}
+

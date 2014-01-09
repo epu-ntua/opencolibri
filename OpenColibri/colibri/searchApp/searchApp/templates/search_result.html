@@ -1,0 +1,15 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title> Search </title>
+</head>
+<body>
+<p> You searched for "{{ query }}"; the results are listed below.</p>
+<ul>
+    {% for page in results %}
+    <li><a href="{{ page.result }}">{{ page.title }}</a></li>
+    {% endfor %}
+</ul>
+</body>
+</html>

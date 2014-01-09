@@ -1,0 +1,66 @@
+{% extends "account/base.html" %}
+
+{% load url from future %}
+{% load i18n %}
+
+{% block head_title %}{% trans "Register" %}{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-responsive.min.css">
+{% endblock %}
+{% block scripts %}
+<script type="text/javascript">
+    $(document).ready(function () {
+        if ($('.errorlist').length != 0) {
+            $('#emailaccount').show();
+            $('#getstarted').hide();
+        }
+    });
+</script>
+{% endblock %}
+{% block content %}
+
+{% if user.is_authenticated %}
+{% include "account/snippets/already_logged_in.html" %}
+{% else %}
+<div id="login_page" class="wrapper-content">
+    <div class="auth-form">
+        <div class="auth-form-header">
+            {% trans "Register" %}
+        </div>
+        <div class="auth-form-body">
+            {% if socialaccount.providers %}
+            <div class="socialaccount_ballot">
+                <ul class="socialaccount_providers">
+                    {% include "socialaccount/snippets/provider_list.html" %}
+                </ul>
+                <div class="login-or"></div>
+            </div>
+            {% include "socialaccount/snippets/login_extra.html" %}
+
+            {% endif %}
+            <div class="fileuri_separator">OR</div>
+            <div id="getstarted" onclick="$('#emailaccount').show();$('#getstarted').hide();"
+                 style="text-align:center;color:#2183C2;cursor:pointer">Get started with your email address
+            </div>
+            <div style="display:none" id="emailaccount">
+                <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{%
+                    endblocktrans %}</p>
+
+                <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    {% if redirect_field_value %}
+                    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+                    {% endif %}
+                    <button class="btn btn-large" type="submit">{% trans "Sign Up" %} &raquo;</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endif %}
+{% endblock %}
+
+

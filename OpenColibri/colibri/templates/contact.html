@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}About Us{% endblock %}
+{% block content %}
+{% load i18n %}
+{% load url from future %}
+
+<div id="about_page" class="wrapper-content">
+    <div class="clmn-12 center">
+
+        <div id="contact_container">
+            <div id="about_title">
+                {%trans "Contact" %}
+            </div>
+            <div id="about_maintext">
+                <p style="margin-top:40px">
+
+                <div style="text-align:left">
+                    <p><b>National Technical University of Athens,</b></p>
+
+                    <p style="margin-bottom:5px"><b>School of Electrical and Computer Engineering, Decision Support
+                        Systems Lab</b></p>
+
+                    <p><span"><span><b>Telephone</b></span>: 30 210 772 3583</span></p>
+
+                    <p>
+                        <span><b>Email:&nbsp;</b></span><a style="color:white" href="mailto:colibri@epu.ntua.gr">colibri@epu.ntua.gr</a>
+                    </p>
+
+                    <p><span><b>Website:&nbsp;</b></span><a target="_blank" style="color:white"
+                                                            href="http://www.epu.ntua.gr">http://www.epu.ntua.gr</a></p>
+
+                    <p><span><b>Address:&nbsp;</b></span><span>9, Iroon Polytechniou str.</span>
+                        <span>Zografou, Athens ,&nbsp;GREECE</span> <span>15780</span></p></div>
+            </div>
+        </div>
+    </div>
+</div><!-- END of wrapper-content -->
+{% endblock %}

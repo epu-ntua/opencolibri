@@ -1,0 +1,620 @@
+{% extends "base.html" %}
+{% block title %}Dataset{% endblock %}
+{% load url from future %}
+{% load i18n comments fluent_comments_tags %}
+{% load humanize %}
+{% load voting_tags %}
+{% block css %}
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap.min.css">
+{% endblock %}
+{% block scripts %}
+{% endblock %}
+{% block content %}
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.selector').each(function (i, obj) {
+            var id = $(this).attr('id');
+            var selector_html = '' +
+                    '<div class="menu-select ' + id + '" id="' + id + '">' +
+                    '	<div class="value"></div>' +
+                    '	<div class="options">';
+            $(this).find('option').each(function () {
+                selector_html += '<a href="#" class="option" data-id="' + $(this).val() + '">' + $(this).text() + '</a>';
+            });
+            selector_html += '	</div>' +
+                    '</div>';
+            $(this).after(selector_html).remove();
+            //hover
+            $('#' + id).hover(function () {
+                $(this).addClass('hover');
+            }, function () {
+                $(this).removeClass('hover');
+            });
+            //button actions
+            $('#' + id + ' a').click(function () {
+                $(this).parent().parent().find('.value').text($(this).text()).attr('data-id', $(this).attr('data-id')).parent().removeClass('hover');
+                return false;
+            });
+            //default
+            $('#' + id + ' a:first').trigger('click');
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(function () {
+        $(".bigdate").html(function (i, text) {
+            return text.replace(/[a-zàâîïôèéêëèùûü]+/i, function (match) {
+                return '<span class="datebold">' + match + '</span>';
+            });
+        });
+    });
+
+    $(document).ready(function () {
+        $('#tab-container').easytabs();
+    });
+
+</script>
+
+
+</head>
+
+<body>
+<div class="wrapper top">
+    <div class="clmn-12 center">
+        <div class="float-left logo">
+            <img src="imgs/colibri_logo.jpg" width="103" height="153"/>
+        </div>
+        <div class="clmn-8 float-right">
+
+            <div class="topTools">
+                <div class="float-right">
+                    <div class="language-select">
+                        <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+                            <select name="language" id="languages" class="selector">
+                                <option value="1">English</option>
+                                <option value="2">Greek</option>
+                                <option value="3">France</option>
+                                <option value="4">German</option>
+                                <option value="5">Italian</option>
+                                <option value="6">Spanish</option>
+                                <option value="7">Dutch</option>
+                                <option value="8">Bulgarian</option>
+                            </select>
+                        </form>
+                    </div>
+                    <ul id="TopNav">
+                        <li><a href="#">My Account</a>
+                            <ul class="noJS">
+                                <li><a href="#">Detailed Metadata</a></li>
+                                <li><a href="#">Genere</a></li>
+                                <li><a href="#">Indulgentia</a></li>
+                                <li><a href="#">Indulgentia</a></li>
+                            </ul>
+                        <li><a href="#">Sign Out</a></li>
+                        </li>
+                    </ul>
+                    <!-- end of TopNav -->
+                </div>
+                <!-- end of TopTools -->
+
+            </div>
+
+            <ul id="mainNav">
+                <li><a href="#" class="current">HOME</a></li>
+                <li><a href="#">DATA</a>
+                    <ul class="noJS">
+                        <li><a href="#">Detailed Metadata</a></li>
+                        <li><a href="#">Genere</a></li>
+                        <li><a href="#">Indulgentia</a></li>
+                        <li><a href="#">Indulgentia</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">DATA SOURCES</a>
+                    <ul class="noJS">
+                        <li><a href="#">Detailed Metadata</a></li>
+                        <li><a href="#">Genere</a></li>
+                        <li><a href="#">Indulgentia</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">REQUEST DATA</a></li>
+                <li><a href="#">WIKI</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <!-- End of main navigation-->
+
+        </div>
+        <!-- End of Right row-->
+    </div>
+</div>
+<!-- END of wrapper Top -->
+
+
+<div class="wrapper-content">
+<div class="clmn-12 center">
+<div class="breadcrumb green">Home | Datasets | <span class="current-page orange"> France Elections 2012</span></div>
+<div class="line-divider"></div>
+<div class="clear-all-30"></div>
+<div class="horizontal-line">
+<div class="clmn-7 clmn-space">
+
+<div class="clmn-5 dataset-headigs green">
+    <div class="dataset-owner"><h1>{{ dataset.uploader.username }}</h1></div>
+    <div class="dataset-title"><h3>{{ dataset.title }}</h3></div>
+    <div class="dataset-rating">
+        <div class="rating-4star"></div>
+        <div class="rating-number">10 votes</div>
+    </div>
+</div>
+
+<div class="clmn-2 float-right dataset-info">
+    <div class="dataset-extend orange "><a href="#">Extend</a></div>
+    <div class="dataset-official green"><strong>Official dataset</strong></div>
+    <div class="dataset-social green"><span class="share">Share:</span><a href="#"><img src="imgs/icon_facebook.jpg"
+                                                                                        width="19" height="20"/></a><a
+            href="#"><img src="imgs/icon_google.jpg" width="19" height="20"/></a><a href="#"><img
+            src="imgs/icon_tweeter.jpg" width="26" height="20"/></a></div>
+</div>
+
+<div class="clmn-5 dataset-description green">
+    {{ dataset.description }}
+</div>
+<!-- end of Description -->
+
+<div class="clmn-5 dataset-tabs">
+    <div id="tab-container" class='tab-container'>
+        <ul class='etabs'>
+            <li class='tab'><a href="#tabs1">Resources</a></li>
+            <li class='tab'><a href="#tabs2">Detailed Metadata</a></li>
+            <li class='tab'><a href="#tabs3">Alternative Versions</a></li>
+        </ul>
+        <div class='panel-container'>
+
+            <div id="tabs1">
+                <div class="tab-content-box">
+                    <div class="clmn-5 clmn-spaceLeft light">
+                        <h4 class="green">France Elections spreadsheet </h4>Spreadsheet with votes per region
+                    </div>
+                    <div class="clmn-2">
+                        <div class="tab-content-button"><a href="#">download</a></div>
+                        <div class="tab-content-button"><a href="#">view online</a></div>
+                    </div>
+                </div>
+                <div class="line-divider-green"></div>
+                <div class="tab-content-box">
+                    <div class="clmn-5 clmn-spaceLeft light">
+                        <h4 class="green">France Elections spreadsheet</h4>Spreadsheet with votes per region
+                    </div>
+                    <div class="clmn-2">
+                        <div class="tab-content-button"><a href="#">visit site</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tabs2">
+                <div class="tab-list green">
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft"><strong>Maintainer:</strong></div>
+                        <div class="clmn-3"><a href="#">{{ dataset.uploader.username }}</a></div>
+                    </div>
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft"><strong>Release Date:</strong></div>
+                        <div class="clmn-3">20 May 2012</div>
+                    </div>
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft"><strong>Last Update:</strong></div>
+                        <div class="clmn-3">25 May 2012</div>
+                    </div>
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft"><strong>Language:</strong></div>
+                        <div class="clmn-3">French | English | German</div>
+                    </div>
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft"><strong>Licence:</strong></div>
+                        <div class="clmn-3"><a href="#">{{ dataset.licence }}</a></div>
+                    </div>
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft"><strong>Geographical Granularity:</strong></div>
+                        <div class="clmn-3">Region</div>
+                    </div>
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft"><strong>Geographical Coverage:</strong></div>
+                        <div class="clmn-3">France</div>
+                    </div>
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft"><strong>Temporal Granularity:</strong></div>
+                        <div class="clmn-3 grey">Not available</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tabs3">
+                <div class="tab-list green">
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft"><strong>Maintainer:</strong></div>
+                        <div class="clmn-3"><a href="#">Dimitris Batis</a></div>
+                    </div>
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft"><strong>Release Date:</strong></div>
+                        <div class="clmn-3">20 May 2012</div>
+                    </div>
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft"><strong>Last Update:</strong></div>
+                        <div class="clmn-3">25 May 2012</div>
+                    </div>
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft"><strong>Language:</strong></div>
+                        <div class="clmn-3">French | English | German</div>
+                    </div>
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft"><strong>Licence:</strong></div>
+                        <div class="clmn-3"><a href="#">European PL</a></div>
+                    </div>
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft"><strong>Geographical Granularity:</strong></div>
+                        <div class="clmn-3">Region</div>
+                    </div>
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft"><strong>Geographical Coverage:</strong></div>
+                        <div class="clmn-3">France</div>
+                    </div>
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft"><strong>Temporal Granularity:</strong></div>
+                        <div class="clmn-3 grey">Not available</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of Tabs -->
+
+<div class="clear-all-30"></div>
+
+<div class="clmn-7 ">
+    <div class="category-title"><h1 class="orange ">Discussions</h1></div>
+
+    <div class="clear-all-30"></div>
+    <div class="line-divider"></div>
+    <div class="clear-all-20"></div>
+
+    <div class="feed-block">
+        <div class="clmn-1 clmn-space usersmall-Photo"></div>
+        <div class="clmn-6">
+            <div class="clmn-5 feed">
+                <div class="clear-all-10"></div>
+                <div class="userActivity grey"><strong><a href="#">Dimitris Batis</a></strong> has added a new dataset
+                </div>
+                <div class="feedTitle green"><a href="#">France Elections 2012</a></div>
+            </div>
+            <div class="clmn-1 bigdate float-right">Wed. 10/10/12</div>
+        </div>
+        <div class="clear-all-20"></div>
+        <div class="line-divider"></div>
+        <div class="clear-all-20"></div>
+    </div>
+
+    <div class="feed-block">
+        <div class="clmn-1 clmn-space usersmall-Photo"></div>
+        <div class="clmn-6">
+            <div class="clmn-5 feed">
+                <div class="clear-all-10"></div>
+                <div class="userActivity grey"><strong><a href="#">Dimitris Batis</a></strong> has added a new dataset
+                </div>
+                <div class="feedTitle green"><a href="#">France Elections 2012</a></div>
+            </div>
+            <div class="clmn-1 bigdate float-right">Wed. 10/10/12</div>
+        </div>
+        <div class="clear-all-20"></div>
+        <div class="line-divider"></div>
+        <div class="clear-all-20"></div>
+    </div>
+
+    <div class="feed-block">
+        <div class="clmn-1 clmn-space usersmall-Photo"></div>
+        <div class="clmn-6">
+            <div class="clmn-5 feed">
+                <div class="clear-all-10"></div>
+                <div class="userActivity grey"><strong><a href="#">Dimitris Batis</a></strong> has added a new dataset
+                </div>
+                <div class="feedTitle green"><a href="#">France Elections 2012</a></div>
+            </div>
+            <div class="clmn-1 bigdate float-right">Wed. 10/10/12</div>
+        </div>
+        <div class="clear-all-20"></div>
+        <div class="line-divider"></div>
+        <div class="clear-all-20"></div>
+    </div>
+
+    <div class="feed-block">
+        <div class="clmn-1 clmn-space usersmall-Photo"></div>
+        <div class="clmn-6">
+            <div class="clmn-5 feed">
+                <div class="clear-all-10"></div>
+                <div class="userActivity grey"><strong><a href="#">Dimitris Batis</a></strong> has added a new dataset
+                </div>
+                <div class="feedTitle green"><a href="#">France Elections 2012</a></div>
+            </div>
+            <div class="clmn-1 bigdate float-right">Wed. 10/10/12</div>
+        </div>
+        <div class="clear-all-20"></div>
+        <div class="line-divider"></div>
+        <div class="clear-all-20"></div>
+    </div>
+
+    <div class="feed-block">
+        <div class="clmn-1 clmn-space usersmall-Photo"></div>
+        <div class="clmn-6">
+            <div class="clmn-5 feed">
+                <div class="clear-all-10"></div>
+                <div class="userActivity grey"><strong><a href="#">Dimitris Batis</a></strong> has added a new dataset
+                </div>
+                <div class="feedTitle green"><a href="#">France Elections 2012</a></div>
+            </div>
+            <div class="clmn-1 bigdate float-right">Wed. 10/10/12</div>
+        </div>
+        <div class="clear-all-20"></div>
+        <div class="line-divider"></div>
+        <div class="clear-all-20"></div>
+    </div>
+
+    <div class="feed-block">
+        <div class="clmn-1 clmn-space usersmall-Photo"></div>
+        <div class="clmn-6">
+            <div class="clmn-5 feed">
+                <div class="clear-all-10"></div>
+                <div class="userActivity grey"><strong><a href="#">Dimitris Batis</a></strong> has added a new dataset
+                </div>
+                <div class="feedTitle green"><a href="#">France Elections 2012</a></div>
+            </div>
+            <div class="clmn-1 bigdate float-right">Wed. 10/10/12</div>
+        </div>
+        <div class="clear-all-20"></div>
+        <div class="line-divider"></div>
+        <div class="clear-all-20"></div>
+    </div>
+
+    <div class="feed-block">
+        <div class="clmn-1 clmn-space usersmall-Photo"></div>
+        <div class="clmn-6">
+            <div class="clmn-5 feed">
+                <div class="clear-all-10"></div>
+                <div class="userActivity grey"><strong><a href="#">Dimitris Batis</a></strong> has added a new dataset
+                </div>
+                <div class="feedTitle green"><a href="#">France Elections 2012</a></div>
+            </div>
+            <div class="clmn-1 bigdate float-right">Wed. 10/10/12</div>
+        </div>
+        <div class="clear-all-20"></div>
+        <div class="line-divider"></div>
+        <div class="clear-all-20"></div>
+    </div>
+    <!--end of feed blocks -->
+
+</div>
+<!-- end of discussion box -->
+
+</div>
+<!-- END of left row -->
+
+<div class="clmn-4 float-right">
+
+    <div class="category-title"><h1 class="orange ">Basic Information</h1></div>
+    <div class="clear-all-20"></div>
+
+    <div class="table-2 green"><!-- basic information -->
+
+        <div class="tab-content-box2">
+            <div class="clmn-1-half clmn-space"><strong>Maintainer:</strong></div>
+            <div class="clmn-2-half"><a href="#">Dimitris Batis</a></div>
+        </div>
+        <div class="tab-content-box2">
+            <div class="clmn-1-half clmn-space"><strong>Release Date:</strong></div>
+            <div class="clmn-2-half">20 May 2012</div>
+        </div>
+        <div class="tab-content-box2">
+            <div class="clmn-1-half clmn-space"><strong>Last Update:</strong></div>
+            <div class="clmn-2-half">25 May 2012</div>
+        </div>
+        <div class="tab-content-box2">
+            <div class="clmn-1-half clmn-space"><strong>Language:</strong></div>
+            <div class="clmn-2-half">French | English | German</div>
+        </div>
+        <div class="tab-content-box2">
+            <div class="clmn-1-half clmn-space"><strong>Licence:</strong></div>
+            <div class="clmn-2-half"><a href="#">European PL</a></div>
+        </div>
+    </div>
+    <!-- end of basic information -->
+
+    <div class="clear-all-30"></div>
+    <div class="line-divider"></div>
+    <div class="clear-all-30"></div>
+
+    <div class="category-title"><h1 class="orange ">Sources</h1></div>
+
+    <div class="clear-all-30"></div>
+    <div class="line-divider"></div>
+    <div class="clear-all-20"></div>
+
+    <div class="source-select clmn-3 green">
+        <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+            <select name="source" id="source" class="selector">
+                <option value="1">English</option>
+                <option value="2">Greek</option>
+                <option value="3">France</option>
+                <option value="4">German</option>
+                <option value="5">Italian</option>
+                <option value="6">Spanish</option>
+                <option value="7">Dutch</option>
+                <option value="8">Bulgarian</option>
+            </select>
+        </form>
+    </div>
+    <!-- end of source select -->
+
+    <div class="clear-all-20"></div>
+    <div class="line-divider"></div>
+    <div class="clear-all-20"></div>
+
+    <div class="taxonomy"><span class="date current"><a href="#">Date</a></span><span class="downloads"><a href="#">Downloads </a></span><span
+            class="rating"><a href="#">Rating</a></span></div>
+    <div class="clear-all-20"></div>
+
+    <ul class="sources green" id="tree">
+
+        <li class="source">
+            <div class="title-open"><a href="#">Root Dataset, Short Description</a></div>
+            <div class="details">
+                <div class="source-owner"><a href="#">by Spiros Mouzakitis</a></div>
+                <div class="date-small grey">25/05/2012</div>
+                <div class="rating-small-5star"></div>
+            </div>
+            <ul>
+                <li class="data">
+                    <div class="data-title"><a href="#">Birds</a></div>
+                    <div class="details">
+                        <div class="source-owner"><a href="#">by Spiros Mouzakitis</a></div>
+                        <div class="date-small grey">25/05/2012</div>
+                        <div class="rating-small-3star"></div>
+                    </div>
+                </li>
+                <li class="source">
+                    <div class="title-open"><a href="#">Animals</a></div>
+                    <div class="details">
+                        <div class="source-owner"><a href="#">by Spiros Mouzakitis</a></div>
+                        <div class="date-small grey">25/05/2012</div>
+                        <div class="rating-small-5star"></div>
+                    </div>
+                    <ul>
+                        <li class="data">
+                            <div class="data-title"><a href="#">Elephant</a></div>
+                            <div class="details">
+                                <div class="source-owner"><a href="#">by Spiros Mouzakitis</a></div>
+                                <div class="date-small grey">25/05/2012</div>
+                                <div class="rating-small-2star"></div>
+                            </div>
+                        </li>
+                        <li class="data">
+                            <div class="data-title"><a href="#">Mouse</a></div>
+                            <div class="details">
+                                <div class="source-owner"><a href="#">by Spiros Mouzakitis</a></div>
+                                <div class="date-small grey">25/05/2012</div>
+                                <div class="rating-small-0star"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="source">
+            <div class="title-closed"><a href="#">Root Dataset, Short Description </a></div>
+            <div class="details">
+                <div class="source-owner"><a href="#">by Spiros Mouzakitis</a></div>
+                <div class="date-small grey">25/05/2012</div>
+                <div class="rating-small-5star"></div>
+            </div>
+        </li>
+        <li class="source">
+            <div class="title-closed"><a href="#">Root Dataset, Short Description </a></div>
+            <div class="details">
+                <div class="source-owner"><a href="#">by Spiros Mouzakitis</a></div>
+                <div class="date-small grey">25/05/2012</div>
+                <div class="rating-small-5star"></div>
+            </div>
+        </li>
+    </ul>
+    <!-- end of source tree -->
+
+    <div class="clear-all-30"></div>
+    <div class="line-divider"></div>
+    <div class="clear-all-30"></div>
+
+    <div class="category-title"><h1 class="orange ">Related datasets</h1></div>
+    <div class="clear-all-30"></div>
+    <div class="line-divider"></div>
+    <div class="clear-all-20"></div>
+
+    <div class="relate-dataset clmn-3 green">
+        <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+            <select name="source" id="related-dataset" class="selector">
+                <option value="1">English</option>
+                <option value="2">Greek</option>
+                <option value="3">France</option>
+                <option value="4">German</option>
+                <option value="5">Italian</option>
+                <option value="6">Spanish</option>
+                <option value="7">Dutch</option>
+                <option value="8">Bulgarian</option>
+            </select>
+        </form>
+    </div>
+    <!-- end of related dataset -->
+
+    <div class="clear-all-20"></div>
+    <div class="line-divider"></div>
+    <div class="clear-all-20"></div>
+
+    <div class="taxonomy"><span class="date current"><a href="#">Date</a></span><span class="downloads"><a href="#">Downloads </a></span><span
+            class="rating"><a href="#">Rating</a></span></div>
+
+    <div class="feed-block">
+        <div class="clear-all-20"></div>
+        <div class="clmn-4 feed">
+            <div class="date grey">25/05/2012</div>
+            <div class="rating-small-5star float-right"></div>
+            <div class="clear-all-5"></div>
+            <div class="feedTitle green"><a href="#">France Elections 2012</a></div>
+        </div>
+        <div class="clear-all-20"></div>
+        <div class="line-divider"></div>
+    </div>
+
+    <div class="feed-block">
+        <div class="clear-all-20"></div>
+        <div class="clmn-4 feed">
+            <div class="date grey">25/05/2012</div>
+            <div class="rating-small-5star float-right"></div>
+            <div class="clear-all-5"></div>
+            <div class="feedTitle green"><a href="#">France Elections 2012</a></div>
+        </div>
+        <div class="clear-all-20"></div>
+        <div class="line-divider"></div>
+    </div>
+
+    <div class="feed-block">
+        <div class="clear-all-20"></div>
+        <div class="clmn-4 feed">
+            <div class="date grey">25/05/2012</div>
+            <div class="rating-small-5star float-right"></div>
+            <div class="clear-all-5"></div>
+            <div class="feedTitle green"><a href="#">France Elections 2012</a></div>
+        </div>
+        <div class="clear-all-20"></div>
+        <div class="line-divider"></div>
+    </div>
+    <!-- end of related dataset feeds -->
+
+</div>
+</div>
+</div>
+</div>
+<!-- END of wrapper-content -->
+
+<div class="wrapper footer green">
+    <div class="clmn-12 center-footer">
+        <div class="footer-logos">
+            <a href="#"><img src="imgs/logo-seventhframework.jpg" width="88" height="88" alt="seventh "/></a>
+            <a href="#"><img src="imgs/logo-eu.jpg" width="88" height="88" alt="eu"/></a>
+            <a href="#"><img src="imgs/logo-smallcolibri.jpg" width="88" height="88" alt="colibri"/></a>
+        </div>
+        colibri is a combination of CP & CSA project funded under the European Commission FP7 Programme.
+    </div>
+    <div class="footer-line"></div>
+    <div class="clmn-12 center-footer notes">
+        <div class="float-left">Copyright © 2012 <strong>colibri</strong> Project. All rights reserved.</div>
+        <div class="float-right">Please read our <a href="#">Terms Of Use</a></div>
+    </div>
+</div>
+<!-- END of wrapper-footer -->
+{% endblock %}

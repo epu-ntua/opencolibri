@@ -1,0 +1,115 @@
+<head>
+    <link href="/s/css/colibri.css" rel="stylesheet" type="text/css"/>
+    <link href="/s/css/theme.css" rel="stylesheet" type="text/css"/>
+    <link href="/s/css/reset.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/s/django_file_upload/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-image-gallery.min.css">
+    {% load jquery_validation i18n %}
+    {% include_validation %}
+    <script>
+        $(function () {
+            {#            uncomment
+                lines
+                below
+                if you want
+                ajax - validation #
+            }
+            {#            $('#group-form').validate('{% url group_name_validate %}', {type: 'ul', fields: ['name'], dom: $('#id_name'), event: 'keyup'});#
+            }
+            {#            $('#group-form').validate('{% url group_name_validate %}', {type: 'ul'});#
+            }
+            $.ajax({
+                type: "GET",
+                url: '/api/colibri/users/?format=json',
+                dataType: 'json',
+
+                success: function (json) {
+                    var userObjects = json.objects;
+                    var users = [];
+                    for (i in userObjects) {
+                        users[i] = {};
+                        users[i].name = userObjects[i].username;
+                        users[i].id = userObjects[i].id;
+                    }
+                    $(".users-input").tokenInput(users);
+                },
+
+                error: function (error, description) {
+                    console.log(error);
+                    console.log(description);
+                }
+            });
+            $('#create-group').click(function () {
+                var nameInput = $('#id_name');
+                if (nameInput.val().trim().length == 0) {
+                    var nameLabel = $("label[for='id_name']");
+                    nameInput.addClass('error');
+                    nameInput.val('Value is required');
+                    nameLabel.addClass('error');
+                    setTimeout(function () {
+                                nameInput.val('');
+                                nameInput.removeClass('error');
+                                nameLabel.removeClass('error');
+                            }, 1250
+                    );
+                } else {
+                    $.ajax({
+                        type: "POST",
+                        url: '/group/add',
+                        data: {
+                            name: nameInput.val(),
+                            members: $('#id_members').val(),
+                            admins: $('#id_admins').val()
+                        },
+
+                        success: function (http) {
+                            console.log(http)
+                            $("#create-success-message").show(500);
+                            setTimeout(function () {
+                                $.nmTop().close();
+                                $("#groups-all").change();
+                            }, 1250);
+                        },
+
+                        error: function (error, description, s) {
+                            if (error.status == '400') {
+                                var nameInput = $('#id_name');
+                                var nameVal = nameInput.val();
+                                var nameLabel = $("label[for='id_name']");
+                                nameInput.addClass('error');
+                                nameInput.val('Name ' + nameVal + ' already exists');
+                                nameLabel.addClass('error');
+                                setTimeout(function () {
+                                            nameInput.val('');
+                                            nameInput.removeClass('error');
+                                            nameLabel.removeClass('error');
+                                        }, 1250
+                                );
+                            }
+                            console.log(error)
+                            console.log(s);
+                            console.log(description);
+                        }
+                    })
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="add_new_group_page">
+    <div class="profile-form-header"> {% trans "Create a New Group" %}</div>
+    <div style="padding-left:50px;">
+        <br>
+        <br/>
+        {{ group_form.as_p }}
+        <br>
+
+        <div id="create-success-message" class="hidden colibrimsg">{% trans "You successfully created a new group!" %}
+        </div>
+        <br>
+        <input id='create-group' type="submit" class="button bigrounded orangish" value="{% trans " Create Group" %}"/>
+    </div>
+</div>
+</body>

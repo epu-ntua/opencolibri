@@ -1,0 +1,166 @@
+{% extends 'base.html' %}
+{% load upload_tags %}
+{% block title %}Add Dataset{% endblock %}
+{% block css %}
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="/s/css/third_party/django_file_upload/bootstrap.min.css">
+<link rel="stylesheet" href="/s/css/third_party/django_file_upload/style.css">
+<link rel="stylesheet" href="/s/css/third_party/django_file_upload/bootstrap-responsive.min.css">
+<link rel="stylesheet" href="/s/css/third_party/django_file_upload/bootstrap-image-gallery.min.css">
+<link rel="stylesheet" href="/s/css/third_party/django_file_upload/jquery.fileupload-ui.css">
+<link rel="stylesheet" type="text/css" href="/s/css/dataset.css"/>
+{% endblock %}
+{% block scripts %}
+<script type="text/javascript" src="/s/js/dataset.js"></script>
+<script type="text/javascript" src="/s/js/third_party/jquery.form.js"></script>
+<script type="text/javascript" src="/s/js/third_party/jquery.validate.js"></script>
+<script type="text/javascript" src="/s/js/third_party/bbq.js"></script>
+<script type="text/javascript" src="/s/js/third_party/jquery.form.wizard.js"></script>
+<script src="/s/js/third_party/django_file_upload/tmpl.min.js"></script>
+<script src="/s/js/third_party/django_file_upload/load-image.min.js"></script>
+<script src="/s/js/third_party/django_file_upload/canvas-to-blob.min.js"></script>
+<script src="/s/js/third_party/django_file_upload/bootstrap.min.js"></script>
+<script src="/s/js/third_party/django_file_upload/bootstrap-image-gallery.min.js"></script>
+<script src="/s/js/third_party/django_file_upload/jquery.iframe-transport.js"></script>
+<script src="/s/js/third_party/django_file_upload/jquery.fileupload.js"></script>
+<script src="/s/js/third_party/django_file_upload/jquery.fileupload-fp.js"></script>
+<script src="/s/js/third_party/django_file_upload/jquery.fileupload-ui.js"></script>
+<script src="/s/js/third_party/django_file_upload/locale.js"></script>
+<script src="/s/js/third_party/django_file_upload/main.js"></script>
+{% endblock %}
+{% block content %}
+<form id="dataset-wizard-form" action='/dataset/add'
+      class="bbq ui-formwizard ui-helper-reset ui-widget ui-widget-content ui-helper-reset ui-corner-all" method='POST'>
+    {% csrf_token %}
+    <div id="fieldWrapper">
+        <div class="step ui-formwizard-content ui-helper-reset ui-corner-all" id="first" style="display: block;">
+            <span class="float-right">Step 1 - Create a Dataset</span><br>
+            {{ form.title.label_tag }}*<br>
+            {{ form.title }}<br>
+            {{ form.description.label_tag }}*<br>
+            {{ form.description }}<br>
+            {{ form.country.label_tag }}<br>
+            {{ form.country }}<br>
+        </div>
+        <div id="finland" class="step ui-formwizard-content ui-helper-reset ui-corner-all" style="display: none;">
+            <span class="float-right">Step 2 - Dataset Details</span><br>
+            <label for="day_fi">Social Security Number</label><br>
+            <input class="input_field_25em ui-wizard-content ui-helper-reset ui-state-default" name="day" id="day_fi"
+                   value="DD" disabled="">
+            <input class="input_field_25em ui-wizard-content ui-helper-reset ui-state-default" name="month"
+                   id="month_fi" value="MM" disabled="">
+            <input class="input_field_3em ui-wizard-content ui-helper-reset ui-state-default" name="year" id="year_fi"
+                   value="YYYY" disabled=""> -
+            <input class="input_field_3em ui-wizard-content ui-helper-reset ui-state-default" name="lastFour"
+                   id="lastFour_fi" value="XXXX" disabled=""><br>
+            <label for="countryPrefix_fi">Phone number</label><br>
+            <input class="input_field_35em ui-wizard-content ui-helper-reset ui-state-default" name="countryPrefix"
+                   id="countryPrefix_fi" value="+358" disabled=""> -
+            <input class="input_field_3em ui-wizard-content ui-helper-reset ui-state-default" name="areaCode"
+                   id="areaCode_fi" disabled=""> -
+            <input class="input_field_12em ui-wizard-content ui-helper-reset ui-state-default" name="phoneNumber"
+                   id="phoneNumber_fi" disabled=""><br>
+        </div>
+        <div id="confirmation" class="step submit_step ui-formwizard-content ui-helper-reset ui-corner-all"
+             style="display: none;">
+            <span class="font_normal_07em_black">Last step - Username</span><br>
+            <label for="username">User name</label><br>
+            <input class="input_field_12em ui-wizard-content ui-helper-reset ui-state-default" name="username"
+                   id="username" disabled=""><br>
+            <label for="password">Password</label><br>
+            <input class="input_field_12em ui-wizard-content ui-helper-reset ui-state-default" name="password"
+                   id="password" type="password" disabled=""><br>
+            <label for="retypePassword">Retype password</label><br>
+            <input class="input_field_12em ui-wizard-content ui-helper-reset ui-state-default" name="retypePassword"
+                   id="retypePassword" type="password" disabled=""><br>
+        </div>
+        <div class="step ui-formwizard-content ui-helper-reset ui-corner-all" id="details" style="display: none;">
+            <span class="font_normal_07em_black">Hidden step</span><br>
+            <span>This step is not possible to see without using the show method</span>
+        </div>
+    </div>
+    <!--         <p>{{ form.country.label_tag }}: {{ form.country }}</p>
+            <p>{{ form.url.label_tag }}: {{ form.url }}</p>
+     -->
+    <div id="dataset-navigation">
+        <input class="navigation_button ui-wizard-content ui-formwizard-button ui-helper-reset ui-state-default ui-state-disabled"
+               id="back" value="Back" type="reset" disabled="">
+        <input class="navigation_button ui-wizard-content ui-formwizard-button ui-helper-reset ui-state-default ui-state-active"
+               id="next" value="Next" type="submit">
+    </div>
+</form>
+<div class="container">
+    <div class="page-header">
+        <h1>Django Jquery file upload demo</h1>
+    </div>
+    <form id="fileupload" method="post" action="." enctype="multipart/form-data">{% csrf_token %}
+        <div class="row fileupload-buttonbar">
+            <div class="span7">
+                <span class="btn btn-primary fileinput-button">
+                    <i class="icon-plus icon-white"></i>
+                    <span>Add files...</span>
+                    <input type="file" name="file" multiple>
+                </span>
+                <button type="submit" class="btn btn-success start">
+                    <i class="icon-upload icon-white"></i>
+                    <span>Start upload</span>
+                </button>
+                <button type="reset" class="btn btn-warning cancel">
+                    <i class="icon-ban-circle icon-white"></i>
+                    <span>Cancel upload</span>
+                </button>
+                <button type="button" class="btn btn-danger delete">
+                    <i class="icon-trash icon-white"></i>
+                    <span>Delete files</span>
+                </button>
+                <input type="checkbox" class="toggle">
+            </div>
+            <div class="span5 fileupload-progress fade">
+                <div class="progress progress-success progres-striped active">
+                    <div class="bar" style="width:0%"></div>
+                </div>
+                <div class="progress-extended">&nbsp;</div>
+            </div>
+        </div>
+        <div class="fileupload-loading"></div>
+        <table class="table table-striped">
+            <tbody class="files" data-toggle="modal-gallery" data-target="#modal-gallery"></tbody>
+        </table>
+    </form>
+    <div class="fileupload-content">
+        <table class="files"></table>
+        <div class="fileupload-progressbar"></div>
+    </div>
+</div>
+<!-- modal-gallery is the modal dialog used for the image gallery -->
+<div id="modal-gallery" class="modal modal-gallery hide fade" data-filter=":odd">
+    <div class="modal-header">
+        <a class="close" data-dismiss="modal">&times;</a>
+
+        <h3 class="modal-title"></h3>
+    </div>
+    <div class="modal-body">
+        <div class="modal-image"></div>
+    </div>
+    <div class="modal-footer">
+        <a class="btn modal-download" target="_blank">
+            <i class="icon-download"></i>
+            <span>Download</span>
+        </a>
+        <a class="btn btn-success modal-play modal-slideshow" data-slideshow="5000">
+            <i class="icon-play icon-white"></i>
+            <span>Slideshow</span>
+        </a>
+        <a class="btn btn-info modal-prev">
+            <i class="icon-arrow-left icon-white"></i>
+            <span>Previous</span>
+        </a>
+        <a class="btn btn-primary modal-next">
+            <span>Next</span>
+            <i class="icon-arrow-right icon-white"></i>
+        </a>
+    </div>
+</div>
+{% upload_js %}
+{% endblock %}

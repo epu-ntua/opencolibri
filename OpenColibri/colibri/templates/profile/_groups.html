@@ -1,0 +1,42 @@
+{% load i18n %}
+<div id="tabs2">
+    <div id="view_profile" class="wrapper-content">
+        <div class="profile-form">
+            <div class="profile-form-body" style="float:left;width:970px;min-height:600px;">
+
+                <div class="clmn-12 taxomony green">
+                    <span class="float-left"><strong>{% trans "Show me:" %}</strong></span>
+                    <ul>
+                        <form id="groups-form">{% csrf_token %}
+                            <li><input id='groups-all' name='groups' value='groups-all' type='radio' checked/><label
+                                    for='groups-all'>{% trans "All groups" %}</label></li>
+                            <li><input id='groups-admin' name='groups' value='groups-admin' type='radio'/><label
+                                    for='groups-admin'>{% trans "Groups I administrate" %}</label></li>
+                            <li><input id='groups-member' name='groups' value='groups-member' type='radio'/><label
+                                    for='groups-member'>{% trans "Groups I am a member of" %}</label></li>
+                        </form>
+                    </ul>
+                    <div class="button-1 orange float-right nyroModal" style="margin-right:50px;cursor:pointer"
+                         href="/group/add">{% trans "Create a new group" %}
+                    </div>
+                </div>
+
+                <div class='bounce hide' id='bounce'></div>
+                <div class="clmn-12" id='show-hide'>
+                    <table id="myTable" class="tablesorter" style="width:95%">
+                        <thead>
+                        <tr>
+                            <th>{% trans "Group Name" %}</th>
+                            <th>{% trans "Members" %}</th>
+                            <th>{% trans "Role" %}</th>
+                        </tr>
+                        </thead>
+                        <tbody id='table-active-groups-appendable'>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

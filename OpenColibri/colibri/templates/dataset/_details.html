@@ -1,0 +1,649 @@
+﻿{% extends "base.html" %}
+{% block title %}Dataset{% endblock %}
+{% load url from future %}
+{% load i18n comments fluent_comments_tags %}
+{% load l10n %}
+{% load humanize %}
+{% load voting_tags %}
+{% load ratings %}
+{% block css %}
+<link rel="stylesheet" href="/s/chosen/chosen.css"/>
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/s/fluent_comments/css/ajaxcomments.css"/>
+<link rel="stylesheet" type="text/css" href="/s/rating/jquery.rating.css"/>
+<link rel="stylesheet" type="text/css" href="/s/css/third_party/nyroModal_extend.css"/>
+{% endblock %}
+
+
+{% block scripts %}
+<script>
+    var increasePopularity = function (datasetID) {
+        $.ajax({
+            type: "POST",
+            url: '/dataset/' + datasetID + '/increase-popularity',
+            success: function (response) {
+                console.log(response);
+            }
+        });
+    }
+</script>
+<script src="/s/chosen/chosen.jquery.js"></script>
+<script src="/s/js/third_party/d3.min.js" type="text/javascript"></script>
+<script src="/s/js/third_party/d3.layout.min.js" type="text/javascript"></script>
+<script src="/s/js/third_party/jquery.easytabs.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $('#remove-application-button').on('click', function () {
+            $('#application-form-tbody').fadeOut();
+            $('#remove-application-button').hide();
+            $('#add-application-button').show();
+        });
+        $('#add-application-button').on('click', function () {
+            $('#application-form-tbody').fadeIn();
+            $('#add-application-button').hide();
+            $('#remove-application-button').show()
+        });
+        $('.chzn-select').chosen();
+        $('#id_type').on('change', function (e) {
+            if ($('#id_type').val() == 'PU') {
+                $('#publication-container').fadeIn();
+            } else {
+                $('#publication-container').fadeOut();
+            }
+        });
+        $('#tab-container').easytabs();
+        $(".star").rating({required: true, callback: function (value, link) {
+            $.ajax({
+                type: "POST",
+                url: '/rate-dataset/{{dataset.id}}/' + value + '/',
+                data: {
+                    name: value,
+                },
+
+                success: function (http) {
+                    $('#ratingDialog').nmCall();
+                    $(".rating-number").html("{% trans "
+                    Thank
+                    you
+                    for voting!" %}"
+                    )
+                },
+
+                error: function (error, description, s) {
+                    if (error.responseText == "You must be logged in to vote.") {
+                        $(".rating-number").html("You must be <a href='/accounts/login/?next=/dataset/{{dataset.id}}'>logged in</a> to vote.")
+                    }
+                    else {
+                        $(".rating-number").html("{% trans "
+                        You
+                        have
+                        already
+                        voted
+                        !" %}"
+                    )
+                    }
+                }
+            })
+        } });
+
+
+    });
+
+    function copyToClipboard(text) {
+        window.prompt("Copy to clipboard: Ctrl+C, Enter", text);
+    }
+    function checkApplicationForm() {
+        curText = $("#id_url").val();
+        if (curText.indexOf("http://www-958.ibm.com") >= 0) {
+            curText = curText.replace('<script type="text/javascript" src="', '');
+            curText = curText.replace('"></' + 'script>', '');
+            $("#id_url").val(curText);
+        }
+    }
+</script>
+<script type="text/javascript" src="/s/fluent_comments/js/ajaxcomments.js"></script>
+<script type="text/javascript" src="/s/rating/jquery.MetaData.js"></script>
+<script type="text/javascript" src="/s/rating/jquery.rating.js"></script>
+<script type="text/javascript" src="/s/js/third_party/jquery.nyroModal.custom.min.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        jQuery('.nyroModal').nyroModal();
+        jQuery('#ratingDialog').nyroModal();
+        jQuery('#viewRatingsDialog').nyroModal({
+            sizes: {
+                minH: 800,
+                minW: 250
+            }
+        });
+    });
+</script>
+<script type="text/javascript">var switchTo5x = false;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "6cebbdfd-aa9d-49b0-9003-9d6fb634cfe0", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+{% endblock %}
+{% block content %}
+
+<div id="dataset-details" class="wrapper-content">
+<div class="clmn-12 center">
+{% if user.is_authenticated %}
+{% if dataset_is_editable_by_user %}
+<div class="float-right notranslate">
+    <a href="/dataset/{{ dataset.id }}/delete">
+        <div class="button orange float-right">{% trans "Delete Dataset" %}</div>
+    </a>
+    <a href="/dataset/{{ dataset.id }}/edit">
+        <div class="button orangish float-right">{% trans "Edit Dataset" %}</div>
+    </a>
+</div>
+{% endif %}
+{% endif %}
+<div style="margin-top:0px" class="breadcrumbgreen notranslate"><a href="{%url 'index' %}"> {%trans "Home"%}</a> | <a
+        href="/dataset-search/?q="> {%trans "Datasets"%}</a> | <span class="current-page orange"> {{ dataset.title|truncatewords:5 }}</span>
+</div>
+<div class="line-divider"></div>
+<div class="clear-all-30"></div>
+<div class="horizontal-line">
+    <div class="clmn-7 clmn-space">
+        <div class="clmn-30 dataset-headigs green">
+            <span class="dataset-title"><h3>{{ dataset.title }}</h3></span>
+
+            <div class="dataset-owner notranslate">{% trans "Uploaded by" %} <a class="green"
+                                                                                href="/profile/{{dataset.uploader.id}}">{{
+                dataset.uploader.username }}</a></div>
+
+        </div>
+        {% if user.is_authenticated %}
+        <div style="border: 1px solid #DE4F15;" class="notranslate button orange float-right nyroModal"
+             href="{% url 'dataset_extend_modal' pk=dataset.id %}">{%trans "Extend" %}
+        </div>
+        {% else %}
+        <a style="border: 1px solid #DE4F15;color:#DE4F15" class="notranslate button orange float-right"
+           href="/accounts/login/?next=/dataset/{{dataset.id}}">{%trans "Extend" %}</a>
+        {% endif %}
+
+
+        <div style="clear:both" class="dataset-rating">
+            <div class="notranslate" style="display:none" id="ratingDialog"
+                 href="{% url 'dataset_rate_modal' pk=dataset.id %}">{%trans "Rate" %}
+            </div>
+            <input name="star1" type="radio" class="star" value="1" {% if dataset.totalRatingScore|floatformat:0 == "1"
+            %} checked="checked" {% endif %}/>
+            <input name="star1" type="radio" class="star" value="2" {% if dataset.totalRatingScore|floatformat:0 == "2"
+            %} checked="checked" {% endif %}/>
+            <input name="star1" type="radio" class="star" value="3" {% if dataset.totalRatingScore|floatformat:0 == "3"
+            %} checked="checked" {% endif %}/>
+            <input name="star1" type="radio" class="star" value="4" {% if dataset.totalRatingScore|floatformat:0 == "4"
+            %} checked="checked" {% endif %}/>
+            <input name="star1" type="radio" class="star" value="5" {% if dataset.totalRatingScore|floatformat:0 == "5"
+            %} checked="checked" {% endif %}/>
+            <div class="rating-number notranslate">{%if dataset.rating.votes == 0 %} {% trans "No rating yet" %} {% else
+                %} {% trans "Score" %} : {{dataset.totalRatingScore|floatformat:2}} / {% if user.is_authenticated
+                %}<span class="green" style="cursor:pointer;text-decoration:underline;color" id="viewRatingsDialog"
+                        href="{% url 'dataset_rate_view_modal' pk=dataset.id %}">{{dataset.rating.votes}} {% trans "votes" %}</span>{%
+                else %}{{dataset.rating.votes}} {% trans "votes" %}{% endif %} {% endif %}
+            </div>
+        </div>
+        <div class="clmn-5 dataset-description green">
+            {{ dataset.description }}
+        </div>
+        <!-- end of Description -->
+
+        <div class="clmn-5 dataset-tabs">
+            <div id="tab-container" class='tab-container'>
+                <ul class='etabs'>
+                    <li class='tab notranslate'><a href="#tabs1">{% trans "Resources" %}</a></li>
+                    <li class='tab notranslate'><a href="#tabs2">{% trans "Detailed Metadata" %}</a></li>
+                </ul>
+                <div class='panel-container'>
+
+                    <div id="tabs1">
+                        {% for resource in dataset.resources %}
+                        <div class="tab-content-box">
+                            <div style="text-align:right" class="clmn-5 clmn-spaceLeft light">
+                                <h4 class="green"> {% if resource.description %}
+                                    {{ resource.description }}
+                                    {% endif %} </h4>
+                                {% if resource.language != '--' %}
+                                ({{ resource.get_language_display}})<br/>
+                                {% endif %}
+                                {% if resource.file %}
+                                Size {{ resource.file.size|filesizeformat}}
+                                {% endif %}
+
+                                <br/>
+                                {{ resource.name}}
+                            </div>
+                            <div class="clmn-2 notranslate">
+
+                                {% if resource.fileExtension|lower == '.csv' %}
+                                <a href="/csvviewer/{{resource.id}}/">
+                                    <div style="color:#006C71;font-weight:bold"
+                                         class="tab-content-button {{resource.fileExtension|cut:"
+                                    ."|lower}}" >{% trans " view" %}</div>
+                            </a>
+                            {% endif %}
+                            {% if resource.fileExtension == '.xls' or resource.fileExtension == '.xlsx' or
+                            resource.fileExtension == '.doc' or resource.fileExtension == '.docx' or
+                            resource.fileExtension == '.pptx' or resource.fileExtension == '.ppt' %}
+                            {% if resource.file %}
+                            <a target="_blank" onclick="increasePopularity({{ dataset.id }})"
+                               href="http://view.officeapps.live.com/op/view.aspx?src=https://{{AMAZON_BUCKET}}.s3.amazonaws.com/{{ resource.file }}&allowtyping=true">
+                                {% else %}
+                                <a target="_blank" onclick="increasePopularity({{ dataset.id }})"
+                                   href="http://view.officeapps.live.com/op/view.aspx?src={{resource.uri}}&allowtyping=true">
+                                    {% endif %}
+                                    <div style="color:#006C71;font-weight:bold"
+                                         class="tab-content-button {{resource.fileExtension|cut:"
+                                    ."}}" >{% trans " view" %}</div>
+                        </a>
+                        {% endif %}
+                        {% if resource.file %}
+                        <a target="_blank" onclick="increasePopularity({{ dataset.id }})"
+                           href="https://{{AMAZON_BUCKET}}.s3.amazonaws.com/{{ resource.file }}">
+                            {% else %}
+                            <a target="_blank" onclick="increasePopularity({{ dataset.id }})" href="{{resource.uri}}">
+                                {% endif %}
+                                <div style="color:#006C71;font-weight:bold"
+                                     class="tab-content-button {% if resource.fileExtension == '.pdf' %} pdf {% endif %}{% if resource.fileExtension|lower == '.rdf' %} rdf {% endif %}">
+                                    {% if resource.fileExtension == '.pdf' %}{% trans " view" %}{% elif
+                                    resource.fileExtension == '' or "htm" in resource.fileExtension %}{% trans "Visit
+                                    data page" %}{% else %}{% trans "download" %}{% endif %}
+                                </div>
+                            </a>
+                            {% if resource.fileExtension|lower == '.xls' or resource.fileExtension|lower == '.xlsx' or
+                            resource.fileExtension|lower == '.csv' %}
+                            <a target="_blank" onclick="increasePopularity({{ dataset.id }})"
+                               href="/views/{{resource.id}}/">
+                                <div style="color:#006C71;font-weight:bold" class="tab-content-button">{% trans
+                                    "visualize" %}
+                                </div>
+                            </a>
+                            {% endif %}
+                    </div>
+                    <div style="font-size:11px;font-style:italic;text-align:right;margin-right:10px;"><a href="#"
+                                                                                                         onclick="copyToClipboard('http://www.colibridata.eu/refineview/{{dataset.id}}')"
+                                                                                                         id="copyrefine">{%
+                        trans "Copy url for OpenRefine" %}</a></div>
+                </div>
+                <div class="line-divider-green"></div>
+                {% endfor %}
+            </div>
+
+            <div id="tabs2">
+                <div class="tab-list green">
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft notranslate"><strong>{% trans "Maintainer" %}:</strong></div>
+                        <div class="clmn-3"><a href="/profile/{{dataset.uploader.id}}">{{ dataset.uploader.username
+                            }}</a></div>
+                    </div>
+                    {% if dataset.publisher %}
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft notranslate"><strong>{% trans "Publisher" %}:</strong></div>
+                        <div class="clmn-3">{{ dataset.publisher }}</div>
+                    </div>
+                    {% endif %}
+                    {% if dataset.author %}
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft notranslate"><strong>{% trans "Author" %}:</strong></div>
+                        <div class="clmn-3">{{ dataset.author}}</div>
+                    </div>
+                    {% endif %}
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft notranslate"><strong>{% trans "Release Date" %}:</strong>
+                        </div>
+                        <div class="clmn-3 notranslate">{{dataset.created_date}}</div>
+                    </div>
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft notranslate"><strong>{% trans "Last Update" %}:</strong></div>
+                        <div class="clmn-3 notranslate">{{dataset.modified_date}}</div>
+                    </div>
+                    {% if dataset.country != "--" %}
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft notranslate"><strong>{% trans "Country" %}:</strong></div>
+                        <div class="clmn-3 ">{{ dataset.get_country_display}}</div>
+                    </div>
+                    {% endif %}
+                    {% if dataset.license %}
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft notranslate"><strong>{% trans "License" %}:</strong></div>
+                        <div class="clmn-3">{{ dataset.license }}</div>
+                    </div>
+                    {% endif %}
+                    {% if dataset.geoTempContext.geographical_granularity %}
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft notranslate"><strong>{% trans "Geographical Granularity"
+                            %}:</strong></div>
+                        <div class="clmn-3">{{dataset.geoTempContext.geographical_granularity}}</div>
+                    </div>
+                    {% endif %}
+                    {% if dataset.geoTempContext.geographical_coverage %}
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft notranslate"><strong>{% trans "Geographical Coverage"
+                            %}:</strong></div>
+                        <div class="clmn-3">{{dataset.geoTempContext.geographical_coverage}}</div>
+                    </div>
+                    {% endif %}
+                    {% if dataset.geoTempContext.temporal_granularity %}
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft notranslate"><strong>{% trans "Temporal Granularity"
+                            %}:</strong></div>
+                        <div class="clmn-3 ">{{dataset.geoTempContext.temporal_granularity}}</div>
+                    </div>
+                    {% endif %}
+                    {% if dataset.geoTempContext.temporal_coverage_from or dataset.geoTempContext.temporal_coverage_to
+                    %}
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft notranslate"><strong>{% trans "Temporal Coverage" %}:</strong>
+                        </div>
+                        <div class="clmn-3 ">{{dataset.geoTempContext.temporal_coverage_from}} {% trans "To" %}
+                            {{dataset.geoTempContext.temporal_coverage_to}}
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if dataset.scientificContext.scientific_domain != "--" %}
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft notranslate"><strong>{% trans "Scientific Domain" %}:</strong>
+                        </div>
+                        <div class="clmn-3 ">{{dataset.scientificContext.get_scientific_domain_display}}</div>
+                    </div>
+                    {% endif %}
+                    {% if dataset.scientificContext.data_collection_type %}
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft notranslate"><strong>{% trans "Data collection type"
+                            %}:</strong></div>
+                        <div class="clmn-3 ">{{dataset.scientificContext.data_collection_type}}</div>
+                    </div>
+                    {% endif %}
+                    {% if dataset.scientificContext.data_collection_description %}
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft notranslate"><strong>{% trans "Data collection description"
+                            %}:</strong></div>
+                        <div class="clmn-3 ">{{dataset.scientificContext.data_collection_description}}</div>
+                    </div>
+                    {% endif %}
+                    {% if dataset.scientificContext.software_package %}
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft notranslate"><strong>{% trans "Software Package Used"
+                            %}:</strong></div>
+                        <div class="clmn-3 ">{{dataset.scientificContext.software_package}}</div>
+                    </div>
+                    {% endif %}
+                    {% if dataset.scientificContext.analysis_unit %}
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft notranslate"><strong>{% trans "Analysis Unit" %}:</strong>
+                        </div>
+                        <div class="clmn-3 ">{{dataset.scientificContext.analysis_unit}}</div>
+                    </div>
+                    {% endif %}
+                    {% if dataset.scientificContext.statistical_methodology %}
+                    <div class="tab-content-box2">
+                        <div class="clmn-3 clmn-spaceLeft notranslate"><strong>{% trans "Statistical Methodology"
+                            %}:</strong></div>
+                        <div class="clmn-3 ">{{dataset.scientificContext.statistical_methodology}}</div>
+                    </div>
+                    {% endif %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of Tabs -->
+
+<div class="clear-all-30"></div>
+<div class="clmn-7 notranslate ">
+    <div class="category-title"><h1 style="font-size:18px" class="orange ">{% trans "Items based on this dataset"
+        %}</h1></div>
+    <div class="clear-all-5"></div>
+    <div class="line-divider"></div>
+    <div class="clear-all-5"></div>
+
+    <div style="width:560px;">
+        {% for application in dataset.applications %}
+        <div style="float:left;padding-bottom:5px;margin-bottom:10px;border-bottom: 1px solid #CCCCCC">
+            <div style="float:left;width:150px;">
+                <div class="orange bold">{{ application.get_type_display }}</div>
+            </div>
+            <div style="float:left;width:380px;">
+                <div><a style="color:#006C71" href="{% if " http://www-958.ibm.com" in application.url
+                    %}/externalvis/{{application.id}} {% else %}{{ application.url }}{% endif %}">{% if application.type
+                    == 'PU' %}{{ application.get_publicationType_display }},{% endif %} <strong>{{ application.title
+                        }}</strong></a></div>
+                <div style="color:#666666">{% if application.type == 'PU' %}{{ application.publicationAuthors }}{% endif
+                    %}
+                </div>
+                <div style="color:#666666" class="notranslate">{% trans "uploaded by" %} <a style="color:#666666"
+                                                                                            href="/profile/{{application.uploader.id}}"><strong>{{
+                    application.uploader.username }}</strong></a>,
+                    <i>{{ application.created_date|naturaltime }}</i></div>
+            </div>
+        </div>
+        <div style="clear:both"></div>
+        {% endfor %}
+    </div>
+    <form action="" method="POST" id='application-form'>{% csrf_token %}
+        <div
+        {% if not applicationForm.errors %} class="hidden" {% endif %} id="application-form-tbody">
+        {{ applicationForm.non_field_errors }}
+        <div>
+            <span class="dataerrors">{{ applicationForm.type.errors.as_text }}</span>
+
+            <div class="bold" style="text-align:left">Type</div>
+            {{ applicationForm.type }}
+        </div>
+        <div id="publication-container" class="hidden">
+            <div style="margin-top:5px">
+                <span class="dataerrors">{{ applicationForm.publicationType.errors.as_text }}</span>
+
+                <div class="bold" style="text-align:left">Publication Type</div>
+                {{ applicationForm.publicationType }}
+            </div>
+            <div style="margin-top:5px">
+                <span class="dataerrors">{{ applicationForm.publicationAuthors.errors.as_text }}</span>
+
+                <div class="bold" style="text-align:left">Publication Authors</div>
+                {{ applicationForm.publicationAuthors }}
+            </div>
+        </div>
+        <div>
+            <span class="dataerrors">{{ applicationForm.title.errors.as_text }}</span>
+
+            <div class="bold" style="text-align:left;margin-top:5px">Title</div>
+            {{ applicationForm.title }}
+        </div>
+        <div class="bold" style="text-align:left;margin-top:5px">{% trans "URL or Script of item" %}</div>
+        <span class="dataerrors">{{ applicationForm.url.errors.as_text }}</span>
+        {{ applicationForm.url }}
+        <input type="hidden" name="uploader" value="{{ user.id }}"/>
+        <input type="hidden" name="dataset" value="{{ dataset.id }}"/>
+
+        <input id="applicationsubmit" class="btn-small orangish" value="{% trans " Submit item" %}" onclick="return
+        checkApplicationForm()" type="submit"/>
+        </td>
+</div>
+{% if user.is_authenticated %}
+<a {% if applicationForm.errors %} class="hidden" {% endif %} id="add-application-button" class="add-row"
+href="javascript:void(0)"><span class="command_icons">+</span> {% trans "Submit your own item" %}</a>
+{% else %}
+<a id="add-application-button" class="add-row" href="/accounts/login/?next=/dataset/{{dataset.id}}"> <span
+        class="command_icons">+</span> {% trans "Submit your own item" %}</a>
+{% endif %}
+<a {% if not applicationForm.errors %} class="hidden" {% endif %} id="remove-application-button" class="add-row"
+href="javascript:void(0)"><span class="command_icons">-</span> {% trans "Cancel" %}</span></a>
+</form>
+<br>
+</div>
+<div class="clear-all-30"></div>
+<div class="clmn-7">
+    <div class="category-title notranslate"><h1 style="font-size:18px" class="orange ">{% trans "Discussions" %}</h1>
+    </div>
+
+    <div class="clear-all-5"></div>
+    <div class="line-divider"></div>
+    <div class="clear-all-5"></div>
+
+    {% get_comment_count for dataset as comments_count %}
+    <div id="comments-wrapper">
+        {% if comments_count %}
+        <h3 class="has-comments-title notranslate">{% blocktrans with entry_title=dataset.title count
+            comments_count=comments_count %}{{ comments_count }} reply {% plural %}{{ comments_count }} Replies {%
+            endblocktrans %}</h3>
+        {% render_comment_list for dataset %}
+        {% if not dataset|comments_are_open %}
+        <p class="comments-closed notranslate">{% trans "Comments are closed." %}</p>
+        {% endif %}
+        {% else %}
+        {# no comments yet, invite #}
+        {% if dataset|comments_are_open %}
+        <h3 class="no-comments-title notranslate">{% trans "Leave a reply" %}</h3>
+
+        {# include the empty list, so the
+        <div> is there for Ajax code #}
+
+            {% render_comment_list for dataset %}
+
+            {% endif %}
+            {% endif %}
+        </div>
+        {% if dataset|comments_are_open %}
+        {% if user.is_authenticated %}
+
+        <div style="margin-top:15px;margin-bottom:15px;" class="line-divider"></div>
+
+        <div id="comments-form-wrapper">
+            {% render_comment_form for object %}
+        </div>
+        {% else %}
+        <div class="notranslate" style="float:right;margin-top:50px;margin-bottom:50px;">{% trans "Please " %} <a
+                href="/accounts/login/?next=/dataset/{{dataset.id}}">{% trans "login" %}</a> {% trans "to reply." %}
+        </div>
+        {% endif %}
+        {% endif %}
+    </div>
+    <!-- end of discussion box -->
+
+</div>
+<!-- END of left row -->
+
+<div style="width:340px;" class="clmn-4 float-right">
+
+    <div class="category-title"><h1 class="orange notranslate">{% trans "Basic Information" %}</h1></div>
+    <div class="clear-all-20"></div>
+
+    <div class="table-2 green"><!-- basic information -->
+        {% if dataset.is_revision %}
+        <div class="tab-content-box2">
+            <div class="notranslate"><b>{% trans "Revised dataset" %}</b></div>
+            <img style="float:left" height="32" width="32" src="/s/imgs/r_{{dataset.get_revision.revision_type}}.png"/>
+
+            <div style="float:left;margin-top:10px;margin-left:5px">{{dataset.get_revision.get_revision_type_display}}
+            </div>
+            <div style="clear:both"></div>
+        </div>
+        {% endif %}
+
+        <div class="tab-content-box2">
+            <div class="clmn-1-half clmn-space notranslate"><strong>{% trans "Maintainer" %}:</strong></div>
+            <div class="clmn-2-half notranslate"><a href="/profile/{{dataset.uploader.id}}">{{ dataset.uploader.username
+                }}</a></div>
+        </div>
+        <div class="tab-content-box2">
+            <div class="clmn-1-half clmn-space notranslate"><strong>{% trans "Publisher" %}:</strong></div>
+            <div class="clmn-2-half">{% if dataset.publisher %} {{dataset.publisher}} {% else %} {% trans "None
+                specified" %} {% endif %}
+            </div>
+        </div>
+        {% if dataset.url %}
+        <div class="tab-content-box2">
+            <div class="clmn-1-half clmn-space notranslate"><strong>{% trans "Original url" %}:</strong></div>
+            <div class="clmn-2-half notranslate"><a href="{{dataset.url}}"> {% trans "Original Dataset page" %}</a>
+            </div>
+        </div>
+        {% endif %}
+        <div class="tab-content-box2">
+            <div class="clmn-1-half clmn-space notranslate"><strong>{% trans "Author" %}:</strong></div>
+            <div class="clmn-2-half">{% if dataset.author %} {{dataset.author}} {% else %} {% trans "None specified" %}
+                {% endif %}
+            </div>
+        </div>
+        <div class="tab-content-box2">
+            <div class="clmn-1-half clmn-space notranslate"><strong>{% trans "Release Date" %}:</strong></div>
+            <div class="clmn-2-half notranslate">{{dataset.created_date}}</div>
+        </div>
+        <div class="tab-content-box2">
+            <div class="clmn-1-half clmn-space notranslate"><strong>{% trans "Last Update" %}:</strong></div>
+            <div class="clmn-2-half notranslate">{{dataset.modified_date}}</div>
+        </div>
+        <div class="tab-content-box2">
+            <div class="clmn-1-half clmn-space notranslate"><strong>{% trans "Country" %}:</strong></div>
+            <div class="clmn-2-half">{% if dataset.country != "--" %} {{ dataset.get_country_display}} {% else %} {%
+                trans "None specified" %} {% endif %}
+            </div>
+        </div>
+        <div class="tab-content-box2">
+            <div class="clmn-1-half clmn-space notranslate"><strong>{% trans "Licence" %}:</strong></div>
+            <div class="clmn-2-half">{% if dataset.license %} {{dataset.license}}{% else %} {% trans "None specified" %}
+                {% endif %}
+            </div>
+        </div>
+        <div class="tab-content-box2">
+            <div class="clmn-1-half clmn-space notranslate"><strong>{% trans "Downloads" %}:</strong></div>
+            <div class="clmn-2-half notranslate">{{ dataset.views }}</div>
+        </div>
+        <div>
+            <div class="clear-all-10"></div>
+            <div class="line-divider"></div>
+            <div class="clear-all-10"></div>
+            <div>
+                <div style="font-size:15px;font-style:italic;font-weight:bold;margin-bottom:10px">{% trans "Share this
+                    on..." %}
+                </div>
+                <span class='st_sharethis_large' displayText='ShareThis'></span>
+                <span class='st_facebook_large' displayText='Facebook'></span>
+                <span class='st_twitter_large' displayText='Tweet'></span>
+                <span class='st_linkedin_large' displayText='LinkedIn'></span>
+                <span class='st_pinterest_large' displayText='Pinterest'></span>
+                <span class='st_email_large' displayText='Email'></span>
+            </div>
+        </div>
+        <!-- end of basic information -->
+        <div class="clear-all-10"></div>
+        <div class="line-divider"></div>
+        <div class="clear-all-10"></div>
+        <div id="MicrosoftTranslatorWidget"
+             style="float:left;width: 200px; min-height: 83px; border-color: #006C71; background-color: #A6C6BF;">
+            <noscript><a href="http://www.microsofttranslator.com/bv.aspx?a=http%3a%2f%2fwww.colibridata.eu%2f">Translate
+                this dataset</a><br/>Powered by <a href="http://www.bing.com/translator">Microsoft® Translator</a>
+            </noscript>
+        </div>
+        <script type="text/javascript"> /* <![CDATA[ */
+        setTimeout(function () {
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.charset = "UTF-8";
+            s.src = ((location && location.href && location.href.indexOf('https') == 0) ? "https://ssl.microsofttranslator.com" : "http://www.microsofttranslator.com" ) + "/ajax/v2/widget.aspx?mode=manual&from={% if dataset.resources.0.language != '--' %}{{dataset.resources.0.language}}{% endif %}&layout=ts";
+            var p = document.getElementsByTagName('head')[0] || document.documentElement;
+            p.insertBefore(s, p.firstChild);
+        }, 0);
+        /* ]]> */ </script>
+        <div style="clear:both"></div>
+        <div class="clear-all-10"></div>
+        <div class="line-divider"></div>
+        <div class="clear-all-10"></div>
+        <div class="notranslate">
+            <h3>{% trans "Extension Graph" %}</h3>
+            <br><br>
+
+            <div id="tree-container"></div>
+            <script src="/s/js/graph.js" type="text/javascript"></script>
+        </div>
+
+    </div>
+</div>
+</div>
+</div>
+<!-- END of wrapper-content -->
+
+{% endblock %}

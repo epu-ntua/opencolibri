@@ -1,0 +1,260 @@
+﻿{% load url from future %}
+{% load i18n thumbnail2 %}
+<head>
+    <link href="/s/css/theme.css" rel="stylesheet" type="text/css"/>
+    <link href="/s/css/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="/s/css/colibri.css" rel="stylesheet" type="text/css"/>
+    <script>
+        $(".starRatingResults").rating({required: true, readOnly: true});
+    </script>
+</head>
+<body>
+<div id="extend-dataset-header" class="clmn-8">
+    <h2 class="title" style="font-size:18px">{%trans "Dataset Rating reviews" %}</h2>
+</div>
+<div id="ViewRating" style="margin-left:20px;">
+    <div class="content wrap">
+        <div class="col1of2 composite">
+            <div class="colTitle"><b>{% trans "Distribution of rating" %}</b></div>
+            <ul class="barChart">
+                <div class="wrap row"><span class="rdoSet"> <span
+                        class="smalltext"> 5 {% trans "Stars" %}</span> </span>
+
+                    <div class="line">
+                        <div class="fill" style="width:{{relativeScoreDistr.4}}px;"></div>
+                    </div>
+                    <span class="CompositeCount">{{scoreDistr.4}}</span>
+                </div>
+                <div class="wrap row"><span class="rdoSet"> <span
+                        class="smalltext"> 4 {% trans "Stars" %}</span> </span>
+
+                    <div class="line">
+                        <div class="fill" style="width:{{relativeScoreDistr.3}}px;"></div>
+                    </div>
+                    <span class="CompositeCount">{{scoreDistr.3}}</span>
+                </div>
+                <div class="wrap row"><span class="rdoSet"> <span
+                        class="smalltext"> 3 {% trans "Stars" %}</span> </span>
+
+                    <div class="line">
+                        <div class="fill" style="width:{{relativeScoreDistr.2}}px;"></div>
+                    </div>
+                    <span class="CompositeCount">{{scoreDistr.2}}</span>
+                </div>
+                <div class="wrap row"><span class="rdoSet"> <span
+                        class="smalltext"> 2 {% trans "Stars" %}</span> </span>
+
+                    <div class="line">
+                        <div class="fill" style="width:{{relativeScoreDistr.1}}px;"></div>
+                    </div>
+                    <span class="CompositeCount">{{scoreDistr.1}}</span>
+                </div>
+                <div class="wrap row"><span class="rdoSet"> <span
+                        class="smalltext"> 1 {% trans "Stars" %}</span> </span>
+
+                    <div class="line">
+                        <div class="fill" style="width:{{relativeScoreDistr.0}}px;"></div>
+                    </div>
+                    <span class="CompositeCount">{{scoreDistr.0}}</span>
+                </div>
+            </ul>
+        </div>
+        <div class="col2of2 composite">
+            <div class="colTitle"><b>{% trans "Data Rating Quality" %}</b></div>
+            <ul class="barChart">
+                <div class="wrap row"><span class="rdoSet"> <span
+                        class="smalltext"> {% trans "Accurate" %}</span> </span>
+
+                    <div class="line">
+                        <div class="fill" style="width:{{relativereviewDistr.0}}px;"></div>
+                    </div>
+                    <span class="CompositeCount">{% if reviewDistr.0 != 0 %}{{reviewDistr.0}} {% else %} N/A {% endif %}</span>
+                </div>
+                <div class="wrap row"><span class="rdoSet"> <span
+                        class="smalltext"> {% trans "Complete" %}  </span> </span>
+
+                    <div class="line">
+                        <div class="fill" style="width:{{relativereviewDistr.1}}px;"></div>
+                    </div>
+                    <span class="CompositeCount">{% if reviewDistr.1 != 0 %}{{reviewDistr.1}} {% else %} N/A {% endif %}</span>
+                </div>
+                <div class="wrap row"><span class="rdoSet"> <span
+                        class="smalltext"> {% trans "Consistent" %} </span> </span>
+
+                    <div class="line">
+                        <div class="fill" style="width:{{relativereviewDistr.2}}px;"></div>
+                    </div>
+                    <span class="CompositeCount">{% if reviewDistr.2 != 0 %}{{reviewDistr.2}} {% else %} N/A {% endif %}</span>
+                </div>
+                <div class="wrap row"><span class="rdoSet"> <span class="smalltext">{% trans "Timely" %} </span> </span>
+
+                    <div class="line">
+                        <div class="fill" style="width:{{relativereviewDistr.3}}px;"></div>
+                    </div>
+                    <span class="CompositeCount">{% if reviewDistr.3 != 0 %}{{reviewDistr.3}} {% else %} N/A {% endif %}</span>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div style="clear:both"/>
+    <div id="individualReviewsTitle">
+        <b>{{resultsCount}}</b> {% trans "Data Quality reviews" %}
+    </div>
+    <div id="individualReviewsContent">
+        {% if reviews.count == 0 %}
+        {% trans "No individual data quality reviews yet" %}
+        {% endif %}
+        {% for review in reviews %}
+        <div class="individualReview">
+            <div class="col1">
+                <div>
+                    {% if review.Rater.profile.avatar.photo_original %}
+                    {% thumbnail review.Rater.profile.avatar.photo_original "68x68" as avatar %}
+                    <a style="color:#333333" href="/profile/{{review.Rater.id}}"><img width="68" height="68"
+                                                                                      src="{{avatar}}"></img></a>
+                    {% else %}
+                    <a style="color:#333333" href="/profile/{{review.Rater.id}}"><img width="68" height="68"
+                                                                                      src="/s/imgs/defaultavatar.jpg"></img></a>
+                    {% endif %}
+                </div>
+                <div><a style="color:#01797F" href="/profile/{{review.Rater.id}}">{% if review.Rater.first_name or
+                    review.Rater.last_name %}{{review.Rater.first_name}} {{review.Rater.last_name}} {% else %}
+                    {{review.Rater.username}} {% endif %}</a></div>
+                {% if review.Rater.profile.rpg_class != "--" %}
+                <div class="review_rpg"> {{review.Rater.profile.get_rpg_class_display}}</div>
+                {% endif %}
+                {% if review.Rater.profile.scientific_background != "--" %}
+                <div class="review_rpg"> {{review.Rater.profile.get_scientific_background_display|truncatechars:33}}
+                </div>
+                {% endif %}
+            </div>
+            <div class="col2">
+                <div id="starsResultPane">
+                    <div style="float:left;width:80px;padding-top:1px">{% trans "Accuracy" %}</div>
+                    <div>
+
+                        <input name="star1_{{review.id}}" value="1" title="Totally not accurate" {% if review.Accurancy
+                        == 1 %} checked="checked" {% endif %} type="radio" class="starRatingResults"/>
+                        <input name="star1_{{review.id}}" value="2" title="Very poor accuracy" {% if review.Accurancy ==
+                        2 %} checked="checked" {% endif %} type="radio" class="starRatingResults"/>
+                        <input name="star1_{{review.id}}" value="3" title="Poor accuracy" {% if review.Accurancy == 3 %}
+                        checked="checked" {% endif %} type="radio" class="starRatingResults"/>
+                        <input name="star1_{{review.id}}" value="4" title="Slightly poor accuracy" {% if
+                        review.Accurancy == 4 %} checked="checked" {% endif %} type="radio" class="starRatingResults"/>
+                        <input name="star1_{{review.id}}" value="5" title="Decent accuracy" {% if review.Accurancy == 5
+                        %} checked="checked" {% endif %} type="radio" class="starRatingResults"/>
+                        <input name="star1_{{review.id}}" value="6" title="Slightly good accuracy" {% if
+                        review.Accurancy == 6 %} checked="checked" {% endif %} type="radio" class="starRatingResults"/>
+                        <input name="star1_{{review.id}}" value="7" title="Good accuracy" {% if review.Accurancy == 7 %}
+                        checked="checked" {% endif %} type="radio" class="starRatingResults"/>
+                        <input name="star1_{{review.id}}" value="8" title="Very good accuracy" {% if review.Accurancy ==
+                        8 %} checked="checked" {% endif %} type="radio" class="starRatingResults"/>
+                        <input name="star1_{{review.id}}" value="9" title="Almost totally accurate" {% if
+                        review.Accurancy == 9 %} checked="checked" {% endif %} type="radio" class="starRatingResults"/>
+                        <input name="star1_{{review.id}}" value="10" title="Totally accurate" {% if review.Accurancy ==
+                        10 %} checked="checked" {% endif %} type="radio" class="starRatingResults"/>
+                    </div>
+                    <div style="clear:both"></div>
+                    <div style="float:left;width:80px;padding-top:5px">{% trans "Completeness" %}</div>
+                    <div style="margin-top:5px;">
+
+                        <input name="star2_{{review.id}}" value="1" title="Totally not complete" {% if
+                        review.Completeness == 1 %} checked="checked" {% endif %} class="starRatingResults"/>
+                        <input name="star2_{{review.id}}" value="2" title="Very poor completeness" {% if
+                        review.Completeness == 2 %} checked="checked" {% endif %} type="radio"
+                        class="starRatingResults"/>
+                        <input name="star2_{{review.id}}" value="3" title="Poor completeness" {% if review.Completeness
+                        == 3 %} checked="checked" {% endif %} type="radio" class="starRatingResults"/>
+                        <input name="star2_{{review.id}}" value="4" title="Slightly poor completeness" {% if
+                        review.Completeness == 4 %} checked="checked" {% endif %} type="radio"
+                        class="starRatingResults"/>
+                        <input name="star2_{{review.id}}" value="5" title="Decent completeness" {% if
+                        review.Completeness == 5 %} checked="checked" {% endif %} type="radio"
+                        class="starRatingResults"/>
+                        <input name="star2_{{review.id}}" value="6" title="Slightly good completeness" {% if
+                        review.Completeness == 6 %} checked="checked" {% endif %} type="radio"
+                        class="starRatingResults"/>
+                        <input name="star2_{{review.id}}" value="7" title="Good completeness" {% if review.Completeness
+                        == 7 %} checked="checked" {% endif %} type="radio" class="starRatingResults"/>
+                        <input name="star2_{{review.id}}" value="8" title="Very good completeness" {% if
+                        review.Completeness == 8 %} checked="checked" {% endif %} type="radio"
+                        class="starRatingResults"/>
+                        <input name="star2_{{review.id}}" value="9" title="Almost totally complete" {% if
+                        review.Completeness == 9 %} checked="checked" {% endif %} type="radio"
+                        class="starRatingResults"/>
+                        <input name="star2_{{review.id}}" value="10" title="Totally complete" {% if review.Completeness
+                        == 10 %} checked="checked" {% endif %} type="radio" class="starRatingResults"/>
+                    </div>
+                    <div style="clear:both"></div>
+                    <div style="float:left;width:80px;padding-top:5px">{% trans "Consistency" %}</div>
+                    <div style="margin-top:5px;">
+
+                        <input name="star3_{{review.id}}" value="1" title="Totally not consistent" {% if
+                        review.Consistency == 1 %} checked="checked" {% endif %} class="starRatingResults"/>
+                        <input name="star3_{{review.id}}" value="2" title="Very poor consistency" {% if
+                        review.Consistency == 2 %} checked="checked" {% endif %} type="radio"
+                        class="starRatingResults"/>
+                        <input name="star3_{{review.id}}" value="3" title="Poor consistency" {% if review.Consistency ==
+                        3 %} checked="checked" {% endif %} type="radio" class="starRatingResults"/>
+                        <input name="star3_{{review.id}}" value="4" title="Slightly poor consistency" {% if
+                        review.Consistency == 4 %} checked="checked" {% endif %} type="radio"
+                        class="starRatingResults"/>
+                        <input name="star3_{{review.id}}" value="5" title="Decent consistency" {% if review.Consistency
+                        == 5 %} checked="checked" {% endif %} type="radio" class="starRatingResults"/>
+                        <input name="star3_{{review.id}}" value="6" title="Slightly good consistency" {% if
+                        review.Consistency == 6 %} checked="checked" {% endif %} type="radio"
+                        class="starRatingResults"/>
+                        <input name="star3_{{review.id}}" value="7" title="Good consistency" type="radio" {% if
+                        review.Consistency == 7 %} checked="checked" {% endif %} class="starRatingResults"/>
+                        <input name="star3_{{review.id}}" value="8" title="Very good consistency" {% if
+                        review.Consistency == 8 %} checked="checked" {% endif %} type="radio"
+                        class="starRatingResults"/>
+                        <input name="star3_{{review.id}}" value="9" title="Almost totally consistent" {% if
+                        review.Consistency == 9 %} checked="checked" {% endif %} type="radio"
+                        class="starRatingResults"/>
+                        <input name="star3_{{review.id}}" value="10" title="Totally consistent" {% if review.Consistency
+                        == 10 %} checked="checked" {% endif %} type="radio" class="starRatingResults"/>
+                    </div>
+                    <div style="clear:both"></div>
+                    <div style="float:left;width:80px;padding-top:5px">{% trans "Timelineness" %}</div>
+                    <div style="margin-top:5px;">
+                        <input name="star4_{{review.id}}" value="1" title="Totally not timely" {% if review.Timelineness
+                        == 1 %} checked="checked" {% endif %} class="starRatingResults"/>
+                        <input name="star4_{{review.id}}" value="2" title="Very poor timeliness" {% if
+                        review.Timelineness == 2 %} checked="checked" {% endif %} type="radio"
+                        class="starRatingResults"/>
+                        <input name="star4_{{review.id}}" value="3" title="Poor timeliness" {% if review.Timelineness ==
+                        3 %} checked="checked" {% endif %} type="radio" class="starRatingResults"/>
+                        <input name="star4_{{review.id}}" value="4" title="Slightly poor timeliness" {% if
+                        review.Timelineness == 4 %} checked="checked" {% endif %} type="radio"
+                        class="starRatingResults"/>
+                        <input name="star4_{{review.id}}" value="5" title="Decent timeliness" {% if review.Timelineness
+                        == 5 %} checked="checked" {% endif %} type="radio" class="starRatingResults"/>
+                        <input name="star4_{{review.id}}" value="6" title="Slightly good timeliness" {% if
+                        review.Timelineness == 6 %} checked="checked" {% endif %} type="radio"
+                        class="starRatingResults"/>
+                        <input name="star4_{{review.id}}" value="7" title="Good timeliness" {% if review.Timelineness ==
+                        7 %} checked="checked" {% endif %} type="radio" class="starRatingResults"/>
+                        <input name="star4_{{review.id}}" value="8" title="Very good timeliness" {% if
+                        review.Timelineness == 8 %} checked="checked" {% endif %} type="radio"
+                        class="starRatingResults"/>
+                        <input name="star4_{{review.id}}" value="9" title="Almost totally timely" {% if
+                        review.Timelineness == 9 %} checked="checked" {% endif %} type="radio"
+                        class="starRatingResults"/>
+                        <input name="star4_{{review.id}}" value="10" title="Totally timely" {% if review.Timelineness ==
+                        10 %} checked="checked" {% endif %} type="radio" class="starRatingResults"/>
+                    </div>
+
+                    <div style="clear:both"></div>
+                </div>
+
+                <div class="reviewtext">{{review.RatingReason}}</div>
+
+            </div>
+            <div style="clear:both"></div>
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+</body>

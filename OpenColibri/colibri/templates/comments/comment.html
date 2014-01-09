@@ -1,0 +1,69 @@
+{% comment %}
+Something that django.contrib.comments does not provide:
+An individual template for a single comment, to easily be reused.
+
+This include is also used by the Ajax comments view.
+The div id should be "c{id}", because the comment.get_absolute_url() points to it.
+
+NOTE: to override the displayed date format, don't replace this template.
+Instead, define DATETIME_FORMAT in a locale file. Requires setting:
+
+FORMAT_MODULE_PATH = 'settings.locale'
+
+Then create 'settings/locale/XY/formats.py' with:
+
+DATETIME_FORMAT = '...'
+
+This should give you consistent dates across all views.
+{% endcomment %}
+{% load thumbnail2 i18n humanize%}
+
+<div{% if preview %} id="comment-preview"{% else %} id="c{{ comment.id }}"{% endif %} class="comment-item">
+{% if preview %}<h3>{% trans "Preview of your comment" %}</h3>{% endif %}
+{% spaceless %}
+<h4>
+    <div>
+        {% if comment.user.profile.avatar.photo_original %}
+        {% thumbnail comment.user.profile.avatar.photo_original "48x48" as avatar %}
+        <a style="color:#333333" href="/profile/{{comment.user.id}}"><img width="48" height="48"
+                                                                          class="requests_reply_avatar"
+                                                                          src="{{avatar}}"></img></a></div>
+
+    {% else %}
+    <a style="color:#333333" href="/profile/{{comment.user.id}}"><img width="48" height="48"
+                                                                      class="requests_reply_avatar"
+                                                                      src="/s/imgs/defaultavatar_small.jpg"></img></a></div>
+    {% endif %}
+    <div class="discussion-bubble-content-comments">
+        <div class="discussion-bubble-content-inner">
+            {%if comment.content_object.accepted_comment == comment.id %}
+            <div class="discussion-bubble-content-header-accepted">
+                <span class="discussion-bubble-content-header-inside notranslate"><a style="color:#333333"
+                                                                                     href="/profile/{{comment.user.id}}">{{comment.user}}</a> {% trans "replied" %}</span>
+
+                <span class="discussion-bubble-content-header-date-accepted notranslate">{%trans "Accepted Answer, "%}{{comment.submit_date|naturaltime }}</span>
+            </div>
+            {%else %}
+            <div class="discussion-bubble-content-header">
+                <span class="discussion-bubble-content-header-inside notranslate"><a style="color:#333333"
+                                                                                     href="/profile/{{comment.user.id}}">{{comment.user}}</a> {% trans "replied" %}</span>
+                <span class="discussion-bubble-content-header-date notranslate">{{comment.submit_date|naturaltime }}</span>
+            </div>
+            {%endif%}
+            <div class="discussion-current-comment">
+                <div class="comment-text">{{ comment.comment|urlize }}</div>
+            </div>
+
+        </div>
+    </div>
+
+
+</h4>
+{% endspaceless %}
+{%if comment.content_object.accepted_comment == 0 and comment.content_object.author == request.user %}
+<div><a style="float:right;font-style:italic;color:#588507;"
+        href="/datasetrequests/answer/{{comment.content_object.id}}/{{comment.id}}">{% trans "Accept Answer" %}</a>
+</div>
+{%endif%}
+</div>
+<div style="clear:both"></div>

@@ -1,0 +1,43 @@
+﻿{% extends "base.html" %}
+{% block title %}Application{% endblock %}
+{% load url from future %}
+{% load i18n comments fluent_comments_tags voting_tags humanize thumbnail2%}
+
+{% block css %}
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/style.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-responsive.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-image-gallery.min.css">
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}
+
+{% block content %}
+
+{% for application in applicationlist %}
+<a href="/application/{{application.id}}">{{application.title}} - {{application.url}}</a> </br>
+{% endfor %}
+<div class="pagination">
+    <ul class="green">
+        {%if page_obj.has_previous %}
+        <li><a class="next" href="{%url 'application_index'%}?page={{page_obj.number|add:"-1"}}"> « </a></li>
+        {%else %}
+        <li class="disabled"><a class="next" href="#"> « </a></li>
+        {%endif%}
+        {% for curpage in page_obj.paginator.page_range %}
+        {% if page_obj.number != curpage %}
+        <li><a href="{%url 'application_index'%}?page={{curpage}}">{{curpage}}</a></li>
+        {%else%}
+        <li class="active"><a href="{%url 'users'%}?page={{curpage}}">{{curpage}}</a></li>
+        {%endif%}
+        {%endfor%}
+        {%if page_obj.has_next %}
+        <li><a class="next" href="{%url 'application_index'%}?page={{page_obj.number|add:"1"}}"> »</a></li>
+        {%else%}
+        <li class="disabled"><a class="next" href="#"> »</a></li>
+        {%endif%}
+    </ul>
+</div>
+{% endblock %}

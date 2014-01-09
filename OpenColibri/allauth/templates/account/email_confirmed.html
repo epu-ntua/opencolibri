@@ -1,0 +1,28 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+{% load account %}
+
+{% block head_title %}{% trans "Confirm E-mail Address" %}{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-responsive.min.css">
+{% endblock %}
+
+{% block content %}
+<div id="login_page" class="wrapper-content">
+    <div class="auth-form">
+        <div class="auth-form-header">
+            {% trans "Confirm E-mail Address" %}
+        </div>
+        <div class="auth-form-body">
+
+            {% user_display email_address.user as user_display %}
+
+            <p>{% blocktrans with email_address.email as email %}You have confirmed that <a href="mailto:{{email}}">{{
+                email }}</a> is an e-mail address for user {{ user_display }}.{% endblocktrans %}</p>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

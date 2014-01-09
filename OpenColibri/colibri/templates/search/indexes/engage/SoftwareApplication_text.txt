@@ -1,0 +1,5 @@
+{{ object.title }}
+{{ object.url }}
+{{ object.type }}
+{{ object.maintainer.name }}
+#{{ object.user.get_full_name }}

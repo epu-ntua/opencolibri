@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load upload_tags %}
+{% block css %}
+<link rel="stylesheet" href="/s/chosen/chosen.css"/>
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/style.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-responsive.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-image-gallery.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/jquery.fileupload-ui.css">
+{% endblock %}
+{% block scripts %}
+<script src="/s/django_file_upload/js/jquery.ui.widget.js"></script>
+<script src="/s/django_file_upload/js/tmpl.min.js"></script>
+<script src="/s/django_file_upload/js/load-image.min.js"></script>
+<script src="/s/django_file_upload/js/canvas-to-blob.min.js"></script>
+<script src="/s/django_file_upload/js/bootstrap.min.js"></script>
+<script src="/s/django_file_upload/js/bootstrap-image-gallery.min.js"></script>
+<script src="/s/django_file_upload/js/jquery.iframe-transport.js"></script>
+<script src="/s/django_file_upload/js/jquery.fileupload.js"></script>
+<script src="/s/django_file_upload/js/jquery.fileupload-fp.js"></script>
+<script src="/s/django_file_upload/js/jquery.fileupload-ui.js"></script>
+<script src="/s/django_file_upload/js/locale.js"></script>
+<script src="/s/django_file_upload/js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js" type="text/javascript"></script>
+<script src="/s/chosen/chosen.proto.js"></script>
+<script src="/s/js/dataset.js"></script>
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="page-header">
+        <h1>Create A New Dataset</h1>
+    </div>
+    <form id="fileupload" method="post" action="/dataset/add" enctype="multipart/form-data">{% csrf_token %}
+        {{ form.errors }}
+        {{ form.title.label_tag }}<br>
+        {{ form.title }}<br>
+        {{ form.description.label_tag }}<br>
+        {{ form.description }}<br>
+        {{ form.country.label_tag }}<br>
+        {{ form.country }}<br>
+        <br>
+
+        <div class="row fileupload-buttonbar">
+            <div class="span7">
+                <span class="btn btn-primary fileinput-button">
+                    <i class="icon-plus icon-white"></i>
+                    <span>Add files...</span>
+                    <input type="file" name="file" multiple>
+                </span>
+                <input type="submit" class="btn btn-success start" value="dataset-add"/>
+            </div>
+            <div class="span5 fileupload-progress fade">
+                <div class="progress progress-success progres-striped active">
+                    <div class="bar" style="width:0%"></div>
+                </div>
+                <div class="progress-extended">&nbsp;</div>
+            </div>
+        </div>
+        <div class="fileupload-loading"></div>
+        <table class="table table-striped">
+            <tbody class="files" data-toggle="modal-gallery" data-target="#modal-gallery"></tbody>
+        </table>
+    </form>
+    <div class="fileupload-content">
+        <table class="files"></table>
+        <div class="fileupload-progressbar"></div>
+    </div>
+</div>
+<!-- modal-gallery is the modal dialog used for the image gallery -->
+<div id="modal-gallery" class="modal modal-gallery hide fade" data-filter=":odd">
+    <div class="modal-header">
+        <a class="close" data-dismiss="modal">&times;</a>
+
+        <h3 class="modal-title"></h3>
+    </div>
+    <div class="modal-body">
+        <div class="modal-image"></div>
+    </div>
+    <div class="modal-footer">
+        <a class="btn modal-download" target="_blank">
+            <i class="icon-download"></i>
+            <span>Download</span>
+        </a>
+        <a class="btn btn-success modal-play modal-slideshow" data-slideshow="5000">
+            <i class="icon-play icon-white"></i>
+            <span>Slideshow</span>
+        </a>
+        <a class="btn btn-info modal-prev">
+            <i class="icon-arrow-left icon-white"></i>
+            <span>Previous</span>
+        </a>
+        <a class="btn btn-primary modal-next">
+            <span>Next</span>
+            <i class="icon-arrow-right icon-white"></i>
+        </a>
+    </div>
+</div>
+{% upload_js %}
+{% endblock %}

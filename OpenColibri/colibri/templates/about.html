@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}About Us{% endblock %}
+{% block content %}
+{% load i18n %}
+{% load url from future %}
+
+<div id="about_page" class="wrapper-content">
+    <div class="clmn-12 center">
+
+        <div id="about_container">
+            <div id="about_title">
+                {%trans "About colibri project" %}
+            </div>
+            <div id="about_maintext">
+                <p style="margin-top:40px">{%blocktrans%} The main goal of colibri project is the development and use of
+                    a data infrastructure, incorporating distributed and diverse public sector information (PSI)
+                    resources,
+                    capable of supporting scientific collaboration and research, particularly for the Social Science and
+                    Humanities (SSH) scientific communities, while also empowering the
+                    deployment of open governmental data towards citizens.The colibri e-infrastructure is envisaged to
+                    promote a highly synergetic approach to governance research, by providing the ground for
+                    experimentation
+                    to actors from both ICT and non-ICT related disciplines and scientific communities, as well as by
+                    ensuring that the scientific outcomes are made accessible
+                    to the citizens, so that they can monitor public service delivery and influence the decision making
+                    process.{%endblocktrans%}
+                </p>
+
+                <p style="margin-top:40px">
+                    {%blocktrans%}Simply put, colibri is a door for researchers that leads them to the world of Open
+                    Government Data. By using the colibri platform, researchers and citizens will be able to
+                    submit, acquire, search and visualize diverse, distributed and derived Public sector datasets from
+                    all the countries of the European Union.{%endblocktrans%}
+                </p>
+
+                <p style="margin-top:40px">{%trans "colibri is a combination of CP-CSA project funded under the European
+                    Commission FP7 Programme."%}
+                </p>
+
+                <p style="margin-top:40px"><b>{%trans "For more information visit us on the colibri project
+                    website"%}</b>
+                    <a style="color:white;" href="http://www.colibri-project.eu"><p><img
+                            style="margin-top:15px;margin-bottom:15px;" src="/s/imgs/logo_small.png"/></p>
+
+                        <p style="margin-bottom:60px;"><b>colibri Project Website</b></p></a>
+            </div>
+        </div>
+    </div>
+</div><!-- END of wrapper-content -->
+{% endblock %}

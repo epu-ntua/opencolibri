@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load url from future %}
+{% block head_title %}{% trans "Could not read file" %}{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-responsive.min.css">
+<link rel="stylesheet" type="text/css" href="/s/css/third_party/nyroModal_extend.css"/>
+{% endblock %}
+{% block scripts %}
+<script type="text/javascript" src="/s/js/third_party/jquery.nyroModal.custom.min.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        jQuery('.nyroModal').nyroModal();
+    });
+</script>
+{% endblock %}
+{% block content %}
+<div id="login_page" class="wrapper-content">
+    <div class="auth-form">
+        <div class="auth-form-header">
+            {% trans "The file enconding is not recognized" %}
+        </div>
+        <div class="auth-form-body">
+            <p style="font-size:18px;line-height:25px"> {% trans "The system cannot autodetect the encoding or format of
+                the specified file" %}</p>
+
+            <p style="font-size:18px;line-height:25px"> {% trans "You can" %} <a href="/dataset/{{dataset_pk}}">{% trans
+                "return to the dataset" %}</a> {% trans "or help the community by" %} <span
+                    style="font-size:18px;color:#0088CC;display:inline;cursor:pointer" class="nyroModal"
+                    href="{% url 'dataset_extend_modal' pk=dataset_pk %}"> extending the dataset</span> {% trans "to
+                another, common encoding (e.g UTF-8)" %}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

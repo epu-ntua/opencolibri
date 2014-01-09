@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>{% block title %}colibri{% endblock %}</title>
+    <link href="/s/css/third_party/nyroModal.css" rel="stylesheet" type="text/css"/>
+    <link href="/s/css/colibri.css" rel="stylesheet" type="text/css"/>
+    <link href="/s/css/theme.css" rel="stylesheet" type="text/css"/>
+    <link href="/s/css/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="/s/css/third_party/jquery-ui-1.10.0.custom.min.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="/s/js/third_party/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="/s/js/third_party/jquery-ui-1.10.0.custom.min.js"></script>
+    <script type="text/javascript" src="/s/js/third_party/jquery.nyroModal.custom.min.js"></script>
+    <script type="text/javascript" src="/s/js/colibri.js"></script>
+    <script type="text/javascript" src="/s/js/third_party/jquery.hashchange.min.js"></script>
+    <script type="text/javascript" src="/s/js/third_party/jquery.easytabs.min.js"></script>
+    <script type="text/javascript" src="/s/js/third_party/jquery.tablesorter.js"></script>
+    <script type="text/javascript" src="/s/js/third_party/jquery.tokeninput.js"></script>
+    <script type="text/javascript" src="/s/js/third_party/jquery-migrate-1.1.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/s/css/third_party/token-input.css"/>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            {#                {%
+                if active_tab %}#
+            }
+                {#                    console.log('pressing the fucking button');#
+                }
+                {#                    $('#groups').click()#
+                }
+                {#                {%
+                    endif %
+                }#
+                }
+                $("#{{ current }}").addClass('current');
+                $('.selector').each(function (i, obj) {
+                    var id = $(this).attr('id');
+                    var selector_html = '' +
+                            '<div class="menu-select ' + id + '" id="' + id + '">' +
+                            '	<div class="value"></div>' +
+                            '	<div class="options">';
+                    $(this).find('option').each(function () {
+                        selector_html += '<a href="#" class="option" data-id="' + $(this).val() + '">' + $(this).text() + '</a>';
+                    });
+                    selector_html += '	</div>' +
+                            '</div>';
+                    $(this).after(selector_html).remove();
+                    //hover
+                    $('#' + id).hover(function () {
+                        $(this).addClass('hover');
+                    }, function () {
+                        $(this).removeClass('hover');
+                    });
+                    //button actions
+                    $('#' + id + ' a').click(function () {
+                        $(this).parent().parent().find('.value').text($(this).text()).attr('data-id', $(this).attr('data-id')).parent().removeClass('hover');
+                        return false;
+                    });
+                    //default
+                    $('#' + id + ' a:first').trigger('click');
+                });
+            }
+            )
+            ;
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            $(".bigdate").html(function (i, text) {
+                return text.replace(/[a-zàâîïôèéêëèùûü]+/i, function (match) {
+                    return '<span class="datebold">' + match + '</span>';
+                });
+            });
+        });
+    </script>
+
+
+    <style type="text/css"></style>
+</head>
+
+<body style="background-color: #f2f0e7">
+<div class="wrapper top">
+    <div class="clmn-12 center">
+        <div class="float-left logo">
+            <a href="/" id='homelogo'><img src="/s/imgs/colibri_logo.jpg" width="103" height="100"/></a>
+        </div>
+        <div class="clmn-10">
+
+            <div class="topTools">
+                <div class="float-right">
+                    <div class="language-select">
+                        <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+                            <select name="language" id="languages" class="selector">
+                                <option value="1">English</option>
+                                <option value="2">Greek</option>
+                                <option value="3">France</option>
+                                <option value="4">German</option>
+                                <option value="5">Italian</option>
+                                <option value="6">Spanish</option>
+                                <option value="7">Dutch</option>
+                                <option value="8">Bulgarian</option>
+                            </select>
+                        </form>
+                    </div>
+                    <ul id="TopNav">
+                        {% if user.is_authenticated %}
+                        <li><a href="#">{{ user.username }}</a>
+                            <ul class="noJS">
+                                <li><a id='profile' href="/profile">Profile</a></li>
+                                <li><a href="#">Account Settings</a></li>
+                                <li><a href="#">Inbox</a></li>
+                                <li>
+                                    <form action="/accounts/logout/" method="post">{% csrf_token %}
+                                        <a href="javascript:;" onclick="parentNode.submit();">Signout</a>
+                                        <input type="hidden" name="mess" value="signout"/>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                        {% else %}
+                        <li><a href="/accounts/login">Sign in</a></li>
+                        <li><a href="/accounts/signup">Sign up</a></li>
+                        {% endif %}
+                    </ul>
+                    <!-- end of TopNav -->
+
+                </div>
+                <!-- end of TopTools -->
+
+            </div>
+            <ul id="mainNav">
+                <li><a href="/" id='home'>HOME</a></li>
+                <li><a id='dataset' href="/dataset-search">DATASETS</a>
+                    <ul class="noJS">
+                        <li><a href="/dataset-search">Search Datasets</a></li>
+                        <li><a href="#">Add new dataset</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/request" id='request'>REQUEST DATA</a>
+                </li>
+                <li><a id='community' href="#">COMMUNITY</a></li>
+                <li><a id='opendatasites' href="/opendatasites">OPEN DATA SITES</a></li>
+                <li><a id='wiki' href="#">WIKI</a></li>
+                <li><a id='about' href="/about">ABOUT US</a>
+                    <ul class="noJS">
+                        <li><a href="/about">About colibri</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="/terms">Term Of Use</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- End of main navigation-->
+
+        </div>
+        <!-- End of Right row-->
+    </div>
+</div>
+<!-- END of wrapper Top -->
+
+<div id="content">
+    {% block content %}{% endblock %}
+</div>
+
+<div class="wrapper footer green">
+    <div class="clmn-12 center-footer">
+        <div class="footer-logos">
+            <a href="#"><img src="/s/imgs/logo-seventhframework.jpg" width="88" height="88" alt="seventh "/></a>
+            <a href="#"><img src="/s/imgs/logo-eu.jpg" width="88" height="88" alt="eu"/></a>
+            <a href="#"><img src="/s/imgs/logo-smallcolibri.jpg" width="88" height="88" alt="colibri"/></a>
+        </div>
+        colibri is a combination of CP & CSA project funded under the European Commission FP7 Programme.
+    </div>
+    <div class="footer-line"></div>
+    <div class="clmn-12 center-footer notes">
+        <div class="float-left">Copyright © 2012 <strong>colibri</strong> Project. All rights reserved.</div>
+        <div class="float-right">Please read our <a href="/terms">Terms Of Use</a></div>
+    </div>
+</div>
+<!-- END of wrapper-footer -->
+</body>
+</html>

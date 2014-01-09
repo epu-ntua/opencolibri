@@ -1,0 +1,5151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-04-12 22:10+0300\n"
+"PO-Revision-Date: 2013-04-11 01:16+0300\n"
+"Last-Translator: sdff dfas <12@test.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"X-Translated-Using: django-rosetta 0.7.1\n"
+
+#: .\allauth\account\forms.py:35 .\allauth\account\forms.py:51
+#: .\allauth\account\forms.py:236 .\allauth\account\forms.py:352
+msgid "Password"
+msgstr "Kata sandi"
+
+#: .\allauth\account\forms.py:44
+msgid "Password must be a minimum of {0} characters."
+msgstr "Kata sandi harus minimal {0} karakter."
+
+#: .\allauth\account\forms.py:53
+msgid "Remember Me"
+msgstr "Remember Me"
+
+#: .\allauth\account\forms.py:64
+msgid "E-mail address"
+msgstr "Alamat e-mail"
+
+#: .\allauth\account\forms.py:65 .\allauth\account\forms.py:184
+#: .\allauth\account\forms.py:302 .\allauth\account\forms.py:369
+msgid "E-mail"
+msgstr "E-mail"
+
+#: .\allauth\account\forms.py:70 .\allauth\account\forms.py:71
+#: .\allauth\account\forms.py:170
+msgid "Username"
+msgstr "Username"
+
+#: .\allauth\account\forms.py:78
+msgid "Username or e-mail"
+msgstr "Username atau e-mail"
+
+#: .\allauth\account\forms.py:79
+msgid "Login"
+msgstr "Login"
+
+#: .\allauth\account\forms.py:112
+msgid "This account is currently inactive."
+msgstr "Akun ini saat ini tidak aktif."
+
+#: .\allauth\account\forms.py:116
+msgid "The e-mail address and/or password you specified are not correct."
+msgstr "Alamat e-mail dan / atau kata sandi yang Anda masukkan tidak benar."
+
+#: .\allauth\account\forms.py:120
+msgid "The username and/or password you specified are not correct."
+msgstr "Username dan / atau kata sandi yang Anda masukkan tidak benar."
+
+#: .\allauth\account\forms.py:123
+msgid "The login and/or password you specified are not correct."
+msgstr "Login dan / atau kata sandi yang Anda masukkan tidak benar."
+
+#: .\allauth\account\forms.py:187
+msgid "E-mail (optional)"
+msgstr "E-mail (opsional)"
+
+#: .\allauth\account\forms.py:195
+msgid "Usernames can only contain letters, digits and @/./+/-/_."
+msgstr "Username hanya dapat berisi huruf, angka dan @ / / + / -. / _."
+
+#: .\allauth\account\forms.py:201
+msgid "This username is already taken. Please choose another."
+msgstr "Username ini telah diambil. Silakan pilih yang lain."
+
+#: .\allauth\account\forms.py:209
+msgid "A user is already registered with this e-mail address."
+msgstr "Seorang pengguna sudah terdaftar dengan alamat e-mail ini."
+
+#: .\allauth\account\forms.py:237 .\allauth\account\forms.py:353
+msgid "Password (again)"
+msgstr "Kata sandi (lagi)"
+
+#: .\allauth\account\forms.py:265 .\allauth\account\forms.py:342
+#: .\allauth\account\forms.py:358 .\allauth\account\forms.py:426
+msgid "You must type the same password each time."
+msgstr "Anda harus mengetikkan kata sandi yang sama setiap kali."
+
+#: .\allauth\account\forms.py:310
+msgid "This e-mail address is already associated with this account."
+msgstr "Alamat e-mail ini sudah dikaitkan dengan akun ini."
+
+#: .\allauth\account\forms.py:311
+msgid "This e-mail address is already associated with another account."
+msgstr "Alamat e-mail ini sudah dikaitkan dengan akun lain."
+
+#: .\allauth\account\forms.py:330
+msgid "Current Password"
+msgstr "Kata sandi saat ini"
+
+#: .\allauth\account\forms.py:331 .\allauth\account\forms.py:414
+msgid "New Password"
+msgstr "Kata sandi Baru"
+
+#: .\allauth\account\forms.py:332 .\allauth\account\forms.py:415
+msgid "New Password (again)"
+msgstr "Kata sandi (lagi)"
+
+#: .\allauth\account\forms.py:336
+msgid "Please type your current password."
+msgstr "Silahkan ketik kata sandi Anda saat ini."
+
+#: .\allauth\account\forms.py:379
+msgid "The e-mail address is not assigned to any user account"
+msgstr "Alamat e-mail ini tidak ditugaskan untuk sebuah account pengguna"
+
+#: .\allauth\account\models.py:28
+msgid "email address"
+msgstr "alamat email"
+
+#: .\allauth\account\models.py:29
+msgid "email addresses"
+msgstr "alamat email"
+
+#: .\allauth\account\models.py:78
+msgid "email confirmation"
+msgstr "email konfirmasi"
+
+#: .\allauth\account\models.py:79
+msgid "email confirmations"
+msgstr "email konfirmasi"
+
+#: .\allauth\account\utils.py:105
+#, python-format
+msgid "Successfully signed in as %(user)s."
+msgstr "Berhasil masuk sebagai%(user)s."
+
+#: .\allauth\account\utils.py:178 .\allauth\account\views.py:167
+#: .\allauth\account\views.py:186
+#, python-format
+msgid "Confirmation e-mail sent to %(email)s"
+msgstr "Konfirmasi e-mail telah dikirim ke%(email)s"
+
+#: .\allauth\account\views.py:92
+#, python-format
+msgid "You have confirmed %(email)s."
+msgstr "Anda telah mengkonfirmasi %(email)s."
+
+#: .\allauth\account\views.py:204
+#, python-format
+msgid "You cannot remove your primary e-mail address (%(email)s)"
+msgstr "Anda tidak dapat menghapus alamat e-mail utama (%(email)s)"
+
+#: .\allauth\account\views.py:214
+#, python-format
+msgid "Removed e-mail address %(email)s"
+msgstr "Alamat yang dihapus e-mail%(email)s"
+
+#: .\allauth\account\views.py:240
+msgid "Your primary e-mail address must be verified"
+msgstr "Alamat e-mail utama Anda harus diverifikasi"
+
+#: .\allauth\account\views.py:252
+msgid "Primary e-mail address set"
+msgstr "Alamat email utama ditetapkan"
+
+#: .\allauth\account\views.py:281 .\allauth\account\views.py:358
+msgid "Password successfully changed."
+msgstr "Sandi berhasil diubah."
+
+#: .\allauth\account\views.py:306
+msgid "Password successfully set."
+msgstr "Sandi berhasil ditetapkan."
+
+#: .\allauth\account\views.py:374
+#: .\allauth\templates\account\logout.html.py:18
+msgid "You have signed out."
+msgstr "Anda telah keluar."
+
+#: .\allauth\socialaccount\forms.py:47
+msgid "Your account has no password set up."
+msgstr "Akun Anda tidak memiliki kata sandi."
+
+#: .\allauth\socialaccount\forms.py:51
+msgid "Your account has no verified e-mail address."
+msgstr "Akun Anda belum ada alamat e-mail terverifikasi."
+
+#: .\allauth\socialaccount\helpers.py:123
+msgid "The social account has been connected"
+msgstr "Akun sosial telah terhubung"
+
+#: .\allauth\socialaccount\views.py:54
+msgid "The social account has been disconnected"
+msgstr "Akun sosial telah terputus"
+
+#: .\allauth\socialaccount\providers\oauth\client.py:84
+#, python-format
+msgid "Invalid response while obtaining request token from \"%s\"."
+msgstr "Respon tidak valid saat mendapatkan token permintaan dari \"%s\"."
+
+#: .\allauth\socialaccount\providers\oauth\client.py:107
+#, python-format
+msgid "Invalid response while obtaining access token from \"%s\"."
+msgstr "Respon tidak valid saat mendapatkan token akses dari \"%s\"."
+
+#: .\allauth\socialaccount\providers\oauth\client.py:120
+#, python-format
+msgid "No request token saved for \"%s\"."
+msgstr "Tidak ada token permintaan disimpan untuk \"%s\"."
+
+#: .\allauth\socialaccount\providers\oauth\client.py:168
+#, python-format
+msgid "No access token saved for \"%s\"."
+msgstr "Tidak ada token akses disimpan untuk \"%s\"."
+
+#: .\allauth\socialaccount\providers\oauth\client.py:188
+#, python-format
+msgid "No access to private resources at \"%s\"."
+msgstr "Tidak ada akses ke sumber daya pribadi di \"%s\"."
+
+#: .\allauth\templates\account\email.html.py:6
+msgid "Account"
+msgstr "Akun"
+
+#: .\allauth\templates\account\email.html.py:15
+msgid "Email Addresses"
+msgstr "Alamat Email"
+
+#: .\allauth\templates\account\email.html.py:19
+msgid "The following e-mail addresses are associated with your account:"
+msgstr "Alamat e-mail berikut yang terkait dengan akun Anda:"
+
+#: .\allauth\templates\account\email.html.py:33
+msgid "Verified"
+msgstr "Terverifikasi"
+
+#: .\allauth\templates\account\email.html.py:35
+msgid "Unverified"
+msgstr "Tidak terverifikasi"
+
+#: .\allauth\templates\account\email.html.py:37
+msgid "Primary"
+msgstr "Utama"
+
+#: .\allauth\templates\account\email.html.py:43
+msgid "Make Primary"
+msgstr "Membuat Utama"
+
+#: .\allauth\templates\account\email.html.py:44
+msgid "Re-send Verification"
+msgstr "Mengirim ulang Verifikasi"
+
+#: .\allauth\templates\account\email.html.py:45
+#: .\allauth\templates\socialaccount\connections.html.py:43
+#: .\colibri\templates\dataset\_edit.html.py:18
+#: .\old\django-basic-apps\basic\comments\templates\comments\delete.html.py:20
+msgid "Remove"
+msgstr "Menghapus"
+
+#: .\allauth\templates\account\email.html.py:52
+msgid "Warning:"
+msgstr "Peringatan:"
+
+#: .\allauth\templates\account\email.html.py:52
+msgid ""
+"You currently do not have any e-mail address set up. You should really add "
+"an e-mail address so you can receive notifications, reset your password, etc."
+msgstr "Anda saat ini belum mengatur alamat e-mail. Anda sebaiknya menambahkan alamat e-mail sehingga Anda dapat menerima pemberitahuan, reset kata sandi Anda, dll"
+
+#: .\allauth\templates\account\email.html.py:57
+msgid "Add E-mail Address"
+msgstr "Tambahkan Alamat E-mail"
+
+#: .\allauth\templates\account\email.html.py:62
+msgid "Add E-mail"
+msgstr "Tambahkan E-mail"
+
+#: .\allauth\templates\account\email.html.py:75
+msgid "Do you really want to remove the selected e-mail address?"
+msgstr "Apakah Anda benar-benar ingin menghapus alamat e-mail yang dipilih?"
+
+#: .\allauth\templates\account\email_confirm.html.py:7
+#: .\allauth\templates\account\email_confirmed.html.py:6
+#: .\allauth\templates\account\email_confirmed.html.py:16
+#: .\allauth\templates\account\email\email_confirmation_subject.txt.py:3
+msgid "Confirm E-mail Address"
+msgstr "Konfirmasi Alamat E-mail"
+
+#: .\allauth\templates\account\email_confirm.html.py:17
+msgid "Email confirmation"
+msgstr "Konfirmasi email"
+
+#: .\allauth\templates\account\email_confirm.html.py:25
+#, python-format
+msgid ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
+"address for user %(user_display)s."
+msgstr "Harap pastikan bahwa <a href=\"mailto:%(email)s\">%(email)s </ a> adalah alamat e-mail bagi pengguna%(user_display)s."
+
+#: .\allauth\templates\account\email_confirm.html.py:29
+msgid "Confirm"
+msgstr "Konfirmasi"
+
+#: .\allauth\templates\account\email_confirm.html.py:36
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please <a href=\"%"
+"(email_url)s\">issue a new e-mail confirmation request</a>."
+msgstr "Link konfirmasi e-mail ini kadaluwarsa atau tidak valid. Silakan <a href=\"%(email_url)s\"> meminta konfirmasi email baru </ a>."
+
+#: .\allauth\templates\account\email_confirmed.html.py:22
+#, python-format
+msgid ""
+"You have confirmed that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-"
+"mail address for user %(user_display)s."
+msgstr "Anda telah mengkonfirmasi bahwa <a href=\"mailto:%(email)s\">%(email)s </ a> adalah alamat e-mail bagi pengguna%(user_display)s."
+
+#: .\allauth\templates\account\login.html.py:7
+#: .\allauth\templates\account\login.html.py:16
+#: .\allauth\templates\account\login.html.py:46
+msgid "Sign In"
+msgstr "Masuk"
+
+#: .\allauth\templates\account\login.html.py:47
+msgid "or"
+msgstr "atau"
+
+#: .\allauth\templates\account\login.html.py:47
+msgid " Sign-up"
+msgstr " Daftar"
+
+#: .\allauth\templates\account\login.html.py:48
+msgid "(forgot password?)"
+msgstr "(Lupa password?)"
+
+#: .\allauth\templates\account\logout.html.py:5
+#: .\allauth\templates\account\logout.html.py:14
+msgid "Signed Out"
+msgstr "Telah keluar"
+
+#: .\allauth\templates\account\password_change.html.py:4
+#: .\allauth\templates\account\password_change.html.py:7
+#: .\allauth\templates\account\password_change.html.py:12
+#: .\allauth\templates\account\password_reset_from_key.html.py:5
+#: .\allauth\templates\account\password_reset_from_key.html.py:8
+msgid "Change Password"
+msgstr "Ubah kata sandi"
+
+#: .\allauth\templates\account\password_delete.html.py:5
+#: .\allauth\templates\account\password_delete.html.py:8
+msgid "Delete Password"
+msgstr "Hapus kata sandi"
+
+#: .\allauth\templates\account\password_delete.html.py:9
+msgid ""
+"You may delete your password since you are currently logged in using OpenID."
+msgstr "Anda dapat menghapus kata sandi Anda karena Anda sedang login menggunakan OpenID."
+
+#: .\allauth\templates\account\password_delete.html.py:12
+msgid "delete my password"
+msgstr "hapus kata sandi saya"
+
+#: .\allauth\templates\account\password_delete_done.html.py:5
+#: .\allauth\templates\account\password_delete_done.html.py:8
+msgid "Password Deleted"
+msgstr "Kata sandi Dihapus"
+
+#: .\allauth\templates\account\password_delete_done.html.py:9
+msgid "Your password has been deleted."
+msgstr "Kata sandi Anda telah dihapus."
+
+#: .\allauth\templates\account\password_reset.html.py:6
+#: .\allauth\templates\account\password_reset.html.py:15
+#: .\allauth\templates\account\password_reset_done.html.py:6
+#: .\allauth\templates\account\password_reset_done.html.py:15
+msgid "Password Reset"
+msgstr "Reset kata sandi"
+
+#: .\allauth\templates\account\password_reset.html.py:23
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
+msgstr "Lupa kata sandi Anda? Masukkan alamat e-mail Anda di bawah ini, dan kami akan mengirimkan e-mail yang memungkinkan Anda untuk me-reset."
+
+#: .\allauth\templates\account\password_reset.html.py:28
+msgid "Reset My Password"
+msgstr "Reset kata sandi saya"
+
+#: .\allauth\templates\account\password_reset.html.py:31
+msgid "Please contact us if you have any trouble resetting your password."
+msgstr "Silakan hubungi kami jika Anda memiliki masalah pengaturan ulang kata sandi."
+
+#: .\allauth\templates\account\password_reset_done.html.py:23
+msgid ""
+"We have sent you an e-mail. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr "Kami telah mengirim e-mail. Silakan hubungi kami jika Anda tidak menerima dalam waktu beberapa menit."
+
+#: .\allauth\templates\account\password_reset_from_key.html.py:8
+msgid "Bad Token"
+msgstr "Token tidak baik"
+
+#: .\allauth\templates\account\password_reset_from_key.html.py:12
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
+msgstr "Link kata sandi reset tidak sah, mungkin karena telah digunakan. Silakan meminta <a href=\"%(passwd_reset_url)s\"> reset kata sandi baru </ a>."
+
+#: .\allauth\templates\account\password_reset_from_key.html.py:18
+msgid "change password"
+msgstr "mengubah kata sandi"
+
+#: .\allauth\templates\account\password_reset_from_key.html.py:21
+msgid "Your password is now changed."
+msgstr "Kata sandi Anda telah dirubah."
+
+#: .\allauth\templates\account\password_set.html.py:5
+#: .\allauth\templates\account\password_set.html.py:8
+#: .\allauth\templates\account\password_set.html.py:13
+msgid "Set Password"
+msgstr "Atur Kata Sandi"
+
+#: .\allauth\templates\account\signup.html.py:6
+#: .\allauth\templates\account\signup.html.py:26
+#: .\colibri\templates\base.html.py:84 .\colibri\templates\wiki\base.html.py:99
+msgid "Register"
+msgstr "Daftar"
+
+#: .\allauth\templates\account\signup.html.py:42
+#, python-format
+msgid ""
+"Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
+msgstr "Sudah memiliki account? Silahkan <a href=\"%(login_url)s\"> masuk </ a>."
+
+#: .\allauth\templates\account\signup.html.py:50
+#: .\allauth\templates\socialaccount\signup.html.py:14
+#: .\allauth\templates\socialaccount\signup.html.py:27
+msgid "Sign Up"
+msgstr "Mendaftar"
+
+#: .\allauth\templates\account\verification_sent.html.py:5
+#: .\allauth\templates\account\verification_sent.html.py:8
+#: .\allauth\templates\account\verified_email_required.html.py:6
+#: .\allauth\templates\account\verified_email_required.html.py:9
+msgid "Verify Your E-mail Address"
+msgstr "Verifikasi Alamat E-mail Anda"
+
+#: .\allauth\templates\account\verification_sent.html.py:10
+#, python-format
+msgid ""
+"We have sent an e-mail to <a href=\"mailto:%(email)s\">%(email)s</a> for "
+"verification. Follow the link provided to finalize the signup process. "
+"Please contact us if you do not receive it within a few minutes."
+msgstr "Kami telah mengirim e-mail ke <a href=\"mailto:%(email)s\">%(email)s </ a> untuk verifikasi. Ikuti link yang diberikan untuk menyelesaikan proses pendaftaran. Silakan hubungi kami jika Anda tidak menerimanya dalam waktu beberapa menit."
+
+#: .\allauth\templates\account\verified_email_required.html.py:13
+msgid ""
+"This part of the site requires us to verify that\n"
+"you are who you claim to be. For this purpose, we require that you\n"
+"verify ownership of your e-mail address. "
+msgstr "Ini bagian dari situs yang mengharuskan kami untuk memverifikasi bahwa Anda adalah siapa Anda mengklaim untuk menjadi. Untuk tujuan ini, kami meminta Anda \n verify kepemilikan alamat e-mail Anda "
+
+#: .\allauth\templates\account\verified_email_required.html.py:17
+msgid ""
+"We have sent an e-mail to you for\n"
+"verification. Please click on the link inside this e-mail. Please\n"
+"contact us if you do not receive it within a few minutes."
+msgstr "Kami telah mengirim e-mail kepada Anda untuk \n verifikasi. Silakan klik pada link dalam e-mail. Silakan \n contact kami jika Anda tidak menerima dalam waktu beberapa menit."
+
+#: .\allauth\templates\account\verified_email_required.html.py:21
+#, python-format
+msgid ""
+"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
+"mail address</a>."
+msgstr "<strong> Catatan: </ strong> Anda masih dapat <a href=\"%(email_url)s\"> mengubah alamat e-mail Anda </ a>."
+
+#: .\allauth\templates\account\email\email_confirmation_message.txt.py:1
+#, python-format
+msgid ""
+"User %(user_display)s at %(site_name)s has given this as an email address.\n"
+"\n"
+"To confirm this is correct, go to %(activate_url)s\n"
+msgstr "Pengguna %(user_display)s pada %(site_name)s telah memberikan ini sebagai alamat email. \n \nUntuk mengkonfirmasi ini benar, pergi ke %(activate_url)s \n"
+
+#: .\allauth\templates\account\email\password_reset_key_message.txt.py:1
+#, python-format
+msgid ""
+"You're receiving this e-mail because you or someone else has requested a "
+"password for your user account at %(site_domain)s.\n"
+"It can be safely ignored if you did not request a password reset. Click the "
+"link below to reset your password.\n"
+"\n"
+"%(password_reset_url)s\n"
+"\n"
+"In case you forgot, your username is %(username)s.\n"
+"\n"
+"Thanks for using our site!\n"
+msgstr "Anda menerima e-mail ini karena Anda atau orang lain telah meminta kata sandi untuk akun pengguna Anda pada %(site_domain)s. \nlt Text dapat diabaikan dengan aman jika Anda tidak meminta reset kata sandi. Klik link di bawah untuk mereset kata sandi Anda. \n\n%(password_reset_url)s\n\nln. Jika Anda lupa, username Anda adalah %(username)s. \n\nTerima kasih untuk menggunakan situs kami! \n"
+
+#: .\allauth\templates\account\email\password_reset_key_subject.txt.py:3
+msgid "Password Reset E-mail"
+msgstr "Reset kata sandi E-mail"
+
+#: .\allauth\templates\account\snippets\already_logged_in.html.py:5
+msgid "Note"
+msgstr "Perhatikan"
+
+#: .\allauth\templates\account\snippets\already_logged_in.html.py:5
+#, python-format
+msgid "you are already logged in as %(user_display)s."
+msgstr "Anda sudah login sebagai %(user_display)s."
+
+#: .\allauth\templates\openid\login.html.py:10
+msgid "OpenID Sign In"
+msgstr "Masuk dengan OpenID"
+
+#: .\allauth\templates\socialaccount\account_inactive.html.py:5
+msgid "Account Inactive"
+msgstr "Akun tidak aktif"
+
+#: .\allauth\templates\socialaccount\account_inactive.html.py:14
+msgid "Inactive account"
+msgstr "Akun tidak aktif"
+
+#: .\allauth\templates\socialaccount\account_inactive.html.py:18
+msgid "This account is inactive."
+msgstr "Akun ini tidak aktif."
+
+#: .\allauth\templates\socialaccount\authentication_error.html.py:5
+#: .\allauth\templates\socialaccount\authentication_error.html.py:18
+msgid "Social Network Login Failure"
+msgstr "Gagal Masuk Jaringan Sosial"
+
+#: .\allauth\templates\socialaccount\authentication_error.html.py:22
+msgid ""
+"An error occurred while attempting to login via your social network account."
+msgstr "Terjadi kesalahan ketika mencoba untuk login melalui akun jejaring sosial Anda."
+
+#: .\allauth\templates\socialaccount\connections.html.py:5
+#: .\allauth\templates\socialaccount\connections.html.py:14
+msgid "Account Connections"
+msgstr "Koneksi dengan akun"
+
+#: .\allauth\templates\socialaccount\connections.html.py:19
+msgid ""
+"You can sign in to your account using any of the following third party "
+"accounts:"
+msgstr "Anda dapat masuk ke account Anda menggunakan salah satu dari akun pihak ketiga berikut:"
+
+#: .\allauth\templates\socialaccount\connections.html.py:51
+msgid ""
+"You currently have no social network accounts connected to this account."
+msgstr "Saat ini belum ada akun jaringan sosial terhubung ke akun ini."
+
+#: .\allauth\templates\socialaccount\connections.html.py:54
+msgid "Add a 3rd Party Account"
+msgstr "Tambahkan akun pihak ketiga"
+
+#: .\allauth\templates\socialaccount\login_cancelled.html.py:6
+#: .\allauth\templates\socialaccount\login_cancelled.html.py:15
+msgid "Login Cancelled"
+msgstr "Login Dibatalkan"
+
+#: .\allauth\templates\socialaccount\login_cancelled.html.py:22
+#, python-format
+msgid ""
+"You decided to cancel logging in to our site using one of your existing "
+"accounts. If this was a mistake, please proceed to <a href=\"%(login_url)s"
+"\">sign in</a>."
+msgstr "Anda memutuskan untuk membatalkan log in ke situs kami menggunakan salah satu akun Anda. Jika ini adalah sebuah kesalahan, lanjutkan ke <a href=\"%(login_url)s\"> masuk </a>."
+
+#: .\allauth\templates\socialaccount\signup.html.py:5
+msgid "Signup"
+msgstr "Mendaftar"
+
+#: .\allauth\templates\socialaccount\signup.html.py:18
+#, python-format
+msgid ""
+"You are about to use your %(provider_name)s account to login to \n"
+"%(site_name)s. As a final step, please complete the following form:"
+msgstr "Anda akan menggunakan akun %(PROVIDER_NAME)s Anda untuk login ke \n%(site_name)s. Sebagai langkah terakhir, silakan lengkapi formulir berikut:"
+
+#: .\colibri\lists.py:4
+msgid "Please choose a language.."
+msgstr "Silahkan pilih bahasa .."
+
+#: .\colibri\lists.py:5
+msgid "Afrikaans"
+msgstr "Afrikan"
+
+#: .\colibri\lists.py:6
+msgid "Arabic"
+msgstr "Arab"
+
+#: .\colibri\lists.py:7
+msgid "Azerbaijani"
+msgstr "Azerbaijani"
+
+#: .\colibri\lists.py:8
+msgid "Bulgarian"
+msgstr "Bulgaria"
+
+#: .\colibri\lists.py:9
+msgid "Belarusian"
+msgstr "Belarusia"
+
+#: .\colibri\lists.py:10
+msgid "Bengali"
+msgstr "Bengali"
+
+#: .\colibri\lists.py:11
+msgid "Breton"
+msgstr "Breton"
+
+#: .\colibri\lists.py:12
+msgid "Bosnian"
+msgstr "Bosnia"
+
+#: .\colibri\lists.py:13
+msgid "Catalan"
+msgstr "Catalan"
+
+#: .\colibri\lists.py:14
+msgid "Czech"
+msgstr "Ceko"
+
+#: .\colibri\lists.py:15
+msgid "Welsh"
+msgstr "Wales"
+
+#: .\colibri\lists.py:16
+msgid "Danish"
+msgstr "Denmark"
+
+#: .\colibri\lists.py:17
+msgid "German"
+msgstr "Jerman"
+
+#: .\colibri\lists.py:18
+msgid "Greek"
+msgstr "Yunani"
+
+#: .\colibri\lists.py:19
+msgid "English"
+msgstr "Inggris"
+
+#: .\colibri\lists.py:20
+msgid "British English"
+msgstr "Inggris British"
+
+#: .\colibri\lists.py:21
+msgid "Esperanto"
+msgstr "Esperanto"
+
+#: .\colibri\lists.py:22
+msgid "Spanish"
+msgstr "Spanyol"
+
+#: .\colibri\lists.py:23
+msgid "Argentinian Spanish"
+msgstr "Spanyol Argentina"
+
+#: .\colibri\lists.py:24
+msgid "Mexican Spanish"
+msgstr "Spanyol Meksiko"
+
+#: .\colibri\lists.py:25
+msgid "Nicaraguan Spanish"
+msgstr "Spanyol Nikaragua"
+
+#: .\colibri\lists.py:26
+msgid "Venezuelan Spanish"
+msgstr "Spanyol Venezuela"
+
+#: .\colibri\lists.py:27
+msgid "Estonian"
+msgstr "Estonia"
+
+#: .\colibri\lists.py:28
+msgid "Basque"
+msgstr "Basque"
+
+#: .\colibri\lists.py:29
+msgid "Persian"
+msgstr "Persia"
+
+#: .\colibri\lists.py:30
+msgid "Finnish"
+msgstr "Finlandia"
+
+#: .\colibri\lists.py:31
+msgid "French"
+msgstr "Perancis"
+
+#: .\colibri\lists.py:32
+msgid "Frisian"
+msgstr "Frisia"
+
+#: .\colibri\lists.py:33
+msgid "Irish"
+msgstr "Gaelic"
+
+#: .\colibri\lists.py:34
+msgid "Galician"
+msgstr "Galicia"
+
+#: .\colibri\lists.py:35
+msgid "Hebrew"
+msgstr "Ibrani"
+
+#: .\colibri\lists.py:36
+msgid "Hindi"
+msgstr "Hindi"
+
+#: .\colibri\lists.py:37
+msgid "Croatian"
+msgstr "Kroasia"
+
+#: .\colibri\lists.py:38
+msgid "Hungarian"
+msgstr "Hungaria"
+
+#: .\colibri\lists.py:39
+msgid "Interlingua"
+msgstr "Interlingua"
+
+#: .\colibri\lists.py:40
+msgid "Indonesian"
+msgstr "Bahasa Indonesia"
+
+#: .\colibri\lists.py:41
+msgid "Icelandic"
+msgstr "Islandia"
+
+#: .\colibri\lists.py:42
+msgid "Italian"
+msgstr "Italia"
+
+#: .\colibri\lists.py:43
+msgid "Japanese"
+msgstr "Jepang"
+
+#: .\colibri\lists.py:44
+msgid "Georgian"
+msgstr "Georgia"
+
+#: .\colibri\lists.py:45
+msgid "Kazakh"
+msgstr "Kazakh"
+
+#: .\colibri\lists.py:46
+msgid "Khmer"
+msgstr "Khmer"
+
+#: .\colibri\lists.py:47
+msgid "Kannada"
+msgstr "Kannada"
+
+#: .\colibri\lists.py:48
+msgid "Korean"
+msgstr "Korea"
+
+#: .\colibri\lists.py:49
+msgid "Luxembourgish"
+msgstr "Luksemburg"
+
+#: .\colibri\lists.py:50
+msgid "Lithuanian"
+msgstr "Bahasa Lituania"
+
+#: .\colibri\lists.py:51
+msgid "Latvian"
+msgstr "Latvia"
+
+#: .\colibri\lists.py:52
+msgid "Macedonian"
+msgstr "Maceondian"
+
+#: .\colibri\lists.py:53
+msgid "Malayalam"
+msgstr "Malayalam"
+
+#: .\colibri\lists.py:54
+msgid "Mongolian"
+msgstr "Mongol Khalka"
+
+#: .\colibri\lists.py:55
+msgid "Norwegian Bokmal"
+msgstr "Norwegia Bokmal"
+
+#: .\colibri\lists.py:56
+msgid "Nepali"
+msgstr "Nepal"
+
+#: .\colibri\lists.py:57
+msgid "Dutch"
+msgstr "Belanda"
+
+#: .\colibri\lists.py:58
+msgid "Norwegian Nynorsk"
+msgstr "Norsk (Nynorsk)"
+
+#: .\colibri\lists.py:59
+msgid "Punjabi"
+msgstr "Punjabi"
+
+#: .\colibri\lists.py:60
+msgid "Polish"
+msgstr "Polandia"
+
+#: .\colibri\lists.py:61
+msgid "Portuguese"
+msgstr "Portugis"
+
+#: .\colibri\lists.py:62
+msgid "Brazilian Portuguese"
+msgstr "Portugis Brasil"
+
+#: .\colibri\lists.py:63
+msgid "Romanian"
+msgstr "Rumania"
+
+#: .\colibri\lists.py:64
+msgid "Russian"
+msgstr "Rusia"
+
+#: .\colibri\lists.py:65
+msgid "Slovak"
+msgstr "Slowakia"
+
+#: .\colibri\lists.py:66
+msgid "Slovenian"
+msgstr "Slovenia"
+
+#: .\colibri\lists.py:67
+msgid "Albanian"
+msgstr "Albania"
+
+#: .\colibri\lists.py:68
+msgid "Serbian"
+msgstr "Serbia"
+
+#: .\colibri\lists.py:69
+msgid "Serbian Latin"
+msgstr "Serbia Latin"
+
+#: .\colibri\lists.py:70
+msgid "Swedish"
+msgstr "Swedia"
+
+#: .\colibri\lists.py:71
+msgid "Swahili"
+msgstr "Swahili"
+
+#: .\colibri\lists.py:72
+msgid "Tamil"
+msgstr "Tamil"
+
+#: .\colibri\lists.py:73
+msgid "Telugu"
+msgstr "Telugu"
+
+#: .\colibri\lists.py:74
+msgid "Thai"
+msgstr "Thai"
+
+#: .\colibri\lists.py:75
+msgid "Turkish"
+msgstr "Turki"
+
+#: .\colibri\lists.py:76
+msgid "Tatar"
+msgstr "Tatar"
+
+#: .\colibri\lists.py:77
+msgid "Udmurt"
+msgstr "Udmurt"
+
+#: .\colibri\lists.py:78
+msgid "Ukrainian"
+msgstr "Ukraina"
+
+#: .\colibri\lists.py:79
+msgid "Urdu"
+msgstr "Urdu"
+
+#: .\colibri\lists.py:80
+msgid "Vietnamese"
+msgstr "Vietnam"
+
+#: .\colibri\lists.py:81
+msgid "Simplified Chinese"
+msgstr "Cina Sederhana"
+
+#: .\colibri\lists.py:82
+msgid "Traditional Chinese"
+msgstr "Cina Tradisional"
+
+#: .\colibri\lists.py:86
+msgid "Please choose a country.."
+msgstr "Mohon pilih negara .."
+
+#: .\colibri\lists.py:87
+msgid "Andorra"
+msgstr "Andora"
+
+#: .\colibri\lists.py:88
+msgid "United Arab Emirates"
+msgstr "Uni Emirat Arab"
+
+#: .\colibri\lists.py:89
+msgid "Afghanistan"
+msgstr "Afganistan"
+
+#: .\colibri\lists.py:90
+msgid "Antigua & Barbuda"
+msgstr "Antigua & Barbuda"
+
+#: .\colibri\lists.py:91
+msgid "Anguilla"
+msgstr "Anguilla"
+
+#: .\colibri\lists.py:92
+msgid "Albania"
+msgstr "Albania"
+
+#: .\colibri\lists.py:93
+msgid "Armenia"
+msgstr "Armenia"
+
+#: .\colibri\lists.py:94
+msgid "Netherlands Antilles"
+msgstr "Belanda Antilla"
+
+#: .\colibri\lists.py:95
+msgid "Angola"
+msgstr "Angola"
+
+#: .\colibri\lists.py:96
+msgid "Antarctica"
+msgstr "Antartika"
+
+#: .\colibri\lists.py:97
+msgid "Argentina"
+msgstr "Argentina"
+
+#: .\colibri\lists.py:98
+msgid "American Samoa"
+msgstr "Samoa Amerika"
+
+#: .\colibri\lists.py:99
+msgid "Austria"
+msgstr "Austria"
+
+#: .\colibri\lists.py:100
+msgid "Australia"
+msgstr "Australia"
+
+#: .\colibri\lists.py:101
+msgid "Aruba"
+msgstr "Aruba"
+
+#: .\colibri\lists.py:102
+msgid "Azerbaijan"
+msgstr "Azerbaijan"
+
+#: .\colibri\lists.py:103
+msgid "Bosnia and Herzegovina"
+msgstr "Bosnia dan Herzegovina"
+
+#: .\colibri\lists.py:104
+msgid "Barbados"
+msgstr "Barbados"
+
+#: .\colibri\lists.py:105
+msgid "Bangladesh"
+msgstr "Bangladesh"
+
+#: .\colibri\lists.py:106
+msgid "Belgium"
+msgstr "Belgia"
+
+#: .\colibri\lists.py:107
+msgid "Burkina Faso"
+msgstr "Burkina Faso"
+
+#: .\colibri\lists.py:108
+msgid "Bulgaria"
+msgstr "Bulgaria"
+
+#: .\colibri\lists.py:109
+msgid "Bahrain"
+msgstr "Bahrain"
+
+#: .\colibri\lists.py:110
+msgid "Burundi"
+msgstr "Burundi"
+
+#: .\colibri\lists.py:111
+msgid "Benin"
+msgstr "Benin"
+
+#: .\colibri\lists.py:112
+msgid "Bermuda"
+msgstr "Bermuda"
+
+#: .\colibri\lists.py:113
+msgid "Brunei Darussalam"
+msgstr "Brunei"
+
+#: .\colibri\lists.py:114
+msgid "Bolivia"
+msgstr "Bolivia"
+
+#: .\colibri\lists.py:115
+msgid "Brazil"
+msgstr "Brasilia"
+
+#: .\colibri\lists.py:116
+msgid "Bahama"
+msgstr "Bahamas"
+
+#: .\colibri\lists.py:117
+msgid "Bhutan"
+msgstr "Bhutan"
+
+#: .\colibri\lists.py:118
+msgid "Bouvet Island"
+msgstr "Pulau Bouvet"
+
+#: .\colibri\lists.py:119
+msgid "Botswana"
+msgstr "Botswana"
+
+#: .\colibri\lists.py:120
+msgid "Belarus"
+msgstr "Belarusia"
+
+#: .\colibri\lists.py:121
+msgid "Belize"
+msgstr "Belize"
+
+#: .\colibri\lists.py:122
+msgid "Canada"
+msgstr "Kanada"
+
+#: .\colibri\lists.py:123
+msgid "Cocos (Keeling) Islands"
+msgstr "Kepulauan Cocos (Keeling)"
+
+#: .\colibri\lists.py:124
+msgid "Central African Republic"
+msgstr "Republik Afrika Tengah"
+
+#: .\colibri\lists.py:125
+msgid "Congo"
+msgstr "Kongo"
+
+#: .\colibri\lists.py:126
+msgid "Switzerland"
+msgstr "Swiss"
+
+#: .\colibri\lists.py:127
+msgid "Ivory Coast"
+msgstr "Côte d'Ivoire"
+
+#: .\colibri\lists.py:128
+msgid "Cook Iislands"
+msgstr "Kepulauan Cook"
+
+#: .\colibri\lists.py:129
+msgid "Chile"
+msgstr "Chili"
+
+#: .\colibri\lists.py:130
+msgid "Cameroon"
+msgstr "Kamerun"
+
+#: .\colibri\lists.py:131
+msgid "China"
+msgstr "Cina"
+
+#: .\colibri\lists.py:132
+msgid "Colombia"
+msgstr "Kolumbia"
+
+#: .\colibri\lists.py:133
+msgid "Costa Rica"
+msgstr "Kosta Rika"
+
+#: .\colibri\lists.py:134
+msgid "Cuba"
+msgstr "Kuba"
+
+#: .\colibri\lists.py:135
+msgid "Cape Verde"
+msgstr "Cape Verde"
+
+#: .\colibri\lists.py:136
+msgid "Christmas Island"
+msgstr "Pulau Christmas"
+
+#: .\colibri\lists.py:137
+msgid "Cyprus"
+msgstr "Syprus"
+
+#: .\colibri\lists.py:138
+msgid "Czech Republic"
+msgstr "Republik Cekoslovakia"
+
+#: .\colibri\lists.py:139
+msgid "Germany"
+msgstr "Jerman"
+
+#: .\colibri\lists.py:140
+msgid "Djibouti"
+msgstr "Djibouti"
+
+#: .\colibri\lists.py:141
+msgid "Denmark"
+msgstr "Denmark"
+
+#: .\colibri\lists.py:142
+msgid "Dominica"
+msgstr "Dominika"
+
+#: .\colibri\lists.py:143
+msgid "Dominican Republic"
+msgstr "Republik Dominika"
+
+#: .\colibri\lists.py:144
+msgid "Algeria"
+msgstr "Aljeria"
+
+#: .\colibri\lists.py:145
+msgid "Ecuador"
+msgstr "Ekuador"
+
+#: .\colibri\lists.py:146
+msgid "Estonia"
+msgstr "Estonia"
+
+#: .\colibri\lists.py:147
+msgid "Egypt"
+msgstr "Mesir"
+
+#: .\colibri\lists.py:148
+msgid "Western Sahara"
+msgstr "Sahara Barat"
+
+#: .\colibri\lists.py:149
+msgid "Eritrea"
+msgstr "Eritrea"
+
+#: .\colibri\lists.py:150
+msgid "Spain"
+msgstr "Spanyol"
+
+#: .\colibri\lists.py:151
+msgid "Ethiopia"
+msgstr "Etiopia"
+
+#: .\colibri\lists.py:152
+msgid "Finland"
+msgstr "Finlandia"
+
+#: .\colibri\lists.py:153
+msgid "Fiji"
+msgstr "Fiji"
+
+#: .\colibri\lists.py:154
+msgid "Falkland Islands (Malvinas)"
+msgstr "Kepulauan Falkland (Malvinas)"
+
+#: .\colibri\lists.py:155
+msgid "Micronesia"
+msgstr "Mikronesia"
+
+#: .\colibri\lists.py:156
+msgid "Faroe Islands"
+msgstr "Kepulauan Faroe"
+
+#: .\colibri\lists.py:157
+msgid "France"
+msgstr "Perancis"
+
+#: .\colibri\lists.py:158
+msgid "France, Metropolitan"
+msgstr "Perancis, Metropolitan"
+
+#: .\colibri\lists.py:159
+msgid "Gabon"
+msgstr "Gabon"
+
+#: .\colibri\lists.py:160
+msgid "United Kingdom (Great Britain)"
+msgstr "Inggris Raya (Great Britain)"
+
+#: .\colibri\lists.py:161
+msgid "Grenada"
+msgstr "Grenada"
+
+#: .\colibri\lists.py:162
+msgid "Georgia"
+msgstr "Georgia"
+
+#: .\colibri\lists.py:163
+msgid "French Guiana"
+msgstr "Guyana Prancis"
+
+#: .\colibri\lists.py:164
+msgid "Ghana"
+msgstr "Ghana"
+
+#: .\colibri\lists.py:165
+msgid "Gibraltar"
+msgstr "Gibraltar"
+
+#: .\colibri\lists.py:166
+msgid "Greenland"
+msgstr "Greenland"
+
+#: .\colibri\lists.py:167
+msgid "Gambia"
+msgstr "Gambia"
+
+#: .\colibri\lists.py:168
+msgid "Guinea"
+msgstr "Guinea"
+
+#: .\colibri\lists.py:169
+msgid "Guadeloupe"
+msgstr "Guadeloupe"
+
+#: .\colibri\lists.py:170
+msgid "Equatorial Guinea"
+msgstr "Guinea Ekuatorial"
+
+#: .\colibri\lists.py:171
+msgid "Greece"
+msgstr "Yunani"
+
+#: .\colibri\lists.py:172
+msgid "South Georgia and the South Sandwich Islands"
+msgstr "Georgia Selatan dan Kep. Sandwich Selatan"
+
+#: .\colibri\lists.py:173
+msgid "Guatemala"
+msgstr "Guatemala"
+
+#: .\colibri\lists.py:174
+msgid "Guam"
+msgstr "Guam"
+
+#: .\colibri\lists.py:175
+msgid "Guinea-Bissau"
+msgstr "Guinea-Bissau"
+
+#: .\colibri\lists.py:176
+msgid "Guyana"
+msgstr "Guyana"
+
+#: .\colibri\lists.py:177
+msgid "Hong Kong"
+msgstr "Hong Kong"
+
+#: .\colibri\lists.py:178
+msgid "Heard & McDonald Islands"
+msgstr "Heard & Kepulauan McDonald"
+
+#: .\colibri\lists.py:179
+msgid "Honduras"
+msgstr "Honduras"
+
+#: .\colibri\lists.py:180
+msgid "Croatia"
+msgstr "Kroasia"
+
+#: .\colibri\lists.py:181
+msgid "Haiti"
+msgstr "Haiti"
+
+#: .\colibri\lists.py:182
+msgid "Hungary"
+msgstr "Hongaria"
+
+#: .\colibri\lists.py:183
+msgid "Indonesia"
+msgstr "Indonesia"
+
+#: .\colibri\lists.py:184
+msgid "Ireland"
+msgstr "Irlandia"
+
+#: .\colibri\lists.py:185
+msgid "Israel"
+msgstr "Israel"
+
+#: .\colibri\lists.py:186
+msgid "India"
+msgstr "India"
+
+#: .\colibri\lists.py:187
+msgid "British Indian Ocean Territory"
+msgstr "Teritorial Inggris di Samudra Hindia"
+
+#: .\colibri\lists.py:188
+msgid "Iraq"
+msgstr "Irak"
+
+#: .\colibri\lists.py:189
+msgid "Islamic Republic of Iran"
+msgstr "Republik Islam Iran"
+
+#: .\colibri\lists.py:190
+msgid "Iceland"
+msgstr "Islandia"
+
+#: .\colibri\lists.py:191
+msgid "Italy"
+msgstr "Italia"
+
+#: .\colibri\lists.py:192
+msgid "Jamaica"
+msgstr "Jamaika"
+
+#: .\colibri\lists.py:193
+msgid "Jordan"
+msgstr "Yordan"
+
+#: .\colibri\lists.py:194
+msgid "Japan"
+msgstr "Jepang"
+
+#: .\colibri\lists.py:195
+msgid "Kenya"
+msgstr "Kenya"
+
+#: .\colibri\lists.py:196
+msgid "Kyrgyzstan"
+msgstr "Kirgistan"
+
+#: .\colibri\lists.py:197
+msgid "Cambodia"
+msgstr "Kambodia"
+
+#: .\colibri\lists.py:198
+msgid "Kiribati"
+msgstr "Kiribati"
+
+#: .\colibri\lists.py:199
+msgid "Comoros"
+msgstr "Komoro"
+
+#: .\colibri\lists.py:200
+msgid "St. Kitts and Nevis"
+msgstr "St. Kitts dan Nevis"
+
+#: .\colibri\lists.py:201
+msgid "Korea, Democratic People's Republic of"
+msgstr "Korea, Republik Demokratik Rakyat dari"
+
+#: .\colibri\lists.py:202
+msgid "Korea, Republic of"
+msgstr "Republik Korea"
+
+#: .\colibri\lists.py:203
+msgid "Kuwait"
+msgstr "Kuwait"
+
+#: .\colibri\lists.py:204
+msgid "Cayman Islands"
+msgstr "Kepulauan Cayman"
+
+#: .\colibri\lists.py:205
+msgid "Kazakhstan"
+msgstr "Kazakstan"
+
+#: .\colibri\lists.py:206
+msgid "Lao People's Democratic Republic"
+msgstr "Rakyat Laos Republik Demokratik"
+
+#: .\colibri\lists.py:207
+msgid "Lebanon"
+msgstr "Libanon"
+
+#: .\colibri\lists.py:208
+msgid "Saint Lucia"
+msgstr "Saint Lusia"
+
+#: .\colibri\lists.py:209
+msgid "Liechtenstein"
+msgstr "Liechtenstein"
+
+#: .\colibri\lists.py:210
+msgid "Sri Lanka"
+msgstr "Sri Lanka"
+
+#: .\colibri\lists.py:211
+msgid "Liberia"
+msgstr "Liberia"
+
+#: .\colibri\lists.py:212
+msgid "Lesotho"
+msgstr "Lesotho"
+
+#: .\colibri\lists.py:213
+msgid "Lithuania"
+msgstr "Lituania"
+
+#: .\colibri\lists.py:214
+msgid "Luxembourg"
+msgstr "Luksemburg"
+
+#: .\colibri\lists.py:215
+msgid "Latvia"
+msgstr "Latvia"
+
+#: .\colibri\lists.py:216
+msgid "Libyan Arab Jamahiriya"
+msgstr "Libia"
+
+#: .\colibri\lists.py:217
+msgid "Morocco"
+msgstr "Maroko"
+
+#: .\colibri\lists.py:218
+msgid "Monaco"
+msgstr "Monako"
+
+#: .\colibri\lists.py:219
+msgid "Moldova, Republic of"
+msgstr "Republik Moldova"
+
+#: .\colibri\lists.py:220
+msgid "Madagascar"
+msgstr "Madagaskar"
+
+#: .\colibri\lists.py:221
+msgid "Marshall Islands"
+msgstr "Kepulauan Marshall"
+
+#: .\colibri\lists.py:222
+msgid "Mali"
+msgstr "Mali"
+
+#: .\colibri\lists.py:223
+msgid "Mongolia"
+msgstr "Mongolia"
+
+#: .\colibri\lists.py:224
+msgid "Myanmar"
+msgstr "Myanmar"
+
+#: .\colibri\lists.py:225
+msgid "Macau"
+msgstr "Makau"
+
+#: .\colibri\lists.py:226
+msgid "Northern Mariana Islands"
+msgstr "Kepulauan Mariana Utara"
+
+#: .\colibri\lists.py:227
+msgid "Martinique"
+msgstr "Martinique"
+
+#: .\colibri\lists.py:228
+msgid "Mauritania"
+msgstr "Mauritania"
+
+#: .\colibri\lists.py:229
+msgid "Monserrat"
+msgstr "Monserrat"
+
+#: .\colibri\lists.py:230
+msgid "Malta"
+msgstr "Malta"
+
+#: .\colibri\lists.py:231
+msgid "Mauritius"
+msgstr "Maurisius"
+
+#: .\colibri\lists.py:232
+msgid "Maldives"
+msgstr "Maladewa"
+
+#: .\colibri\lists.py:233
+msgid "Malawi"
+msgstr "Malawi"
+
+#: .\colibri\lists.py:234
+msgid "Mexico"
+msgstr "Meksiko"
+
+#: .\colibri\lists.py:235
+msgid "Malaysia"
+msgstr "Malaysia"
+
+#: .\colibri\lists.py:236
+msgid "Mozambique"
+msgstr "Mozambik"
+
+#: .\colibri\lists.py:237
+msgid "Namibia"
+msgstr "Namibia"
+
+#: .\colibri\lists.py:238
+msgid "New Caledonia"
+msgstr "Kaledonia Baru"
+
+#: .\colibri\lists.py:239
+msgid "Niger"
+msgstr "Niger"
+
+#: .\colibri\lists.py:240
+msgid "Norfolk Island"
+msgstr "Pulau Norfolk"
+
+#: .\colibri\lists.py:241
+msgid "Nigeria"
+msgstr "Nigeria"
+
+#: .\colibri\lists.py:242
+msgid "Nicaragua"
+msgstr "Nikaragua"
+
+#: .\colibri\lists.py:243
+msgid "Netherlands"
+msgstr "Belanda"
+
+#: .\colibri\lists.py:244
+msgid "Norway"
+msgstr "Norwegia"
+
+#: .\colibri\lists.py:245
+msgid "Nepal"
+msgstr "Nepal"
+
+#: .\colibri\lists.py:246
+msgid "Nauru"
+msgstr "Nauru"
+
+#: .\colibri\lists.py:247
+msgid "Niue"
+msgstr "Niue"
+
+#: .\colibri\lists.py:248
+msgid "New Zealand"
+msgstr "Selandia Baru"
+
+#: .\colibri\lists.py:249
+msgid "Oman"
+msgstr "Oman"
+
+#: .\colibri\lists.py:250
+msgid "Panama"
+msgstr "Panama"
+
+#: .\colibri\lists.py:251
+msgid "Peru"
+msgstr "Peru"
+
+#: .\colibri\lists.py:252
+msgid "French Polynesia"
+msgstr "Perancis Polinesia"
+
+#: .\colibri\lists.py:253
+msgid "Papua New Guinea"
+msgstr "Papua Nugini"
+
+#: .\colibri\lists.py:254
+msgid "Philippines"
+msgstr "Filipina"
+
+#: .\colibri\lists.py:255
+msgid "Pakistan"
+msgstr "Pakistan"
+
+#: .\colibri\lists.py:256
+msgid "Poland"
+msgstr "Polandia"
+
+#: .\colibri\lists.py:257
+msgid "St. Pierre & Miquelon"
+msgstr "St Pierre & Miquelon"
+
+#: .\colibri\lists.py:258
+msgid "Pitcairn"
+msgstr "Pitcairn"
+
+#: .\colibri\lists.py:259
+msgid "Puerto Rico"
+msgstr "Puerto Riko"
+
+#: .\colibri\lists.py:260
+msgid "Portugal"
+msgstr "Portugal"
+
+#: .\colibri\lists.py:261
+msgid "Palau"
+msgstr "Palau"
+
+#: .\colibri\lists.py:262
+msgid "Paraguay"
+msgstr "Paraguay"
+
+#: .\colibri\lists.py:263
+msgid "Qatar"
+msgstr "Qatar"
+
+#: .\colibri\lists.py:264
+msgid "Reunion"
+msgstr "Reunion"
+
+#: .\colibri\lists.py:265
+msgid "Romania"
+msgstr "Rumania"
+
+#: .\colibri\lists.py:266
+msgid "Russian Federation"
+msgstr "Federasi Rusia"
+
+#: .\colibri\lists.py:267
+msgid "Rwanda"
+msgstr "Rwanda"
+
+#: .\colibri\lists.py:268
+msgid "Saudi Arabia"
+msgstr "Arab Saudi"
+
+#: .\colibri\lists.py:269
+msgid "Solomon Islands"
+msgstr "Kepulauan Solomon"
+
+#: .\colibri\lists.py:270
+msgid "Seychelles"
+msgstr "Seychelles"
+
+#: .\colibri\lists.py:271
+msgid "Sudan"
+msgstr "Sudan"
+
+#: .\colibri\lists.py:272
+msgid "Sweden"
+msgstr "Swedia"
+
+#: .\colibri\lists.py:273
+msgid "Singapore"
+msgstr "Singapura"
+
+#: .\colibri\lists.py:274
+msgid "St. Helena"
+msgstr "St. Helena"
+
+#: .\colibri\lists.py:275
+msgid "Slovenia"
+msgstr "Slovenia"
+
+#: .\colibri\lists.py:276
+msgid "Svalbard & Jan Mayen Islands"
+msgstr "Kepulauan Svalbard & Jan Mayen"
+
+#: .\colibri\lists.py:277
+msgid "Slovakia"
+msgstr "Slovakia"
+
+#: .\colibri\lists.py:278
+msgid "Sierra Leone"
+msgstr "Sierra Leone"
+
+#: .\colibri\lists.py:279
+msgid "San Marino"
+msgstr "San Marino"
+
+#: .\colibri\lists.py:280
+msgid "Senegal"
+msgstr "Senegal"
+
+#: .\colibri\lists.py:281
+msgid "Somalia"
+msgstr "Somalia"
+
+#: .\colibri\lists.py:282
+msgid "Suriname"
+msgstr "Suriname"
+
+#: .\colibri\lists.py:283
+msgid "Sao Tome & Principe"
+msgstr "Sao Tome & Principe"
+
+#: .\colibri\lists.py:284
+msgid "El Salvador"
+msgstr "El Salvador"
+
+#: .\colibri\lists.py:285
+msgid "Syrian Arab Republic"
+msgstr "Suriah"
+
+#: .\colibri\lists.py:286
+msgid "Swaziland"
+msgstr "Swaziland"
+
+#: .\colibri\lists.py:287
+msgid "Turks & Caicos Islands"
+msgstr "Kepulauan Turks & Caicos"
+
+#: .\colibri\lists.py:288
+msgid "Chad"
+msgstr "Cad"
+
+#: .\colibri\lists.py:289
+msgid "French Southern Territories"
+msgstr "Teritorial Prancis di Selatan"
+
+#: .\colibri\lists.py:290
+msgid "Togo"
+msgstr "Togo"
+
+#: .\colibri\lists.py:291
+msgid "Thailand"
+msgstr "Thailand"
+
+#: .\colibri\lists.py:292
+msgid "Tajikistan"
+msgstr "Tajikistan"
+
+#: .\colibri\lists.py:293
+msgid "Tokelau"
+msgstr "Tokelau"
+
+#: .\colibri\lists.py:294
+msgid "Turkmenistan"
+msgstr "Turkmenistan"
+
+#: .\colibri\lists.py:295
+msgid "Tunisia"
+msgstr "Tunisia"
+
+#: .\colibri\lists.py:296
+msgid "Tonga"
+msgstr "Tonga"
+
+#: .\colibri\lists.py:297
+msgid "East Timor"
+msgstr "Timor Leste"
+
+#: .\colibri\lists.py:298
+msgid "Turkey"
+msgstr "Turki"
+
+#: .\colibri\lists.py:299
+msgid "Trinidad & Tobago"
+msgstr "Trinidad & Tobago"
+
+#: .\colibri\lists.py:300
+msgid "Tuvalu"
+msgstr "Tuvalu"
+
+#: .\colibri\lists.py:301
+msgid "Taiwan, Province of China"
+msgstr "Taiwan, Provinsi Cina"
+
+#: .\colibri\lists.py:302
+msgid "Tanzania, United Republic of"
+msgstr "Republik Tanzania"
+
+#: .\colibri\lists.py:303
+msgid "Ukraine"
+msgstr "Ukraina"
+
+#: .\colibri\lists.py:304
+msgid "Uganda"
+msgstr "Uganda"
+
+#: .\colibri\lists.py:305
+msgid "United States Minor Outlying Islands"
+msgstr "Pulau-pulau minor terluar AS"
+
+#: .\colibri\lists.py:306
+msgid "United States of America"
+msgstr "Amerika Serikat"
+
+#: .\colibri\lists.py:307
+msgid "Uruguay"
+msgstr "Uruguay"
+
+#: .\colibri\lists.py:308
+msgid "Uzbekistan"
+msgstr "Uzbekistan"
+
+#: .\colibri\lists.py:309
+msgid "Vatican City State (Holy See)"
+msgstr "Negara Kota Vatikan (Tahta Suci)"
+
+#: .\colibri\lists.py:310
+msgid "St. Vincent & the Grenadines"
+msgstr "St Vincent & Grenadines"
+
+#: .\colibri\lists.py:311
+msgid "Venezuela"
+msgstr "Venezuela"
+
+#: .\colibri\lists.py:312
+msgid "British Virgin Islands"
+msgstr "Kepulauan Virgin Inggris"
+
+#: .\colibri\lists.py:313
+msgid "United States Virgin Islands"
+msgstr "Kepulauan Virgin Amerika Serikat"
+
+#: .\colibri\lists.py:314
+msgid "Viet Nam"
+msgstr "Vietnam"
+
+#: .\colibri\lists.py:315
+msgid "Vanuatu"
+msgstr "Vanuatu"
+
+#: .\colibri\lists.py:316
+msgid "Wallis & Futuna Islands"
+msgstr "Wallis & Futuna Islands"
+
+#: .\colibri\lists.py:317
+msgid "Samoa"
+msgstr "Samoa"
+
+#: .\colibri\lists.py:318
+msgid "Yemen"
+msgstr "Yaman"
+
+#: .\colibri\lists.py:319
+msgid "Mayotte"
+msgstr "Mayotte"
+
+#: .\colibri\lists.py:320
+msgid "Yugoslavia"
+msgstr "Yugoslavia"
+
+#: .\colibri\lists.py:321
+msgid "South Africa"
+msgstr "Afrika Selatan"
+
+#: .\colibri\lists.py:322
+msgid "Zambia"
+msgstr "Zambia"
+
+#: .\colibri\lists.py:323
+msgid "Zaire"
+msgstr "Zaire"
+
+#: .\colibri\lists.py:324
+msgid "Zimbabwe"
+msgstr "Zimbabwe"
+
+#: .\colibri\lists.py:328
+msgid "I am a..."
+msgstr "Saya adalah ..."
+
+#: .\colibri\lists.py:329
+msgid "Citizen"
+msgstr "Warganegara"
+
+#: .\colibri\lists.py:330
+msgid "Researcher"
+msgstr "Peneliti"
+
+#: .\colibri\lists.py:331
+msgid "Journalist"
+msgstr "Wartawan"
+
+#: .\colibri\lists.py:332
+msgid "Civil Servant"
+msgstr "Pegawai Negeri Sipil"
+
+#: .\colibri\lists.py:333
+msgid "Archivist / Librarian"
+msgstr "Arsiparis / Pustakawan"
+
+#: .\colibri\lists.py:334
+msgid "Politician"
+msgstr "Politikus"
+
+#: .\colibri\lists.py:335
+msgid "Enterpreneur"
+msgstr "Pengusaha"
+
+#: .\colibri\lists.py:336
+msgid "IT expert / Hacker"
+msgstr "Ahli IT/Hacker"
+
+#: .\colibri\lists.py:340
+msgid "Please choose an extension type.."
+msgstr "Silakan memilih jenis ekstensi .."
+
+#: .\colibri\lists.py:341 .\colibri\lists.py:621
+msgid "Conversion to other format"
+msgstr "Konversi ke format lain"
+
+#: .\colibri\lists.py:342 .\colibri\lists.py:622
+msgid "Data Cleansing"
+msgstr "Pembersihan Data"
+
+#: .\colibri\lists.py:343 .\colibri\lists.py:623
+msgid "Metadata Enrichment"
+msgstr "Pengayaan Metadata"
+
+#: .\colibri\lists.py:344 .\colibri\lists.py:624
+msgid "Data Enrichment"
+msgstr "Pengayaan Data"
+
+#: .\colibri\lists.py:345 .\colibri\lists.py:625
+msgid "Snapshots of real-time data"
+msgstr "Snapshot dari data real-time"
+
+#: .\colibri\lists.py:346
+msgid "Combination of Datasets / Mash-ups"
+msgstr "Kombinasi Datasets / Mash-up"
+
+#: .\colibri\lists.py:350
+msgid "Awaiting Approval"
+msgstr "Menunggu Persetujuan"
+
+#: .\colibri\lists.py:351
+msgid "Approved"
+msgstr "Disetujui"
+
+#: .\colibri\lists.py:352
+msgid "Rejected"
+msgstr "Ditolak"
+
+#: .\colibri\lists.py:356
+msgid "Agriculture"
+msgstr "Pertanian"
+
+#: .\colibri\lists.py:357
+msgid "Arts, Recreation and Travel"
+msgstr "Seni, Rekreasi dan Perjalanan"
+
+#: .\colibri\lists.py:358
+msgid "Banking, Finance and Insurance"
+msgstr "Perbankan, Keuangan dan Asuransi"
+
+#: .\colibri\lists.py:359
+msgid "Births, Deaths, Marriages and Divorces"
+msgstr "Kelahiran, Kematian, Pernikahan, dan Perceraian"
+
+#: .\colibri\lists.py:360
+msgid "Business / Enterprises"
+msgstr "Bisnis / Usaha"
+
+#: .\colibri\lists.py:361
+msgid "Census"
+msgstr "Sensus"
+
+#: .\colibri\lists.py:362
+msgid "Construction and Housing"
+msgstr "Konstruksi dan Perumahan"
+
+#: .\colibri\lists.py:363
+msgid "Contributors"
+msgstr "Kontributor"
+
+#: .\colibri\lists.py:364
+msgid "Diplomacy"
+msgstr "Diplomasi"
+
+#: .\colibri\lists.py:365
+msgid "Economic"
+msgstr "Ekonomi"
+
+#: .\colibri\lists.py:366
+msgid "Education"
+msgstr "Pendidikan"
+
+#: .\colibri\lists.py:367
+msgid "Elections"
+msgstr "Pemilihan"
+
+#: .\colibri\lists.py:368
+msgid "Employment"
+msgstr "Pekerjaan"
+
+#: .\colibri\lists.py:369
+msgid "Energy and Utilities"
+msgstr "Energi dan Utilitas"
+
+#: .\colibri\lists.py:370
+msgid "Environment"
+msgstr "Lingkungan"
+
+#: .\colibri\lists.py:371
+msgid "Farming"
+msgstr "Pertanian"
+
+#: .\colibri\lists.py:372
+msgid "Financials"
+msgstr "Keuangan"
+
+#: .\colibri\lists.py:373
+msgid "Foreign Commerce and Aid"
+msgstr "Perdagangan Luar Negeri dan Bantuan"
+
+#: .\colibri\lists.py:374
+msgid "Foreign Trade"
+msgstr "Perdagangan Luar Negeri"
+
+#: .\colibri\lists.py:375
+msgid "Geography and Environment"
+msgstr "Geografi dan Lingkungan"
+
+#: .\colibri\lists.py:376
+msgid "Health and Nutrition"
+msgstr "Kesehatan dan Gizi"
+
+#: .\colibri\lists.py:377
+msgid "Income, Expenditures, Poverty, and Wealth"
+msgstr "Pendapatan, Pengeluaran, Kemiskinan, dan Kekayaan"
+
+#: .\colibri\lists.py:378
+msgid "Information and Communications"
+msgstr "Informasi dan Komunikasi"
+
+#: .\colibri\lists.py:379
+msgid "International Statistics"
+msgstr "Statistik Internasional"
+
+#: .\colibri\lists.py:380
+msgid "Labor Force, Employment, and Earnings"
+msgstr "Tenaga Buruh, Pekerjaan, dan Penghasilan"
+
+#: .\colibri\lists.py:381
+msgid "Law Enforcement, Courts, and Prisons"
+msgstr "Penegakan Hukum, Pengadilan, dan Penjara"
+
+#: .\colibri\lists.py:382
+msgid "Manufactures"
+msgstr "Manufaktur"
+
+#: .\colibri\lists.py:383
+msgid "Military"
+msgstr "Militer"
+
+#: .\colibri\lists.py:384
+msgid "National Security and Veterans Affairs"
+msgstr "Keamanan Nasional dan Urusan Veteran"
+
+#: .\colibri\lists.py:385
+msgid "Natural Resources"
+msgstr "Sumber Daya Alam"
+
+#: .\colibri\lists.py:386 .\colibri\lists.py:589
+msgid "Other"
+msgstr "Lain-lain"
+
+#: .\colibri\lists.py:387
+msgid "Population"
+msgstr "populasi"
+
+#: .\colibri\lists.py:388
+msgid "Prices"
+msgstr "Harga"
+
+#: .\colibri\lists.py:389
+msgid "Public Agencies Budget and Finances"
+msgstr "Anggaran dan Keuangan Agen Publik"
+
+#: .\colibri\lists.py:390
+msgid "Public Agencies Employment"
+msgstr "Pekerjaan Agen Publik"
+
+#: .\colibri\lists.py:391
+msgid "Science and Technology"
+msgstr "Sains dan Teknologi"
+
+#: .\colibri\lists.py:392
+msgid "Social Insurance and Human Services"
+msgstr "Asuransi Sosial dan Pelayanan Masyarakat"
+
+#: .\colibri\lists.py:393
+msgid "Space"
+msgstr "Spasi"
+
+#: .\colibri\lists.py:394
+msgid "Taxation"
+msgstr "Perpajakan"
+
+#: .\colibri\lists.py:395
+msgid "Transportation"
+msgstr "Transportasi"
+
+#: .\colibri\lists.py:396
+msgid "Welfare"
+msgstr "Kesejahteraan"
+
+#: .\colibri\lists.py:397
+msgid "Wholesale and Retail Trade"
+msgstr "Perdagangan Grosir dan Eceran"
+
+#: .\colibri\lists.py:453
+msgid "Year"
+msgstr "Tahun"
+
+#: .\colibri\lists.py:454
+msgid "Month"
+msgstr "Bulan"
+
+#: .\colibri\lists.py:455
+msgid "Week"
+msgstr "Minggu"
+
+#: .\colibri\lists.py:456
+msgid "Day"
+msgstr "Hari"
+
+#: .\colibri\lists.py:457
+msgid "Hour"
+msgstr "jam"
+
+#: .\colibri\lists.py:461
+msgid "Worldwide"
+msgstr "Sedunia"
+
+#: .\colibri\lists.py:462
+msgid "Continent"
+msgstr "Benua"
+
+#: .\colibri\lists.py:463
+msgid "Political Union"
+msgstr "Persatuan Politik"
+
+#: .\colibri\lists.py:464 .\colibri\templates\dataset\_details -
+#: Copy.html.py:169 Copy.html.py:325
+#: .\colibri\templates\dataset\_details.html.py:198
+#: .\colibri\templates\dataset\_details.html.py:426
+#: .\colibri\templates\dataset\_form.html.py:61
+#: .\colibri\templates\dataset\_index.html.py:13
+#: .\colibri\templates\dataset\_search.html.py:60
+#: .\colibri\templates\opendatasites\datasources_en.html.py:155
+msgid "Country"
+msgstr "Negara"
+
+#: .\colibri\lists.py:465
+msgid "Region"
+msgstr "Daerah"
+
+#: .\colibri\lists.py:466
+msgid "Locality (City, Town, Village)"
+msgstr "Lokalitas (Kota, Desa, Kampung)"
+
+#: .\colibri\lists.py:467
+msgid "Administrative Area (Province,Municipality, County)"
+msgstr "Administrasi Daerah (Provinsi, Kotamadya, Daerah)"
+
+#: .\colibri\lists.py:468
+msgid "Neighborhood"
+msgstr "Lingkungan"
+
+#: .\colibri\lists.py:472
+msgid "My background is..."
+msgstr "Latar belakang saya adalah ..."
+
+#: .\colibri\lists.py:473
+msgid "Mathematics"
+msgstr "Matematika"
+
+#: .\colibri\lists.py:474
+msgid "Computer and information sciences"
+msgstr "Komputer dan ilmu informasi"
+
+#: .\colibri\lists.py:475
+msgid "Physical sciences"
+msgstr "Ilmu fisika"
+
+#: .\colibri\lists.py:476
+msgid "Chemical sciences"
+msgstr "Ilmu kimia"
+
+#: .\colibri\lists.py:477
+msgid "Earth and related environmental sciences"
+msgstr "Ilmu bumi dan lingkungan terkait"
+
+#: .\colibri\lists.py:478
+msgid "Biological sciences"
+msgstr "Ilmu biologi"
+
+#: .\colibri\lists.py:479
+msgid "Other natural sciences"
+msgstr "Ilmu alam lainnya"
+
+#: .\colibri\lists.py:480
+msgid "Civil engineering"
+msgstr "Teknik sipil"
+
+#: .\colibri\lists.py:481
+msgid "Electrical engineering, electronic"
+msgstr "Teknik elektro, elektronik"
+
+#: .\colibri\lists.py:482
+msgid "engineering, information engineering"
+msgstr "teknik, teknik informasi"
+
+#: .\colibri\lists.py:483
+msgid "Mechanical engineering"
+msgstr "teknik mesin"
+
+#: .\colibri\lists.py:484
+msgid "Chemical engineering"
+msgstr "Teknik kimia"
+
+#: .\colibri\lists.py:485
+msgid "Materials engineering"
+msgstr "teknik material"
+
+#: .\colibri\lists.py:486
+msgid "Medical engineering"
+msgstr "Teknik medis"
+
+#: .\colibri\lists.py:487
+msgid "Environmental engineering"
+msgstr "Teknik lingkungan"
+
+#: .\colibri\lists.py:488
+msgid "Environmental biotechnology"
+msgstr "Bioteknologi lingkungan"
+
+#: .\colibri\lists.py:489
+msgid "Industrial Biotechnology"
+msgstr "Bioteknologi Industri"
+
+#: .\colibri\lists.py:490
+msgid "Nano-technology"
+msgstr "Nano-Teknologi"
+
+#: .\colibri\lists.py:491
+msgid "Other engineering and technologies"
+msgstr "Teknik dan teknologi lainnya"
+
+#: .\colibri\lists.py:492
+msgid "Basic medicine"
+msgstr "Kedokteran umum"
+
+#: .\colibri\lists.py:493
+msgid "Clinical medicine"
+msgstr "Kedokteran klinis"
+
+#: .\colibri\lists.py:494
+msgid "Health sciences"
+msgstr "Ilmu kesehatan"
+
+#: .\colibri\lists.py:495
+msgid "Health biotechnology"
+msgstr "Bioteknologi Kesehatan"
+
+#: .\colibri\lists.py:496
+msgid "Other medical sciences"
+msgstr "Ilmu kedokteran lainnya"
+
+#: .\colibri\lists.py:497
+msgid "Agriculture, forestry, and fisheries"
+msgstr "Pertanian, kehutanan, dan perikanan"
+
+#: .\colibri\lists.py:498
+msgid "Animal and dairy science"
+msgstr "Hewan dan ilmu susu"
+
+#: .\colibri\lists.py:499
+msgid "Veterinary science"
+msgstr "Ilmu kedokteran hewan"
+
+#: .\colibri\lists.py:500
+msgid "Agricultural biotechnology"
+msgstr "Bioteknologi pertanian"
+
+#: .\colibri\lists.py:501
+msgid "Other agricultural sciences"
+msgstr "Ilmu pertanian lainnya"
+
+#: .\colibri\lists.py:502
+msgid "Psychology"
+msgstr "Psikologi"
+
+#: .\colibri\lists.py:503
+msgid "Economics and business"
+msgstr "Ekonomi dan bisnis"
+
+#: .\colibri\lists.py:504
+msgid "Educational sciences"
+msgstr "Ilmu pendidikan"
+
+#: .\colibri\lists.py:505
+msgid "Sociology"
+msgstr "Sosiologi"
+
+#: .\colibri\lists.py:506
+msgid "Law"
+msgstr "Hukum"
+
+#: .\colibri\lists.py:507
+msgid "Political Science"
+msgstr "Ilmu Politik"
+
+#: .\colibri\lists.py:508
+msgid "Social and economic geography"
+msgstr "Geografi sosial dan ekonomi"
+
+#: .\colibri\lists.py:509
+msgid "Media and communications"
+msgstr "Media dan komunikasi"
+
+#: .\colibri\lists.py:510
+msgid "Other social sciences"
+msgstr "Ilmu sosial lainnya"
+
+#: .\colibri\lists.py:511
+msgid "History and archaeology"
+msgstr "Sejarah dan arkeologi"
+
+#: .\colibri\lists.py:512
+msgid "Languages and literature"
+msgstr "Bahasa dan sastra"
+
+#: .\colibri\lists.py:513
+msgid "Philosophy, ethics and religion"
+msgstr "Filsafat, etika dan agama"
+
+#: .\colibri\lists.py:514
+msgid "Art (arts, history of arts, performing arts, music)"
+msgstr "Seni (seni rupa, sejarah seni, seni pertunjukan, musik)"
+
+#: .\colibri\lists.py:515
+msgid "Other humanities"
+msgstr "Humaniora lainnya"
+
+#: .\colibri\lists.py:519
+msgid "Backoffice / Service operations"
+msgstr "Back office / Layanan operasi"
+
+#: .\colibri\lists.py:520
+msgid "Survey"
+msgstr "Survei"
+
+#: .\colibri\lists.py:521
+msgid "Harvest"
+msgstr "Panen"
+
+#: .\colibri\lists.py:522
+msgid "Internal Research / Experiments"
+msgstr "Penelitian internal / Percobaan"
+
+#: .\colibri\lists.py:577
+msgid "Individual"
+msgstr "Individu"
+
+#: .\colibri\lists.py:578
+msgid "Organization"
+msgstr "Organisasi"
+
+#: .\colibri\lists.py:579
+msgid "Family"
+msgstr "Keluarga"
+
+#: .\colibri\lists.py:580
+msgid "Family.HouseholdFamily"
+msgstr "Keluarga.RumahtanggaKeluarga"
+
+#: .\colibri\lists.py:581
+msgid "Household"
+msgstr "Rumah tangga"
+
+#: .\colibri\lists.py:582
+msgid "HousingUnit"
+msgstr "UnitPerumahan"
+
+#: .\colibri\lists.py:583
+msgid "EventOrProcess"
+msgstr "PeristiwaAtauProses"
+
+#: .\colibri\lists.py:584
+msgid "GeographicUnit"
+msgstr "UnitGeografis"
+
+#: .\colibri\lists.py:585
+msgid "TimeUnit"
+msgstr "UNITWAKTU"
+
+#: .\colibri\lists.py:586
+msgid "TextUnit"
+msgstr "UnitTeks"
+
+#: .\colibri\lists.py:587
+msgid "Group"
+msgstr "Grup"
+
+#: .\colibri\lists.py:588
+msgid "Object"
+msgstr "Obyek"
+
+#: .\colibri\lists.py:593
+msgid "Choose the type of item"
+msgstr "Pilih jenis barang"
+
+#: .\colibri\lists.py:594
+msgid "Publication"
+msgstr "Publikasi"
+
+#: .\colibri\lists.py:595
+msgid "Desktop Application"
+msgstr "Aplikasi Desktop"
+
+#: .\colibri\lists.py:596
+msgid "Mobile Application"
+msgstr "Aplikasi Mobile"
+
+#: .\colibri\lists.py:597
+msgid "Web Application"
+msgstr "Aplikasi Web"
+
+#: .\colibri\lists.py:598
+msgid "Web Service / API"
+msgstr "Layanan web / API"
+
+#: .\colibri\lists.py:599
+msgid "Visualization image"
+msgstr "Gambar visualisasi"
+
+#: .\colibri\lists.py:603
+msgid "Please choose a publication type"
+msgstr "Pilih jenis publikasi"
+
+#: .\colibri\lists.py:604
+msgid "Annotation"
+msgstr "Anotasi"
+
+#: .\colibri\lists.py:605
+msgid "Article / blog in Internet"
+msgstr "Artikel / blog di Internet"
+
+#: .\colibri\lists.py:606
+msgid "Book"
+msgstr "Buku"
+
+#: .\colibri\lists.py:607
+msgid "Book Section / Chapter"
+msgstr "Bagian buku / Bab"
+
+#: .\colibri\lists.py:608
+msgid "Conference Paper"
+msgstr "Makalah Konferensi"
+
+#: .\colibri\lists.py:609
+msgid "Dissertation"
+msgstr "Disertasi"
+
+#: .\colibri\lists.py:610
+msgid "Internal or external report"
+msgstr "Laporan internal atau eksternal"
+
+#: .\colibri\lists.py:611
+msgid "Journal article (academic)"
+msgstr "Artikel jurnal (akademik)"
+
+#: .\colibri\lists.py:612
+msgid "Journal article (non academic)"
+msgstr "Artikel jurnal (non akademik)"
+
+#: .\colibri\lists.py:613
+msgid "Loose-leaf publications"
+msgstr "Publikasi lepas"
+
+#: .\colibri\lists.py:614
+msgid "Newspaper article"
+msgstr "Artikel surat kabar"
+
+#: .\colibri\lists.py:615
+msgid "Online news agency article"
+msgstr "Artikel online kantor berita"
+
+#: .\colibri\lists.py:619
+msgid "Please choose a request type.."
+msgstr "Pilih jenis permintaan .."
+
+#: .\colibri\lists.py:620
+msgid "Looking for a dataset"
+msgstr "Mencari dataset"
+
+#: .\colibri\lists.py:626
+msgid "Combination of datasets / Mash-ups"
+msgstr "Kombinasi dataset / Mash-up"
+
+#: .\colibri\lists.py:627
+msgid "Data Verification"
+msgstr "Verifikasi Data"
+
+#: .\colibri\lists.py:628
+msgid "Freedom of Information Request"
+msgstr "Kebebasan Permintaan Informasi"
+
+#: .\colibri\templates\about.html.py:12
+msgid "About colibri project"
+msgstr "Tentang proyek colibri"
+
+#: .\colibri\templates\about.html.py:15
+msgid ""
+" The main goal of colibri project is the development and use of a data "
+"infrastructure, incorporating    distributed and diverse public sector "
+"information (PSI) resources, \n"
+"capable of supporting scientific collaboration and    research, particularly "
+"for the Social Science and Humanities (SSH)scientific communities, while "
+"also empowering the\n"
+"deployment of open governmental data towards citizens.The colibri e-"
+"infrastructure is envisaged to promote a highly synergetic approach to "
+"governance research, by providing the ground for experimentation \n"
+"to actors from both ICT and non-ICT related disciplines and scientific "
+"communities, as well as by ensuring that the scientific outcomes are made "
+"accessible\n"
+" to the citizens, so that they can monitor public service delivery and "
+"influence the desion making process."
+msgstr " Tujuan utama dari proyek colibri adalah pengembangan dan penggunaan infrastruktur data, menggabungkan informasi sektor publik yang terdistribusi dan beragam sumber, \n dapat mendukung kolaborasi ilmiah dan penelitian, khususnya untuk Ilmu Sosial dan Humaniora (SSH) komunitas ilmiah, sambil memperkuat \npeluncuran data pemerintah yang terbuka untuk penduduk.colibri e-infrastruktur ini mempunyai visi untuk mempromosikan pendekatan yang sangat sinergis dalam penelitian pemerintahan, dengan memberikan area untuk eksperimen \n untuk aktor dari TIK dan non-TIK dan komunitas ilmiah, serta memastikan bahwa hasil ilmiah yang dibuat dapat diakses \n oleh warga, sehingga mereka dapat memantau pelayanan publik dan mempengaruhi proses pembuatan keputusan yang terjadi."
+
+#: .\colibri\templates\about.html.py:22
+msgid ""
+"Simply put, colibri is a door for researchers that leads them to the world of "
+"Open Government Data. By using  the colibri platform, researchers and "
+"citizens will be able to\n"
+" submit, acquire, search and visualize diverse,     distributed and derived "
+"Public sector datasets from all the countries of the European Union."
+msgstr "Sederhananya, colibri adalah pintu bagi para peneliti yang membawa mereka ke dunia Keterbukaan Informasi Pemerintah. Dengan menggunakan platform colibri, peneliti dan warga dapat \n menyerahkan, memperoleh, mencari dan memvisualisasikan beragam, dataset sektor publik yang terdistribusi dan turunannya dari semua negara-negara Uni Eropa."
+
+#: .\colibri\templates\about.html.py:25
+msgid ""
+"colibri is a Combination of CP- CSA project funded under the European "
+"Commission FP7 Programme."
+msgstr "colibri adalah Kombinasi proyek CP-CSA yang didanai oleh Program FP7 Komisi Eropa."
+
+#: .\colibri\templates\about.html.py:28
+msgid "For more information visit us on the colibri project website"
+msgstr "Untuk informasi lebih lanjut kunjungi kami di situs proyek colibri"
+
+#: .\colibri\templates\base.html.py:71
+#: .\colibri\templates\profile\_profile.html.py:9
+#: .\colibri\templates\wiki\base.html.py:86
+msgid "Profile"
+msgstr "Profil"
+
+#: .\colibri\templates\base.html.py:72 .\colibri\templates\wiki\base.html.py:87
+msgid "Account Settings"
+msgstr "Pengaturan Akun"
+
+#: .\colibri\templates\base.html.py:73 .\colibri\templates\profile.html.py:46
+#: .\colibri\templates\wiki\base.html.py:88
+#: .\messages\templates\messages\base.html.py:8
+#: .\messages\templates\messages\inbox.html.py:10
+#: .\messages\templates\messages\new_message.html.py:10
+msgid "Inbox"
+msgstr "Kotak Masuk"
+
+#: .\colibri\templates\base.html.py:76 .\colibri\templates\wiki\base.html.py:91
+msgid "Signout"
+msgstr "Keluar"
+
+#: .\colibri\templates\base.html.py:83 .\colibri\templates\wiki\base.html.py:98
+msgid "Sign in"
+msgstr "Masuk"
+
+#: .\colibri\templates\base.html.py:94 .\colibri\templates\wiki\base.html.py:109
+msgid "HOME"
+msgstr "RUMAH"
+
+#: .\colibri\templates\base.html.py:95 .\colibri\templates\wiki\base.html.py:110
+msgid "DATASETS"
+msgstr "Datasets"
+
+#: .\colibri\templates\base.html.py:97 .\colibri\templates\wiki\base.html.py:112
+msgid "Search Datasets"
+msgstr "Cari Datasets"
+
+#: .\colibri\templates\base.html.py:98
+#: .\colibri\templates\dataset\_add.html.py:61
+#: .\colibri\templates\wiki\base.html.py:113
+msgid "Add new dataset"
+msgstr "Tambahkan dataset baru"
+
+#: .\colibri\templates\base.html.py:102
+#: .\colibri\templates\wiki\base.html.py:117
+msgid "REQUEST DATA"
+msgstr "PERMINTAAN DATA"
+
+#: .\colibri\templates\base.html.py:104
+#: .\colibri\templates\wiki\base.html.py:119
+msgid "COMMUNITY"
+msgstr "KOMUNITAS"
+
+#: .\colibri\templates\base.html.py:106
+#: .\colibri\templates\wiki\base.html.py:121
+msgid "Users"
+msgstr "Pengguna"
+
+#: .\colibri\templates\base.html.py:109
+#: .\colibri\templates\wiki\base.html.py:124
+msgid "OPEN DATA SITES"
+msgstr "BUKA SITUS DATA"
+
+#: .\colibri\templates\base.html.py:110
+#: .\colibri\templates\wiki\base.html.py:125
+msgid "WIKI"
+msgstr "WIKI"
+
+#: .\colibri\templates\base.html.py:111
+#: .\colibri\templates\wiki\base.html.py:126
+msgid "ABOUT US"
+msgstr "TENTANG KAMI"
+
+#: .\colibri\templates\base.html.py:113
+#: .\colibri\templates\wiki\base.html.py:128
+msgid "About colibri"
+msgstr "Tentang colibri"
+
+#: .\colibri\templates\base.html.py:114
+#: .\colibri\templates\wiki\base.html.py:129
+msgid "Contact us"
+msgstr "Hubungi Kami "
+
+#: .\colibri\templates\base.html.py:115
+#: .\colibri\templates\wiki\base.html.py:130
+msgid "Term Of Use"
+msgstr "Syarat Penggunaan"
+
+#: .\colibri\templates\base.html.py:137
+#: .\colibri\templates\wiki\base.html.py:231
+msgid ""
+"colibri is a Combination of CP & CSA project funded under the European "
+"Commission FP7 Programme"
+msgstr "colibri adalah Kombinasi proyek CP & CSA didanai oleh Program FP7 Komisi Eropa"
+
+#: .\colibri\templates\base.html.py:143
+#: .\colibri\templates\wiki\base.html.py:237
+msgid "All rights reserved"
+msgstr "Semua hak cipta dilindungi"
+
+#: .\colibri\templates\base.html.py:144
+#: .\colibri\templates\wiki\base.html.py:238
+msgid "Please read our"
+msgstr "Silahkan baca"
+
+#: .\colibri\templates\base.html.py:144
+#: .\colibri\templates\wiki\base.html.py:238
+msgid "Terms Of Use"
+msgstr "Syarat Penggunaan"
+
+#: .\colibri\templates\contact.html.py:12
+#: .\colibri\templates\profile\_edit.html.py:132
+#: .\colibri\templates\profile\_profile.html.py:52
+msgid "Contact"
+msgstr "Hubungi Kami"
+
+#: .\colibri\templates\index.html.py:60
+msgid "SEARCH FOR PUBLIC DATA"
+msgstr "MENCARI DATA UMUM"
+
+#: .\colibri\templates\index.html.py:69
+msgid "GOT YOUR OWN OPEN DATASET?"
+msgstr "MEMILIKI DATASET TERBUKA PRIBADI?"
+
+#: .\colibri\templates\index.html.py:69
+msgid "Click here</a> to add a new Dataset"
+msgstr "Klik di sini </a> untuk menambahkan Dataset baru"
+
+#: .\colibri\templates\index.html.py:78
+msgid "DIDN’T FIND WHAT YOU WERE LOOKING FOR?"
+msgstr "TIDAK MENEMUKAN APA YANG ANDA CARI?"
+
+#: .\colibri\templates\index.html.py:78
+msgid "Ask the Community to get it for you"
+msgstr "Minta komunitas mendapatkannya untuk Anda"
+
+#: .\colibri\templates\index.html.py:88
+#: .\colibri\templates\profile\_profile.html.py:92
+msgid "Latest Requests"
+msgstr "Permintaan terbaru"
+
+#: .\colibri\templates\index.html.py:108
+msgid "has made a request."
+msgstr "telah membuat permintaan."
+
+#: .\colibri\templates\index.html.py:120
+msgid "No recent requests"
+msgstr "Tidak ada permintaan terakhir"
+
+#: .\colibri\templates\profile.html.py:36
+#: .\colibri\templates\request-details.html.py:19
+#: .\colibri\templates\request.html.py:22 .\colibri\templates\dataset\_details -
+#: Copy.html.py:73 .\colibri\templates\dataset\_details.html.py:93
+#: .\colibri\templates\dataset\_search.html.py:20
+msgid "Home"
+msgstr "Rumah"
+
+#: .\colibri\templates\profile.html.py:44
+msgid "Profile summary"
+msgstr "Ringkasan profil"
+
+#: .\colibri\templates\profile.html.py:45
+msgid "My Groups"
+msgstr "Grup Saya"
+
+#: .\colibri\templates\request-details.html.py:19
+msgid "Data Requests"
+msgstr "Permintaan Data"
+
+#: .\colibri\templates\request-details.html.py:47
+msgid "Like Request"
+msgstr "Permintaan Suka"
+
+#: .\colibri\templates\request-details.html.py:48
+msgid "Created "
+msgstr "Dibuat "
+
+#: .\colibri\templates\request-details.html.py:51
+#: .\colibri\templates\request.html.py:111
+msgid "pending request"
+msgstr "permintaan tertunda"
+
+#: .\colibri\templates\request-details.html.py:54
+#: .\colibri\templates\request.html.py:114
+msgid "Satisfied request"
+msgstr "Permintaan Puas"
+
+#: .\colibri\templates\request-details.html.py:77
+msgid "Replies to the request"
+msgstr "Balasan untuk permintaan"
+
+#: .\colibri\templates\request-details.html.py:87
+#: .\colibri\templates\dataset\_details - Copy.html.py:258
+#, python-format
+msgid "%(comments_count)s reply %(entry_title)s"
+msgid_plural "%(comments_count)s Replies "
+msgstr[0] "%(Comments_count)s balasan%(entry_title)s"
+msgstr[1] "%(Comments_count)s balasan%(entry_title)s"
+
+#: .\colibri\templates\request-details.html.py:90
+#: .\colibri\templates\dataset\_details - Copy.html.py:261
+#: .\colibri\templates\dataset\_details.html.py:355
+msgid "Comments are closed."
+msgstr "Komentar ditutup."
+
+#: .\colibri\templates\request-details.html.py:95
+#: .\colibri\templates\dataset\_details - Copy.html.py:266
+#: .\colibri\templates\dataset\_details.html.py:360
+msgid "Leave a reply"
+msgstr "Tinggalkan balasan"
+
+#: .\colibri\templates\request-details.html.py:114
+#: .\colibri\templates\dataset\_details - Copy.html.py:284
+#: .\colibri\templates\dataset\_details.html.py:378
+msgid "Please "
+msgstr "Tolong "
+
+#: .\colibri\templates\request-details.html.py:114
+#: .\colibri\templates\dataset\_details - Copy.html.py:284
+#: .\colibri\templates\dataset\_details.html.py:378
+msgid "login"
+msgstr "MASUK"
+
+#: .\colibri\templates\request-details.html.py:114
+#: .\colibri\templates\dataset\_details - Copy.html.py:284
+#: .\colibri\templates\dataset\_details.html.py:378
+msgid "to reply."
+msgstr "untuk membalas."
+
+#: .\colibri\templates\request.html.py:22
+msgid "Data Request"
+msgstr "Permintaan Data"
+
+#: .\colibri\templates\request.html.py:31
+msgid "Requests"
+msgstr "Permintaan"
+
+#: .\colibri\templates\request.html.py:39
+msgid "Browse by:"
+msgstr "Cari berdasarkan"
+
+#: .\colibri\templates\request.html.py:41
+msgid "Date updated"
+msgstr "Tanggal diperbarui"
+
+#: .\colibri\templates\request.html.py:42
+msgid "Popularity"
+msgstr "Popularitas"
+
+#: .\colibri\templates\request.html.py:46 .\colibri\templates\request.html.py:49
+#: .\colibri\templates\requests-add.html.py:85
+msgid "Place a new request"
+msgstr "Kirim permintaan baru"
+
+#: .\colibri\templates\request.html.py:84
+#: .\colibri\templates\requests-add.html.py:100
+#: .\colibri\templates\dataset\_search.html.py:124
+msgid "Category:"
+msgstr "Kategori:"
+
+#: .\colibri\templates\request.html.py:91
+msgid "read"
+msgstr "baca"
+
+#: .\colibri\templates\request.html.py:108
+msgid "answers"
+msgstr "jawaban"
+
+#: .\colibri\templates\request.html.py:127
+#: .\colibri\templates\search\search.html.py:30
+msgid "Previous"
+msgstr "Sebelumnya"
+
+#: .\colibri\templates\request.html.py:137
+#: .\colibri\templates\dataset\_add.html.py:33
+#: .\colibri\templates\dataset\_add.html.py:35
+#: .\colibri\templates\dataset\_edit.html.py:39
+#: .\colibri\templates\dataset\_edit.html.py:41
+#: .\colibri\templates\dataset\_extend.html.py:33
+#: .\colibri\templates\dataset\_extend.html.py:35
+#: .\colibri\templates\search\search.html.py:32
+msgid "Next"
+msgstr "Berikutnya"
+
+#: .\colibri\templates\requests-add.html.py:53
+msgid "Title must be filled out"
+msgstr "Judul harus diisi"
+
+#: .\colibri\templates\requests-add.html.py:62
+msgid "Description must be filled out"
+msgstr "Deskripsi harus diisi"
+
+#: .\colibri\templates\requests-add.html.py:71
+msgid "Please select category"
+msgstr "Silakan pilih kategori"
+
+#: .\colibri\templates\requests-add.html.py:94
+msgid "Title:"
+msgstr "Judul:"
+
+#: .\colibri\templates\requests-add.html.py:110
+msgid "Description:"
+msgstr "Deskripsi."
+
+#: .\colibri\templates\terms.html.py:14
+msgid ""
+" Terms of use\n"
+"\t  </div>\n"
+"\t\t<p> Welcome to our website. If you continue to browse and use this "
+"website you are agreeing to comply with and be\n"
+"\t\t\tbound by the following terms and conditions of use, which together "
+"with our privacy policy govern colibri's\n"
+"\t\t\trelationship with you in relation to this website.The term ‘EPU-NTUA' "
+"or ‘us' or ‘we' refers to the owner of the\n"
+"\t\t\twebsite, <a style=\"color:white\" href=\"http://www.epu.ntua.gr\" "
+"target=\"_blank\"> <em>National Technical University of Athens, School of "
+"Electrical and Computer Engineering, Decision\n"
+"\t\t\t\tSupport Systems Lab</em></a>, whose registered office is 9, Iroon "
+"Polytechniou st., Zografou, Athens, GREECE\n"
+"\t\t\t15780. The term 'visitor' or ‘you' refers to the user or viewer of our "
+"website. The visitor/user of the pages\n"
+"\t\t\tand services of the colibri website should read this document carefully "
+"and if he does not agree with its terms\n"
+"\t\t\tand conditions he should NOT USE IT. Otherwise, he shall be considered "
+"as having accepted these terms and given\n"
+"\t\t\this consent. The legal information and the terms and conditions of "
+"this document cover all the pages of the\n"
+"\t\t\tcolibri Open Data website, unless otherwise expressly stated in any "
+"particular page. The use of this website is\n"
+"\t\t\tsubject to the following terms of use:</p>\n"
+"\t\t<div class=\"terms_title\">\n"
+"\t  Limitation of liability\n"
+"\t  </div>\n"
+"\t\t<p> When accessing this website, the visitor/user of the colibri Open "
+"Data website's pages and services agrees that\n"
+"\t\t\the shall do so on his own responsibility and that none of the parties "
+"involved in the creation, production or\n"
+"\t\t\tpublication of this website have any liability whatsoever. "
+"Indicatively, but without limitation, they shall not\n"
+"\t\t\tbe liable for any direct, incidental, consequential or indirect "
+"damages or any costs or expenses of any kind\n"
+"\t\t\t(including lawyer's fees, expert's fees or other expenses) which may "
+"arise, directly or indirectly, from the\n"
+"\t\t\taccess to, use or surfing of this website or from the downloading of "
+"any material, text, data, video or sound\n"
+"\t\t\tfiles from this website including indicatively and without limitation "
+"any damages caused by viruses, bugs, human\n"
+"\t\t\taction or omission, by any computer system, telephone line, hardware "
+"part, software or program dysfunction or\n"
+"\t\t\tany other mistake, omission or delay in transmission by the computer "
+"or network connection.</p>\n"
+"\n"
+"\t\t<p> EPU-NTUA, without providing any warranty and therefore without being "
+"liable, shall make every possible effort to\n"
+"\t\t\tensure maximum clarity, timeliness, completeness and availability of "
+"the information and content. In no\n"
+"\t\t\tcircumstances, including negligence, shall EPU-NTUA be liable for any "
+"damage to the visitor/user as a result of\n"
+"\t\t\tthe use of this website. The information, total content and services "
+"are provided on an \"AS IS\" basis, without\n"
+"\t\t\twarranties of any kind, either express or implied, which EPU-NTUA "
+"expressly rejects, including indicatively but\n"
+"\t\t\tnot limited to, warranties of merchantability or suitability.</p>\n"
+"\t\t<br>\n"
+"\t\t<p> The visitor/user of this website must comply with the provisions of "
+"the Greek, European and International Law\n"
+"\t\t\tand the relevant legislation governing telecommunications and refrain "
+"from any unlawful and abusive use of the\n"
+"\t\t\tcontent and services of this website. Any damage caused to this "
+"website or the Internet, which results from\n"
+"\t\t\timproper or unlawful use of the relevant services by the visitor/user "
+"shall fall within his exclusive sphere of\n"
+"\t\t\tresponsibility.</p>\n"
+"\t\t<div class=\"terms_title\">\n"
+"\t  Unlawful or unfair behavior\n"
+"\t  </div>\n"
+"\t\t<p> The visitor/user of this website should not post or transmit through "
+"this website any pornographic, obscene,\n"
+"\t\t\tprofane, defamatory, slanderous, threatening, illegal or other "
+"material that is a criminal offence or may\n"
+"\t\t\tencourage conduct that would constitute a criminal offence, give rise "
+"to civil liability or otherwise violate\n"
+"\t\t\tany law. Although EPU-NTUA or any other party who may be involved in "
+"the creation, production or publication of\n"
+"\t\t\tthis website may monitor, inspect or review transmissions and "
+"postings, EPU-NTUA and other parties involved in\n"
+"\t\t\tthe creation, production or publication of this website disavow any "
+"potential liability that may arise from\n"
+"\t\t\ttheir content, including indicatively and without limitation, any "
+"claims for defamation, slander, blasphemy,\n"
+"\t\t\tfalse impersonation or infringement of intellectual property rights.</"
+"p>\n"
+"\t\t<br>\n"
+"\t\t<div class=\"terms_title\">\n"
+"\t  Hyperlinks\n"
+"\t  </div>\n"
+"\t\t<p> Although this website may be linked to other websites, it is not "
+"responsible for the content and services of\n"
+"\t\t\tother websites hyperlinked through links or banners and makes no "
+"warranty for their availability. EPU-NTUA\n"
+"\t\t\tdisclaims any direct or indirect approval, approbation, relationship, "
+"sponsoring or collaboration with\n"
+"\t\t\thyperlinked websites, unless this is expressly indicated. By accessing "
+"this website, the visitor/user agrees\n"
+"\t\t\tthat EPU-NTUA has no liability for any problems that may arise during "
+"the visit/use of websites to which this\n"
+"\t\t\twebsite is hyperlinked, which fall exclusively within the sphere of "
+"responsibility of the respective\n"
+"\t\t\twebsites.</p>\n"
+"\t\t<br>\n"
+"\t<div class=\"terms_title\">\n"
+"\t  Revision of this document\n"
+"\t  </div>\n"
+"\t\t<h2> </h2>\n"
+"\t\t<p> EPU-NTUA reserves the right to revise this legal information at any "
+"time and for any reason, without prior\n"
+"\t\t\tnotice or obligation. Users/visitors should check every time for any "
+"changes and their continued use of the\n"
+"\t\t\twebsite constitutes acceptance of the modified terms and conditions. "
+"Otherwise, they should refrain from\n"
+"\t\t\tusing/visiting this website.</p>\n"
+"\t\t<br>\n"
+"\t<div class=\"terms_title\">\n"
+"\t  Applicable law\n"
+"\t  </div>\n"
+"\n"
+"\t\t<p> This use agreement is governed by the provisions of Greek Law, the "
+"directives and regulations of European Law\n"
+"\t\t\tand the relevant international provisions and is construed in "
+"accordance with the rules of good faith, business\n"
+"\t\t\tethics and the financial and social purpose of the right. If any term "
+"of this agreement is deemed invalid, void\n"
+"\t\t\tand for any reason unenforceable, that term shall automatically be "
+"deemed severable and shall not affect the\n"
+"\t\t\tvalidity of the remaining terms of this agreement. No amendment of the "
+"terms of the agreement shall be taken\n"
+"\t\t\tinto consideration or be part thereof, if it has not been stated in "
+"writing and not incorporated in it. The\n"
+"\t\t\tcompetent courts for any disputes arising from the agreement shall be "
+"the courts of Athens.</p>\n"
+"\t\t<br>\n"
+"\t\t<p> The management and protection of the personal data of the visitor/"
+"user of this website are subject to the terms\n"
+"\t\t\tof this section and the relevant provisions of Greek law (Law "
+"2472/1997 as supplemented by the decisions of the\n"
+"\t\t\tChairman of the Personal Data Protection Committee, Presidential "
+"Decrees 207/1998 and 79/2000 and article 8 of\n"
+"\t\t\tLaw 2819/2000) and European Law (Directives 95/46/EC and 97/66/EC). "
+"Any future relevant regulation shall form\n"
+"\t\t\tpart of this section. If a visitor/user does not agree with the terms "
+"for personal data protection set out in\n"
+"\t\t\tthis section, he should not use the services of this website. Visitors/"
+"users are required to provide personal\n"
+"\t\t\tdata for this website. The visitor/user expressly agrees to the use of "
+"his personal data by EPU-NTUA for\n"
+"\t\t\tpromotional or marketing activities. This website shall protect the "
+"personal nature of your information and may\n"
+"\t\t\tnot communicate them to third parties (except as provided by law and "
+"then only to the relevant authorities).\n"
+"\t\t\tThis website keeps files with the personal data provided by visitors/"
+"users solely for purposes of communication,\n"
+"\t\t\tstatistics and improvement of the services provided and may process "
+"all or part of such information for\n"
+"\t\t\tstatistics, market research or improvement of the services provided, "
+"as well as for promotional or marketing\n"
+"\t\t\tactivities. The visitor/user may contact the relevant department by "
+"phone at ++30 210 772 3583, in order to\n"
+"\t\t\tdetermine the existence of his personal file and demand its "
+"correction, modification or deletion.</p>\n"
+"\t<br>\n"
+"\t\t<p> This website uses \"cookies\", a technology that is used to identify "
+"the visitor/user of certain services and web\n"
+"\t\t\tpages of this site. Cookies are small text files (4 KB at most) that "
+"can be stored on the hard disk of each\n"
+"\t\t\tvisitor/user without obtaining any knowledge of any document or file "
+"in his computer. They are used to\n"
+"\t\t\tfacilitate visitor/user access to specific pages and services of this "
+"website or for statistical purposes. The\n"
+"\t\t\tvisitor/user may personalize his server so as to be notified about the "
+"use of cookies in specific pages/services\n"
+"\t\t\tof this website and may choose not to accept the use of cookies.</p>\n"
+"\t\t<br>\n"
+"\t\t<p style=\"margin-bottom:60px;\"> For users under the age of 18, prior "
+"consent of parents/guardians is considered as given for any communication\n"
+"\t\t\tof personal data to the colibri Open Data website.</p>"
+msgstr ""
+
+#: .\colibri\templates\comments\comment.html.py:22
+#: .\colibri\templates\comments\preview.html.py:12
+msgid "Preview of your comment"
+msgstr "Preview komentar anda"
+
+#: .\colibri\templates\comments\comment.html.py:37
+#: .\colibri\templates\comments\comment.html.py:43
+msgid "replied"
+msgstr "Dijawab"
+
+#: .\colibri\templates\comments\comment.html.py:39
+msgid "Accepted Answer, "
+msgstr "Jawaban diterima, "
+
+#: .\colibri\templates\comments\comment.html.py:58
+msgid "Accept Answer"
+msgstr "Terima Jawaban"
+
+#: .\colibri\templates\comments\deleted.html.py:4
+#: .\old\django-basic-apps\basic\comments\templates\comments\deleted.html.py:7
+#: .\old\django-basic-apps\basic\comments\templates\comments\deleted.html.py:11
+msgid "Thanks for removing"
+msgstr "Terima kasih telah menghapus"
+
+#: .\colibri\templates\comments\deleted.html.py:12
+msgid "Thanks for removing the comment"
+msgstr "Terima kasih sudah menghapus komentar"
+
+#: .\colibri\templates\comments\deleted.html.py:14
+#: .\colibri\templates\comments\flagged.html.py:14
+msgid ""
+"\n"
+"      Thanks for taking the time to improve the quality of discussion on our "
+"site.<br/>\n"
+"      You will be sent back to the article...\n"
+"    "
+msgstr "\n Terima kasih telah meluangkan waktu untuk meningkatkan kualitas diskusi di situs kami. <br/> \n Anda akan dikirim kembali ke artikel ... \n    "
+
+#: .\colibri\templates\comments\deleted.html.py:20
+#: .\colibri\templates\comments\flagged.html.py:20
+#: .\colibri\templates\comments\posted.html.py:24
+msgid "Back to the article"
+msgstr "Kembali ke artikel"
+
+#: .\colibri\templates\comments\flagged.html.py:4
+#: .\old\django-basic-apps\basic\comments\templates\comments\flagged.html.py:7
+#: .\old\django-basic-apps\basic\comments\templates\comments\flagged.html.py:11
+msgid "Thanks for flagging"
+msgstr "Terima kasih telah memberi tanda"
+
+#: .\colibri\templates\comments\flagged.html.py:12
+msgid "Thanks for flagging the comment"
+msgstr "Terima kasih untuk menandakan komentar"
+
+#: .\colibri\templates\comments\form.html.py:4
+msgid "Replies are closed."
+msgstr "Balasan ditutup."
+
+#: .\colibri\templates\comments\form.html.py:23
+#: .\colibri\templates\comments\preview.html.py:26
+#: .\old\django-basic-apps\basic\comments\templates\comments\form.html.py:23
+#: .\old\django-basic-apps\basic\comments\templates\comments\preview.html.py:47
+msgid "Post"
+msgstr "Post"
+
+#: .\colibri\templates\comments\form.html.py:24
+#: .\colibri\templates\comments\preview.html.py:27
+#: .\colibri\templates\wiki\edit.html.py:41
+#: .\old\django-basic-apps\basic\comments\templates\comments\preview.html.py:48
+msgid "Preview"
+msgstr "Preview"
+
+#: .\colibri\templates\comments\posted.html.py:3
+msgid "Thanks for commenting"
+msgstr "Terima kasih telah memberikan komentar"
+
+#: .\colibri\templates\comments\posted.html.py:11
+msgid "Thanks for posting your comment"
+msgstr "Terima kasih atas posting komentar anda"
+
+#: .\colibri\templates\comments\posted.html.py:13
+msgid ""
+"\n"
+"      We have received your comment, and posted it on the web site.<br/>\n"
+"      You will be sent back to the article...\n"
+"      "
+msgstr "\n Kami telah menerima komentar Anda, dan telah diposting di situs web. <br/> \n Anda akan dikirim kembali ke artikel ... \n      "
+
+#: .\colibri\templates\comments\preview.html.py:3
+#: .\old\django-basic-apps\basic\comments\templates\comments\preview.html.py:7
+#: .\old\django-basic-apps\basic\comments\templates\comments\preview.html.py:11
+msgid "Preview your comment"
+msgstr "Preview komentar Anda"
+
+#: .\colibri\templates\comments\preview.html.py:10
+#: .\old\django-basic-apps\basic\comments\templates\comments\preview.html.py:22
+msgid "Please correct the error below"
+msgid_plural "Please correct the errors below"
+msgstr[0] "Silakan koreksi kesalahan di bawah."
+msgstr[1] "Silakan koreksi kesalahan di bawah."
+
+#: .\colibri\templates\comments\preview.html.py:17
+#: .\old\django-basic-apps\basic\comments\templates\comments\preview.html.py:26
+msgid "Post your comment"
+msgstr "Kirim komentar anda"
+
+#: .\colibri\templates\comments\preview.html.py:20
+msgid "Or make changes"
+msgstr "Atau membuat perubahan"
+
+#: .\colibri\templates\dataset\_add.html.py:27
+#: .\colibri\templates\dataset\_add.html.py:29
+#: .\colibri\templates\dataset\_edit.html.py:33
+#: .\colibri\templates\dataset\_edit.html.py:35
+#: .\colibri\templates\dataset\_extend.html.py:27
+#: .\colibri\templates\dataset\_extend.html.py:29
+msgid "Back"
+msgstr "Kembali"
+
+#: .\colibri\templates\dataset\_confirm_delete.html.py:13
+msgid "Delete dataset"
+msgstr "Hapus dataset"
+
+#: .\colibri\templates\dataset\_confirm_delete.html.py:16
+msgid ""
+"Are you sure you want to remove this dataset and all the resources attached "
+"to it?"
+msgstr "Apakah Anda yakin ingin menghapus dataset ini dan semua sumber yang melekat padanya?"
+
+#: .\colibri\templates\dataset\_confirm_delete.html.py:18
+#: .\colibri\templates\dataset\_details.html.py:337
+#: .\colibri\templates\profile\_edit.html.py:163
+msgid "Cancel"
+msgstr "Batalkan"
+
+#: .\colibri\templates\dataset\_confirm_delete.html.py:21
+#: .\colibri\templates\wiki\delete.html.py:8
+#: .\messages\templates\messages\view.html.py:37
+msgid "Delete"
+msgstr "Hapus"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:35
+#: .\colibri\templates\dataset\_details.html.py:55
+msgid "Thank you for voting!"
+msgstr "Terima kasih sudah memilih!"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:39
+#: .\colibri\templates\dataset\_details.html.py:59
+msgid "You must be logged in to vote."
+msgstr "Anda harus login untuk memilih."
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:44
+#: .\colibri\templates\dataset\_details.html.py:64
+msgid "You have already voted!"
+msgstr "Anda sudah memilih!"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:68
+#: .\colibri\templates\dataset\_details.html.py:88
+msgid "Delete Dataset"
+msgstr "Hapus Dataset"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:69
+#: .\colibri\templates\dataset\_details.html.py:89
+msgid "Edit Dataset"
+msgstr "Rubah Dataset"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:73
+#: .\colibri\templates\dataset\_details.html.py:93
+#: .\colibri\templates\dataset\_search.html.py:20
+msgid "Datasets"
+msgstr "Datasets"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:80
+#: .\colibri\templates\dataset\_details.html.py:100
+msgid "Uploaded by"
+msgstr "Diunggah oleh"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:84 Copy.html.py:86
+#: .\colibri\templates\dataset\_details.html.py:104
+#: .\colibri\templates\dataset\_details.html.py:106
+#: .\colibri\templates\dataset\_extend.html.py:70
+msgid "Extend"
+msgstr "Perpanjang"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:96
+#: .\colibri\templates\dataset\_details.html.py:116
+msgid "No rating yet"
+msgstr "Belum ada rating"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:96
+#: .\colibri\templates\dataset\_details.html.py:116
+msgid "Score"
+msgstr "Skor"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:96
+#: .\colibri\templates\dataset\_details.html.py:116
+msgid "votes"
+msgstr "suara"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:104
+#: .\colibri\templates\dataset\_details.html.py:124
+#: .\colibri\templates\dataset\_index.html.py:15
+msgid "Resources"
+msgstr "Sumber Informasi "
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:105
+#: .\colibri\templates\dataset\_details.html.py:125
+msgid "Detailed Metadata"
+msgstr "Metadata Detil"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:132
+#: .\colibri\templates\dataset\_details.html.py:160
+msgid "download"
+msgstr "Unduh"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:134
+msgid "view online"
+msgstr "melihat online"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:144 Copy.html.py:299
+#: .\colibri\templates\dataset\_details.html.py:173
+#: .\colibri\templates\dataset\_details.html.py:400
+msgid "Maintainer"
+msgstr "Pemelihara"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:149 Copy.html.py:303
+#: .\colibri\templates\dataset\_details.html.py:178
+#: .\colibri\templates\dataset\_details.html.py:404
+#: .\colibri\templates\dataset\_form.html.py:73
+#: .\colibri\templates\opendatasites\datasources_en.html.py:162
+msgid "Publisher"
+msgstr "Penerbit"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:155 Copy.html.py:313
+#: .\colibri\templates\dataset\_details.html.py:184
+#: .\colibri\templates\dataset\_details.html.py:414
+#: .\colibri\templates\dataset\_form.html.py:71
+#: .\colibri\templates\dataset\_search.html.py:53
+#: .\colibri\templates\opendatasites\datasources_en.html.py:160
+msgid "Author"
+msgstr "Penulis"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:160 Copy.html.py:317
+#: .\colibri\templates\dataset\_details.html.py:189
+#: .\colibri\templates\dataset\_details.html.py:418
+msgid "Release Date"
+msgstr "Tanggal Rilis"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:164 Copy.html.py:321
+#: .\colibri\templates\dataset\_details.html.py:193
+#: .\colibri\templates\dataset\_details.html.py:422
+msgid "Last Update"
+msgstr "Update Terakhir"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:175
+#: .\colibri\templates\dataset\_details.html.py:204
+#: .\colibri\templates\dataset\_form.html.py:64
+#: .\colibri\templates\opendatasites\datasources_en.html.py:163
+msgid "License"
+msgstr "Lisensi"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:181
+#: .\colibri\templates\dataset\_details.html.py:210
+#: .\colibri\templates\dataset\_form.html.py:103
+msgid "Geographical Granularity"
+msgstr "Granularitas Geografis"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:187
+#: .\colibri\templates\dataset\_details.html.py:216
+#: .\colibri\templates\dataset\_form.html.py:108
+msgid "Geographical Coverage"
+msgstr "Cakupan Geografis"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:193
+#: .\colibri\templates\dataset\_details.html.py:222
+#: .\colibri\templates\dataset\_form.html.py:84
+msgid "Temporal Granularity"
+msgstr "Granularitas Temporal"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:199
+#: .\colibri\templates\dataset\_details.html.py:228
+msgid "Temporal Coverage"
+msgstr "Cakupan Temporal"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:200
+#: .\colibri\templates\dataset\_details.html.py:229
+#: .\colibri\templates\dataset\_form.html.py:94
+msgid "To"
+msgstr "untuk"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:205
+#: .\colibri\templates\dataset\_details.html.py:234
+msgid "Scientific Domain"
+msgstr "Domain Ilmiah"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:211
+#: .\colibri\templates\dataset\_details.html.py:240
+msgid "Data collection type"
+msgstr "Jenis data koleksi"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:217
+#: .\colibri\templates\dataset\_details.html.py:246
+msgid "Data collection description"
+msgstr "Deskripsi data koleksi"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:223
+#: .\colibri\templates\dataset\_details.html.py:252
+msgid "Software Package Used"
+msgstr "Paket Software yang Digunakan"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:229
+#: .\colibri\templates\dataset\_details.html.py:258
+#: .\colibri\templates\dataset\_form.html.py:129
+msgid "Analysis Unit"
+msgstr "Unit analisis"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:235
+#: .\colibri\templates\dataset\_details.html.py:264
+#: .\colibri\templates\dataset\_form.html.py:132
+msgid "Statistical Methodology"
+msgstr "Metodologi statistik"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:249
+#: .\colibri\templates\dataset\_details.html.py:343
+msgid "Discussions"
+msgstr "Diskusi"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:293
+#: .\colibri\templates\dataset\_details.html.py:387
+msgid "Basic Information"
+msgstr "Informasi Dasar"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:304 Copy.html.py:314
+#: Copy.html.py:326 Copy.html.py:330
+#: .\colibri\templates\dataset\_details.html.py:405
+#: .\colibri\templates\dataset\_details.html.py:415
+#: .\colibri\templates\dataset\_details.html.py:427
+#: .\colibri\templates\dataset\_details.html.py:431
+msgid "None specified"
+msgstr "Tidak ditentukan"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:308
+#: .\colibri\templates\dataset\_details.html.py:409
+msgid "Original url"
+msgstr "URL asli"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:309
+#: .\colibri\templates\dataset\_details.html.py:410
+msgid "Original Dataset page"
+msgstr "Halaman Dataset Asli"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:329
+#: .\colibri\templates\dataset\_details.html.py:430
+msgid "Licence"
+msgstr "Lisensi"
+
+#: .\colibri\templates\dataset\_details - Copy.html.py:339
+#: .\colibri\templates\dataset\_details.html.py:440
+msgid "Extension Graph"
+msgstr "Grafik Perpanjangan"
+
+#: .\colibri\templates\dataset\_details.html.py:153
+msgid " view"
+msgstr " pandangan"
+
+#: .\colibri\templates\dataset\_details.html.py:163
+msgid "visualize"
+msgstr "visualisasi"
+
+#: .\colibri\templates\dataset\_details.html.py:277
+msgid "Items based on this dataset"
+msgstr "Item berdasarkan dataset ini"
+
+#: .\colibri\templates\dataset\_details.html.py:291
+msgid "uploaded by"
+msgstr "diunggah oleh"
+
+#: .\colibri\templates\dataset\_details.html.py:323
+msgid "URL of item"
+msgstr "URL dari item"
+
+#: .\colibri\templates\dataset\_details.html.py:329
+msgid "Submit item"
+msgstr "Kirim Item"
+
+#: .\colibri\templates\dataset\_details.html.py:333
+#: .\colibri\templates\dataset\_details.html.py:335
+msgid "Submit your own item"
+msgstr "Kirim item Anda sendiri"
+
+#: .\colibri\templates\dataset\_details.html.py:352
+#, python-format
+msgid "%(comments_count)s reply "
+msgid_plural "%(comments_count)s Replies "
+msgstr[0] "%(Comments_count)s balasan "
+msgstr[1] "%(Comments_count)s balasan "
+
+#: .\colibri\templates\dataset\_edit.html.py:18
+msgid "Add another"
+msgstr "Tambahkan lagi"
+
+#: .\colibri\templates\dataset\_edit.html.py:66
+#: .\colibri\templates\dataset\_extend.html.py:60
+msgid "Edit dataset"
+msgstr "Merubah dataset"
+
+#: .\colibri\templates\dataset\_edit.html.py:76
+msgid "Save Dataset"
+msgstr "Simpan Dataset"
+
+#: .\colibri\templates\dataset\_form.html.py:24
+msgid "Choose file"
+msgstr "Pilih berkas"
+
+#: .\colibri\templates\dataset\_form.html.py:26
+msgid "OR"
+msgstr "OR"
+
+#: .\colibri\templates\dataset\_form.html.py:27
+msgid "paste URL"
+msgstr "tempel URL"
+
+#: .\colibri\templates\dataset\_form.html.py:49
+#: .\colibri\templates\dataset\_index.html.py:12
+#: .\colibri\templates\opendatasites\datasources_en.html.py:157
+#: .\colibri\templates\wiki\dir.html.py:48
+#: .\colibri\templates\wiki\search.html.py:24
+msgid "Title"
+msgstr "Judul"
+
+#: .\colibri\templates\dataset\_form.html.py:52
+#: .\colibri\templates\dataset\_index.html.py:14
+#: .\colibri\templates\dataset\_search.html.py:46
+msgid "Description"
+msgstr "Deskripsi"
+
+#: .\colibri\templates\dataset\_form.html.py:56
+msgid "Categories"
+msgstr "Kategori"
+
+#: .\colibri\templates\dataset\_form.html.py:58
+msgid "Original Url of Dataset"
+msgstr "Url Asli Dataset"
+
+#: .\colibri\templates\dataset\_form.html.py:76
+msgid "Group maintaining the dataset"
+msgstr "Kelompok mempertahankan dataset"
+
+#: .\colibri\templates\dataset\_form.html.py:89
+msgid "From"
+msgstr "Dari"
+
+#: .\colibri\templates\dataset\_form.html.py:117
+msgid "Scientific domain of the dataset"
+msgstr "Domain Ilmiah dataset"
+
+#: .\colibri\templates\dataset\_form.html.py:120
+msgid "Data Collection type"
+msgstr "Tipe koleksi data"
+
+#: .\colibri\templates\dataset\_form.html.py:123
+msgid "Data Collection Description"
+msgstr "Deskripsi Pengumpulan Data"
+
+#: .\colibri\templates\dataset\_form.html.py:126
+msgid "Statistical Software package used"
+msgstr "Paket perangkat lunak statistik yang digunakan"
+
+#: .\colibri\templates\dataset\_modal.html.py:37
+msgid "Extend Dataset"
+msgstr "Perpanjang Dataset"
+
+#: .\colibri\templates\dataset\_search.html.py:35
+#: .\colibri\templates\dataset\_search.html.py:40
+msgid "more options"
+msgstr "lebih banyak pilihan"
+
+#: .\colibri\templates\dataset\_search.html.py:40
+msgid "hide options"
+msgstr "sembunyikan opsi"
+
+#: .\colibri\templates\dataset\_search.html.py:71
+msgid "Language"
+msgstr "Bahasa"
+
+#: .\colibri\templates\dataset\_search.html.py:82
+msgid "Uploader"
+msgstr "Penunggah"
+
+#: .\colibri\templates\dataset\_search.html.py:128
+msgid "Submitted by:"
+msgstr "Dikirim oleh:"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:126
+msgid "Data Sources Types"
+msgstr "Jenis Sumber Data"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:127
+msgid "Licenses"
+msgstr "Lisensi"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:128
+msgid "Language UI"
+msgstr "Bahasa UI"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:129
+#: .\colibri\templates\opendatasites\datasources_en.html.py:175
+msgid "Data Format"
+msgstr "Format Data"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:130
+msgid "Provision"
+msgstr "Ketentuan"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:156
+msgid "DataSource Type"
+msgstr "Tipe DataSource"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:158
+msgid "Subtitle"
+msgstr "Subtitle"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:159
+msgid "URL"
+msgstr "URL"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:161
+msgid "Email"
+msgstr "Email"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:164
+msgid "Category"
+msgstr "Kategori"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:165
+msgid "Info Type"
+msgstr "Info Tipe"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:166
+msgid "Period"
+msgstr "periode"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:167
+msgid "State of Data"
+msgstr "Keadaan Data"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:168
+msgid "Coverage"
+msgstr "Jangkauan"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:169
+msgid "Catalog / Discover"
+msgstr "Katalog / Penemuan"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:170
+msgid "Data acquisition"
+msgstr "Akuisisi data"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:171
+msgid "Data provision"
+msgstr "Penyediaan data"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:172
+msgid "Feedback"
+msgstr "Umpan balik"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:173
+msgid "Languages Interface"
+msgstr "Bahasa Antarmuka"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:174
+msgid "Dataset Languages"
+msgstr "Bahasa Dataset"
+
+#: .\colibri\templates\opendatasites\datasources_en.html.py:176
+msgid "Metadata"
+msgstr "Metadata"
+
+#: .\colibri\templates\profile\_add_group.html.py:96
+msgid "Create a New Group"
+msgstr "Buat Grup Baru"
+
+#: .\colibri\templates\profile\_add_group.html.py:102
+msgid "You successfully created a new group!"
+msgstr "Anda berhasil membuat grup baru!"
+
+#: .\colibri\templates\profile\_add_group.html.py:104
+msgid "Create Group"
+msgstr "Buat Grup"
+
+#: .\colibri\templates\profile\_edit.html.py:21
+msgid "Please tell us your main expertise background"
+msgstr "Tolong beritahu kami latar belakang keahlian utama Anda"
+
+#: .\colibri\templates\profile\_edit.html.py:31
+msgid "Please tells us your specialization"
+msgstr "Harap beritahu kita spesialisasi Anda"
+
+#: .\colibri\templates\profile\_edit.html.py:41
+msgid "Please select your country"
+msgstr "Mohon pilih negara Anda"
+
+#: .\colibri\templates\profile\_edit.html.py:56
+msgid "Please save profile to update photo"
+msgstr "Harap menyimpan profil untuk memperbarui foto"
+
+#: .\colibri\templates\profile\_edit.html.py:72
+#: .\colibri\templates\profile\_profile.html.py:43
+msgid "Edit Profile"
+msgstr "Rubah Profil "
+
+#: .\colibri\templates\profile\_edit.html.py:89
+msgid "change photo"
+msgstr "rubah foto"
+
+#: .\colibri\templates\profile\_edit.html.py:135
+msgid "Email Address"
+msgstr "Alamat Email"
+
+#: .\colibri\templates\profile\_edit.html.py:156
+#: .\colibri\templates\profile\_profile.html.py:79
+msgid "Personal Website"
+msgstr "Situs Pribadi"
+
+#: .\colibri\templates\profile\_edit.html.py:165
+msgid "Save Profile"
+msgstr "Simpan Profil"
+
+#: .\colibri\templates\profile\_groups.html.py:8
+msgid "Show me:"
+msgstr "Tunjukan:"
+
+#: .\colibri\templates\profile\_groups.html.py:11
+msgid "All groups"
+msgstr "Semua grup"
+
+#: .\colibri\templates\profile\_groups.html.py:12
+msgid "Groups I administrate"
+msgstr "Grup I Administrasi"
+
+#: .\colibri\templates\profile\_groups.html.py:13
+msgid "Groups I am a member of"
+msgstr "Saya anggota dari grup"
+
+#: .\colibri\templates\profile\_groups.html.py:16
+msgid "Create a new group"
+msgstr "Buat grup baru"
+
+#: .\colibri\templates\profile\_groups.html.py:24
+msgid "Group Name"
+msgstr "Nama Grup"
+
+#: .\colibri\templates\profile\_groups.html.py:25
+msgid "Members"
+msgstr "Anggota"
+
+#: .\colibri\templates\profile\_groups.html.py:26
+msgid "Role"
+msgstr "Peran"
+
+#: .\colibri\templates\profile\_profile.html.py:55
+msgid "Email Address:"
+msgstr "Alamat Email"
+
+#: .\colibri\templates\profile\_profile.html.py:84
+msgid "Latest datasets"
+msgstr "Dataset Terbaru"
+
+#: .\colibri\templates\profile\_profile.html.py:90
+#: .\colibri\templates\profile\_profile.html.py:98
+msgid "No recent activity"
+msgstr "Tidak ada aktivitas terkini"
+
+#: .\colibri\templates\search\search.html.py:12
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_search.html.py:10
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_search.html.py:18
+#: .\src\django-haystack\haystack\forms.py:17
+msgid "Search"
+msgstr "Pencarian"
+
+#: .\colibri\templates\user\_index.html.py:15
+msgid "Community Users"
+msgstr "Pengguna komunitas"
+
+#: .\colibri\templates\wiki\article.html.py:23
+#: .\colibri\templates\wiki\includes\revision_info.html.py:21
+msgid "locked"
+msgstr "Terkunci"
+
+#: .\colibri\templates\wiki\article.html.py:39
+msgid "This article was last modified:"
+msgstr "Artikel ini terakhir diubah:"
+
+#: .\colibri\templates\wiki\base.html.py:156
+msgid "Search..."
+msgstr "Pencarian"
+
+#: .\colibri\templates\wiki\base.html.py:172
+msgid "No notifications"
+msgstr "Tidak ada notifikasi"
+
+#: .\colibri\templates\wiki\base.html.py:174
+msgid "Clear notifications list"
+msgstr "Hapus daftar notifikasi"
+
+#: .\colibri\templates\wiki\create.html.py:5
+#: .\colibri\templates\wiki\create.html.py:45
+msgid "Add new article"
+msgstr "Tambahkan artikel baru"
+
+#: .\colibri\templates\wiki\create.html.py:52
+#: .\colibri\templates\wiki\delete.html.py:12
+#: .\colibri\templates\wiki\delete.html.py:46
+msgid "Go back"
+msgstr "Kembali"
+
+#: .\colibri\templates\wiki\create.html.py:56
+msgid "Create article"
+msgstr "Buat Artikel"
+
+#: .\colibri\templates\wiki\create_root.html.py:4
+msgid "Create root article"
+msgstr "Buat artikel akar"
+
+#: .\colibri\templates\wiki\create_root.html.py:22
+msgid "Congratulations!"
+msgstr "Selamat!"
+
+#: .\colibri\templates\wiki\create_root.html.py:24
+msgid ""
+"You have django-wiki installed... but there are no articles. So it's time to "
+"create the first one, the root article. In the beginning, it will only be "
+"editable by administrators, but you can define permissions after."
+msgstr "Anda memiliki Django-wiki diinstal ... tetapi tidak ada artikel. Jadi saatnya untuk membuat yang pertama yaitu artikel akar. Pada awal, artikel hanya dapat dirubah oleh administrator, tetapi Anda dapat mengatur izin setelahnya."
+
+#: .\colibri\templates\wiki\create_root.html.py:27
+msgid "Root article"
+msgstr "Artikel akar"
+
+#: .\colibri\templates\wiki\create_root.html.py:32
+msgid "Create root"
+msgstr "Buat akar"
+
+#: .\colibri\templates\wiki\delete.html.py:5
+#: .\colibri\templates\wiki\delete.html.py:50
+#: .\colibri\templates\wiki\edit.html.py:51
+msgid "Delete article"
+msgstr "Hapus Artikel"
+
+#: .\colibri\templates\wiki\delete.html.py:11
+msgid "You cannot delete a root article."
+msgstr "Anda tidak dapat menghapus sebuah artikel root."
+
+#: .\colibri\templates\wiki\delete.html.py:17
+msgid ""
+"You cannot delete this article because you do not have permission to delete "
+"articles with children. Try to remove the children manually one-by-one."
+msgstr "Anda tidak dapat menghapus artikel ini karena Anda tidak memiliki izin untuk menghapus artikel dengan cabang. Cobalah untuk menghapus cabang secara manual satu-per-satu."
+
+#: .\colibri\templates\wiki\delete.html.py:23
+msgid ""
+"You are deleting an article. This means that its children will be deleted as "
+"well. If you choose to purge, children will also be purged!"
+msgstr "Anda menghapus sebuah artikel. Ini berarti bahwa cabang-cabangnya akan dihapus juga. Jika Anda memilih untuk membersihkan, cabang-cabang juga akan dibersihkan!"
+
+#: .\colibri\templates\wiki\delete.html.py:25
+msgid "Articles that will be deleted"
+msgstr "Artikel yang akan dihapus"
+
+#: .\colibri\templates\wiki\delete.html.py:31
+msgid "...and more!"
+msgstr "... Dan banyak lagi!"
+
+#: .\colibri\templates\wiki\delete.html.py:39
+msgid "You are deleting an article. Please confirm."
+msgstr "Anda akan menghapus sebuah artikel. Silakan konfirmasi."
+
+#: .\colibri\templates\wiki\deleted.html.py:5
+msgid "Article deleted"
+msgstr "Artikel dihapus"
+
+#: .\colibri\templates\wiki\deleted.html.py:14
+msgid "Article Deleted"
+msgstr "Artikel Dihapus"
+
+#: .\colibri\templates\wiki\deleted.html.py:17
+msgid "The article you were looking for has been deleted."
+msgstr "Artikel yang Anda cari telah dihapus."
+
+#: .\colibri\templates\wiki\deleted.html.py:25
+#: .\colibri\templates\wiki\deleted.html.py:30
+msgid "Restore"
+msgstr "Kembalikan"
+
+#: .\colibri\templates\wiki\deleted.html.py:26
+msgid "You may restore this article and its children by clicking restore."
+msgstr "Anda dapat mengembalikan artikel ini dan cabang-cabangnya dengan mengklik restore."
+
+#: .\colibri\templates\wiki\deleted.html.py:40
+msgid "Purge deletion"
+msgstr "Pembersihan penghapusan"
+
+#: .\colibri\templates\wiki\deleted.html.py:41
+msgid ""
+"You may remove this article and any children permanently and free their "
+"slugs by clicking the below button. This action cannot be undone."
+msgstr "Anda dapat menghapus artikel ini dan setiap cabang secara permanen dan membebaskan kelambatan mereka dengan mengklik tombol di bawah ini. Tindakan ini tidak bisa dibatalkan."
+
+#: .\colibri\templates\wiki\deleted.html.py:47
+msgid "Purge"
+msgstr "Pembersihan"
+
+#: .\colibri\templates\wiki\dir.html.py:5
+msgid "Listing articles in"
+msgstr "Artikel listing di"
+
+#: .\colibri\templates\wiki\dir.html.py:17
+msgid "Up one level"
+msgstr "Naik satu tingkat"
+
+#: .\colibri\templates\wiki\dir.html.py:22
+msgid "Add article"
+msgstr "Tambahkan Artikel"
+
+#: .\colibri\templates\wiki\dir.html.py:30
+msgid "clear"
+msgstr "Bersihkan"
+
+#: .\colibri\templates\wiki\dir.html.py:40
+msgid "article,articles"
+msgstr "artikel, artikel"
+
+#: .\colibri\templates\wiki\dir.html.py:40
+msgid "is,are"
+msgstr "adalah, apakah"
+
+#: .\colibri\templates\wiki\dir.html.py:40
+#, python-format
+msgid ""
+"\n"
+"      Browsing <strong><a href=\"%(self_url)s\">/%(path)s</a></strong>. "
+"There %(articles_plur_verb)s <strong>%(cnt)s %(articles_plur)s</strong> in "
+"this level.\n"
+"    "
+msgstr "\n Browsing <strong> <a href=\"%(self_url)s\"> /%(path)s </ a> </ strong>. Ada%(articles_plur_verb)s <strong>%(cnt)s%(articles_plur)s </ strong> \n di tingkat ini.    "
+
+#: .\colibri\templates\wiki\dir.html.py:49
+msgid "Slug"
+msgstr "Slug"
+
+#: .\colibri\templates\wiki\dir.html.py:50
+#: .\colibri\templates\wiki\search.html.py:25
+msgid "Last modified"
+msgstr "Terakhir diubah"
+
+#: .\colibri\templates\wiki\dir.html.py:74
+#: .\colibri\templates\wiki\search.html.py:50
+msgid "There are no articles in this level"
+msgstr "Tidak ada artikel di tingkat ini"
+
+#: .\colibri\templates\wiki\edit.html.py:5
+#: .\colibri\templates\wiki\includes\article_menu.html.py:34
+msgid "Edit"
+msgstr "Edit"
+
+#: .\colibri\templates\wiki\edit.html.py:11
+msgid ""
+"<strong>Warning:</strong> You are not logged in. Your IP address will be "
+"logged."
+msgstr "<strong> Peringatan: </ strong> Anda belum login. Alamat IP Anda akan dicatat."
+
+#: .\colibri\templates\wiki\edit.html.py:12
+msgid "Click here to log in"
+msgstr "Klik di sini untuk login"
+
+#: .\colibri\templates\wiki\edit.html.py:45
+#: .\colibri\templates\wiki\edit.html.py:67
+#: .\colibri\templates\wiki\settings.html.py:16
+msgid "Save changes"
+msgstr "Simpan perubahan"
+
+#: .\colibri\templates\wiki\edit.html.py:63
+msgid "Back to editor"
+msgstr "Kembali ke editor"
+
+#: .\colibri\templates\wiki\error.html.py:5
+#: .\colibri\templates\wiki\error.html.py:26
+msgid "Error"
+msgstr "Gagal"
+
+#: .\colibri\templates\wiki\error.html.py:15
+msgid "Not found"
+msgstr "Tidak Ditemukan"
+
+#: .\colibri\templates\wiki\error.html.py:18
+msgid "This article was not found, and neither was its parent article."
+msgstr "Artikel ini maupun artikel induknya tidak ditemukan."
+
+#: .\colibri\templates\wiki\error.html.py:20
+msgid "Start page"
+msgstr "Halaman mula"
+
+#: .\colibri\templates\wiki\error.html.py:30
+msgid "There was some sort of error accessing this page. Sorry!"
+msgstr "Ada kesalahan dalam mengakses halaman ini. Maaf!"
+
+#: .\colibri\templates\wiki\error.html.py:38
+msgid "Back to"
+msgstr "Kembali ke"
+
+#: .\colibri\templates\wiki\history.html.py:5
+msgid "History"
+msgstr "Riwayat"
+
+#: .\colibri\templates\wiki\history.html.py:49
+msgid ""
+"Click each revision to see a list of edited lines. Click the Preview button "
+"to see how the article looked at this stage. At the bottom of this page, you "
+"can change to a particular revision or merge an old revision with the "
+"current one."
+msgstr "Klik setiap revisi untuk melihat daftar baris yang diedit. Klik tombol Preview untuk melihat bagaimana artikel tampak pada tahap ini. Di bagian bawah halaman ini, Anda dapat mengubah ke revisi tertentu atau menggabungkan revisi lama dengan yang sekarang."
+
+#: .\colibri\templates\wiki\history.html.py:72
+msgid "no log message"
+msgstr "tidak ada pesan log"
+
+#: .\colibri\templates\wiki\history.html.py:84
+#: .\colibri\templates\wiki\history.html.py:89
+msgid "Preview this revision"
+msgstr "Preview revisi"
+
+#: .\colibri\templates\wiki\history.html.py:103
+msgid "Auto log:"
+msgstr "Auto log:"
+
+#: .\colibri\templates\wiki\history.html.py:111
+msgid "Change"
+msgstr "Ubah"
+
+#: .\colibri\templates\wiki\history.html.py:129
+msgid "Merge selected with current..."
+msgstr "Gabung yang dipilih dengan versi terbaru ..."
+
+#: .\colibri\templates\wiki\history.html.py:133
+msgid "Switch to selected version"
+msgstr "Beralih ke versi yang dipilih"
+
+#: .\colibri\templates\wiki\history.html.py:149
+#: .\colibri\templates\wiki\history.html.py:176
+msgid "Back to history view"
+msgstr "Kembali ke tampilan riwayat"
+
+#: .\colibri\templates\wiki\history.html.py:154
+#: .\colibri\templates\wiki\history.html.py:159
+msgid "Switch to this version"
+msgstr "Beralih ke versi ini"
+
+#: .\colibri\templates\wiki\history.html.py:167
+msgid "Merge with current"
+msgstr "Gabung dengan versi terbaru"
+
+#: .\colibri\templates\wiki\history.html.py:168
+msgid ""
+"When you merge a revision with the current, all data will be retained from "
+"both versions and merged at its approximate location from each revision."
+msgstr "Ketika Anda menggabungkan revisi dengan versi terbaru, semua data akan diambil dari kedua versi dan digabungkan pada perkiraan lokasi pada setiap revisi."
+
+#: .\colibri\templates\wiki\history.html.py:168
+msgid "After this, it's important to do a manual review."
+msgstr "Setelah ini, penting untuk melakukan review manual."
+
+#: .\colibri\templates\wiki\history.html.py:181
+#: .\colibri\templates\wiki\history.html.py:186
+msgid "Create new merged version"
+msgstr "Buat versi baru hasil merger"
+
+#: .\colibri\templates\wiki\permission_denied.html.py:8
+msgid "Permission Denied"
+msgstr "Izin Ditolak"
+
+#: .\colibri\templates\wiki\permission_denied.html.py:11
+msgid "Sorry, you don't have permission to access this page."
+msgstr "Maaf, Anda tidak memiliki izin untuk mengakses halaman ini."
+
+#: .\colibri\templates\wiki\permission_denied.html.py:16
+msgid "This article is locked for editing."
+msgstr "Artikel ini terkunci untuk diedit."
+
+#: .\colibri\templates\wiki\permission_denied.html.py:22
+msgid "Back to article"
+msgstr "Kembali ke artikel"
+
+#: .\colibri\templates\wiki\preview_inline.html.py:8
+msgid "Previewing revision"
+msgstr "Meninjau revisi"
+
+#: .\colibri\templates\wiki\preview_inline.html.py:15
+msgid "Previewing merge between"
+msgstr "Meninjau hasil gabungan antara"
+
+#: .\colibri\templates\wiki\preview_inline.html.py:17
+#: .\old\django-basic-apps\basic\comments\templates\comments\preview.html.py:26
+msgid "and"
+msgstr "dan"
+
+#: .\colibri\templates\wiki\preview_inline.html.py:22
+msgid "You cannot merge with a deleted revision"
+msgstr "Anda tidak dapat menggabungkan dengan revisi yang telah dihapus"
+
+#: .\colibri\templates\wiki\preview_inline.html.py:31
+msgid "This revision has been deleted."
+msgstr "Revisi ini telah dihapus."
+
+#: .\colibri\templates\wiki\preview_inline.html.py:32
+msgid "Restoring to this revision will mark the article as deleted."
+msgstr "Mengembalikan ke revisi ini akan menandai artikel sebagai dihapus."
+
+#: .\colibri\templates\wiki\search.html.py:5
+#: .\colibri\templates\wiki\search.html.py:9
+msgid "Search results for:"
+msgstr "Hasil pencarian untuk:"
+
+#: .\colibri\templates\wiki\search.html.py:17
+#, python-format
+msgid "Your search returned <strong>%(cnt)s</strong> results."
+msgstr "Pencarian anda <strong>%(cnt)s </ strong> hasil."
+
+#: .\colibri\templates\wiki\settings.html.py:5
+#: .\colibri\templates\wiki\includes\article_menu.html.py:9
+msgid "Settings"
+msgstr "Pengaturan "
+
+#: .\colibri\templates\wiki\source.html.py:5
+msgid "Source of"
+msgstr "Sumber"
+
+#: .\colibri\templates\wiki\source.html.py:10
+msgid "This article is currently locked for editing."
+msgstr "Artikel ini sedang terkunci untuk mengedit."
+
+#: .\colibri\templates\wiki\includes\anonymous_blocked.html.py:7
+#, python-format
+msgid ""
+"\n"
+"  You need to <a href=\"%(login_url)s\">log in</a> or <a href=\"%(signup_url)"
+"s\">sign up</a> to use this function.\n"
+"  "
+msgstr "\n Anda harus <a href=\"%(login_url)s\"> login </ a> atau <a href=\"%(signup_url)s\"> sign up </ a> untuk menggunakan fungsi ini \n.  "
+
+#: .\colibri\templates\wiki\includes\anonymous_blocked.html.py:11
+msgid "You need to log in og sign up to use this function."
+msgstr "Anda harus login atau mendaftar untuk menggunakan fungsi ini."
+
+#: .\colibri\templates\wiki\includes\article_menu.html.py:26
+msgid "Changes"
+msgstr "Perubahan"
+
+#: .\colibri\templates\wiki\includes\article_menu.html.py:41
+msgid "View Source"
+msgstr "Lihat Sumber"
+
+#: .\colibri\templates\wiki\includes\article_menu.html.py:49
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:49
+msgid "View"
+msgstr "Lihat"
+
+#: .\colibri\templates\wiki\includes\breadcrumbs.html.py:16
+#: .\colibri\templates\wiki\includes\breadcrumbs.html.py:42
+msgid "Sub-articles for"
+msgstr "Sub-artikel untuk"
+
+#: .\colibri\templates\wiki\includes\breadcrumbs.html.py:28
+msgid "No sub-articles"
+msgstr "Tidak ada sub-artikel"
+
+#: .\colibri\templates\wiki\includes\breadcrumbs.html.py:31
+msgid "...and more"
+msgstr "Dan banyak lagi ..."
+
+#: .\colibri\templates\wiki\includes\breadcrumbs.html.py:35
+msgid "Browse articles in this level"
+msgstr "Telusuri artikel di tingkat ini"
+
+#: .\colibri\templates\wiki\includes\breadcrumbs.html.py:51
+msgid "New article next to"
+msgstr "Artikel baru di sebelah"
+
+#: .\colibri\templates\wiki\includes\breadcrumbs.html.py:56
+msgid "New article below"
+msgstr "Artikel baru dibawah"
+
+#: .\colibri\templates\wiki\includes\revision_info.html.py:10
+msgid "by"
+msgstr "Oleh"
+
+#: .\colibri\templates\wiki\includes\revision_info.html.py:10
+msgid "anonymous (IP logged)"
+msgstr "anonymous (Alamat IP)"
+
+#: .\colibri\templates\wiki\includes\revision_info.html.py:15
+msgid "deleted"
+msgstr "Terhapus"
+
+#: .\colibri\templates\wiki\includes\revision_info.html.py:18
+msgid "restored"
+msgstr "pulih"
+
+#: .\colibri\templates\wiki\includes\revision_info.html.py:24
+msgid "unlocked"
+msgstr "dibuka"
+
+#: .\messages\admin.py:19 .\messages\forms.py:20 .\messages\models.py:52
+msgid "Recipient"
+msgstr "Penerima"
+
+#: .\messages\admin.py:21
+msgid "group"
+msgstr "grup"
+
+#: .\messages\admin.py:22
+msgid "Creates the message optionally for all users or a group of users."
+msgstr "Menciptakan pesan opsional untuk semua pengguna atau kelompok pengguna."
+
+#: .\messages\admin.py:29
+msgid "All users"
+msgstr "Semua pengguna"
+
+#: .\messages\admin.py:44 .\messages\models.py:88
+msgid "Message"
+msgstr "Pesan"
+
+#: .\messages\admin.py:51
+msgid "Date/time"
+msgstr "Tanggal / jam"
+
+#: .\messages\fields.py:53
+#, python-format
+msgid "The following usernames are incorrect: %(users)s"
+msgstr "Nama pengguna berikut ini salah:%(user)s"
+
+#: .\messages\forms.py:21 .\messages\models.py:49
+#: .\messages\templates\messages\trash.html.py:11
+msgid "Subject"
+msgstr "Perihal"
+
+#: .\messages\forms.py:23 .\messages\models.py:50
+msgid "Body"
+msgstr "Isi"
+
+#: .\messages\management.py:9
+msgid "Message Received"
+msgstr "Pesan Diterima"
+
+#: .\messages\management.py:9
+msgid "you have received a message"
+msgstr "Anda telah menerima pesan"
+
+#: .\messages\management.py:10
+msgid "Message Sent"
+msgstr "Pesan Terkirim. "
+
+#: .\messages\management.py:10
+msgid "you have sent a message"
+msgstr "Anda telah mengirimkan pesan"
+
+#: .\messages\management.py:11
+msgid "Message Replied"
+msgstr "Pesan dibalas"
+
+#: .\messages\management.py:11
+msgid "you have replied to a message"
+msgstr "Anda telah membalas pesan"
+
+#: .\messages\management.py:12
+msgid "Reply Received"
+msgstr "Balasan Diterima"
+
+#: .\messages\management.py:12
+msgid "you have received a reply to a message"
+msgstr "Anda telah menerima balasan untuk sebuah pesan"
+
+#: .\messages\management.py:13
+msgid "Message Deleted"
+msgstr "Pesan Dihapus"
+
+#: .\messages\management.py:13
+msgid "you have deleted a message"
+msgstr "Anda telah menghapus pesan"
+
+#: .\messages\management.py:14
+msgid "Message Recovered"
+msgstr "Pesan Dipulihkan"
+
+#: .\messages\management.py:14
+msgid "you have undeleted a message"
+msgstr "Anda telah mengembalikan sebuah pesan"
+
+#: .\messages\models.py:51 .\messages\templates\messages\trash.html.py:11
+msgid "Sender"
+msgstr "Pengirim :"
+
+#: .\messages\models.py:53
+msgid "Parent message"
+msgstr "Pesan Induk"
+
+#: .\messages\models.py:54
+msgid "sent at"
+msgstr "dikirim pada"
+
+#: .\messages\models.py:55
+msgid "read at"
+msgstr "dibaca pada"
+
+#: .\messages\models.py:56
+msgid "replied at"
+msgstr "dijawab pada"
+
+#: .\messages\models.py:57
+msgid "Sender deleted at"
+msgstr "Pengirim dihapus pada"
+
+#: .\messages\models.py:58
+msgid "Recipient deleted at"
+msgstr "Penerima dihapus pada"
+
+#: .\messages\models.py:89
+msgid "Messages"
+msgstr "Pesan"
+
+#: .\messages\utils.py:27
+#, python-format
+msgid "New Message: %(subject)s"
+msgstr "Pesan Baru:%(subject)s"
+
+#: .\messages\views.py:112 .\messages\views.py:151
+msgid "Message successfully sent."
+msgstr "Pesan berhasil dikirim."
+
+#: .\messages\views.py:157
+#, python-format
+msgid ""
+"%(sender)s wrote:\n"
+"%(body)s"
+msgstr "%(sender)s menulis: \n%(body)s"
+
+#: .\messages\views.py:161
+#, python-format
+msgid "Re: %(subject)s"
+msgstr "Re:%(subject)s"
+
+#: .\messages\views.py:197
+msgid "Message successfully deleted."
+msgstr "Pesan berhasil dihapus."
+
+#: .\messages\views.py:224
+msgid "Message successfully recovered."
+msgstr "Pesan berhasil dikembalikan."
+
+#: .\messages\templates\messages\base.html.py:9
+#: .\messages\templates\messages\outbox.html.py:9
+msgid "Sent Messages"
+msgstr "Pesan terkirim"
+
+#: .\messages\templates\messages\base.html.py:10
+#: .\messages\templates\messages\compose.html.py:15
+#: .\messages\templates\messages\compose_to.html.py:12
+msgid "New Message"
+msgstr "Pesan Baru"
+
+#: .\messages\templates\messages\base.html.py:11
+msgid "Trash"
+msgstr "Tempat Sampah"
+
+#: .\messages\templates\messages\compose.html.py:27
+#: .\messages\templates\messages\compose_to.html.py:22
+msgid "Send"
+msgstr "Kirim"
+
+#: .\messages\templates\messages\inbox.html.py:39
+#: .\messages\templates\messages\outbox.html.py:35
+#: .\messages\templates\messages\trash.html.py:29
+msgid "No messages."
+msgstr "Tidak ada pesan."
+
+#: .\messages\templates\messages\new_message.html.py:1
+#, python-format
+msgid ""
+"Hello %(recipient)s,\n"
+"\n"
+"you received a private message from %(sender)s with\n"
+"the following contents:"
+msgstr "Hello%(recipient)s, \n \nAnda menerima pesan pribadi dari%(sender)s dengan \n isi sebagai berikut:"
+
+#: .\messages\templates\messages\new_message.html.py:9
+#, python-format
+msgid "Sent from %(site_url)s"
+msgstr "Dikirim dari%(SITE_URL)s"
+
+#: .\messages\templates\messages\new_message.html.py:11
+#: .\messages\templates\messages\view.html.py:35
+msgid "Reply"
+msgstr "Balasan"
+
+#: .\messages\templates\messages\trash.html.py:8
+msgid "Deleted Messages"
+msgstr "Pesan Terhapus"
+
+#: .\messages\templates\messages\trash.html.py:11
+msgid "Date"
+msgstr "Tanggal"
+
+#: .\messages\templates\messages\trash.html.py:11
+msgid "Action"
+msgstr "Tindakan"
+
+#: .\messages\templates\messages\trash.html.py:21
+msgid "DATETIME_FORMAT"
+msgstr "DATETIME_FORMAT"
+
+#: .\messages\templates\messages\trash.html.py:22
+msgid "undelete"
+msgstr "kembalikan"
+
+#: .\messages\templates\messages\trash.html.py:32
+msgid ""
+"Deleted Messages are removed from the trash at unregular intervals, don't "
+"rely on this feature for long-time storage."
+msgstr "Pesan terhapus akan dihapus dari sampah pada interval sembarang, jangan bergantung pada fitur ini untuk penyimpanan jangka lama."
+
+#: .\messages\templates\notification\messages_deleted\full.txt.py:1
+#, python-format
+msgid "You have deleted the message '%(message)s'."
+msgstr "Anda telah menghapus pesan '%(message)s'."
+
+#: .\messages\templates\notification\messages_deleted\notice.html.py:1
+#, python-format
+msgid ""
+"You have deleted the message <a href=\"%(message_url)s\">%(message)s</a>."
+msgstr "Anda telah menghapus pesan <a href=\"%(message_url)s\">%(message)s </ a>."
+
+#: .\messages\templates\notification\messages_received\full.txt.py:1
+#, python-format
+msgid ""
+"%(message_sender)s has sent you a message:\n"
+"\n"
+"%(message)s\n"
+"\n"
+"%(message_body)s\n"
+"\n"
+"http://%(current_site)s%(message_url)s"
+msgstr "%(Message_sender)s telah mengirimi Anda pesan: \n \n%(message)s \n \n%(message_body)s \n \nhttp :/ /%(current_site)s%(message_url)s"
+
+#: .\messages\templates\notification\messages_received\notice.html.py:2
+#, python-format
+msgid ""
+"You have received the message <a href=\"%(message_url)s\">%(message)s</a> "
+"from %(message_sender)s."
+msgstr "Anda telah menerima pesan <a href=\"%(message_url)s\">%(message)s </ a> dari%(message_sender)s."
+
+#: .\messages\templates\notification\messages_received\short.txt.py:1
+#: .\messages\templates\notification\messages_reply_received\short.txt.py:1
+#, python-format
+msgid "%(notice)s by %(message_sender)s"
+msgstr "%(notice)s oleh%(message_sender)s"
+
+#: .\messages\templates\notification\messages_recovered\full.txt.py:1
+#, python-format
+msgid "You have recovered the message '%(message)s'."
+msgstr "Anda telah memulihkan pesan '%(message)s'."
+
+#: .\messages\templates\notification\messages_recovered\notice.html.py:1
+#, python-format
+msgid ""
+"You have recovered the message <a href=\"%(message_url)s\">%(message)s</a>."
+msgstr "Anda telah memulihkan pesan <a href=\"%(message_url)s\">%(message)s </ a>."
+
+#: .\messages\templates\notification\messages_replied\full.txt.py:1
+#, python-format
+msgid ""
+"You have replied to '%(message_parent_msg)s' from %(message_recipient)s."
+msgstr "Anda telah menjawab '%(message_parent_msg)s' dari%(message_recipient)s."
+
+#: .\messages\templates\notification\messages_replied\notice.html.py:2
+#, python-format
+msgid ""
+"You have replied to <a href=\"%(message_url)s\">%(message_parent_msg)s</a> "
+"from %(message_recipient)s."
+msgstr "Anda telah menjawab <a href=\"%(message_url)s\">%(message_parent_msg)s </ a> dari%(message_recipient)s."
+
+#: .\messages\templates\notification\messages_reply_received\full.txt.py:1
+#, python-format
+msgid ""
+"%(message_sender)s replied to '%(message_parent_msg)s':\n"
+"\n"
+"%(message)s\n"
+"\n"
+"%(message_body)s\n"
+"\n"
+"http://%(current_site)s%(message_url)s"
+msgstr ""
+
+#: .\messages\templates\notification\messages_reply_received\notice.html.py:2
+#, python-format
+msgid "%(message_sender)s has sent you a reply to %(message_parent_msg)s."
+msgstr "%(Message_sender)s telah mengirimkan balasan ke%(message_parent_msg)s."
+
+#: .\messages\templates\notification\messages_sent\full.txt.py:1
+#, python-format
+msgid "You have sent the message '%(message)s' to %(message_recipient)s."
+msgstr "Anda telah mengirim pesan '%(message)s' untuk%(message_recipient)s."
+
+#: .\messages\templates\notification\messages_sent\notice.html.py:2
+#, python-format
+msgid ""
+"You have sent the message <a href=\"%(message_url)s\">%(message)s</a> to %"
+"(message_recipient)s."
+msgstr "Anda telah mengirim pesan <a href=\"%(message_url)s\">%(message)s </ a> untuk%(message_recipient)s."
+
+#: .\old\django-basic-apps\basic\blog\models.py:16
+#: .\old\django-basic-apps\basic\blog\models.py:39
+#: .\old\django-basic-apps\basic\flagging\models.py:10
+#: .\old\django-basic-apps\basic\people\models.py:14
+#: .\old\django-basic-apps\basic\places\models.py:12
+#: .\old\django-basic-apps\basic\places\models.py:76
+#: .\old\django-basic-apps\basic\profiles\models.py:58
+#: .\old\django-basic-apps\basic\profiles\models.py:72
+#: .\old\django-basic-apps\basic\profiles\models.py:112
+msgid "title"
+msgstr "Jabatan:"
+
+#: .\old\django-basic-apps\basic\blog\models.py:17
+#: .\old\django-basic-apps\basic\blog\models.py:40
+#: .\old\django-basic-apps\basic\bookmarks\models.py:9
+#: .\old\django-basic-apps\basic\people\models.py:15
+#: .\old\django-basic-apps\basic\people\models.py:40
+#: .\old\django-basic-apps\basic\places\models.py:13
+#: .\old\django-basic-apps\basic\places\models.py:32
+#: .\old\django-basic-apps\basic\places\models.py:77
+msgid "slug"
+msgstr "Slug"
+
+#: .\old\django-basic-apps\basic\blog\models.py:20
+msgid "category"
+msgstr "kategori"
+
+#: .\old\django-basic-apps\basic\blog\models.py:21
+msgid "categories"
+msgstr "Kategori"
+
+#: .\old\django-basic-apps\basic\blog\models.py:36
+msgid "Draft"
+msgstr "Konsep"
+
+#: .\old\django-basic-apps\basic\blog\models.py:37
+msgid "Public"
+msgstr "Publik"
+
+#: .\old\django-basic-apps\basic\blog\models.py:42
+msgid "body"
+msgstr "Isi"
+
+#: .\old\django-basic-apps\basic\blog\models.py:43
+msgid "tease"
+msgstr "menggoda"
+
+#: .\old\django-basic-apps\basic\blog\models.py:43
+msgid "Concise text suggested. Does not appear in RSS feed."
+msgstr "Teks singkat disarankan. Tidak muncul di RSS feed."
+
+#: .\old\django-basic-apps\basic\blog\models.py:44
+#: .\old\django-basic-apps\basic\places\models.py:84
+msgid "status"
+msgstr "status"
+
+#: .\old\django-basic-apps\basic\blog\models.py:45
+msgid "allow comments"
+msgstr "ijinkan komentar"
+
+#: .\old\django-basic-apps\basic\blog\models.py:46
+msgid "publish"
+msgstr "Terbitkan"
+
+#: .\old\django-basic-apps\basic\blog\models.py:47
+#: .\old\django-basic-apps\basic\bookmarks\models.py:13
+#: .\old\django-basic-apps\basic\flagging\models.py:30
+#: .\old\django-basic-apps\basic\messages\models.py:54
+msgid "created"
+msgstr "dibuat"
+
+#: .\old\django-basic-apps\basic\blog\models.py:48
+#: .\old\django-basic-apps\basic\bookmarks\models.py:14
+#: .\old\django-basic-apps\basic\flagging\models.py:31
+#: .\old\django-basic-apps\basic\messages\models.py:55
+msgid "modified"
+msgstr "telah dimodifikasi:"
+
+#: .\old\django-basic-apps\basic\blog\models.py:54
+msgid "post"
+msgstr "Post"
+
+#: .\old\django-basic-apps\basic\blog\models.py:55
+msgid "posts"
+msgstr "post"
+
+#: .\old\django-basic-apps\basic\blog\models.py:87
+#: .\old\django-basic-apps\basic\blog\models.py:88
+msgid "blog roll"
+msgstr "gulungan blog"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\category_detail.html.py:5
+#: .\old\django-basic-apps\basic\blog\templates\blog\category_detail.html.py:11
+#: .\old\django-basic-apps\basic\blog\templates\blog\tag_detail.html.py:5
+#: .\old\django-basic-apps\basic\blog\templates\blog\tag_detail.html.py:11
+msgid "Posts for"
+msgstr "Tulisan untuk"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\category_detail.html.py:19
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_archive_day.html.py:18
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_archive_month.html.py:18
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_list.html.py:18
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_search.html.py:30
+#: .\old\django-basic-apps\basic\blog\templates\blog\tag_detail.html.py:19
+msgid "View this post"
+msgstr "Lihat posting ini"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\category_list.html.py:5
+#: .\old\django-basic-apps\basic\blog\templates\blog\category_list.html.py:10
+msgid "Post categories"
+msgstr "Kategori posting"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\category_list.html.py:17
+msgid "View posts in this category"
+msgstr "Lihat posting dalam kategori ini"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_archive_day.html.py:5
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_archive_day.html.py:10
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_archive_month.html.py:5
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_archive_month.html.py:10
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_archive_year.html.py:5
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_archive_year.html.py:10
+msgid "Post archive for"
+msgstr "Post arsip untuk"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_archive_year.html.py:17
+msgid "View items posted this month"
+msgstr "Lihat item yang diposting bulan ini"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:14
+msgid "View previous post"
+msgstr "Lihat posting sebelumnya"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:17
+msgid "View next post"
+msgstr "Lihat posting berikutnya"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:34
+msgid "Related tags"
+msgstr "Tanda terkait"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:43
+msgid "Comments"
+msgstr "Komentar"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:48
+msgid "Permalink to"
+msgstr "Tautkan ke"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:48
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:49
+#, python-format
+msgid "%(user_name)s's"
+msgstr "%(User_name)s"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:48
+msgid "comment"
+msgstr "Komentar"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:49
+#: .\old\django-basic-apps\basic\people\models.py:47
+msgid "website"
+msgstr "Situs Web"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:49
+msgid "says"
+msgstr "berkata:"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:52
+msgid "Posted at"
+msgstr "Dipost pada"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:52
+msgid "on"
+msgstr "di"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:62
+msgid "Comments are closed"
+msgstr "Komentar ditutup"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_detail.html.py:63
+msgid "Comments have been closed for this post"
+msgstr "Komentar telah ditutup untuk posting ini"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_list.html.py:5
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_list.html.py:10
+msgid "Post archive"
+msgstr "Arsip post"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_list.html.py:28
+msgid "View older posts"
+msgstr "Lihat entri lama"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_list.html.py:28
+msgid "Older"
+msgstr "Lama"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_list.html.py:32
+msgid "View newer posts"
+msgstr "Lihat posting baru"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_list.html.py:32
+msgid "Newer"
+msgstr "Baru"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_search.html.py:5
+msgid "Post searchApp"
+msgstr "Post searchApp"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\post_search.html.py:33
+#, python-format
+msgid "comment%(pluralize)s"
+msgstr "komentar%(pluralize)s"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\tag_list.html.py:5
+#: .\old\django-basic-apps\basic\blog\templates\blog\tag_list.html.py:10
+msgid "Post tags"
+msgstr "Pasang tag"
+
+#: .\old\django-basic-apps\basic\blog\templates\blog\tag_list.html.py:17
+msgid "View posts tagged"
+msgstr "Lihat post yang di tag"
+
+#: .\old\django-basic-apps\basic\bookmarks\models.py:10
+#: .\old\django-basic-apps\basic\places\models.py:81
+#: .\old\django-basic-apps\basic\profiles\models.py:73
+#: .\old\django-basic-apps\basic\profiles\models.py:113
+msgid "url"
+msgstr "url"
+
+#: .\old\django-basic-apps\basic\bookmarks\models.py:11
+#: .\old\django-basic-apps\basic\flagging\models.py:12
+#: .\old\django-basic-apps\basic\places\models.py:83
+msgid "description"
+msgstr "Deskripsi"
+
+#: .\old\django-basic-apps\basic\bookmarks\models.py:12
+msgid "extended"
+msgstr "luas"
+
+#: .\old\django-basic-apps\basic\bookmarks\models.py:18
+msgid "bookmark"
+msgstr "penanda"
+
+#: .\old\django-basic-apps\basic\bookmarks\models.py:19
+msgid "bookmarks"
+msgstr "penanda"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\approve.html.py:7
+#: .\old\django-basic-apps\basic\comments\templates\comments\approve.html.py:11
+msgid "Approve a comment"
+msgstr "Setujui komentar"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\approve.html.py:20
+msgid "Approve"
+msgstr "Setuju"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\approved.html.py:7
+#: .\old\django-basic-apps\basic\comments\templates\comments\approved.html.py:11
+msgid "Thanks for approving"
+msgstr "Terima kasih untuk menyetujui"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\approved.html.py:16
+#: .\old\django-basic-apps\basic\comments\templates\comments\deleted.html.py:16
+#: .\old\django-basic-apps\basic\comments\templates\comments\flagged.html.py:16
+msgid ""
+"Thanks for taking the time to improve the quality of discussion on our site"
+msgstr "Terima kasih telah meluangkan waktu untuk meningkatkan kualitas diskusi di situs kami"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\delete.html.py:7
+#: .\old\django-basic-apps\basic\comments\templates\comments\delete.html.py:11
+msgid "Remove comment"
+msgstr "Hapus komentar"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\edit.html.py:7
+#: .\old\django-basic-apps\basic\comments\templates\comments\edit.html.py:11
+msgid "Edit comment"
+msgstr "Rubah komentar"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\edit.html.py:22
+msgid "Save"
+msgstr "Simpan"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\flag.html.py:7
+#: .\old\django-basic-apps\basic\comments\templates\comments\flag.html.py:11
+msgid "Flag this comment"
+msgstr "Tandai komentar ini"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\flag.html.py:20
+msgid "Flag"
+msgstr "Tanda"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\posted.html.py:7
+#: .\old\django-basic-apps\basic\comments\templates\comments\posted.html.py:11
+msgid "Thanks"
+msgstr "Terima kasih."
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\posted.html.py:16
+msgid "Thank you for your comment"
+msgstr "Terima kasih atas tanggapan Anda"
+
+#: .\old\django-basic-apps\basic\comments\templates\comments\preview.html.py:26
+msgid "or make changes"
+msgstr "atau buat perubahan"
+
+#: .\old\django-basic-apps\basic\events\models.py:24
+msgid "event"
+msgstr "acara"
+
+#: .\old\django-basic-apps\basic\events\models.py:25
+msgid "events"
+msgstr "Acara-acara"
+
+#: .\old\django-basic-apps\basic\events\models.py:40
+msgid "event time"
+msgstr "Waktu acara"
+
+#: .\old\django-basic-apps\basic\events\models.py:41
+msgid "event times"
+msgstr "Waktu acara"
+
+#: .\old\django-basic-apps\basic\flagging\models.py:15
+msgid "flag type"
+msgstr "Jenis tanda"
+
+#: .\old\django-basic-apps\basic\flagging\models.py:16
+msgid "flag types"
+msgstr "jenis tanda-tanda"
+
+#: .\old\django-basic-apps\basic\flagging\models.py:34
+msgid "flag"
+msgstr "tanda"
+
+#: .\old\django-basic-apps\basic\flagging\models.py:35
+msgid "flags"
+msgstr "tanda-tanda"
+
+#: .\old\django-basic-apps\basic\media\templates\inlines\media_photo.html.py:9
+#: .\old\django-basic-apps\basic\media\templates\inlines\media_photo.html.py:20
+msgid "View the full image"
+msgstr "Lihat gambar penuh"
+
+#: .\old\django-basic-apps\basic\media\templates\inlines\media_photo.html.py:11
+#: .\old\django-basic-apps\basic\media\templates\inlines\media_photo.html.py:22
+msgid "By"
+msgstr "Oleh"
+
+#: .\old\django-basic-apps\basic\messages\models.py:63
+msgid "message"
+msgstr "pesan"
+
+#: .\old\django-basic-apps\basic\messages\models.py:64
+msgid "messages"
+msgstr "pesan-pesan"
+
+#: .\old\django-basic-apps\basic\people\models.py:18
+msgid "person type"
+msgstr "Jenis orang"
+
+#: .\old\django-basic-apps\basic\people\models.py:19
+msgid "person types"
+msgstr "jenis orang"
+
+#: .\old\django-basic-apps\basic\people\models.py:37
+msgid "first name"
+msgstr "Nama depan:"
+
+#: .\old\django-basic-apps\basic\people\models.py:38
+msgid "middle name"
+msgstr "nama tengah"
+
+#: .\old\django-basic-apps\basic\people\models.py:39
+msgid "last name"
+msgstr "Nama belakang:"
+
+#: .\old\django-basic-apps\basic\people\models.py:42
+#: .\old\django-basic-apps\basic\profiles\models.py:18
+msgid "gender"
+msgstr "Jenis Kelamin"
+
+#: .\old\django-basic-apps\basic\people\models.py:43
+#: .\old\django-basic-apps\basic\profiles\models.py:19
+msgid "mugshot"
+msgstr "Mugshot"
+
+#: .\old\django-basic-apps\basic\people\models.py:44
+msgid "mugshot credit"
+msgstr "kredit Mugshot"
+
+#: .\old\django-basic-apps\basic\people\models.py:45
+#: .\old\django-basic-apps\basic\profiles\models.py:20
+msgid "birth date"
+msgstr "tanggal lahir"
+
+#: .\old\django-basic-apps\basic\people\models.py:50
+msgid "person"
+msgstr "orang"
+
+#: .\old\django-basic-apps\basic\people\models.py:51
+msgid "people"
+msgstr "orang-orang"
+
+#: .\old\django-basic-apps\basic\people\models.py:75
+msgid "quote"
+msgstr "mengutip"
+
+#: .\old\django-basic-apps\basic\people\models.py:76
+msgid "source"
+msgstr "sumber"
+
+#: .\old\django-basic-apps\basic\places\models.py:16
+msgid "place type"
+msgstr "jenis tempat"
+
+#: .\old\django-basic-apps\basic\places\models.py:17
+msgid "place types"
+msgstr "jenis tempat"
+
+#: .\old\django-basic-apps\basic\places\models.py:30
+#: .\old\django-basic-apps\basic\places\models.py:35
+#: .\old\django-basic-apps\basic\profiles\models.py:23
+msgid "city"
+msgstr "kota."
+
+#: .\old\django-basic-apps\basic\places\models.py:31
+#: .\old\django-basic-apps\basic\profiles\models.py:24
+msgid "state"
+msgstr "Propinsi"
+
+#: .\old\django-basic-apps\basic\places\models.py:36
+msgid "cities"
+msgstr "kota"
+
+#: .\old\django-basic-apps\basic\places\models.py:51
+msgid "latitude"
+msgstr "lintang"
+
+#: .\old\django-basic-apps\basic\places\models.py:52
+msgid "longitude"
+msgstr "garis bujur"
+
+#: .\old\django-basic-apps\basic\places\models.py:53
+msgid "address"
+msgstr "Alamat:"
+
+#: .\old\django-basic-apps\basic\places\models.py:55
+#: .\old\django-basic-apps\basic\profiles\models.py:25
+msgid "zip"
+msgstr "kode pos"
+
+#: .\old\django-basic-apps\basic\places\models.py:56
+#: .\old\django-basic-apps\basic\profiles\models.py:26
+msgid "country"
+msgstr "Negara"
+
+#: .\old\django-basic-apps\basic\places\models.py:59
+msgid "point"
+msgstr "poin"
+
+#: .\old\django-basic-apps\basic\places\models.py:60
+msgid "points"
+msgstr "poin"
+
+#: .\old\django-basic-apps\basic\places\models.py:75
+msgid "Pre-name"
+msgstr "Pra-nama"
+
+#: .\old\django-basic-apps\basic\places\models.py:78
+msgid "nickname"
+msgstr "Nama julukan"
+
+#: .\old\django-basic-apps\basic\places\models.py:79
+msgid "unit"
+msgstr "Unit"
+
+#: .\old\django-basic-apps\basic\places\models.py:80
+msgid "phone"
+msgstr "telepon"
+
+#: .\old\django-basic-apps\basic\places\models.py:82
+msgid "email"
+msgstr "Email"
+
+#: .\old\django-basic-apps\basic\places\models.py:91
+msgid "place"
+msgstr "tempat"
+
+#: .\old\django-basic-apps\basic\places\models.py:92
+msgid "places"
+msgstr "Tempat"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:21
+msgid "address1"
+msgstr "alamat1"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:22
+msgid "address2"
+msgstr "alamat2"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:27
+msgid "mobile"
+msgstr "ponsel"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:31
+msgid "user profile"
+msgstr "profil pengguna"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:32
+msgid "user profiles"
+msgstr "profil pengguna"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:59
+msgid "domain"
+msgstr "domain"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:62
+msgid "mobile provider"
+msgstr "operator seluler"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:63
+msgid "mobile providers"
+msgstr "operator seluler"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:76
+msgid "service type"
+msgstr "jenis layanan"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:77
+msgid "service types"
+msgstr "jenis layanan"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:88
+msgid "Name or ID"
+msgstr "Nama atau ID"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:93
+msgid "service"
+msgstr "layanan"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:94
+msgid "services"
+msgstr "pelayanan."
+
+#: .\old\django-basic-apps\basic\profiles\models.py:116
+msgid "link"
+msgstr "tautan"
+
+#: .\old\django-basic-apps\basic\profiles\models.py:117
+msgid "links"
+msgstr "tautan"
+
+#: .\old\django-basic-apps\basic\relationships\models.py:76
+msgid "relationship"
+msgstr "Hubungan "
+
+#: .\old\django-basic-apps\basic\relationships\models.py:77
+msgid "relationships"
+msgstr "hubungan"
+
+#: .\organizations\forms.py:35
+msgid "Only the organization owner can change ownerhip"
+msgstr "Hanya pemilik organisasi dapat mengubah kepemilikan"
+
+#: .\organizations\forms.py:49
+msgid "The organization owner must be an admin"
+msgstr "Pemilik organisasi harus seorang admin"
+
+#: .\organizations\forms.py:76
+msgid "This email address has been used multiple times."
+msgstr "Alamat email ini telah digunakan beberapa kali."
+
+#: .\organizations\forms.py:89
+msgid "There is already an organization member with this email address!"
+msgstr "Sudah ada anggota organisasi dengan alamat email ini!"
+
+#: .\organizations\forms.py:99
+msgid "The email address for the account owner"
+msgstr "Alamat email untuk pemilik akun"
+
+#: .\organizations\forms.py:132 .\organizations\models.py:33
+msgid "The name of the organization"
+msgstr "Nama organisasi"
+
+#: .\organizations\forms.py:134 .\organizations\models.py:35
+msgid "The name in all lowercase, suitable for URL identification"
+msgstr "Nama dalam huruf kecil semua, cocok untuk identifikasi URL"
+
+#: .\organizations\mixins.py:69
+msgid "Wrong organization"
+msgstr "Organisasi yang salah"
+
+#: .\organizations\mixins.py:84
+msgid "Sorry, admins only"
+msgstr "Maaf, hanya admin"
+
+#: .\organizations\mixins.py:99
+msgid "You are not the organization owner"
+msgstr "Anda bukan pemilik organisasi"
+
+#: .\organizations\models.py:46
+msgid "organization"
+msgstr "organisasi"
+
+#: .\organizations\models.py:47
+msgid "organizations"
+msgstr "organisasi"
+
+#: .\organizations\models.py:99
+msgid "organization user"
+msgstr "pengguna organisasi"
+
+#: .\organizations\models.py:100
+msgid "organization users"
+msgstr "pengguna organisasi"
+
+#: .\organizations\models.py:115
+msgid ""
+"Cannot delete organization owner before organization or transferring "
+"ownership."
+msgstr "Tidak dapat menghapus pemilik organisasi sebelum organisasi atau pemindahan hak."
+
+#: .\organizations\models.py:142
+msgid "organization owner"
+msgstr "pemilik organisasi"
+
+#: .\organizations\models.py:143
+msgid "organization owners"
+msgstr "pemilik organisasi"
+
+#: .\organizations\views.py:107
+msgid "Already active"
+msgstr "Sudah aktif"
+
+#: .\organizations\backends\defaults.py:41
+msgid "You must define a form_class"
+msgstr "Anda harus menentukan sebuah form_class"
+
+#: .\organizations\backends\defaults.py:60
+#: .\organizations\backends\defaults.py:62
+msgid "Your URL may have expired."
+msgstr "URL Anda mungkin kedaluwarsa."
+
+#: .\organizations\templates\organizations\organization_confirm_delete.html.py:12
+msgid "Delete group"
+msgstr "Menghapus grup"
+
+#: .\organizations\templates\organizations\organization_detail.html.py:13
+#: .\organizations\templates\organizations\organization_form.html.py:12
+msgid "Edit group"
+msgstr "Edit Grup"
+
+#: .\src\django-haystack\haystack\admin.py:123
+#, python-format
+msgid "0 of %(count)d selected"
+msgid_plural "of %(count)d selected"
+msgstr[0] "0 dari%(count) d dipilih"
+msgstr[1] "0 dari%(count) d dipilih"
+
+#: .\src\django-haystack\haystack\admin.py:125
+#, python-format
+msgid "%(total_count)s selected"
+msgid_plural "All %(total_count)s selected"
+msgstr[0] "%(TOTAL_COUNT)s dipilih"
+msgstr[1] "%(TOTAL_COUNT)s dipilih"
+
+#: .\src\django-haystack\haystack\forms.py:90
+msgid "Search In"
+msgstr "Cari Dalam"
+
+#: .\src\django-haystack\haystack\panels.py:24
+msgid "Haystack"
+msgstr "Timbunan rumput kering"
+
+#: .\src\django-haystack\haystack\panels.py:48
+msgid "Search Queries"
+msgstr "Search Query"
+
+#: .\src\django-haystack\haystack\templates\panels\haystack.html.py:5
+msgid "Query"
+msgstr "Query"
+
+#: .\src\django-haystack\haystack\templates\panels\haystack.html.py:6
+msgid "Backend Alias"
+msgstr "Alias ​​backend"
+
+#: .\src\django-haystack\haystack\templates\panels\haystack.html.py:7
+msgid "Timeline"
+msgstr "Jadwal"
+
+#: .\src\django-haystack\haystack\templates\panels\haystack.html.py:8
+msgid "Time"
+msgstr "Waktu"
+
+#: .\src\django-haystack\haystack\templates\panels\haystack.html.py:9
+msgid "Kwargs"
+msgstr "Kwargs"
+

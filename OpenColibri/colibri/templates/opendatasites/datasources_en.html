@@ -1,0 +1,223 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "OPEN DATA SITES" %}{% endblock %}
+{% block content %}
+<link type="text/css" href="/s/opendatasites/css/smoothness/jquery-ui-1.8.20.custom.css" rel="stylesheet"/>
+<link rel="stylesheet" href="/s/opendatasites/css/jquery-jvectormap.css" type="text/css" media="screen"/>
+<title>colibri Open Data Sites analysis</title>
+<style type="text/css" title="currentStyle">
+    @import "/s/opendatasites/css/demo_page.css";
+    @import "/s/opendatasites/css/demo_table.css";
+    @import "/s/opendatasites/css/ColumnFilterWidgets.css";
+
+</style>
+<script type="text/javascript" language="javascript" src="/s/opendatasites/js/jquery.js"></script>
+<script type="text/javascript" language="javascript" src="/s/opendatasites/js/jquery-ui-1.8.20.custom.min.js"></script>
+<script type="text/javascript" language="javascript" src="/s/opendatasites/js/jquery.dataTables.js"></script>
+<script>
+    var STR_DATA_SOURCES_TYPES = "{% trans "
+    Data
+    Sources
+    Types
+    " %}";
+    var STR_LICENSES = "{% trans "
+    Licenses
+    " %}";
+    var STR_LANGUAGE_UI = "{% trans "
+    Language
+    UI
+    " %}";
+    var STR_DATA_FORMAT = "{% trans "
+    Data
+    Format
+    " %}";
+    var STR_PROVISION = "{% trans "
+    Provision
+    " %}";
+
+</script>
+<script type="text/javascript" charset="utf-8" src="/s/opendatasites/js/colibri.js"></script>
+<script type="text/javascript" charset="utf-8" src="/s/opendatasites/js/ColumnFilterWidgets.js"></script>
+<script type="text/javascript" charset="utf-8" src="/s/opendatasites/js/jquery.dataTableFiltered.js"></script>
+<script src="/s/opendatasites/js/jquery-jvectormap.js"></script>
+<script src="/s/opendatasites/js/jquery-jvectormap-europe-en.js"></script>
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function () {
+        //Column Consts
+        _COLUMN_COUNTRY = 0;
+        _COLUMN_DATASOURCE = 1;
+        _COLUMN_TITLE = 2;
+        _COLUMN_URL = 4;
+        _COLUMN_LICENSE = 8;
+        _COLUMN_LANGUAGE = 18;
+        _COLUMN_DATAFORMAT = 20;
+        _COLUMN_PROVISION = 16;
+        _COLUMN_API = 21;
+
+
+        //Initialize the Data Table
+        var oTable = $('#example').dataTable({
+            bPaginate: true,
+            "sDom": 'W<"clear">frtipl',
+            "sPaginationType": 'full_numbers',
+            "bProcessing": true,
+            "bAutoWidth": false,
+            "sScrollX": "20%",
+            "sScrollY": "500px",
+            "bScrollCollapse": true,
+            "oColumnFilterWidgets": {
+                "aiExclude": [ 2, 3, 4, 5, 6, 10, 11, 13, 14, 15, 16, 17, 18, 19, 20],
+                "sSeparator": ',  '
+            },
+            "aoColumnDefs": [
+                {
+                    "fnRender": function (oObj, val) {
+                        return '<a href=' + oObj.aData[_COLUMN_URL] + '>' + oObj.aData[_COLUMN_TITLE] + '</a>';
+                    },
+                    "aTargets": [ _COLUMN_TITLE ] //Show Title column as hyperlink
+                    ,
+                },
+                {
+                    bVisible: false, //hide URL column
+                    "aTargets": [ _COLUMN_URL ]
+                }
+            ],
+            "sAjaxSource": "/s/opendatasites/sources/psi.txt",
+            "fnInitComplete": function (oSettings, json) {
+                $("#dt_loading").toggle();
+                $("#tabs").find('.ui-tabs-nav a:first').click(); //Click first tab after table has initialized
+            },
+
+        });
+
+
+        //Initialize Tabs
+        //Data Charts Initialization
+        $("#tabs").tabs({
+            selected: -1,
+            select: function (event, ui) {
+                //Data Chart Data Source
+                var mydata = oTable.fnGetFilteredData();
+                var title = ui.tab.text;
+                if (ui.tab.text == undefined) {
+                    title = ui.tab.textContent;
+                }
+                ; //IE9 fix
+                calculateChart(mydata, title, ui.tab.hash.replace("#tabs-", ""));
+                updatemapColors(mydata);
+
+            }
+
+        });
+
+        //Update charts and map when someone changes the filters
+        function updateCharts() {
+            var mydata = oTable.fnGetFilteredData();
+            calculateChart(mydata, "Data Sources Types", "sourcetype");
+            $("#tabs").find('.ui-tabs-nav a:first').click();
+            updatemapColors(mydata);
+        }
+
+        $(".column-filter-widget >select").on("change", function (event) {
+            updateCharts();
+        });
+
+
+    }); //End of Document Ready
+
+    $(function () {
+        //Initialize Map
+        $('#map').vectorMap({
+            map: 'europe_en',
+            color: '#aaaaaa',
+            hoverColor: false,
+            hoverOpacity: 0.5,
+            backgroundColor: '#ffffff',
+            onRegionClick: function (event, label, code) {
+                $("#widget_0 > select").eq(0).val(getCountryName(label)).trigger('change');
+            }
+        });
+    });
+</script>
+
+<div id="dt_loading">
+    <div><img src="/s/imgs/colibri_logo_load.png"/></div>
+    <div style="green;">{% trans "Loading data,please wait..." %}</div>
+</div>
+<div id="dt_example">
+    <script src="/s/opendatasites/js/highcharts.js"></script>
+    <script src="/s/opendatasites/js/modules/exporting.js"></script>
+    <div id="container">
+        <div id="mapcontainer">
+            <div id="map"></div>
+        </div>
+        <div id="chartscontainer">
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-sourcetype">{% trans "Data Sources Types" %}</a></li>
+                    <li><a href="#tabs-license">{% trans "Licenses" %}</a></li>
+                    <li><a href="#tabs-language">{% trans "Language UI" %}</a></li>
+                    <li><a href="#tabs-dataformat">{% trans "Data Format" %}</a></li>
+                    <li><a href="#tabs-provision">{% trans "Provision" %}</a></li>
+                </ul>
+                <div id="tabs-sourcetype">
+                    <div id="chartsourcetype"></div>
+                </div>
+                <div id="tabs-license">
+                    <div id="chartlicense"></div>
+                </div>
+                <div id="tabs-language">
+                    <div id="chartlanguage"></div>
+                </div>
+                <div id="tabs-dataformat">
+                    <div id="chartdataformat"></div>
+                </div>
+                <div id="tabs-provision">
+                    <div id="chartprovision"></div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="dynamic">
+            <table cellpadding="0" cellspacing="0" border="0" class="display" id="example">
+                <thead>
+                <tr>
+                    <th width="10px%">{% trans "Country" %}</th>
+                    <th width="10%">{% trans "DataSource Type" %}</th>
+                    <th width="10%">{% trans "Title" %}</th>
+                    <th width="10%">{% trans "Subtitle" %}</th>
+                    <th width="10%">{% trans "URL" %}</th>
+                    <th width="10%">{% trans "Author" %}</th>
+                    <th width="10%">{% trans "Email" %}</th>
+                    <th width="10%">{% trans "Publisher" %}</th>
+                    <th width="10%">{% trans "License" %}</th>
+                    <th width="10%">{% trans "Category" %}</th>
+                    <th width="10%">{% trans "Info Type" %}</th>
+                    <th width="10%">{% trans "Period" %}</th>
+                    <th width="10%">{% trans "State of Data" %}</th>
+                    <th width="10%">{% trans "Coverage" %}</th>
+                    <th width="10%">{% trans "Catalog / Discover" %}</th>
+                    <th width="10%">{% trans "Data acquisition" %}</th>
+                    <th width="10%">{% trans "Data provision" %}</th>
+                    <th width="10%">{% trans "Feedback" %}</th>
+                    <th width="10%">{% trans "Languages Interface" %}</th>
+                    <th width="10%">{% trans "Dataset Languages" %}</th>
+                    <th width="10%">{% trans "Data Format" %}</th>
+                    <th width="10%">{% trans "Metadata" %}</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+        </div>
+
+        <div class="spacer"></div>
+
+    </div>
+</div>
+
+{% endblock %}

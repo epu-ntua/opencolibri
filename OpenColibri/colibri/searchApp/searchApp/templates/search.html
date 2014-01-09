@@ -1,0 +1,16 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>{{ flatpage.title }}</title>
+</head>
+<body>
+<form method="get" action="/search/">
+    <p><label for="id_q">Search:</label>
+        <input type="text" name="q" id="id_q"/>
+        <input type="submit" value="Submit"/></p>
+</form>
+<h1>{{ flatpage.title }}</h1>
+{{ flatpage.content }}
+</body>
+</html>

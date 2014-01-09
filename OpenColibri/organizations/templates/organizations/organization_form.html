@@ -1,0 +1,27 @@
+{% extends "organizations_base.html" %}
+{% load i18n %}
+{% block css %}
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-responsive.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-image-gallery.min.css">
+{% endblock %}
+{% block content %}
+<div id="edit_profile" class="wrapper-content">
+    <div class="profile-form" style="width:600px;margin-bottom:300px;">
+        <div class="profile-form-header">
+            {% trans "Edit group" %} {{ organization }}
+        </div>
+        <div class="profile-form-body" style="min-height:240px">
+            <form action="." method="post">{% csrf_token %}
+                <div><b>Name:</b><br/>{{ form.name}}</div>
+                <br/>
+
+                <div><b>Slug Name:<br/></b>{{ form.slug}}</div>
+                <br/>
+
+                <div><b>Owner:<br/>{{ form.owner}}</div>
+                <br/>
+                <input class="button orangish" type="submit" value="Next">
+            </form>
+        </div>
+        {% endblock %}

@@ -1,0 +1,218 @@
+[
+    {
+        "car-id": "Home",
+        "make": "\u039d\u0391\u0399",
+        "model": "/",
+        "miles": "homepage.png"
+    },
+    {
+        "car-id": "Datasets",
+        "make": "",
+        "model": "",
+        "miles": "-"
+    },
+    {
+        "car-id": "---> Keyword Search",
+        "make": "\u039d\u0391\u0399",
+        "model": "/dataset/search",
+        "miles": "dataset-search.png"
+    },
+    {
+        "car-id": "---> Filtered Search",
+        "make": "\u039d\u0391\u0399",
+        "model": "",
+        "miles": "-\u039b\u0395\u0399\u03a0\u0395\u0399-"
+    },
+    {
+        "car-id": "---> Search other portals",
+        "make": "\u039d\u0391\u0399",
+        "model": "",
+        "miles": "-\u039b\u0395\u0399\u03a0\u0395\u0399-"
+    },
+    {
+        "car-id": "-> Browse Organizations",
+        "make": "\u039d\u0391\u0399",
+        "model": "",
+        "miles": "-\u039b\u0395\u0399\u03a0\u0395\u0399-"
+    },
+    {
+        "car-id": "-> My Datasets",
+        "make": "\u039d\u0391\u0399",
+        "model": "",
+        "miles": "-\u039b\u0395\u0399\u03a0\u0395\u0399-"
+    },
+    {
+        "car-id": "-> Add New Datasets",
+        "make": "\u039d\u0391\u0399",
+        "model": "",
+        "miles": "-\u039b\u0395\u0399\u03a0\u0395\u0399-"
+    },
+    {
+        "car-id": "---> Dataset details",
+        "make": "\u039d\u0391\u0399",
+        "model": "/dataset/{id}",
+        "miles": "dataset-details.png"
+    },
+    {
+        "car-id": "-----> Relate datasets",
+        "make": "\u039d\u0391\u0399",
+        "model": "",
+        "miles": "-\u039b\u0395\u0399\u03a0\u0395\u0399-"
+    },
+    {
+        "car-id": "-----> Extend dataset",
+        "make": "\u039d\u0391\u0399",
+        "model": "",
+        "miles": "-\u039b\u0395\u0399\u03a0\u0395\u0399-"
+    },
+    {
+        "car-id": "Data Requests",
+        "make": "",
+        "model": "",
+        "miles": "-"
+    },
+    {
+        "car-id": "-> Browse Requests",
+        "make": "\u039d\u0391\u0399",
+        "model": "/requests",
+        "miles": "data-requests.png"
+    },
+    {
+        "car-id": "-> My Requests",
+        "make": "\u039d\u0391\u0399",
+        "model": "/requests",
+        "miles": "data-requests.png"
+    },
+    {
+        "car-id": "-> Add New Request",
+        "make": "\u039d\u0391\u0399",
+        "model": "",
+        "miles": "data-requests.png"
+    },
+    {
+        "car-id": "Open Data Sites",
+        "make": "\u039d\u0391\u0399",
+        "model": "",
+        "miles": "-\u039b\u0395\u0399\u03a0\u0395\u0399-"
+    },
+    {
+        "car-id": "Community",
+        "make": "",
+        "model": "",
+        "miles": "-"
+    },
+    {
+        "car-id": "-> Users",
+        "make": "\u039d\u0391\u0399",
+        "model": "",
+        "miles": "-\u039b\u0395\u0399\u03a0\u0395\u0399-"
+    },
+    {
+        "car-id": "-> Groups",
+        "make": "\u039d\u0391\u0399",
+        "model": "",
+        "miles": "-\u039b\u0395\u0399\u03a0\u0395\u0399-"
+    },
+    {
+        "car-id": "-> Wiki",
+        "make": "\u039f\u03a7\u0399",
+        "model": "",
+        "miles": "-\u039b\u0395\u0399\u03a0\u0395\u0399-"
+    },
+    {
+        "car-id": "About",
+        "make": "",
+        "model": "",
+        "miles": "-"
+    },
+    {
+        "car-id": "-> About colibri",
+        "make": "\u039d\u0391\u0399",
+        "model": "/about",
+        "miles": "static.png"
+    },
+    {
+        "car-id": "-> Contact us",
+        "make": "\u039d\u0391\u0399",
+        "model": "/contact",
+        "miles": "static.png \u2013 contact form"
+    },
+    {
+        "car-id": "-> Terms of use",
+        "make": "\u039d\u0391\u0399",
+        "model": "/terms",
+        "miles": "static.png"
+    },
+    {
+        "car-id": "-> Privacy Policy",
+        "make": "\u039d\u0391\u0399",
+        "model": "/privacy-policy",
+        "miles": "static.png"
+    },
+    {
+        "car-id": "User Control Panel",
+        "make": "",
+        "model": "",
+        "miles": "-"
+    },
+    {
+        "car-id": "-> Login",
+        "make": "\u039d\u0391\u0399",
+        "model": "/user/login",
+        "miles": "user-login.png"
+    },
+    {
+        "car-id": "-> Create Account (Register)",
+        "make": "\u039d\u0391\u0399",
+        "model": "",
+        "miles": "-\u039b\u0395\u0399\u03a0\u0395\u0399-"
+    },
+    {
+        "car-id": "-> My Profile",
+        "make": "\u039d\u0391\u0399",
+        "model": "/user/{id}",
+        "miles": "user-profile.png"
+    },
+    {
+        "car-id": "-> My Datasets",
+        "make": "\u039d\u0391\u0399",
+        "model": "",
+        "miles": "-\u039b\u0395\u0399\u03a0\u0395\u0399-"
+    },
+    {
+        "car-id": "-> My Requests",
+        "make": "\u039d\u0391\u0399",
+        "model": "/requests",
+        "miles": "data-requests.png"
+    },
+    {
+        "car-id": "-> My Comments",
+        "make": "\u039d\u0391\u0399",
+        "model": "",
+        "miles": "-\u039b\u0395\u0399\u03a0\u0395\u0399-"
+    },
+    {
+        "car-id": "-> My Groups",
+        "make": "\u039d\u0391\u0399",
+        "model": "/user/{id}/groups",
+        "miles": "usergroups.png"
+    },
+    {
+        "car-id": "---> Create Group",
+        "make": "\u039d\u0391\u0399",
+        "model": "/user/{id}/groups",
+        "miles": "usergroups.png"
+    },
+    {
+        "car-id": "-> Group Invites",
+        "make": "\u039d\u0391\u0399",
+        "model": "/user/{id}/groups",
+        "miles": "usergroups.png"
+    },
+    {
+        "car-id": "-> My Data Requests",
+        "make": "\u039d\u0391\u0399",
+        "model": "",
+        "miles": "-\u039b\u0395\u0399\u03a0\u0395\u0399-"
+    }
+]

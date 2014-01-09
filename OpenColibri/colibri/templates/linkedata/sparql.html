@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Linked Data SPARQL{% endblock %}
+{% block content %}
+{% load i18n %}
+{% load url from future %}
+{% block css %}
+{% endblock %}
+{% block scripts %}
+{% endblock %}
+
+<div id="sparql_page" class="wrapper-content">
+    <div class="clmn-12 center">
+        <iframe src="http://colibrisrv.epu.ntua.gr:8890/isparql" scrolling="no"
+                style="margin:15px 0px;width:1024px; height:800px; overflow-x: auto;overflow-y: auto;">
+        </iframe>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+{% load account %}
+{% load url from future %}
+
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-responsive.min.css">
+{% endblock %}
+{% block content %}
+<div id="login_page" class="wrapper-content">
+    <div class="auth-form">
+        <div class="auth-form-header">
+            {% trans "Sign In" %}
+        </div>
+        <div class="auth-form-body">
+            {% if not user.is_authenticated %}
+
+            {% if socialaccount.providers %}
+
+
+            <div class="socialaccount_ballot">
+
+                <ul class="socialaccount_providers">
+                    {% include "socialaccount/snippets/provider_list.html" %}
+                </ul>
+
+                <div class="login-or"></div>
+
+            </div>
+
+            {% include "socialaccount/snippets/login_extra.html" %}
+
+            {% endif %}
+            {% endif %}
+
+            <form class="login" method="POST" action="{% url 'account_login' %}">
+                {% csrf_token %}
+                {{ form.as_p }}
+                {% if redirect_field_value %}
+
+                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+                {% endif %}
+                <button class="btn btn-large primaryAction" type="submit"><b>{% trans "Sign In" %}</b></button>
+                {%trans "or" %} <a class="secondaryAction" href="{{ signup_url }}">{% trans " Sign-up"%}</a>
+                <span style="float:right;padding-top:13px;color:gray"><a id="forgot_password" style="color:gray"
+                                                                         class="secondaryAction"
+                                                                         href="{% url 'account_reset_password' %}">{%
+                    trans "(forgot password?)" %}</a></span>
+
+
+            </form>
+
+            {% if user.is_authenticated %}
+            {% include "account/snippets/already_logged_in.html" %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+

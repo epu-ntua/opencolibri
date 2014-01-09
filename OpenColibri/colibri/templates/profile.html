@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}Profile{% endblock %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="/s/css/third_party/nyroModal_addgroups.css"/>
+<link rel="stylesheet" type="text/css" href="/s/css/third_party/token-input.css"/>
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-responsive.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-image-gallery.min.css">
+{% endblock %}
+{% block scripts %}
+<script type="text/javascript" src="/s/js/profile.js"></script>
+<script type="text/javascript" src="/s/js/third_party/jquery.nyroModal.custom.min.js"></script>
+<script type="text/javascript" src="/s/js/third_party/jquery.tokeninput.js"></script>
+<script>
+    $(function () {
+        $('#tab-container').easytabs({tabs: "> ul > li:not([data-external])"});
+        $("#myTable").tablesorter();
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $('.nyroModal').nyroModal({sizes: { initW: 1000, initH: 300 }});
+    });
+</script>
+{% endblock %}
+{% block content %}
+
+{% if userModel != user %}
+{% include 'profile/_profile.html' with user=user %}
+{% else %}
+
+{{ form.errors }}
+<div id="mainprofiletab" class="wrapper-content">
+    <div class="clmn-12 center">
+        <div class=" green" style="margin-top:20px;margin-bottom:15px">{% trans "Home" %} | <span
+                class="current-page orange">{{ user.username }}</span></div>
+        <div class="clear-all-0"></div>
+
+        <div class="clmn-12">
+
+            <div class="clmn-4 dataset-tabs">
+                <div id="tab-container" class='tab-container'>
+                    <ul class='etabs'>
+                        <li class='tab2'><a href="#tabs1">{% trans "Profile summary" %}</a></li>
+                        <li class='tab2'><a id='groups' href="#tabs2">{% trans "My Groups" %}</a></li>
+                        <li class='tab2' data-external="true"><a id='inbox' href="/messages/inbox" class="external">{%
+                            trans "Inbox" %}</a></li>
+                    </ul>
+                    <div class='panel-container3'>
+                        {% include 'profile/_profile.html' %}
+                        {% include 'profile/_groups.html'%}
+                        <div id="tabs3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of Tabs -->
+            <div class="line-divider"></div>
+            <div class="clear-all-30"></div>
+
+
+            {% endif %}
+
+        </div>
+        <!-- end of reluts box -->
+
+    </div>
+    <!-- END of left row -->
+</div>
+</div><!-- END of wrapper-content -->
+{% endblock %}
+

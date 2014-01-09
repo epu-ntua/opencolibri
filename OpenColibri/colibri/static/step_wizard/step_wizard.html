@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Untitled Document</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="css/theme.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+    <script src="js/third_party/jquery.hashchange.min.js" type="text/javascript"></script>
+    <script src="js/third_party/jquery.easytabs.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/third_party/jquery.tablesorter.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".bigdate").html(function (i, text) {
+                return text.replace(/[a-zàâîïôèéêëèùûü]+/i, function (match) {
+                    return '<span class="datebold">' + match + '</span>';
+                });
+            });
+        });
+
+        $(document).ready(function () {
+            $('#tab-container').easytabs();
+        });
+
+        $(document).ready(function () {
+                    $("#myTable").tablesorter();
+                }
+        );
+
+
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.selector').each(function (i, obj) {
+                var id = $(this).attr('id');
+                var selector_html = '' +
+                        '<div class="menu-select ' + id + '" id="' + id + '">' +
+                        '	<div class="value"></div>' +
+                        '	<div class="options">';
+                $(this).find('option').each(function () {
+                    selector_html += '<a href="#" class="option" data-id="' + $(this).val() + '">' + $(this).text() + '</a>';
+                });
+                selector_html += '	</div>' +
+                        '</div>';
+                $(this).after(selector_html).remove();
+                //hover
+                $('#' + id).hover(function () {
+                    $(this).addClass('hover');
+                }, function () {
+                    $(this).removeClass('hover');
+                });
+                //button actions
+                $('#' + id + ' a').click(function () {
+                    $(this).parent().parent().find('.value').text($(this).text()).attr('data-id', $(this).attr('data-id')).parent().removeClass('hover');
+                    return false;
+                });
+                //default
+                $('#' + id + ' a:first').trigger('click');
+            });
+        });
+    </script>
+    <style type="text/css"></style>
+</head>
+
+<body>
+<div class="clmn-12 stepwizard">
+    <div class="clmn-3 clmn-space step visited"><span class="stepNumb">01</span><a href="#">Step description</a>
+        (visited)
+    </div>
+    <div class="clmn-3 clmn-space step current"><span class="stepNumb">02</span><a href="#">Step description</a>
+        (current)
+    </div>
+    <div class="clmn-3 clmn-space step "><span class="stepNumb">03</span><a href="#">Step description</a> (next)</div>
+    <div class="clmn-3 step  "><span class="stepNumb">04</span><a href="#">Step description</a> (next)</div>
+    <div class="clmn-12 step-description">Step Description</div>
+    <div class="clmn-12 step-content">Content goes here</div>
+    <div class="line-divider"></div>
+    <div class="wizard-navigation">
+        <div class="button-wizard float-right"><a href="#">finish</a></div>
+        <div class="button-wizard float-right"><a href="#">next</a></div>
+        <div class="button-wizard disabled float-right"><a href="#">previous</a></div>
+    </div>
+    <div class="line-divider"></div>
+</div>
+</body>
+</html>

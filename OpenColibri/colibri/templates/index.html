@@ -1,0 +1,235 @@
+{% extends "base.html" %}
+{% load i18n humanize thumbnail2%}
+{% load url from future %}
+{% block title %}colibri{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-responsive.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-image-gallery.min.css">
+<link rel="stylesheet" type="text/css" href="/s/css/third_party/nyroModal_requests.css"/>
+<link rel="stylesheet" href="/s/fonts/fonts.css">
+{% endblock %}
+{% block scripts %}
+<script type="text/javascript">
+    // Customize twitter feed
+    var hideTwitterAttempts = 0;
+    function hideTwitterBoxElements() {
+        setTimeout(function () {
+            if ($('[id*=twitter]').length) {
+                $('[id*=twitter]').each(function () {
+
+                    var ibody = $(this).contents().find('body');
+                    //ibody.width( $(this).width() + 20 ); //remove scrollbar by adding width
+
+                    if (ibody.find('.timeline .stream .h-feed li.tweet').length) {
+                        //ibody.find( '.timeline .stream' ).css( 'overflow-x', 'hidden' );
+                        //ibody.find( '.timeline .stream' ).css( 'overflow-y', 'scroll' );
+                        ibody.find('.timeline-header a').css('color', '#fff');
+                        ibody.find('.timeline-header').css('text-shadow', ' 0 -1px 0 rgba(0,0,0,0.5)');
+                        ibody.find('.timeline-header').css('background-color', '#006c71');
+                        ibody.find('.timeline-header').css('background-image', '-moz-linear-gradient(#01848a, #006c71)');
+                        ibody.find('.timeline-header').css('background-image', '-webkit-linear-gradient(#01848a, #006c71)');
+                        ibody.find('.timeline-header').css('background-image:', 'linear-gradient(#01848a, #006c71)');
+                        ibody.find('.timeline-header').css('background-repeat', 'repeat-x');
+                        ibody.find('.timeline-header').css('border-radius', '4px 4px 0 0');
+                        ibody.find('.timeline-header').css('background-color', '#fff');
+
+                    }
+                    else {
+                        $(this).hide();
+                    }
+                });
+            }
+            hideTwitterAttempts++;
+            if (hideTwitterAttempts < 3) {
+                hideTwitterBoxElements();
+            }
+        }, 1500);
+    }
+
+    // somewhere in your code after html page load
+    hideTwitterBoxElements();
+</script>
+<script type="text/javascript" src="/s/js/third_party/jquery.nyroModal.custom.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.nyroModal').nyroModal();
+    });
+</script>
+{% endblock %}
+{% block content %}
+<div id="front_page" class="wrapper-content">
+    <div class="front-form">
+
+        <div id="front-col1">
+            <div id="front-search-form">
+                <div id="front-search-controls">
+                    <div style="font-size:15px;text-align:center;font-weight:bold;font-style:italic;margin-bottom:5px;"
+                         class="green">{% trans "SEARCH FOR PUBLIC DATA" %}
+                    </div>
+                    <form class="mainSearchfront" action='/dataset-search/?q=' method='GET'>
+                        <input id="id_value" class="search" type="text" name="q" autocomplete="off">
+                        <input id="id_submit" type="submit" value=""></form>
+                    <div style="text-align:center;font-size:11px;font-style:italic;margin-bottom:5px;" class="">{% trans
+                        "GOT YOUR OWN OPEN DATASET?" %} <a class="green" href="/dataset/add">{% trans "Click here</a> to
+                        add a new Dataset" %}
+                    </div>
+                </div>
+            </div>
+            <div id="front-requests">
+                {% if user.is_authenticated %}
+                <div href="{%url 'datasetrequests_new' %}" style="float:right;cursor:pointer;"
+                     class="orangish btn-small nyroModal"><span
+                        style="color:#fff;text-decoration:none;font-size:13px;padding:5px 21px;"><i
+                        class="icon-plus-sign icon-white"></i> {% trans "Make Request" %}</span></div>
+                {% else %}
+                <div style="float:right;cursor:pointer;" class="btn-small orangish"><a
+                        style="color:#fff;text-decoration:none;font-size:13px;padding:5px 21px;"
+                        href="/accounts/login/?next=/datasetrequests/"><i class="icon-plus-sign icon-white"></i> {%
+                    trans "Make Request" %}</a></div>
+                {% endif %}
+                <div id="individualReviewsTitle">
+                    {% trans "Latest Requests" %}
+
+                </div>
+                <div id="individualreviewsContent">
+                    {% for r in latestRequests %}
+                    <div class="individualReview">
+                        <div class="col1">
+                            <div>
+                                {% if r.author.profile.avatar.photo_original %}
+                                {% thumbnail r.author.profile.avatar.photo_original "68x68" as avatar %}
+                                <a style="color:#333333" href="/profile/{{r.author.id}}"><img width="68" height="68"
+                                                                                              src="{{avatar}}"></img></a>
+                                {% else %}
+                                <a style="color:#333333" href="/profile/{{r.author.id}}"><img width="68" height="68"
+                                                                                              src="/s/imgs/defaultavatar.jpg"></img></a>
+                                {% endif %}
+                            </div>
+                            {% if r.author.profile.rpg_class != "--" %}
+                            <div class="r_rpg"> {{r.author.profile.get_rpg_class_display}}</div>
+                            {% endif %}
+                            {% if r.author.profile.scientific_background != "--" %}
+                            <div class="r_rpg">
+                                {{r.author.profile.get_scientific_background_display|truncatechars:33}}
+                            </div>
+                            {% endif %}
+                        </div>
+                        <div class="col2">
+
+                            <div class="reviewtext">
+                                <div class="userActivity grey"><strong><a style="font-size:15px;"
+                                                                          href="/profile/{{r.author.id}}">{% if
+                                    r.author.first_name or r.author.last_name %}{{r.author.first_name}}
+                                    {{r.author.last_name}} {% else %} {{r.author.username}} {% endif %}</a></strong> {%
+                                    trans "has made a request." %}
+                                </div>
+                                <div class="feedTitle orange"><a style="font-size:15px;"
+                                                                 href="/datasetrequests/{{r.id}}">{{r.name|truncatechars:80}}</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="reviewtime bigdate">{{r.date_updated|naturaltime}}</div>
+                        <div style="clear:both"></div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div style="margin-top:5px"><a class="btnfacet" href="/datasetrequests">[ {% trans "view all" %} ]</a>
+                </div>
+            </div>
+            <div id="front-datasets">
+                <span style="float:right;cursor:pointer;" class="btn-small greensimple"><a
+                        style="color:#fff;text-decoration:none;font-size:13px;padding:5px 29px;" href="dataset/add"><i
+                        class="icon-plus-sign icon-white"></i> {% trans "Add dataset" %}</a></span>
+
+                <div id="individualDatasetsTitle">
+                    {% trans "Latest Datasets" %}
+
+                </div>
+                <div id="individualDatasetsContent">
+                    {% for r in latestDatasets %}
+                    <div class="individualReview">
+                        <div class="col1">
+                            <div>
+                                {% if r.uploader.profile.avatar.photo_original %}
+                                {% thumbnail r.uploader.profile.avatar.photo_original "68x68" as avatar %}
+                                <a style="color:#333333" href="/profile/{{r.uploader.id}}"><img width="68" height="68"
+                                                                                                src="{{avatar}}"></img></a>
+                                {% else %}
+                                <a style="color:#333333" href="/profile/{{r.uploader.id}}"><img width="68" height="68"
+                                                                                                src="/s/imgs/defaultavatar.jpg"></img></a>
+                                {% endif %}
+                            </div>
+                            {% if r.uploader.profile.rpg_class != "--" %}
+                            <div class="r_rpg"> {{r.uploader.profile.get_rpg_class_display}}</div>
+                            {% endif %}
+                            {% if r.uploader.profile.scientific_background != "--" %}
+                            <div class="r_rpg">
+                                {{r.uploader.profile.get_scientific_background_display|truncatechars:33}}
+                            </div>
+                            {% endif %}
+                        </div>
+                        <div class="col2">
+
+                            <div class="reviewtext">
+                                <div class="userActivity grey"><strong><a style="font-size:15px;"
+                                                                          href="/profile/{{r.uploader.id}}">{% if
+                                    r.uploader.first_name or r.uploader.last_name %}{{r.uploader.first_name}}
+                                    {{r.uploader.last_name}} {% else %} {{r.uploader.username}} {% endif %}</a></strong>
+                                    {% trans "has submitted a dataset." %}
+                                </div>
+                                <div class="feedTitle green"><a style="font-size:15px;" href="/dataset/{{r.id}}">{{r.title|truncatechars:80}}</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="reviewtime bigdate" style="border-left: 1px dashed #006C71;">
+                            {{r.modified_date|naturaltime}}
+                        </div>
+                        <div style="clear:both"></div>
+                    </div>
+
+                    {% endfor %}
+                </div>
+                <div style="margin-top:5px"><a class="btnfacet" href="/dataset-search?q=">[ {% trans "view all" %} ]</a>
+                </div>
+            </div>
+        </div>
+        <div id="front-col2">
+            <div id="front_statistics">
+                <div style="border-bottom:1px solid #E3E3E3;margin-bottom:10px;font-style:italic"><b class="green">{%
+                    trans "Stats" %}</b></div>
+                <div id="stat_col1" style="width:157px;float:left;text-align:center">
+                    <div style="font-size:30px;color:#3333333;margin-top:15px;margin-bottom:15px;">
+                        {{numDatasets|intcomma}}
+                    </div>
+                    <div style="font-size:20px;color:#666666;margin-left:7px;">{% trans "Datasets" %}</div>
+                </div>
+                <div id="stat_col2" style="width:120px;float:left;text-align:center">
+                    <div style="font-size:15px;color:#3333333;"><b>{{numResources|intcomma}}</b></div>
+                    <div style="font-size:11px;color:#666666;">{% trans "Resources" %}</div>
+                    <div style="font-size:15px;color:#3333333;"><b>{{numUsers|intcomma}}</b></div>
+                    <div style="font-size:11px;color:#666666;">{% trans "Users" %}</div>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+            <div style="width:314px;">
+                <a class="twitter-timeline" data-border-color="#006c71" data-link-color="#006c71"
+                   href="https://twitter.com/mycolibriData" data-widget-id="314036609865617408">@mycolibriData News</a>
+                <script>!function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = "//platform.twitter.com/widgets.js";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, "script", "twitter-wjs");</script>
+
+            </div>
+
+        </div>
+    </div>
+
+    {% endblock %}

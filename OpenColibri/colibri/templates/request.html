@@ -1,0 +1,210 @@
+{% extends "base.html" %}
+{% block title %}Dataset Requests{% endblock %}
+{% load url from future %}
+{% load i18n comments fluent_comments_tags voting_tags humanize thumbnail2%}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="/s/css/third_party/nyroModal_requests.css"/>
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript" src="/s/js/third_party/jquery.nyroModal.custom.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.nyroModal').nyroModal();
+    });
+</script>
+{% endblock %}
+
+{% block content %}
+<div class="wrapper-content">
+    <div class="clmn-12 center">
+        <div class="breadcrumb green"><a href="{%url 'index' %}"> {%trans "Home"%}</a> | <span
+                class="current-page orange">{%trans "Data Request"%}</span></div>
+        <div class="line-divider"></div>
+        <div class="clear-all-5"></div>
+
+        <div class="clmn-12">
+
+            <div class="clmn-5 dataset-tabs">
+                <div id="tab-container" class='tab-container'>
+                    <ul class='etabs'>
+                        <li class='tab2'><a href="#tabs1">{%trans "Requests" %}</a></li>
+                    </ul>
+                    <div class='panel-container3'>
+
+                        <div id="tabs1">
+                            <div class="tab-content-box">
+                                <div class="clear-all-5"></div>
+                                <div class="clmn-12 taxomony green">
+                                    <span class="float-left"><strong>{%trans "Browse by:" %}</strong></span>
+                                    <ul>
+                                        <li
+                                        {%if sort_by == 'date'
+                                        %}class="active"{%else%}id="datasetrequest_sortby_inactive"{%endif%}><a
+                                            href="{%url 'datasetrequests_index'%}">{%trans "Date updated"%}</a></li>
+                                        <li
+                                        {%if sort_by == 'popular'
+                                        %}class="active"{%else%}id="datasetrequest_sortby_inactive" {%endif%}><a
+                                            href="{%url 'datasetrequests_index'%}?sort=popular">{%trans
+                                        "Popularity"%}</a></li>
+                                    </ul>
+                                    <div class="button-1 float-right orange">
+                                        {% if user.is_authenticated %}
+                                        <div id="btn_request_add" class="float-right nyroModal" style="cursor:pointer;"
+                                             href="{%url 'datasetrequests_new' %}">{%trans "Place a new request"%}
+                                        </div>
+                                        {% else %}
+                                        <a id="btn_request_add" class="float-right" "
+                                        href="/accounts/login/?next=/datasetrequests/">{%trans "Place a new request"%}
+                                        </a>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="clear-all-30"></div>
+                                <div class="green-line"></div>
+                            </div>
+
+                            <div class="clear-all-30"></div>
+                            {% for datasetrequest in datasetrequestlist %}
+                            <div class="clmn-12 data-request">
+                                <div class="clmn-4 clmn-space horiz-line3">
+                                    <div class="clmn-1 clmn-space usersmall-Photo float-left">
+                                        {% if datasetrequest.author.profile.avatar.photo_original %}
+                                        {% thumbnail datasetrequest.author.profile.avatar.photo_original "68x68" as
+                                        avatar %}
+                                        <a style="color:#333333" href="/profile/{{datasetrequest.author.id}}"><img
+                                                width="68" height="68" src="{{avatar}}"></img></a>
+
+                                        {% else %}
+                                        <a style="color:#333333" href="/profile/{{datasetrequest.author.id}}"><img
+                                                width="68" height="68" src="/s/imgs/defaultavatar.jpg"></img></a>
+                                        {% endif %}
+                                    </div>
+                                    <div class="user-name2 green" style="line-height:21px">
+                                        <strong>
+                                            <div><a href="/profile/{{datasetrequest.author.id}}">{% if
+                                                datasetrequest.author.first_name or datasetrequest.author.last_name
+                                                %}{{datasetrequest.author.first_name}}
+                                                {{datasetrequest.author.last_name}} {% else %}
+                                                {{datasetrequest.author.username}} {% endif %}</a></div>
+                                            {% if datasetrequest.author.profile.rpg_class != "--" %}
+                                            <div style="" class="requests_rpg">
+                                                {{datasetrequest.author.profile.get_rpg_class_display}}
+                                            </div>
+                                            {% endif %}
+                                            {% if datasetrequest.author.profile.scientific_background != "--" %}
+                                            <div class="requests_domain">
+                                                {{datasetrequest.author.profile.get_scientific_background_display|truncatechars:33}}
+                                            </div>
+                                            {% endif %}
+                                        </strong>
+                                    </div>
+                                </div>
+                                <div class="clmn-5 clmn-space horiz-line3 ">
+                                    <div class="clmn-4">
+                                        <div class="feedTitle green">
+                                            <div class="clear-all-5"></div>
+                                            <h2 style="line-height:22px"><a
+                                                    href="{%url 'datasetrequests_details' datasetrequest.id %}">{{datasetrequest.name}}</a>
+                                            </h2></div>
+                                        <div class="category green"><strong>{%trans "Category:" %} </strong><a href="#">{{datasetrequest.get_category_display}}</a>
+                                        </div>
+                                        <div class="clear-all-10"></div>
+                                        <div class="text grey">{{datasetrequest.description|truncatechars:100 }}</div>
+                                    </div>
+                                    <div class="clmn-1">
+                                        <div class="clear-all-15"></div>
+                                        <div class="button-1 float-right orange" style="font-size:12px"><a
+                                                href="{%url 'datasetrequests_details' datasetrequest.id %}">{%trans
+                                            "read" %}</a></div>
+                                    </div>
+                                </div>
+
+                                {% score_for_object datasetrequest as score %}
+                                <div class="clmn-1-half  horiz-line3">
+                                    <div class="clear-all-5"></div>
+                                    <div class="votes green"><span class="votes-numb-up green">{{score.score}}</span>
+                                        <a href="{%url 'datasetrequests_vote' datasetrequest.id 'up' %}"><img
+                                                src="/s/imgs/icon_voteup.jpg" width="22" height="22" alt="vote-up"/></a>
+                                    </div>
+                                    <div class="requestdate vote">{{datasetrequest.date_updated|naturaltime}}
+                                    </div>
+                                    <div class="clear-all-10"></div>
+                                </div>
+                                <div class="clmn-1">
+                                    <div class="clear-all-5"></div>
+                                    {% get_comment_count for datasetrequest as comments_count %}
+                                    <div class="feed-answers green"><span class="orange"><a
+                                            href="{%url 'datasetrequests_details' datasetrequest.id %}">{{comments_count}}</a></span>
+                                        {%trans "answers" %}
+                                    </div>
+                                    {%if datasetrequest.accepted_comment == 0 %}
+                                    <div class="feed-answers green"><span
+                                            class="grey">{%trans "pending request" %}</span>
+                                        {%else%}
+                                        <div class="feed-answers green">
+                                            <div><img
+                                                    src="/s/imgs/tickgreen.png" style="margin-left:19px;" width="22"
+                                                    height="22" alt="satisfied request"/></div>
+                                            <span style="color:green;font-weight:bold">{%trans "Satisfied request" %}</span>
+                                            {%endif%}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="line-divider"></div>
+                                {% endfor %}
+
+
+                                <div class="clear-all-20"></div>
+                                <div class="clmn-12 pagination">
+                                    <div class="green">
+                                        {%if page_obj.has_previous %}
+                                        <a class="next"
+                                           href="{%url 'datasetrequests_index'%}?page={{page_obj.number|add:"-1"}}{%if
+                                        sort_by == "popular"%}&sort=popular{%endif%}"> « {% trans "Previous" %}</a>
+                                        {%endif%}
+                                        {% for curpage in page_obj.paginator.page_range %}
+                                        {% if page_obj.number != curpage %}
+                                        <a href="{%url 'datasetrequests_index'%}?page={{curpage}}{%if sort_by == "
+                                           popular"%}&sort=popular{%endif%}"">{{curpage}}</a>
+                                        {%else%}
+                                        <span class="current">{{curpage}}</span>
+                                        {%endif%}
+                                        {%endfor%}
+                                        {%if page_obj.has_next %}
+                                        <a class="next"
+                                           href="{%url 'datasetrequests_index'%}?page={{page_obj.number|add:"1"}}{%if
+                                        sort_by == "popular"%}&sort=popular{%endif%}">{% trans "Next" %} »</a>
+                                        {%endif%}
+                                    </div>
+                                </div>
+                                <div class="clear-all-20"></div>
+                            </div>
+
+
+                            <div id="tabs2">
+                                <div class="clmn-12"></div>
+                            </div>
+
+                            <div id="tabs3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of Tabs -->
+
+                <div class="clear-all-30"></div>
+
+                <div class="clmn-12 ">
+
+
+                </div>
+                <!-- end of reluts box -->
+
+            </div>
+            <!-- END of left row -->
+        </div>
+    </div>
+    <!-- END of wrapper-content -->
+    {% endblock %}

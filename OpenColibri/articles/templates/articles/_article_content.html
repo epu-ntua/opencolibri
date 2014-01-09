@@ -1,0 +1,61 @@
+{% load i18n %}
+{% load thumbnail2%}
+<div id="article-content" class="article">
+    <div id="view_community" class="wrapper-content">
+        <div class="community-form" style="width:705px">
+            <div class="community-form-header">
+            </div>
+            <div class="community-form-body" style="width:705px;min-height:500px">
+                <div style="float:left">
+                    {% if article.author.profile.avatar.photo_original %}
+                    {% thumbnail article.author.profile.avatar.photo_original "68x68" as avatar %}
+                    <a style="color:#333333" href="/profile/{{article.author.id}}"><img width="68" height="68"
+                                                                                        src="{{avatar}}"></img></a>
+                    {% else %}
+                    <a style="color:#333333" href="/profile/{{article.author.id}}"><img width="68" height="68"
+                                                                                        src="/s/imgs/defaultavatar.jpg"></img></a>
+                    {% endif %}
+                </div>
+                <div style="float:left;width:300px;padding-left:15px">
+                    <div><a class="colibri-article-author-big"
+                            href="{% url articles_by_author article.author.username %}"
+                            title="{% trans 'View articles posted by' %} {{ article.author.get_name }}">{{
+                        article.author.get_name }}</a></div>
+                    {% if article.author.profile.rpg_class != "--" %}
+                    <div class="r_rpg"> {{article.author.profile.get_rpg_class_display}}</div>
+                    {% endif %}
+                    {% if article.author.profile.scientific_background != "--" %}
+                    <div class="r_rpg"> {{article.author.profile.get_scientific_background_display|truncatechars:33}}
+                    </div>
+                    {% endif %}
+                    <div class="article-details"> {% trans 'Posted on' %} {{ article.publish_date|date:"F jS, Y" }}
+                    </div>
+                </div>
+                <div style="clear:both"></div>
+                <div style="font-size:32px;margin-top:15px;line-height:30px;">{% trans article.title %}</div>
+
+                <div style="border-bottom:1px solid #EEEEEE;margin:20px 0px;">
+                    {{ article.rendered_content|safe }}
+                </div>
+
+                {% include 'articles/_meta.html' %}
+                {% for att in article.attachments.all %}
+                {% if forloop.first %}
+                <div id="article-attachments">
+                    <h3>Attachments</h3>
+                    <ul>{% endif %}
+                        <li id="attachment-{{ forloop.counter }}" class="attachment ct_{{ att.content_type_class }}">
+                            <a href="{{ att.attachment.url }}" class="attachment-link">{{ att.filename }}</a>
+                            <span class="attachment-size">Size: {{ att.attachment.size|filesizeformat }}</span>
+                        </li>
+                        {% if forloop.last %}
+                    </ul>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+
+

@@ -1,0 +1,26 @@
+{% extends "organizations_base.html" %}
+{% load i18n %}
+{% block css %}
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-responsive.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-image-gallery.min.css">
+{% endblock %}
+{% block content %}
+<div id="edit_profile" class="wrapper-content">
+    <div class="profile-form" style="width:400px;margin-bottom:300px;">
+        <div class="profile-form-header">
+            {% trans "Delete group" %} {{ organization }}
+        </div>
+        <div class="profile-form-body" style="min-height:240px">
+            <h3>Are you sure you want to delete this organization?</h3>
+
+            <form action="." method="post">{% csrf_token %}
+                {{ form }}
+                <input class="button orangish" type="submit" value="Delete">
+                <a href="/profile/{{ user.id }}/#tabs2">
+                    <div style="float:right" class='button-1'>Cancel</div>
+                </a>
+            </form>
+
+        </div>
+        {% endblock %}

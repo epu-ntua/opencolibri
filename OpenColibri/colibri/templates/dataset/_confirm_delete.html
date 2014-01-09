@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block css %}
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/style.css">
+{% endblock %}
+{% block scripts %}
+{% endblock %}
+{% block content %}
+<div style="min-height:640px" id="view_datasets" class="wrapper-content">
+    <div style="width:320px" class="datasets-form">
+        <div class="datasets-form-header">
+            {% trans "Delete dataset" %}
+        </div>
+        <div style="min-height:300px" class="datasets-form-body">
+            {% trans "Are you sure you want to remove this dataset and all the resources attached to it?" %}
+            <div style="margin-top:20px" class="float-left">
+                <a href="/dataset/{{ dataset.id }}">
+                    <div class="button float-right">{% trans "Cancel" %}</div>
+                </a>
+            </div>
+            <form method="POST" action="/dataset/{{ dataset.id }}/delete">{% csrf_token %}
+                <input style="margin-top:17px" value="{% trans " Delete" %}" class="float-right button rosy float-right"
+                type="submit"></input>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

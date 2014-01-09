@@ -1,0 +1,175 @@
+{% extends "base.html" %}
+{% block title %}Dataset search{% endblock %}
+{% block content %}
+<script>
+    $(function () {
+        $('#tab-container').easytabs();
+        $("#myTable").tablesorter();
+    });
+</script>
+<div class="wrapper-content">
+    <div class="clmn-12 center">
+        <div class="breadcrumb green">Home | Datasets | <span class="current-page orange"> Search Datasets</span>
+        </div>
+        <div class="line-divider"></div>
+        <div class="clear-all-30"></div>
+
+        <div class="clmn-12">
+
+            <div class="clmn-5 dataset-tabs">
+                <div id="tab-container" class='tab-container'>
+                    <ul class='etabs'>
+                        <li class='tab2'><a href="#tabs1">Keyword Search</a></li>
+                        <li class='tab2'><a href="#tabs2">Filtered Search</a></li>
+                        <li class='tab2'><a href="#tabs3">Search other data portals</a></li>
+                    </ul>
+                    <div class='panel-container2'>
+
+                        <div id="tabs1">
+                            <div class="tab-content-box">
+                                <div class="clear-all-10"></div>
+                                <div class="clmn-12">
+                                    <form class="mainSearch-page"><input type="text" class="search"><input
+                                            type="button"
+                                            value="">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="tabs2">
+                        </div>
+
+                        <div id="tabs3">
+                            <div class="tab-content-box">
+                                <div class="clear-all-10"></div>
+                                <div class="clmn-12">
+                                    <form class="mainSearch-page"><input type="text" class="search"><input
+                                            type="button"
+                                            value="">
+                                    </form>
+                                </div>
+
+                                <div class="source-select clmn-3 green center-select">
+                                    <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+                                        <select name="source" id="source" class="selector">
+                                            <option value="1">All supported data portals</option>
+                                            <option value="2">Data.gov.uk</option>
+                                            <option value="3">Publicdata.eu</option>
+                                            <option value="4">Thedatahub.org</option>
+                                        </select>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of Tabs -->
+
+            <div class="clear-all-30"></div>
+
+            <div class="clmn-12 ">
+                <div class="category-title"><h1><span class="green ">Search results for: </span><span
+                        class="orange ">France elections 2012</span>
+                </h1></div>
+
+                <div class="clear-all-30"></div>
+                <div class="line-divider"></div>
+                <div class="clear-all-20"></div>
+
+                <div class="feed-block">
+                    <div class="clmn-12">
+                        <div class="clmn-10 feed feed-horiz-line">
+                            <div class="feedTitle green">
+                                <h2><a href="#">France Elections 2012</a></h2></div>
+                            <div class="text grey">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                                parturient montes, nascetur ridiculus mus.
+                            </div>
+                            <div class="search-category"><strong>Category: </strong><a href="#">Politics</a></div>
+                            <div class="search-tags"><strong>Tags: </strong><a href="#">elections france
+                                resultats</a> ,
+                                <a href="#">france</a> , <a href="#">entiere</a></div>
+                        </div>
+                        <div class="clmn-2 float-right">
+                            <div class="dataset-official green"><strong>Official dataset</strong></div>
+                            <div class="feed submitted-by green"><strong>Submitted by: </strong><br/><a href="#">Ministry
+                                of Interior</a>,<br/><span class="grey">France on 15 May 2012</span></div>
+                        </div>
+                    </div>
+                    <div class="clear-all-20"></div>
+                    <div class="line-divider"></div>
+                    <div class="clear-all-20"></div>
+                </div>
+
+                <div class="feed-block">
+                    <div class="clmn-12">
+                        <div class="clmn-10 feed feed-horiz-line">
+                            <div class="feedTitle green">
+                                <h2><a href="#">France Elections 2012</a></h2></div>
+                            <div class="text grey">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                                parturient montes, nascetur ridiculus mus.
+                            </div>
+                            <div class="search-category"><strong>Category: </strong><a href="#">Politics</a></div>
+                            <div class="search-tags"><strong>Tags: </strong><a href="#">elections france
+                                resultats</a> ,
+                                <a href="#">france</a> , <a href="#">entiere</a></div>
+                        </div>
+                        <div class="clmn-2 float-right">
+                            <div class="dataset-official green"><strong>Official dataset</strong></div>
+                            <div class="feed submitted-by green"><strong>Submitted by: </strong><br/><a href="#">Ministry
+                                of Interior</a>,<br/><span class="grey">France on 15 May 2012</span></div>
+                        </div>
+                    </div>
+                    <div class="clear-all-20"></div>
+                    <div class="line-divider"></div>
+                    <div class="clear-all-20"></div>
+                </div>
+
+                <div class="feed-block">
+                    <div class="clmn-12">
+                        <div class="clmn-10 feed feed-horiz-line">
+                            <div class="feedTitle green">
+                                <h2><a href="#">France Elections 2012</a></h2></div>
+                            <div class="text grey">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                                parturient montes, nascetur ridiculus mus.
+                            </div>
+                            <div class="search-category"><strong>Category: </strong><a href="#">Politics</a></div>
+                            <div class="search-tags"><strong>Tags: </strong><a href="#">elections france
+                                resultats</a> ,
+                                <a href="#">france</a> , <a href="#">entiere</a></div>
+                        </div>
+                        <div class="clmn-2 float-right">
+                            <div class="dataset-official green"><strong>Official dataset</strong></div>
+                            <div class="feed submitted-by green"><strong>Submitted by: </strong><br/><a href="#">Ministry
+                                of Interior</a>,<br/><span class="grey">France on 15 May 2012</span></div>
+                        </div>
+                    </div>
+                    <div class="clear-all-20"></div>
+                    <div class="line-divider"></div>
+                    <div class="clear-all-20"></div>
+                </div>
+
+                <div class="clmn-12 pagination">
+                    <div class="green"><span class="disabled">« Previous</span><span class="current">1</span><a
+                            href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><a
+                            href="#">7</a>...<a href="#">199</a><a href="#">200</a><a class="next" href="#">Next
+                        »</a>
+                    </div>
+
+                </div>
+                <div class="clear-all-20"></div>
+                <!--end of feed blocks -->
+
+            </div>
+            <!-- end of reluts box -->
+
+        </div>
+        <!-- END of left row -->
+    </div>
+</div>
+{% endblock %}

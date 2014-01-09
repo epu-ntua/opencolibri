@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% block title %}Visualizations{% endblock %}
+{% block content %}
+{% load i18n %}
+{% load url from future %}
+{% block css %}
+<link rel="stylesheet" href="/s/visualizations/css/screen_visualizations.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="/s/visualizations/css/dojo/dojo/resources/dojo.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="/s/visualizations/css/dojo/dijit/themes/claro/claro.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="/s/visualizations/css/dojo/dojox/grid/enhanced/resources/claro/EnhancedGrid.css"
+      type="text/css" media="all"/>
+<link rel="stylesheet" href="/s/visualizations/css/dojo/dojox/grid/enhanced/resources/EnhancedGrid_rtl.css"
+      type="text/css" media="all"/>
+<link rel="stylesheet" href="/s/visualizations/css/dojo/dojox/form/resources/RangeSlider.css" type="text/css"
+      media="all"/>
+{% endblock %}
+
+{% block scripts %}
+<script src='http://openlayers.org/api/OpenLayers.js'></script>
+<script>/**
+ * Returns the base URL of the website, i.e. just protocol and hostname, for instance:
+ * http://www.colibridata.eu/some/path?query=1345 will become:
+ * http://www.colibridata.eu
+ *
+ * The method uses the location object to calculate base URL.
+ */
+function getBaseURL() {
+    return location.protocol + "//" + location.hostname +
+            (location.port && ":" + location.port);
+}
+function getCookie(name) {
+    var cookieValue = null;
+    if (document.cookie && document.cookie != '') {
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = jQuery.trim(cookies[i]);
+            // Does this cookie string begin with the name we want?
+            if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+</script>
+{% endblock %}
+{% csrf_token %}
+<div id="about_page" class="wrapper-content">
+    <div class="clmn-12 center">
+        <div style="float:left;margin-left:10px;padding-bottom:10px;padding-top:10px;font-size:14px;"><a class="green"
+                                                                                                         style="font-weight:bold"
+                                                                                                         href="/dataset/{{dataset_pk}}">->
+            {% trans "Return to dataset" %}</a></div>
+
+        <div id="visualizationsContainer">
+
+            <div class="claro" style="height: 700px;">
+                <!-- The visualization application goes here -->
+                <div id="mainViewNode"></div>
+
+                <!-- A placeholder for displaying error messages using LifeRay's styling -->
+                <div class="portlet-msg-error" style="visibility:hidden;" id="errorMessageNode"></div>
+
+            </div>
+
+        </div>
+    </div>
+</div><!-- END of wrapper-content -->
+<!-- Dojo -->
+<script type="text/javascript">
+    /*<![CDATA[*/
+
+    // resource path, set by the controller
+    var resourceUrl = /*[[@{${resourceUrl}}]]*/ '/eresources/{{ pk }}/';
+
+    // configuration for the CDN version of Dojo
+
+    // grab locale
+    var dojoLocale = /*[[${common.currentLocale}]]*/ 'en';
+
+    // define path for Dojo-style JS files
+    var jsPath = /*[[@{/static/js/visualizations}]]*/ '/s/visualizations/js/visualizations';
+
+    var dojoConfig = {
+        async: true,
+        gfxRenderer: "svg,silverlight,vml,canvas",
+        locale: dojoLocale,
+        packages: [
+            {
+                name: "colibri",
+                location: getBaseURL() + jsPath + '/colibri'
+            },
+            {
+                name: "ui",
+                location: getBaseURL() + jsPath + '/ui'
+            }
+        ]
+    };
+
+    var handleError = function (err) {
+        var div = document.getElementById("errorMessageNode");
+        div.innerHTML = err;
+        div.style.visibility = 'visible';
+    };
+
+    var clearError = function () {
+        var div = document.getElementById("errorMessageNode");
+        div.innerHTML = '';
+        div.style.visibility = 'hidden';
+    };
+
+    /*]]>*/
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.8.2/dojo/dojo.js"></script>
+<script src="/s/visualizations/js/visualizations/main.js"></script>
+
+{% endblock %}

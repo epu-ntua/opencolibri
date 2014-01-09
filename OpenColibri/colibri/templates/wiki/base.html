@@ -1,0 +1,261 @@
+{% load sekizai_tags i18n wiki_tags inbox%}{% load url from future %}
+{% inbox_count as inbox_count %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--    <meta charset="utf-8">-->
+    <!-- <title>{% block pagetitle %}{% endblock %} - django-\/\/  i K |</title>-->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <!--<meta name="description" content="">-->
+    <!--<meta name="author" content="www.django-wiki.org"> -->
+    <!-- Le styles -->
+    <title>{% block title %}colibri{% endblock %}</title>
+    <link href="/s/css/colibri.css" rel="stylesheet" type="text/css"/>
+    <link href="/s/css/theme.css" rel="stylesheet" type="text/css"/>
+    <link href="/s/css/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="/s/css/third_party/jquery-ui-1.10.0.custom.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/s/wiki/bootstrap/css/wiki-bootstrap.min.css" rel="stylesheet">
+    <link href="/s/wiki/bootstrap/css/wiki-bootstrap-responsive.min.css" rel="stylesheet">
+    <script type="text/javascript" src="/s/js/third_party/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="/s/js/csrf_token.js"></script>
+    <script type="text/javascript" src="/s/js/third_party/jquery-ui-1.10.0.custom.min.js"></script>
+    <script type="text/javascript" src="/s/js/third_party/jquery.hashchange.min.js"></script>
+    <script type="text/javascript" src="/s/js/third_party/jquery.easytabs.min.js"></script>
+    <script type="text/javascript" src="/s/js/third_party/jquery.tablesorter.js"></script>
+
+    <!-- {% render_block "css" %} -->
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    {% block css %}
+    {% endblock %}
+    {% block scripts %}
+    {% endblock %}
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery("#{{ current }}").addClass('current');
+
+            jQuery(".bigdate").html(function (i, text) {
+                return text.replace(/[a-zàâîïôèéêëèùûü]+/i, function (match) {
+                    return '<span class="datebold">' + match + '</span>';
+                });
+            });
+        });
+    </script>
+
+</head>
+
+<body style="background-color: #f2f0e7">
+<div class="wrapper top">
+    <div class="clmn-12 center">
+        <div class="float-left logo">
+            <a href="/" id='homelogo'><img src="/s/imgs/colibri_logo.jpg" width="103" height="100"/></a>
+        </div>
+        <div class="clmn-10">
+
+            <div class="topTools">
+                <div class="float-right">
+                    <div class="language-select">
+
+                        {% get_current_language as LANGUAGE_CODE %}
+                        <form action="/i18n/setlang/" method="post">
+                            {% csrf_token %}
+                            <input name="next" type="hidden" value="{{ redirect_to }}"/>
+
+                            <div class="selectParent">
+                                <select onchange="this.form.submit()" name="language">
+                                    {% get_language_info_list for LANGUAGES as languages %}
+                                    {% for language in languages %}
+                                    <option
+                                    {% if LANGUAGE_CODE == language.code %} selected="selected" {% endif %} value="{{
+                                    language.code }}">{{ language.name_local }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <ul id="TopNav">
+                        {% if user.is_authenticated %}
+                        {% if inbox_count %}
+                        <a href="/messages/inbox" class="unreadCount">
+                            {% inbox_count %}
+                        </a>
+                        {% endif %}
+                        <li><a href="/profile/{{ user.id }}">{{ user.username }}</a>
+                            <ul class="noJS">
+                                <li><a id='profile' href="/profile/{{ user.id }}">{% trans "Profile" %}</a></li>
+                                <li><a id='account-settings' href="/profile/{{ user.id }}/edit">{% trans "Account
+                                    Settings" %}</a></li>
+                                <li><a href="/messages/inbox">{% trans "Inbox" %}{% if inbox_count %}: {% inbox_count %}
+                                    {% trans "Unread" %}{% endif %}</a></li>
+                                <li><a id='groups' href="/profile/{{ user.id }}/#tabs2">{% trans "Groups" %}</a></li>
+                                <li>
+                                    <form action="/accounts/logout/">
+                                        <a href="javascript:;" onclick="parentNode.submit();">{% trans "Signout" %}</a>
+                                        <input type="hidden" name="mess" value="signout"/>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                        {% else %}
+                        <li><a href="/accounts/login">{% trans "Sign in" %}</a></li>
+                        <li><a href="/accounts/register">{% trans "Register" %}</a></li>
+                        {% endif %}
+                    </ul>
+                    <!-- end of TopNav -->
+
+                </div>
+                <!-- end of TopTools -->
+
+            </div>
+            <ul id="mainNav">
+                <li><a href="/" id='home'>{% trans "HOME" %}</a></li>
+                <li><a id='dataset' href="/dataset-search/?q=">{% trans "DATASETS" %}</a>
+                    <ul class="noJS">
+                        <li><a href="/dataset-search/?q=">{% trans "Search Datasets" %}</a></li>
+                        <li><a href="/dataset/add">{% trans "Add new dataset" %}</a></li>
+                        <li><a href="/sparql">{% trans "Linked Data SPARQL" %}</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/datasetrequests" id='datasetrequests_index'>{% trans "REQUEST DATA" %}</a>
+                </li>
+                <li><a id='community' href="/users">{% trans "COMMUNITY" %}</a>
+                    <ul class="noJS">
+                        <li><a href="/users">{% trans "Users" %}</a></li>
+                    </ul>
+                </li>
+                <li><a id='opendatasites' href="/opendatasites">{% trans "OPEN DATA SITES" %}</a></li>
+                <li><a id='wiki' href="/wiki">{% trans "WIKI" %}</a></li>
+                <li><a id='about' href="/about">{% trans "ABOUT US" %}</a>
+                    <ul class="noJS">
+                        <li><a href="/about">{% trans "About colibri" %}</a></li>
+                        <li><a href="/contact">{% trans "Contact us" %}</a></li>
+                        <li><a href="/terms">{% trans "Term Of Use" %}</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- End of main navigation-->
+
+        </div>
+        <!-- End of Right row-->
+    </div>
+</div>
+
+<!-- END of wrapper Top -->
+
+{% block wiki_body %}
+
+{% block navbar %}
+<div class="navbar navbar-fixed-top navbar-inverse">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+
+            <form class="navbar-search pull-right" id="navbar_wiki_search" method="GET"
+                  action="{% url 'wiki:search' %}">
+                <span class="icon-search"></span>
+                <input type="text" name="query" class="search-query" placeholder="{% trans " Search..." %}" />
+            </form>
+            <div class="pull-right">
+                {% if user.is_authenticated %}
+                <ul class="nav">
+                    {% include "wiki/plugins/notifications/menubaritem.html" %}
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="badge notification-cnt">0</span>
+                            {{ user }}
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <div class="notification-list">
+                                <div class="notification-list">
+                                    <div class="notification-li-container"></div>
+                                    <li class="notifications-empty"><a href="#"><em>{% trans "No notifications" %}</em></a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li><a href="#" onclick="notify_mark_read()">{% trans "Clear notifications list"
+                                        %}</a></li>
+                                </div>
+                        </ul>
+                    </li>
+                </ul>
+                {% else %}
+                <ul class="nav">
+                </ul>
+                {% endif %}
+            </div>
+            <div class="nav-collapse">
+                <ul class="nav">
+                    <li class="active"><a href="/wiki">Wiki Home</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+<div id="wikimainscreen" class="wrapper-content">
+    <div class="clmn-12 center">
+
+
+        <div class="container" style="margin-top:10px;min-height: 610px;">
+            {% block wiki_breadcrumbs %}{% endblock %}
+            {% block wiki_contents %}
+            <h1>Bootstrap starter template</h1>
+
+            <p>Use this document as a way to quick start any new project.<br> All you get is this message and a
+                barebones HTML document.</p>
+            {% endblock %}
+
+            <footer id="wiki-footer">
+                <hr/>
+                {% block wiki_footer_prepend %}
+                {% endblock %}
+
+                <div style="clear: both"></div>
+            </footer>
+        </div>
+
+    </div>
+    <!-- /container -->
+</div>
+</div>
+{% endblock %}
+
+<script src="/s/wiki/js/jquery.min.js"></script>
+<script src="/s/wiki/js/core.js"></script>
+<script src="/s/wiki/bootstrap/js/bootstrap.min.js"></script>
+{% render_block "js" %}
+
+<div class="wrapper footer green">
+    <div class="clmn-12 center-footer">
+        <div class="footer-logos">
+            <a href="#"><img src="/s/imgs/logo-seventhframework.jpg" width="88" height="88" alt="seventh "/></a>
+            <a href="#"><img src="/s/imgs/logo-eu.jpg" width="88" height="88" alt="eu"/></a>
+            <a href="#"><img src="/s/imgs/logo-smallcolibri.jpg" width="88" height="88" alt="colibri"/></a>
+            <BR>{% trans "colibri is a combination of CP & CSA project funded under the European Commission FP7
+            Programme" %}.
+        </div>
+
+    </div>
+    <div class="footer-line"></div>
+    <div class="clmn-12 center-footer notes">
+        <div class="float-left">Copyright © 2012-2013 <strong>colibri</strong> Project. {% trans "All rights reserved"
+            %}.
+        </div>
+        <div class="float-right">{% trans "Please read our" %} <a href="/terms">{% trans "Terms Of Use" %}</a></div>
+    </div>
+</div>
+<!-- END of wrapper-footer -->
+</body>
+</html>
+

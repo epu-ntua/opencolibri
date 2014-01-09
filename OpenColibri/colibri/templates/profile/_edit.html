@@ -1,0 +1,213 @@
+{% extends 'base.html' %}
+{% load thumbnail2 i18n %}
+{% block title %}Edit Your Profile{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="/s/chosen/chosen.css"/>
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/style.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-responsive.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-image-gallery.min.css">
+
+{% endblock %}
+{% block scripts %}
+<script src="/s/chosen/chosen.jquery.js"></script>
+<script>
+    function validateForm() {
+        x = jQuery("#id_scientific_background_chzn span").html();
+        y = jQuery("#id_rpg_class_chzn span").html();
+        z = jQuery("#id_country_chzn span").html()
+        if (x == 'My background is...') {
+
+            jQuery('#errorlabel').html("{% trans "
+            Please
+            tell
+            us
+            your
+            main
+            expertise
+            background
+            " %}"
+        )
+            ;
+            jQuery('#errorlabel').addClass("alert alert-error");
+            setTimeout(function () {
+                jQuery('#errorlabel').html('');
+                jQuery('#errorlabel').removeClass("alert alert-error");
+            }, 8000);
+            return false;
+        }
+
+        if (y == 'I am a...') {
+            jQuery('#errorlabel').html("{% trans "
+            Please
+            tells
+            us
+            your
+            specialization
+            " %} "
+        )
+            ;
+            jQuery('#errorlabel').addClass("alert alert-error");
+            setTimeout(function () {
+                jQuery('#errorlabel').html('');
+                jQuery('#errorlabel').removeClass("alert alert-error");
+            }, 8000);
+            return false;
+        }
+
+        if (z == 'Please choose a country..') {
+            jQuery('#errorlabel2').html("{% trans "
+            Please
+            select
+            your
+            country
+            " %}"
+        )
+            ;
+            jQuery('#errorlabel2').addClass("alert alert-error");
+            setTimeout(function () {
+                jQuery('#errorlabel2').html('');
+                jQuery('#errorlabel2').removeClass("alert alert-error");
+            }, 8000);
+            return false;
+        }
+    }
+</script>
+<script>
+    window.onload = function () {
+        $('.chzn-select').chosen();
+        jQuery('#avatar-change').on('click', function () {
+            jQuery('#avatar_container').remove();
+            jQuery('#avatar-change-input').append('<div id="avatar_container"><div style="color:#df4e15;margin-top:5px">{% trans "Please save profile to update photo" %}</div><div style="margin-top:5px;width:240px;overflow:hidden;display:none" ><input type="file" name="picture" id="id_picture"></div></div>');
+            jQuery('#id_picture').click();
+        });
+        jQuery('#avatar-photo').on('click', function () {
+            jQuery('#avatar-change').click();
+        });
+    };
+</script>
+{% endblock %}
+{% block content %}
+
+
+<div class="container">
+    <div id="edit_profile" class="wrapper-content">
+        <div class="profile-form">
+            <div class="profile-form-header">
+                {% trans "Edit Profile" %}
+            </div>
+            <div class="profile-form-body">
+                <form id="account-settings-edit-form" method="post" onsubmit="return validateForm()"
+                      action="/profile/{{ user.id }}/edit" enctype="multipart/form-data">{% csrf_token %}
+                    <div id="profile_col1">
+
+
+                        <div style="text-align:center">
+                            {% if user.profile.avatar.photo_original %}
+                            {% thumbnail user.profile.avatar.photo_original "150x150" as avatar %}
+                            <img id="avatar-photo" height="150px" src="{{ avatar }}"/><br/>
+
+                            {% else %}
+                            <img id="avatar-photo" width="150px" height="150px" src="/s/imgs/defaultavatar.jpg"/><br/>
+                            {% endif %}
+                            <div id="avatar-change" class="button small rounded">{% trans "change photo" %}</div>
+                            <br>
+
+                            <div id="avatar-change-input"></div>
+                            <br><br>
+
+                        </div>
+                        {{ userProfileForm.scientific_background }}
+                        {{ userProfileForm.scientific_background.errors.as_text }}<br>
+                        {{ userProfileForm.rpg_class }}<br>
+                        {{ userProfileForm.rpg_class.errors.as_text }}<br>
+
+                        <div id="errorlabel" style="width:150px;"></div>
+
+                    </div>
+
+                    <div id="profile_col2">
+                        {{ form.errors }}
+                        {{ form.non_field_errors.as_text }}
+                        {{ form.first_name.label_tag }}
+                        {{ form.first_name }}
+                        {{ form.first_name.errors.as_text }}
+                        {{ form.last_name.label_tag }}
+                        {{ form.last_name }}
+                        {{ form.last_name.errors.as_text }}
+                        {{ form.username.label_tag }}
+                        {{ form.username }}
+                        {{ form.username.errors.as_text }}
+                        {{ userProfileForm.errors }}
+                        {{ userProfileForm.non_field_errors.as_text }}
+                        <div style="display:none">
+                            {{ userProfileForm.nameAppearance.label_tag }}<br>
+                            {{ userProfileForm.nameAppearance }}<br>
+                            {{ userProfileForm.nameAppearance.errors.as_text }}<br>
+                        </div>
+                        <div style="display:none">
+                            {{ userProfileForm.city.label_tag }}<br>
+                            {{ userProfileForm.city }}<br>
+                            {{ userProfileForm.city.errors.as_text }}<br>
+                        </div>
+                        <br>
+                        <br>
+                        {{ userProfileForm.country.label_tag }}
+                        {{ userProfileForm.country }}<br>
+
+                        <div id="errorlabel2" style="width:300px;"></div>
+                        {{ userProfileForm.country.errors.as_text }}<br>
+
+                        <div id="social_contact">
+                            <div style="font-weight:bold;font-size:13px;margin-bottom:15px;">{% trans "Contact" %}</div>
+                            {{ form.email.errors.as_text }}
+                            <div class="social_entry">
+                                <img style="vertical-align:middle" src="/s/imgs/mail_small.png"/>{{ form.email }}<span
+                                    class="sociallabel">{% trans "Email Address" %}</span>
+                            </div>
+                            <div class="social_entry">
+                                <img style="vertical-align:middle" src="/s/imgs/facebook_small.png"/>{{
+                                userProfileForm.facebookUrl }}<span class="sociallabel">Facebook URL</span>
+                            </div>
+                            {{ userProfileForm.facebookUrl.errors.as_text }}
+                            <div class="social_entry">
+                                <img style="vertical-align:middle" src="/s/imgs/twitter_small.png"/>{{
+                                userProfileForm.twitterUrl }}<span class="sociallabel">Twitter URL</span>
+                            </div>
+                            {{ userProfileForm.twitterUrl.errors.as_text }}
+                            <div class="social_entry">
+                                <img style="vertical-align:middle" src="/s/imgs/google_small.png"/>{{
+                                userProfileForm.googleUrl }}<span class="sociallabel">Google+ URL</span>
+                            </div>
+
+                            {{ userProfileForm.googleUrl.errors.as_text }}
+                            <div class="social_entry">
+                                <img style="vertical-align:middle" src="/s/imgs/linkedin_small.png"/>{{
+                                userProfileForm.linkedInUrl }}<span class="sociallabel">LinkedIn URL</span>
+                            </div>
+
+                            {{ userProfileForm.linkedInUrl.errors.as_text }}
+                            <div class="social_entry">
+                                <img style="vertical-align:middle" src="/s/imgs/website_small.png"/>{{
+                                userProfileForm.websiteUrl }}<span class="sociallabel">{% trans "Personal Website" %} URL</span>
+                            </div>
+
+                            {{ userProfileForm.websiteUrl.errors.as_text }}
+                        </div>
+                        <div style="margin-top:30px" class="float-right">
+                            <a href="/profile/{{ user.id }}">
+                                <div class='button bigrounded' style="color:#9e350c">{% trans "Cancel" %}</div>
+                            </a>
+                            <input type="submit" class='button bigrounded orangish' value="{% trans " Save Profile"
+                            %}"/>
+                        </div>
+                    </div>
+                </form>
+                <div style="clear:both"></div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+{% endblock %}

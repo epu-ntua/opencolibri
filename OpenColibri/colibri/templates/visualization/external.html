@@ -1,0 +1,34 @@
+﻿{% extends "base.html" %}
+{% block title %}External Visualization{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap.min.css">
+<link rel="stylesheet" href="/s/django_file_upload/css/bootstrap-responsive.min.css">
+
+{% endblock %}
+{% block scripts %}
+
+{% endblock %}
+{% block content %}
+{% load i18n %}
+{% load url from future %}
+
+<div id="csvviewer_page" class="wrapper-content">
+    <div class="csv-form">
+        <div class="csv-form-header">
+        </div>
+        <div class="csv-form-body">
+            <div style="float:left;margin-bottom:10px;"><a class="green" style="font-weight:bold"
+                                                           href="/dataset/{{dataset_id}}">{% trans "Return to dataset"
+                %}</a></div>
+            <div style="clear:both"></div>
+            <div style="text-align:center">
+                <script type="text/javascript" src="{{application_url}}"></script>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- END of wrapper-content -->
+
+
+    {% endblock %}

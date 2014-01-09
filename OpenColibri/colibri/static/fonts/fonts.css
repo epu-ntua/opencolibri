@@ -1,0 +1,122 @@
+.icon-spinner:before, .icon-spinner-2:before, .icon-spinner-3:before, .icon-spinner-4:before, .icon-spinner-5:before, .icon-spinner-6, .icon-spinner-7:before {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.icon-spinner:before {
+    content: "\e000";
+}
+
+.icon-spinner-2:before {
+    content: "\e001";
+}
+
+.icon-spinner-3:before {
+    content: "\e002";
+}
+
+.icon-spinner-4:before {
+    content: "\e003";
+}
+
+.icon-spinner-5:before {
+    content: "\e004";
+}
+
+.icon-spinner-6:before {
+    content: "\e005";
+}
+
+.icon-spinner-7:before {
+    content: "\e006";
+}
+
+.icon-spin {
+    display: inline-block;
+    -moz-animation: spin 1s infinite linear;
+    -o-animation: spin 1s infinite linear;
+    -webkit-animation: spin 1s infinite linear;
+    animation: spin 1s infinite linear;
+}
+
+@-moz-keyframes spin {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(359deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+@-o-keyframes spin {
+    0% {
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        -o-transform: rotate(359deg);
+    }
+}
+
+@-ms-keyframes spin {
+    0% {
+        -ms-transform: rotate(0deg);
+    }
+    100% {
+        -ms-transform: rotate(359deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes anim-rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    display: inline-block;
+    font-size: 4em;
+    height: 1em;
+    line-height: 1;
+    margin: .5em;
+    animation: anim-rotate 2s infinite linear;
+    color: #fff;
+    text-shadow: 0 0 .25em rgba(255, 255, 255, .3);
+}
+
+.spinner--steps {
+    animation: anim-rotate 1s infinite steps(8);
+}
+
+.spinner--steps2 {
+    animation: anim-rotate 1s infinite steps(12);
+}
+
+.loader {
+    text-align: center;
+    opacity: 0.4;
+}

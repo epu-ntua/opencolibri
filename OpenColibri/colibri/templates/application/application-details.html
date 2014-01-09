@@ -1,0 +1,17 @@
+﻿{% extends "base.html" %}
+{% block title %}Application{% endblock %}
+{% load url from future %}
+{% load i18n comments fluent_comments_tags voting_tags humanize thumbnail2%}
+
+{% block css %}
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}
+
+{% block content %}
+{{application.title}} </br>
+{{application.url}}</br>
+....
+{% endblock %}

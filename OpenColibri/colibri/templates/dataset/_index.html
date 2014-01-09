@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% block title %}Datasets{% endblock %}
+
+{% block content %}
+<div class="wrapper-content">
+    <div class="clear-all-30"></div>
+    <div class="clmn-12" id='show-hide'>
+        <table id="myTable" class="tablesorter">
+            <thead>
+            <tr>
+                <th>{% trans "Title" %}</th>
+                <th>{% trans "Country" %}</th>
+                <th>{% trans "Description" %}</th>
+                <th>{% trans "Resources" %}</th>
+            </tr>
+            </thead>
+            <tbody id='table-active-groups-appendable'>
+            {% for dataset in datasets %}
+            <tr>
+                <td><a href="/dataset/{{ dataset.id }}/">{{ dataset.title }}</a></td>
+                <td>{{ dataset.get_country_display }}</td>
+                <td>{{ dataset.description }}</td>
+                <td>
+                    {% for resource in dataset.resources %}
+                    <li>{{ resource.name }} ({{ resource.get_language_display }})</li>
+                    {% endfor %}
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="clmn-12 pagination">
+        <div class="green">
+            {%if page_obj.has_previous %}
+            <a class="next" href="{%url 'dataset_search'%}?page={{page_obj.number|add:"-1"}}"> « Previous</a>
+            {%endif%}
+            {% for curpage in page_obj.paginator.page_range %}
+            {% if page_obj.number != curpage %}
+            <a href="{%url 'dataset_search'%}?page={{curpage}}">{{curpage}}</a>
+            {%else%}
+            <span class="current">{{curpage}}</span>
+            {%endif%}
+            {%endfor%}
+            {%if page_obj.has_next %}
+            <a class="next" href="{%url 'dataset_search'%}?page={{page_obj.number|add:"1"}}">Next »</a>
+            {%endif%}
+        </div>
+    </div>
+</div><!-- END of wrapper-content -->
+{% endblock %}

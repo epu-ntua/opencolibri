@@ -1,0 +1,2112 @@
+body {
+    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    word-wrap: break-word;
+    line-height: 17px;
+    background-color: #f2f0e7;
+}
+
+/*############################################################################################
+    COLUMNS / LAYOUT
+############################################################################################*/
+
+.clmn-1 {
+    width: 68px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.clmn-2 {
+    width: 150px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.clmn-3 {
+    width: 218px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.clmn-4 {
+    width: 314px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.clmn-5 {
+    width: 396px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.clmn-6 {
+    width: 478px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.clmn-7 {
+    width: 560px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.clmn-8 {
+    width: 642px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.clmn-form {
+    width: 617px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.clmn-9 {
+    width: 724px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.clmn-10 {
+    width: 806px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.clmn-11 {
+    width: 888px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.clmn-12 {
+    width: 970px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.clmn-space {
+    margin-right: 14px;
+    float: left;
+}
+
+.clmn-1-half {
+    float: left;
+    width: 102px;
+}
+
+.clmn-2-half {
+    width: 195px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.clmn-spaceLeft {
+    float: left;
+    margin-left: 14px;
+}
+
+.clear-all-20 {
+    float: left;
+    height: 20px;
+    width: 100%;
+}
+
+.clear-all-30 {
+    float: left;
+    height: 30px;
+    width: 100%;
+}
+
+.clear-all-50 {
+    float: left;
+    height: 50px;
+    width: 100%;
+}
+
+.clear-all-10 {
+    float: left;
+    height: 10px;
+    width: 100%;
+}
+
+.clear-all-15 {
+    float: left;
+    height: 15px;
+    width: 100%;
+}
+
+.clear-all-5 {
+    float: left;
+    height: 5px;
+    width: 100%;
+}
+
+.table-2 {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.table-2 a {
+    color: #006c71;
+    text-decoration: underline;
+}
+
+.wrapper {
+    width: 100%;
+    height: auto;
+    display: block;
+    float: left;
+    position: relative;
+    padding: 0 0 0px;
+    margin: 0;
+}
+
+.wrapper.top {
+    background-color: #006c71;
+    border-bottom-width: 9px;
+    border-bottom-style: solid;
+    border-bottom-color: #a0c0b8;
+}
+
+.wrapper .banner {
+    background-color: #006c71;
+    border-bottom-width: 9px;
+    border-bottom-style: solid;
+    border-bottom-color: #a0c0b8;
+}
+
+.wrapper.search {
+    background-color: #a6c6c0;
+}
+
+.wrapper-content {
+    width: 100%;
+    height: auto;
+    display: block;
+    float: left;
+    position: relative;
+    padding: 0 0 0px;
+    margin: 0;
+}
+
+.wrapper.footer {
+    background-color: #A0C0B8;
+    border-top-width: 5px;
+    border-top-style: solid;
+    border-top-color: #006C71;
+    padding-bottom: 5px;
+}
+
+.wrapper.search {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.center {
+    width: 970px;
+    height: auto;
+    display: block;
+    float: none;
+    position: relative;
+    margin: 0 auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.float-left {
+    float: left;
+    position: relative;
+    text-align: left;
+}
+
+.float-right {
+    float: right !important;
+    text-align: left;
+    display: block;
+}
+
+/*############################################################################################
+    ELEMENTS
+############################################################################################*/
+
+h1 {
+    font-size: 19px;
+    width: 100%;
+    float: left;
+    display: block;
+}
+
+h2 {
+    font-size: 14px;
+    width: 100%;
+    float: left;
+    display: block;
+    line-height: 32px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 26px;
+}
+
+h4 {
+    font-size: 16px;
+    line-height: 22px;
+    width: 100%;
+    position: relative;
+    float: left;
+    display: block;
+    margin-bottom: 8px;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    color: #3B5998;
+    text-decoration: none;
+}
+
+.button-1 {
+    height: 28px;
+    width: auto;
+    border: 1px solid #DE4F15;
+    line-height: 28px;
+    text-align: center;
+    font-weight: bold;
+    color: #DE4F15;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    margin-right: 2px;
+    padding-right: 10px;
+    padding-left: 10px;
+    float: left;
+    white-space: nowrap;
+}
+
+.button-1 a {
+    color: #DE4F15;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.green {
+    color: #006c71;
+}
+
+.green a {
+    color: #006c71;
+}
+
+.green-line {
+    background-color: #006367;
+    float: left;
+    height: 8px;
+    width: 100%;
+}
+
+.orange {
+    color: #DE4F15;
+}
+
+.orange a {
+    color: #DE4F15;
+}
+
+.grey {
+    color: #8F8D82;
+}
+
+.light {
+    color: #fcf9eb;
+}
+
+.lightgreen-background {
+    background-color: #a6c6bf;
+}
+
+.lighter-green-background {
+    background-color: #d9e2d9;
+}
+
+.green-background {
+    background-color: #006c71;
+}
+
+.line-3px {
+    background-color: #F3F0E8;
+    float: left;
+    height: 3px;
+    width: 100%;
+}
+
+.line-divider {
+    float: left;
+    height: 3px;
+    width: 100%;
+    background-color: #fcf9eb;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #e9e6d9;
+    margin-top: 0px;
+}
+
+.line-divider2 {
+    float: left;
+    height: 2px;
+    width: 100%;
+    background-color: #e6ede6;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #bfcbbf;
+    margin-top: 0px;
+}
+
+.line-divider-green {
+    background-image: url(../imgs/horiz-footerline.jpg);
+    background-repeat: repeat-x;
+    height: 4px;
+    width: 100%;
+    float: left;
+}
+
+.mainSearch_divider {
+    background-image: url(../imgs/divider_mainSearchwrapper.jpg);
+    background-repeat: no-repeat;
+    background-position: 176px top;
+    height: auto;
+    padding-top: 46px;
+}
+
+.horizontal-line {
+    float: left;
+    width: 100%;
+    background-image: url(../imgs/horiz-line.jpg);
+    background-repeat: repeat-y;
+    background-position: 600px top;
+    height: 100%;
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.horiz-line2 {
+    margin-right: 14px;
+    float: left;
+    background-image: url(../imgs/horiz-line.jpg);
+    background-repeat: repeat-y;
+    background-position: right top;
+}
+
+.horiz-line3 {
+    margin-right: 14px;
+    float: left;
+    background-repeat: repeat-y;
+    background-position: right top;
+    border-right-width: 1px;
+    border-right-style: dashed;
+    border-right-color: #DE4F15;
+}
+
+.center-select {
+    margin-left: 380px;
+    margin-top: 10px;
+}
+
+.breadcrumb {
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+/*############################################################################################
+    RATING
+############################################################################################*/
+
+.rating-small-5star {
+    background-image: url(../imgs/icon_stars-five_small.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 20px;
+    width: 54px;
+    float: left;
+    line-height: 20px;
+    display: block;
+    margin-left: 10px;
+}
+
+.rating-small-4star {
+    background-image: url(../imgs/icon_stars-four_small.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 20px;
+    width: 54px;
+    float: left;
+    line-height: 20px;
+    display: block;
+    margin-left: 10px;
+}
+
+.rating-small-3star {
+    background-image: url(../imgs/icon_stars-three_small.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 20px;
+    width: 54px;
+    float: left;
+    line-height: 20px;
+    display: block;
+    margin-left: 10px;
+}
+
+.rating-small-2star {
+    background-image: url(../imgs/icon_stars-two_small.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 20px;
+    width: 54px;
+    float: left;
+    line-height: 20px;
+    display: block;
+    margin-left: 10px;
+}
+
+.rating-small-1star {
+    background-image: url(../imgs/icon_stars-one_small.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 20px;
+    width: 54px;
+    float: left;
+    line-height: 20px;
+    display: block;
+    margin-left: 10px;
+}
+
+.rating-small-0star {
+    background-image: url(../imgs/icon_stars-empty_small.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 20px;
+    width: 54px;
+    float: left;
+    line-height: 20px;
+    display: block;
+    margin-left: 10px;
+}
+
+.rating-5star {
+    background-image: url(../imgs/icon_stars-five.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 20px;
+    width: 89px;
+    float: left;
+    line-height: 20px;
+    display: block;
+}
+
+.rating-4star {
+    background-image: url(../imgs/icon_stars-four.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 20px;
+    width: 89px;
+    float: left;
+    line-height: 20px;
+    display: block;
+}
+
+.rating-3star {
+    background-image: url(../imgs/icon_stars-three.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 20px;
+    width: 89px;
+    float: left;
+    line-height: 20px;
+    display: block;
+}
+
+.rating-2star {
+    background-image: url(../imgs/icon_stars-two.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 20px;
+    width: 89px;
+    float: left;
+    line-height: 20px;
+    display: block;
+}
+
+.rating-1star {
+    background-image: url(../imgs/icon_stars-one.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 20px;
+    width: 89px;
+    float: left;
+    line-height: 20px;
+    display: block;
+}
+
+.rating-0star {
+    background-image: url(../imgs/icon_stars-empty.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 20px;
+    width: 89px;
+    float: left;
+    line-height: 20px;
+    display: block;
+}
+
+.rating-number {
+    font-size: 14px;
+    line-height: 21px;
+    margin-left: 20px;
+    float: left;
+    height: auto;
+    width: auto;
+    font-weight: bold;
+}
+
+/*############################################################################################
+    TOP TOOLS
+############################################################################################*/
+
+.topTools {
+    float: left;
+    height: 40px;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    margin-top: 20px;
+}
+
+.language-select {
+    float: right;
+}
+
+/*############################################################################################
+    TOP MENU
+############################################################################################*/
+
+/* Structure
+------------------------------------------*/
+#TopNav,
+#TopNav ul {
+    list-style: none;
+    width: auto;
+}
+
+#TopNav {
+    float: left;
+}
+
+#TopNav > li {
+    float: left;
+}
+
+#TopNav li a {
+    display: block;
+    text-decoration: none;
+    line-height: 31px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-transform: none;
+}
+
+#TopNav  li a.current {
+    color: black;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    font-weight: bold;
+}
+
+#TopNav ul {
+    position: absolute;
+    display: none;
+    z-index: 999;
+}
+
+#TopNav ul li a {
+    width: auto;
+}
+
+#TopNav li:hover ul.noJS {
+    display: block;
+}
+
+/* Top menu
+------------------------------------------*/
+#TopNav {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+#TopNav > li > a {
+    color: #F2F0E7;
+    font-weight: normal;
+}
+
+#TopNav > li:hover > a {
+    color: #A0C0B8;
+}
+
+/* Submenu
+------------------------------------------*/
+#TopNav ul {
+    padding: 5px;
+    background-color: #A0C0B8;
+    border: 1px solid #006C71;
+    border-radius: 4px 4px 4px 4px;
+}
+
+#TopNav ul li a {
+    color: #006C71;
+    text-transform: none;
+    line-height: 23px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 13px;
+}
+
+#TopNav ul li:hover a {
+    color: #F2F0E7;
+}
+
+form.mainSearch input[type=text] {
+    color: #333333;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    height: 29px;
+    float: left;
+    font-size: 14px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 341px;
+    background: #F3F0E8 no-repeat;
+    line-height: 29px;
+}
+
+form.mainSearch input[type=button] {
+    position: relative;
+    background: #e4f1f9 url(../imgs/search_button.jpg) no-repeat center center;
+    cursor: pointer;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    color: transparent;
+    height: 31px;
+    width: 34px;
+}
+
+form.mainSearch input[type=button]:hover {
+    background: #e4f1f9 url(../imgs/search_button_hover.jpg) no-repeat center center;
+}
+
+form.mainSearch {
+    width: auto;
+    display: block;
+    height: 31px;
+    float: left;
+}
+
+form.mainSearch-page {
+    width: auto;
+    display: block;
+    height: 31px;
+    float: left;
+    border: 1px solid #006C71;
+    margin-left: 294px;
+}
+
+form.mainSearch-page input[type=text] {
+    color: #333333;
+    height: 29px;
+    float: left;
+    font-size: 14px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 341px;
+    background: #F9F7EB no-repeat;
+    line-height: 29px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+}
+
+form.mainSearch-page input[type=button] {
+    position: relative;
+    background: #e4f1f9 url(../imgs/search_button.jpg) no-repeat center center;
+    cursor: pointer;
+    height: 31px;
+    width: 34px;
+    border: 1px solid #006C71;
+}
+
+form.newgroup {
+    line-height: 29px;
+}
+
+form.newgroup input[type=text] {
+    color: #333333;
+    height: 29px;
+    float: left;
+    font-size: 14px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+    background: #F3F0E8;
+    line-height: 29px;
+    border: 1px solid #006C71;
+}
+
+form.newgroup textarea {
+    color: #333333;
+    height: 100px;
+    float: left;
+    font-size: 14px;
+    padding-left: 10px;
+    width: 489px;
+    background: #F3F0E8;
+    line-height: 29px;
+    border: 1px solid #006C71;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form.newgroup input[type=button] {
+    background: #006C71;
+    cursor: pointer;
+    color: #F2F0E7;
+    height: 33px;
+    width: 100px;
+    float: right;
+    display: block;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 33px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+}
+
+form.newgroup input[type=button]:hover {
+    background-color: #074245;
+}
+
+.create-new-usergroup {
+    border: 2px solid #F2F0E7;
+}
+
+.create-new-usergroup .title {
+    text-indent: 15px;
+}
+
+.create-new-usergroup .steps {
+    text-indent: 15px;
+}
+
+/*############################################################################################
+    MAIN MENU
+############################################################################################*/
+
+/* Structure
+------------------------------------------*/
+#mainNav,
+#mainNav ul {
+    list-style: none;
+    width: auto;
+}
+
+#mainNav {
+    float: right;
+}
+
+#mainNav > li {
+    float: left;
+    text-transform: uppercase;
+}
+
+#mainNav li a {
+    display: block;
+    text-decoration: none;
+    line-height: 54px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#mainNav   li a.current {
+    color: #A0C0B8;
+    background-image: url(../imgs/current_icon.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    font-weight: bold;
+}
+
+#mainNav ul {
+    position: absolute;
+    display: none;
+    z-index: 999;
+}
+
+#mainNav ul li a {
+    width: auto;
+}
+
+#mainNav li:hover ul.noJS {
+    display: block;
+}
+
+/* Main menu
+------------------------------------------*/
+#mainNav {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#mainNav > li > a {
+    color: #f3f0e8;
+    font-weight: normal;
+}
+
+#mainNav > li:hover > a {
+    background: url(../imgs/current_icon.png) no-repeat center bottom;
+    color: #A0C0B8;
+}
+
+/* Submenu
+------------------------------------------*/
+#mainNav ul {
+    background: #A0C0B8;
+    padding: 19px 10px 10px;
+}
+
+#mainNav ul li a {
+    color: #006C71;
+    text-transform: none;
+    line-height: 23px;
+}
+
+#mainNav ul li:hover a {
+    color: #FCF8EA;
+}
+
+/*############################################################################################
+    MAIN SEARCH FORM
+############################################################################################*/
+.searchOptions {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    list-style-type: none;
+    width: 100%;
+    float: left;
+    display: block;
+}
+
+.searchOptions li {
+    float: left;
+    display: block;
+    padding-right: 15px;
+    padding-left: 33px;
+    line-height: 26px;
+}
+
+.searchOptions li  .selected {
+    color: #006C71;
+}
+
+.searchOptions .keyword {
+    background-image: url(../imgs/../imgs/icon_search_keyword.jpg);
+    background-repeat: no-repeat;
+    border-right-width: 1px;
+    border-right-style: dashed;
+    border-right-color: #006C71;
+    margin-right: 10px;
+}
+
+.searchOptions .filtered {
+    background-image: url(../imgs/icon_search_filtered.jpg);
+    background-repeat: no-repeat;
+}
+
+.searchOptions a {
+    color: #F3F0E8;
+    font-weight: bold;
+}
+
+.searchOptions a:hover {
+    color: #006C71;
+}
+
+/*############################################################################################
+    DATASET MAIN
+############################################################################################*/
+.addnewDataset {
+    background-image: url(../imgs/icon_opendata.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    float: left;
+    width: 340px;
+    height: auto;
+    color: #006C71;
+    padding-left: 45px;
+}
+
+.addnewDataset a {
+    font-weight: bold;
+    color: #006C71;
+    text-decoration: none;
+}
+
+.addnewDataset h2 {
+    font-size: 15px;
+    line-height: 23px;
+    color: #F3F0E8;
+    float: left;
+    width: 330px;
+    display: block;
+}
+
+/*############################################################################################
+    LOOKING FOR
+############################################################################################*/
+.lookingfor-select {
+    float: right;
+    position: relative;
+    z-index: 200;
+}
+
+.lookingfor h2 {
+    width: 232px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.lookingfor h2 {
+    font-size: 15px;
+    line-height: 23px;
+    color: #F3F0E8;
+    float: left;
+    width: 350px;
+    display: block;
+}
+
+/*############################################################################################
+    DATASET
+############################################################################################*/
+.dataset-owner {
+    float: left;
+    width: 100%;
+    position: relative;
+    line-height: 28px;
+    height: 28px;
+    margin-bottom: 10px;
+}
+
+.dataset-title {
+    float: left;
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.dataset-rating {
+    float: left;
+    width: 100%;
+    line-height: 22px;
+    height: 22px;
+}
+
+.dataset-description {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    float: left;
+    width: 100%;
+}
+
+.dataset-extend a {
+    height: 28px;
+    width: 103px;
+    border: 1px solid #DE4F15;
+    line-height: 28px;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    color: #DE4F15;
+    margin-left: 46px;
+    margin-bottom: 10px;
+}
+
+.dataset-extend a:hover {
+    height: 28px;
+    width: 103px;
+    border: 1px solid #006c71;
+    line-height: 28px;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    color: #006c71;
+    text-decoration: none;
+}
+
+.dataset-official {
+    float: left;
+    height: 22px;
+    width: 100%;
+    line-height: 22px;
+    background-image: url(../imgs/icon_official_dataset.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    margin-bottom: 10px;
+}
+
+.dataset-social {
+    line-height: 22px;
+    float: left;
+    height: 22px;
+    width: 100%;
+    text-align: left;
+}
+
+.dataset-social a img {
+    float: right;
+    height: 20px;
+    width: 20px;
+    display: block;
+    margin-left: 10px;
+}
+
+.dataset-tabs {
+    float: left;
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+}
+
+/*############################################################################################
+    DATASET TABS
+############################################################################################*/
+.etabs {
+    margin: 0;
+    padding: 0;
+    background-image: url(../imgs/icon_tab.jpg);
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    height: 39px;
+}
+
+.etabs li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.tab {
+    display: inline-block;
+    background-image: url(../imgs/icon_tab.jpg);
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    height: 39px;
+    padding: 0px;
+    width: auto;
+}
+
+.tab a {
+    font-size: 14px;
+    display: block;
+    outline: none;
+    line-height: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border: 1px solid #006c71;
+    color: #006c71;
+}
+
+.tab a:hover {
+    text-decoration: none;
+    background-color: #006c71;
+    color: #fcf9eb;
+    font-weight: normal;
+}
+
+.tab.active {
+    background: #006c71 url(../imgs/icon_current_tab.jpg) repeat-x center bottom;
+    position: relative;
+}
+
+.tab a.active {
+    color: #fcf9eb;
+    font-weight: normal;
+    border: 1px solid #006C71;
+}
+
+.tab2 {
+    display: inline-block;
+    background-image: url(../imgs/icon_tab.jpg);
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    height: 39px;
+    padding: 0px;
+    width: auto;
+}
+
+.tab2 a {
+    font-size: 14px;
+    display: block;
+    outline: none;
+    line-height: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border: 1px solid #006c71;
+    color: #006c71;
+}
+
+.tab2 a:hover {
+    text-decoration: none;
+    background-color: #006c71;
+    color: #fcf9eb;
+    font-weight: normal;
+}
+
+.tab2.active {
+    background: #006c71 url(../imgs/icon_current_tab2.jpg) repeat-x center bottom;
+    position: relative;
+}
+
+.tab2 a.active {
+    color: #fcf9eb;
+    font-weight: normal;
+    border: 1px solid #006C71;
+}
+
+.tab-container {
+    width: 100%;
+}
+
+.panel-container {
+    width: 100%;
+    background-color: #a6c6bf;
+    float: left;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.panel-container2 {
+    width: 100%;
+    background-color: #F2F0E7;
+    float: left;
+    height: auto;
+    padding-bottom: 20px;
+    border-bottom-width: 8px;
+    border-bottom-style: solid;
+    border-bottom-color: #006C71;
+}
+
+.panel-container3 {
+    width: 100%;
+    background-color: #F2F0E7;
+    float: left;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.tab-content-box {
+    float: left;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 14px;
+}
+
+.tab-content-box2 {
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.tab-list {
+    float: left;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.tab-list a {
+    color: #006c71;
+    text-decoration: underline;
+}
+
+.tab-content-button {
+    float: right;
+    line-height: 30px;
+    background-color: #fcf9eb;
+    text-align: center;
+    height: 30px;
+    width: 105px;
+    margin-right: 14px;
+    margin-bottom: 10px;
+}
+
+.tab-content-button a {
+    font-weight: bold;
+    color: #006C71;
+    text-decoration: none;
+}
+
+.tab-content-button a:hover {
+    font-weight: bold;
+    color: #A6C6BF;
+    text-decoration: none;
+}
+
+/*############################################################################################
+    MENU SELECT
+############################################################################################*/
+.menu-select {
+    width: 100%;
+    height: 31px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.menu-select.hover .options {
+    height: auto;
+}
+
+.menu-select .value {
+    height: 30px;
+    display: block;
+    float: none;
+    padding: 5px;
+    margin: 0;
+    background: #ccc;
+    line-height: 30px;
+    overflow: hidden;
+    font-weight: bold;
+    color: #06F;
+}
+
+.menu-select .options {
+    height: 0px;
+    display: block;
+    float: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.menu-select .options a {
+    display: block;
+    float: none;
+    padding: 10px 5px 5px 10px;
+    margin: 0;
+    background: #FFFFFF;
+    text-decoration: none;
+    color: #006C71;
+    font-size: 12px;
+}
+
+.menu-select .options a:hover {
+    color: #DF4F13;
+}
+
+.menu-select.source .value {
+    height: 29px;
+    display: block;
+    float: none;
+    margin: 0px;
+    background: url(../imgs/icon_button-cross.jpg) no-repeat right top;
+    line-height: 29px;
+    overflow: hidden;
+    font-weight: normal;
+    color: #006c71;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    border: 1px solid #006C71;
+    text-indent: 10px;
+}
+
+.menu-select.source .options a {
+    display: block;
+    float: none;
+    padding: 5px 50px 5px 10px;
+    margin: 0;
+    background: #FFFFFF;
+    text-decoration: none;
+    color: #006C71;
+    font-size: 12px;
+    width: 100%;
+}
+
+.menu-select.source .options a:hover {
+    color: #DE4F15;
+}
+
+.menu-select.related-dataset .value {
+    height: 29px;
+    display: block;
+    float: none;
+    margin: 0px;
+    background: url(../imgs/icon_button-cross.jpg) no-repeat right top;
+    line-height: 29px;
+    overflow: hidden;
+    font-weight: normal;
+    color: #006c71;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    border: 1px solid #006C71;
+    text-indent: 10px;
+}
+
+.menu-select.related-dataset .options a {
+    display: block;
+    float: none;
+    padding: 5px 50px 5px 10px;
+    margin: 0;
+    background: #FFFFFF;
+    text-decoration: none;
+    color: #006C71;
+    font-size: 12px;
+    width: 100%;
+}
+
+.menu-select.related-dataset .options a:hover {
+    color: #DE4F15;
+}
+
+.menu-select.languages .value {
+    height: 29px;
+    display: block;
+    float: none;
+    margin: 0px;
+    background: #f6f3eb url(../imgs/icon_button-cross.jpg) no-repeat right top;
+    line-height: 29px;
+    overflow: hidden;
+    font-weight: normal;
+    color: #006c71;
+    width: 150px;
+    padding: 0px 0px 0px 0px;
+    text-indent: 10px;
+}
+
+.menu-select.language .options a {
+    display: block;
+    float: none;
+    padding: 5px 50px 5px 10px;
+    margin: 0;
+    background: #FFFFFF;
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+    width: 100%;
+}
+
+.lookingfor {
+    background-image: url(../imgs/icon_opendataAsk.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    float: left;
+    width: 350px;
+    height: auto;
+    padding-left: 40px;
+    color: #006C71;
+}
+
+.menu-select.lookingforbox .value {
+    height: 31px;
+    display: block;
+    float: none;
+    margin: 0px;
+    background: #FCF8EC url(../imgs/lookingfor_background.jpg) no-repeat right top;
+    line-height: 30px;
+    overflow: hidden;
+    font-weight: normal;
+    color: #006B71;
+    width: 385px;
+    padding: 0px 0px 0px 10px;
+    font-size: 14px;
+}
+
+.menu-select.lookingforbox .options a {
+    display: block;
+    float: none;
+    padding: 5px 5px 5px 10px;
+    margin: 0;
+    background: #FFFFFF;
+    text-decoration: none;
+    color: #006B71;
+    font-size: 12px;
+}
+
+.menu-select.lookingforbox .options a:hover {
+    color: #DF4F13;
+}
+
+.newrequest-box {
+    position: relative;
+    z-index: 200;
+    border: 1px solid #006C71;
+    float: left;
+    width: 500px;
+}
+
+.menu-select.newrequest .value {
+    line-height: 30px;
+    height: 31px;
+    display: block;
+    margin: 0px;
+    background: #FCF8EC url(../imgs/lookingfor_background.jpg) no-repeat right top;
+    overflow: hidden;
+    font-weight: normal;
+    color: #006B71;
+    padding: 0px 0px 0px 10px;
+    font-size: 14px;
+    width: 490px;
+}
+
+.menu-select.newrequest .options a {
+    display: block;
+    float: none;
+    padding: 5px 5px 5px 10px;
+    margin: 0;
+    background: #FFFFFF;
+    text-decoration: none;
+    color: #006B71;
+    font-size: 12px;
+}
+
+.menu-select.newrequest .options a:hover {
+    color: #DF4F13;
+}
+
+ul.sources, ul.sources ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.sources ul {
+    margin-left: 10px;
+}
+
+ul.sources li {
+    margin: 10 0;
+    padding: 0 12px;
+    line-height: 20px;
+}
+
+/*############################################################################################
+    TREE
+############################################################################################*/
+#tree {
+    display: block;
+    float: left;
+    height: auto;
+    width: 100%;
+}
+
+#tree .source .title-open {
+    display: block;
+    float: left;
+    height: auto;
+    width: 100%;
+    font-weight: bold;
+    background-image: url(../imgs/icon_tree_close.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    text-indent: 20px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#tree .source .title-closed {
+    display: block;
+    float: left;
+    height: auto;
+    width: 100%;
+    font-weight: bold;
+    background-image: url(../imgs/icon_tree_open.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    text-indent: 20px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#tree .details {
+    font-size: 12px;
+    height: auto;
+    width: 100%;
+    line-height: 20px;
+    margin-bottom: 5px;
+    float: left;
+}
+
+#tree a {
+    color: #006C71;
+}
+
+#tree .source .details .source-owner {
+    float: left;
+    width: 100%;
+    height: auto;
+    text-indent: 20px;
+}
+
+#tree .source .details .date-small {
+    float: left;
+    height: auto;
+    width: auto;
+    margin-left: 20px;
+}
+
+#tree .data .data-title {
+    float: left;
+    height: auto;
+    width: 100%;
+    font-weight: normal;
+    font-size: 14px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    text-indent: 20px;
+    line-height: 20px;
+    background-image: url(../imgs/icon_tree_data.jpg);
+}
+
+#tree .data .data-title a {
+    color: #006C71;
+}
+
+.source-select {
+    float: left;
+    position: relative;
+    z-index: 300;
+}
+
+.related-dataset {
+    float: left;
+    position: relative;
+    z-index: 200;
+}
+
+/*############################################################################################
+    FEED
+############################################################################################*/
+.feed-divider {
+    float: left;
+    height: 3px;
+    width: 100%;
+    background-color: #fcf9eb;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #e9e6d9;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.usersmall-Photo {
+    float: left;
+    background-color: #A6C6C0;
+    height: 68px;
+}
+
+.userbig-Photo {
+    float: left;
+    background-color: #A6C6C0;
+    height: 150px;
+}
+
+.feed .text {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.feed {
+    float: left;
+}
+
+.feed a {
+    color: #006c71;
+}
+
+.feed .date {
+    float: left;
+}
+
+.feedTitle {
+    float: left;
+    width: 100%;
+    font-size: 15px;
+}
+
+.userActivity {
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.userActivity a {
+    color: #999;
+}
+
+.bigdate {
+    color: #8f8d82;
+    float: left;
+    border-left-width: 1px;
+    border-left-style: dashed;
+    border-left-color: #DE4F13;
+    text-align: center;
+    line-height: 20px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    height: 46px;
+    width: 75px;
+}
+
+.feed-horiz-line {
+    color: #8f8d82;
+    float: left;
+    line-height: 20px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-right-width: 1px;
+    border-right-style: dashed;
+    border-right-color: #DE4F13;
+    width: 800px;
+    padding-right: 10px;
+}
+
+.datebold {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.share {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.taxonomy {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.votes {
+    float: left;
+    height: auto;
+    width: 100%;
+    line-height: 22px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.feed-answers {
+    float: left;
+    height: auto;
+    width: 100%;
+    line-height: 22px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.votes .text {
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.votes-numb-up {
+    line-height: 22px;
+    font-size: 14px;
+    float: left;
+    height: auto;
+    width: 40px;
+    margin-right: 10px;
+    text-align: right
+}
+
+.votes img {
+    float: left;
+    height: 22px;
+    width: 22px;
+    display: block;
+    margin-right: 10px;
+}
+
+.votes-numb-down {
+    line-height: 22px;
+    font-size: 14px;
+    float: left;
+    height: auto;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.taxonomy span {
+    font-size: 12px;
+    display: block;
+    width: auto;
+    float: left;
+    padding-right: 20px;
+}
+
+.taxonomy span a {
+    color: #8F8D82;
+}
+
+.taxonomy span.current a {
+    color: #006C71;
+}
+
+.-userName {
+    float: left;
+    color: #8f8d82;
+    font-size: 16px;
+    line-height: 26px;
+    width: 220px;
+    margin-top: 7px;
+}
+
+.karma {
+    float: left;
+    font-size: 14px;
+    line-height: 18px;
+    width: 215px;
+    margin-top: 5px;
+    color: #8f8d82;
+}
+
+.karma-big {
+    float: left;
+    font-size: 14px;
+    line-height: 22px;
+    width: 68px;
+    border: 1px dashed #F60;
+    display: block;
+    text-align: center;
+}
+
+.user-name {
+    font-size: 16px;
+    float: left;
+}
+
+.user-name a {
+    color: #8F8D82;
+}
+
+.user-name2 {
+    font-size: 16px;
+    float: left;
+    line-height: 68px;
+}
+
+.user-name2 a {
+}
+
+.submitted-by {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+
+.user-info {
+    line-height: 22px;
+}
+
+#group-invite {
+    margin-left: 116px;
+}
+
+.group-invites {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 22px;
+}
+
+.contact-details {
+    line-height: 22px;
+}
+
+/*############################################################################################
+    FOOTER
+############################################################################################*/
+.center-footer {
+    width: 970px;
+    height: auto;
+    display: block;
+    float: none;
+    position: relative;
+    margin: 0 auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+.-feedDate {
+    color: #8f8d82;
+    float: left;
+    border-left-width: 1px;
+    border-left-style: dashed;
+    border-left-color: #DE4F13;
+    padding-left: 10px;
+    text-align: center;
+    line-height: 19px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.-userPhoto {
+    float: left;
+    background-color: #A6C6C0;
+    margin-right: 14px;
+    height: 68px;
+}
+
+.center-footer.notes {
+    width: 970px;
+    height: auto;
+    float: none;
+    margin: 0 auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    padding-top: 35px;
+    font-size: 12px;
+    position: relative;
+}
+
+.center-footer img {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.footer-logos {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.footer-line {
+    background-image: url(../imgs/horiz-footerline.jpg);
+    background-repeat: repeat-x;
+    height: 5px;
+    width: 100%;
+    float: left;
+}
+
+/*############################################################################################
+    PAGINATION
+############################################################################################*/
+.pagination {
+    text-align: center;
+    line-height: 19px;
+    height: auto;
+    width: 100%;
+    color: #006c71;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pagination a {
+    text-decoration: none;
+    margin-right: 4px;
+    margin-left: 4px;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: #006c71;
+}
+
+.pagination a:hover, .pagination a:active {
+    color: #000000;
+}
+
+.pagination span.current {
+    color: #DE4F15;
+    font-weight: bold;
+    margin-right: 2px;
+    margin-left: 2px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.pagination span.disabled {
+    color: #949287;
+    margin-right: 2px;
+    margin-left: 2px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+/*############################################################################################
+    TAXOMONY
+############################################################################################*/
+.taxomony {
+    list-style-type: none;
+    padding: 0px;
+    float: left;
+    line-height: 28px;
+    margin: 20px 0px 0px;
+}
+
+.taxomony ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+
+.taxomony ul li {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px 0px 0px 28px;
+    float: left;
+    display: block;
+    width: auto;
+    line-height: 28px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.taxomony .active {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px 0px 0px 28px;
+    float: left;
+    display: block;
+    width: auto;
+    line-height: 28px;
+    background-image: url(../imgs/icon_taxonomy_active.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+/*############################################################################################
+    TABLESORTER
+############################################################################################*/
+table.tablesorter {
+    font-family: arial;
+    font-size: 12px;
+    margin: 10px 0 15px;
+    text-align: left;
+    width: 100%;
+    color: #006C71;
+}
+
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+    background-color: #a0c0b8;
+    font-size: 14px;
+    padding: 4px;
+}
+
+table.tablesorter thead tr .header {
+    background-position: right center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-color: #A0C0B8;
+}
+
+table.tablesorter tbody td {
+    background-color: #F9F7EB;
+    color: #006C71;
+    padding: 8px 4px;
+    vertical-align: top;
+}
+
+table.tablesorter tbody tr.odd td {
+    background-color: #006C71;
+}
+
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+    background-color: #006C71;
+    color: #F2F0E7;
+}
+
+.data-request {
+    float: left;
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*############################################################################################
+    NORMAL STATIC TEXT
+############################################################################################*/
+.normalstatictext {
+    width: 888px;
+    font-size: 15px;
+    color: #006C71;
+    padding-left: 250px;
+    padding-bottom: 22px;
+    text-align: justify
+}
+
+.normalstatictext h1 {
+    font-weight: bold;
+    padding-top: 22px
+}

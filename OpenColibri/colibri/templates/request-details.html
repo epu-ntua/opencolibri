@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+{% block title %}Dataset Requests{% endblock %}
+{% load url from future %}
+{% load i18n comments fluent_comments_tags thumbnail2 %}
+{% load humanize %}
+{% load voting_tags %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="/s/fluent_comments/css/ajaxcomments.css"/>
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript" src="/s/fluent_comments/js/ajaxcomments.js"></script>
+{% endblock %}
+
+{% block content %}
+
+<div class="wrapper-content">
+    <div class="clmn-12 center">
+        <div class="breadcrumb green"><a href="{%url 'index' %}"> {%trans "Home"%}</a> | <a
+                href="{%url 'datasetrequests_index' %}">{%trans "Data Requests"%}</a> | <span
+                class="current-page orange">{{datasetrequest.name}}</span></div>
+        <div class="line-divider"></div>
+        <div class="clear-all-30"></div>
+
+        <div class="clmn-12">
+            <div class="clmn-4 clmn-space">
+                <div class="clmn-1 clmn-space usersmall-Photo float-left">
+                    {% if datasetrequest.author.profile.avatar.photo_original %}
+                    {% thumbnail datasetrequest.author.profile.avatar.photo_original "68x68" as avatar %}
+                    <a style="color:#333333" href="/profile/{{datasetrequest.author.id}}"><img width="68" height="68"
+                                                                                               src="{{avatar}}"></img></a>
+                    {% else %}
+                    <a style="color:#333333" href="/profile/{{datasetrequest.author.id}}"><img width="68" height="68"
+                                                                                               src="/s/imgs/defaultavatar.jpg"></img></a>
+                    {% endif %}
+
+                </div>
+                <div class="user-name2 green " style="line-height:21px">
+                    <strong>
+                        <div><a href="/profile/{{datasetrequest.author.id}}">{% if datasetrequest.author.first_name or
+                            datasetrequest.author.last_name %}{{datasetrequest.author.first_name}}
+                            {{datasetrequest.author.last_name}} {% else %} {{datasetrequest.author.username}} {% endif
+                            %}</a></div>
+                        {% if datasetrequest.author.profile.rpg_class != "--" %}
+                        <div style="" class="requests_rpg"> {{datasetrequest.author.profile.get_rpg_class_display}}
+                        </div>
+                        {% endif %}
+                        {% if datasetrequest.author.profile.scientific_background != "--" %}
+                        <div class="requests_domain">
+                            {{datasetrequest.author.profile.get_scientific_background_display|truncatechars:33}}
+                        </div>
+                        {% endif %}
+                    </strong>
+                </div>
+
+
+                <div class="clear-all-10"></div>
+                <div class="clmn-4 ">
+                    {% score_for_object datasetrequest as score %}
+                    <div class="votes green"><span style="width:auto" class="votes-numb-up green">{{score.score}}</span><a
+                            href="{%url 'datasetrequests_vote' datasetrequest.id 'up'%}"><img
+                            src="/s/imgs/icon_voteup.jpg" width="22" height="22" alt="vote-up"/></a><span class="text">{%trans "Like Request"%}</span>
+                    </div>
+                    <div class="requestdate vote">{%trans "Created " %}{{datasetrequest.date_created|naturaltime}}
+                    </div>
+                    {%if datasetrequest.accepted_comment == 0 %}
+                    <span class="grey">{%trans "pending request" %}</span>
+                    {%else%}
+                    <div><img
+                            src="/s/imgs/tickgreen.png" alt="satisfied request"/><span
+                            style="margin-left:3px;color:green;font-weight:bold">{%trans "Satisfied request" %}</span>
+                    </div>
+                    {%endif%}
+                    <div class="clear-all-10"></div>
+                </div>
+            </div>
+            <!-- END of left row -->
+
+            <div class="clmn-8 ">
+                <div class="clmn-8 green">
+                    <div style="float:left"
+                    ;><img width="32px" height="32px" src="/s/imgs/r_{{datasetrequest.category}}.png"/></div>
+                <div style="margin-left:5px;float:left"><h2>{{datasetrequest.get_category_display}}</h2></div>
+                <div class="clear-all-10"></div>
+            </div>
+            <div class="clmn-8 green">
+                <h2><strong>{{datasetrequest.name}}</strong></h2>
+
+                <div class="clear-all-10"></div>
+            </div>
+            <div class="clmn-8 green">
+                <p>{{datasetrequest.description|urlize}}
+
+                <p>&nbsp;</p>
+            </div>
+            <div class="clear-all-10"></div>
+            <div class="line-divider"></div>
+            <div class="clear-all-30"></div>
+
+            <div class="category-title"><h1 class="orange ">{% trans "Replies to the request" %}</h1></div>
+            <div class="clear-all-30"></div>
+            <div class="line-divider"></div>
+            <div class="clear-all-30"></div>
+            <div>
+
+                {% get_comment_count for datasetrequest as comments_count %}
+
+                <div id="comments-wrapper">
+                    {% if comments_count %}
+                    <h3 class="has-comments-title">{% blocktrans with entry_title=datasetrequest.title count
+                        comments_count=comments_count %}{{ comments_count }} reply {{ entry_title }}{% plural %}{{
+                        comments_count }} Replies {% endblocktrans %}</h3>
+                    {% render_comment_list for object %}
+                    {% if not datasetrequest|comments_are_open %}
+                    <p class="comments-closed">{% trans "Comments are closed." %}</p>
+                    {% endif %}
+                    {% else %}
+                    {# no comments yet, invite #}
+                    {% if datasetrequest|comments_are_open %}
+                    <h3 class="no-comments-title">{% trans "Leave a reply" %}</h3>
+
+                    {# include the empty list, so the
+                    <div> is there for Ajax code #}
+
+                        {% render_comment_list for object %}
+
+                        {% endif %}
+                        {% endif %}
+                    </div>
+
+                    {% if datasetrequest|comments_are_open %}
+                    {% if user.is_authenticated %}
+
+                    <div style="margin-top:15px;margin-bottom:15px;" class="line-divider"></div>
+
+                    <div id="comments-form-wrapper">
+                        {% render_comment_form for object %}
+                    </div>
+                    {% else %}
+                    <div style="float:right;margin-top:50px;margin-bottom:50px;">{% trans "Please " %} <a
+                            href="/accounts/login/?next=/datasetrequests/{{datasetrequest.id}}">{% trans "login" %}</a>
+                        {% trans "to reply." %}
+                    </div>
+                    {% endif %}
+                    {% endif %}
+
+                </div>
+
+
+            </div>
+            <!-- END of right row -->
+
+        </div>
+    </div>
+</div><!-- END of wrapper-content -->
+{% endblock %}
