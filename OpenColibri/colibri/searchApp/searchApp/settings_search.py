@@ -6,7 +6,7 @@ __author__ = 'mpetyx'
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
-LOGIN_REDIRECT_URL = 'http://colibrintua.herokuapp.com/'
+LOGIN_REDIRECT_URL = ''
 
 DATABASES = {
     'default': {
@@ -43,9 +43,9 @@ INTERNAL_IPS = ('127.0.0.1',)
 
 STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 
-AWS_ACCESS_KEY_ID = 'AKIAJ3OQUQKOETJFUEAQ'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'colibrifp7'
+AWS_ACCESS_KEY_ID = ''
+AWS_SECRET_ACCESS_KEY = ''
+AWS_STORAGE_BUCKET_NAME = ''
 
 
 
